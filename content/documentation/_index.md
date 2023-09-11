@@ -6,23 +6,21 @@ weight = 100
 Contributing documentation is pretty straightforward, follow this basic guide to learn how.
 
 ## A brief history
+
 This page was built with the [Hugo](https://gohugo.io/documentation/) framework & static site generator using the [Relearn theme](https://mcshelby.github.io/hugo-theme-relearn/) and hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
 Every commit to the main branch will trigger a GitHub Action, causing the page to rebuild itself. This takes only a minute or two before the changes are updated. 
 This structure provides a beautiful site, solid uptime, and the ability to even make edits in the GitHub web editor.
 
 ## Editing existing pages
 
-{{% badge style="info" %}}Coming Soon{{% /badge %}}
+Navigate to the page that you would like edit and select the <i class="fas fa-pen fa-fw"></i> icon in the top right of the page. See [Learning the syntax](/Wiki/documentation/index.html#learning-the-syntax) for more information on making edits. 
 
 ---
-## Creating new pages
+## Creating new pages & sections
 
-{{% badge style="info" %}}Coming Soon{{% /badge %}}
-
----
-## Creating new sections
-
-{{% badge style="info" %}}Coming Soon{{% /badge %}}
+Create a new folder, named whatever you want inside of content/\<desired location>. Create a new file here named _index.md, this file will contain your page's content.
+If sub-pages are desired, add a new file titled \<filename.md> inside of your newest folder.
+See [Relearn Theme Docs](https://mcshelby.github.io/hugo-theme-relearn/cont/pages/index.html) for better documentation.
 
 ---
 ## Learning the syntax
