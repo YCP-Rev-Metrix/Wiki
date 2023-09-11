@@ -48,6 +48,6 @@ In order to make local edits on your own machine, we will need to follow a coupl
 1. Clone `https://github.com/YCP-Rev-Metrix/Wiki.git` in your favorite IDE or terminal
 1. Open a Git terminal in the directory of your new repository. For VS users, this can be *(Toolbar) Git > Open in command prompt*
 1. Launch a live server by calling `hugo serve` (git or wsl terminal)
-1. Navigate a browser to `http://localhost:1313`
+1. Navigate a browser to `http://localhost:1313/Wiki`
 1. Make changes (mostly in content directory). After saving, you should see the page refresh live.
 1. After making your changes, push or merge your changes back up to the main branch. Your changes will now be reflected on the WWW in a few minutes.
