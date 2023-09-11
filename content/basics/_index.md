@@ -1,7 +1,7 @@
 +++
 archetype = "chapter"
 title = "Basix"
-weight = 1
+weight = 0
 +++
 
 This is some stuff
