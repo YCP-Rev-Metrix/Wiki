@@ -11,6 +11,7 @@ This page was built with the [Hugo](https://gohugo.io/documentation/) framework 
 Every commit to the main branch will trigger a GitHub Action, causing the page to rebuild itself. This takes only a minute or two before the changes are updated. 
 This structure provides a beautiful site, solid uptime, and the ability to even make edits in the GitHub web editor.
 
+---
 ## Editing existing pages
 
 Navigate to the page that you would like edit and select the <i class="fas fa-pen fa-fw"></i> icon in the top right of the page. See [Learning the syntax](/Wiki/documentation/index.html#learning-the-syntax) for more information on making edits. 
