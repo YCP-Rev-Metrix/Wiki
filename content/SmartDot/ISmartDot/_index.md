@@ -3,7 +3,7 @@ title = "ISmartDot Interface"
 weight = 100
 +++
 
-The ISmartDot interface will allow a layer of abstraction between the Application and the SmartDot or SmartDotSimulator.
+The ISmartDot interface will allow a layer of abstraction between the Application and the SmartDot or SmartDotSimulator.<!--more-->
 The sole function of this interface is to allow reading and writing from pages of memory stored on the SmartDot.
 As such, the interface will only have two functions, read & write.
 
