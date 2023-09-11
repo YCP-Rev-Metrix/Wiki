@@ -11,6 +11,7 @@ home = [ "HTML", "RSS", "SEARCH", "SEARCHPAGE"]
 disableLandingPageButton = true
 themeVariant = "zen-dark"
 collapsibleMenu = true
+editURL = "X/"
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub Organization"
