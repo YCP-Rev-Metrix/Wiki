@@ -1,1 +1,1 @@
-[# Wiki](https://ycp-rev-metrix.github.io/Wiki/)
+[Wiki](https://ycp-rev-metrix.github.io/Wiki/)
