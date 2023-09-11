@@ -3,11 +3,11 @@ title = "Contributing Documentation"
 weight = 100
 +++
 
-Contributing documentation is pretty straight forward, follow this basic guide to learn how.
+Contributing documentation is pretty straightforward, follow this basic guide to learn how.
 
 ## A brief history
 This page was built with the [Hugo](https://gohugo.io/documentation/) framework & static site generator using the [Relearn theme](https://mcshelby.github.io/hugo-theme-relearn/) and hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages).
-Every commit to the main branch, will trigger a GitHub Action, causing the page to rebuild itself, this takes only a minute or two before the changes are updated. 
+Every commit to the main branch will trigger a GitHub Action, causing the page to rebuild itself. This takes only a minute or two before the changes are updated. 
 This structure provides a beautiful site, solid uptime, and the ability to even make edits in the GitHub web editor.
 
 ## Editing existing pages
@@ -27,13 +27,13 @@ This structure provides a beautiful site, solid uptime, and the ability to even 
 ---
 ## Learning the syntax
 
-The syntax used here can be as simple Markdown (Discord uses this), however may get more advanced if you want something fancy.
+The syntax used here can be as simple as Markdown (Discord uses this), however, may get more advanced if you want something fancy.
 
 The following two guides are excellent sources for learning Markdown:
 - [Relearn Theme Docs](https://mcshelby.github.io/hugo-theme-relearn/cont/markdown/index.html)
 - [Markdown Docs](https://commonmark.org/help/)
 
-This framework also allows the use of HTML code instead of Markdown, however Shortcodes may be better suited to what you want to do.
+This framework also allows the use of HTML code instead of Markdown, however, Shortcodes may be better suited to what you want to do.
 
 The following two references may help you learn the Shortcodes that may be used:
 - [Relearn Shortcodes](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/index.html)
@@ -42,7 +42,7 @@ The following two references may help you learn the Shortcodes that may be used:
 ---
 ## Making local edits
 
-In order to make local edits on your own machine, we will need to follow a couple steps:
+In order to make local edits on your own machine, we will need to follow a couple of steps:
 1. [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you do not already have it
 1. [Install Hugo](https://gohugo.io/installation/) (Extended edition)
 1. [Install Go](https://go.dev/doc/install)
