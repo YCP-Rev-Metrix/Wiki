@@ -3,4 +3,4 @@ title = "Initial Project Status"
 weight = 100
 +++
 
-{{% children description="true" %}}
+{{% children containerstyle="ul" style="li" sort="title" description="true" %}}

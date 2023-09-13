@@ -1,6 +1,7 @@
 +++
 title = "Database Architecture"
 weight = 100
+description = 'UML diagrams representing the initial database architecture and schemas'
 +++
 
 ## Architecture
