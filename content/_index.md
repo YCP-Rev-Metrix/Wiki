@@ -8,5 +8,5 @@ disableToc=true
  
 ## Quick Links
 - ###### [Contributing Documentation](https://ycp-rev-metrix.github.io/Wiki/documentation/index.html)
-- # [Initial Project Status](https://ycp-rev-metrix.github.io/Wiki/initial-project-status/index.html)
-- ##### [SmartDot](https://ycp-rev-metrix.github.io/Wiki/smartdot/index.html)
+- ###### [Initial Project Status](https://ycp-rev-metrix.github.io/Wiki/initial-project-status/index.html)
+- ###### [SmartDot](https://ycp-rev-metrix.github.io/Wiki/smartdot/index.html)
