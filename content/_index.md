@@ -7,6 +7,6 @@ disableToc=true
 ![Logo](https://YCP-Rev-Metrix.github.io/Wiki/images/logo.png?lightbox=false&height=300px)
  
 ## Quick Links
-![Contributing Documentation](https://ycp-rev-metrix.github.io/Wiki/documentation/index.html)
-![Initial Project Status](https://ycp-rev-metrix.github.io/Wiki/initial-project-status/index.html)
-![SmartDot](https://ycp-rev-metrix.github.io/Wiki/smartdot/index.html)
+- ##### [Contributing Documentation](https://ycp-rev-metrix.github.io/Wiki/documentation/index.html)
+- ##### [Initial Project Status](https://ycp-rev-metrix.github.io/Wiki/initial-project-status/index.html)
+- ##### [SmartDot](https://ycp-rev-metrix.github.io/Wiki/smartdot/index.html)
