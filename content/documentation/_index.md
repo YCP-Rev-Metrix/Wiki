@@ -14,7 +14,7 @@ This structure provides a beautiful site, solid uptime, and the ability to even 
 ---
 ## Editing existing pages
 
-Navigate to the page that you would like edit and select the <i class="fas fa-pen fa-fw"></i> icon in the top right of the page. See [Learning the syntax](/Wiki/documentation/index.html#learning-the-syntax) for more information on making edits. 
+Navigate to the page that you would like edit and select the {{% icon icon="pen" %}} icon in the top right of the page. See [Learning the syntax](/Wiki/documentation/index.html#learning-the-syntax) for more information on making edits. 
 
 ---
 ## Creating new pages & sections
