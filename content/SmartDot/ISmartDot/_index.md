@@ -1,6 +1,7 @@
 +++
 title = "ISmartDot Interface"
 weight = 100
+description = 'Information about the ISmartDot interface'
 +++
 
 The ISmartDot interface will allow a layer of abstraction between the Application and the SmartDot or SmartDotSimulator.<!--more-->
