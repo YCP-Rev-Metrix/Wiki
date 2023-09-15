@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RevMetrix</title>
+    <link>https://YCP-Rev-Metrix.github.io/Wiki/index.html</link>
+    <description>Recent content on RevMetrix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current Project Status</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/index.html</guid>
+      <description>Backend Development - Current StateAll details about the current state of the backend development, along with what is planned for the future
+Frontend Development - Current StateAll details about the current state of the frontend development, along with what is planned for the future
+Simulation Development - Current StateAll details about the current state of simulation development, along with what is planned for the future</description>
+    </item>
+    <item>
+      <title>How To Contribute</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/index.html</guid>
+      <description>Contributing DocumentationHow to add, edit, and remove documentation
+Frontend WorkflowHow to clone the frontend repository and make changes
+Simulation WorkflowHow to clone the simulation repository and make changes in Unity</description>
+    </item>
+    <item>
+      <title>Initial Project Status</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/index.html</guid>
+      <description>Backend - Database ArchitectureUML diagrams representing the initial database architecture and schemas
+Phone App - Proof of ConceptDrawing board ideas for the layout and interaction methods of the phone application
+Simulation - First ThoughtsThe base ideas around using Unity for the development of a bowling simulation</description>
+    </item>
+    <item>
+      <title>SmartDot</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/smartdot/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/smartdot/index.html</guid>
+      <description>ISmartDot InterfaceInformation about the ISmartDot interface
+SmartDot HardwareInformation about the SmartDot hardware</description>
+    </item>
+  </channel>
+</rss>
