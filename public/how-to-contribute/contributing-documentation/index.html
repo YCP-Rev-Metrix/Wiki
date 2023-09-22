@@ -5,23 +5,23 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.118.2">
     <meta name="generator" content="Relearn 5.20.0+tip">
-    <meta name="description" content="How to add, edit, and remove documentation">
+    <meta name="description" content="How to add, edit, and remove documentation on the Wiki">
     <title>Contributing Documentation :: RevMetrix</title>
     <link href="/Wiki/how-to-contribute/contributing-documentation/index.xml" rel="alternate" type="application/rss+xml" title="Contributing Documentation :: RevMetrix">
-    <link href="/Wiki/images/favicon.png?1694803513" rel="icon" type="image/png">
+    <link href="/Wiki/images/favicon.png?1695341444" rel="icon" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Wiki/css/fontawesome-all.min.css?1694803513" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fontawesome-all.min.css?1694803513" rel="stylesheet"></noscript>
-    <link href="/Wiki/css/nucleus.css?1694803513" rel="stylesheet">
-    <link href="/Wiki/css/auto-complete.css?1694803513" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/auto-complete.css?1694803513" rel="stylesheet"></noscript>
-    <link href="/Wiki/css/perfect-scrollbar.min.css?1694803513" rel="stylesheet">
-    <link href="/Wiki/css/fonts.css?1694803513" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fonts.css?1694803513" rel="stylesheet"></noscript>
-    <link href="/Wiki/css/theme.css?1694803513" rel="stylesheet">
-    <link href="/Wiki/css/theme-zen-dark.css?1694803513" rel="stylesheet" id="variant-style">
-    <link href="/Wiki/css/variant.css?1694803513" rel="stylesheet">
-    <link href="/Wiki/css/print.css?1694803513" rel="stylesheet" media="print">
-    <link href="/Wiki/css/ie.css?1694803513" rel="stylesheet">
-    <script src="/Wiki/js/url.js?1694803513"></script>
-    <script src="/Wiki/js/variant.js?1694803513"></script>
+    <link href="/Wiki/css/fontawesome-all.min.css?1695341444" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fontawesome-all.min.css?1695341444" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/nucleus.css?1695341444" rel="stylesheet">
+    <link href="/Wiki/css/auto-complete.css?1695341444" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/auto-complete.css?1695341444" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/perfect-scrollbar.min.css?1695341444" rel="stylesheet">
+    <link href="/Wiki/css/fonts.css?1695341444" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fonts.css?1695341444" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/theme.css?1695341444" rel="stylesheet">
+    <link href="/Wiki/css/theme-zen-dark.css?1695341444" rel="stylesheet" id="variant-style">
+    <link href="/Wiki/css/variant.css?1695341444" rel="stylesheet">
+    <link href="/Wiki/css/print.css?1695341444" rel="stylesheet" media="print">
+    <link href="/Wiki/css/ie.css?1695341444" rel="stylesheet">
+    <script src="/Wiki/js/url.js?1695341444"></script>
+    <script src="/Wiki/js/variant.js?1695341444"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -47,7 +47,7 @@
       <nav id="topbar" class="highlightable">
         <div>
           <div class="navigation">
-            <a class="nav nav-next topbar-link" href="/Wiki/how-to-contribute/frontend-workflow/index.html" title="Frontend Workflow (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+            <a class="nav nav-next topbar-link" href="/Wiki/how-to-contribute/frontend-workflow/index.html" title="Frontend Github Workflow (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
           </div>
           <div class="navigation">
             <a class="nav nav-prev topbar-link" href="/Wiki/how-to-contribute/index.html" title="How To Contribute (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
@@ -71,11 +71,15 @@
           <div class="default-animation progress">
             <div class="toc-wrapper"><nav id="TableOfContents">
   <ul>
-    <li><a href="#a-brief-history">A brief history</a></li>
-    <li><a href="#editing-existing-pages">Editing existing pages</a></li>
-    <li><a href="#creating-new-pages--sections">Creating new pages &amp; sections</a></li>
-    <li><a href="#learning-the-syntax">Learning the syntax</a></li>
-    <li><a href="#making-local-edits">Making local edits</a></li>
+    <li>
+      <ul>
+        <li><a href="#a-brief-history">A brief history</a></li>
+        <li><a href="#editing-existing-pages">Editing existing pages</a></li>
+        <li><a href="#creating-new-pages--sections">Creating new pages &amp; sections</a></li>
+        <li><a href="#learning-the-syntax">Learning the syntax</a></li>
+        <li><a href="#making-local-edits">Making local edits</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
             </div>
@@ -90,20 +94,20 @@
 <h1 id="contributing-documentation">Contributing Documentation</h1>
 
 <p>Contributing documentation is pretty straightforward, follow this basic guide to learn how.</p>
-<h2 id="a-brief-history">A brief history</h2>
+<h3 id="a-brief-history">A brief history</h3>
 <p>This page was built with the <a href="https://gohugo.io/documentation/" target="_blank">Hugo</a> framework &amp; static site generator using the <a href="https://mcshelby.github.io/hugo-theme-relearn/" target="_blank">Relearn theme</a> and hosted on <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages" target="_blank">GitHub Pages</a>.
 Every commit to the main branch will trigger a GitHub Action, causing the page to rebuild itself. This takes only a minute or two before the changes are updated.
 This structure provides a beautiful site, solid uptime, and the ability to even make edits in the GitHub web editor.</p>
 <hr>
-<h2 id="editing-existing-pages">Editing existing pages</h2>
-<p>Navigate to the page that you would like edit and select the <i class="fa-fw fas fa-pen"></i> icon in the top right of the page. See <a href="/Wiki/documentation/index.html#learning-the-syntax">Learning the syntax</a> for more information on making edits.</p>
+<h3 id="editing-existing-pages">Editing existing pages</h3>
+<p>Navigate to the page that you would like edit and select the <i class="fa-fw fas fa-pen"></i> icon in the top right of the page. See <a href="https://ycp-rev-metrix.github.io/Wiki/how-to-contribute/contributing-documentation/index.html#learning-the-syntax" target="_blank">Learning the syntax</a> for more information on making edits.</p>
 <hr>
-<h2 id="creating-new-pages--sections">Creating new pages &amp; sections</h2>
+<h3 id="creating-new-pages--sections">Creating new pages &amp; sections</h3>
 <p>Create a new folder, named whatever you want inside of content/&lt;desired location&gt;. Create a new file here named _index.md, this file will contain your page&rsquo;s content.
 If sub-pages are desired, add a new file titled &lt;filename.md&gt; inside of your newest folder.
 See <a href="https://mcshelby.github.io/hugo-theme-relearn/cont/pages/index.html" target="_blank">Relearn Theme Docs</a> for better documentation.</p>
 <hr>
-<h2 id="learning-the-syntax">Learning the syntax</h2>
+<h3 id="learning-the-syntax">Learning the syntax</h3>
 <p>The syntax used here can be as simple as Markdown (Discord uses this), however, may get more advanced if you want something fancy.</p>
 <p>The following two guides are excellent sources for learning Markdown:</p>
 <ul>
@@ -117,7 +121,7 @@ See <a href="https://mcshelby.github.io/hugo-theme-relearn/cont/pages/index.html
 <li><a href="https://gohugo.io/content-management/shortcodes/" target="_blank">Hugo Shortcodes</a></li>
 </ul>
 <hr>
-<h2 id="making-local-edits">Making local edits</h2>
+<h3 id="making-local-edits">Making local edits</h3>
 <p>In order to make local edits on your own machine, we will need to follow a couple of steps:</p>
 <ol>
 <li><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Install Git</a> if you do not already have it</li>
@@ -156,12 +160,12 @@ See <a href="https://mcshelby.github.io/hugo-theme-relearn/cont/pages/index.html
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Wiki/js/auto-complete.js?1694803513" defer></script>
-        <script src="/Wiki/js/lunr/lunr.min.js?1694803513" defer></script>
-        <script src="/Wiki/js/lunr/lunr.stemmer.support.min.js?1694803513" defer></script>
-        <script src="/Wiki/js/lunr/lunr.multi.min.js?1694803513" defer></script>
-        <script src="/Wiki/js/lunr/lunr.en.min.js?1694803513" defer></script>
-        <script src="/Wiki/js/search.js?1694803513" defer></script>
+        <script src="/Wiki/js/auto-complete.js?1695341444" defer></script>
+        <script src="/Wiki/js/lunr/lunr.min.js?1695341444" defer></script>
+        <script src="/Wiki/js/lunr/lunr.stemmer.support.min.js?1695341444" defer></script>
+        <script src="/Wiki/js/lunr/lunr.multi.min.js?1695341444" defer></script>
+        <script src="/Wiki/js/lunr/lunr.en.min.js?1695341444" defer></script>
+        <script src="/Wiki/js/search.js?1695341444" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <hr class="padding">
@@ -170,27 +174,29 @@ See <a href="https://mcshelby.github.io/hugo-theme-relearn/cont/pages/index.html
         <div id="topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/Wiki/current-project-status/index.html" class=""><input type="checkbox" id="section-7bba0f877bfe5be5d28ee427117d913e" aria-controls="subsections-7bba0f877bfe5be5d28ee427117d913e"><label for="section-7bba0f877bfe5be5d28ee427117d913e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current Project Status</span></label><a class="padding" href="/Wiki/current-project-status/index.html">Current Project Status</a><ul id="subsections-7bba0f877bfe5be5d28ee427117d913e" class="morespace collapsible-menu">
-          <li data-nav-id="/Wiki/current-project-status/backend/index.html" class=""><a class="padding" href="/Wiki/current-project-status/backend/index.html">Backend Development - Current State</a></li>
-          <li data-nav-id="/Wiki/current-project-status/frontend/index.html" class=""><a class="padding" href="/Wiki/current-project-status/frontend/index.html">Frontend Development - Current State</a></li>
-          <li data-nav-id="/Wiki/current-project-status/simulation/index.html" class=""><a class="padding" href="/Wiki/current-project-status/simulation/index.html">Simulation Development - Current State</a></li></ul></li>
+          <li data-nav-id="/Wiki/current-project-status/backend/index.html" class=""><a class="padding" href="/Wiki/current-project-status/backend/index.html">Backend - Current State</a></li>
+          <li data-nav-id="/Wiki/current-project-status/frontend/index.html" class=""><a class="padding" href="/Wiki/current-project-status/frontend/index.html">Frontend - Current State</a></li>
+          <li data-nav-id="/Wiki/current-project-status/revmetrix-diagram/index.html" class=""><a class="padding" href="/Wiki/current-project-status/revmetrix-diagram/index.html">RevMetrix Diagram</a></li>
+          <li data-nav-id="/Wiki/current-project-status/simulation/index.html" class=""><a class="padding" href="/Wiki/current-project-status/simulation/index.html">Simulation - Current State</a></li></ul></li>
           <li data-nav-id="/Wiki/how-to-contribute/index.html" class="parent "><input type="checkbox" id="section-857057f9e0615656cbf861573b1354f6" aria-controls="subsections-857057f9e0615656cbf861573b1354f6" checked><label for="section-857057f9e0615656cbf861573b1354f6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/Wiki/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-857057f9e0615656cbf861573b1354f6" class="morespace collapsible-menu">
           <li data-nav-id="/Wiki/how-to-contribute/contributing-documentation/index.html" class="active"><a class="padding" href="/Wiki/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
-          <li data-nav-id="/Wiki/how-to-contribute/frontend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/frontend-workflow/index.html">Frontend Workflow</a></li>
-          <li data-nav-id="/Wiki/how-to-contribute/simulation-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/simulation-workflow/index.html">Simulation Workflow</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/frontend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/frontend-workflow/index.html">Frontend Github Workflow</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/simulation-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/simulation-workflow/index.html">Simulation Github Workflow</a></li></ul></li>
           <li data-nav-id="/Wiki/initial-project-status/index.html" class=""><input type="checkbox" id="section-947f95f56699d87a57e78c0da1904a9a" aria-controls="subsections-947f95f56699d87a57e78c0da1904a9a"><label for="section-947f95f56699d87a57e78c0da1904a9a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Initial Project Status</span></label><a class="padding" href="/Wiki/initial-project-status/index.html">Initial Project Status</a><ul id="subsections-947f95f56699d87a57e78c0da1904a9a" class="morespace collapsible-menu">
           <li data-nav-id="/Wiki/initial-project-status/initial-database-architecture/index.html" class=""><a class="padding" href="/Wiki/initial-project-status/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
           <li data-nav-id="/Wiki/initial-project-status/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/Wiki/initial-project-status/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
           <li data-nav-id="/Wiki/initial-project-status/simulation-first-thoughts/index.html" class=""><a class="padding" href="/Wiki/initial-project-status/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
           <li data-nav-id="/Wiki/smartdot/index.html" class=""><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5"><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/Wiki/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
           <li data-nav-id="/Wiki/smartdot/ismartdot/index.html" class=""><a class="padding" href="/Wiki/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
-          <li data-nav-id="/Wiki/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li></ul></li>
+          <li data-nav-id="/Wiki/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
           </ul>
         </div>
         <div id="shortcuts">
           <div class="nav-title padding">More</div>
           <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
             <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
-            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fab fa-fw'><img src='/Wiki/static/images/yorklogo.png'</i> RevMetrix Project Page</a></li>
             <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
             <li><a class="padding" href="/Wiki/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
           </ul>
@@ -244,8 +250,8 @@ See <a href="https://mcshelby.github.io/hugo-theme-relearn/cont/pages/index.html
         </div>
       </div>
     </aside>
-    <script src="/Wiki/js/clipboard.min.js?1694803513" defer></script>
-    <script src="/Wiki/js/perfect-scrollbar.min.js?1694803513" defer></script>
-    <script src="/Wiki/js/theme.js?1694803513" defer></script>
+    <script src="/Wiki/js/clipboard.min.js?1695341444" defer></script>
+    <script src="/Wiki/js/perfect-scrollbar.min.js?1695341444" defer></script>
+    <script src="/Wiki/js/theme.js?1695341444" defer></script>
   </body>
 </html>

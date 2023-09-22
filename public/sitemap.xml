@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/initial-database-architecture/index.html</loc>
+    <loc>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/backend/index.html</loc>
   </url>
   <url>
-    <loc>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/backend/index.html</loc>
+    <loc>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/initial-database-architecture/index.html</loc>
   </url>
   <url>
     <loc>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/contributing-documentation/index.html</loc>
@@ -31,10 +31,13 @@
     <loc>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/phone-app-proof-of-concept/index.html</loc>
   </url>
   <url>
-    <loc>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/simulation-first-thoughts/index.html</loc>
+    <loc>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/revmetrix-diagram/index.html</loc>
   </url>
   <url>
     <loc>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/simulation/index.html</loc>
+  </url>
+  <url>
+    <loc>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/simulation-first-thoughts/index.html</loc>
   </url>
   <url>
     <loc>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/simulation-workflow/index.html</loc>
@@ -44,6 +47,9 @@
   </url>
   <url>
     <loc>https://YCP-Rev-Metrix.github.io/Wiki/smartdot/smartdothardware/index.html</loc>
+  </url>
+  <url>
+    <loc>https://YCP-Rev-Metrix.github.io/Wiki/smartdot/smartdot-simulator/index.html</loc>
   </url>
   <url>
     <loc>https://YCP-Rev-Metrix.github.io/Wiki/categories/index.html</loc>

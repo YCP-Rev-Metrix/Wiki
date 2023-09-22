@@ -15,18 +15,20 @@
 A brief history This page was built with the Hugo framework &amp;amp; static site generator using the Relearn theme and hosted on GitHub Pages. Every commit to the main branch will trigger a GitHub Action, causing the page to rebuild itself. This takes only a minute or two before the changes are updated. This structure provides a beautiful site, solid uptime, and the ability to even make edits in the GitHub web editor.</description>
     </item>
     <item>
-      <title>Frontend Workflow</title>
+      <title>Frontend Github Workflow</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/frontend-workflow/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/frontend-workflow/index.html</guid>
-      <description></description>
+      <description>Prerequisites Before making any changes or creating a branch, run git pull in your Visual Studo terminal to ensure you have the most recent changes.
+Creating Branch and Editing Type the following into your Visual Studio terminal to create a branch of the Github repository:
+git checkout -b &amp;lt;BRANCHNAME&amp;gt; Once the branch is created, write your code and stage the changes. You will see something similar to the following when your changes are staged:</description>
     </item>
     <item>
-      <title>Simulation Workflow</title>
+      <title>Simulation Github Workflow</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/simulation-workflow/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/simulation-workflow/index.html</guid>
-      <description></description>
+      <description>Making General Changes Swap the current Github branch to the Test branch: Click on the &amp;ldquo;Fetch Origin&amp;rdquo; button for the Test branch: Proceed to make the necessary changes for the Github Issue you are working on Review your changes in Github Desktop: Swap to your personal branch and bring the new changes over Include Github Issue # in the commit subject (i.e. Issue #12, new pin model) Commit your changes Go to the Github repository&amp;rsquo;s website and hit the New Pull Request button Make sure that your source and destination are both correct before creating the pull request This is (test &amp;lt;&amp;ndash; yourUsername) almost always Create pull request, then copy the link into the PR and send to Discord Make sure to tag the @Graphics Dev Team Approving Git Pull Requests Either check the current pull request on Github.</description>
     </item>
   </channel>
 </rss>
