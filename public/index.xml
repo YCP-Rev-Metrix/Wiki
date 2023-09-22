@@ -11,18 +11,19 @@
       <link>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/index.html</guid>
-      <description>Backend Development - Current StateAll details about the current state of the backend development, along with what is planned for the future
-Frontend Development - Current StateAll details about the current state of the frontend development, along with what is planned for the future
-Simulation Development - Current StateAll details about the current state of simulation development, along with what is planned for the future</description>
+      <description>Backend - Current StateAll details about the current state of the backend development, along with what is planned for the future
+Frontend - Current StateAll details about the current state of the frontend development, along with what is planned for the future
+RevMetrix DiagramDiagram of the projects current state
+Simulation - Current StateAll details about the current state of simulation development, along with what is planned for the future</description>
     </item>
     <item>
       <title>How To Contribute</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/index.html</guid>
-      <description>Contributing DocumentationHow to add, edit, and remove documentation
-Frontend WorkflowHow to clone the frontend repository and make changes
-Simulation WorkflowHow to clone the simulation repository and make changes in Unity</description>
+      <description>Contributing DocumentationHow to add, edit, and remove documentation on the Wiki
+Frontend Github WorkflowHow to create a branch of the frontend repository and make changes
+Simulation Github WorkflowHow to create a branch of the simulation repository Test branch and make changes to it</description>
     </item>
     <item>
       <title>Initial Project Status</title>
@@ -39,7 +40,8 @@ Simulation - First ThoughtsThe base ideas around using Unity for the development
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/smartdot/index.html</guid>
       <description>ISmartDot InterfaceInformation about the ISmartDot interface
-SmartDot HardwareInformation about the SmartDot hardware</description>
+SmartDot HardwareInformation about the SmartDot hardware
+SmartDot SimulatorInformation about the SmartDot hardware</description>
     </item>
   </channel>
 </rss>

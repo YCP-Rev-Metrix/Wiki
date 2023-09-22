@@ -8,20 +8,20 @@
     <meta name="description" content="Information about the ISmartDot interface">
     <title>ISmartDot Interface :: RevMetrix</title>
     <link href="/Wiki/smartdot/ismartdot/index.xml" rel="alternate" type="application/rss+xml" title="ISmartDot Interface :: RevMetrix">
-    <link href="/Wiki/images/favicon.png?1694803513" rel="icon" type="image/png">
+    <link href="/Wiki/images/favicon.png?1695341444" rel="icon" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/Wiki/css/fontawesome-all.min.css?1694803513" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fontawesome-all.min.css?1694803513" rel="stylesheet"></noscript>
-    <link href="/Wiki/css/nucleus.css?1694803513" rel="stylesheet">
-    <link href="/Wiki/css/auto-complete.css?1694803513" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/auto-complete.css?1694803513" rel="stylesheet"></noscript>
-    <link href="/Wiki/css/perfect-scrollbar.min.css?1694803513" rel="stylesheet">
-    <link href="/Wiki/css/fonts.css?1694803513" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fonts.css?1694803513" rel="stylesheet"></noscript>
-    <link href="/Wiki/css/theme.css?1694803513" rel="stylesheet">
-    <link href="/Wiki/css/theme-zen-dark.css?1694803513" rel="stylesheet" id="variant-style">
-    <link href="/Wiki/css/variant.css?1694803513" rel="stylesheet">
-    <link href="/Wiki/css/print.css?1694803513" rel="stylesheet" media="print">
-    <link href="/Wiki/css/ie.css?1694803513" rel="stylesheet">
-    <script src="/Wiki/js/url.js?1694803513"></script>
-    <script src="/Wiki/js/variant.js?1694803513"></script>
+    <link href="/Wiki/css/fontawesome-all.min.css?1695341444" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fontawesome-all.min.css?1695341444" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/nucleus.css?1695341444" rel="stylesheet">
+    <link href="/Wiki/css/auto-complete.css?1695341444" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/auto-complete.css?1695341444" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/perfect-scrollbar.min.css?1695341444" rel="stylesheet">
+    <link href="/Wiki/css/fonts.css?1695341444" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fonts.css?1695341444" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/theme.css?1695341444" rel="stylesheet">
+    <link href="/Wiki/css/theme-zen-dark.css?1695341444" rel="stylesheet" id="variant-style">
+    <link href="/Wiki/css/variant.css?1695341444" rel="stylesheet">
+    <link href="/Wiki/css/print.css?1695341444" rel="stylesheet" media="print">
+    <link href="/Wiki/css/ie.css?1695341444" rel="stylesheet">
+    <script src="/Wiki/js/url.js?1695341444"></script>
+    <script src="/Wiki/js/variant.js?1695341444"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -61,11 +61,26 @@
             <span id="sidebar-toggle-span">
               <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
             </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
             <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/smartdot/index.html"><span itemprop="name">SmartDot</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
               <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">ISmartDot Interface</span><meta itemprop="position" content="3"></li>
             </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#ismartdot-interface">ISmartDot interface</a></li>
+        <li><a href="#smartdottransactionresult-enumeration">SmartDotTransactionResult enumeration</a></li>
+        <li><a href="#connectionparameters-class">ConnectionParameters class</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
           </div>
         </div>
       </nav>
@@ -77,32 +92,64 @@
 <h1 id="ismartdot-interface">ISmartDot Interface</h1>
 
 <p>The ISmartDot interface will allow a layer of abstraction between the Application and the SmartDot or SmartDotSimulator.</p>
-<p>The sole function of this interface is to allow reading and writing from pages of memory stored on the SmartDot.
-As such, the interface will only have two functions, read &amp; write.</p>
+<p>The sole function of this interface is to allow reading and writing from pages of memory stored on the SmartDot, and make / maintain connections to the SmartDot hardware.</p>
+<h3 id="ismartdot-interface">ISmartDot interface</h3>
 <div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/// Interface representing the basic functionality of the Bluetooth connection between the mobile application and a SmartDot implementation (Simulator or Hardware)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// Interface representing the basic functionality of the Bluetooth connection between the mobile application and a SmartDot implementation (Simulator &amp; Hardware)</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;/summary&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ISmartDot</span>
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Attempts to create a connection to the SmartDot hardware</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;connectionParameters&#34;&gt;Connection parameters&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;version representing the SmartDot hardware version (APIs use), null if unable to connect&lt;/returns&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;Version?&gt; Connect(ConnectionParameters connectionParameters);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Tests if the connection to the SmartDot hardware is present</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;Boolean representing if there is a connection to SmartDot hardware&lt;/returns&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;<span style="color:#66d9ef">bool</span>&gt; IsConnected();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Asynchronous method to write one page to the SmartDot implementation</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;address&#34;&gt;The page start address in memory&lt;/param&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;data&#34;&gt;Data (byte[]) to write to the SmartDot implementations page (must not exceed page size)&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;buffer&#34;&gt;Data (byte[]) to write to the SmartDot implementations page&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;bytes&#34;&gt;Length of data to write from &lt;paramref name=&#34;buffer&#34;/&gt;&lt;/param&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;A bool representing if call was successful&lt;/returns&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;SmartDotTransactionResult&gt; WriteBytes(<span style="color:#66d9ef">long</span> address, <span style="color:#66d9ef">byte</span>[] data);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;SmartDotTransactionResult&gt; WriteBytes(<span style="color:#66d9ef">long</span> address, <span style="color:#66d9ef">byte</span>[] buffer, <span style="color:#66d9ef">long</span> bytes);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Asynchronous method to read one page from the SmartDot implementation</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;address&#34;&gt;The page start address in memory&lt;/param&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;data&#34;&gt;Ref data (byte[]) read from the SmartDot implementations page (will attempt to fill completely)&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;buffer&#34;&gt;Ref data (byte[]) read from the SmartDot implementations page (will attempt to fill completely)&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;bytes&#34;&gt;Length of data to read into &lt;paramref name=&#34;buffer&#34;/&gt;&lt;/param&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;A bool representing if call was successful&lt;/returns&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;SmartDotTransactionResult&gt; ReadBytes(<span style="color:#66d9ef">long</span> address, <span style="color:#66d9ef">ref</span> <span style="color:#66d9ef">byte</span>[] data);
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;SmartDotTransactionResult&gt; ReadBytes(<span style="color:#66d9ef">long</span> address, <span style="color:#66d9ef">ref</span> <span style="color:#66d9ef">byte</span>[] buffer, <span style="color:#66d9ef">long</span> bytes);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/// Enum representing the transaction result state of a communicaiton with SmartDot hardware</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Sends a command to the SmartDot hardware</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;command&#34;&gt;The string command to send to the SmartDot hardware&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;Result from the command execution on the SmartDot hardware&lt;/returns&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;<span style="color:#66d9ef">string</span>&gt; OutgoingSmartDotCommand(<span style="color:#66d9ef">string</span> command);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Invokes &lt;see cref=&#34;IncomingSmartDotCommandCallback&#34;/&gt;. Should be executed only from the implementor.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;command&#34;&gt;String command called from SmartDot hardware&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> RaiseIncomingSmartDotCommand(<span style="color:#66d9ef">string</span> command) =&gt; IncomingSmartDotCommandCallback?.Invoke(command);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Incoming command callback (from SmartDot hardware). Signals from the SmartDot hardware that something important happened.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Action&lt;<span style="color:#66d9ef">string</span>&gt;? IncomingSmartDotCommandCallback { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="smartdottransactionresult-enumeration">SmartDotTransactionResult enumeration</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// Enum representing the transaction result state of a communication with SmartDot hardware</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;/summary&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">enum</span> SmartDotTransactionResult : <span style="color:#66d9ef">byte</span>
 </span></span><span style="display:flex;"><span>{
@@ -122,7 +169,7 @@ As such, the interface will only have two functions, read &amp; write.</p>
 </span></span><span style="display:flex;"><span>    FAILURE_PERMISSION_ERROR,
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// SmartDot transaction failed - device diconnected</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// SmartDot transaction failed - device disconnected</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
 </span></span><span style="display:flex;"><span>    FAILURE_DISCONNECTED,
 </span></span><span style="display:flex;"><span>
@@ -130,6 +177,13 @@ As such, the interface will only have two functions, read &amp; write.</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// SmartDot transaction failed - data corruption</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
 </span></span><span style="display:flex;"><span>    FAILURE_DATA_CORRUPTION
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="connectionparameters-class">ConnectionParameters class</h3>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// Parameters necessary to successfully connect to the correct SmartDot hardware</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ConnectionParameters</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>The SmartDotAPI will be responsible for interpreting data sent and received from an ISmartDot interface implementor by accessing the version # on the first memory page.</p>
             <footer class="footline">
 
@@ -156,12 +210,12 @@ As such, the interface will only have two functions, read &amp; write.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/Wiki/js/auto-complete.js?1694803513" defer></script>
-        <script src="/Wiki/js/lunr/lunr.min.js?1694803513" defer></script>
-        <script src="/Wiki/js/lunr/lunr.stemmer.support.min.js?1694803513" defer></script>
-        <script src="/Wiki/js/lunr/lunr.multi.min.js?1694803513" defer></script>
-        <script src="/Wiki/js/lunr/lunr.en.min.js?1694803513" defer></script>
-        <script src="/Wiki/js/search.js?1694803513" defer></script>
+        <script src="/Wiki/js/auto-complete.js?1695341444" defer></script>
+        <script src="/Wiki/js/lunr/lunr.min.js?1695341444" defer></script>
+        <script src="/Wiki/js/lunr/lunr.stemmer.support.min.js?1695341444" defer></script>
+        <script src="/Wiki/js/lunr/lunr.multi.min.js?1695341444" defer></script>
+        <script src="/Wiki/js/lunr/lunr.en.min.js?1695341444" defer></script>
+        <script src="/Wiki/js/search.js?1695341444" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <hr class="padding">
@@ -170,27 +224,29 @@ As such, the interface will only have two functions, read &amp; write.</p>
         <div id="topics">
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/Wiki/current-project-status/index.html" class=""><input type="checkbox" id="section-7bba0f877bfe5be5d28ee427117d913e" aria-controls="subsections-7bba0f877bfe5be5d28ee427117d913e"><label for="section-7bba0f877bfe5be5d28ee427117d913e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current Project Status</span></label><a class="padding" href="/Wiki/current-project-status/index.html">Current Project Status</a><ul id="subsections-7bba0f877bfe5be5d28ee427117d913e" class="morespace collapsible-menu">
-          <li data-nav-id="/Wiki/current-project-status/backend/index.html" class=""><a class="padding" href="/Wiki/current-project-status/backend/index.html">Backend Development - Current State</a></li>
-          <li data-nav-id="/Wiki/current-project-status/frontend/index.html" class=""><a class="padding" href="/Wiki/current-project-status/frontend/index.html">Frontend Development - Current State</a></li>
-          <li data-nav-id="/Wiki/current-project-status/simulation/index.html" class=""><a class="padding" href="/Wiki/current-project-status/simulation/index.html">Simulation Development - Current State</a></li></ul></li>
+          <li data-nav-id="/Wiki/current-project-status/backend/index.html" class=""><a class="padding" href="/Wiki/current-project-status/backend/index.html">Backend - Current State</a></li>
+          <li data-nav-id="/Wiki/current-project-status/frontend/index.html" class=""><a class="padding" href="/Wiki/current-project-status/frontend/index.html">Frontend - Current State</a></li>
+          <li data-nav-id="/Wiki/current-project-status/revmetrix-diagram/index.html" class=""><a class="padding" href="/Wiki/current-project-status/revmetrix-diagram/index.html">RevMetrix Diagram</a></li>
+          <li data-nav-id="/Wiki/current-project-status/simulation/index.html" class=""><a class="padding" href="/Wiki/current-project-status/simulation/index.html">Simulation - Current State</a></li></ul></li>
           <li data-nav-id="/Wiki/how-to-contribute/index.html" class=""><input type="checkbox" id="section-857057f9e0615656cbf861573b1354f6" aria-controls="subsections-857057f9e0615656cbf861573b1354f6"><label for="section-857057f9e0615656cbf861573b1354f6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/Wiki/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-857057f9e0615656cbf861573b1354f6" class="morespace collapsible-menu">
           <li data-nav-id="/Wiki/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
-          <li data-nav-id="/Wiki/how-to-contribute/frontend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/frontend-workflow/index.html">Frontend Workflow</a></li>
-          <li data-nav-id="/Wiki/how-to-contribute/simulation-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/simulation-workflow/index.html">Simulation Workflow</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/frontend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/frontend-workflow/index.html">Frontend Github Workflow</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/simulation-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/simulation-workflow/index.html">Simulation Github Workflow</a></li></ul></li>
           <li data-nav-id="/Wiki/initial-project-status/index.html" class=""><input type="checkbox" id="section-947f95f56699d87a57e78c0da1904a9a" aria-controls="subsections-947f95f56699d87a57e78c0da1904a9a"><label for="section-947f95f56699d87a57e78c0da1904a9a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Initial Project Status</span></label><a class="padding" href="/Wiki/initial-project-status/index.html">Initial Project Status</a><ul id="subsections-947f95f56699d87a57e78c0da1904a9a" class="morespace collapsible-menu">
           <li data-nav-id="/Wiki/initial-project-status/initial-database-architecture/index.html" class=""><a class="padding" href="/Wiki/initial-project-status/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
           <li data-nav-id="/Wiki/initial-project-status/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/Wiki/initial-project-status/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
           <li data-nav-id="/Wiki/initial-project-status/simulation-first-thoughts/index.html" class=""><a class="padding" href="/Wiki/initial-project-status/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
           <li data-nav-id="/Wiki/smartdot/index.html" class="parent "><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5" checked><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/Wiki/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
           <li data-nav-id="/Wiki/smartdot/ismartdot/index.html" class="active"><a class="padding" href="/Wiki/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
-          <li data-nav-id="/Wiki/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li></ul></li>
+          <li data-nav-id="/Wiki/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
           </ul>
         </div>
         <div id="shortcuts">
           <div class="nav-title padding">More</div>
           <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
             <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
-            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fab fa-fw'><img src='/Wiki/static/images/yorklogo.png'</i> RevMetrix Project Page</a></li>
             <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
             <li><a class="padding" href="/Wiki/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
           </ul>
@@ -244,8 +300,8 @@ As such, the interface will only have two functions, read &amp; write.</p>
         </div>
       </div>
     </aside>
-    <script src="/Wiki/js/clipboard.min.js?1694803513" defer></script>
-    <script src="/Wiki/js/perfect-scrollbar.min.js?1694803513" defer></script>
-    <script src="/Wiki/js/theme.js?1694803513" defer></script>
+    <script src="/Wiki/js/clipboard.min.js?1695341444" defer></script>
+    <script src="/Wiki/js/perfect-scrollbar.min.js?1695341444" defer></script>
+    <script src="/Wiki/js/theme.js?1695341444" defer></script>
   </body>
 </html>
