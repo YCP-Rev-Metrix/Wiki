@@ -9,5 +9,6 @@ disableToc=true
 ## Quick Links
  - [How to contribute](/Wiki/how-to-contribute/index.html)
  - [Initial Project Status](/Wiki/initial-project-status/index.html)
+ - [Project Milestones](/Wiki/project-milestones/index.html)
  - [Current state of RevMetrix](/Wiki/current-project-status/index.html)
  - [SmartDot](/Wiki/smartdot/index.html)

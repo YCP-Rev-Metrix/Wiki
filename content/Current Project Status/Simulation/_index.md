@@ -6,10 +6,14 @@ description = 'All details about the current state of simulation development, al
 
 ### Progress of Simulation Development
 
-##### Lane Setup with Texturing
-| ![Textured Lane](laneTexture.png?width=40vw&lightbox=false) | 
+##### Simulation Architecture
+| ![Architecture](SimArchitecture.png?width=40vw&lightbox=false) | 
 |:--:| 
 
-#### UML Diagram of Simulation Structure
-| ![Textured Lane](Sim_UML.png?width=40vw&lightbox=false) | 
+##### Simulation Dataflow
+| ![Dataflow](SimDataflow.png?width=40vw&lightbox=false) | 
+|:--:| 
+
+##### Lane Setup with Texturing
+| ![Textured Lane](laneTexture.png?width=40vw&lightbox=false) | 
 |:--:| 
