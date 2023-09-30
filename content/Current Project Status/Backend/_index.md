@@ -22,3 +22,4 @@ Below are the most recently updated reworkings of the project's database schemas
 #### User Database Schema (Cloud Server)
 | ![User Database](UserDatabase.png?width=30vw&lightbox=false) |
 |:--:|
+
