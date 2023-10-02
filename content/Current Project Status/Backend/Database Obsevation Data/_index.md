@@ -1,10 +1,10 @@
 +++
-title = "Database Obsevation Data"
+title = "Database Observation Data"
 weight = 100
 description = 'All details about the testing for databases'
 +++
 
-###### Here is all the data collected to stress test different Databases below: 
+###### Below is all of the data collected the stress testing of different database engines: 
 
 
 #### User Table for Large Amounts of Data
