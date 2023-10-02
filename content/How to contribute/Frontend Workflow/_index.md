@@ -14,7 +14,7 @@ Type the following into your Visual Studio terminal to create a branch of the Gi
 
 Once the branch is created, write your code and stage the changes. You will see something similar to the following when your changes are staged:
 
-![](staging.png?width=20vw&lightbox=false)
+![](staging.png?width=25vw&lightbox=false)
 
 ---
 ### Commit Changes

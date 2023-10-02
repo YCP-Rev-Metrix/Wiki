@@ -4,13 +4,30 @@ weight = 100
 description = 'All details about the testing for databases'
 +++
 
+###### Here is all the data collected to stress test different Databases below: 
+
+
 #### User Table for Large Amounts of Data
-| ![User Table for Large Amounts of Data](UserTableForLargeData.png?lightbox=false&height=200px)|
+The Databases orginally tested were PostgreSQL, MySQL, and MongoDB.
+| ![](UserTableForLargeData.png?width=40vw&lightbox=false) |
 |:--:|
+
+MongoDB was dropped as one of the candidates for our database.
+
 
 #### Adding a Single Row
-| ![User Table for Large Amounts of Data](AddingSingleRow.png?lightbox=false&height=200px)|
+| ![User Table for Large Amounts of Data](AddingSingleRow.png?width=35vw&lightbox=false)|
 |:--:|
 
-### Database Obsevation Data Excel Sheet 
-Below is the data of the testing for the candidate languages listed below can be seen in the [RevMetrix Obsevation Data Excel Sheet](DatabaseObservationData.xlsx) or on the RevMetrix Drive. List includes MongoDB, MySQL, PostgreSQL, and SQLserver.
+#### SQL Server 
+| ![User Table for Large Amounts of Data](SQLServer.png?width=100vw&lightbox=false)|
+|:--:|
+
+#### PostgreSQL vs MySQL
+| ![User Table for Large Amounts of Data](PostgreSQLvsMySQL.png?width=100vw&lightbox=false)|
+|:--:|
+
+#### Delete, Update, and Adding for PostgreSQL & MySQL
+| ![User Table for Large Amounts of Data](DeleteUpdateAdding.png?width=50vw&lightbox=false)|
+|:--:|
+
