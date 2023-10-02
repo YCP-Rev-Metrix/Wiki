@@ -19,5 +19,6 @@ description = 'Drawing board ideas for the layout and interaction methods of the
 
 -[Xamarin Advanced Data Binding Documentation](https://learn.microsoft.com/en-us/dotnet/maui/xaml/fundamentals/mvvm)
 
-## Initial Design
-![PhoneAppPOC](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/01c9b814-a674-401b-bb28-fde271ce96dc)
+## Initial Proof of Concept - Mobile Application
+| ![PhoneAppPOC](FrontendProofOfConcept.png?width=30vw&lightbox=false) | 
+|:--:| 
