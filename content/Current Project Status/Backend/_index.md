@@ -4,10 +4,14 @@ weight = 100
 description = 'All details about the current state of the backend development, along with what is planned for the future'
 +++
 
-{{% children containerstyle="ul" style="li" sort="title" description="true" %}}
+### Progress of Backend Development
 
-#### Backend Architecture
-| ![Backend Architecture](BackendArchitecture.png?width=25vw&lightbox=false&text-align=left)|
+#### Backend Architecture - Highlight
+| ![Backend in Overall Architecture](BackendHighlight.png?width=60vw&lightbox=false&text-align=left)|
+|:--:|
+
+#### Backend Architecture - Condensed
+| ![Backend Architecture](BackendArchitecture.png?width=50vw&lightbox=false&text-align=left)|
 |:--:|
 
 ### Updated Database Schemas
@@ -25,3 +29,5 @@ Below are the most recently updated reworkings of the project's database schemas
 | ![User Database](UserDatabase.png?width=30vw&lightbox=false) |
 |:--:|
 
+#### Results of database stress testing can be seen at the link below
+{{% children containerstyle="ul" style="li" sort="title" description="true" %}}

@@ -5,7 +5,11 @@ description = 'The current status of each aspect of the project and what is to c
 +++
 
 ##### RevMetrix System Architecture
-| ![RevMetrix Diagram](OverallSystemArchitecture.png?width=50vw&lightbox=false) | 
+| ![RevMetrix Diagram](OverallSystemArchitecture.png?width=60vw&lightbox=false) | 
+|:--:| 
+
+#### System Architecture by Sub-Team
+| ![RevMetrix Diagram by Team](OverallHighlight.png?width=60vw&lightbox=false) | 
 |:--:| 
 
 ##### Current Status by Development Type
