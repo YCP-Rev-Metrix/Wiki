@@ -14,6 +14,11 @@ description = 'All details about the current state of the frontend development, 
 | ![Frontend Architecture](FrontendArchitecture.png?width=50vw&lightbox=false) | 
 |:--:| 
 
+#### Frontend UML Diagrams
+| ![Frontend Architecture](MobileAppUML.jpg?width=50vw&lightbox=false) | 
+|:--:| 
+
+
 ##### Screen Layouts
-| ![RevMetrix Diagram](FrontendUIDesign.png?width=50vw&lightbox=false) | 
+| ![RevMetrix Diagram](FrontendUI.jpg?width=50vw&lightbox=false) | 
 |:--:| 

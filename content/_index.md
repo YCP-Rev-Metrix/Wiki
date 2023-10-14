@@ -12,3 +12,4 @@ disableToc=true
  - [Project Milestones](/Wiki/project-milestones/index.html)
  - [Current state of RevMetrix](/Wiki/current-project-status/index.html)
  - [SmartDot](/Wiki/smartdot/index.html)
+ - [Terms](/Wiki/Terms/index.html)
