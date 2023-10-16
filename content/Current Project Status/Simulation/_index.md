@@ -6,24 +6,28 @@ description = 'All details about the current state of simulation development, al
 
 ### Progress of Simulation Development
 
-#### Simulation Architecture - Highlight
-| ![Backend in Overall Architecture](SimHighlight.png?width=60vw&lightbox=false&text-align=left)|
-|:--:|
-
-##### Simulation Architecture - Condensed
-| ![Architecture](SimArchitecture.png?width=50vw&lightbox=false) | 
+##### Simulation Architecture
+| ![Architecture](SimArc.png?width=40vw&lightbox=false) | 
 |:--:| 
 
 ##### Simulation Dataflow
-| ![Dataflow](SimDataflow.png?width=40vw&lightbox=false) | 
+| ![Dataflow](SimDF.png?width=30vw&lightbox=false) | 
 |:--:| 
 
-##### Simulation Unity Visualizer UML  
-| ![UML](SimulationUML.jpg?width=40vw&lightbox=false) | 
+##### SmartDot Simulator Illustration
+| ![SD Sim](SDSim.jpg?width=40vw&lightbox=false) | 
 |:--:| 
 
-##### Lane Setup with Texturing
-| ![Textured Lane](laneTexture.png?width=40vw&lightbox=false) | 
+##### Textured Lane and Gutters Setup
+| ![Textured Lane with Gutters](Lane_and_Gutters.png?width=40vw&lightbox=false) | 
+|:--:| 
+
+##### Lane Reset Visual
+| ![Lane Reset](LaneReset.png?width=40vw&lightbox=false) | 
+|:--:| 
+
+##### Pinsetter Development Preview
+| ![Pinsetter](PinSetterStart.png?width=40vw&lightbox=false) | 
 |:--:| 
 
 ### Links

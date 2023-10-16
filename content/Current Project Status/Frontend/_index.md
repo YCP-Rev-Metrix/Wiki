@@ -6,19 +6,17 @@ description = 'All details about the current state of the frontend development, 
 
 ### Progress of Frontend Development
 
-#### Frontend Architecture - Highlight
-| ![Frontend in Overall Architecture](FrontendHighlight.png?width=60vw&lightbox=false&text-align=left)|
-|:--:|
-
-#### Frontend Architecture - Condensed
-| ![Frontend Architecture](FrontendArchitecture.png?width=50vw&lightbox=false) | 
+#### Frontend Architecture
+| ![Frontend Architecture](FrontendArc.png?width=40vw&lightbox=false) | 
 |:--:| 
 
-#### Frontend UML Diagrams
-| ![Frontend Architecture](MobileAppUML.jpg?width=50vw&lightbox=false) | 
+#### Frontend User Interface Wireframes
+| ![Wireframe set 1](FrontendUIDesign.png?width=40vw&lightbox=false) | 
 |:--:| 
 
+| ![Wireframe set 2](FrontendUI.jpg?width=50vw&lightbox=false) | 
+|:--:| 
 
-##### Screen Layouts
-| ![RevMetrix Diagram](FrontendUI.jpg?width=50vw&lightbox=false) | 
+##### Local Testing Database Schema
+| ![Local DB](LocalDB.jpg?width=30vw&lightbox=false) | 
 |:--:| 

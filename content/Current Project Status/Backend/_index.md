@@ -6,12 +6,8 @@ description = 'All details about the current state of the backend development, a
 
 ### Progress of Backend Development
 
-#### Backend Architecture - Highlight
-| ![Backend in Overall Architecture](BackendHighlight.png?width=60vw&lightbox=false&text-align=left)|
-|:--:|
-
-#### Backend Architecture - Condensed
-| ![Backend Architecture](BackendArchitecture.png?width=50vw&lightbox=false&text-align=left)|
+#### Backend Architecture
+| ![Backend Architecture](BackendArc.png?width=40vw&lightbox=false&text-align=left)|
 |:--:|
 
 ### Updated Database Schemas

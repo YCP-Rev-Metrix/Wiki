@@ -1,0 +1,25 @@
++++
+title = "Frontend Requirements"
+weight = 100
+description = 'Project requirements specific to the frontend development'
++++
+
+| Theo Bloomquist, Thomas Bywaters, Michael Hensel, John Kettula, Liz Mains |
+|:-:|
+
+### Frontend Wireframes
+| ![Frontend UI](FrontendUI.png?width=40vw&lightbox=false) | 
+|:--:|
+
+### Minimal Working System
+Frontend Team’s role is to create a mobile app that is able to facilitate communication between what is developed by both the Graphics and Backend teams. The minimal working system will consist of an interface that allows for user input and displays user-specific data in response. This will also include the framework for communicating with the Graphics and Backend teams, to be fully implemented later on, this also includes Bluetooth functionality. There will also be camera and camera roll access to later be used to analyze a bowler's throw. 
+#### Issues
+Communication between all the moving pieces is a crucial part of the application, however, transmission of graphical data can be incredibly difficult due to its size, which may result in increased latency affecting the user of the mobile application. Along with this, figuring out the specifics of Bluetooth integration will be specific to the output of the chip installed into the bowling ball, meaning it will have to be developed around the hardware-implemented into the chip. Connecting to a device requires specific information to be known, which may be difficult to gather from a simple prototype chip. Bluetooth integration for cross-platform devices is going to be another challenge because Android and iOS have different permission systems.
+### 50% Working System
+Implementation of a new user-input interface that allows the user to manage (through creation, deletion, and editing) a list of bowling balls that each have data respective to their real-life values as well as associated Bluetooth IDs. Along with this, enhancements should be made to the communication framework between the mobile application and what is developed by the Backend and Graphics teams to decrease latency and improve end-user experience. Along with this the phone application will have newly implemented functionality that allows for a video to be pulled in from an end-user’s device, this will serve as a proof of concept for further image processing, which will take user video and convert it into positional data.
+#### Issues 
+Potential issues that we could run into with this milestone are the creation/deletion/editing of a list of bowling balls. The main challenge will be the organization of bowling balls by the user and implementing the local database into the app. This is because the process of adding a bowling ball into the database will span across two communication processes. The first process will be the interaction between the Bluetooth scanner and the app. The second process that will interact with the database is the Maui framework. These two processes combined could cause some issues with the phone app, just in terms of communication. 
+### Final Working System
+For the final working system, we will expand upon the prototype communication to give the app the capability to communicate with the backend servers and implement the Unity visualizers. The app will also be able to display graphical information based on information pulled from the database. To effectively launch the application in a mobile environment, several algorithmic and storage modifications and enhancements will be made to ensure a smooth smartphone experience. A local database will be worked into this design to allow for user data such as usernames, passwords, and bowling balls to be saved locally until the complete server database is established. The groundwork for image processing similar to Dr. Babcock’s Ciclops will also be started for future teams to expand upon. To create a user-friendly app, even in the early production stages, several UI improvements will be made to shift the application away from a testing environment into a user-focused experience.
+#### Issues
+Some potential issues that we might run into include the final data size of all of the features we plan to implement. Displaying graphical information and storing graphical information will take up local space. To ensure optimal functionality, the amount of data stored in the mobile app must be minimized. Another issue will be the conversion of the GUI from the Desktop to the Phone. Different features might not make it to both the Phone app and Desktop app. Implementing Ciclops into our app will be another issue in terms of the size of the application. Ciclops is, essentially, another application that will need to work within our application, increasing the app size further. Image processing within Ciclops will be another challenge because it will require the discovery of different imaging algorithms and the discovery of a new framework. More specifically, differentiating between the bowling ball and the background will be a challenge because of all of the different parts of a bowling lane. There’s a potential problem where the bowling ball will blend with other objects. 
