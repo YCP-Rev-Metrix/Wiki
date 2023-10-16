@@ -4,8 +4,14 @@ weight = 100
 description = 'How to create a branch of the frontend repository and make changes'
 +++
 
+#There is an updated workflow that includes creating issues found in the shared Drive with the following filepath:
+RevMetrix/Github Workflow Docs/RMX Frontend Workflow
+I'll add this information into here later, I'm a little burnt out after making that document.
+
 ### Prerequisites
 Before making any changes or creating a branch, run `git pull` in your Visual Studo terminal to ensure you have the most recent changes.
+
+
 
 ---
 ### Creating Branch and Editing
