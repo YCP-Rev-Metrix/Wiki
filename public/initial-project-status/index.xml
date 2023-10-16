@@ -20,14 +20,19 @@
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/phone-app-proof-of-concept/index.html</guid>
       <description>.NET MAUI documentation: -Bluetooth Connection
 -NET MAUI General Documentation
-Initial Design </description>
+-NET MAUI File Picker
+-NET MAUI Youtube Channel
+-Xamarin Youtube Channel
+-Xamarin Data Binding Documentation
+-Xamarin Advanced Data Binding Documentation
+Initial Proof of Concept - Mobile Application </description>
     </item>
     <item>
       <title>Simulation - First Thoughts</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/simulation-first-thoughts/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/simulation-first-thoughts/index.html</guid>
-      <description></description>
+      <description>Beginning Ideas of Simulation Design: Initial Lane Setup Full Lane View Lane While Testing Translation Scaled Pins Setup </description>
     </item>
   </channel>
 </rss>

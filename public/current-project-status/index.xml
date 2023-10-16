@@ -11,28 +11,22 @@
       <link>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/backend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/backend/index.html</guid>
-      <description></description>
+      <description>Progress of Backend Development Backend Architecture Updated Database Schemas Below are the most recently updated reworkings of the project&amp;rsquo;s database schemas. The databases listed below can be seen in the RevMetrix System Architecture
+Local Database Schema (Localhost) Raw Database Schema (Cloud Server) User Database Schema (Cloud Server) Results of database stress testing can be seen at the link below Database Observation DataAll data collected from database engine stress testing</description>
     </item>
     <item>
       <title>Frontend - Current State</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/frontend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/frontend/index.html</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>RevMetrix Diagram</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/revmetrix-diagram/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/revmetrix-diagram/index.html</guid>
-      <description> </description>
+      <description>Progress of Frontend Development Frontend Architecture Frontend User Interface Wireframes Local Testing Database Schema </description>
     </item>
     <item>
       <title>Simulation - Current State</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/simulation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/simulation/index.html</guid>
-      <description></description>
+      <description>Progress of Simulation Development Simulation Architecture Simulation Dataflow SmartDot Simulator Illustration Textured Lane and Gutters Setup Lane Reset Visual Pinsetter Development Preview Links SmartDot Simulator </description>
     </item>
   </channel>
 </rss>

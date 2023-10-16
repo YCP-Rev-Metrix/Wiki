@@ -7,13 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Analysis and Design</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/design-and-analysis/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/design-and-analysis/index.html</guid>
+      <description>Official Project Requirements Document and Slideshow The official project requirements document can be found in the project&amp;rsquo;s Google Drive here, and the requirements presentation slideshow can be found here
+Abstract RevMetrix is a system that will record metrics of a bowling ball as it travels down the lane. It will consist of a physical device that the user can place inside a bowling ball and mobile application. The device will record rotational and positional data about the ball as it travels down the lane.</description>
+    </item>
+    <item>
       <title>Current Project Status</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/current-project-status/index.html</guid>
-      <description>Backend - Current StateAll details about the current state of the backend development, along with what is planned for the future
+      <description>RevMetrix System Architecture Current Status by Development Team Backend - Current StateAll details about the current state of the backend development, along with what is planned for the future
 Frontend - Current StateAll details about the current state of the frontend development, along with what is planned for the future
-RevMetrix DiagramDiagram of the projects current state
 Simulation - Current StateAll details about the current state of simulation development, along with what is planned for the future</description>
     </item>
     <item>
@@ -26,13 +33,32 @@ Frontend Github WorkflowHow to create a branch of the frontend repository and ma
 Simulation Github WorkflowHow to create a branch of the simulation repository Test branch and make changes to it</description>
     </item>
     <item>
+      <title>Initial Project Requirements</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-requirements/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-requirements/index.html</guid>
+      <description>Official Project Requirements Document and Slideshow The official project requirements document can be found in the project&amp;rsquo;s Google Drive here, and the requirements presentation slideshow can be found here
+System Architecture Initial Requirements by Type of Develeopment Backend RequirementsProject requirements specific to the backend development
+Frontend RequirementsProject requirements specific to the frontend development
+Simulation RequirementsProject requirements specific to the simulation development</description>
+    </item>
+    <item>
       <title>Initial Project Status</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-status/index.html</guid>
-      <description>Backend - Database ArchitectureUML diagrams representing the initial database architecture and schemas
+      <description>Original System Architecture Backend - Database ArchitectureUML diagrams representing the initial database architecture and schemas
 Phone App - Proof of ConceptDrawing board ideas for the layout and interaction methods of the phone application
 Simulation - First ThoughtsThe base ideas around using Unity for the development of a bowling simulation</description>
+    </item>
+    <item>
+      <title>Project Milestones</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/index.html</guid>
+      <description>MS1 - Minimal Working SystemProgress made on the minimal working system and the associated slideshow
+MS2 - 50% Working SystemProgress made on the final working system and the associated slideshow
+MS3 - Final Working SystemProgress made on the 50% working system and the associated slideshow</description>
     </item>
     <item>
       <title>SmartDot</title>
@@ -41,7 +67,14 @@ Simulation - First ThoughtsThe base ideas around using Unity for the development
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/smartdot/index.html</guid>
       <description>ISmartDot InterfaceInformation about the ISmartDot interface
 SmartDot HardwareInformation about the SmartDot hardware
-SmartDot SimulatorInformation about the SmartDot hardware</description>
+SmartDot SimulatorInformation about the SmartDot Simulator</description>
+    </item>
+    <item>
+      <title>Terms</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/terms/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/terms/index.html</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
