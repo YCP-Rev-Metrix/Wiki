@@ -12,7 +12,8 @@ Most of these instructions at JetBrains Rider specific, as that is what we are u
 Go to the Frontend Github repository, using the following link: https://github.com/YCP-Rev-Metrix/FrontEnd/tree/master
 
 Within this page click on the Issues tab, which should be found in the following location:
-![image1](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/f444f625-dbc4-467d-8abc-e5db5e32b667)
+![image8](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/bd1298f7-43fb-4e86-88fb-742914410626)
+
 
 After your screen has refreshed, you should see a screen similar to the following screen below. After this has been done select New Issue:
 ![image2](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/07347520-4d8b-4b86-8dd3-d88e3510d412)
@@ -61,7 +62,8 @@ Select the Commit section found in the top left section of the Rider tab, shown 
 Select the files you would like to Commit (Found in Unversioned Files) and check their boxes. DO NOT commit .gitignore. Once they’ve been selected press Commit and Push… (If you selected Commit you must follow the instructions specified in {Section B} before trying to make a PR if you selected Commit and Push… feel free to ignore them)
 
 After the changes have been Pushed to the remote branch, go to the Github repository website and you should see something like this:
-![image7](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/4cfaabbd-6c97-4049-b0ee-dfad5f488239)
+![image1](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/68f85d71-5f3e-4ae4-a5b1-1f2bb13a275e)
+
 
 If you select Compare & pull request Github will automatically generate you a Pull Request that will pull your branch into master.
 
