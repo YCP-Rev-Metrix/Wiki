@@ -5,7 +5,7 @@ description = 'How to create a branch of the frontend repository and make change
 +++
 
 ### Prerequisites
-This only works for JetBrains Rider
+Most of these instructions at JetBrains Rider specific, as that is what we are using to develop the Frontend Application.
 
 ---
 ### Creating an Issue
