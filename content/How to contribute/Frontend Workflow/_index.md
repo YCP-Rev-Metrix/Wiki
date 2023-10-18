@@ -31,17 +31,19 @@ This issue will eventually be connected with a branch but this can’t happen un
 ### Creating a Branch
 Run the following commands within a terminal window: 
 
-git checkout -b {name of branch} <- creates branch locally
+`git checkout -b {name of branch}` <- creates branch locally
 
-Ex: git checkout -b 8-update-gitignore 
+Ex:
 
-git push origin {branch name} 
+`git checkout -b 8-update-gitignore` 
+
+`git push origin {branch name}`
 
 This branch will now show up on the Github repo on the website GUI, to ensure this branch is up to date with the master run the following commands within the same terminal:
 
-git fetch
+`git fetch`
 
-git merge origin/master
+`git merge origin/master`
 
 Once this is done be sure to associate the branch to an issue
 
@@ -84,6 +86,6 @@ Once your Local branch has been pushed to the Remote, the Remote branch will hav
 ### Deleting a Branch
 Input these commands into your terminal:
 
-Git branch -d {branchname} <- deletes branch locally
+`git branch -d {branchname}` <- deletes branch locally
 
-git push origin --delete {branchname}  <- deletes branch remotely
+`git push origin --delete {branchname}`  <- deletes branch remotely
