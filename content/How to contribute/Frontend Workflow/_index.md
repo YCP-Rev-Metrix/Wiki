@@ -19,10 +19,11 @@ After your screen has refreshed, you should see a screen similar to the followin
 ![image2](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/07347520-4d8b-4b86-8dd3-d88e3510d412)
 
 Give the issue a name and a description, and make sure to click Assign Yourself under the Assignees tab. 
-![image3](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/f5cdef0a-1c92-4e78-8aaf-28c6d8f0836d)
+![image5](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/5cd079d3-456f-4a4f-b7d9-fe74afaaca67)
 
 After this is done, assign the issue a Label that is corresponding to whatever you are trying to implement (whether it’s patching a bug or adding new functionality) and click Submit New Issue.
-![image4](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/69be8c70-0d0c-4706-bf9d-dd5e321df5f0)
+![image7](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/3fc83472-1372-4b30-9e89-ae8a41c0ce99)
+
 
 This issue will eventually be connected with a branch but this can’t happen until that branch is created so onto our next topic:
 
@@ -47,7 +48,8 @@ Once this is done be sure to associate the branch to an issue
 ---
 ### Linking an issue to a branch
 Within the Issues tab click on the issue you previously created and click the gear next to the Development section on the right side. After clicking this gear, traverse through the Github repository and select your newly created branch.
-![image5](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/151e30ed-f958-451b-93bc-c4c33d82f346)
+![image3](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/746df549-3e4b-4c84-9a7e-e6569254114c)
+
 
 This will allow you to close this issue once this branch has been PR’d into the master, as the branch should also then be deleted to create a new branch to tackle the next issue.
 -Basically a branch is a temporary work space rather than a permanent one
@@ -57,13 +59,12 @@ This will allow you to close this issue once this branch has been PR’d into th
 ### Creating a Pull Request
 
 Select the Commit section found in the top left section of the Rider tab, shown below:
-![image6](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/fe5c1dd0-9809-40c9-9a3e-ca6ef6f1b966)
+![image4](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/b83306bd-f597-459a-9cc6-f26e5d4317f4)
 
 Select the files you would like to Commit (Found in Unversioned Files) and check their boxes. DO NOT commit .gitignore. Once they’ve been selected press Commit and Push… (If you selected Commit you must follow the instructions specified in {Section B} before trying to make a PR if you selected Commit and Push… feel free to ignore them)
 
 After the changes have been Pushed to the remote branch, go to the Github repository website and you should see something like this:
-![image1](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/68f85d71-5f3e-4ae4-a5b1-1f2bb13a275e)
-
+![image1](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/8d9f54e6-4323-4d36-bef5-739dd437d683)
 
 If you select Compare & pull request Github will automatically generate you a Pull Request that will pull your branch into master.
 
@@ -72,7 +73,8 @@ Once the pull request has been accepted and merged into master, delete your bran
 ### {Section B}
 #### If you selected "Commit" you must follow these instructions before attempting to make a PR
 Click on the Git button found in the bottom left section of the tab, shown below:
-![image8](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/886973a2-cfa6-41e1-85f1-7bd939e29739)
+![image6](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/14d4bc7d-b03e-4794-8bc9-d9ba4af3a02d)
+
 
 Once that has been opened, right-click on the Local branch that you’ve been working on (in this example it’s 18-Screentoscreen underneath the Local section) and select Push… 
 
