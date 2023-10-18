@@ -67,8 +67,8 @@ If you select Compare & pull request Github will automatically generate you a Pu
 
 Once the pull request has been accepted and merged into master, delete your branch & issue as specified below.
 
-## {Section B}
-# If you selected "Commit" you must follow these instructions before attempting to make a PR
+### {Section B}
+#### If you selected "Commit" you must follow these instructions before attempting to make a PR
 Click on the Git button found in the bottom left section of the tab, shown below:
 ![image8](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/886973a2-cfa6-41e1-85f1-7bd939e29739)
 
