@@ -10,6 +10,9 @@ description = 'All details about the current state of simulation development, al
 | ![Architecture](SimArc.png?width=40vw&lightbox=false) | 
 |:--:| 
 
+##### Demo
+{{< video src="Physics_Demo.mp4" type="video/mp4" preload="auto" >}}
+
 ##### Simulation Dataflow
 | ![Dataflow](SimDF.png?width=30vw&lightbox=false) | 
 |:--:| 
