@@ -7,7 +7,7 @@ description = 'All details about the current state of the backend development, a
 ### Progress of Backend Development
 
 #### Backend Architecture
-| ![Backend Architecture](BackendArc.png?width=40vw&lightbox=false&text-align=left)|
+| ![Backend Architecture](BackendArc.jpg?width=40vw&lightbox=false&text-align=left)|
 |:--:|
 
 ### Updated Database Schemas

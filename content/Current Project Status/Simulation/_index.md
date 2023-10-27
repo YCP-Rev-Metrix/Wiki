@@ -7,7 +7,7 @@ description = 'All details about the current state of simulation development, al
 ### Progress of Simulation Development
 
 ##### Simulation Architecture
-| ![Architecture](SimArc.png?width=40vw&lightbox=false) | 
+| ![Architecture](SimArc.jpg?width=40vw&lightbox=false) | 
 |:--:| 
 
 ##### Demo

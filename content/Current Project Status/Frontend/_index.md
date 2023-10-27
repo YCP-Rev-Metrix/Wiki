@@ -7,7 +7,7 @@ description = 'All details about the current state of the frontend development, 
 ### Progress of Frontend Development
 
 #### Frontend Architecture
-| ![Frontend Architecture](FrontendArc.png?width=40vw&lightbox=false) | 
+| ![Frontend Architecture](FrontendArc.jpg?width=40vw&lightbox=false) | 
 |:--:| 
 
 #### Frontend User Interface Wireframes
