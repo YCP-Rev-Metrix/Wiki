@@ -1,5 +1,5 @@
 +++
-title = "Initial Project Requirements"
+title = "Project Requirements"
 weight = 100
 description = 'Details of the project requirements and the associated slideshow'
 +++

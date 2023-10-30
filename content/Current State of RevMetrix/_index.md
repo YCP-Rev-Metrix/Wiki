@@ -1,7 +1,7 @@
 +++
-title = "Current Project Status"
+title = "Current State of RevMetrix"
 weight = 100
-description = 'The current status of each aspect of the project and what is to come'
+description = 'The current state of each aspect of the project and what is to come'
 +++
 
 ##### RevMetrix System Architecture
