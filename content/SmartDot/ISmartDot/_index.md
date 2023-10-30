@@ -10,58 +10,66 @@ The sole function of this interface is to allow reading and writing from pages o
 ### ISmartDot interface
 
 ```C#
-/// <summary>
-/// Interface representing the basic functionality of the Bluetooth connection between the mobile application and a SmartDot implementation (Simulator & Hardware)
-/// </summary>
-public interface ISmartDot
-{
-    /// <summary>
-    /// Attempts to create a connection to the SmartDot hardware
-    /// </summary>
-    /// <param name="connectionParameters">Connection parameters</param>
-    /// <returns>version representing the SmartDot hardware version (APIs use), null if unable to connect</returns>
+/**
+ * Interface representing the basic functionality of the Bluetooth connection between the mobile 
+ * application and a SmartDot implementation (Simulator & Hardware)
+ */
+public interface ISmartDot {
+    /**
+     * Summary: Attempts to create a connection to the SmartDot hardware
+     * Params:  connectionParameters
+     * Returns: Version representing the SmartDot hardware version (APIs use), null 
+     *          if unable to connect
+     */
     public Task<Version?> Connect(ConnectionParameters connectionParameters);
     
-    /// <summary>
-    /// Tests if the connection to the SmartDot hardware is present
-    /// </summary>
-    /// <returns>Boolean representing if there is a connection to SmartDot hardware</returns>
+    /**
+     * Summary: Tests if the connection to the SmartDot hardware is present
+     * Params:  connectionParameters
+     * Returns: Boolean representing if there is a connection to SmartDot hardware
+     */
     public Task<bool> IsConnected();
 
-    /// <summary>
-    /// Asynchronous method to write one page to the SmartDot implementation
-    /// </summary>
-    /// <param name="address">The page start address in memory</param>
-    /// <param name="buffer">Data (byte[]) to write to the SmartDot implementations page</param>
-    /// <param name="bytes">Length of data to write from <paramref name="buffer"/></param>
-    /// <returns>A bool representing if call was successful</returns>
+    /**
+     * Summary: Asynchronous method to write one page to the SmartDot implementation
+     * Params:  address -> The page start addess in memory
+     *          buffer  -> Data (byte[]) to write to the SmartDot implementations page
+     *          bytes   -> Length of data to write from
+     * Returns: A bool representing if call was successful
+     */
     public Task<SmartDotTransactionResult> WriteBytes(long address, byte[] buffer, long bytes);
 
-    /// <summary>
-    /// Asynchronous method to read one page from the SmartDot implementation
-    /// </summary>
-    /// <param name="address">The page start address in memory</param>
-    /// <param name="buffer">Ref data (byte[]) read from the SmartDot implementations page (will attempt to fill completely)</param>
-    /// <param name="bytes">Length of data to read into <paramref name="buffer"/></param>
-    /// <returns>A bool representing if call was successful</returns>
+    /**
+     * Summary: Asynchronous method to read one page from the SmartDot implementation
+     * Params:  address -> The page start addess in memory
+     *          buffer  -> Ref data (byte[]) read from the SmartDot implementations page (will attempt
+                           to fill completely)
+     *          bytes   -> Length of data to read into
+     * Returns: A bool representing if call was successful
+     */
     public Task<SmartDotTransactionResult> ReadBytes(long address, ref byte[] buffer, long bytes);
 
-    /// <summary>
-    /// Sends a command to the SmartDot hardware
-    /// </summary>
-    /// <param name="command">The string command to send to the SmartDot hardware</param>
-    /// <returns>Result from the command execution on the SmartDot hardware</returns>
+    /**
+     * Summary: Sends a command to the SmartDot hardware
+     * Params:  command -> The string command to send to the SmartDot hardware
+     * Returns: Result from the command execution on the SmartDot hardware
+     */
     public Task<string> OutgoingSmartDotCommand(string command);
 
-    /// <summary>
-    /// Invokes <see cref="IncomingSmartDotCommandCallback"/>. Should be executed only from the implementor.
-    /// </summary>
-    /// <param name="command">String command called from SmartDot hardware</param>
+    /**
+     * Summary: Invokes IncomingSmartDotCommandCallback method. Should be executed only from the 
+     *          implementor.
+     * Params:  command -> String command called from SmartDot hardware
+     * Returns: n/a
+     */
     protected virtual void RaiseIncomingSmartDotCommand(string command) => IncomingSmartDotCommandCallback?.Invoke(command);
 
-    /// <summary>
-    /// Incoming command callback (from SmartDot hardware). Signals from the SmartDot hardware that something important happened.
-    /// </summary>
+    /**
+     * Summary: Incoming command callback (from SmartDot hardware). Signals from the SmartDot hardware 
+     *          that something important happened.
+     * Params:  none
+     * Returns: n/a
+     */
     public Action<string>? IncomingSmartDotCommandCallback { get; set; }
 }
 ```
@@ -69,34 +77,33 @@ public interface ISmartDot
 ### SmartDotTransactionResult enumeration
 
 ```C#
-/// <summary>
-/// Enum representing the transaction result state of a communication with SmartDot hardware
-/// </summary>
-public enum SmartDotTransactionResult : byte
-{
-    /// <summary>
-    /// SmartDot transaction succeeded
-    /// </summary>
+/**
+ * Enum representing the transaction result state of a communication with SmartDot hardware
+ */
+public enum SmartDotTransactionResult : byte {
+    /**
+     * SmartDot transaction succeeded
+     */
     SUCCESS,
 
-    /// <summary>
-    /// SmartDot transaction failed - unknown cause
-    /// </summary>
+    /**
+     * SmartDot transaction failed - unknown cause
+     */
     FAILURE_UNKNOWN,
 
-    /// <summary>
-    /// SmartDot transaction failed - data corruption
-    /// </summary>
+    /**
+     * SmartDot transaction failed - data corruption
+     */
     FAILURE_PERMISSION_ERROR,
 
-    /// <summary>
-    /// SmartDot transaction failed - device disconnected
-    /// </summary>
+    /**
+     * SmartDot transaction failed - device disconnected
+     */
     FAILURE_DISCONNECTED,
 
-    /// <summary>
-    /// SmartDot transaction failed - data corruption
-    /// </summary>
+    /**
+     * SmartDot transaction failed - data corruption
+     */
     FAILURE_DATA_CORRUPTION
 }
 ```
@@ -104,11 +111,10 @@ public enum SmartDotTransactionResult : byte
 ### ConnectionParameters class
 
 ```C#
-/// <summary>
-/// Parameters necessary to successfully connect to the correct SmartDot hardware
-/// </summary>
-public class ConnectionParameters
-{
+/**
+ * Parameters necessary to successfully connect to the correct SmartDot hardware
+ */
+public class ConnectionParameters {
     
 }
 ```

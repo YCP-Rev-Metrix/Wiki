@@ -1,7 +1,7 @@
 +++
-title = "Frontend Github Workflow"
+title = "Github Workflow - Frontend"
 weight = 100
-description = 'How to create a branch of the frontend repository and make changes'
+description = 'How to create a branch of the frontend repository and make edits'
 +++
 
 ### Prerequisites

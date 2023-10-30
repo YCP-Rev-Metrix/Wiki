@@ -1,7 +1,7 @@
 +++
-title = "Simulation Github Workflow"
+title = "Github Workflow - Simulation"
 weight = 100
-description = 'How to create a branch of the simulation repository Test branch and make changes to it'
+description = 'How to create a branch of the simulation repository Test branch and make edits'
 +++
 
 ### Making General Changes
