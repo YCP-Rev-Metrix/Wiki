@@ -1,6 +1,7 @@
 +++
-title = "How To Contribute"
+title = "DigitalOcean Information"
 weight = 100
+description = 'Information regarding DigitalOcean Droplets'
 +++
 
 ### Table of Contents
