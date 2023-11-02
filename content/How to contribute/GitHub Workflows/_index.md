@@ -1,6 +1,7 @@
 +++
-title = "How To Contribute"
+title = "GitHub Workflows"
 weight = 100
+description = 'All GitHub workflows for the project'
 +++
 
 ### Table of Contents

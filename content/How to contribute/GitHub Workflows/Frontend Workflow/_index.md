@@ -1,5 +1,5 @@
 +++
-title = "Github Workflow - Frontend"
+title = "GitHub Workflow - Frontend"
 weight = 100
 description = 'How to create a branch of the frontend repository and make edits'
 +++
