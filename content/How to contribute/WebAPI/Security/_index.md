@@ -1,118 +1,38 @@
 +++
-title = "RevMetrix WebAPI"
+title = "Security"
 weight = 100
 description = 'Information on how to use the WebAPI'
 +++
 
-| Table of Contents |
-|:--:|
-| [Overview](#overview) |
-| [Configuration](#configuration) |
-| [Database Interactions](#database-interactions) |
-| [Adding Endpoints](#adding-endpoints) |
-
----
-## Overview
-The WebAPI can be complicated from the outside, but after a bit of work, it's actually not too confusing. There are serveral portions that will be interesting to us, all of which located in Server project.
-
----
-## Configuration
-
-##### appsettings.json
-This file contains general settings for running in different environemnts and with different configurations. Take a look below at the example. Adding to this is farily simple. Config.cs opens the file at runtime and sets relevant variables such as AuthAudience.
-```JSON
-{
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.AspNetCore": "Warning"
-    }
-  },
-  "ApiSettings": {
-    "Auth": {
-      "Audience": "RevMetrix",
-      "Issuer": "https://localhost:7238/",
-      "SecretLength": 32
-    }
-  }
-}
-```
-
-
-##### Program.cs
-Through this, the authentication (JWT), Middleware, Swagger, and endpoints are all configured. This will run every time and cannot be modified as much based on the enironment or run settings. There is a small area for if the environemnt is development. Below is a snippet taken from Program.cs.
-```C#
-_ = builder.Services.AddSwaggerGen();
-
-_ = builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateIssuerSigningKey = true,
-        ValidateLifetime = true,
-        ValidIssuer = Config.AuthIssuer,
-        ValidAudience = Config.AuthAudience,
-        IssuerSigningKey = ServerState.SecurityHandler.AuthorizationSigningTokenKey,
-        ClockSkew = TimeSpan.FromMinutes(5)
-    };
-});
-
-WebApplication app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    _ = app.UseSwagger();
-    _ = app.UseSwaggerUI();
-}
-
-// app.UseHttpsRedirection();
-
-// Verify token not blacklisted
-_ = app.UseMiddleware<VerifyJWTBlacklistMiddleware>();
-```
-
-##### Environment variables
-Environment variables in our case are set by external programs. Take a look at below at AbstractDatabase from the DatabaseCore project. Here, the environment variable 'DOCKERIZED' is checked, if it has been set, then the DB connection string will change. Inside of the docker config, this environment variable is set, allowing the DatabaseCore to know that it is inside of docker, so it may connect to the DB correctly.
-```C#
-public AbstractDatabase(string databaseName)
-{
-    // Get DOCKERIZED environment variable
-    string? DockerizedEnviron = Environment.GetEnvironmentVariable("DOCKERIZED");
-
-    if (DockerizedEnviron == "Dockerized") { // Running in docker
-        ConnectionString = $"Server=sql_server;database={databaseName};User Id=SA;Password=BigPass@Word!;TrustServerCertificate=True;";
-    } else { // Likely running locally
-        ConnectionString = $"Data Source=localhost;database={databaseName};Integrated Security=True;TrustServerCertificate=True;";
-    }
-
-    LogWriter.LogInfo($"DB Connection: {ConnectionString}");
-
-    DatabaseName = databaseName;
-    Initialize();
-}
-```
-
----
-## Security
 Security is a crucial part of the Web API and security is managed in multiple ways. Please ensure that the security of the application remains during development.
 
-#### Https
+- [Https](#overview)
+- [Authentication and Authorization](#authentication-and-authorization)
+    - [JWT](#database-interactions)
+    - [Refresh Tokens](#refresh-tokens)
+    - [Roles](#roles)
+- [Middleware](#middleware)
+- [Secure Randomization](#secure-randomization)
+- [Security Methods](#security-methods)
+    - [Hashing](#hashing)
+    - [Salting](#salting)
+    - [Signing](#signing)
+    - [Encryption](#encryption)
+
+---
+## Https
 Our server forces the use of HTTPS for security purposes, to ensure data sent between the API and Client is encrypted. Specifically, we use TLS, the modern version of SSL.
 
 [Learn more here](https://www.digicert.com/what-is-ssl-tls-and-https)
 
-#### Authorization and Authorization
+## Authentication and Authorization
 Authentication and Authorization are the two primary ways of limiting a resource to specific users.
 
 Authentication is the process of validating a user's identity through credentials such as username and password.
 
 Authorization is the process of limiting specific resources through roles or permissions. ie. only admins may change a user's name.
 
-###### JWT
+#### JWT
 JWT is an acronym standing for Json Web Token and it is used to provide both Authentication and Authorization to users. This token is granted to the user upon login, set-up by the following in Program.cs:
 ```C#
 _ = builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -167,7 +87,7 @@ The server will also add to the JWT, the user's roles, username, and a random id
 
 [Learn more here](https://jwt.io/introduction)
 
-###### Refresh Tokens
+#### Refresh Tokens
 Refresh tokens are used by the client to request a new JWT from the server when their current one expires. 
 The server, when authorizing the user, will provide back a JWT and Refresh token. In the future, this Refresh token can be use to re-authorize the user.
 These tokens are just random bytes though could have taken the form of a JWT too: ```II7IWJueHQjdaxN28MfG7yGuR5KonICYVuexvFIYjiY=```
@@ -176,13 +96,13 @@ Currently, these are stored in the DB with an expiration data and assosiated use
 
 [Learn more here](https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/)
 
-###### Roles
+#### Roles
 Roles are used to manage user's abilities and controls and should be handled as security items. Endpoints or controllers that require specific roles will have the following attribute ```[Authorize(Roles = "Admin, Manager")]```.
 This specific example allows only users with either the role of 'User' or 'Manager' to access this item. Items without the Roles specification will allow a user with any role to access it.
 
 These roles are stored in the User DB in the user table as an array
 
-#### Middleware
+## Middleware
 Middleware is a method by which the server may interrupt a client's communication to an API endpoint and manipulate data or block the request.
 This has been used to ensure that a user's JWT has not been blacklisted prior to access of a protected endpoint.
 Relevant code is shown below:
@@ -222,7 +142,7 @@ The middleware must also be registered with the application in Program.cs
 _ = app.UseMiddleware<VerifyJWTBlacklistMiddleware>();
 ```
 
-#### Secure Randomization
+## Secure Randomization
 Not all random functions are created equal. Take Python for example, if you wanted to generate secure randomness, you should not use the Random library as it is not built for cryptology and is susceptible to timing attacks and seed cracking.
 This applies to C# too, so we use the System.Security.Cryptography module, which provides the RandomNumberGenerator class which is secure.
 
@@ -231,11 +151,11 @@ This class has secure methods to generate random byte arrays, tokens, and other 
 
 An instance of this class may be used from the static ServerState.
 
-#### Security Methods
+## Security Methods
 Passwords remain one of the primary methods to ensure a specific user's security and users may not always change their password for all the services they use. This means that it is the job of our applicaiton, to ensure that these passwords are stored and used safely.
 There are many things that go into modern security measures. Here, we will cover the four main topics used in our application.
 
-###### Hashing
+#### Hashing
 Hashing is the method by which a password is turned from plaintext to a format that cannot be reversed. This ensures that if the DB is leaked to the public or if someone has access to it, the passwords themselves remain secure. The WebAPI currently uses SHA256 (for simplicity - this should be changed to something meant for passwords) to generate password hashes however this may easily be change. Hashing will always generate the same output given the same input
 
 We can convert our  password from a string into hex so it may be hashed: ```abc123``` -> ```0x616263313233```
@@ -256,7 +176,7 @@ Using the correct password: SHA256(```0x616263313233```) -> ```0x6ca13d52ca70c88
 
 [External hash explanation](https://www.codecademy.com/resources/blog/what-is-hashing/#:~:text=Hashing%20is%20the%20process%20of%20converting%20data%20%E2%80%94,using%20a%20special%20algorithm%20called%20a%20hash%20function.)
 
-###### Salting
+#### Salting
 Salting is the method of adding randomness to hashed passwords, so that the same password, when hashed on multiple sites or by different users will not generate the same hash.
 This means that if a user re-uses passwords, a DB leak will not give this information away as the password hash will appear different.
 This also means that if two users have the same password, a DB leak will not give this information away as the password hash will appear different.
@@ -276,15 +196,12 @@ when we need to authorize with a provided password, we can salt that with the sa
 
 [Random salt / hex generator](https://www.random.org/bytes/)
 
-###### Signing
+#### Signing
+Signing is the process of generating a unique value that represents a plaintext value combined with the server's random cryptographic key.
 
+[Learn more here](https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_are_digital_signatures)
 
-###### Encryption
+#### Encryption
+Encryption is the prosess of securing text in a way that only the specified parties can read it.
 
-
----
-## Database Interactions
-
-
----
-## Adding Endpoints
+[Learn more here](https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_is_asymmetric_encryption)
