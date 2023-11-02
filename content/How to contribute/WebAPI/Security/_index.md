@@ -1,7 +1,7 @@
 +++
 title = "Security"
 weight = 100
-description = 'Information on how to use the WebAPI'
+description = 'Security information regarding the WebAPI'
 +++
 
 Security is a crucial part of the Web API and security is managed in multiple ways. Please ensure that the security of the application remains during development.
