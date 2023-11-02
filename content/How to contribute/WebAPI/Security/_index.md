@@ -6,7 +6,7 @@ description = 'Information on how to use the WebAPI'
 
 Security is a crucial part of the Web API and security is managed in multiple ways. Please ensure that the security of the application remains during development.
 
-- [Https](#overview)
+- [Https](#https)
 - [Authentication and Authorization](#authentication-and-authorization)
     - [JWT](#database-interactions)
     - [Refresh Tokens](#refresh-tokens)
@@ -202,6 +202,6 @@ Signing is the process of generating a unique value that represents a plaintext 
 [Learn more here](https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_are_digital_signatures)
 
 #### Encryption
-Encryption is the prosess of securing text in a way that only the specified parties can read it.
+Encryption is the process of securing text in a way that only the specified parties can read it.
 
 [Learn more here](https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_is_asymmetric_encryption)
