@@ -88,6 +88,35 @@ The power cycle function can be used to do a full restart of the Droplet, poweri
 ### Networking
 
 
+##### Public Network
+#####################################################################
+
+![public](public.png?lightbox=false&text-align=left)
+
+##### Private Network
+####################################################################################
+
+![private](private.png?lightbox=false&text-align=left)
+
+##### Firewalls
+Below you will find information regarding the firewall settings for the Droplet.  
+
+![firewall](firewall.png?lightbox=false&text-align=left)
+
+There are two types of firewall rules that can be configured.  How one configures their firewalls depends solely on the goal of the user.  Below you will find the inbound and outbound rules and what type of connections each firewall handles:
+
+Inbound Firewall:
+
+![Inbound](inbound.png?lightbox=false&text-align=left)
+
+ - ##########################################################
+
+Outbound Firewall:
+
+![outbound](outbound.png?lightbox=false&text-align=left)
+
+ - #############################################################
+
 ### Snapshots
 
 
