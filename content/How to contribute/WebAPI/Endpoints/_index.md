@@ -14,6 +14,16 @@ description = 'How to Add or Manage an Endpoint'
     - [PUT](#put)
     - [PATCH](#patch)
     - [DELETE](#delete)
+- [Adding and Endpoint](#adding-an-endpoint)
+    - [Basic Example](#basic-example)
+        - [Controller and Method Attributes](#controller-and-method-attributes)
+        - [Naming](#naming)
+    - [Authentication and Authorization](#authentication-and-authorization)
+    - [Returning](#returning)
+        - [Returning Data](#returning-data)
+        - [Returning Other Statuses](#returning-other-statuses)
+    - [Extra Notes](#extra-notes)
+        - [Adding a Non-request Method to a Controller](#adding-a-non-request-method-to-a-controller)
 
 ---
 ## What is an Endpoint?
@@ -86,14 +96,18 @@ This is normally done through url parameters such as 'id=5', where the client wa
 There are currently no examples of this in the Web API. Generally, the result sent back from the server only relates to the success of this request though it may sometimes include the value of the item(s) deleted from the DB.
 
 ---
-Let's deconstruct a smaller Controller:
+## Adding an Endpoint
+
+#### Basic Example
+Here, we have defined a basic endpoint, named 'Test' inside of the controller named 'Demo'. Let's deconstruct what it means:
 ```c#
 [ApiController]
 [Route("api/[controller]")]
-public class TestController : AbstractFeaturedController
+public class DemoController : AbstractFeaturedController
 {
 
     [HttpGet("Test", Name = "Test")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult Test()
     {
         LogWriter.LogInfo("Test called");
@@ -102,4 +116,156 @@ public class TestController : AbstractFeaturedController
 
 }
 ```
-Here, we have defined a basic endpoint inside 
+
+###### Controller and Method Attributes
+All controllers will extend from ```AbstractFeaturedController```, which implements a few helper functions.
+This controller will be decorated with the attribute ```[ApiController]``` to let .NET know that this is an API controller.
+The Http method will be of return type ```IActionResult```, decorated with ```[HttpGet("Test", Name = "Test")]```, though this could have been a Post or other type previously covered.
+
+###### Naming
+The full endpoint url for this will be 'baseurl/Demo/Test' and this will be a GET.
+The name of the controller is always followed by the word controller, when the actual endpoints are generate ```[Route("api/[controller]")]``` lets the generator know to remove the word 'Controller'.
+The name of our Http method is 'Test', denoted by the attribute ```[HttpGet("Test", Name = "Test")]``` decorating the method.
+
+###### Returns
+This endpoint currently, just returns an Ok status 200 message to the client, though in future examples, we will see something a bit more useful.
+In order to let Swagger and our future self know what this can return, we can Decorate the method with the attribute ```[ProducesResponseType(StatusCodes.Status200OK)]```.
+
+
+#### Authentication and Authorization
+In many instances, we want to limit who can use a specific endpoint.
+If we want to limit use to only users who are logged in, also granting us the abiity to grab the current user's username, then we should add Authentication.
+If we want to limit use to only users who are of certain roles, like admin, user, or owner, we want to add Authorization.
+
+This can be done by adding another attribute to either the controller or the http method. In the example below, only the methods have been decorated.
+```c#
+[ApiController]
+[Route("api/[controller]")]
+public class TestController : AbstractFeaturedController
+{
+
+    [Authorize]
+    [HttpGet("TestAuthorize", Name = "TestAuthorize")]
+    public IActionResult TestAuthorize()
+    {
+        LogWriter.LogInfo("TestAuthorize called");
+        return Ok();
+    }
+
+    [Authorize(Roles = "Admin")]
+    [HttpGet("TestAuthenticateAdmin", Name = "TestAuthenticateAdmin")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public IActionResult TestAuthenticateAdmin()
+    {
+        LogWriter.LogInfo("TestAuthenticateAdmin called");
+        return Ok();
+    }
+
+}
+```
+
+By adding the ```[Authorize]``` attribute, we ensure that a user is logged in and has a valid JWT token.
+
+By adding values into the ```[Authorize]``` attribute such as ```[Authorize(Roles = "Admin")]``` or ```[Authorize(Roles = "Admin, Owner")]```, we can lock this to only specific roles.
+
+Had we placed the attribute above the controller instead, all methods in the controller would ahere to that policy, shown below:
+```c#
+[Authorize]
+[ApiController]
+[Route("api/[controller]")]
+public class TestController : AbstractFeaturedController
+{
+
+    [HttpGet("TestAuthorize", Name = "TestAuthorize")]
+    public IActionResult TestAuthorize()
+    {
+        LogWriter.LogInfo("TestAuthorize called");
+        return Ok();
+    }
+
+}
+```
+
+#### Returning
+
+###### Returning Data
+At many points, we would like the server to return data during a client's request, this through the use of POCOs.
+We can include in the ```return Ok()``` a POCO such as ```DateTimePoco```. It will now look like ```return Ok(new DateTimePoco(DateTime.UtcNow))```.
+This is automtically serializd into JSON and sent back in the body of the response.
+```c#
+[HttpGet("TestTime", Name = "TestTime")]
+public IActionResult TestTime()
+{
+    LogWriter.LogInfo("TestTime called");
+    return Ok(new DateTimePoco(DateTime.UtcNow));
+}
+```
+Ok (Status 200) is not the only status that contain information. Data may also be returned during a Forbid and others.
+
+The last thing that we want to do, is decorate the method with it's return types using the attribute ```[ProducesResponseType]```:
+```c#
+[ProducesResponseType(typeof(DateTimePoco), StatusCodes.Status200OK)]
+[HttpGet("TestTime", Name = "TestTime")]
+public IActionResult TestTime()
+{
+    LogWriter.LogInfo("TestTime called");
+    return Ok(new DateTimePoco(DateTime.UtcNow));
+}
+```
+Here we are telling .NET that during a status 200, the method will return the DateTimePoco type.
+
+###### Returning Other Statuses
+At many points, we want to stop execution of a request early due to an error, invalid credentials, or something else.
+In order to do this, we have the ability to return more than just Ok (200).
+View [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) for a list and explanation of all statuses.
+```c#
+[HttpPost("Authorize", Name = "Authorize")]
+[ProducesResponseType(typeof(DualToken), StatusCodes.Status200OK)]
+[ProducesResponseType(StatusCodes.Status403Forbidden)]
+public async Task<IActionResult> Authorize([FromBody] UserIdentification userIdentification)
+{
+    LogWriter.LogInfo("Authorize called");
+    // Validate user credentials (e.g., check against a database)
+    (bool success, string[]? roles) = await ServerState.UserStore.VerifyUser(userIdentification.Username, userIdentification.Password);
+    if (success)
+    {
+        (string authorizationToken, byte[] refreshToken) = await ServerState.TokenStore.GenerateTokenSet(userIdentification.Username, roles);
+
+        // Return the token as a response
+        return Ok(new DualToken(authorizationToken, refreshToken));
+    }
+
+    // If credentials are invalid, return a 403 Forbid response
+    return Forbid();
+}
+```
+Above, we have definied a method which returns an Ok (200) with a DualToken POCO on success and returns Forbid (403) if the user's credentials are invalid.
+
+When doing this, remember to annotate methods with the ```[ProducesResponseType]``` attributes:
+```C#
+[ProducesResponseType(typeof(DualToken), StatusCodes.Status200OK)]
+[ProducesResponseType(StatusCodes.Status403Forbidden)]
+```
+
+#### Extra Notes
+
+###### Adding a Non-request Method to a Controller
+There are various instances in which you would like to have a helper function in a controller that doesn't act as an API endpoint.
+If you have tried to to this, you have likely encountered an issue.
+To get around this, the method must be decorated with the ```[NonAction]``` attribute, letting .NET know that this method does not need to be an API endpoint.
+
+
+An example is shown below, where the GetJWT method is decorated with the ```[NonAction]``` attribute.
+```c#
+[Controller]
+public abstract class AbstractFeaturedController : ControllerBase
+{
+
+    [NonAction]
+    public string? GetJWT() {
+        var AuthHeaders = HttpContext.Request.Headers["Authorization"];
+        return AuthHeaders.FirstOrDefault()?.Split(" ").Last();
+    }
+
+}
+```
