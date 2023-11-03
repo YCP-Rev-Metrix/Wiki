@@ -202,6 +202,6 @@ Signing is the process of generating a unique value that represents a plaintext 
 [Learn more here](https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_are_digital_signatures)
 
 #### Encryption
-Encryption is the prosess of securing text in a way that only the specified parties can read it.
+Encryption is the process of securing text in a way that only the specified parties can read it.
 
 [Learn more here](https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_is_asymmetric_encryption)
