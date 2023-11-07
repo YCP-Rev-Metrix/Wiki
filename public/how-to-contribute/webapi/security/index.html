@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Security information regarding the WebAPI">
+    <title>Security :: RevMetrix</title>
+    <link href="/Wiki/how-to-contribute/webapi/security/index.xml" rel="alternate" type="application/rss+xml" title="Security :: RevMetrix">
+    <link href="/Wiki/images/favicon.png?1699019892" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/Wiki/css/fontawesome-all.min.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fontawesome-all.min.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/nucleus.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/auto-complete.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/auto-complete.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/perfect-scrollbar.min.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/fonts.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fonts.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/theme.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/theme-zen-dark.css?1699019892" rel="stylesheet" id="variant-style">
+    <link href="/Wiki/css/variant.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/print.css?1699019892" rel="stylesheet" media="print">
+    <link href="/Wiki/css/ie.css?1699019892" rel="stylesheet">
+    <script src="/Wiki/js/url.js?1699019892"></script>
+    <script src="/Wiki/js/variant.js?1699019892"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/Wiki/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/YCP-Rev-Metrix.github.io\/Wiki/';
+      window.variants && variants.init( [ 'zen-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/Wiki/how-to-contribute/webapi/security/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/Wiki/how-to-contribute/webapi/client/index.html" title="Web API Client (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/Wiki/how-to-contribute/webapi/index.html" title="RevMetrix WebAPI (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/How%20to%20contribute/WebAPI/Security/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/how-to-contribute/index.html"><span itemprop="name">How To Contribute</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/how-to-contribute/webapi/index.html"><span itemprop="name">RevMetrix WebAPI</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Security</span><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#https">Https</a></li>
+    <li><a href="#authentication-and-authorization">Authentication and Authorization</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#middleware">Middleware</a></li>
+    <li><a href="#secure-randomization">Secure Randomization</a></li>
+    <li><a href="#security-methods">Security Methods</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="security">Security</h1>
+
+<p>Security is a crucial part of the Web API and security is managed in multiple ways. Please ensure that the security of the application remains during development.</p>
+<ul>
+<li><a href="#https">Https</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a>
+<ul>
+<li><a href="#database-interactions">JWT</a></li>
+<li><a href="#refresh-tokens">Refresh Tokens</a></li>
+<li><a href="#roles">Roles</a></li>
+</ul>
+</li>
+<li><a href="#middleware">Middleware</a></li>
+<li><a href="#secure-randomization">Secure Randomization</a></li>
+<li><a href="#security-methods">Security Methods</a>
+<ul>
+<li><a href="#hashing">Hashing</a></li>
+<li><a href="#salting">Salting</a></li>
+<li><a href="#signing">Signing</a></li>
+<li><a href="#encryption">Encryption</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="https">Https</h2>
+<p>Our server forces the use of HTTPS for security purposes, to ensure data sent between the API and Client is encrypted. Specifically, we use TLS, the modern version of SSL.</p>
+<p><a href="https://www.digicert.com/what-is-ssl-tls-and-https" target="_blank">Learn more here</a></p>
+<h2 id="authentication-and-authorization">Authentication and Authorization</h2>
+<p>Authentication and Authorization are the two primary ways of limiting a resource to specific users.</p>
+<p>Authentication is the process of validating a user&rsquo;s identity through credentials such as username and password.</p>
+<p>Authorization is the process of limiting specific resources through roles or permissions. ie. only admins may change a user&rsquo;s name.</p>
+<h4 id="jwt">JWT</h4>
+<p>JWT is an acronym standing for Json Web Token and it is used to provide both Authentication and Authorization to users. This token is granted to the user upon login, set-up by the following in Program.cs:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span>_ = builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+</span></span><span style="display:flex;"><span>.AddJwtBearer(options =&gt;
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    options.TokenValidationParameters = <span style="color:#66d9ef">new</span> TokenValidationParameters
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        ValidateIssuer = <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        ValidateAudience = <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        ValidateIssuerSigningKey = <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        ValidateLifetime = <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        ValidIssuer = Config.AuthIssuer,
+</span></span><span style="display:flex;"><span>        ValidAudience = Config.AuthAudience,
+</span></span><span style="display:flex;"><span>        IssuerSigningKey = ServerState.SecurityHandler.AuthorizationSigningTokenKey,
+</span></span><span style="display:flex;"><span>        ClockSkew = TimeSpan.FromMinutes(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>The above specifies that JWTs on our server use the following:</p>
+<ul>
+<li>Issuer validation</li>
+<li>Audience validation</li>
+<li>Expiration validation (JWTs expire after a specified time)</li>
+<li>Issuer (us)</li>
+<li>Audience (us)</li>
+<li>Signing key (from server state)</li>
+<li>Clock skew (in case the clocks are a few minutes off)</li>
+</ul>
+<p>The big thing here is the expiration and signing.
+When a JWT is created by the server, it is assigned an expiration time, normally just a few hours in the future, at which point the JWT will no longer be validated.
+This new JWT is then signed by the server so that the server can detetect if a someone has tampered with the token as all data is in plaintext.</p>
+<p>The server will also add to the JWT, the user&rsquo;s roles, username, and a random id.</p>
+<p><a href="https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUZXN0IFVzZXIiLCJqdGkiOiIzNTJiYmRjMS0wNjQ1LTRhMGYtYjJjYi00NGM1ZDkzZmFkN2YiLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjM4LyIsImF1ZCI6IlJldk1ldHJpeCIsInJvbGUiOiJ1c2VyIiwibmJmIjoxNjk4ODgyNDIwLCJleHAiOjE2OTg4ODYwMjAsImlhdCI6MTY5ODg4MjQyMH0.hvDqpWZdczHYzHqv6yk0IT4gQ9bIV-8bow-MsnHjVbM" target="_blank">View a real server JWT here</a></p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span><span style="color:#e6db74">&#34;header&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;alg&#34;</span>: <span style="color:#e6db74">&#34;HS256&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;typ&#34;</span>: <span style="color:#e6db74">&#34;JWT&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;payload&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sub&#34;</span>: <span style="color:#e6db74">&#34;Test User&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;jti&#34;</span>: <span style="color:#e6db74">&#34;352bbdc1-0645-4a0f-b2cb-44c5d93fad7f&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;iss&#34;</span>: <span style="color:#e6db74">&#34;https://localhost:7238/&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;aud&#34;</span>: <span style="color:#e6db74">&#34;RevMetrix&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nbf&#34;</span>: <span style="color:#ae81ff">1698882420</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;exp&#34;</span>: <span style="color:#ae81ff">1698886020</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;iat&#34;</span>: <span style="color:#ae81ff">1698882420</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p><a href="https://jwt.io/introduction" target="_blank">Learn more here</a></p>
+<h4 id="refresh-tokens">Refresh Tokens</h4>
+<p>Refresh tokens are used by the client to request a new JWT from the server when their current one expires.
+The server, when authorizing the user, will provide back a JWT and Refresh token. In the future, this Refresh token can be use to re-authorize the user.
+These tokens are just random bytes though could have taken the form of a JWT too: <code>II7IWJueHQjdaxN28MfG7yGuR5KonICYVuexvFIYjiY=</code></p>
+<p>Currently, these are stored in the DB with an expiration data and assosiated user.</p>
+<p><a href="https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/" target="_blank">Learn more here</a></p>
+<h4 id="roles">Roles</h4>
+<p>Roles are used to manage user&rsquo;s abilities and controls and should be handled as security items. Endpoints or controllers that require specific roles will have the following attribute <code>[Authorize(Roles = &quot;Admin, Manager&quot;)]</code>.
+This specific example allows only users with either the role of &lsquo;User&rsquo; or &lsquo;Manager&rsquo; to access this item. Items without the Roles specification will allow a user with any role to access it.</p>
+<p>These roles are stored in the User DB in the user table as an array</p>
+<h2 id="middleware">Middleware</h2>
+<p>Middleware is a method by which the server may interrupt a client&rsquo;s communication to an API endpoint and manipulate data or block the request.
+This has been used to ensure that a user&rsquo;s JWT has not been blacklisted prior to access of a protected endpoint.
+Relevant code is shown below:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">VerifyJWTBlacklistMiddleware</span> : IMiddleware
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">async</span> Task InvokeAsync(HttpContext context, RequestDelegate next)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        Endpoint? endpoint = context.GetEndpoint();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (endpoint != <span style="color:#66d9ef">null</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (endpoint.Metadata.GetMetadata&lt;AuthorizeAttribute&gt;() != <span style="color:#66d9ef">null</span>)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">string?</span> token = context.Request.Headers[<span style="color:#e6db74">&#34;Authorization&#34;</span>].FirstOrDefault()?.Split(<span style="color:#e6db74">&#34; &#34;</span>).Last();
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (!<span style="color:#66d9ef">string</span>.IsNullOrEmpty(token))
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> (!ServerState.TokenStore.IsAuthorizationBlacklisted(token))
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">await</span> next.Invoke(context);
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                context.Response.StatusCode = <span style="color:#ae81ff">401</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> next.Invoke(context);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>The middleware must also be registered with the application in Program.cs</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#75715e">// Verify token not blacklisted</span>
+</span></span><span style="display:flex;"><span>_ = app.UseMiddleware&lt;VerifyJWTBlacklistMiddleware&gt;();</span></span></code></pre></div><h2 id="secure-randomization">Secure Randomization</h2>
+<p>Not all random functions are created equal. Take Python for example, if you wanted to generate secure randomness, you should not use the Random library as it is not built for cryptology and is susceptible to timing attacks and seed cracking.
+This applies to C# too, so we use the System.Security.Cryptography module, which provides the RandomNumberGenerator class which is secure.</p>
+<p>A SecurityHandler class has been created to abstract security items in a way that makes sense to more developers, allowing them to avoid worrying about security as much.
+This class has secure methods to generate random byte arrays, tokens, and other simple methods.</p>
+<p>An instance of this class may be used from the static ServerState.</p>
+<h2 id="security-methods">Security Methods</h2>
+<p>Passwords remain one of the primary methods to ensure a specific user&rsquo;s security and users may not always change their password for all the services they use. This means that it is the job of our applicaiton, to ensure that these passwords are stored and used safely.
+There are many things that go into modern security measures. Here, we will cover the four main topics used in our application.</p>
+<h4 id="hashing">Hashing</h4>
+<p>Hashing is the method by which a password is turned from plaintext to a format that cannot be reversed. This ensures that if the DB is leaked to the public or if someone has access to it, the passwords themselves remain secure. The WebAPI currently uses SHA256 (for simplicity - this should be changed to something meant for passwords) to generate password hashes however this may easily be change. Hashing will always generate the same output given the same input</p>
+<p>We can convert our  password from a string into hex so it may be hashed: <code>abc123</code> -&gt; <code>0x616263313233</code></p>
+<p>We can then run SHA256 on this: SHA256(<code>0x616263313233</code>) -&gt; <code>0x6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090</code></p>
+<p>These hashed values can then be stored in the DB. When a user needs to be authenticated through the WebAPI, they provide their password, it is hashed, then compared with the hashed real password in the DB</p>
+<p>We can convert an incorrect password from a string into hex so it may be hashed: <code>incorrectPassword</code> -&gt; <code>0x696E636F727265637450617373776F7264</code></p>
+<p>Using the incorrect password: SHA256(<code>696E636F727265637450617373776F7264</code>) -&gt; <code>0x11e56efd5eae13673eccfed917ac1d69f02a8d0b8a4c384c5cc18c1bd2b7dc29</code> != <code>0x6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090</code></p>
+<p>Using the correct password: SHA256(<code>0x616263313233</code>) -&gt; <code>0x6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090</code></p>
+<p><a href="https://www.rapidtables.com/convert/number/ascii-to-hex.html" target="_blank">Online ASCII to hex converter</a></p>
+<p><a href="https://codebeautify.org/sha256-hash-generator" target="_blank">Online SHA256 generator</a></p>
+<p><a href="https://www.codecademy.com/resources/blog/what-is-hashing/#:~:text=Hashing%20is%20the%20process%20of%20converting%20data%20%E2%80%94,using%20a%20special%20algorithm%20called%20a%20hash%20function." target="_blank">External hash explanation</a></p>
+<h4 id="salting">Salting</h4>
+<p>Salting is the method of adding randomness to hashed passwords, so that the same password, when hashed on multiple sites or by different users will not generate the same hash.
+This means that if a user re-uses passwords, a DB leak will not give this information away as the password hash will appear different.
+This also means that if two users have the same password, a DB leak will not give this information away as the password hash will appear different.</p>
+<p>A salt is just a random hex value such as: <code>0x9a66190e4f</code></p>
+<p>We can turn the password from a string into hex: <code>abc123</code> -&gt; <code>0x616263313233</code></p>
+<p>Let&rsquo;s append the salt to the end of the password hex: <code>0x616263313233</code> + <code>0x9a66190e4f</code> -&gt; <code>0x616263313233|9a66190e4f</code></p>
+<p>Let&rsquo;s hash this now: SHA256(<code>0x616263313233|9a66190e4f</code>) -&gt; <code>0x6509f3df9e7fa53ef15ae4dbc76717097982c59f0e7571bfcd5c864377432cab</code></p>
+<p>When we store this salted and hashed password, we can store the salt that we used too in plaintext in the DB, then in the future,
+when we need to authorize with a provided password, we can salt that with the same salt that was used for the real password in the DB.</p>
+<p><a href="https://www.omnicybersecurity.com/what-does-salting-the-hash-mean-is-it-effective/" target="_blank">External salt explanation</a></p>
+<p><a href="https://www.random.org/bytes/" target="_blank">Random salt / hex generator</a></p>
+<h4 id="signing">Signing</h4>
+<p>Signing is the process of generating a unique value that represents a plaintext value combined with the server&rsquo;s random cryptographic key.</p>
+<p><a href="https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_are_digital_signatures" target="_blank">Learn more here</a></p>
+<h4 id="encryption">Encryption</h4>
+<p>Encryption is the process of securing text in a way that only the specified parties can read it.</p>
+<p><a href="https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_is_asymmetric_encryption" target="_blank">Learn more here</a></p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/Wiki/index.html">
+  <img src="https://YCP-Rev-Metrix.github.io/Wiki/images/logo.png" alt="RevMetrix Logo" width="100">
+</a>
+
+        </div>
+        <form action="/Wiki/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/Wiki/js/auto-complete.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.stemmer.support.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.multi.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.en.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/search.js?1699019892" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/index.html" class=""><input type="checkbox" id="section-0501cda7e18354eac4b6992234e2e8d0" aria-controls="subsections-0501cda7e18354eac4b6992234e2e8d0"><label for="section-0501cda7e18354eac4b6992234e2e8d0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/Wiki/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-0501cda7e18354eac4b6992234e2e8d0" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-088a282c1cd3c3182c95b96912c4387a" aria-controls="subsections-088a282c1cd3c3182c95b96912c4387a" checked><label for="section-088a282c1cd3c3182c95b96912c4387a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Backend - Current State</span></label><a class="padding" href="/Wiki/current-state-of-revmetrix/backend/index.html">Backend - Current State</a><ul id="subsections-088a282c1cd3c3182c95b96912c4387a" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/frontend/index.html">Frontend - Current State</a></li>
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/simulation/index.html">Simulation - Current State</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/index.html" class="parent "><input type="checkbox" id="section-857057f9e0615656cbf861573b1354f6" aria-controls="subsections-857057f9e0615656cbf861573b1354f6" checked><label for="section-857057f9e0615656cbf861573b1354f6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/Wiki/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-857057f9e0615656cbf861573b1354f6" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/index.html" class="alwaysopen"><input type="checkbox" id="section-5164de73759585a09195903c9b47097f" aria-controls="subsections-5164de73759585a09195903c9b47097f" checked><label for="section-5164de73759585a09195903c9b47097f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-5164de73759585a09195903c9b47097f" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/dockerizing-an-application/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-084dbb12a3b2086a0c09ddd70022d7be" aria-controls="subsections-084dbb12a3b2086a0c09ddd70022d7be" checked><label for="section-084dbb12a3b2086a0c09ddd70022d7be"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/Wiki/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-084dbb12a3b2086a0c09ddd70022d7be" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/index.html" class="parent alwaysopen"><input type="checkbox" id="section-6f4e2c97a9310424ea1eb91ad086df68" aria-controls="subsections-6f4e2c97a9310424ea1eb91ad086df68" checked><label for="section-6f4e2c97a9310424ea1eb91ad086df68"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/Wiki/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-6f4e2c97a9310424ea1eb91ad086df68" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/security/index.html" class="active"><a class="padding" href="/Wiki/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/index.html" class=""><input type="checkbox" id="section-0f7d8219123f04202932bccf4b4df5e9" aria-controls="subsections-0f7d8219123f04202932bccf4b4df5e9"><label for="section-0f7d8219123f04202932bccf4b4df5e9"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu initial Project Ideas</span></label><a class="padding" href="/Wiki/initial-project-ideas/index.html">initial Project Ideas</a><ul id="subsections-0f7d8219123f04202932bccf4b4df5e9" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/simulation-first-thoughts/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/Wiki/project-assignments/index.html" class=""><input type="checkbox" id="section-20a57b3805d5ea8de5ff85c9a2766628" aria-controls="subsections-20a57b3805d5ea8de5ff85c9a2766628"><label for="section-20a57b3805d5ea8de5ff85c9a2766628"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/Wiki/project-assignments/index.html">Project Assignments</a><ul id="subsections-20a57b3805d5ea8de5ff85c9a2766628" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-fcf415a80b990cc9c0ee98ebed174502" aria-controls="subsections-fcf415a80b990cc9c0ee98ebed174502" checked><label for="section-fcf415a80b990cc9c0ee98ebed174502"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/Wiki/project-assignments/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-fcf415a80b990cc9c0ee98ebed174502" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/backend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/backend/index.html">Backend Team</a></li>
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/frontend/index.html">Frontend Team</a></li>
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/simulation/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/simulation/index.html">Simulation Team</a></li></ul></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-00446c0ae7b25ae3b820cc2ba325ba3e" aria-controls="subsections-00446c0ae7b25ae3b820cc2ba325ba3e" checked><label for="section-00446c0ae7b25ae3b820cc2ba325ba3e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Requirements</span></label><a class="padding" href="/Wiki/project-assignments/project-requirements/index.html">Project Requirements</a><ul id="subsections-00446c0ae7b25ae3b820cc2ba325ba3e" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/backend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/backend/index.html">Backend Requirements</a></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/frontend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/frontend/index.html">Frontend Requirements</a></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/simulation/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/simulation/index.html">Simulation Requirements</a></li></ul></li></ul></li>
+          <li data-nav-id="/Wiki/project-milestones/index.html" class=""><input type="checkbox" id="section-172b7588bbc4a972ce24ef7e433a1ff1" aria-controls="subsections-172b7588bbc4a972ce24ef7e433a1ff1"><label for="section-172b7588bbc4a972ce24ef7e433a1ff1"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/Wiki/project-milestones/index.html">Project Milestones</a><ul id="subsections-172b7588bbc4a972ce24ef7e433a1ff1" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-milestones/ms1-minimal-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms1-minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/Wiki/project-milestones/ms2-50-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms2-50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/Wiki/project-milestones/ms3-final-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms3-final-working-system/index.html">MS3 - Final Working System</a></li></ul></li>
+          <li data-nav-id="/Wiki/smartdot/index.html" class=""><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5"><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/Wiki/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/smartdot/ismartdot/index.html" class=""><a class="padding" href="/Wiki/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/Wiki/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="zen-dark" value="zen-dark" selected>Zen Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>Made with love</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/Wiki/js/clipboard.min.js?1699019892" defer></script>
+    <script src="/Wiki/js/perfect-scrollbar.min.js?1699019892" defer></script>
+    <script src="/Wiki/js/theme.js?1699019892" defer></script>
+  </body>
+</html>

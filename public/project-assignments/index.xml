@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Assignments on RevMetrix</title>
+    <link>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/index.html</link>
+    <description>Recent content in Project Assignments on RevMetrix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis and Design</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/index.html</guid>
+      <description>Official Project Requirements Document and Slideshow The official project requirements document can be found in the project&amp;rsquo;s Google Drive here, and the requirements presentation slideshow can be found here
+Abstract RevMetrix is a system that will record metrics of a bowling ball as it travels down the lane. It will consist of a physical device that the user can place inside a bowling ball and mobile application. The device will record rotational and positional data about the ball as it travels down the lane.</description>
+    </item>
+    <item>
+      <title>Project Requirements</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/project-requirements/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/project-requirements/index.html</guid>
+      <description>Official Project Requirements Document and Slideshow The official project requirements document can be found in the project&amp;rsquo;s Google Drive here, and the requirements presentation slideshow can be found here
+System Architecture Initial Requirements by Type of Develeopment Backend RequirementsProject requirements specific to the backend development
+Frontend RequirementsProject requirements specific to the frontend development
+Simulation RequirementsProject requirements specific to the simulation development</description>
+    </item>
+  </channel>
+</rss>

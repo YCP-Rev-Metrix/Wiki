@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Information on how to dockerize a project and deploy onto a separate machine or server">
+    <title>Dockerizing an Application :: RevMetrix</title>
+    <link href="/Wiki/how-to-contribute/dockerizing-an-application/index.xml" rel="alternate" type="application/rss+xml" title="Dockerizing an Application :: RevMetrix">
+    <link href="/Wiki/images/favicon.png?1699019892" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/Wiki/css/fontawesome-all.min.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fontawesome-all.min.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/nucleus.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/auto-complete.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/auto-complete.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/perfect-scrollbar.min.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/fonts.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fonts.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/theme.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/theme-zen-dark.css?1699019892" rel="stylesheet" id="variant-style">
+    <link href="/Wiki/css/variant.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/print.css?1699019892" rel="stylesheet" media="print">
+    <link href="/Wiki/css/ie.css?1699019892" rel="stylesheet">
+    <script src="/Wiki/js/url.js?1699019892"></script>
+    <script src="/Wiki/js/variant.js?1699019892"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/Wiki/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/YCP-Rev-Metrix.github.io\/Wiki/';
+      window.variants && variants.init( [ 'zen-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/Wiki/how-to-contribute/dockerizing-an-application/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/Wiki/how-to-contribute/github-workflows/index.html" title="GitHub Workflows (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" title="Managing a Droplet (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/How%20to%20contribute/Dockerizing%20an%20Application/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/how-to-contribute/index.html"><span itemprop="name">How To Contribute</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Dockerizing an Application</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#creating-a-dockerfile-for-an-application">Creating A Dockerfile For An Application</a></li>
+        <li><a href="#running-the-application-using-the-dockerfile">Running The Application Using The Dockerfile</a></li>
+        <li><a href="#creating-the-applications-docker-compose-file">Creating The Application&rsquo;s docker-compose File</a></li>
+        <li><a href="#deploying-the-docker-container-on-another-machine">Deploying The Docker Container On Another Machine</a></li>
+        <li><a href="#troubleshooting-and-informational-commands">Troubleshooting and Informational Commands</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="dockerizing-an-application">Dockerizing an Application</h1>
+
+<h3 id="overview">Overview</h3>
+<p>Docker is a tool used to encapsulate an application and its development enviornment.  Rather than transferring the entire application when deploying it to a server, one can simply create a Dockerfile in their project&rsquo;s directory and specify what to include in the encapsualted enviornment.  After testing the Dockerfile to see if it builds and runs successfully, once can then create a &ldquo;docker-compose.yml&rdquo; file, specifying the Docker compose format version (not the actual Docker version), project name, build configuration (including where to pull files from and the location of the Dockerfile previously created), Docker container name, ports to listen on, and Docker image name.  Once the docker-compose file builds successfully, the build configurations inside of it can be deleted out, and the docker-compose file can be run locally or transferred to a server machine that has docker installed.  After running the docker-compose file, the application should be running, and if it is a web application, the user should be able to visit it at the IP address (of the machine running the docker-compose file) and the port specified in the file.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before completing any of the following steps, it is necessary to create a <a href="https://www.docker.com/products/docker-hub/" target="_blank">Docker</a> account.  After creating an account, download <a href="https://www.docker.com/products/docker-desktop/" target="_blank">Docker Desktop</a> to easily manage containers and images that are created throughout the process below.</p>
+<h3 id="creating-a-dockerfile-for-an-application">Creating A Dockerfile For An Application</h3>
+<p>To begin the dockerization of an application, a Dockerfile must be created.  Open up the development enviornment of the application and create a file named <code>Dockerfile</code> (no extension) in the root directory of the project.  The exact layout of a Dockerfile is specific to every project, but can be modified easily to work with any project.  A base Dockerfile for a Python application developed in a Linux Ubuntu 20.04 enviornment would look something like the following:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ubuntu:22.04 </span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . /app<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> make /app<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> python /app/&lt;ApplicationName&gt;.py</span></span></code></pre></div><p>The Dockerfile above creates one layer per instruction:</p>
+<ul>
+<li><code>FROM</code> creates a layer from the ubuntu:22.04 Docker image.</li>
+<li><code>COPY</code> adds all of the files (because of the &ldquo;.&rdquo; specified) from the Docker client&rsquo;s current directory.</li>
+<li><code>RUN</code> builds the application with make.</li>
+<li><code>CMD</code> specifies what startup command to run within the container.</li>
+</ul>
+<p>When you run an image and generate a container, you add a new writable layer, also called the container layer, on top of the underlying layers. All changes made to the running container, such as writing new files, modifying existing files, and deleting files, are written to this writable container layer.</p>
+<h3 id="running-the-application-using-the-dockerfile">Running The Application Using The Dockerfile</h3>
+<h5 id="building-and-running-the-dockerfile">Building And Running The Dockerfile</h5>
+<p>After the Dockerfile for the application is created, navigate to the directory in which it was created and enter the following commands:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-s" data-lang="s"><span style="display:flex;"><span>docker build <span style="color:#f92672">-</span>t <span style="color:#f92672">&lt;</span>ApplicationName<span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">.</span></span></span></code></pre></div><p>After building the application using the Dockerfile, go ahead and run the application with:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-s" data-lang="s"><span style="display:flex;"><span>docker run <span style="color:#f92672">-</span>p <span style="color:#ae81ff">8000</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8000</span> <span style="color:#f92672">&lt;</span>ApplicationName<span style="color:#f92672">&gt;</span></span></span></code></pre></div><p>where the numbers after <code>-p</code> are the ports on which the application should run on.  The application should now be running on http://localhost:8000 if that port was originally open.  If not, try switching what port the application should run on.</p>
+<h5 id="stopping-the-dockerfile">Stopping The Dockerfile</h5>
+<p>To stop the application, simply hit <code>CTRL</code> + <code>C</code> to end the execution.</p>
+<h3 id="creating-the-applications-docker-compose-file">Creating The Application&rsquo;s docker-compose File</h3>
+<p>Now that the project&rsquo;s Dockerfile is configured, built, and successfully running, it is time to create the docker-compose file.  In the same location as the Dockerfile created above, create a new file named <code>docker-compose.yml</code>.</p>
+<p>A docker-compose file for the application above would look similar to the following:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;ApplicationName&gt;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">build</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">context</span>: <span style="color:#ae81ff">.</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">dockerfile</span>: <span style="color:#ae81ff">Dockerfile</span></span></span></code></pre></div><p>In the docker-compose file above, multiple things take place:</p>
+<ol>
+<li>The version of the Docker compose format is specified as version 3.</li>
+<li>A service by the name or the application (indicated by &ldquo;ApplicationName&rdquo;) is defined to represent the application.</li>
+<li>The build context is specified as the current directory where the Dockerfile is located using the context key (&quot;.&quot;)</li>
+<li>The dockerfile key is set to &ldquo;Dockerfile&rdquo;, the name of the Dockerfile to use when building the application.</li>
+</ol>
+<h5 id="building-the-application">Building The Application</h5>
+<p>After adding the above to the docker-compose file, open a new terminal session and enter the following command to build the application:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker-compose</span> <span style="color:#960050;background-color:#1e0010">build</span></span></span></code></pre></div><h5 id="creating-a-repository-for-the-image">Creating A Repository For The Image</h5>
+<p>Once the application is built using the above command, go to <a href="https://hub.docker.com/" target="_blank">DockerHub</a> in a web browser and login to a Docker account.  From the dashboard, go to the Repositories tab in the top menu, then hit the &ldquo;Create Repository&rdquo; button on the page.  To create a new repository for the application, the following fields must be filled out, though the description is optional:</p>
+<ul>
+<li><code>Namespace</code> - Usually the username of the account, should autofill immediately and can be left as such</li>
+<li><code>Repository Name</code> - Can be anything, but it is good practice to name it the same as the application being dockerized</li>
+<li><code>Short Description</code> (optional) - Could be anything or left blank</li>
+<li><code>Visibility</code> (Public or Private) - Select Public if the image should be available to other Docker users to pull and run locally, Private otherwise</li>
+</ul>
+<h5 id="editing-the-docker-compose-file">Editing The Docker Compose File</h5>
+<p>After an image is created in DockerHub, change the contents of the docker-compose file to the following, either deleting or commenting out the build configuration:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;ApplicationName&gt;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">&lt;Namespace&gt;/&lt;RepositoryName&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>     - <span style="color:#ae81ff">8000</span>:<span style="color:#ae81ff">8000</span></span></span></code></pre></div><p>In the reconstructed docker-compose file, the build is removed in order to run the application using the file.  This time, the file specifies the image location (the one created in DockerHub above) by the Namespace and RepositoryName set in the previous step, along with specifying which desired ports the application should run on.</p>
+<h5 id="spinning-up-the-docker-container">Spinning Up The Docker Container</h5>
+<p>Now, go ahead and run the following command to run the docker-compose file:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker-compose</span> <span style="color:#960050;background-color:#1e0010">up</span></span></span></code></pre></div><p>This command will spin up a Docker container for the application&rsquo;s image and begin running it on port 8000 of the machine that it is running on.</p>
+<h5 id="stopping-the-docker-container">Stopping The Docker Container</h5>
+<p>After testing the application as much as desired, stop the application with the following command:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker-compose</span> <span style="color:#960050;background-color:#1e0010">down</span></span></span></code></pre></div><p>After stopping the application, open the Docker Desktop application and if not already logged in, do so.  From the dashboard, navigate to the Images tab on the left side of the screen, and find the image created earlier in DockerHub in the Image menu.  To the right of the image&rsquo;s name (&ldquo;Namespace/RepositoryName&rdquo;), there is an Actions tab.  Under the Actions tab, click &ldquo;Show image actions&rdquo; (three vertical dots), then go ahead and click the &ldquo;Push to Hub&rdquo; button.  Now, the image created by the docker-compose file is available under the repository created on DockerHub earlier.</p>
+<h3 id="deploying-the-docker-container-on-another-machine">Deploying The Docker Container On Another Machine</h3>
+<p>If the application is meant to be hosted on a different machine, the &ldquo;docker-compose.yml&rdquo; file can simply be transferred to the desired machine using any file transfer protocol.  However, since only the file needs to be transferred and not the entire application, it is easier just to create another file named &ldquo;docker-compose.yml&rdquo; on the desired machine and copy the contents of the most recent version to the new one.</p>
+<p>*Note: Docker must be installed on the destination machine to run the Docker compose file.  Depending on what operating system is being used to host the application, <a href="https://docs.docker.com/engine/install/" target="_blank">DockerDocs</a> has instructions on how to install Docker depending on the user&rsquo;s OS.</p>
+<p>Once the Docker engine is installed on the destination machine and the Docker compose file has been created, the file can be run the same way as before:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker-compose</span> <span style="color:#960050;background-color:#1e0010">up</span></span></span></code></pre></div><p>The above command runs the application but only until the terminal session is closed.  Once closed, the Docker runtime is killed off and the application is no longer running.  To avoid this, in the event that the goal is to run the application 24/7 (i.e. for a web application), run the Docker compose file in detached mode using -d the same as below:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker-compose</span> <span style="color:#a6e22e">up</span> <span style="color:#960050;background-color:#1e0010">-d</span></span></span></code></pre></div><p>If the container was spun up successfully, the application will continue running after the terminal session is closed.</p>
+<h3 id="troubleshooting-and-informational-commands">Troubleshooting and Informational Commands</h3>
+<p>Below you can find a list of most of the useful troubleshooting and informational commands regarding Docker containers:</p>
+<h5 id="container-status">Container Status</h5>
+<p>To check the status of all Docker containers on a machine, enter the following command:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker</span> <span style="color:#960050;background-color:#1e0010">status</span></span></span></code></pre></div><h5 id="check-which-containers-are-running">Check Which Containers Are Running</h5>
+<p>To check what containers are currently spun up on the machine, use the following command to get a list of them in the terminal:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker</span> <span style="color:#960050;background-color:#1e0010">ps</span></span></span></code></pre></div><h5 id="printing-container-logs">Printing Container Logs</h5>
+<p>The <code>docker ps</code> command will print out the ID, Image, Command, Created, Status, Ports, and Names fields of each container running.</p>
+<p>If one wants to check the logs of a specific docker container currently running on the machine, it is easist to run the command above to see the container ID of the specific container that one wants the logs for.  Rather than typing in the entire ID into the following command, one only needs to enter the first character of the ID of the container that they wish to view the logs for.  For a container with the ID &ldquo;5a2b3c4d5e6f&rdquo;, one can just enter the first character, &ldquo;5&rdquo;, into the following command:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker</span> <span style="color:#a6e22e">logs</span> <span style="color:#a6e22e">-f</span> <span style="color:#960050;background-color:#1e0010">container-id</span></span></span></code></pre></div><p>So after determining the ID of the container one wishes to view the logs for, say container with the ID &ldquo;5a2b3c4d5e6f&rdquo;, the command to be run would be:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ps" data-lang="ps"><span style="display:flex;"><span><span style="color:#a6e22e">docker</span> <span style="color:#a6e22e">logs</span> <span style="color:#a6e22e">-f</span> <span style="color:#960050;background-color:#1e0010">5</span></span></span></code></pre></div>
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/Wiki/index.html">
+  <img src="https://YCP-Rev-Metrix.github.io/Wiki/images/logo.png" alt="RevMetrix Logo" width="100">
+</a>
+
+        </div>
+        <form action="/Wiki/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/Wiki/js/auto-complete.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.stemmer.support.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.multi.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.en.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/search.js?1699019892" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/index.html" class=""><input type="checkbox" id="section-0501cda7e18354eac4b6992234e2e8d0" aria-controls="subsections-0501cda7e18354eac4b6992234e2e8d0"><label for="section-0501cda7e18354eac4b6992234e2e8d0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/Wiki/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-0501cda7e18354eac4b6992234e2e8d0" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-088a282c1cd3c3182c95b96912c4387a" aria-controls="subsections-088a282c1cd3c3182c95b96912c4387a" checked><label for="section-088a282c1cd3c3182c95b96912c4387a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Backend - Current State</span></label><a class="padding" href="/Wiki/current-state-of-revmetrix/backend/index.html">Backend - Current State</a><ul id="subsections-088a282c1cd3c3182c95b96912c4387a" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/frontend/index.html">Frontend - Current State</a></li>
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/simulation/index.html">Simulation - Current State</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/index.html" class="parent "><input type="checkbox" id="section-857057f9e0615656cbf861573b1354f6" aria-controls="subsections-857057f9e0615656cbf861573b1354f6" checked><label for="section-857057f9e0615656cbf861573b1354f6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/Wiki/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-857057f9e0615656cbf861573b1354f6" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/index.html" class="alwaysopen"><input type="checkbox" id="section-5164de73759585a09195903c9b47097f" aria-controls="subsections-5164de73759585a09195903c9b47097f" checked><label for="section-5164de73759585a09195903c9b47097f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-5164de73759585a09195903c9b47097f" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/dockerizing-an-application/index.html" class="active"><a class="padding" href="/Wiki/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-084dbb12a3b2086a0c09ddd70022d7be" aria-controls="subsections-084dbb12a3b2086a0c09ddd70022d7be" checked><label for="section-084dbb12a3b2086a0c09ddd70022d7be"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/Wiki/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-084dbb12a3b2086a0c09ddd70022d7be" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/index.html" class="alwaysopen"><input type="checkbox" id="section-6f4e2c97a9310424ea1eb91ad086df68" aria-controls="subsections-6f4e2c97a9310424ea1eb91ad086df68" checked><label for="section-6f4e2c97a9310424ea1eb91ad086df68"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/Wiki/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-6f4e2c97a9310424ea1eb91ad086df68" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/security/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/index.html" class=""><input type="checkbox" id="section-0f7d8219123f04202932bccf4b4df5e9" aria-controls="subsections-0f7d8219123f04202932bccf4b4df5e9"><label for="section-0f7d8219123f04202932bccf4b4df5e9"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu initial Project Ideas</span></label><a class="padding" href="/Wiki/initial-project-ideas/index.html">initial Project Ideas</a><ul id="subsections-0f7d8219123f04202932bccf4b4df5e9" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/simulation-first-thoughts/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/Wiki/project-assignments/index.html" class=""><input type="checkbox" id="section-20a57b3805d5ea8de5ff85c9a2766628" aria-controls="subsections-20a57b3805d5ea8de5ff85c9a2766628"><label for="section-20a57b3805d5ea8de5ff85c9a2766628"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/Wiki/project-assignments/index.html">Project Assignments</a><ul id="subsections-20a57b3805d5ea8de5ff85c9a2766628" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-fcf415a80b990cc9c0ee98ebed174502" aria-controls="subsections-fcf415a80b990cc9c0ee98ebed174502" checked><label for="section-fcf415a80b990cc9c0ee98ebed174502"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/Wiki/project-assignments/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-fcf415a80b990cc9c0ee98ebed174502" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/backend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/backend/index.html">Backend Team</a></li>
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/frontend/index.html">Frontend Team</a></li>
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/simulation/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/simulation/index.html">Simulation Team</a></li></ul></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-00446c0ae7b25ae3b820cc2ba325ba3e" aria-controls="subsections-00446c0ae7b25ae3b820cc2ba325ba3e" checked><label for="section-00446c0ae7b25ae3b820cc2ba325ba3e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Requirements</span></label><a class="padding" href="/Wiki/project-assignments/project-requirements/index.html">Project Requirements</a><ul id="subsections-00446c0ae7b25ae3b820cc2ba325ba3e" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/backend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/backend/index.html">Backend Requirements</a></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/frontend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/frontend/index.html">Frontend Requirements</a></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/simulation/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/simulation/index.html">Simulation Requirements</a></li></ul></li></ul></li>
+          <li data-nav-id="/Wiki/project-milestones/index.html" class=""><input type="checkbox" id="section-172b7588bbc4a972ce24ef7e433a1ff1" aria-controls="subsections-172b7588bbc4a972ce24ef7e433a1ff1"><label for="section-172b7588bbc4a972ce24ef7e433a1ff1"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/Wiki/project-milestones/index.html">Project Milestones</a><ul id="subsections-172b7588bbc4a972ce24ef7e433a1ff1" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-milestones/ms1-minimal-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms1-minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/Wiki/project-milestones/ms2-50-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms2-50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/Wiki/project-milestones/ms3-final-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms3-final-working-system/index.html">MS3 - Final Working System</a></li></ul></li>
+          <li data-nav-id="/Wiki/smartdot/index.html" class=""><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5"><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/Wiki/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/smartdot/ismartdot/index.html" class=""><a class="padding" href="/Wiki/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/Wiki/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="zen-dark" value="zen-dark" selected>Zen Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>Made with love</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/Wiki/js/clipboard.min.js?1699019892" defer></script>
+    <script src="/Wiki/js/perfect-scrollbar.min.js?1699019892" defer></script>
+    <script src="/Wiki/js/theme.js?1699019892" defer></script>
+  </body>
+</html>

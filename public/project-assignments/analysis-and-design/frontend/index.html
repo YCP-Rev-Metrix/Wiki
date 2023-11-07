@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Project Analysis and Design specific to the frontend team">
+    <title>Frontend Team :: RevMetrix</title>
+    <link href="/Wiki/project-assignments/analysis-and-design/frontend/index.xml" rel="alternate" type="application/rss+xml" title="Frontend Team :: RevMetrix">
+    <link href="/Wiki/images/favicon.png?1699019892" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/Wiki/css/fontawesome-all.min.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fontawesome-all.min.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/nucleus.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/auto-complete.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/auto-complete.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/perfect-scrollbar.min.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/fonts.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fonts.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/theme.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/theme-zen-dark.css?1699019892" rel="stylesheet" id="variant-style">
+    <link href="/Wiki/css/variant.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/print.css?1699019892" rel="stylesheet" media="print">
+    <link href="/Wiki/css/ie.css?1699019892" rel="stylesheet">
+    <script src="/Wiki/js/url.js?1699019892"></script>
+    <script src="/Wiki/js/variant.js?1699019892"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/Wiki/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/YCP-Rev-Metrix.github.io\/Wiki/';
+      window.variants && variants.init( [ 'zen-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/Wiki/project-assignments/analysis-and-design/frontend/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/Wiki/project-assignments/analysis-and-design/simulation/index.html" title="Simulation Team (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/Wiki/project-assignments/analysis-and-design/backend/index.html" title="Backend Team (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/Project%20Assignments/Analysis%20and%20Design/Frontend/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/project-assignments/index.html"><span itemprop="name">Project Assignments</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/project-assignments/analysis-and-design/index.html"><span itemprop="name">Analysis and Design</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Frontend Team</span><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#smartdot-api">SmartDot API</a></li>
+        <li><a href="#file-reader">File Reader</a></li>
+        <li><a href="#ciclops">Ciclops</a></li>
+        <li><a href="#mobile-application-user-interface">Mobile Application User Interface</a></li>
+        <li><a href="#class-methods">Class Methods</a></li>
+        <li><a href="#mvc-architecture">MVC Architecture</a></li>
+        <li><a href="#local-testing-database-schema">Local Testing Database Schema</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="frontend-team">Frontend Team</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Theo Bloomquist, Thomas Bywaters, Michael Hensel, John Kettula, Liz Mains</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/Wiki/project-assignments/analysis-and-design/frontend/FrontendArc.png?width=40vw&amp;lightbox=false" alt="Frontend Arc" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<p>The frontend will be handling the user interface in the form of a Mobile Application. Data is pulled into the application from the SmartDot API within the bowling ball as well as the Ciclops Program which videos the throw itself. The data from both the SmartDot and Ciclops are processed and pushed into the Local Database. The Local Database will then send the data out to the server. The Unity Visualizer is embedded into the application and is fed data from a specific throw by the Mobile Application.</p>
+<p>The mobile application gives the user the ability to interact with and utilize the features of RevMetrix. Upon opening, the user is presented with a login screen where they can either sign in to an existing account or create a new one. If the user creates an account, an instance of the User class is created and their chosen username and password is set and stored in the database. If the User already has an account, the entered username and password is verified with those stored in the database, the User class is populated with their data, and they are granted access to the home page. From the homepage, the user has several options. They can view saved bowling balls or add new ones, record a throw using the SmartDot in a saved ball, record a throw video using the Ciclops camera, or view previous throws as video or SmartDot data.</p>
+<h3 id="smartdot-api">SmartDot API</h3>
+<p>The SmartDot API will facilitate communication between the mobile app and the SmartDot inside the user’s bowling ball. Using Bluetooth LE, the user will connect to a SmartDot and, after signaling the SmartDot to start, may begin recording their throw. Users will have to first scan for and select a SmartDot using bluetooth. Upon first connection, a new ball will be created for them as an instance of the Ball class. Saved bowling balls will remember their SmartDot’s bluetooth ID to allow for instant connection. While the ball is in motion during the throw, the SmartDot will transmit data back to the mobile app that will store it in an instance of the Throw class to be referenced later. Recording of data stops when the ball reaches the end of the lane or when the user signals so from the app.</p>
+<h3 id="file-reader">File Reader</h3>
+<p>The File Reader will allow the user to import video files into the desktop application, so that it can then be analyzed by Ciclops, which will extract bowling statistics from the video. A potential application of the file reader could also be writing local files to the local device. The File Reader could also be manipulated to generate files based on the data received from the SmartDot API. The File Reader is implemented within the application and is able to transmit data across the application using local variables &amp; the local database.</p>
+<h3 id="ciclops">Ciclops</h3>
+<p>An implementation of Ciclops will be another feature in the app that will analyze a bowler’s throw and extract data from it. It will use image recognition algorithms to differentiate between the bowling ball and the bowling lane. It will use each individual frame and compare it to the next frame to get varying statistics about the ball. These statistics include: speed, velocity, and curve. This information will be incredibly useful for extrapolation to calculate the metrics that will be eventually served to the user. Ciclops will be implemented directly in the application and will store information directly onto the applications local database.</p>
+<h3 id="mobile-application-user-interface">Mobile Application User Interface</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/Wiki/project-assignments/analysis-and-design/frontend/MAUI.png?width=40vw&amp;lightbox=false" alt="Mobile App UI" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/Wiki/project-assignments/analysis-and-design/frontend/MAUI2.png?width=40vw&amp;lightbox=false" alt="Mobile App UI2" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<p>All Frontend UI will be implemented using XAML backed with C#, allowing for users to view outputted, processed data that is displayed onto the screen using dynamically allocated XAML text Label classes, as well as allowing for users to input textual information &amp; click buttons. Button Classes come standard with XAML applications, their specific function is to handle “Clicked” input from the user, when “Clicked” is triggered by the user clicking a button a function defined in the XAML.CS class is executed. This level of abstraction allows for buttons to have dynamic functionality, meaning that whatever functionality is provided by one button to the user could be entirely different from the functionality provided by another button to the user. Textual input displayed on the XAML page can be handled in one of two ways, “TextChanged” &amp; “Completed”. “TextChanged” is triggered when any text within the input field is changed and, runs similarly to “Clicked” as it, it runs a function that is defined with the XAML.CS class. “Completed” functions similarly to “TextChanged,” triggering a specified event when the Enter key (Tab on Windows) is clicked. Dynamic output that is viewed by the user is handled by variables defined within the XAML.CS classes; these variables are passed from the XAML.CS class to the XAML output field (usually a text Label class) through the use of Binding Paths. Binding Paths are used by XAML classes to reference data, such as variables, that are defined and allocated by XAML.CS classes, Binding Paths access the current value of this data and are then displayed to the user by the Label class. Navigation between pages is handled by both the PushAsync and GoToAsync function that takes the String name of a pre-existing XAML &amp; XAML.CS class that defines the structure of a page that will be pushed onto the stack to be displayed to the user.</p>
+<h3 id="class-methods">Class Methods</h3>
+<h5 id="smartdot-api-1">SmartDot API</h5>
+<ul>
+<li>ScanAsync()</li>
+<li>ConnectToDeviceAsync()</li>
+<li>ConnectToKnownDeviceAsync(Guid)</li>
+<li>ReadAsync()</li>
+<li>ReadServicesAsync()</li>
+<li>ReadCharacteristicsAsync()</li>
+<li>ReadDescriptorsAsync()</li>
+<li>DisconnectAsync()</li>
+</ul>
+<h5 id="file-reader-1">File Reader</h5>
+<ul>
+<li>MakeFile(string fileName)</li>
+<li>WriteFile(string fileName, string text)</li>
+<li>Create(string fileName)</li>
+</ul>
+<h5 id="ciclops-1">Ciclops</h5>
+<ul>
+<li>TakePhoto()</li>
+<li>OnTakeVidBtnClicked(object sender, EventArgs e)</li>
+</ul>
+<h5 id="mobile-application-user-interface-1">Mobile Application User Interface</h5>
+<ul>
+<li>Clicked(object sender, EventArgs e)</li>
+<li>TextChanged(object sender, TextChangedEventArgs e)</li>
+<li>Completed(object sender, EventArgs e)</li>
+<li>PushAsync(String page)</li>
+<li>GoToAsync(String page)</li>
+</ul>
+<h5 id="user">User</h5>
+<ul>
+<li>Login(string, string)</li>
+<li>CreateAcct(string, string)</li>
+<li>AddBall(IDevice)</li>
+<li>NewGame()</li>
+<li>DeleteBall(Ball)</li>
+<li>DeleteGame(Game)</li>
+</ul>
+<h5 id="game">Game</h5>
+<ul>
+<li>AddThrow()</li>
+<li>DeleteThrow(Throw)</li>
+</ul>
+<h5 id="uml-diagram">UML Diagram</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/Wiki/project-assignments/analysis-and-design/frontend/MAUML.jpg?width=40vw&amp;lightbox=false" alt="Mobile App UML" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<h3 id="mvc-architecture">MVC Architecture</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/Wiki/project-assignments/analysis-and-design/frontend/MVC.jpg?width=60vw&amp;lightbox=false" alt="MVC Diagram" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 60vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<p>Due to the design architecture of .NET MAUI, both the XAML &amp; XAML.CS classes can be considered the “controller” classes as they both handle data flow to each other. However the specific definitions of the UI are clearly handled by the XAML class and the model for which outputted data is structured is handled by the XAML.CS class. While this may be difficult to grasp at first, there are sections of code within both the XAML and XAML.CS classes that handle &amp; execute control logic amongst themselves, making these sections both the respective ‘Controller’ of this diagram.</p>
+<h3 id="local-testing-database-schema">Local Testing Database Schema</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/Wiki/project-assignments/analysis-and-design/frontend/LDBS.jpg?width=40vw&amp;lightbox=false" alt="DBSchema" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<p>The primary purpose of the local database that is hosted by the frontend application is to temporarily store user information so that it can be transmitted via Web API to the backends Cloud infrastructure for long-term storage. The backend team will be handling the creation of this local database, while we will create a dummy database purely for testing purposes. This is to allow for the frontend team to retrieve data to ensure the functionality of application features. As seen above, the schema of this database is almost identical to the schema of the backend team’s local database as they will be storing similar information. The main difference being the User Table which will be used for testing users while the server databases are being built. This dummy database is also to ensure seamless integration between the frontend and backend team when they eventually come together to combine their systems.</p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/Wiki/index.html">
+  <img src="https://YCP-Rev-Metrix.github.io/Wiki/images/logo.png" alt="RevMetrix Logo" width="100">
+</a>
+
+        </div>
+        <form action="/Wiki/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/Wiki/js/auto-complete.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.stemmer.support.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.multi.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.en.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/search.js?1699019892" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/index.html" class=""><input type="checkbox" id="section-0501cda7e18354eac4b6992234e2e8d0" aria-controls="subsections-0501cda7e18354eac4b6992234e2e8d0"><label for="section-0501cda7e18354eac4b6992234e2e8d0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/Wiki/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-0501cda7e18354eac4b6992234e2e8d0" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-088a282c1cd3c3182c95b96912c4387a" aria-controls="subsections-088a282c1cd3c3182c95b96912c4387a" checked><label for="section-088a282c1cd3c3182c95b96912c4387a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Backend - Current State</span></label><a class="padding" href="/Wiki/current-state-of-revmetrix/backend/index.html">Backend - Current State</a><ul id="subsections-088a282c1cd3c3182c95b96912c4387a" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/frontend/index.html">Frontend - Current State</a></li>
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/simulation/index.html">Simulation - Current State</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/index.html" class=""><input type="checkbox" id="section-857057f9e0615656cbf861573b1354f6" aria-controls="subsections-857057f9e0615656cbf861573b1354f6"><label for="section-857057f9e0615656cbf861573b1354f6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/Wiki/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-857057f9e0615656cbf861573b1354f6" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/index.html" class="alwaysopen"><input type="checkbox" id="section-5164de73759585a09195903c9b47097f" aria-controls="subsections-5164de73759585a09195903c9b47097f" checked><label for="section-5164de73759585a09195903c9b47097f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-5164de73759585a09195903c9b47097f" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/dockerizing-an-application/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-084dbb12a3b2086a0c09ddd70022d7be" aria-controls="subsections-084dbb12a3b2086a0c09ddd70022d7be" checked><label for="section-084dbb12a3b2086a0c09ddd70022d7be"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/Wiki/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-084dbb12a3b2086a0c09ddd70022d7be" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/index.html" class="alwaysopen"><input type="checkbox" id="section-6f4e2c97a9310424ea1eb91ad086df68" aria-controls="subsections-6f4e2c97a9310424ea1eb91ad086df68" checked><label for="section-6f4e2c97a9310424ea1eb91ad086df68"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/Wiki/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-6f4e2c97a9310424ea1eb91ad086df68" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/security/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/index.html" class=""><input type="checkbox" id="section-0f7d8219123f04202932bccf4b4df5e9" aria-controls="subsections-0f7d8219123f04202932bccf4b4df5e9"><label for="section-0f7d8219123f04202932bccf4b4df5e9"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu initial Project Ideas</span></label><a class="padding" href="/Wiki/initial-project-ideas/index.html">initial Project Ideas</a><ul id="subsections-0f7d8219123f04202932bccf4b4df5e9" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/simulation-first-thoughts/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/Wiki/project-assignments/index.html" class="parent "><input type="checkbox" id="section-20a57b3805d5ea8de5ff85c9a2766628" aria-controls="subsections-20a57b3805d5ea8de5ff85c9a2766628" checked><label for="section-20a57b3805d5ea8de5ff85c9a2766628"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/Wiki/project-assignments/index.html">Project Assignments</a><ul id="subsections-20a57b3805d5ea8de5ff85c9a2766628" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/index.html" class="parent alwaysopen"><input type="checkbox" id="section-fcf415a80b990cc9c0ee98ebed174502" aria-controls="subsections-fcf415a80b990cc9c0ee98ebed174502" checked><label for="section-fcf415a80b990cc9c0ee98ebed174502"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/Wiki/project-assignments/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-fcf415a80b990cc9c0ee98ebed174502" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/backend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/backend/index.html">Backend Team</a></li>
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/frontend/index.html" class="active"><a class="padding" href="/Wiki/project-assignments/analysis-and-design/frontend/index.html">Frontend Team</a></li>
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/simulation/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/simulation/index.html">Simulation Team</a></li></ul></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-00446c0ae7b25ae3b820cc2ba325ba3e" aria-controls="subsections-00446c0ae7b25ae3b820cc2ba325ba3e" checked><label for="section-00446c0ae7b25ae3b820cc2ba325ba3e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Requirements</span></label><a class="padding" href="/Wiki/project-assignments/project-requirements/index.html">Project Requirements</a><ul id="subsections-00446c0ae7b25ae3b820cc2ba325ba3e" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/backend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/backend/index.html">Backend Requirements</a></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/frontend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/frontend/index.html">Frontend Requirements</a></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/simulation/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/simulation/index.html">Simulation Requirements</a></li></ul></li></ul></li>
+          <li data-nav-id="/Wiki/project-milestones/index.html" class=""><input type="checkbox" id="section-172b7588bbc4a972ce24ef7e433a1ff1" aria-controls="subsections-172b7588bbc4a972ce24ef7e433a1ff1"><label for="section-172b7588bbc4a972ce24ef7e433a1ff1"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/Wiki/project-milestones/index.html">Project Milestones</a><ul id="subsections-172b7588bbc4a972ce24ef7e433a1ff1" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-milestones/ms1-minimal-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms1-minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/Wiki/project-milestones/ms2-50-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms2-50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/Wiki/project-milestones/ms3-final-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms3-final-working-system/index.html">MS3 - Final Working System</a></li></ul></li>
+          <li data-nav-id="/Wiki/smartdot/index.html" class=""><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5"><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/Wiki/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/smartdot/ismartdot/index.html" class=""><a class="padding" href="/Wiki/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/Wiki/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="zen-dark" value="zen-dark" selected>Zen Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>Made with love</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/Wiki/js/clipboard.min.js?1699019892" defer></script>
+    <script src="/Wiki/js/perfect-scrollbar.min.js?1699019892" defer></script>
+    <script src="/Wiki/js/theme.js?1699019892" defer></script>
+  </body>
+</html>

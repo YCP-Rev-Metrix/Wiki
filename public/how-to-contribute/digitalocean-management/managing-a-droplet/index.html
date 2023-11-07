@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="How to manage a DigitalOcean droplet">
+    <title>Managing a Droplet :: RevMetrix</title>
+    <link href="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.xml" rel="alternate" type="application/rss+xml" title="Managing a Droplet :: RevMetrix">
+    <link href="/Wiki/images/favicon.png?1699019892" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/Wiki/css/fontawesome-all.min.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fontawesome-all.min.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/nucleus.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/auto-complete.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/auto-complete.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/perfect-scrollbar.min.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/fonts.css?1699019892" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/Wiki/css/fonts.css?1699019892" rel="stylesheet"></noscript>
+    <link href="/Wiki/css/theme.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/theme-zen-dark.css?1699019892" rel="stylesheet" id="variant-style">
+    <link href="/Wiki/css/variant.css?1699019892" rel="stylesheet">
+    <link href="/Wiki/css/print.css?1699019892" rel="stylesheet" media="print">
+    <link href="/Wiki/css/ie.css?1699019892" rel="stylesheet">
+    <script src="/Wiki/js/url.js?1699019892"></script>
+    <script src="/Wiki/js/variant.js?1699019892"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/Wiki/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/YCP-Rev-Metrix.github.io\/Wiki/';
+      window.variants && variants.init( [ 'zen-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/Wiki/how-to-contribute/dockerizing-an-application/index.html" title="Dockerizing an Application (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" title="Creating a Droplet (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/How%20to%20contribute/DigitalOcean%20Management/Managing%20a%20Droplet/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/how-to-contribute/index.html"><span itemprop="name">How To Contribute</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/Wiki/how-to-contribute/digitalocean-management/index.html"><span itemprop="name">DigitalOcean Management</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Managing a Droplet</span><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#navigating-to-the-droplet">Navigating to the Droplet</a></li>
+    <li><a href="#droplet-dashboard">Droplet Dashboard</a>
+      <ul>
+        <li><a href="#access">Access</a></li>
+        <li><a href="#power">Power</a></li>
+        <li><a href="#networking">Networking</a></li>
+        <li><a href="#snapshots">Snapshots</a></li>
+        <li><a href="#destroy">Destroy</a></li>
+        <li><a href="#recovery">Recovery</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="managing-a-droplet">Managing a Droplet</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before continuing with any of the following steps, make sure that you have created an account on <a href="https://DigitalOcean.com" target="_blank">DigitalOcean</a> and have already created a Droplet.  If you have not yet created a Droplet, see the &ldquo;<a href="../creating-a-droplet/">Creating a Droplet</a>&rdquo; page to find out how to do so.</p>
+<h2 id="navigating-to-the-droplet">Navigating to the Droplet</h2>
+<p>To begin learning how to manage a DigitalOcean Droplet, select the &ldquo;Projects&rdquo; dropdown in the top left of the main dashboard page and click on the project in which the Droplet you want to manage is located:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/projects.png?lightbox=false&amp;text-align=left" alt="projects" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>You will then be taken to the project&rsquo;s dashboard, where you can see resources and activity and manage the project&rsquo;s settings.  Click on the resources tab and select the Droplet from the list below:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/dashboard.png?lightbox=false&amp;text-align=left" alt="dashboard" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>*Note: The full name of the project, Droplet, and the full IP address of the Droplet shown are blurred for security purposes.</p>
+<h2 id="droplet-dashboard">Droplet Dashboard</h2>
+<p>After navigating to the Droplet, you will be greated by the Droplet&rsquo;s dashboard, as seen below:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/dropdash.png?lightbox=false&amp;text-align=left" alt="dropdash" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>From here, you can view and manage a plethora of different things regarding the Droplet, including:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Tabs</th>
+<th style="text-align:left">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Graphs</td>
+<td style="text-align:left">Graphical data that shows bandwidth, CPU usage, and disk I/O operations</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="#access">Access</a></td>
+<td style="text-align:left">Access to the Droplet console, Recovery console, and reset the root password</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="#power">Power</a></td>
+<td style="text-align:left">Turn off the Droplet or Power Cycle the Droplet</td>
+</tr>
+<tr>
+<td style="text-align:center">Volumes</td>
+<td style="text-align:left">Add or manage disk volumes on the Droplet</td>
+</tr>
+<tr>
+<td style="text-align:center">Resize</td>
+<td style="text-align:left">Upgrade the Droplet Type and CPU Options of the Droplet</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="#networking">Networking</a></td>
+<td style="text-align:left">View details of the Public and Private Networks and manage Inbound and Outbound Firewalls</td>
+</tr>
+<tr>
+<td style="text-align:center">Backups</td>
+<td style="text-align:left">Create backups of the Droplet (priced per month by size of Droplet)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="#snapshots">Snapshots</a></td>
+<td style="text-align:left">Take a snapshot and manage previous snapshots taken of the Droplet</td>
+</tr>
+<tr>
+<td style="text-align:center">Kernel</td>
+<td style="text-align:left">View the status of the Kernel or enable management of it in the control panel</td>
+</tr>
+<tr>
+<td style="text-align:center">History</td>
+<td style="text-align:left">View all previous changes made to the current Droplet</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="#destroy">Destroy</a></td>
+<td style="text-align:left">Destroy or Rebuild the current Droplet (only used to get rid of the Droplet completely)</td>
+</tr>
+<tr>
+<td style="text-align:center">Tags</td>
+<td style="text-align:left">Manage tags assigned to the Droplet (tags are used for grouping Droplets and are not required)</td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="#recovery">Recovery</a></td>
+<td style="text-align:left">Select whether to Boot from ISO or Boot from Harddrive (used if corruption in Droplet occurs)</td>
+</tr>
+</tbody>
+</table>
+<p>Seeing as only a handful of these tabs are necessary to use, we&rsquo;ll only cover the basics throughout the rest of the steps.  If more information is desired on the other tabs, finish the rest of the steps and play around inside of the Droplet&rsquo;s dashboard to gain a better understanding of just what you can do to/with the Droplet from within each tab.</p>
+<p>*Note: All IP addresses associated with this Droplet have been crossed out for security purposes.</p>
+<h3 id="access">Access</h3>
+<p>The access tab is the most important out of the list, as it allows the user to log into the Droplet console and Recovery console, along with giving them the ability to change the password of the &ldquo;root&rdquo; user.  Below you will find information regarding each of the access tab&rsquo;s functions.</p>
+<h5 id="droplet-console">Droplet Console</h5>
+<p>The Droplet console is what the user will use to access their Droplet, make changes, and perform any modifications/operations inside of the Droplet.  Pictured below is the form for signing into the console:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/dropcons.png?lightbox=false&amp;text-align=left" alt="login" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>Here, the default login user is &ldquo;root&rdquo;, and the password for the user will be entered once the console popup window shows after clicking the &ldquo;Launch Droplet Console&rdquo; button.  The password to enter is the same one that the user set for &ldquo;root&rdquo; at the time of creation of the Droplet.</p>
+<p>After logging into the console as root, the user will have full permissions to add files, edit files, run programs, setup a file transferring protocol, etc.  We won&rsquo;t go into the specifics since what a user does inside of their console is out of the bounds of simple Droplet management.</p>
+<h5 id="recovery-console">Recovery Console</h5>
+<p>Next is the Recovery console.  In the event that one loses access to their Droplet or has lost data that they are unable to recover in the regular Droplet console, they can open a Recovery console session to attempt to recover access or potentially lost data.  To access the Recovery console, simply click the &ldquo;Launch Recovery Console&rdquo; button on the access tab page and enter the password for the &ldquo;root&rdquo; user in the popup window.  The button for the Recovery console looks something like below:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/recov.png?lightbox=false&amp;text-align=left" alt="recov" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>After logging into the Recovery console, the user can select from 6 options available.  These options are explained in detail when the user logs in, so there is no need to elaborate on them here.</p>
+<p>*Note: The Recovery console is only to be used if familiar with Ubuntu and navigating through an OS using a terminal.</p>
+<h5 id="reset-root-password">Reset Root Password</h5>
+<p>The &ldquo;Reset Root Password&rdquo; button can be used to reset the password in the event that the user has forgotten their password or has lost access to their Droplet.  To do so, simply hit the button shown below and DigitalOcean will prompt accordingly.</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/reset.png?lightbox=false&amp;text-align=left" alt="reset" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<h3 id="power">Power</h3>
+<p>The power tab can be used to power off the Droplet completely or to Power Cycle the Droplet. Below more information can be found regarding both functions:</p>
+<h5 id="power-off">Power Off</h5>
+<p>The power off function can be used to shutdown the Droplet in the event that maintenence needs to be done on it or the user wants to enable IPv6 addressing for the Droplet.  More details on the power off function can be seen in the following image:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/power.png?lightbox=false&amp;text-align=left" alt="power" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<h5 id="power-cycle">Power Cycle</h5>
+<p>The power cycle function can be used to do a full restart of the Droplet, powering it off then turning it back on.  More details on this can be found in the image below:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/powercyc.png?lightbox=false&amp;text-align=left" alt="power cycle" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<h3 id="networking">Networking</h3>
+<p>The networking tab is where all options regarding IP addressing and firewalls are located.  Below you can find more information regarding each option listed on the page:</p>
+<h5 id="public-network">Public Network</h5>
+<p>The public network settings show the public IP addresses and subnets that people can access the Droplet through.  In the same section, users can enable or disable public IPv6 addressing if so desired.  See the below screenshot:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/public.png?lightbox=false&amp;text-align=left" alt="public" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>*Note: All IP addresses associated with this Droplet have been crossed out for security purposes.</p>
+<h5 id="private-network">Private Network</h5>
+<p>The private network settings list the Droplet&rsquo;s private IP address and the name and IP of the the Virtual Private Cloud (VPC) network.  As shown below, only users that are a part of the same VPC network can connect to the Droplet using the private IP address:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/private.png?lightbox=false&amp;text-align=left" alt="private" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>*Note: All IP addresses associated with this Droplet have been crossed out for security purposes.</p>
+<h5 id="firewalls">Firewalls</h5>
+<p>Below you will find information regarding the firewall settings for the Droplet.</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/firewall.png?lightbox=false&amp;text-align=left" alt="firewall" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>There are two types of firewall rules that can be configured.  How one configures their firewalls depends solely on the goal of the user.  Below you will find the inbound and outbound rules and what type of connections each firewall handles:</p>
+<p>Inbound Firewall:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/inbound.png?lightbox=false&amp;text-align=left" alt="Inbound" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<ul>
+<li>The inbound firewall handles incoming connections by a multitude of protocols such as HTTPS, SSH, and so on.  To specify a port that an application on the Droplet should run on, one would simply create a &ldquo;Custom&rdquo; inbound firewall rule that specifies the port of the application to run.</li>
+</ul>
+<p>Outbound Firewall:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/outbound.png?lightbox=false&amp;text-align=left" alt="outbound" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<ul>
+<li>The outbound firewall handles outgoing traffic from the server different communication protocols such as ICMP, TCP, UDP, and more.  These rules allow the user to specify what ports and what destinations traffic from the server is allowed to be sent to.</li>
+</ul>
+<h3 id="snapshots">Snapshots</h3>
+<p>The snapshots tab is where users are able to create snapshot backups of their Droplet.  Though it costs a bit extra to create snapshots, it is good practice to create one in the event that data gets corrupted on the Droplet or the user loses access to it and can not reset their password.  Below you can see the details of creating a snapshot and that all you need to do is name the snapshot and hit &ldquo;Take Live Snapshot&rdquo;:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/snapshot.png?lightbox=false&amp;text-align=left" alt="snapshot" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<p>Users can also see previous snapshots taken in the bottom section of the page and if none were made, the output above for that section will be shown.</p>
+<p>*Note: The name of the Droplet snapshot has been crossed out for security purposes.</p>
+<h3 id="destroy">Destroy</h3>
+<p>The destroy tab can be used to permanently delete the Droplet or rebuild the droplet from a previously taken snapshot (after doing so in the above section).  See the below image to get an idea of each function:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/destroy.png?lightbox=false&amp;text-align=left" alt="destroy" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+<h3 id="recovery">Recovery</h3>
+<p>The recovery tab is used when someone needs to restore something from the Droplet that they may have accidentally deleted or that has become corrupted.  The default setting in this tab is to boot from the Droplet&rsquo;s hard drive, which is what is happening each time the Droplet is turned on until the option is changed.  Changing the option to boot from recovery ISO allows the user to handle different kernel mismatches and attempt to restore any corrupted data, though none of the recovery methods are guaranteed to work in the case of an emergency (deleted privilege folders, renaming of privilege folders, etc.).  See below to read more about each option&rsquo;s function:</p>
+<p><img src="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/recovery.png?lightbox=false&amp;text-align=left" alt="recovery" class="figure-image noborder nolightbox noshadow" style="height: auto; width: auto;" loading="lazy"></p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/Wiki/index.html">
+  <img src="https://YCP-Rev-Metrix.github.io/Wiki/images/logo.png" alt="RevMetrix Logo" width="100">
+</a>
+
+        </div>
+        <form action="/Wiki/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/Wiki/js/auto-complete.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.stemmer.support.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.multi.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/lunr/lunr.en.min.js?1699019892" defer></script>
+        <script src="/Wiki/js/search.js?1699019892" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/index.html" class=""><input type="checkbox" id="section-0501cda7e18354eac4b6992234e2e8d0" aria-controls="subsections-0501cda7e18354eac4b6992234e2e8d0"><label for="section-0501cda7e18354eac4b6992234e2e8d0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/Wiki/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-0501cda7e18354eac4b6992234e2e8d0" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-088a282c1cd3c3182c95b96912c4387a" aria-controls="subsections-088a282c1cd3c3182c95b96912c4387a" checked><label for="section-088a282c1cd3c3182c95b96912c4387a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Backend - Current State</span></label><a class="padding" href="/Wiki/current-state-of-revmetrix/backend/index.html">Backend - Current State</a><ul id="subsections-088a282c1cd3c3182c95b96912c4387a" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/frontend/index.html">Frontend - Current State</a></li>
+          <li data-nav-id="/Wiki/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/Wiki/current-state-of-revmetrix/simulation/index.html">Simulation - Current State</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/index.html" class="parent "><input type="checkbox" id="section-857057f9e0615656cbf861573b1354f6" aria-controls="subsections-857057f9e0615656cbf861573b1354f6" checked><label for="section-857057f9e0615656cbf861573b1354f6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/Wiki/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-857057f9e0615656cbf861573b1354f6" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/index.html" class="parent alwaysopen"><input type="checkbox" id="section-5164de73759585a09195903c9b47097f" aria-controls="subsections-5164de73759585a09195903c9b47097f" checked><label for="section-5164de73759585a09195903c9b47097f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-5164de73759585a09195903c9b47097f" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class="active"><a class="padding" href="/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/dockerizing-an-application/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-084dbb12a3b2086a0c09ddd70022d7be" aria-controls="subsections-084dbb12a3b2086a0c09ddd70022d7be" checked><label for="section-084dbb12a3b2086a0c09ddd70022d7be"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/Wiki/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-084dbb12a3b2086a0c09ddd70022d7be" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/index.html" class="alwaysopen"><input type="checkbox" id="section-6f4e2c97a9310424ea1eb91ad086df68" aria-controls="subsections-6f4e2c97a9310424ea1eb91ad086df68" checked><label for="section-6f4e2c97a9310424ea1eb91ad086df68"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/Wiki/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-6f4e2c97a9310424ea1eb91ad086df68" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/security/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/Wiki/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/Wiki/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/index.html" class=""><input type="checkbox" id="section-0f7d8219123f04202932bccf4b4df5e9" aria-controls="subsections-0f7d8219123f04202932bccf4b4df5e9"><label for="section-0f7d8219123f04202932bccf4b4df5e9"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu initial Project Ideas</span></label><a class="padding" href="/Wiki/initial-project-ideas/index.html">initial Project Ideas</a><ul id="subsections-0f7d8219123f04202932bccf4b4df5e9" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/Wiki/initial-project-ideas/simulation-first-thoughts/index.html" class=""><a class="padding" href="/Wiki/initial-project-ideas/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/Wiki/project-assignments/index.html" class=""><input type="checkbox" id="section-20a57b3805d5ea8de5ff85c9a2766628" aria-controls="subsections-20a57b3805d5ea8de5ff85c9a2766628"><label for="section-20a57b3805d5ea8de5ff85c9a2766628"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/Wiki/project-assignments/index.html">Project Assignments</a><ul id="subsections-20a57b3805d5ea8de5ff85c9a2766628" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-fcf415a80b990cc9c0ee98ebed174502" aria-controls="subsections-fcf415a80b990cc9c0ee98ebed174502" checked><label for="section-fcf415a80b990cc9c0ee98ebed174502"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/Wiki/project-assignments/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-fcf415a80b990cc9c0ee98ebed174502" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/backend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/backend/index.html">Backend Team</a></li>
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/frontend/index.html">Frontend Team</a></li>
+          <li data-nav-id="/Wiki/project-assignments/analysis-and-design/simulation/index.html" class=""><a class="padding" href="/Wiki/project-assignments/analysis-and-design/simulation/index.html">Simulation Team</a></li></ul></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-00446c0ae7b25ae3b820cc2ba325ba3e" aria-controls="subsections-00446c0ae7b25ae3b820cc2ba325ba3e" checked><label for="section-00446c0ae7b25ae3b820cc2ba325ba3e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Requirements</span></label><a class="padding" href="/Wiki/project-assignments/project-requirements/index.html">Project Requirements</a><ul id="subsections-00446c0ae7b25ae3b820cc2ba325ba3e" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/backend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/backend/index.html">Backend Requirements</a></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/frontend/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/frontend/index.html">Frontend Requirements</a></li>
+          <li data-nav-id="/Wiki/project-assignments/project-requirements/simulation/index.html" class=""><a class="padding" href="/Wiki/project-assignments/project-requirements/simulation/index.html">Simulation Requirements</a></li></ul></li></ul></li>
+          <li data-nav-id="/Wiki/project-milestones/index.html" class=""><input type="checkbox" id="section-172b7588bbc4a972ce24ef7e433a1ff1" aria-controls="subsections-172b7588bbc4a972ce24ef7e433a1ff1"><label for="section-172b7588bbc4a972ce24ef7e433a1ff1"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/Wiki/project-milestones/index.html">Project Milestones</a><ul id="subsections-172b7588bbc4a972ce24ef7e433a1ff1" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/project-milestones/ms1-minimal-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms1-minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/Wiki/project-milestones/ms2-50-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms2-50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/Wiki/project-milestones/ms3-final-working-system/index.html" class=""><a class="padding" href="/Wiki/project-milestones/ms3-final-working-system/index.html">MS3 - Final Working System</a></li></ul></li>
+          <li data-nav-id="/Wiki/smartdot/index.html" class=""><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5"><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/Wiki/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
+          <li data-nav-id="/Wiki/smartdot/ismartdot/index.html" class=""><a class="padding" href="/Wiki/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/Wiki/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/Wiki/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/Wiki/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="zen-dark" value="zen-dark" selected>Zen Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>Made with love</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/Wiki/js/clipboard.min.js?1699019892" defer></script>
+    <script src="/Wiki/js/perfect-scrollbar.min.js?1699019892" defer></script>
+    <script src="/Wiki/js/theme.js?1699019892" defer></script>
+  </body>
+</html>

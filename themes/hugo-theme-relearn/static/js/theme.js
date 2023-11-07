@@ -380,8 +380,8 @@ function initOpenapi( update, attrs ){
                 '<head>' +
                     '<link rel="stylesheet" href="' + window.themeUseOpenapi.css + '">' +
                     '<link rel="stylesheet" href="' + theme + '">' +
-                    '<link rel="stylesheet" href="' + baseUri + '/css/swagger.css' + buster + '">' +
-                    '<link rel="stylesheet" href="' + baseUri + '/css/swagger-' + swagger_theme + '.css' + buster + '">' +
+                    '<link rel="stylesheet" href="' + baseUri + '/Wiki/css/swagger.css' + buster + '">' +
+                    '<link rel="stylesheet" href="' + baseUri + '/Wiki/css/swagger-' + swagger_theme + '.css' + buster + '">' +
                 '</head>' +
                 '<body>' +
                     '<a class="relearn-expander" href="" onclick="return relearn_collapse_all()">Collapse all</a>' +

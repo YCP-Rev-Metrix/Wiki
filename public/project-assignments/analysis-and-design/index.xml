@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis and Design on RevMetrix</title>
+    <link>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/index.html</link>
+    <description>Recent content in Analysis and Design on RevMetrix</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend Team</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/backend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/backend/index.html</guid>
+      <description>Jordan Carvell, Braden Fleming, Victor Pineda, Robert Wood Local Database The local database will be used to store and retrieve information from the current or most recent practice/match session that the user completed. The mobile app sends the session’s data to the local database and overwrites previous data entries when a new practice/match session is completed and the previous data has been uploaded to the user database in the cloud.</description>
+    </item>
+    <item>
+      <title>Frontend Team</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/frontend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/frontend/index.html</guid>
+      <description>Theo Bloomquist, Thomas Bywaters, Michael Hensel, John Kettula, Liz Mains The frontend will be handling the user interface in the form of a Mobile Application. Data is pulled into the application from the SmartDot API within the bowling ball as well as the Ciclops Program which videos the throw itself. The data from both the SmartDot and Ciclops are processed and pushed into the Local Database. The Local Database will then send the data out to the server.</description>
+    </item>
+    <item>
+      <title>Simulation Team</title>
+      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/simulation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/analysis-and-design/simulation/index.html</guid>
+      <description>Luke Dodson, Bryce Neptune, Enoch Sam, Ian Viveiros SmartDot Simulation The SmartDot Module will be a small device that can be placed in the finger insert of a bowling ball. It will record rotational and positional data about each ball throw and transmit this data via bluetooth to the mobile device. The SmartDot will have two sensors: an 3-axis accelerometer and an ambient light sensor. The light sensor will be used to detect start up conditions by sensing light-to-dark and dark-to-light transitions.</description>
+    </item>
+  </channel>
+</rss>
