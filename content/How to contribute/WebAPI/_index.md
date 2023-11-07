@@ -4,12 +4,12 @@ weight = 100
 description = 'Information on how to use the WebAPI'
 +++
 
-| Table of Contents |
-|:--:|
-| [Overview](#overview) |
-| [Configuration](#configuration) |
-| [Database Interactions](#database-interactions) |
-| [Adding Endpoints](#adding-endpoints) |
+- [Overview](#overview)
+- [Configuration](#configuration)
+    - [App Settings](#appsettingsjson)
+    - [Program Startup](#programcs)
+    - [Environment Variables](#environment-variables)
+- [Database Interactions](#database-interactions)
 
 ---
 ## Overview
@@ -98,7 +98,3 @@ public AbstractDatabase(string databaseName)
 
 ---
 ## Database Interactions
-
-
----
-## Adding Endpoints
