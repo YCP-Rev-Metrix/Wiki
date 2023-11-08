@@ -5,7 +5,7 @@ description = 'The current state of each aspect of the project and what is to co
 +++
 
 ##### RevMetrix System Architecture
-![RevMetrix Diagram](OverallSystemArc.png?width=200vw&lightbox=false&text-align=left)
+![RevMetrix Diagram](OverallSystemArc.png?width=200vw&lightbox=false&text-align=left&classes=shadow)
 
 ##### Current Status by Development Team
 {{% children containerstyle="ul" style="li" sort="title" description="true" %}}

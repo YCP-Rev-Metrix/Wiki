@@ -11,7 +11,7 @@ description = 'All details about the current state of simulation development, al
 |:--:| 
 
 ##### Demo
-{{< video src="Physics_Demo.mp4" type="video/mp4" preload="auto" >}}
+{{< video src="Physics_Demo.mp4" type="video/mp4" preload="auto">}}
 
 ##### Simulation Dataflow
 | ![Dataflow](SimDF.png?width=30vw&lightbox=false) | 

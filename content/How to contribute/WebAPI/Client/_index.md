@@ -1,7 +1,7 @@
 +++
 title = "Web API Client"
 weight = 100
-description = 'Information on how to use the WebAPI'
+description = 'Information regarding the Client side of the Web API'
 +++
 
 Stuff about NuGet package (github actions)

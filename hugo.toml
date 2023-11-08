@@ -1,5 +1,6 @@
 baseURL = 'https://YCP-Rev-Metrix.github.io/Wiki/'
 languageCode = 'en-us'
+defaultContentLanguage = "en"
 title = 'RevMetrix'
 
 theme = "hugo-theme-relearn"
@@ -9,9 +10,10 @@ home = [ "HTML", "RSS", "SEARCH", "SEARCHPAGE"]
 
 [params]
 disableLandingPageButton = true
-themeVariant = "zen-dark"
 collapsibleMenu = true
 editURL = "https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/"
+# Change default color scheme with a variant one.
+themeVariant = [ "neon", "zen-light", "zen-dark", "blue", "green", "learn", "red", "relearn", "relearn-bright", "relearn-light", "relearn-dark" ]
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page"
@@ -34,3 +36,17 @@ name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
 url = "more/credits/"
 weight = 4
 
+[languages]
+[languages.en]
+title = "Hugo Relearn Theme"
+weight = 5
+languageName = "English"
+
+[languages.pir]
+title = "Cap'n Hugo Relearrrn Theme"
+weight = 6
+languageName = "Arrr! Pirrrates"
+
+[markup.tableOfContents]
+startLevel = 0
+endLevel = 0
