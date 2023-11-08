@@ -167,3 +167,33 @@ So after determining the ID of the container one wishes to view the logs for, sa
 docker logs -f 5
 ```
 
+In order to only print the last N log items, use the following:
+
+```ps
+docker logs -f container-id --tail N
+```
+
+##### Accessing the SQL Server
+Use ```docker ps``` to determine the container id of the sql server instance.
+
+Use ```docker exec``` to access the terminal of the sql server docker
+```ps
+docker exec -it <sql-server-container-id> /bin/bash
+```
+
+Login to the sql server using the following:
+```ps
+/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P <sql password from dockerfile>
+```
+
+Use the desired database:
+```sql
+use [revmetrix-u];
+GO
+```
+
+Execute desired sql commands:
+```sql
+select * from [User];
+GO
+```

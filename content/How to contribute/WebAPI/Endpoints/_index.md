@@ -22,6 +22,9 @@ description = 'How to Add or Manage an Endpoint'
     - [Returning](#returning)
         - [Returning Data](#returning-data)
         - [Returning Other Statuses](#returning-other-statuses)
+    - [Input Parameters](#input-parameters)
+        - [Url Parameters](#url-parameters)
+        - [Body Parameters](#body-parameters)
     - [Extra Notes](#extra-notes)
         - [Adding a Non-request Method to a Controller](#adding-a-non-request-method-to-a-controller)
 
@@ -124,8 +127,18 @@ The Http method will be of return type ```IActionResult```, decorated with ```[H
 
 ###### Naming
 The full endpoint url for this will be 'baseurl/Demo/Test' and this will be a GET.
-The name of the controller is always followed by the word controller, when the actual endpoints are generate ```[Route("api/[controller]")]``` lets the generator know to remove the word 'Controller'.
+The name of the controller is always followed by the word controller. When the actual endpoints are generated, ```[Route("api/[controller]")]``` lets the generator know to remove the word 'Controller' in the endpoint name.
 The name of our Http method is 'Test', denoted by the attribute ```[HttpGet("Test", Name = "Test")]``` decorating the method.
+```C#
+[ApiController]
+[Route("api/[controller]")]
+public class DemoController : AbstractFeaturedController
+{
+    
+}
+```
+This controller's endpoint is api/Demo.
+
 
 ###### Returns
 This endpoint currently, just returns an Ok status 200 message to the client, though in future examples, we will see something a bit more useful.
@@ -246,6 +259,35 @@ When doing this, remember to annotate methods with the ```[ProducesResponseType]
 [ProducesResponseType(typeof(DualToken), StatusCodes.Status200OK)]
 [ProducesResponseType(StatusCodes.Status403Forbidden)]
 ```
+
+#### Input Parameters
+Input parameters are a crucial portion of every web API, allowing the client to communicate data to the server.
+
+###### Url Parameters
+API Endpoints can take in Url Parameters. See the following code snippet to see how this can be done:
+```c#
+[HttpGet("UrlParameterDemo", Name = "UrlParameterDemo")]
+[ProducesResponseType(StatusCodes.Status200OK)]
+public IActionResult UrlParameterDemo([FromQuery] int parameter_name)
+{
+    return Ok();
+}
+```
+By annotating a method parameter with ```[FromQuery]```, we can retrieve the values from the url parameters.
+Keep in mind that url parameters are not encrypted and therefore should not contain sensitive information.
+
+###### Body Parameters
+API Endpoints can also take in JSON items such as POCOs. THe code snippet below shows how to do this:
+```C#
+[HttpGet("BodyParameterDemo", Name = "BodyParameterDemo")]
+[ProducesResponseType(StatusCodes.Status200OK)]
+public IActionResult BodyParameterDemo([FromBody] DateTimePoco dateTime)
+{
+    return Ok();
+}
+```
+By annotating a method parameter with ```[FromBody]```, we can retrieve the value from the request's body.
+This is generally used with requests such as POSTs where data is transfered from the clients to the server. Keep in mind that this data is encrypted via HTTPS.
 
 #### Extra Notes
 
