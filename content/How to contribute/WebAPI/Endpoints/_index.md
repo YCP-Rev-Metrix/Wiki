@@ -3,9 +3,9 @@ title = "Adding & Managing Endpoints"
 weight = 100
 description = 'How to Add or Manage an Endpoint'
 +++
-
+### Table of Contents
 - [What is an Endpoint?](#what-is-an-endpoint)
-- [What is a Controller?](#what-is-a-controller)
+- [What is a controller?](#what-is-a-controller)
 - [What is a POCO?](#what-is-a-poco)
 - [What are Url Parameters?](#what-are-url-parameters)
 - [Common Rest Request Methods](#common-rest-request-methods)
@@ -14,10 +14,11 @@ description = 'How to Add or Manage an Endpoint'
     - [PUT](#put)
     - [PATCH](#patch)
     - [DELETE](#delete)
-- [Adding and Endpoint](#adding-an-endpoint)
+- [Adding an Endpoint](#adding-an-endpoint)
     - [Basic Example](#basic-example)
         - [Controller and Method Attributes](#controller-and-method-attributes)
         - [Naming](#naming)
+        - [Returns](#returns)
     - [Authentication and Authorization](#authentication-and-authorization)
     - [Returning](#returning)
         - [Returning Data](#returning-data)

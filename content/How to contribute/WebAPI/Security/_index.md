@@ -4,11 +4,10 @@ weight = 100
 description = 'Security information regarding the WebAPI'
 +++
 
-Security is a crucial part of the Web API and security is managed in multiple ways. Please ensure that the security of the application remains during development.
-
+### Table of Contents
 - [Https](#https)
 - [Authentication and Authorization](#authentication-and-authorization)
-    - [JWT](#database-interactions)
+    - [JWT](#jwt)
     - [Refresh Tokens](#refresh-tokens)
     - [Roles](#roles)
 - [Middleware](#middleware)
@@ -18,6 +17,8 @@ Security is a crucial part of the Web API and security is managed in multiple wa
     - [Salting](#salting)
     - [Signing](#signing)
     - [Encryption](#encryption)
+
+Security is a crucial part of the Web API and security is managed in multiple ways. Please ensure that the security of the application remains during development.
 
 ---
 ## Https
