@@ -12,7 +12,7 @@ The preferred development enviornment for the Cloud-Infrastructure .NET solution
 After installing Visual Studio, you will also need to install [SQL Server Developer Edition (Free)](https://go.microsoft.com/fwlink/p/?linkid=2215158&clcid=0x409&culture=en-us&country=us).  All of the default installation settings can be followed for this.  Finally, you'll need to install [SQL Server Management Studio](https://aka.ms/ssmsfullsetup).  The default installation options for SSMS can be followed here also.
 
 ### Cloning The Repository
-To clone the Cloud-Infrastructure repository, head over to the [GitHub Repository](), click the green "Code" dropdown on the repo page, then copy the https link given from the dropdown, as seen below:
+To clone the Cloud-Infrastructure repository, head over to the [GitHub Repository](https://github.com/YCP-Rev-Metrix/Cloud-Infrastructure), click the green "Code" dropdown on the repo page, then copy the https link given from the dropdown, as seen below:
 
 ![Alt text](image-2.png)
 
