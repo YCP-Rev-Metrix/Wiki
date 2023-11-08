@@ -5,7 +5,7 @@ description = 'How to link domains to an application using DNS records and Nginx
 +++
 
 ### Overview
-To link a domain to an application running on the DigitalOcean Droplet, it is best practice to do so using [Nginx Proxy Manager](https://nginxproxymanager.com/).  If the prox7y manager is not already setup on the Droplet, visit the [getting started]() page and follow the instructions there to set it up.
+To link a domain to an application running on the DigitalOcean Droplet, it is best practice to do so using [Nginx Proxy Manager](https://nginxproxymanager.com/).  If the proxy manager is not already setup on the Droplet, visit the [getting started]() page and follow the instructions there to set it up.
 
 Linking a domain or subdomain to a specific IP address and Port number will require access to the DNS record settings of the domain through whatever provider it was purchased from.  Also, access to the Droplet that is running the application that requires the domain is necessary, along with the ability to edit firewall settings for the given Droplet.  Make sure all of this is available prior to linking the domain.
 
