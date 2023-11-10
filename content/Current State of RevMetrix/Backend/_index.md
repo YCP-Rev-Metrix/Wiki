@@ -16,7 +16,7 @@ The Web API is now capable of making client-server interactions and is being hos
 Because of the recent deployment of the API, the frontend team can now make secure data requests and transfers from the cloud databases inside of the mobile application.
 
 ### Updated Database Schemas
-Below are the most recently updated reworkings of the project's database schemas.  The databases listed below can be seen in the [RevMetrix System Architecture](/Wiki/current-project-status/)
+Below are the most recently updated reworkings of the project's database schemas.  The databases listed below can be seen in the [RevMetrix System Architecture](/current-project-status/)
 
 #### Local Database Schema (Localhost)
 | ![Local Database](LocalDatabase.jpg?width=40vw&lightbox=false&text-align=left)|

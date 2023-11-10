@@ -34,4 +34,4 @@ description = 'All details about the current state of simulation development, al
 |:--:| 
 
 ### Links
-- [SmartDot Simulator](/Wiki/smartdot/smartdot-simulator//index.html)
+- [SmartDot Simulator](/smartdot/smartdot-simulator//index.html)
