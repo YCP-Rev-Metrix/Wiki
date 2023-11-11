@@ -15,6 +15,19 @@ The Web API is now capable of making client-server interactions and is being hos
 
 Because of the recent deployment of the API, the frontend team can now make secure data requests and transfers from the cloud databases inside of the mobile application.
 
+### Updated UML Diagrams - WebAPI
+#### Client
+| ![Client](Client.jpg?width=40vw&lightbox=false&text-align=left)|
+|:--:|
+
+#### Common
+| ![Common](Common.jpg?width=40vw&lightbox=false&text-align=left)|
+|:--:|
+
+#### Server
+| ![Server](Server.jpg?width=40vw&lightbox=false&text-align=left)|
+|:--:|
+
 ### Updated Database Schemas
 Below are the most recently updated reworkings of the project's database schemas.  The databases listed below can be seen in the [RevMetrix System Architecture](/current-project-status/)
 

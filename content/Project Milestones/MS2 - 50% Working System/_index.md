@@ -28,3 +28,7 @@ description = 'Progress made on the 50% working system and the associated slides
    - Please do a dry run before class. Because of the limited amount of time we have in class, we can’t wait for your team to troubleshoot issues that arise during the presentation.
 
 ### Milestone 2 - Presentation / Demonstration
+#### Links
+The Google Slides presentation for milestone 1 can be found [here](https://docs.google.com/presentation/d/1rxATu5ASZXZj-wO9dupdV1CwlgddWFkx8h79uTTVTI8/edit?usp=drive_link).
+
+![Milestone 2 Presentation](image.png)
