@@ -13,3 +13,4 @@ disableToc=true
  - [Project Assignments](/project-assignments/index.html)
  - [Project Milestones](/project-milestones/index.html)
  - [SmartDot](/smartdot/index.html)
+ - [Technologies Used](/technologies-used/index.html)
