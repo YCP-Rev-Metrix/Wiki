@@ -45,6 +45,8 @@ Below you'll find a list of all of the technologies necessary for making contrib
 | Common Azure Tools        | 1.10           | Visual Studio Installation      |
 | NuGet Package Manager     | 6.7.0          | Visual Studio Installation      |
 | Microsoft .NET Framework  | 4.8.09032      | Visual Studio Installation      |
+| .NET Multi-Platform App UI Development (MAUI) | -            | Visual Studio Installation      |
 | Razor (ASP.NET Core)      | 17.7.3.2333001 | Visual Studio Installation      |
 | SQL Server Data Tools     | 17.7.10.1      | Visual Studio Installation      |
-| Visual Studio IntelliCode | 2.2            | Visual Studio Installation      |
+| Visual Studio IntelliCode | 2.2            | Optional checkbox under MAUI install      |
+| Xamarin | - | Optional checkbox under MAUI install |
