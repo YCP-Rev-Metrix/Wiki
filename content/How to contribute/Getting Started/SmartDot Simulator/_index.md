@@ -6,7 +6,7 @@ description = 'How to setup your environment to develop the SmartDot Simulator'
 
 ### Description
 
-The SmartDot Simulator will be used for sending test data from visualizer to mobile app. The Visualizer will output csv files containing acceleration and light data. The SmartDot Simulator will imitate the SmartDot module in functionality with one difference. Instead of sampling real acceleration and light data, it will read the appropriate data from the csv file it got from the visualizer. The SmartDot Simulator will also create a binary file containing the data and will send it over bluetooth to the mobile app.
+The SmartDot Simulator will be used for sending test data from Visualizer to mobile app. The Visualizer will output csv files containing acceleration and light data. The SmartDot Simulator will imitate the SmartDot module in functionality with one difference. Instead of sampling real acceleration and light data, it will read the appropriate data from the csv file it got from the visualizer. The SmartDot Simulator will also create a binary file containing the data and will send it over bluetooth to the mobile app.
 
 ### Prerequisites
 Microsoft Office 365 - This is needed for your program to work with excel files
