@@ -33,6 +33,10 @@ Below you'll find a list of all of the technologies necessary for making contrib
 | Unity Hub  | n/a       | [Download](https://unity.com/download)          |
 | Unity      | 2023.1.8  | [Download](https://unity.com/releases/editor/whats-new/2023.1.8) |
 
+##### Java Development Kit 17
+| Name           | Version | Download Link                                               |
+| OpenJDK 17     | 17.0.9 LTS | [Download](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17) |
+
 ##### OS Virtualization Tools
 | Name           | Version | Download Link                                               |
 |---------------|---------|------------------------------------------------------------|
@@ -49,4 +53,4 @@ Below you'll find a list of all of the technologies necessary for making contrib
 | Razor (ASP.NET Core)      | 17.7.3.2333001 | Visual Studio Installation      |
 | SQL Server Data Tools     | 17.7.10.1      | Visual Studio Installation      |
 | Visual Studio IntelliCode | 2.2            | Optional checkbox under MAUI install      |
-| Xamarin | - | Optional checkbox under MAUI install |
+| Xamarin | 17.0.0.223 | Optional checkbox under MAUI install |
