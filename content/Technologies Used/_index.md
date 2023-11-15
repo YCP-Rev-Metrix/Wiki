@@ -35,6 +35,7 @@ Below you'll find a list of all of the technologies necessary for making contrib
 
 ##### Java Development Kit 17
 | Name           | Version | Download Link                                               |
+|---------------|---------|------------------------------------------------------------|
 | OpenJDK 17     | 17.0.9 LTS | [Download](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17) |
 
 ##### OS Virtualization Tools
