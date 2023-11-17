@@ -3,25 +3,25 @@ title = "Credits"
 +++
 
 ## Faculty Contributors
-  - [Professor Donald Hake](https://github.com/DonaldHakeII)
-  - [Dr. David Babcock](https://github.com/dbabcock)
+  - [Professor Donald Hake II](../members/donald-hake-ii/index.html)
+  - [Dr. David Babcock](../members/david-babcock/index.html)
 
 ## Student Contributors
 Simulation / Graphics Team
-  - [Luke Dodson](https://github.com/5ldodson5)
-  - [Bryce Neptune](https://github.com/bneptune42)
-  - [Enoch Sam](https://github.com/EnochSam)
-  - [Ian Vivieros](https://github.com/ianvivi13)
+  - [Luke Dodson](../members/luke-dodson/index.html)
+  - [Bryce Neptune](../members/bryce-neptune/index.html)
+  - [Enoch Sam](../members/enoch-sam/index.html)
+  - [Ian Viveiros](../members/ian-viveiros/index.html)
 
 Frontend Development Team
-  - [Theodore Bloomquist](https://github.com/thbloomquist)
-  - [Thomas Bywaters](https://github.com/tbywatersYCP)
-  - [Michael Hensel](https://github.com/mhensel1)
-  - [John Kettula](https://github.com/pack12)
-  - [Elizabeth Mains](https://github.com/lizmains)
+  - [Theodore Bloomquist](../members/theodore-bloomquist/index.html)
+  - [Thomas Bywaters](../members/thomas-bywaters/index.html)
+  - [Michael Hensel](../members/michael-hensel/index.html)
+  - [John Kettula](../members/john-kettula/index.html)
+  - [Liz Mains](../members/liz-mains/index.html)
 
 Backend Developement Team
-  - [Jordan Carvell](https://github.com/jcarvell)
-  - [Braden Fleming](https://github.com/UnicycleUnicorn)
-  - [Victor Pineda](https://github.com/vickEretus)
-  - [Robert Wood](https://github.com/robertwood68)
+  - [Jordan Carvell](../members/jordan-carvell/index.html)
+  - [Braden Fleming](../members/braden-fleming/index.html)
+  - [Victor Pineda](../members/victor-pineda/index.html)
+  - [Robert Wood](../members/robert-wood/index.html)

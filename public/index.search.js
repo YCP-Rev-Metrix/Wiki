@@ -280,7 +280,7 @@ var relearn_search_index = [
     "uri": "/Wiki/categories/index.html"
   },
   {
-    "content": "Faculty Contributors Professor Donald Hake Dr. David Babcock Student Contributors Simulation / Graphics Team\nLuke Dodson Bryce Neptune Enoch Sam Ian Vivieros Frontend Development Team\nTheodore Bloomquist Thomas Bywaters Michael Hensel John Kettula Elizabeth Mains Backend Developement Team\nJordan Carvell Braden Fleming Victor Pineda Robert Wood ",
+    "content": "Faculty Contributors Professor Donald Hake II Dr. David Babcock Student Contributors Simulation / Graphics Team\nLuke Dodson Bryce Neptune Enoch Sam Ian Viveiros Frontend Development Team\nTheodore Bloomquist Thomas Bywaters Michael Hensel John Kettula Elizabeth Mains Backend Developement Team\nJordan Carvell Braden Fleming Victor Pineda Robert Wood ",
     "description": "",
     "tags": null,
     "title": "Credits",
