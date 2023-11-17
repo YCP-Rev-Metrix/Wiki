@@ -1,14 +1,14 @@
 +++
 title = "Mobile Application"
 weight = 100
-description = 'How to setup your development enviornment for the mobile app'
+description = 'How to setup your development environment for the mobile app'
 +++
 
 ### Overview
-Below you'll find instructions on how to setup your development enviornment for the mobile application.  All tools and technologies needed can be found with their version numbers on the [Technologies Used](../../../technologies-used/index.html) page, along with the same download links provided there being seen throughout this guide. There are a handful of tools needed and steps to be followed, so buckle up:
+Below you'll find instructions on how to setup your development environment for the mobile application.  All tools and technologies needed can be found with their version numbers on the [Technologies Used](../../../technologies-used/index.html) page, along with the same download links provided there being seen throughout this guide. There are a handful of tools needed and steps to be followed, so buckle up:
 
 ### Installing The JetBrains Rider IDE
-The first thing needed to setup your dev enviornment is your IDE.  For this, we'll use JetBrains Rider, which can be found downloaded [here](https://www.jetbrains.com/rider/download/#section=windows).  The setup for Rider can be followed using all of the defaults, so the installation is very straightforward.  However, we'll be coming back to Rider to setup our JDK locations for android development and such.
+The first thing needed to setup your dev environment is your IDE.  For this, we'll use JetBrains Rider, which can be found downloaded [here](https://www.jetbrains.com/rider/download/#section=windows).  The setup for Rider can be followed using all of the defaults, so the installation is very straightforward.  However, we'll be coming back to Rider to setup our JDK locations for android development and such.
 
 ### Installing .NET MAUI and Xamarin
 The next tool we'll need is .NET MAUI with Xamarin, which can be installed pretty easily using the Visual Studo Installer.  We'll cover how to install MAUI two ways: by modifying an existing installation of Visual Studio 2022, or by installing Visual Studio from scratch:
