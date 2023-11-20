@@ -12,6 +12,7 @@ description = 'External links to member and information about their contribution
 - Assisted with implementing local database on Frontend application
 - Explored Filesystem limitations of iOS devices using .NET MAUI application
 - Implemented API Authentication by creating user-side Tokens on Frontend application
+- Wrote numerous living documents specifying either the current or proposed future state of the project
 
 #### Contact Information
 - Institution Email: tbloomquist@ycp.edu
