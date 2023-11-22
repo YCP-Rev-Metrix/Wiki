@@ -20,7 +20,7 @@ Frontend Development Team
   - [John Kettula](../members/john-kettula/index.html)
   - [Liz Mains](../members/liz-mains/index.html)
 
-Backend Developement Team
+Backend Development Team
   - [Jordan Carvell](../members/jordan-carvell/index.html)
   - [Braden Fleming](../members/braden-fleming/index.html)
   - [Victor Pineda](../members/victor-pineda/index.html)
