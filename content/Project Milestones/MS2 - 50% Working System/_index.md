@@ -29,6 +29,6 @@ description = 'Progress made on the 50% working system and the associated slides
 
 ### Milestone 2 - Presentation / Demonstration
 #### Links
-The Google Slides presentation for milestone 1 can be found [here](https://docs.google.com/presentation/d/1rxATu5ASZXZj-wO9dupdV1CwlgddWFkx8h79uTTVTI8/edit?usp=drive_link).
+The Google Slides presentation for milestone 2 can be found [here](https://docs.google.com/presentation/d/1rxATu5ASZXZj-wO9dupdV1CwlgddWFkx8h79uTTVTI8/edit?usp=drive_link).
 
 ![Milestone 2 Presentation](image.png)
