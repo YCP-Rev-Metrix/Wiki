@@ -5,7 +5,14 @@ description = 'External links to member and information about their contribution
 +++
 
 #### Project Contributions
-- 
+- Led initial setup for Simulation team which caused rapid progress early in the project
+- Worked with fellow team member to develop workflows and protocols to make development more efficient
+- Analysed provided project materials (Donald Hake's proposal and thesis) to guide development
+- Led development of SmartDot Simulator
+- Created file reading cababilities for SmartDot Simulator to allow it to work with test data
+- Created Acceleremoter in the Simulator to allow it to sample acceleration data
+- Created Light Sensor in the Simulator to allow it to sample Light data
+- Worked with fellow member of SmartDot Simulator team to implement a compression algorithm for the acceleration data
 
 #### Contact Information
 - Institution Email: esam@ycp.edu
