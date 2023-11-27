@@ -4,7 +4,7 @@ disableToc=true
 +++
 
 # Welcome to RevMetrix
-![Logo](https://YCP-Rev-Metrix.github.io/Wiki/images/logo.png?lightbox=false&height=200px)
+![Logo](https://raw.githubusercontent.com/YCP-Rev-Metrix/Wiki/main/static/images/logo.png?lightbox=false&height=200px)
 
 ## Quick Links
  - [Current state of RevMetrix](/current-state-of-revmetrix/index.html)
