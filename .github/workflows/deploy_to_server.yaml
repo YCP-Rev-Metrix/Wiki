@@ -23,7 +23,7 @@ jobs:
 
   deploy-server:
     runs-on: ubuntu-latest
-    needs: [build-docker]
+    needs: [build_and_push]
     steps:
       # add necessary steps to SSH into the server and pull the Docker image
       - name: SSH into server and pull Docker image
