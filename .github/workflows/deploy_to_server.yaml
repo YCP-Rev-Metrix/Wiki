@@ -34,5 +34,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd wiki
-            docker-compose pull ${{ secrets.DOCKER_DOCSREPO }}
+            docker-compose down
+            docker-compose pull 
             docker-compose up -d
