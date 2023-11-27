@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  wiki:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: robwoodd/wiki
+    container_name: wiki
+    ports:
+      - "1313:1313"
+    volumes:
+      - ./hugo.toml:/Wiki/hugo.toml
