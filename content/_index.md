@@ -14,5 +14,3 @@ disableToc=true
  - [Project Milestones](/project-milestones/index.html)
  - [SmartDot](/smartdot/index.html)
  - [Technologies Used](/technologies-used/index.html)
-
-## WEVMETWIXWOOOOOO
