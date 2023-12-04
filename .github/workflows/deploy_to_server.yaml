@@ -1,4 +1,4 @@
-name: Docker Compose Deploy
+name: Wiki CI Workflow
 
 on:
   push:
