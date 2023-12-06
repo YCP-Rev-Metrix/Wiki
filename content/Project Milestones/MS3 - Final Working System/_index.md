@@ -29,6 +29,4 @@ description = 'Progress made on the final working system and the associated slid
 #### Links
 The Google Slides presentation for milestone 3 can be found [here](https://docs.google.com/presentation/d/16aQrNHLUBLhj_hsnZceSQvtIxRZ9tp1HctWL3ttBOro/edit#slide=id.g29972c97951_7_17235).
 
-![Milestone 3 Presentation](https://github.com/YCP-Rev-Metrix/Wiki/assets/79937590/5f040e75-1ef3-46b0-9221-a88b6534cc5b)
-
-### Milestone 3 - Document and Presentation / Demonstration
+![Milestone 3 Presentation]((https://github.com/YCP-Rev-Metrix/Wiki/assets/79937590/8dce0fca-fdbb-49a0-9552-881b011160c7)
