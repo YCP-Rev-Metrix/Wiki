@@ -25,4 +25,10 @@ description = 'Progress made on the final working system and the associated slid
    - Conclusions: Sum up what you accomplished and what you learned, particularly for underclassmen. If there are aspects of the project you would do differently if you started again from scratch, mention them. You can also talk about how you might want to extend the system in the future.
 7. All of the members of your team must make significant contributions to the presentation.
 
+### Milestone 3 - Presentation / Demonstration
+#### Links
+The Google Slides presentation for milestone 3 can be found [here](https://docs.google.com/presentation/d/16aQrNHLUBLhj_hsnZceSQvtIxRZ9tp1HctWL3ttBOro/edit#slide=id.g29972c97951_7_17235).
+
+![Milestone 3 Presentation](https://github.com/YCP-Rev-Metrix/Wiki/assets/79937590/5f040e75-1ef3-46b0-9221-a88b6534cc5b)
+
 ### Milestone 3 - Document and Presentation / Demonstration
