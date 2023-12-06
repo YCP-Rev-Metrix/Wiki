@@ -1,5 +1,5 @@
 +++
-title = "initial Project Ideas"
+title = "Initial Project Ideas"
 weight = 100
 +++
 
