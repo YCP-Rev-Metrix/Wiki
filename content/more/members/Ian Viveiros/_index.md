@@ -5,7 +5,9 @@ description = 'External links to member and information about their contribution
 +++
 
 #### Project Contributions
-- 
+- Ball Curve Functionality
+- Realistic Physics Implementation
+- Interpolation Scripts
 
 #### Contact Information
 - Institution Email: iviveiros@ycp.edu
