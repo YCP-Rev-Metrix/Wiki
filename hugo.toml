@@ -4,6 +4,8 @@ defaultContentLanguage = "en"
 title = 'RevMetrix'
 
 theme = "hugo-theme-relearn"
+[markup.goldmark.renderer]
+unsafe= true
 
 [outputs]
 home = [ "HTML", "RSS", "SEARCH", "SEARCHPAGE"]
@@ -16,9 +18,14 @@ editURL = "https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/"
 themeVariant = [ "neon", "auto", "zen-light", "zen-dark", "blue", "green", "learn", "red", "relearn", "relearn-bright", "relearn-light", "relearn-dark" ]
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page"
+name = "<i class='fas fa-fw fa-paperclip'></i> CS400 RevMetrix Home Page"
 identifier = "ds"
 url = "https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"
+weight = 1
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-paperclip'></i> CS402 RevMetrix Home Page"
+url = "https://ycpcs.github.io/cs402-spring2024/projects/RevMetrix-Project/index.html"
 weight = 1
 
 [[menu.shortcuts]]

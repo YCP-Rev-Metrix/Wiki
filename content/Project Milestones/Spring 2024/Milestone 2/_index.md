@@ -24,4 +24,4 @@ description = 'Progress made on milestone 2 and the associated slideshow'
 #### Links
 <!--The Google Slides presentation for milestone 2 can be found [here](https://docs.google.com/presentation/d/1B1IqRi4EUI_bNiHbd2gFcw-_cXb28odkpW_nUKhyOqo/edit?usp=sharing). -->
 
-<!--![Milestone 2 Presentation](MS1Title.png)-->
+<!--![Milestone 2 Presentation](MS2Title.png)-->
