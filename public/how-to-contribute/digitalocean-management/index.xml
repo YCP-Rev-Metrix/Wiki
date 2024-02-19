@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DigitalOcean Management on RevMetrix</title>
-    <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/digitalocean-management/index.html</link>
-    <description>Recent content in DigitalOcean Management on RevMetrix</description>
+    <title>DigitalOcean Management on Hugo Relearn Theme</title>
+    <link>/how-to-contribute/digitalocean-management/index.html</link>
+    <description>Recent content in DigitalOcean Management on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/digitalocean-management/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/how-to-contribute/digitalocean-management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a Droplet</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</link>
+      <link>/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</guid>
+      <guid>/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</guid>
       <description>Prerequisites Before continuing with any of the following steps, make sure to create an account on DigitalOcean
 Creating a New Project After creating an account, login and head over to the dashboard. From here, in the top left of the page, click the &amp;ldquo;New Project&amp;rdquo; button as seen below:
 Fill out the necessary fields, and in the &amp;ldquo;move resources into &amp;hellip;&amp;rdquo; window, click &amp;ldquo;skip this step&amp;rdquo; at the bottom to move on since the droplet is being made from scratch.</description>
     </item>
     <item>
       <title>Managing a Droplet</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</link>
+      <link>/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</guid>
+      <guid>/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</guid>
       <description>Prerequisites Before continuing with any of the following steps, make sure that you have created an account on DigitalOcean and have already created a Droplet. If you have not yet created a Droplet, see the &amp;ldquo;Creating a Droplet&amp;rdquo; page to find out how to do so.
 Navigating to the Droplet To begin learning how to manage a DigitalOcean Droplet, select the &amp;ldquo;Projects&amp;rdquo; dropdown in the top left of the main dashboard page and click on the project in which the Droplet you want to manage is located:</description>
     </item>

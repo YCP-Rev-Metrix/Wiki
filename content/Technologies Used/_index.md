@@ -5,14 +5,15 @@ description = 'A list of all of the necessary technologies to contribute to the 
 +++
 
 ## Overview
-Below you'll find a list of all of the technologies necessary for making contributions to the RevMetrix project.
+Below you'll find a list of all the technologies necessary for making contributions to the RevMetrix project.
 
 ## Technologies
 ### IDE's
-| Name                                    | Version   | Download Link                                                |
-|------------------------------------------|-----------|-------------------------------------------------------------|
-| JetBrains Rider                         | 2023.2.3  | [Download](https://www.jetbrains.com/rider/download/#section=windows) |
-| Microsoft Visual Studio 2022 Community  | 17.7.5    | [Download](https://visualstudio.microsoft.com/vs/community/) |
+| Name                                   | Version  | Download Link                                                            |
+|----------------------------------------|----------|--------------------------------------------------------------------------|
+| JetBrains Rider                        | 2023.2.3 | [Download](https://www.jetbrains.com/rider/download/#section=windows)    |
+| JetBrains WebStorm                     | 2023.3.4 | [Download](https://www.jetbrains.com/webstorm/download/#section=windows) |
+| Microsoft Visual Studio 2022 Community | 17.7.5   | [Download](https://visualstudio.microsoft.com/vs/community/)             |
 
 ### Frameworks and tools
 ##### Database Engines
@@ -54,6 +55,11 @@ Below you'll find a list of all of the technologies necessary for making contrib
 | SQL Server Data Tools     | 17.7.10.1      | Visual Studio Installation      |
 | Visual Studio IntelliCode | 2.2            | Optional checkbox under MAUI install      |
 | Xamarin | 17.0.0.223 | Optional checkbox under MAUI install |
+
+##### Web Development Frameworks
+| Name   | Version | Download Link                      |
+|--------|---------|------------------------------------|
+| Vue.js | 5.08    | [Download](https://cli.vuejs.org/) |
 
 ### Office 365
 | Name                      | Version        | Download Link                  |

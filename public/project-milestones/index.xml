@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project Milestones on RevMetrix</title>
-    <link>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/index.html</link>
-    <description>Recent content in Project Milestones on RevMetrix</description>
+    <title>Project Milestones on Hugo Relearn Theme</title>
+    <link>/project-milestones/index.html</link>
+    <description>Recent content in Project Milestones on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MS1 - Minimal Working System</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/ms1-minimal-working-system/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/ms1-minimal-working-system/index.html</guid>
-      <description>Milestone 1 Main Task The task is to demonstrate a minimal working version of your system. For a “minimal” working system: Your minimal working system should implement the most important classes in the core object model, and test them comprehensively using unit tests What are the most important requirements of your system? You should be able to demonstrate to us that they are at least partially implemented, with appropriate navigation between the components of the system.</description>
-    </item>
-    <item>
-      <title>MS2 - 50% Working System</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/ms2-50-working-system/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/ms2-50-working-system/index.html</guid>
-      <description>Main Task The task is to demonstrate a 50% working version of your system. For a 50% working system: You should have implemented the majority of the pages and navigation between those pages for your UI. You should present the major Use Cases by giving a demo of the navigation. This does not mean that every page is fully functional, but rather that the majority of the pages exist, and that button and other navigation functionality works.</description>
-    </item>
-    <item>
-      <title>MS3 - Final Working System</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/ms3-final-working-system/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/ms3-final-working-system/index.html</guid>
-      <description>Main Task The task is to complete a final report documenting your project, and to give a presentation on the project. Our expectations for the report are described in the Final Report Details document. We strongly encourage you to make an appointment and visit the Writing Center in the Center for Teaching and Learning to get help from a writing tutor. Bring your document with you! Presentation Guidelines Each project team will give a presentation of about 60 to 75 minutes.</description>
-    </item>
+    <language>en</language><atom:link href="/project-milestones/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

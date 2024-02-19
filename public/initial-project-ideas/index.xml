@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>initial Project Ideas on RevMetrix</title>
-    <link>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/index.html</link>
-    <description>Recent content in initial Project Ideas on RevMetrix</description>
+    <title>Initial Project Ideas on Hugo Relearn Theme</title>
+    <link>/initial-project-ideas/index.html</link>
+    <description>Recent content in Initial Project Ideas on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/initial-project-ideas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backend - Database Architecture</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/initial-database-architecture/index.html</link>
+      <link>/initial-project-ideas/initial-database-architecture/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/initial-database-architecture/index.html</guid>
+      <guid>/initial-project-ideas/initial-database-architecture/index.html</guid>
       <description>Architecture Initial Database Architecture Local Database (Localhost) Local Database Schema User Database (Cloud Server) User Database Schema Raw Database (Cloud Server) Raw Database Schema </description>
     </item>
     <item>
       <title>Phone App - Proof of Concept</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html</link>
+      <link>/initial-project-ideas/phone-app-proof-of-concept/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/phone-app-proof-of-concept/index.html</guid>
+      <guid>/initial-project-ideas/phone-app-proof-of-concept/index.html</guid>
       <description>.NET MAUI documentation: -Bluetooth Connection
 -NET MAUI General Documentation
 -NET MAUI File Picker
@@ -29,9 +29,9 @@ Initial Proof of Concept - Mobile Application </description>
     </item>
     <item>
       <title>Simulation - First Thoughts</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/simulation-first-thoughts/index.html</link>
+      <link>/initial-project-ideas/simulation-first-thoughts/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/simulation-first-thoughts/index.html</guid>
+      <guid>/initial-project-ideas/simulation-first-thoughts/index.html</guid>
       <description>Beginning Ideas of Simulation Design: Initial Lane Setup Full Lane View Lane While Testing Translation Scaled Pins Setup </description>
     </item>
   </channel>

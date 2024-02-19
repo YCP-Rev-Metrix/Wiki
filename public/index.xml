@@ -1,67 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RevMetrix</title>
-    <link>https://YCP-Rev-Metrix.github.io/Wiki/index.html</link>
-    <description>Recent content on RevMetrix</description>
+    <title>RevMetrix on Hugo Relearn Theme</title>
+    <link>/index.html</link>
+    <description>Recent content in RevMetrix on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Current State of RevMetrix</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/current-state-of-revmetrix/index.html</link>
+      <link>/current-state-of-revmetrix/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/current-state-of-revmetrix/index.html</guid>
+      <guid>/current-state-of-revmetrix/index.html</guid>
       <description>RevMetrix System Architecture Current Status by Development Team Backend - Current StateAll details about the current state of the backend development, along with what is planned for the future
 Frontend - Current StateAll details about the current state of the frontend development, along with what is planned for the future
 Simulation - Current StateAll details about the current state of simulation development, along with what is planned for the future</description>
     </item>
     <item>
       <title>How To Contribute</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/index.html</link>
+      <link>/how-to-contribute/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/index.html</guid>
+      <guid>/how-to-contribute/index.html</guid>
       <description>Table of Contents Contributing DocumentationHow to add, edit, and remove documentation on the Wiki
 DigitalOcean ManagementInformation regarding how to manage DigitalOcean Droplets
 Dockerizing an ApplicationInformation on how to dockerize a project and deploy onto a separate machine or server
+Getting StartedInformation regarding setting up your development enviroment
 GitHub WorkflowsAll GitHub workflows for the project
+Linking DomainsHow to link domains to an application using DNS records and Nginx Proxy Manager
 RevMetrix WebAPIInformation on how to use the WebAPI</description>
     </item>
     <item>
-      <title>initial Project Ideas</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/index.html</link>
+      <title>Initial Project Ideas</title>
+      <link>/initial-project-ideas/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/initial-project-ideas/index.html</guid>
+      <guid>/initial-project-ideas/index.html</guid>
       <description>Original System Architecture Backend - Database ArchitectureUML diagrams representing the initial database architecture and schemas
 Phone App - Proof of ConceptDrawing board ideas for the layout and interaction methods of the phone application
 Simulation - First ThoughtsThe base ideas around using Unity for the development of a bowling simulation</description>
     </item>
     <item>
       <title>Project Assignments</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/index.html</link>
+      <link>/project-assignments/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-assignments/index.html</guid>
+      <guid>/project-assignments/index.html</guid>
       <description>Overview Below you can find the list of project assignments completed throughout the fall 2023 semester and all of their details.
-List of Assignments Analysis and DesignDesign and Analysis Information and Links to the Document and Slideshow
-Project RequirementsDetails of the project requirements and the associated slideshow</description>
+List of Assignments </description>
     </item>
     <item>
       <title>Project Milestones</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/index.html</link>
+      <link>/project-milestones/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-milestones/index.html</guid>
+      <guid>/project-milestones/index.html</guid>
       <description>Overview Below you can find the assignment descriptions for each of the project&amp;rsquo;s milestones. There are three in total, and once the assignment date has passed, the appropriate slideshow can be seen under each milestone&amp;rsquo;s title.
-Milestones MS1 - Minimal Working SystemProgress made on the minimal working system and the associated slideshow
-MS2 - 50% Working SystemProgress made on the 50% working system and the associated slideshow
-MS3 - Final Working SystemProgress made on the final working system and the associated slideshow</description>
+Milestones </description>
     </item>
     <item>
       <title>SmartDot</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/smartdot/index.html</link>
+      <link>/smartdot/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/smartdot/index.html</guid>
+      <guid>/smartdot/index.html</guid>
       <description>ISmartDot InterfaceInformation about the ISmartDot interface
 SmartDot HardwareInformation about the SmartDot hardware
 SmartDot SimulatorInformation about the SmartDot Simulator</description>
+    </item>
+    <item>
+      <title>Technologies Used</title>
+      <link>/technologies-used/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/technologies-used/index.html</guid>
+      <description>Overview Below you&amp;rsquo;ll find a list of all the technologies necessary for making contributions to the RevMetrix project.
+Technologies IDE&amp;rsquo;s Name Version Download Link JetBrains Rider 2023.2.3 Download JetBrains WebStorm 2023.3.4 Download Microsoft Visual Studio 2022 Community 17.7.5 Download Frameworks and tools Database Engines Name Version Download Link Microsoft SQL Server Developer 16.0.1000.6 Download SQL Server Management Studio 19 19.1 Download Design Tools Name Version Download Link Draw.io 21.6.8 Download Game Engine Name Version Download Link Unity Hub - Download Unity 2023.</description>
     </item>
   </channel>
 </rss>

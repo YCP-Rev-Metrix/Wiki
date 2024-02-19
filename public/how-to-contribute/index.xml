@@ -1,50 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>How To Contribute on RevMetrix</title>
-    <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/index.html</link>
-    <description>Recent content in How To Contribute on RevMetrix</description>
+    <title>How To Contribute on Hugo Relearn Theme</title>
+    <link>/how-to-contribute/index.html</link>
+    <description>Recent content in How To Contribute on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/how-to-contribute/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contributing Documentation</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/contributing-documentation/index.html</link>
+      <link>/how-to-contribute/contributing-documentation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/contributing-documentation/index.html</guid>
+      <guid>/how-to-contribute/contributing-documentation/index.html</guid>
       <description>Contributing documentation is pretty straightforward, follow this basic guide to learn how.
 A brief history This page was built with the Hugo framework &amp;amp; static site generator using the Relearn theme and hosted on GitHub Pages. Every commit to the main branch will trigger a GitHub Action, causing the page to rebuild itself. This takes only a minute or two before the changes are updated. This structure provides a beautiful site, solid uptime, and the ability to even make edits in the GitHub web editor.</description>
     </item>
     <item>
       <title>DigitalOcean Management</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/digitalocean-management/index.html</link>
+      <link>/how-to-contribute/digitalocean-management/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/digitalocean-management/index.html</guid>
+      <guid>/how-to-contribute/digitalocean-management/index.html</guid>
       <description>Table of Contents Creating a DropletHow to create a DigitalOcean Droplet
 Managing a DropletHow to manage a DigitalOcean droplet</description>
     </item>
     <item>
       <title>Dockerizing an Application</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/dockerizing-an-application/index.html</link>
+      <link>/how-to-contribute/dockerizing-an-application/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/dockerizing-an-application/index.html</guid>
+      <guid>/how-to-contribute/dockerizing-an-application/index.html</guid>
       <description>Overview Docker is a tool used to encapsulate an application and its development enviornment. Rather than transferring the entire application when deploying it to a server, one can simply create a Dockerfile in their project&amp;rsquo;s directory and specify what to include in the encapsualted enviornment. After testing the Dockerfile to see if it builds and runs successfully, once can then create a &amp;ldquo;docker-compose.yml&amp;rdquo; file, specifying the Docker compose format version (not the actual Docker version), project name, build configuration (including where to pull files from and the location of the Dockerfile previously created), Docker container name, ports to listen on, and Docker image name.</description>
     </item>
     <item>
-      <title>GitHub Workflows</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/github-workflows/index.html</link>
+      <title>Getting Started</title>
+      <link>/how-to-contribute/getting-started/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/github-workflows/index.html</guid>
+      <guid>/how-to-contribute/getting-started/index.html</guid>
+      <description>Table of Contents BackendHow to setup your development environment for the backend
+Mobile ApplicationHow to setup your development environment for the mobile app
+SmartDot SimulatorHow to setup your environment to develop the SmartDot Simulator
+VisualizerHow to setup your environment to develop the Visualizer</description>
+    </item>
+    <item>
+      <title>GitHub Workflows</title>
+      <link>/how-to-contribute/github-workflows/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/how-to-contribute/github-workflows/index.html</guid>
       <description>Table of Contents GitHub Workflow - BackendHow to create a branch of the cloud-infrastructure repository and make edits
 GitHub Workflow - FrontendHow to create a branch of the frontend repository and make edits
 GitHub Workflow - SimulationHow to create a branch of the simulation repository Test branch and make edits</description>
     </item>
     <item>
-      <title>RevMetrix WebAPI</title>
-      <link>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/webapi/index.html</link>
+      <title>Linking Domains</title>
+      <link>/how-to-contribute/linking-domains/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://YCP-Rev-Metrix.github.io/Wiki/how-to-contribute/webapi/index.html</guid>
-      <description>Table of Contents Overview Configuration Database Interactions Adding Endpoints Overview The WebAPI can be complicated from the outside, but after a bit of work, it&amp;rsquo;s actually not too confusing. There are serveral portions that will be interesting to us, all of which located in Server project.
-Configuration appsettings.json This file contains general settings for running in different environemnts and with different configurations. Take a look below at the example. Adding to this is farily simple.</description>
+      <guid>/how-to-contribute/linking-domains/index.html</guid>
+      <description>Overview To link a domain to an application running on the DigitalOcean Droplet, it is best practice to do so using Nginx Proxy Manager. If the proxy manager is not already setup on the Droplet, visit the getting started page and follow the instructions there to set it up.
+Linking a domain or subdomain to a specific IP address and Port number will require access to the DNS record settings of the domain through whatever provider it was purchased from.</description>
+    </item>
+    <item>
+      <title>RevMetrix WebAPI</title>
+      <link>/how-to-contribute/webapi/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/how-to-contribute/webapi/index.html</guid>
+      <description>Overview Table of Contents Overview Table of Contents API Subsections Preface Configuration appsettings.json Program.cs Environment variables Database Interactions API Subsections Adding &amp;amp; Managing EndpointsHow to Add or Manage an Endpoint
+SecuritySecurity information regarding the WebAPI
+Web API ClientInformation regarding the Client side of the Web API
+Preface The WebAPI can be complicated from the outside, but after a bit of work, it&amp;rsquo;s actually not too confusing. There are serveral portions that will be interesting to us, all of which located in Server project.</description>
     </item>
   </channel>
 </rss>

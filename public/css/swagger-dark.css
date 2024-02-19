@@ -1,4 +1,27 @@
+/*
+                        _______
+                       /       \
+                      .==.    .==.
+                     ((  ))==((  ))
+                    / "=="    "=="\
+                   /____|| || ||___\
+       ________     ____    ________  ___    ___
+       |  ___  \   /    \   |  ___  \ |  |  /  /
+       |  |  \  \ /  /\  \  |  |  \  \|  |_/  /
+       |  |   )  /  /__\  \ |  |__/  /|  ___  \
+       |  |__/  /  ______  \|  ____  \|  |  \  \
+_______|_______/__/ ____ \__\__|___\__\__|___\__\____
+|  ___  \ |  ____/ /    \   |  ___  \ |  ____|  ___  \
+|  |  \  \|  |___ /  /\  \  |  |  \  \|  |___|  |  \  \
+|  |__/  /|  ____/  /__\  \ |  |   )  |  ____|  |__/  /
+|  ____  \|  |__/  ______  \|  |__/  /|  |___|  ____  \
+|__|   \__\____/__/      \__\_______/ |______|__|   \__\
+                https://darkreader.org
+*/
 
+/*! Dark reader generated CSS | Licensed under MIT https://github.com/darkreader/darkreader/blob/main/LICENSE */
+
+/* User-Agent Style */
 html {
     background-color-relearn: var(--INTERNAL-MAIN-BG-color) !important;
 }
@@ -52,14 +75,17 @@ select:-webkit-autofill {
     color-relearn: var(--INTERNAL-MAIN-TEXT-color) !important;
 }
 
+/* Text Style */
 *:not(pre, pre *, code, .far, .fa, .glyphicon, [class*="vjs-"], .fab, .fa-github, .fas, .material-icons, .icofont, .typcn, mu, [class*="mu-"], .glyphicon, .icon) {
   font-family-relearn: var(--INTERNAL-MAIN-font) !important;
 }
 
+/* Invert Style */
 .jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
     filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
 }
 
+/* Variables Style */
 :root {
    --darkreader-neutral-background-relearn: var(--INTERNAL-MAIN-font);
    --darkreader-neutral-text-relearn: var(--INTERNAL-MAIN-TEXT-color);
@@ -67,6 +93,7 @@ select:-webkit-autofill {
    --darkreader-selection-text-relearn: var(--INTERNAL-MAIN-TEXT-color);
 }
 
+/* Modified CSS */
 .swagger-ui {
     color-relearn: var(--INTERNAL-MAIN-TEXT-color);
 }
@@ -1960,6 +1987,7 @@ body {
     background-color-relearn: var(--INTERNAL-MAIN-BG-color);
 }
 
+/* Override Style */
 .vimvixen-hint {
     background-color: #7b5300 !important;
     border-color: #d8b013 !important;
@@ -2002,6 +2030,7 @@ gr-main-header {
 }
 embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
 
+/* Relearn Fix Style */
 .swagger-ui select {
     background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\"><path fill=\"white\" d=\"M13.418 7.859a.695.695 0 0 1 .978 0 .68.68 0 0 1 0 .969l-3.908 3.83a.697.697 0 0 1-.979 0l-3.908-3.83a.68.68 0 0 1 0-.969.695.695 0 0 1 .978 0L10 11l3.418-3.141z\"/></svg>");
 }
