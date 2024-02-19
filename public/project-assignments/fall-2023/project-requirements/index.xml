@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Requirements on Hugo Relearn Theme</title>
+    <link>/project-assignments/fall-2023/project-requirements/index.html</link>
+    <description>Recent content in Project Requirements on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/project-assignments/fall-2023/project-requirements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend Requirements</title>
+      <link>/project-assignments/fall-2023/project-requirements/backend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-assignments/fall-2023/project-requirements/backend/index.html</guid>
+      <description>Jordan Carvell, Braden Fleming, Victor Pineda, Robert Wood Backend Architecture Minimal Working System The Backend Team’s role in the project will consist of three main objectives: Creation and maintenance of the Cloud Databases (User and Raw Binary databases) and the local phone database, creation and implementation of the Web API (allowing for client-server interactions), and the development and integration of ISmartDot interface. For the minimal working system, the most important goal to complete will be the decision of which database engine(s) will be used to read and write data between the different technologies used.</description>
+    </item>
+    <item>
+      <title>Frontend Requirements</title>
+      <link>/project-assignments/fall-2023/project-requirements/frontend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-assignments/fall-2023/project-requirements/frontend/index.html</guid>
+      <description>Theo Bloomquist, Thomas Bywaters, Michael Hensel, John Kettula, Liz Mains Frontend Wireframes Minimal Working System Frontend Team’s role is to create a mobile app that is able to facilitate communication between what is developed by both the Graphics and Backend teams. The minimal working system will consist of an interface that allows for user input and displays user-specific data in response. This will also include the framework for communicating with the Graphics and Backend teams, to be fully implemented later on, this also includes Bluetooth functionality.</description>
+    </item>
+    <item>
+      <title>Simulation Requirements</title>
+      <link>/project-assignments/fall-2023/project-requirements/simulation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-assignments/fall-2023/project-requirements/simulation/index.html</guid>
+      <description>Luke Dodson, Bryce Neptune, Enoch Sam, Ian Viveiros SmartDot Dataflow Diagram Minimal Working System The minimal working system will consist of a basic physics simulator and a SmartDot simulator that can run on pre-recorded data. The SmartDot simulator will imitate the actual hardware but will receive data from data files instead of sensing the environment. It will send this data to the mobile device via Bluetooth. The physics simulator will maintain realistic physics (friction, momentum, rotational acceleration, etc.</description>
+    </item>
+  </channel>
+</rss>

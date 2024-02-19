@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Project Analysis and Design specific to the simulation team">
+    <title>Simulation Team :: Hugo Relearn Theme</title>
+    <link href="/project-assignments/fall-2023/analysis-and-design/simulation/index.xml" rel="alternate" type="application/rss+xml" title="Simulation Team :: Hugo Relearn Theme">
+    <link href="/images/favicon.png?1708356507" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1708356507" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1708356507" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1708356507" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1708356507" rel="stylesheet">
+    <link href="/css/fonts.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1708356507" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1708356507" rel="stylesheet">
+    <link href="/css/theme-neon.css?1708356507" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1708356507" rel="stylesheet">
+    <link href="/css/print.css?1708356507" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1708356507" rel="stylesheet">
+    <script src="/js/url.js?1708356507"></script>
+    <script src="/js/variant.js?1708356507"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'neon', 'auto', 'zen-light', 'zen-dark', 'blue', 'green', 'learn', 'red', 'relearn', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/project-assignments/fall-2023/analysis-and-design/simulation/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/technologies-used/index.html" title="Technologies Used (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/Project%20Assignments/Fall%202023/Analysis%20and%20Design/Simulation/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/project-assignments/index.html"><span itemprop="name">Project Assignments</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/project-assignments/fall-2023/analysis-and-design/index.html"><span itemprop="name">Analysis and Design</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Simulation Team</span><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="simulation-team">Simulation Team</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Luke Dodson, Bryce Neptune, Enoch Sam, Ian Viveiros</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/project-assignments/fall-2023/analysis-and-design/simulation/SimArc.png?width=60vw&amp;lightbox=false" alt="Simulation Architecture" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 60vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<h3 id="smartdot-simulation">SmartDot Simulation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/project-assignments/fall-2023/analysis-and-design/simulation/SDArc.jpg?width=60vw&amp;lightbox=false" alt="Smartdot Architecture" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 60vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<p>The SmartDot Module will be a small device that can be placed in the finger insert of a bowling ball. It will record rotational and positional data about each ball throw and transmit this data via bluetooth to the mobile device. The SmartDot will have two sensors: an 3-axis accelerometer and an ambient light sensor. The light sensor will be used to detect start up conditions by sensing light-to-dark and dark-to-light transitions. It will also help record rotational information by sensing when the ball is pointing up (light) and when the ball is pointing down (dark). The accelerometer will sense the translational acceleration (positional data) and the axis tilt (rotational data). The SmartDot will also have memory to store at least twenty-five samples of each sensor which is equal to twenty-five throws.
+The SmartDot will also have a bluetooth transmitter that will communicate with the mobile device through the ISmartDot interface. The ISmartDot interface will have several methods. It will have a couple methods for the mobile device to connect with the SmartDot module. It will also have read and write methods for sending and receiving data from the SmartDot. And finally, it will have methods for sending commands to the SmartDot. These commands will be strings. This will make the system more modular. These methods will define the communication between the SmartDot module and the mobile device.</p>
+<h5 id="ismartdot-interface">ISmartDot Interface</h5>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// Interface representing the basic functionality of the Bluetooth connection between the mobile application and a SmartDot implementation (Simulator &amp; Hardware)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ISmartDot</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Attempts to create a connection to the SmartDot hardware</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;connectionParameters&#34;&gt;Connection parameters&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;version representing the SmartDot hardware version (APIs use), null if unable to connect&lt;/returns&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;Version?&gt; Connect(ConnectionParameters connectionParameters);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Tests if the connection to the SmartDot hardware is present</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;Boolean representing if there is a connection to SmartDot hardware&lt;/returns&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;<span style="color:#66d9ef">bool</span>&gt; IsConnected();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Asynchronous method to write one page to the SmartDot implementation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;address&#34;&gt;The page start address in memory&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;buffer&#34;&gt;Data (byte[]) to write to the SmartDot implementations page&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;bytes&#34;&gt;Length of data to write from &lt;paramref name=&#34;buffer&#34;/&gt;&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;A bool representing if call was successful&lt;/returns&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;SmartDotTransactionResult&gt; WriteBytes(<span style="color:#66d9ef">long</span> address, <span style="color:#66d9ef">byte</span>[] buffer, <span style="color:#66d9ef">long</span> bytes);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Asynchronous method to read one page from the SmartDot implementation</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;address&#34;&gt;The page start address in memory&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;buffer&#34;&gt;Ref data (byte[]) read from the SmartDot implementations page (will attempt to fill completely)&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;bytes&#34;&gt;Length of data to read into &lt;paramref name=&#34;buffer&#34;/&gt;&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;A bool representing if call was successful&lt;/returns&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;SmartDotTransactionResult&gt; ReadBytes(<span style="color:#66d9ef">long</span> address, <span style="color:#66d9ef">ref</span> <span style="color:#66d9ef">byte</span>[] buffer, <span style="color:#66d9ef">long</span> bytes);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Sends a command to the SmartDot hardware</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;command&#34;&gt;The string command to send to the SmartDot hardware&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;returns&gt;Result from the command execution on the SmartDot hardware&lt;/returns&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Task&lt;<span style="color:#66d9ef">string</span>&gt; OutgoingSmartDotCommand(<span style="color:#66d9ef">string</span> command);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Invokes &lt;see cref=&#34;IncomingSmartDotCommandCallback&#34;/&gt;. Should be executed only from the implementor.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;param name=&#34;command&#34;&gt;String command called from SmartDot hardware&lt;/param&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">virtual</span> <span style="color:#66d9ef">void</span> RaiseIncomingSmartDotCommand(<span style="color:#66d9ef">string</span> command) =&gt; IncomingSmartDotCommandCallback?.Invoke(command);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// Incoming command callback (from SmartDot hardware). Signals from the SmartDot hardware that something important happened.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> Action&lt;<span style="color:#66d9ef">string</span>&gt;? IncomingSmartDotCommandCallback { <span style="color:#66d9ef">get</span>; <span style="color:#66d9ef">set</span>; }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// Enum representing the transaction result state of a communication with SmartDot hardware</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">enum</span> SmartDotTransactionResult : <span style="color:#66d9ef">byte</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// SmartDot transaction succeeded</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    SUCCESS,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// SmartDot transaction failed - unknown cause</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    FAILURE_UNKNOWN,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// SmartDot transaction failed - data corruption</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    FAILURE_PERMISSION_ERROR,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// SmartDot transaction failed - device disconnected</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    FAILURE_DISCONNECTED,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;summary&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// SmartDot transaction failed - data corruption</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/// &lt;/summary&gt;</span>
+</span></span><span style="display:flex;"><span>    FAILURE_DATA_CORRUPTION
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><h3 id="unity-visualizer">Unity Visualizer</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/project-assignments/fall-2023/analysis-and-design/simulation/UVUML.png?width=50vw&amp;lightbox=false" alt="Unity Visualizer UML" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 50vw;" loading="lazy"></th>
+</tr>
+</thead>
+</table>
+<p>The Unity Visualizer is a Unity simulation that contains a lane, a ball, gutters, and pins. The Visualizer will utilize built-in Unity physics as well as realistic implemented physics in order to make the simulation as accurate as possible to an actual throw. The SmartDot Simulator will be used inside the Visualizer to get new data. Once the Visualizer is complete, it will be used to generate video files and simulated data in order to test other components of the project.</p>
+<h3 id="unity-camera">Unity Camera</h3>
+<p>The Unity Camera is a virtual camera that will exist within the Unity Visualizer. This camera will be set up to record throws within the Visualizer and export the recording as a video file. The video can then be read by the file reader on the mobile device and analyzed by the Ciclops application. Having a simulated video will also allow the Frontend Team to test finding a ball path prior to using actual video footage of real throws.</p>
+<h3 id="unity-simulated-data">Unity Simulated Data</h3>
+<p>The Unity Simulated Data will be data that is gathered from the Unity Visualizer. When the simulation is run, data about the ball’s position, velocity, acceleration, angular velocity, and light level will be recorded and sent to the SmartDot Simulator for testing.</p>
+<h3 id="class-methods">Class Methods</h3>
+<h5 id="unity-camera-1">Unity Camera</h5>
+<ul>
+<li>startRecord()</li>
+<li>endRecord()</li>
+<li>getVideo()</li>
+</ul>
+<h5 id="unity-visualizer-1">Unity Visualizer</h5>
+<ul>
+<li>setLoft(float h)</li>
+<li>setInitialVelocity(Vector3 velocity)</li>
+<li>setCurrentVelocity(Vector3 velocity)</li>
+<li>setCurrentAngularVelocity(Vector3 angle)</li>
+<li>setThrowPos(float x, float angle)</li>
+<li>setBallType(int id)</li>
+<li>setPinsLeft(int[10] pins)</li>
+<li>setOilPattern(float[][] pattern)</li>
+<li>getPinsLeft()</li>
+<li>getThrowNumber()</li>
+<li>getThrowRotations()</li>
+<li>getThrowCurve()</li>
+<li>getThrowVelocity()</li>
+<li>exportSimVideo()</li>
+<li>exportSimBinaryData()</li>
+<li>start()</li>
+<li>rollBall()</li>
+<li>pauseVisualizer()</li>
+</ul>
+<h5 id="unity-simulated-data-1">Unity Simulated Data</h5>
+<ul>
+<li>No methods</li>
+</ul>
+<h5 id="existing-binary-dump-file">Existing Binary Dump File</h5>
+<ul>
+<li>No methods</li>
+</ul>
+<h5 id="smartdot-memory">SmartDot Memory</h5>
+<ul>
+<li>read(int page)</li>
+<li>write(int page, int byte)</li>
+<li>SmartDot Bluetooth Transmitter</li>
+<li>readPage(int page)</li>
+<li>readPage(int ball_record_page)</li>
+<li>writePage(int page, int byte, string data)</li>
+<li>setDefault()</li>
+</ul>
+<h5 id="ambient-light-sensor">Ambient Light Sensor</h5>
+<ul>
+<li>sample()</li>
+<li>get_cur_time()</li>
+<li>start_up()</li>
+<li>check_valid_activation()</li>
+</ul>
+<h5 id="3-axis-accelerometer">3-Axis Accelerometer</h5>
+<ul>
+<li>sample_x()</li>
+<li>sample_y()</li>
+<li>sample_z()</li>
+<li>get_cur_time()</li>
+</ul>
+<h5 id="real-time-clock">Real Time Clock</h5>
+<ul>
+<li>get_cur_time()</li>
+</ul>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/index.html">
+  <img src="https://raw.githubusercontent.com/YCP-Rev-Metrix/Wiki/main/static/images/logo.png" alt="RevMetrix Logo" width="100">
+</a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1708356507" defer></script>
+        <script src="/js/lunr/lunr.min.js?1708356507" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1708356507" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1708356507" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1708356507" defer></script>
+        <script src="/js/search.js?1708356507" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/current-state-of-revmetrix/index.html" class=""><input type="checkbox" id="section-0501cda7e18354eac4b6992234e2e8d0" aria-controls="subsections-0501cda7e18354eac4b6992234e2e8d0"><label for="section-0501cda7e18354eac4b6992234e2e8d0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-0501cda7e18354eac4b6992234e2e8d0" class="morespace collapsible-menu">
+          <li data-nav-id="/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-088a282c1cd3c3182c95b96912c4387a" aria-controls="subsections-088a282c1cd3c3182c95b96912c4387a" checked><label for="section-088a282c1cd3c3182c95b96912c4387a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Backend - Current State</span></label><a class="padding" href="/current-state-of-revmetrix/backend/index.html">Backend - Current State</a><ul id="subsections-088a282c1cd3c3182c95b96912c4387a" class="morespace collapsible-menu">
+          <li data-nav-id="/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/current-state-of-revmetrix/frontend/index.html">Frontend - Current State</a></li>
+          <li data-nav-id="/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/current-state-of-revmetrix/simulation/index.html">Simulation - Current State</a></li></ul></li>
+          <li data-nav-id="/how-to-contribute/index.html" class=""><input type="checkbox" id="section-857057f9e0615656cbf861573b1354f6" aria-controls="subsections-857057f9e0615656cbf861573b1354f6"><label for="section-857057f9e0615656cbf861573b1354f6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-857057f9e0615656cbf861573b1354f6" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/how-to-contribute/digitalocean-management/index.html" class="alwaysopen"><input type="checkbox" id="section-5164de73759585a09195903c9b47097f" aria-controls="subsections-5164de73759585a09195903c9b47097f" checked><label for="section-5164de73759585a09195903c9b47097f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-5164de73759585a09195903c9b47097f" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class=""><a class="padding" href="/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/how-to-contribute/dockerizing-an-application/index.html" class=""><a class="padding" href="/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/how-to-contribute/getting-started/index.html" class="alwaysopen"><input type="checkbox" id="section-bc6d4139fe2cd64f7d58b16a1a5d8760" aria-controls="subsections-bc6d4139fe2cd64f7d58b16a1a5d8760" checked><label for="section-bc6d4139fe2cd64f7d58b16a1a5d8760"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Getting Started</span></label><a class="padding" href="/how-to-contribute/getting-started/index.html">Getting Started</a><ul id="subsections-bc6d4139fe2cd64f7d58b16a1a5d8760" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/getting-started/backend/index.html" class=""><a class="padding" href="/how-to-contribute/getting-started/backend/index.html">Backend</a></li>
+          <li data-nav-id="/how-to-contribute/getting-started/mobile-app/index.html" class=""><a class="padding" href="/how-to-contribute/getting-started/mobile-app/index.html">Mobile Application</a></li>
+          <li data-nav-id="/how-to-contribute/getting-started/smartdot-simulator/index.html" class=""><a class="padding" href="/how-to-contribute/getting-started/smartdot-simulator/index.html">SmartDot Simulator</a></li>
+          <li data-nav-id="/how-to-contribute/getting-started/visualizer/index.html" class=""><a class="padding" href="/how-to-contribute/getting-started/visualizer/index.html">Visualizer</a></li></ul></li>
+          <li data-nav-id="/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-084dbb12a3b2086a0c09ddd70022d7be" aria-controls="subsections-084dbb12a3b2086a0c09ddd70022d7be" checked><label for="section-084dbb12a3b2086a0c09ddd70022d7be"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-084dbb12a3b2086a0c09ddd70022d7be" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/how-to-contribute/linking-domains/index.html" class=""><a class="padding" href="/how-to-contribute/linking-domains/index.html">Linking Domains</a></li>
+          <li data-nav-id="/how-to-contribute/webapi/index.html" class="alwaysopen"><input type="checkbox" id="section-6f4e2c97a9310424ea1eb91ad086df68" aria-controls="subsections-6f4e2c97a9310424ea1eb91ad086df68" checked><label for="section-6f4e2c97a9310424ea1eb91ad086df68"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-6f4e2c97a9310424ea1eb91ad086df68" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/webapi/endpoints/index.html" class=""><a class="padding" href="/how-to-contribute/webapi/endpoints/index.html">Adding &amp; Managing Endpoints</a></li>
+          <li data-nav-id="/how-to-contribute/webapi/security/index.html" class=""><a class="padding" href="/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li>
+          <li data-nav-id="/initial-project-ideas/index.html" class=""><input type="checkbox" id="section-0f7d8219123f04202932bccf4b4df5e9" aria-controls="subsections-0f7d8219123f04202932bccf4b4df5e9"><label for="section-0f7d8219123f04202932bccf4b4df5e9"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Initial Project Ideas</span></label><a class="padding" href="/initial-project-ideas/index.html">Initial Project Ideas</a><ul id="subsections-0f7d8219123f04202932bccf4b4df5e9" class="morespace collapsible-menu">
+          <li data-nav-id="/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/initial-project-ideas/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/initial-project-ideas/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/initial-project-ideas/simulation-first-thoughts/index.html" class=""><a class="padding" href="/initial-project-ideas/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/project-assignments/index.html" class=""><a class="padding" href="/project-assignments/index.html">Project Assignments</a></li>
+          <li data-nav-id="/project-milestones/index.html" class=""><a class="padding" href="/project-milestones/index.html">Project Milestones</a></li>
+          <li data-nav-id="/smartdot/index.html" class=""><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5"><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
+          <li data-nav-id="/smartdot/ismartdot/index.html" class=""><a class="padding" href="/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          <li data-nav-id="/technologies-used/index.html" class=""><a class="padding" href="/technologies-used/index.html">Technologies Used</a></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="/https:/ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
+            <li><a class="padding" href="/https:/github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="/https:/drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="en" id="en" value="/project-assignments/fall-2023/analysis-and-design/simulation/index.html" selected>English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="neon" value="neon" selected>Neon</option>
+                      <option id="auto" value="auto">Auto</option>
+                      <option id="zen-light" value="zen-light">Zen Light</option>
+                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="blue" value="blue">Blue</option>
+                      <option id="green" value="green">Green</option>
+                      <option id="learn" value="learn">Learn</option>
+                      <option id="red" value="red">Red</option>
+                      <option id="relearn" value="relearn">Relearn</option>
+                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>Made with love</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1708356507" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1708356507" defer></script>
+    <script src="/js/theme.js?1708356507" defer></script>
+  </body>
+</html>

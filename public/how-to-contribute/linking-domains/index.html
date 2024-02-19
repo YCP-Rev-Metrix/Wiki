@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="How to link domains to an application using DNS records and Nginx Proxy Manager">
+    <title>Linking Domains :: Hugo Relearn Theme</title>
+    <link href="/how-to-contribute/linking-domains/index.xml" rel="alternate" type="application/rss+xml" title="Linking Domains :: Hugo Relearn Theme">
+    <link href="/images/favicon.png?1708356507" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1708356507" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1708356507" rel="stylesheet">
+    <link href="/css/auto-complete.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1708356507" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1708356507" rel="stylesheet">
+    <link href="/css/fonts.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1708356507" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1708356507" rel="stylesheet">
+    <link href="/css/theme-neon.css?1708356507" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1708356507" rel="stylesheet">
+    <link href="/css/print.css?1708356507" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1708356507" rel="stylesheet">
+    <script src="/js/url.js?1708356507"></script>
+    <script src="/js/variant.js?1708356507"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='/';
+      window.variants && variants.init( [ 'neon', 'auto', 'zen-light', 'zen-dark', 'blue', 'green', 'learn', 'red', 'relearn', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/how-to-contribute/linking-domains/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/how-to-contribute/webapi/index.html" title="RevMetrix WebAPI (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/how-to-contribute/github-workflows/simulation-workflow/index.html" title="GitHub Workflow - Simulation (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/How%20to%20contribute/Linking%20Domains/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/how-to-contribute/index.html"><span itemprop="name">How To Contribute</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Linking Domains</span><meta itemprop="position" content="3"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="linking-domains">Linking Domains</h1>
+
+<h3 id="overview">Overview</h3>
+<p>To link a domain to an application running on the DigitalOcean Droplet, it is best practice to do so using <a href="https://nginxproxymanager.com/" target="_blank">Nginx Proxy Manager</a>.  If the proxy manager is not already setup on the Droplet, visit the <a href="">getting started</a> page and follow the instructions there to set it up.</p>
+<p>Linking a domain or subdomain to a specific IP address and Port number will require access to the DNS record settings of the domain through whatever provider it was purchased from.  Also, access to the Droplet that is running the application that requires the domain is necessary, along with the ability to edit firewall settings for the given Droplet.  Make sure all of this is available prior to linking the domain.</p>
+<p>*Note: Nginx Proxy Manager is already set up on the Cloud-infrastructure Droplet, so there is no need to set it up when linking domains to anything API related.</p>
+<h3 id="linking-a-domain-or-subdomain">Linking a Domain or Subdomain</h3>
+<p>To link a a domain or a subdomain to the IP address of an application, you first want to create an A record in the DNS settings of your domain on its provider&rsquo;s website.  If you have linked a domain to DigitalOcean already from a different provider, this can be done from within DigitalOcean, under Domains -&gt; yourDomain -&gt; Create new record.</p>
+<p><a href="#image-15ecbd76133a8ecdedbf0b37b2b8e95f" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-15ecbd76133a8ecdedbf0b37b2b8e95f"><img src="/how-to-contribute/linking-domains/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>To create an A record for the domain, simply enter the hostname (such as example.com or site.example.com if linking a subdomain), enter the IP of the Droplet that the domain will direct traffic to (such as 192.168.xxx.xxx), and the Time-To-Live value (defaults to 3600 seconds).  Then, hit Create Record and the A record will have been created.  This is all that needs to be done for the DNS settings of the domain, so any windows regarding that can now be closed.</p>
+<h3 id="opening-the-port-for-nginx-proxy-manager">Opening The Port For Nginx Proxy Manager</h3>
+<p>To access Nginx Proxy Manager on the Droplet&rsquo;s IP address after setup, a custom firewall setting must be configured.  To do this, head over to the Droplet&rsquo;s dashboard, go to the networking tab on the left under the Droplet&rsquo;s IPv4 Address, scroll down to the &ldquo;Firewalls&rdquo; section, and click on either &ldquo;Configure Firewall&rdquo; or the name of an existing firewall.  This will bring you to the Inbound and Outbound Rules page.  From here, under Inbound Rules, click on the &ldquo;New rule&rdquo; dropdown button (under the existing rules).  Select &ldquo;Custom&rdquo;, and then for the port range enter &ldquo;81&rdquo; and hit save.  Now, when you go to &ldquo;http://&lsquo;Droplet&rsquo;sIPAddr&rsquo;:81&rdquo;, you will see the login page for the instance of Nginx Proxy Manager that is running on the Droplet.  Login, and if you do not have an account already created, the login info will be &ldquo;<a href="mailto:admin@example.com">admin@example.com</a>&rdquo; with the password &ldquo;changeme&rdquo;.  Be sure to change the username and password after logging in.</p>
+<h3 id="creating-a-proxy-host">Creating a Proxy Host</h3>
+<p>To direct traffic through the domain/subdomain name to the application being hosted on the Droplet, it is necessary to create a new Proxy host in Nginx Proxy Manager for the domain/subdomain.  To do so, after logging into the instance of Nginx Proxy Manager running on the Droplet, click the &ldquo;Proxy Hosts&rdquo; button on the left of the dashboard.  From here you will be taken to the Proxy Hosts page.  Go ahead and hit the &ldquo;Add Proxy Host&rdquo; button as seen below:</p>
+<p><a href="#image-5fdb7cb8ed159c9d49e2a791d35a4243" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-5fdb7cb8ed159c9d49e2a791d35a4243"><img src="/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>This will bring up the page below.  Be sure to enter the domain/subdomain that you created an A record for earlier into the &ldquo;Domain Names&rdquo; field and hit the Tab key.  Then, specify the IP address of the Droplet to direct the traffic of the link to, and finally specify the port that the application will be running on inside of the Droplet.  Make sure to check each option and hit save:</p>
+<p><a href="#image-853531d08a11be0b2b4b7552e8d6efb4" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-853531d08a11be0b2b4b7552e8d6efb4"><img src="/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<h3 id="generating-an-ssl-certificate-for-the-domain">Generating an SSL Certificate For The Domain</h3>
+<p>After creating a Proxy Host for the domain, a listing similar to the following will appear in the list of Proxy Hosts:</p>
+<p><a href="#image-02ca25c93e28b2c42f1f0d125752acea" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-02ca25c93e28b2c42f1f0d125752acea"><img src="/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>From here, click the three dots on the right of the listing and select &ldquo;Edit&rdquo;.  Click on the &ldquo;SSL&rdquo; tab in the popup window, and select &ldquo;Request a new SSL Certificate&rdquo; and enter your email to generate the certificate by hitting the save button as seen below:</p>
+<p><a href="#image-a074362734236c26b109d9f282b4303b" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-a074362734236c26b109d9f282b4303b"><img src="/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>Once this is done, it will take a moment to generate the certificate, but soon the application will be accessible through the domain name over http and https.  To force the domain to use https and avoid any http requests, go back to the SSL tab as done above and toggle the &ldquo;Force SSL&rdquo; slider, then hit save.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Now, the domain should be securely accessible and linked to the Droplet&rsquo;s IP address and the port that the application is running on on the Droplet.  Make sure to delete the custom firewall configuration for the Droplet, and everything should be good to go!</p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/index.html">
+  <img src="https://raw.githubusercontent.com/YCP-Rev-Metrix/Wiki/main/static/images/logo.png" alt="RevMetrix Logo" width="100">
+</a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1708356507" defer></script>
+        <script src="/js/lunr/lunr.min.js?1708356507" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1708356507" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1708356507" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1708356507" defer></script>
+        <script src="/js/search.js?1708356507" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/current-state-of-revmetrix/index.html" class=""><input type="checkbox" id="section-0501cda7e18354eac4b6992234e2e8d0" aria-controls="subsections-0501cda7e18354eac4b6992234e2e8d0"><label for="section-0501cda7e18354eac4b6992234e2e8d0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-0501cda7e18354eac4b6992234e2e8d0" class="morespace collapsible-menu">
+          <li data-nav-id="/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-088a282c1cd3c3182c95b96912c4387a" aria-controls="subsections-088a282c1cd3c3182c95b96912c4387a" checked><label for="section-088a282c1cd3c3182c95b96912c4387a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Backend - Current State</span></label><a class="padding" href="/current-state-of-revmetrix/backend/index.html">Backend - Current State</a><ul id="subsections-088a282c1cd3c3182c95b96912c4387a" class="morespace collapsible-menu">
+          <li data-nav-id="/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/current-state-of-revmetrix/frontend/index.html">Frontend - Current State</a></li>
+          <li data-nav-id="/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/current-state-of-revmetrix/simulation/index.html">Simulation - Current State</a></li></ul></li>
+          <li data-nav-id="/how-to-contribute/index.html" class="parent "><input type="checkbox" id="section-857057f9e0615656cbf861573b1354f6" aria-controls="subsections-857057f9e0615656cbf861573b1354f6" checked><label for="section-857057f9e0615656cbf861573b1354f6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-857057f9e0615656cbf861573b1354f6" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/how-to-contribute/digitalocean-management/index.html" class="alwaysopen"><input type="checkbox" id="section-5164de73759585a09195903c9b47097f" aria-controls="subsections-5164de73759585a09195903c9b47097f" checked><label for="section-5164de73759585a09195903c9b47097f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-5164de73759585a09195903c9b47097f" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class=""><a class="padding" href="/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/how-to-contribute/dockerizing-an-application/index.html" class=""><a class="padding" href="/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/how-to-contribute/getting-started/index.html" class="alwaysopen"><input type="checkbox" id="section-bc6d4139fe2cd64f7d58b16a1a5d8760" aria-controls="subsections-bc6d4139fe2cd64f7d58b16a1a5d8760" checked><label for="section-bc6d4139fe2cd64f7d58b16a1a5d8760"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Getting Started</span></label><a class="padding" href="/how-to-contribute/getting-started/index.html">Getting Started</a><ul id="subsections-bc6d4139fe2cd64f7d58b16a1a5d8760" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/getting-started/backend/index.html" class=""><a class="padding" href="/how-to-contribute/getting-started/backend/index.html">Backend</a></li>
+          <li data-nav-id="/how-to-contribute/getting-started/mobile-app/index.html" class=""><a class="padding" href="/how-to-contribute/getting-started/mobile-app/index.html">Mobile Application</a></li>
+          <li data-nav-id="/how-to-contribute/getting-started/smartdot-simulator/index.html" class=""><a class="padding" href="/how-to-contribute/getting-started/smartdot-simulator/index.html">SmartDot Simulator</a></li>
+          <li data-nav-id="/how-to-contribute/getting-started/visualizer/index.html" class=""><a class="padding" href="/how-to-contribute/getting-started/visualizer/index.html">Visualizer</a></li></ul></li>
+          <li data-nav-id="/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-084dbb12a3b2086a0c09ddd70022d7be" aria-controls="subsections-084dbb12a3b2086a0c09ddd70022d7be" checked><label for="section-084dbb12a3b2086a0c09ddd70022d7be"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-084dbb12a3b2086a0c09ddd70022d7be" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/how-to-contribute/linking-domains/index.html" class="active"><a class="padding" href="/how-to-contribute/linking-domains/index.html">Linking Domains</a></li>
+          <li data-nav-id="/how-to-contribute/webapi/index.html" class="alwaysopen"><input type="checkbox" id="section-6f4e2c97a9310424ea1eb91ad086df68" aria-controls="subsections-6f4e2c97a9310424ea1eb91ad086df68" checked><label for="section-6f4e2c97a9310424ea1eb91ad086df68"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-6f4e2c97a9310424ea1eb91ad086df68" class="morespace collapsible-menu">
+          <li data-nav-id="/how-to-contribute/webapi/endpoints/index.html" class=""><a class="padding" href="/how-to-contribute/webapi/endpoints/index.html">Adding &amp; Managing Endpoints</a></li>
+          <li data-nav-id="/how-to-contribute/webapi/security/index.html" class=""><a class="padding" href="/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li>
+          <li data-nav-id="/initial-project-ideas/index.html" class=""><input type="checkbox" id="section-0f7d8219123f04202932bccf4b4df5e9" aria-controls="subsections-0f7d8219123f04202932bccf4b4df5e9"><label for="section-0f7d8219123f04202932bccf4b4df5e9"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Initial Project Ideas</span></label><a class="padding" href="/initial-project-ideas/index.html">Initial Project Ideas</a><ul id="subsections-0f7d8219123f04202932bccf4b4df5e9" class="morespace collapsible-menu">
+          <li data-nav-id="/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/initial-project-ideas/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/initial-project-ideas/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/initial-project-ideas/simulation-first-thoughts/index.html" class=""><a class="padding" href="/initial-project-ideas/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/project-assignments/index.html" class=""><a class="padding" href="/project-assignments/index.html">Project Assignments</a></li>
+          <li data-nav-id="/project-milestones/index.html" class=""><a class="padding" href="/project-milestones/index.html">Project Milestones</a></li>
+          <li data-nav-id="/smartdot/index.html" class=""><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5"><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
+          <li data-nav-id="/smartdot/ismartdot/index.html" class=""><a class="padding" href="/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          <li data-nav-id="/technologies-used/index.html" class=""><a class="padding" href="/technologies-used/index.html">Technologies Used</a></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="/https:/ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
+            <li><a class="padding" href="/https:/github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="/https:/drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="en" id="en" value="/how-to-contribute/linking-domains/index.html" selected>English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="neon" value="neon" selected>Neon</option>
+                      <option id="auto" value="auto">Auto</option>
+                      <option id="zen-light" value="zen-light">Zen Light</option>
+                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="blue" value="blue">Blue</option>
+                      <option id="green" value="green">Green</option>
+                      <option id="learn" value="learn">Learn</option>
+                      <option id="red" value="red">Red</option>
+                      <option id="relearn" value="relearn">Relearn</option>
+                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>Made with love</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1708356507" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1708356507" defer></script>
+    <script src="/js/theme.js?1708356507" defer></script>
+  </body>
+</html>
