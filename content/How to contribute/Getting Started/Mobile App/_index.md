@@ -115,3 +115,20 @@ After selecting the Android SDK Manager, go ahead and install the following list
 Continue with the installation as normal. Once finished, no more action should be required for the Android portion of the application outside of the installation of the Android emulator (seen below).
 
 ### Installing the Android Emulator
+
+### Troubleshooting
+
+If you get the error: Error NETSDK1147: To build this project, the following workoads must be installed: xyz
+
+Run: dotnet workload restore (This will most likely occur the first time you pull the repo and it installs any workloads needed)
+
+Run: dotnet restore (This restores the dependencies and tools of the project)
+
+
+If you get the error: NU1101: unable to find package RevMetrix.Client.Api No packages exist with this id in source(s) OR NU1301: Unable to load the service index for source RevMetrix.Client.Api
+
+This means you need to (re)create a token in GitHub and follow the steps of setting up the Nuget package
+
+Once that step is done invalidate caches and restart (File -> Invalidate Cache -> Invalidate Caches and Restart)
+
+
