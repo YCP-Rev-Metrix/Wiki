@@ -35,7 +35,7 @@ Below are the most recently updated reworkings of the project's database schemas
 | ![Local Database](LocalDatabase.jpg?width=40vw&lightbox=false&text-align=left)|
 |:--:|
 
-#### Research Database Schema (Cloud Server)
+#### Backend Database Schema (Cloud Server)
 | ![RevMetrix DB](Spring2024DBSchema.jpg?width=40vw&lightbox=false) |
 |:-----------------------------------------------------------------:|
 
