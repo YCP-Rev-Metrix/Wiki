@@ -106,11 +106,12 @@ There are currently no examples of this in the Web API. Generally, the result se
 Here, we have defined a basic endpoint, named 'Test' inside of the controller named 'Demo'. Let's deconstruct what it means:
 ```c#
 [ApiController]
-[Route("api/[controller]")]
+[Tags("Tests")]
+[Route("api/tests/[controller]")]
 public class DemoController : AbstractFeaturedController
 {
 
-    [HttpGet("Test", Name = "Test")]
+    [HttpGet(Name = "Test")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult Test()
     {
@@ -129,16 +130,17 @@ The Http method will be of return type ```IActionResult```, decorated with ```[H
 ###### Naming
 The full endpoint url for this will be 'baseurl/Demo/Test' and this will be a GET.
 The name of the controller is always followed by the word controller. When the actual endpoints are generated, ```[Route("api/[controller]")]``` lets the generator know to remove the word 'Controller' in the endpoint name.
-The name of our Http method is 'Test', denoted by the attribute ```[HttpGet("Test", Name = "Test")]``` decorating the method.
+The name of our Http method is 'Test', denoted by the attribute ```[HttpGet(Name = "Test")]``` decorating the method.
 ```C#
 [ApiController]
-[Route("api/[controller]")]
+[Tags("<Type of Endpoint>")]
+[Route("api/<type of endpoint>/[controller]")]
 public class DemoController : AbstractFeaturedController
 {
     
 }
 ```
-This controller's endpoint is api/Demo.
+This controller's endpoint is api/tests/Demo.
 
 
 ###### Returns
@@ -154,27 +156,23 @@ If we want to limit use to only users who are of certain roles, like admin, user
 This can be done by adding another attribute to either the controller or the http method. In the example below, only the methods have been decorated.
 ```c#
 [ApiController]
-[Route("api/[controller]")]
-public class TestController : AbstractFeaturedController
+[Tags("Tests")]
+[Route("api/tests/[controller]")]
+public class TestAuthController : AbstractFeaturedController
 {
-
+    /// <summary>
+    /// Tests to ensure that the accessing user is authenticated with a JWT
+    /// </summary>
+    /// <returns><see cref="StatusCodes.Status200OK"/> | <see cref="StatusCodes.Status403Forbidden"/></returns>
     [Authorize]
-    [HttpGet("TestAuthorize", Name = "TestAuthorize")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status403Forbidden)]
+    [HttpGet(Name = "TestAuthorize")]
     public IActionResult TestAuthorize()
     {
         LogWriter.LogInfo("TestAuthorize called");
         return Ok();
     }
-
-    [Authorize(Roles = "Admin")]
-    [HttpGet("TestAuthenticateAdmin", Name = "TestAuthenticateAdmin")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    public IActionResult TestAuthenticateAdmin()
-    {
-        LogWriter.LogInfo("TestAuthenticateAdmin called");
-        return Ok();
-    }
-
 }
 ```
 
@@ -186,11 +184,12 @@ Had we placed the attribute above the controller instead, all methods in the con
 ```c#
 [Authorize]
 [ApiController]
-[Route("api/[controller]")]
+[Tags("Tests")]
+[Route("api/tests/[controller]")]
 public class TestController : AbstractFeaturedController
 {
 
-    [HttpGet("TestAuthorize", Name = "TestAuthorize")]
+    [HttpGet(Name = "TestAuthorize")]
     public IActionResult TestAuthorize()
     {
         LogWriter.LogInfo("TestAuthorize called");
@@ -207,7 +206,7 @@ At many points, we would like the server to return data during a client's reques
 We can include in the ```return Ok()``` a POCO such as ```DateTimePoco```. It will now look like ```return Ok(new DateTimePoco(DateTime.UtcNow))```.
 This is automtically serializd into JSON and sent back in the body of the response.
 ```c#
-[HttpGet("TestTime", Name = "TestTime")]
+[HttpGet(Name = "TestTime")]
 public IActionResult TestTime()
 {
     LogWriter.LogInfo("TestTime called");
@@ -219,7 +218,7 @@ Ok (Status 200) is not the only status that contain information. Data may also b
 The last thing that we want to do, is decorate the method with it's return types using the attribute ```[ProducesResponseType]```:
 ```c#
 [ProducesResponseType(typeof(DateTimePoco), StatusCodes.Status200OK)]
-[HttpGet("TestTime", Name = "TestTime")]
+[HttpGet(Name = "TestTime")]
 public IActionResult TestTime()
 {
     LogWriter.LogInfo("TestTime called");
@@ -233,7 +232,7 @@ At many points, we want to stop execution of a request early due to an error, in
 In order to do this, we have the ability to return more than just Ok (200).
 View [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) for a list and explanation of all statuses.
 ```c#
-[HttpPost("Authorize", Name = "Authorize")]
+[HttpPost(Name = "Authorize")]
 [ProducesResponseType(typeof(DualToken), StatusCodes.Status200OK)]
 [ProducesResponseType(StatusCodes.Status403Forbidden)]
 public async Task<IActionResult> Authorize([FromBody] UserIdentification userIdentification)

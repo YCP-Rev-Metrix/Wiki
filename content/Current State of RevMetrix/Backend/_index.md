@@ -36,12 +36,10 @@ Below are the most recently updated reworkings of the project's database schemas
 |:--:|
 
 #### Research Database Schema (Cloud Server)
-| ![Raw Database](ResearchDatabase.jpg?width=40vw&lightbox=false) |
-|:--:|
+| ![RevMetrix DB](Spring2024DBSchema.jpg?width=40vw&lightbox=false) |
+|:-----------------------------------------------------------------:|
 
-#### User Database Schema (Cloud Server)
-| ![User Database](UserDatabase.jpg?width=40vw&lightbox=false) |
-|:--:|
+Both the User and Research databases have been combined into one database, with permissions set for raw data for the sole purpose of providing data to the Research UI.
 
 #### Results of database stress testing can be seen at the link below
 {{% children containerstyle="ul" style="li" sort="title" description="true" %}}

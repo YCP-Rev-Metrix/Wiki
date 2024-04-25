@@ -8,20 +8,20 @@
     <meta name="description" content="How to link domains to an application using DNS records and Nginx Proxy Manager">
     <title>Linking Domains :: Hugo Relearn Theme</title>
     <link href="/how-to-contribute/linking-domains/index.xml" rel="alternate" type="application/rss+xml" title="Linking Domains :: Hugo Relearn Theme">
-    <link href="/images/favicon.png?1708356507" rel="icon" type="image/png">
+    <link href="/images/favicon.png?1710945805" rel="icon" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1708356507" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1708356507" rel="stylesheet">
-    <link href="/css/auto-complete.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1708356507" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1708356507" rel="stylesheet">
-    <link href="/css/fonts.css?1708356507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1708356507" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1708356507" rel="stylesheet">
-    <link href="/css/theme-neon.css?1708356507" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1708356507" rel="stylesheet">
-    <link href="/css/print.css?1708356507" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1708356507" rel="stylesheet">
-    <script src="/js/url.js?1708356507"></script>
-    <script src="/js/variant.js?1708356507"></script>
+    <link href="/css/fontawesome-all.min.css?1710945805" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1710945805" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1710945805" rel="stylesheet">
+    <link href="/css/auto-complete.css?1710945805" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1710945805" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1710945805" rel="stylesheet">
+    <link href="/css/fonts.css?1710945805" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1710945805" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1710945805" rel="stylesheet">
+    <link href="/css/theme-neon.css?1710945805" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1710945805" rel="stylesheet">
+    <link href="/css/print.css?1710945805" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1710945805" rel="stylesheet">
+    <script src="/js/url.js?1710945805"></script>
+    <script src="/js/variant.js?1710945805"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -82,25 +82,25 @@
 <p>*Note: Nginx Proxy Manager is already set up on the Cloud-infrastructure Droplet, so there is no need to set it up when linking domains to anything API related.</p>
 <h3 id="linking-a-domain-or-subdomain">Linking a Domain or Subdomain</h3>
 <p>To link a a domain or a subdomain to the IP address of an application, you first want to create an A record in the DNS settings of your domain on its provider&rsquo;s website.  If you have linked a domain to DigitalOcean already from a different provider, this can be done from within DigitalOcean, under Domains -&gt; yourDomain -&gt; Create new record.</p>
-<p><a href="#image-15ecbd76133a8ecdedbf0b37b2b8e95f" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-15ecbd76133a8ecdedbf0b37b2b8e95f"><img src="/how-to-contribute/linking-domains/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-93639591fca10dffd3cac852e62132d8" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-93639591fca10dffd3cac852e62132d8"><img src="/how-to-contribute/linking-domains/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>To create an A record for the domain, simply enter the hostname (such as example.com or site.example.com if linking a subdomain), enter the IP of the Droplet that the domain will direct traffic to (such as 192.168.xxx.xxx), and the Time-To-Live value (defaults to 3600 seconds).  Then, hit Create Record and the A record will have been created.  This is all that needs to be done for the DNS settings of the domain, so any windows regarding that can now be closed.</p>
 <h3 id="opening-the-port-for-nginx-proxy-manager">Opening The Port For Nginx Proxy Manager</h3>
 <p>To access Nginx Proxy Manager on the Droplet&rsquo;s IP address after setup, a custom firewall setting must be configured.  To do this, head over to the Droplet&rsquo;s dashboard, go to the networking tab on the left under the Droplet&rsquo;s IPv4 Address, scroll down to the &ldquo;Firewalls&rdquo; section, and click on either &ldquo;Configure Firewall&rdquo; or the name of an existing firewall.  This will bring you to the Inbound and Outbound Rules page.  From here, under Inbound Rules, click on the &ldquo;New rule&rdquo; dropdown button (under the existing rules).  Select &ldquo;Custom&rdquo;, and then for the port range enter &ldquo;81&rdquo; and hit save.  Now, when you go to &ldquo;http://&lsquo;Droplet&rsquo;sIPAddr&rsquo;:81&rdquo;, you will see the login page for the instance of Nginx Proxy Manager that is running on the Droplet.  Login, and if you do not have an account already created, the login info will be &ldquo;<a href="mailto:admin@example.com">admin@example.com</a>&rdquo; with the password &ldquo;changeme&rdquo;.  Be sure to change the username and password after logging in.</p>
 <h3 id="creating-a-proxy-host">Creating a Proxy Host</h3>
 <p>To direct traffic through the domain/subdomain name to the application being hosted on the Droplet, it is necessary to create a new Proxy host in Nginx Proxy Manager for the domain/subdomain.  To do so, after logging into the instance of Nginx Proxy Manager running on the Droplet, click the &ldquo;Proxy Hosts&rdquo; button on the left of the dashboard.  From here you will be taken to the Proxy Hosts page.  Go ahead and hit the &ldquo;Add Proxy Host&rdquo; button as seen below:</p>
-<p><a href="#image-5fdb7cb8ed159c9d49e2a791d35a4243" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-5fdb7cb8ed159c9d49e2a791d35a4243"><img src="/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-7870ad5464d49f49f366afc4162fa566" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-7870ad5464d49f49f366afc4162fa566"><img src="/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>This will bring up the page below.  Be sure to enter the domain/subdomain that you created an A record for earlier into the &ldquo;Domain Names&rdquo; field and hit the Tab key.  Then, specify the IP address of the Droplet to direct the traffic of the link to, and finally specify the port that the application will be running on inside of the Droplet.  Make sure to check each option and hit save:</p>
-<p><a href="#image-853531d08a11be0b2b4b7552e8d6efb4" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-853531d08a11be0b2b4b7552e8d6efb4"><img src="/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-33a62929e54b6e100788d39b2bf82b0f" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-33a62929e54b6e100788d39b2bf82b0f"><img src="/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <h3 id="generating-an-ssl-certificate-for-the-domain">Generating an SSL Certificate For The Domain</h3>
 <p>After creating a Proxy Host for the domain, a listing similar to the following will appear in the list of Proxy Hosts:</p>
-<p><a href="#image-02ca25c93e28b2c42f1f0d125752acea" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-02ca25c93e28b2c42f1f0d125752acea"><img src="/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-3c6ea90915b1967a38cb11b43799821d" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-3c6ea90915b1967a38cb11b43799821d"><img src="/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>From here, click the three dots on the right of the listing and select &ldquo;Edit&rdquo;.  Click on the &ldquo;SSL&rdquo; tab in the popup window, and select &ldquo;Request a new SSL Certificate&rdquo; and enter your email to generate the certificate by hitting the save button as seen below:</p>
-<p><a href="#image-a074362734236c26b109d9f282b4303b" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-a074362734236c26b109d9f282b4303b"><img src="/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-6570f5290f75bc995de1b161f12f72a7" class="lightbox-link"><img src="/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-6570f5290f75bc995de1b161f12f72a7"><img src="/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>Once this is done, it will take a moment to generate the certificate, but soon the application will be accessible through the domain name over http and https.  To force the domain to use https and avoid any http requests, go back to the SSL tab as done above and toggle the &ldquo;Force SSL&rdquo; slider, then hit save.</p>
 <h3 id="conclusion">Conclusion</h3>
 <p>Now, the domain should be securely accessible and linked to the Droplet&rsquo;s IP address and the port that the application is running on on the Droplet.  Make sure to delete the custom firewall configuration for the Droplet, and everything should be good to go!</p>
@@ -130,12 +130,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1708356507" defer></script>
-        <script src="/js/lunr/lunr.min.js?1708356507" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1708356507" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1708356507" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1708356507" defer></script>
-        <script src="/js/search.js?1708356507" defer></script>
+        <script src="/js/auto-complete.js?1710945805" defer></script>
+        <script src="/js/lunr/lunr.min.js?1710945805" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1710945805" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1710945805" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1710945805" defer></script>
+        <script src="/js/search.js?1710945805" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <hr class="padding">
@@ -172,8 +172,27 @@
           <li data-nav-id="/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
           <li data-nav-id="/initial-project-ideas/phone-app-proof-of-concept/index.html" class=""><a class="padding" href="/initial-project-ideas/phone-app-proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
           <li data-nav-id="/initial-project-ideas/simulation-first-thoughts/index.html" class=""><a class="padding" href="/initial-project-ideas/simulation-first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
-          <li data-nav-id="/project-assignments/index.html" class=""><a class="padding" href="/project-assignments/index.html">Project Assignments</a></li>
-          <li data-nav-id="/project-milestones/index.html" class=""><a class="padding" href="/project-milestones/index.html">Project Milestones</a></li>
+          <li data-nav-id="/project-assignments/index.html" class=""><input type="checkbox" id="section-20a57b3805d5ea8de5ff85c9a2766628" aria-controls="subsections-20a57b3805d5ea8de5ff85c9a2766628"><label for="section-20a57b3805d5ea8de5ff85c9a2766628"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/project-assignments/index.html">Project Assignments</a><ul id="subsections-20a57b3805d5ea8de5ff85c9a2766628" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2023/index.html" class="alwaysopen"><input type="checkbox" id="section-420d6fee115a699ffb8c256a6394be49" aria-controls="subsections-420d6fee115a699ffb8c256a6394be49" checked><label for="section-420d6fee115a699ffb8c256a6394be49"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2023</span></label><a class="padding" href="/project-assignments/fall-2023/index.html">Fall 2023</a><ul id="subsections-420d6fee115a699ffb8c256a6394be49" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2023/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-2458cdf6bca300b032ad770e6251dccd" aria-controls="subsections-2458cdf6bca300b032ad770e6251dccd" checked><label for="section-2458cdf6bca300b032ad770e6251dccd"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/project-assignments/fall-2023/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-2458cdf6bca300b032ad770e6251dccd" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2023/analysis-and-design/backend/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/analysis-and-design/backend/index.html">Backend Team</a></li>
+          <li data-nav-id="/project-assignments/fall-2023/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/analysis-and-design/frontend/index.html">Frontend Team</a></li>
+          <li data-nav-id="/project-assignments/fall-2023/analysis-and-design/simulation/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/analysis-and-design/simulation/index.html">Simulation Team</a></li></ul></li>
+          <li data-nav-id="/project-assignments/fall-2023/project-requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-d7d3800271af89b476c25f63c58ee843" aria-controls="subsections-d7d3800271af89b476c25f63c58ee843" checked><label for="section-d7d3800271af89b476c25f63c58ee843"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Requirements</span></label><a class="padding" href="/project-assignments/fall-2023/project-requirements/index.html">Project Requirements</a><ul id="subsections-d7d3800271af89b476c25f63c58ee843" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2023/project-requirements/backend/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/project-requirements/backend/index.html">Backend Requirements</a></li>
+          <li data-nav-id="/project-assignments/fall-2023/project-requirements/frontend/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/project-requirements/frontend/index.html">Frontend Requirements</a></li>
+          <li data-nav-id="/project-assignments/fall-2023/project-requirements/simulation/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/project-requirements/simulation/index.html">Simulation Requirements</a></li></ul></li></ul></li>
+          <li data-nav-id="/project-assignments/spring-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-54750c753826710a68a327dd1797ac7c" aria-controls="subsections-54750c753826710a68a327dd1797ac7c" checked><label for="section-54750c753826710a68a327dd1797ac7c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2024</span></label><a class="padding" href="/project-assignments/spring-2024/index.html">Spring 2024</a><ul id="subsections-54750c753826710a68a327dd1797ac7c" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/spring-2024/detailed-proposal-and-design/index.html" class=""><a class="padding" href="/project-assignments/spring-2024/detailed-proposal-and-design/index.html">Detailed Proposal and Design</a></li></ul></li></ul></li>
+          <li data-nav-id="/project-milestones/index.html" class=""><input type="checkbox" id="section-172b7588bbc4a972ce24ef7e433a1ff1" aria-controls="subsections-172b7588bbc4a972ce24ef7e433a1ff1"><label for="section-172b7588bbc4a972ce24ef7e433a1ff1"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/project-milestones/index.html">Project Milestones</a><ul id="subsections-172b7588bbc4a972ce24ef7e433a1ff1" class="morespace collapsible-menu">
+          <li data-nav-id="/project-milestones/fall-2023/index.html" class="alwaysopen"><input type="checkbox" id="section-663953c109e1e8ab1bbf360e50c51077" aria-controls="subsections-663953c109e1e8ab1bbf360e50c51077" checked><label for="section-663953c109e1e8ab1bbf360e50c51077"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2023</span></label><a class="padding" href="/project-milestones/fall-2023/index.html">Fall 2023</a><ul id="subsections-663953c109e1e8ab1bbf360e50c51077" class="morespace collapsible-menu">
+          <li data-nav-id="/project-milestones/fall-2023/ms1-minimal-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2023/ms1-minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/project-milestones/fall-2023/ms2-50-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2023/ms2-50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/project-milestones/fall-2023/ms3-final-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2023/ms3-final-working-system/index.html">MS3 - Final Working System</a></li></ul></li>
+          <li data-nav-id="/project-milestones/spring-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-e76b75c6bcd4d7b4812c006c3a916a68" aria-controls="subsections-e76b75c6bcd4d7b4812c006c3a916a68" checked><label for="section-e76b75c6bcd4d7b4812c006c3a916a68"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2024</span></label><a class="padding" href="/project-milestones/spring-2024/index.html">Spring 2024</a><ul id="subsections-e76b75c6bcd4d7b4812c006c3a916a68" class="morespace collapsible-menu">
+          <li data-nav-id="/project-milestones/spring-2024/milestone-1/index.html" class=""><a class="padding" href="/project-milestones/spring-2024/milestone-1/index.html">Milestone 1</a></li>
+          <li data-nav-id="/project-milestones/spring-2024/milestone-2/index.html" class=""><a class="padding" href="/project-milestones/spring-2024/milestone-2/index.html">Milestone 2</a></li>
+          <li data-nav-id="/project-milestones/spring-2024/milestone-3/index.html" class=""><a class="padding" href="/project-milestones/spring-2024/milestone-3/index.html">Milestone 3</a></li></ul></li></ul></li>
           <li data-nav-id="/smartdot/index.html" class=""><input type="checkbox" id="section-1fb5831435392cfc3b189aa1ce7c91d5" aria-controls="subsections-1fb5831435392cfc3b189aa1ce7c91d5"><label for="section-1fb5831435392cfc3b189aa1ce7c91d5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/smartdot/index.html">SmartDot</a><ul id="subsections-1fb5831435392cfc3b189aa1ce7c91d5" class="morespace collapsible-menu">
           <li data-nav-id="/smartdot/ismartdot/index.html" class=""><a class="padding" href="/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
           <li data-nav-id="/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
@@ -184,7 +203,8 @@
         <div id="shortcuts">
           <div class="nav-title padding">More</div>
           <ul class="space">
-            <li><a class="padding" href="/https:/ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> RevMetrix Home Page</a></li>
+            <li><a class="padding" href="/https:/ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> CS400 RevMetrix Home Page</a></li>
+            <li><a class="padding" href="/https:/ycpcs.github.io/cs402-spring2024/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> CS402 RevMetrix Home Page</a></li>
             <li><a class="padding" href="/https:/github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
             <li><a class="padding" href="/https:/drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
             <li><a class="padding" href="/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
@@ -245,14 +265,14 @@
               </li>
             </ul>
           </div>
-          <div id="footer" class="footerFooter showFooter"><p>Made with love</p>
+          <div id="footer" class="footerFooter showFooter"><p>2023 @ RevMetrix</p>
 
           </div>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1708356507" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1708356507" defer></script>
-    <script src="/js/theme.js?1708356507" defer></script>
+    <script src="/js/clipboard.min.js?1710945805" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1710945805" defer></script>
+    <script src="/js/theme.js?1710945805" defer></script>
   </body>
 </html>

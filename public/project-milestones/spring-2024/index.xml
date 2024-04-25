@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring 2024 on Hugo Relearn Theme</title>
+    <link>/project-milestones/spring-2024/index.html</link>
+    <description>Recent content in Spring 2024 on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/project-milestones/spring-2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Milestone 1</title>
+      <link>/project-milestones/spring-2024/milestone-1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-milestones/spring-2024/milestone-1/index.html</guid>
+      <description>Milestone 1 Main Task Your task is to demonstrate your progress toward the goals you previously established for Milestone 1. The Presentation / Demonstration Each project team should plan to present for about 50-60 minutes. Larger teams (with multiple sub-teams) will likely go longer than that. There will likely also be an extensive question and answer period. You should use presentation software such as PowerPoint or Google Slides. Your slides should contain brief bulleted points and graphics (tables, diagrams, screen captures, wire frames) that provide overall context for your bullet points.</description>
+    </item>
+    <item>
+      <title>Milestone 2</title>
+      <link>/project-milestones/spring-2024/milestone-2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-milestones/spring-2024/milestone-2/index.html</guid>
+      <description>Milestone 2 Main Task The Presentation / Demonstration Milestone 2 - Presentation / Demonstration Links </description>
+    </item>
+    <item>
+      <title>Milestone 3</title>
+      <link>/project-milestones/spring-2024/milestone-3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-milestones/spring-2024/milestone-3/index.html</guid>
+      <description>Milestone 3 Main Task The Presentation / Demonstration Milestone 3 - Presentation / Demonstration Links </description>
+    </item>
+  </channel>
+</rss>

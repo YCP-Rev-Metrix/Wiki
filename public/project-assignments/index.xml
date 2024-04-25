@@ -6,5 +6,22 @@
     <description>Recent content in Project Assignments on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="/project-assignments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fall 2023</title>
+      <link>/project-assignments/fall-2023/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-assignments/fall-2023/index.html</guid>
+      <description>Overview Below you can find the list of project assignments completed throughout the fall 2023 semester and all of their details.
+List of Assignments Analysis and DesignDesign and Analysis Information and Links to the Document and Slideshow
+Project RequirementsDetails of the project requirements and the associated slideshow</description>
+    </item>
+    <item>
+      <title>Spring 2024</title>
+      <link>/project-assignments/spring-2024/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-assignments/spring-2024/index.html</guid>
+      <description>Overview Below you can find the list of project assignments completed throughout the spring 2024 semester and all of their details.
+List of Assignments Detailed Proposal and DesignInformation about the Detailed Proposal and Design assignment</description>
+    </item>
   </channel>
 </rss>

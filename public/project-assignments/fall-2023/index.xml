@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fall 2023 on Hugo Relearn Theme</title>
+    <link>/project-assignments/fall-2023/index.html</link>
+    <description>Recent content in Fall 2023 on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/project-assignments/fall-2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis and Design</title>
+      <link>/project-assignments/fall-2023/analysis-and-design/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-assignments/fall-2023/analysis-and-design/index.html</guid>
+      <description>Official Project Requirements Document and Slideshow The official project requirements document can be found in the project&amp;rsquo;s Google Drive here, and the requirements presentation slideshow can be found here
+Abstract RevMetrix is a system that will record metrics of a bowling ball as it travels down the lane. It will consist of a physical device that the user can place inside a bowling ball and mobile application. The device will record rotational and positional data about the ball as it travels down the lane.</description>
+    </item>
+    <item>
+      <title>Project Requirements</title>
+      <link>/project-assignments/fall-2023/project-requirements/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/project-assignments/fall-2023/project-requirements/index.html</guid>
+      <description>Official Project Requirements Document and Slideshow The official project requirements document can be found in the project&amp;rsquo;s Google Drive here, and the requirements presentation slideshow can be found here
+System Architecture Initial Requirements by Type of Develeopment Backend RequirementsProject requirements specific to the backend development
+Frontend RequirementsProject requirements specific to the frontend development
+Simulation RequirementsProject requirements specific to the simulation development</description>
+    </item>
+  </channel>
+</rss>
