@@ -15,7 +15,6 @@ Simulation / Graphics Team
 
 Frontend Development Team
   - [Theodore Bloomquist](../members/theodore-bloomquist/index.html)
-  - [Thomas Bywaters](../members/thomas-bywaters/index.html)
   - [Michael Hensel](../members/michael-hensel/index.html)
   - [John Kettula](../members/john-kettula/index.html)
   - [Liz Mains](../members/liz-mains/index.html)
