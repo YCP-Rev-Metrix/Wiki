@@ -10,7 +10,7 @@ description = 'External links to member and information about their contribution
 - Interpolation Scripts
 
 #### Contact Information
-- Institution Email: iviveiros@ycp.edu
+- Email: ianjviveiros@gmail.com
 - Phone Number: (484) 388-9651
 
 #### External Links
