@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: robwoodd/wiki
+    image: revmetrixproject/wiki
     container_name: wiki
     ports:
       - "1313:1313"
