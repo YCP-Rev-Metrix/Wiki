@@ -17,7 +17,7 @@ jobs:
 
       - name: Login to Docker Hub
         run: |
-          docker login -u ${{ secrets.DOCKER_REVUSER }} -p ${{ secrets.DOCKER_REVPASS }}
+          docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}
       
       - name: Build and Push Docker Compose
         run: |
