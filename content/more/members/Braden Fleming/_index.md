@@ -5,11 +5,12 @@ description = 'External links to member and information about their contribution
 +++
 
 #### Project Contributions
-- 
+- WebAPI development
+- NuGet package creation and management
+- Backend development
 
 #### Contact Information
 - Institution Email: bfleming2@ycp.edu
-- Phone Number: (667) 367-7079
-
+  
 #### External Links
 - [GitHub](https://github.com/UnicycleUnicorn)
