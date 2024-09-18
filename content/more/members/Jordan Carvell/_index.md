@@ -5,11 +5,11 @@ description = 'External links to member and information about their contribution
 +++
 
 #### Project Contributions
-- 
+- SQL Server Database Development
+- WebAPI development
 
 #### Contact Information
 - Institution Email: jcarvell@ycp.edu
-- Phone Number: (570) 541-3161
-
+  
 #### External Links
 - [GitHub](https://github.com/jcarvell)
