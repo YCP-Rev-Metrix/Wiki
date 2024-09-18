@@ -5,11 +5,10 @@ description = 'External links to member and information about their contribution
 +++
 
 #### Project Contributions
-- 
+- Mobile Application Development
 
 #### Contact Information
 - Institution Email: emains@ycp.edu
-- Phone Number: (609) 789-3613
 
 #### External Links
 - [GitHub](https://github.com/lizmains)
