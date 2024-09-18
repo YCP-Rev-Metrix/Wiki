@@ -17,14 +17,7 @@ description = 'External links to member and information about their contribution
  - Assisted in development environment setup for backend team members
 
 #### Contact Information
- - Personal Email: l.robertwood@gmail.com
  - Institution Email: rwood7@ycp.edu
- - Phone Number: (717) 825-9792
- - Portfolio Contact Form: [Contact](https://robertwood.dev/contact.html)
 
 #### External Links
  - [GitHub](https://github.com/robertwood68)
- - [LinkedIn](https://www.linkedin.com/in/robert-wood-23448a174/)
- - [Portfolio](https://robertwood.dev/)
-
-
