@@ -24,4 +24,12 @@ From here you will be prompted to enter the link of the repository to clone and 
 
 ![Alt text](image-3.png)
 
+Now that the repo has been cloned, Go ahead and click on the configuration manager next to the run button. Next, ensure that the "Server: https" configuration is selected and then hit run.
+
+![Alt text](image-4.png)
+
+Lastly, the Swagger website will open up locally and will contain of all the API endpoints. Taaa daaa
+
+![Alt text](image-5.png)
+
 Everything from here on is basic source control practice.  If you are unfamiliar with these practices, check out the [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf) for an introduction to them!
