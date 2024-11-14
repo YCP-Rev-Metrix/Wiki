@@ -1,234 +1,243 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/how-to-contribute/webapi/endpoints/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/webapi/endpoints/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/analysis-and-design/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/analysis-and-design/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/getting-started/backend/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/getting-started/backend/index.html</loc>
   </url>
   <url>
-    <loc>/current-state-of-revmetrix/backend/index.html</loc>
+    <loc>//localhost:1313/current-state-of-revmetrix/backend/index.html</loc>
   </url>
   <url>
-    <loc>/initial-project-ideas/initial-database-architecture/index.html</loc>
+    <loc>//localhost:1313/initial-project-ideas/initial-database-architecture/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/project-requirements/backend/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/project-requirements/backend/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/analysis-and-design/backend/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/analysis-and-design/backend/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/braden-fleming/index.html</loc>
+    <loc>//localhost:1313/more/members/braden-fleming/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/bryce-neptune/index.html</loc>
+    <loc>//localhost:1313/more/members/bryce-neptune/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/contributing-documentation/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/getting-started/ciclopes/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/ci-and-cd/index.html</loc>
   </url>
   <url>
-    <loc>/current-state-of-revmetrix/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/contributing-documentation/index.html</loc>
   </url>
   <url>
-    <loc>/current-state-of-revmetrix/backend/database-obsevation-data/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/david-babcock/index.html</loc>
+    <loc>//localhost:1313/current-state-of-revmetrix/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/spring-2024/detailed-proposal-and-design/index.html</loc>
+    <loc>//localhost:1313/current-state-of-revmetrix/backend/database-obsevation-data/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/digitalocean-management/index.html</loc>
+    <loc>//localhost:1313/more/members/david-babcock/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/dockerizing-an-application/index.html</loc>
+    <loc>//localhost:1313/project-assignments/spring-2024/detailed-proposal-and-design/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/donald-hake-ii/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/digitalocean-management/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/enoch-sam/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/dockerizing-an-application/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/index.html</loc>
+    <loc>//localhost:1313/more/members/donald-hake-ii/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/fall-2023/index.html</loc>
+    <loc>//localhost:1313/more/members/enoch-sam/index.html</loc>
   </url>
   <url>
-    <loc>/current-state-of-revmetrix/frontend/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/project-requirements/frontend/index.html</loc>
+    <loc>//localhost:1313/project-milestones/fall-2023/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/analysis-and-design/frontend/index.html</loc>
+    <loc>//localhost:1313/current-state-of-revmetrix/frontend/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/getting-started/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/project-requirements/frontend/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/github-workflows/backend-workflow/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/analysis-and-design/frontend/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/github-workflows/frontend-workflow/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/bluetooth/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/github-workflows/simulation-workflow/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/getting-started/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/github-workflows/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/github-workflows/backend-workflow/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/github-workflows/frontend-workflow/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/ian-viveiros/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/index.html</loc>
   </url>
   <url>
-    <loc>/initial-project-ideas/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/github-workflows/index.html</loc>
   </url>
   <url>
-    <loc>/smartdot/ismartdot/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/john-kettula/index.html</loc>
+    <loc>//localhost:1313/more/members/ian-viveiros/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/jordan-carvell/index.html</loc>
+    <loc>//localhost:1313/initial-project-ideas/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/linking-domains/index.html</loc>
+    <loc>//localhost:1313/smartdot/ismartdot/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/liz-mains/index.html</loc>
+    <loc>//localhost:1313/more/members/john-kettula/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/luke-dodson/index.html</loc>
+    <loc>//localhost:1313/more/members/jordan-carvell/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/linking-domains/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/michael-hensel/index.html</loc>
+    <loc>//localhost:1313/more/members/liz-mains/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/spring-2024/milestone-1/index.html</loc>
+    <loc>//localhost:1313/more/members/luke-dodson/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/spring-2024/milestone-2/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/spring-2024/milestone-3/index.html</loc>
+    <loc>//localhost:1313/more/members/michael-hensel/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/getting-started/mobile-app/index.html</loc>
+    <loc>//localhost:1313/project-milestones/spring-2024/milestone-1/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/fall-2023/ms1-minimal-working-system/index.html</loc>
+    <loc>//localhost:1313/project-milestones/spring-2024/milestone-2/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/fall-2023/ms2-50-working-system/index.html</loc>
+    <loc>//localhost:1313/project-milestones/spring-2024/milestone-3/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/fall-2023/ms3-final-working-system/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/getting-started/mobile-app/index.html</loc>
   </url>
   <url>
-    <loc>/initial-project-ideas/phone-app-proof-of-concept/index.html</loc>
+    <loc>//localhost:1313/project-milestones/fall-2023/ms1---minimal-working-system/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/index.html</loc>
+    <loc>//localhost:1313/project-milestones/fall-2023/ms2---50-working-system/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/index.html</loc>
+    <loc>//localhost:1313/project-milestones/fall-2023/ms3---final-working-system/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/project-requirements/index.html</loc>
+    <loc>//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/webapi/index.html</loc>
+    <loc>//localhost:1313/project-assignments/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/robert-wood/index.html</loc>
+    <loc>//localhost:1313/project-milestones/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/webapi/security/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/project-requirements/index.html</loc>
   </url>
   <url>
-    <loc>/current-state-of-revmetrix/simulation/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/webapi/index.html</loc>
   </url>
   <url>
-    <loc>/initial-project-ideas/simulation-first-thoughts/index.html</loc>
+    <loc>//localhost:1313/more/members/robert-wood/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/project-requirements/simulation/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/webapi/security/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/fall-2023/analysis-and-design/simulation/index.html</loc>
+    <loc>//localhost:1313/current-state-of-revmetrix/simulation/index.html</loc>
   </url>
   <url>
-    <loc>/smartdot/index.html</loc>
+    <loc>//localhost:1313/initial-project-ideas/simulation---first-thoughts/index.html</loc>
   </url>
   <url>
-    <loc>/smartdot/smartdothardware/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/project-requirements/simulation/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/getting-started/smartdot-simulator/index.html</loc>
+    <loc>//localhost:1313/project-assignments/fall-2023/analysis-and-design/simulation/index.html</loc>
   </url>
   <url>
-    <loc>/smartdot/smartdot-simulator/index.html</loc>
+    <loc>//localhost:1313/smartdot/index.html</loc>
   </url>
   <url>
-    <loc>/project-assignments/spring-2024/index.html</loc>
+    <loc>//localhost:1313/smartdot/smartdothardware/index.html</loc>
   </url>
   <url>
-    <loc>/project-milestones/spring-2024/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/getting-started/smartdot-simulator/index.html</loc>
   </url>
   <url>
-    <loc>/technologies-used/index.html</loc>
+    <loc>//localhost:1313/smartdot/smartdot-simulator/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/theodore-bloomquist/index.html</loc>
+    <loc>//localhost:1313/project-assignments/spring-2024/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/thomas-bywaters/index.html</loc>
+    <loc>//localhost:1313/project-milestones/spring-2024/index.html</loc>
   </url>
   <url>
-    <loc>/more/members/victor-pineda/index.html</loc>
+    <loc>//localhost:1313/technologies-used/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/getting-started/visualizer/index.html</loc>
+    <loc>//localhost:1313/more/members/theodore-bloomquist/index.html</loc>
   </url>
   <url>
-    <loc>/how-to-contribute/webapi/client/index.html</loc>
+    <loc>//localhost:1313/more/members/thomas-bywaters/index.html</loc>
   </url>
   <url>
-    <loc>/categories/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="/categories/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="/categories/index.html" />
-    <xhtml:link rel="alternate" hreflang="pir" href="/pir/categories/index.html" />
+    <loc>//localhost:1313/more/members/victor-pineda/index.html</loc>
   </url>
   <url>
-    <loc>/more/credits/index.html</loc>
+    <loc>//localhost:1313/how-to-contribute/getting-started/visualizer/index.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="/index.html" />
-    <xhtml:link rel="alternate" hreflang="pir" href="/pir/index.html" />
+    <loc>//localhost:1313/how-to-contribute/webapi/client/index.html</loc>
   </url>
   <url>
-    <loc>/tags/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="x-default" href="/tags/index.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="/tags/index.html" />
-    <xhtml:link rel="alternate" hreflang="pir" href="/pir/tags/index.html" />
+    <loc>//localhost:1313/categories/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="//localhost:1313/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="//localhost:1313/categories/index.html" />
+    <xhtml:link rel="alternate" hreflang="pir" href="//localhost:1313/pir/categories/index.html" />
+  </url>
+  <url>
+    <loc>//localhost:1313/more/credits/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="//localhost:1313/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="//localhost:1313/index.html" />
+    <xhtml:link rel="alternate" hreflang="pir" href="//localhost:1313/pir/index.html" />
+  </url>
+  <url>
+    <loc>//localhost:1313/tags/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="//localhost:1313/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="//localhost:1313/tags/index.html" />
+    <xhtml:link rel="alternate" hreflang="pir" href="//localhost:1313/pir/tags/index.html" />
   </url>
 </urlset>

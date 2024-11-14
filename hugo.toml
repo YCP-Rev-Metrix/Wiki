@@ -11,6 +11,7 @@ unsafe= true
 home = [ "HTML", "RSS", "SEARCH", "SEARCHPAGE"]
 
 [params]
+disableLanguageSwitchingButton = false
 disableLandingPageButton = true
 collapsibleMenu = true
 editURL = "https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/"

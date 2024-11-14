@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dockerizing an Application on Hugo Relearn Theme</title>
-    <link>/how-to-contribute/dockerizing-an-application/index.html</link>
+    <link>//localhost:1313/how-to-contribute/dockerizing-an-application/index.html</link>
     <description>Recent content in Dockerizing an Application on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/how-to-contribute/dockerizing-an-application/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/how-to-contribute/dockerizing-an-application/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

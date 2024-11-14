@@ -2,37 +2,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Initial Project Ideas on Hugo Relearn Theme</title>
-    <link>/initial-project-ideas/index.html</link>
+    <link>//localhost:1313/initial-project-ideas/index.html</link>
     <description>Recent content in Initial Project Ideas on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/initial-project-ideas/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/initial-project-ideas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backend - Database Architecture</title>
-      <link>/initial-project-ideas/initial-database-architecture/index.html</link>
+      <link>//localhost:1313/initial-project-ideas/initial-database-architecture/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/initial-project-ideas/initial-database-architecture/index.html</guid>
-      <description>Architecture Initial Database Architecture Local Database (Localhost) Local Database Schema User Database (Cloud Server) User Database Schema Raw Database (Cloud Server) Raw Database Schema </description>
+      <guid>//localhost:1313/initial-project-ideas/initial-database-architecture/index.html</guid>
+      <description>&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/Architecture.png?width=35vw&amp;amp;lightbox=false&#34; alt=&#34;Initial Database Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 35vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;Initial Database Architecture&lt;/em&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;local-database-localhost&#34;&gt;Local Database (Localhost)&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/LocalDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;Local Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;Local Database Schema&lt;/em&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;user-database-cloud-server&#34;&gt;User Database (Cloud Server)&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/UserDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;User Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;User Database Schema&lt;/em&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;raw-database-cloud-server&#34;&gt;Raw Database (Cloud Server)&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/RawDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;Raw Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;em&gt;Raw Database Schema&lt;/em&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     <item>
       <title>Phone App - Proof of Concept</title>
-      <link>/initial-project-ideas/phone-app-proof-of-concept/index.html</link>
+      <link>//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/initial-project-ideas/phone-app-proof-of-concept/index.html</guid>
-      <description>.NET MAUI documentation: -Bluetooth Connection
--NET MAUI General Documentation
--NET MAUI File Picker
--NET MAUI Youtube Channel
--Xamarin Youtube Channel
--Xamarin Data Binding Documentation
--Xamarin Advanced Data Binding Documentation
-Initial Proof of Concept - Mobile Application </description>
+      <guid>//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.html</guid>
+      <description>&lt;h3 id=&#34;net-maui-documentation&#34;&gt;.NET MAUI documentation:&lt;/h3&gt;
+&lt;p&gt;-&lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/communication/networking?tabs=android&#34; target=&#34;_blank&#34;&gt;Bluetooth Connection&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-&lt;a href=&#34;https://dotnet.microsoft.com/en-us/learn/maui&#34; target=&#34;_blank&#34;&gt;NET MAUI General Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-&lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/storage/file-picker?tabs=android&#34; target=&#34;_blank&#34;&gt;NET MAUI File Picker&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-&lt;a href=&#34;https://www.youtube.com/@jfversluis&#34; target=&#34;_blank&#34;&gt;NET MAUI Youtube Channel&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-&lt;a href=&#34;https://www.youtube.com/watch?v=Vdy69j-DUHU&amp;amp;ab_channel=XamarinGuy&#34; target=&#34;_blank&#34;&gt;Xamarin Youtube Channel&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-&lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/maui/xaml/fundamentals/data-binding-basics&#34; target=&#34;_blank&#34;&gt;Xamarin Data Binding Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;-&lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/maui/xaml/fundamentals/mvvm&#34; target=&#34;_blank&#34;&gt;Xamarin Advanced Data Binding Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;initial-proof-of-concept---mobile-application&#34;&gt;Initial Proof of Concept - Mobile Application&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/FrontendProofOfConcept.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;PhoneAppPOC&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     <item>
       <title>Simulation - First Thoughts</title>
-      <link>/initial-project-ideas/simulation-first-thoughts/index.html</link>
+      <link>//localhost:1313/initial-project-ideas/simulation---first-thoughts/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/initial-project-ideas/simulation-first-thoughts/index.html</guid>
-      <description>Beginning Ideas of Simulation Design: Initial Lane Setup Full Lane View Lane While Testing Translation Scaled Pins Setup </description>
+      <guid>//localhost:1313/initial-project-ideas/simulation---first-thoughts/index.html</guid>
+      <description>&lt;h3 id=&#34;beginning-ideas-of-simulation-design&#34;&gt;Beginning Ideas of Simulation Design:&lt;/h3&gt;
+&lt;h5 id=&#34;initial-lane-setup&#34;&gt;Initial Lane Setup&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/FullLane.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Lane Setup&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;full-lane-view&#34;&gt;Full Lane View&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/Lane1.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Full Lane&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;lane-while-testing-translation&#34;&gt;Lane While Testing Translation&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/LaneDiff.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Lane Translation&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;scaled-pins-setup&#34;&gt;Scaled Pins Setup&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/Pins.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Scaled Pins Setup&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
   </channel>
 </rss>

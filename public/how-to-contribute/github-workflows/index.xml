@@ -2,33 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitHub Workflows on Hugo Relearn Theme</title>
-    <link>/how-to-contribute/github-workflows/index.html</link>
+    <link>//localhost:1313/how-to-contribute/github-workflows/index.html</link>
     <description>Recent content in GitHub Workflows on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/how-to-contribute/github-workflows/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/how-to-contribute/github-workflows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub Workflow - Backend</title>
-      <link>/how-to-contribute/github-workflows/backend-workflow/index.html</link>
+      <link>//localhost:1313/how-to-contribute/github-workflows/backend-workflow/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/github-workflows/backend-workflow/index.html</guid>
-      <description>Development Enviornment The preferred development enviornment for the Cloud-Infrastructure .NET solution is Microsoft Visual Studio 2022 Community Edition. When installing Visual Studio, make sure to install all of the options checked below:
-After installing Visual Studio, you will also need to install SQL Server Developer Edition (Free). All of the default installation settings can be followed for this. Finally, you&amp;rsquo;ll need to install SQL Server Management Studio. The default installation options for SSMS can be followed here also.</description>
+      <guid>//localhost:1313/how-to-contribute/github-workflows/backend-workflow/index.html</guid>
+      <description>&lt;h3 id=&#34;development-enviornment&#34;&gt;Development Enviornment&lt;/h3&gt;
+&lt;p&gt;The preferred development enviornment for the Cloud-Infrastructure .NET solution is &lt;a href=&#34;https://visualstudio.microsoft.com/vs/&#34; target=&#34;_blank&#34;&gt;Microsoft Visual Studio 2022 Community Edition&lt;/a&gt;.  When installing Visual Studio, make sure to install all of the options checked below:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#image-094323a53a527276a02a09ffd46dac9b&#34; class=&#34;lightbox-link&#34;&gt;&lt;img src=&#34;//localhost:1313/how-to-contribute/github-workflows/backend-workflow/image.png&#34; alt=&#34;Alt text&#34; class=&#34;figure-image noborder lightbox noshadow&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox-back&#34; id=&#34;image-094323a53a527276a02a09ffd46dac9b&#34;&gt;&lt;img src=&#34;//localhost:1313/how-to-contribute/github-workflows/backend-workflow/image.png&#34; alt=&#34;Alt text&#34; class=&#34;lightbox-image noborder lightbox noshadow&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After installing Visual Studio, you will also need to install &lt;a href=&#34;https://go.microsoft.com/fwlink/p/?linkid=2215158&amp;amp;clcid=0x409&amp;amp;culture=en-us&amp;amp;country=us&#34; target=&#34;_blank&#34;&gt;SQL Server Developer Edition (Free)&lt;/a&gt;.  All of the default installation settings can be followed for this.  Finally, you&amp;rsquo;ll need to install &lt;a href=&#34;https://aka.ms/ssmsfullsetup&#34; target=&#34;_blank&#34;&gt;SQL Server Management Studio&lt;/a&gt;.  The default installation options for SSMS can be followed here also.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitHub Workflow - Frontend</title>
-      <link>/how-to-contribute/github-workflows/frontend-workflow/index.html</link>
+      <link>//localhost:1313/how-to-contribute/github-workflows/frontend-workflow/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/github-workflows/frontend-workflow/index.html</guid>
-      <description>Prerequisites Most of these instructions at JetBrains Rider specific, as that is what we are using to develop the Frontend Application.
-Creating an Issue Go to the Frontend Github repository, using the following link: https://github.com/YCP-Rev-Metrix/FrontEnd/tree/master
-Within this page click on the Issues tab, which should be found in the following location: After your screen has refreshed, you should see a screen similar to the following screen below. After this has been done select New Issue: Give the issue a name and a description, and make sure to click Assign Yourself under the Assignees tab.</description>
+      <guid>//localhost:1313/how-to-contribute/github-workflows/frontend-workflow/index.html</guid>
+      <description>&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;Most of these instructions at JetBrains Rider specific, as that is what we are using to develop the Frontend Application.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;creating-an-issue&#34;&gt;Creating an Issue&lt;/h3&gt;
+&lt;p&gt;Go to the Frontend Github repository, using the following link: &lt;a href=&#34;https://github.com/YCP-Rev-Metrix/FrontEnd/tree/master&#34; target=&#34;_blank&#34;&gt;https://github.com/YCP-Rev-Metrix/FrontEnd/tree/master&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Within this page click on the Issues tab, which should be found in the following location:
+&lt;a href=&#34;#image-8b948487af66763b4b3cc9b2e6eda71b&#34; class=&#34;lightbox-link&#34;&gt;&lt;img src=&#34;https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/bd1298f7-43fb-4e86-88fb-742914410626&#34; alt=&#34;image8&#34; class=&#34;figure-image noborder lightbox noshadow&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox-back&#34; id=&#34;image-8b948487af66763b4b3cc9b2e6eda71b&#34;&gt;&lt;img src=&#34;https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/bd1298f7-43fb-4e86-88fb-742914410626&#34; alt=&#34;image8&#34; class=&#34;lightbox-image noborder lightbox noshadow&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After your screen has refreshed, you should see a screen similar to the following screen below. After this has been done select New Issue:
+&lt;a href=&#34;#image-904366229e98ba6a4b90f5ea7368af85&#34; class=&#34;lightbox-link&#34;&gt;&lt;img src=&#34;https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/07347520-4d8b-4b86-8dd3-d88e3510d412&#34; alt=&#34;image2&#34; class=&#34;figure-image noborder lightbox noshadow&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox-back&#34; id=&#34;image-904366229e98ba6a4b90f5ea7368af85&#34;&gt;&lt;img src=&#34;https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/07347520-4d8b-4b86-8dd3-d88e3510d412&#34; alt=&#34;image2&#34; class=&#34;lightbox-image noborder lightbox noshadow&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>GitHub Workflow - Simulation</title>
-      <link>/how-to-contribute/github-workflows/simulation-workflow/index.html</link>
+      <link>//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/github-workflows/simulation-workflow/index.html</guid>
-      <description>Making General Changes Swap the current Github branch to the Test branch: Click on the &amp;ldquo;Fetch Origin&amp;rdquo; button for the Test branch: Proceed to make the necessary changes for the Github Issue you are working on Review your changes in Github Desktop: Swap to your personal branch and bring the new changes over Include Github Issue # in the commit subject (i.e. Issue #12, new pin model) Commit your changes Go to the Github repository&amp;rsquo;s website and hit the New Pull Request button Make sure that your source and destination are both correct before creating the pull request This is (test &amp;lt;&amp;ndash; yourUsername) almost always Create pull request, then copy the link into the PR and send to Discord Make sure to tag the @Graphics Dev Team Approving Git Pull Requests Either check the current pull request on Github.</description>
+      <guid>//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/index.html</guid>
+      <description>&lt;h3 id=&#34;making-general-changes&#34;&gt;Making General Changes&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Swap the current Github branch to the Test branch:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/step1.png?width=35vw&amp;amp;lightbox=false&#34; alt=&#34;&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 35vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Click on the &amp;ldquo;Fetch Origin&amp;rdquo; button for the Test branch:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/step2.png?width=35vw&amp;amp;lightbox=false&#34; alt=&#34;&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 35vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Proceed to make the necessary changes for the Github Issue you are working on&lt;/li&gt;
+&lt;li&gt;Review your changes in Github Desktop:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/step4.png?width=35vw&amp;amp;lightbox=false&#34; alt=&#34;&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 35vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Swap to your personal branch and bring the new changes over&lt;/li&gt;
+&lt;li&gt;Include Github Issue # in the commit subject (i.e. &lt;em&gt;Issue #12, new pin model&lt;/em&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/step6.png?width=35vw&amp;amp;lightbox=false&#34; alt=&#34;&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 35vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

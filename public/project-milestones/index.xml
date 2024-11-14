@@ -2,29 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project Milestones on Hugo Relearn Theme</title>
-    <link>/project-milestones/index.html</link>
+    <link>//localhost:1313/project-milestones/index.html</link>
     <description>Recent content in Project Milestones on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/project-milestones/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/project-milestones/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fall 2023</title>
-      <link>/project-milestones/fall-2023/index.html</link>
+      <link>//localhost:1313/project-milestones/fall-2023/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-milestones/fall-2023/index.html</guid>
-      <description>Overview Below you can find the assignment descriptions for each of the project&amp;rsquo;s fall 2023 semester milestones. The appropriate slideshow can be seen under each milestone&amp;rsquo;s title.
-Milestones MS1 - Minimal Working SystemProgress made on the minimal working system and the associated slideshow
-MS2 - 50% Working SystemProgress made on the 50% working system and the associated slideshow
-MS3 - Final Working SystemProgress made on the final working system and the associated slideshow</description>
+      <guid>//localhost:1313/project-milestones/fall-2023/index.html</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Below you can find the assignment descriptions for each of the project&amp;rsquo;s fall 2023 semester milestones.  The appropriate slideshow can be seen under each milestone&amp;rsquo;s title.&lt;/p&gt;
+&lt;h3 id=&#34;milestones&#34;&gt;Milestones&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/fall-2023/ms1---minimal-working-system/index.html&#34;&gt;MS1 - Minimal Working System&lt;/a&gt;&lt;p&gt;Progress made on the minimal working system and the associated slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/fall-2023/ms2---50-working-system/index.html&#34;&gt;MS2 - 50% Working System&lt;/a&gt;&lt;p&gt;Progress made on the 50% working system and the associated slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/fall-2023/ms3---final-working-system/index.html&#34;&gt;MS3 - Final Working System&lt;/a&gt;&lt;p&gt;Progress made on the final working system and the associated slideshow&lt;/p&gt;</description>
     </item>
     <item>
       <title>Spring 2024</title>
-      <link>/project-milestones/spring-2024/index.html</link>
+      <link>//localhost:1313/project-milestones/spring-2024/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-milestones/spring-2024/index.html</guid>
-      <description>Overview Below you can find the assignment descriptions for each of the project&amp;rsquo;s spring 2024 semester milestones. The appropriate slideshow can be seen under each milestone&amp;rsquo;s title.
-Milestones Milestone 1Progress made on milestone 1 and the associated slideshow
-Milestone 2Progress made on milestone 2 and the associated slideshow
-Milestone 3Progress made on milestone 3 and the associated slideshow</description>
+      <guid>//localhost:1313/project-milestones/spring-2024/index.html</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Below you can find the assignment descriptions for each of the project&amp;rsquo;s spring 2024 semester milestones.  The appropriate slideshow can be seen under each milestone&amp;rsquo;s title.&lt;/p&gt;
+&lt;h3 id=&#34;milestones&#34;&gt;Milestones&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/spring-2024/milestone-1/index.html&#34;&gt;Milestone 1&lt;/a&gt;&lt;p&gt;Progress made on milestone 1 and the associated slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/spring-2024/milestone-2/index.html&#34;&gt;Milestone 2&lt;/a&gt;&lt;p&gt;Progress made on milestone 2 and the associated slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/spring-2024/milestone-3/index.html&#34;&gt;Milestone 3&lt;/a&gt;&lt;p&gt;Progress made on milestone 3 and the associated slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

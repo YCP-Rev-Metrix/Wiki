@@ -2,75 +2,328 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RevMetrix on Hugo Relearn Theme</title>
-    <link>/index.html</link>
+    <link>//localhost:1313/index.html</link>
     <description>Recent content in RevMetrix on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Current State of RevMetrix</title>
-      <link>/current-state-of-revmetrix/index.html</link>
+      <link>//localhost:1313/current-state-of-revmetrix/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/current-state-of-revmetrix/index.html</guid>
-      <description>RevMetrix System Architecture Current Status by Development Team Backend - Current StateAll details about the current state of the backend development, along with what is planned for the future
-Frontend - Current StateAll details about the current state of the frontend development, along with what is planned for the future
-Simulation - Current StateAll details about the current state of simulation development, along with what is planned for the future</description>
+      <guid>//localhost:1313/current-state-of-revmetrix/index.html</guid>
+      <description>&lt;h5 id=&#34;revmetrix-system-architecture&#34;&gt;RevMetrix System Architecture&lt;/h5&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/current-state-of-revmetrix/OverallSystemArc.png?width=200vw&amp;amp;lightbox=false&amp;amp;text-align=left&amp;amp;classes=shadow&#34; alt=&#34;RevMetrix Diagram&#34; class=&#34;figure-image noborder nolightbox shadow&#34; style=&#34;height: auto; width: 200vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;current-status-by-development-team&#34;&gt;Current Status by Development Team&lt;/h5&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/backend/index.html&#34;&gt;Backend - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of the backend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/frontend/index.html&#34;&gt;Frontend - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of the frontend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/simulation/index.html&#34;&gt;Simulation - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of simulation development, along with what is planned for the future&lt;/p&gt;</description>
     </item>
     <item>
       <title>How To Contribute</title>
-      <link>/how-to-contribute/index.html</link>
+      <link>//localhost:1313/how-to-contribute/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/index.html</guid>
-      <description>Table of Contents Contributing DocumentationHow to add, edit, and remove documentation on the Wiki
-DigitalOcean ManagementInformation regarding how to manage DigitalOcean Droplets
-Dockerizing an ApplicationInformation on how to dockerize a project and deploy onto a separate machine or server
-Getting StartedInformation regarding setting up your development enviroment
-GitHub WorkflowsAll GitHub workflows for the project
-Linking DomainsHow to link domains to an application using DNS records and Nginx Proxy Manager
-RevMetrix WebAPIInformation on how to use the WebAPI</description>
+      <guid>//localhost:1313/how-to-contribute/index.html</guid>
+      <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/ci-and-cd/index.html&#34;&gt;Continuous Integration/Deployment&lt;/a&gt;&lt;p&gt;Information about the project&amp;#39;s CI/CD workflows&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/contributing-documentation/index.html&#34;&gt;Contributing Documentation&lt;/a&gt;&lt;p&gt;How to add, edit, and remove documentation on the Wiki&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/digitalocean-management/index.html&#34;&gt;DigitalOcean Management&lt;/a&gt;&lt;p&gt;Information regarding how to manage DigitalOcean Droplets&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/dockerizing-an-application/index.html&#34;&gt;Dockerizing an Application&lt;/a&gt;&lt;p&gt;Information on how to dockerize a project and deploy onto a separate machine or server&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/bluetooth/index.html&#34;&gt;Getting Started&lt;/a&gt;&lt;p&gt;Information regarding setting up your development enviroment&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/getting-started/index.html&#34;&gt;Getting Started&lt;/a&gt;&lt;p&gt;Information regarding setting up your development enviroment&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/github-workflows/index.html&#34;&gt;GitHub Workflows&lt;/a&gt;&lt;p&gt;All GitHub workflows for the project&lt;/p&gt;</description>
     </item>
     <item>
       <title>Initial Project Ideas</title>
-      <link>/initial-project-ideas/index.html</link>
+      <link>//localhost:1313/initial-project-ideas/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/initial-project-ideas/index.html</guid>
-      <description>Original System Architecture Backend - Database ArchitectureUML diagrams representing the initial database architecture and schemas
-Phone App - Proof of ConceptDrawing board ideas for the layout and interaction methods of the phone application
-Simulation - First ThoughtsThe base ideas around using Unity for the development of a bowling simulation</description>
+      <guid>//localhost:1313/initial-project-ideas/index.html</guid>
+      <description>&lt;h3 id=&#34;original-system-architecture&#34;&gt;Original System Architecture&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/ProjectArchitecture.png?width=50vw&amp;amp;lightbox=false&#34; alt=&#34;RevMetrix Diagram&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 50vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/index.html&#34;&gt;Backend - Database Architecture&lt;/a&gt;&lt;p&gt;UML diagrams representing the initial database architecture and schemas&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.html&#34;&gt;Phone App - Proof of Concept&lt;/a&gt;&lt;p&gt;Drawing board ideas for the layout and interaction methods of the phone application&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/index.html&#34;&gt;Simulation - First Thoughts&lt;/a&gt;&lt;p&gt;The base ideas around using Unity for the development of a bowling simulation&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Project Assignments</title>
-      <link>/project-assignments/index.html</link>
+      <link>//localhost:1313/project-assignments/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/index.html</guid>
-      <description>Overview Below you can find the list of semesters that RevMetrix was under development and their respective assignments and details.
-Development Semesters Fall 2023A list of all assignments completed throughout the fall 2023 semester
-Spring 2024A list of all assignments completed throughout the spring 2024 semester</description>
+      <guid>//localhost:1313/project-assignments/index.html</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;Below you can find the list of semesters that RevMetrix was under development and their respective assignments and details.&lt;/p&gt;
+&lt;h4 id=&#34;development-semesters&#34;&gt;Development Semesters&lt;/h4&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2023/index.html&#34;&gt;Fall 2023&lt;/a&gt;&lt;p&gt;A list of all assignments completed throughout the fall 2023 semester&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/spring-2024/index.html&#34;&gt;Spring 2024&lt;/a&gt;&lt;p&gt;A list of all assignments completed throughout the spring 2024 semester&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Project Milestones</title>
-      <link>/project-milestones/index.html</link>
+      <link>//localhost:1313/project-milestones/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-milestones/index.html</guid>
-      <description>Overview Below you can find the assignment descriptions for each of the project&amp;rsquo;s semester milestones. There are three in total per semester, and once the assignment date has passed, the appropriate slideshow can be seen under each milestone&amp;rsquo;s title.
-Milestones Fall 2023The progress made prior to each project milestone during the fall 2023 semester
-Spring 2024The progress made prior to each project milestone during the spring 2024 semester</description>
+      <guid>//localhost:1313/project-milestones/index.html</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Below you can find the assignment descriptions for each of the project&amp;rsquo;s semester milestones.  There are three in total per semester, and once the assignment date has passed, the appropriate slideshow can be seen under each milestone&amp;rsquo;s title.&lt;/p&gt;
+&lt;h3 id=&#34;milestones&#34;&gt;Milestones&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/fall-2023/index.html&#34;&gt;Fall 2023&lt;/a&gt;&lt;p&gt;The progress made prior to each project milestone during the fall 2023 semester&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/spring-2024/index.html&#34;&gt;Spring 2024&lt;/a&gt;&lt;p&gt;The progress made prior to each project milestone during the spring 2024 semester&lt;/p&gt;</description>
     </item>
     <item>
       <title>SmartDot</title>
-      <link>/smartdot/index.html</link>
+      <link>//localhost:1313/smartdot/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/smartdot/index.html</guid>
-      <description>ISmartDot InterfaceInformation about the ISmartDot interface
-SmartDot HardwareInformation about the SmartDot hardware
-SmartDot SimulatorInformation about the SmartDot Simulator</description>
+      <guid>//localhost:1313/smartdot/index.html</guid>
+      <description>&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/ismartdot/index.html&#34;&gt;ISmartDot Interface&lt;/a&gt;&lt;p&gt;Information about the ISmartDot interface&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/smartdothardware/index.html&#34;&gt;SmartDot Hardware&lt;/a&gt;&lt;p&gt;Information about the SmartDot hardware&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/smartdot-simulator/index.html&#34;&gt;SmartDot Simulator&lt;/a&gt;&lt;p&gt;Information about the SmartDot Simulator&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Technologies Used</title>
-      <link>/technologies-used/index.html</link>
+      <link>//localhost:1313/technologies-used/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/technologies-used/index.html</guid>
-      <description>Overview Below you&amp;rsquo;ll find a list of all the technologies necessary for making contributions to the RevMetrix project.
-Technologies IDE&amp;rsquo;s Name Version Download Link JetBrains Rider 2023.2.3 Download JetBrains WebStorm 2023.3.4 Download Microsoft Visual Studio 2022 Community 17.7.5 Download Frameworks and tools Database Engines Name Version Download Link Microsoft SQL Server Developer 16.0.1000.6 Download SQL Server Management Studio 19 19.1 Download Design Tools Name Version Download Link Draw.io 21.6.8 Download Game Engine Name Version Download Link Unity Hub - Download Unity 2023.</description>
+      <guid>//localhost:1313/technologies-used/index.html</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Below you&amp;rsquo;ll find a list of all the technologies necessary for making contributions to the RevMetrix project.&lt;/p&gt;
+&lt;h2 id=&#34;technologies&#34;&gt;Technologies&lt;/h2&gt;
+&lt;h3 id=&#34;ides&#34;&gt;IDE&amp;rsquo;s&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JetBrains Rider&lt;/td&gt;
+          &lt;td&gt;2023.2.3&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.jetbrains.com/rider/download/#section=windows&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JetBrains WebStorm&lt;/td&gt;
+          &lt;td&gt;2023.3.4&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.jetbrains.com/webstorm/download/#section=windows&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Microsoft Visual Studio 2022 Community&lt;/td&gt;
+          &lt;td&gt;17.7.5&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/vs/community/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;frameworks-and-tools&#34;&gt;Frameworks and tools&lt;/h3&gt;
+&lt;h5 id=&#34;database-engines&#34;&gt;Database Engines&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Microsoft SQL Server Developer&lt;/td&gt;
+          &lt;td&gt;16.0.1000.6&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.microsoft.com/en-us/sql-server/sql-server-downloads&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SQL Server Management Studio 19&lt;/td&gt;
+          &lt;td&gt;19.1&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms?view=sql-server-ver16&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;design-tools&#34;&gt;Design Tools&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Draw.io&lt;/td&gt;
+          &lt;td&gt;21.6.8&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.drawio.com/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;game-engine&#34;&gt;Game Engine&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Unity Hub&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://unity.com/download&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Unity&lt;/td&gt;
+          &lt;td&gt;2023.1.8&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://unity.com/releases/editor/whats-new/2023.1.8&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;java-development-kit-17&#34;&gt;Java Development Kit 17&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;OpenJDK 17&lt;/td&gt;
+          &lt;td&gt;17.0.9 LTS&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;os-virtualization-tools&#34;&gt;OS Virtualization Tools&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Docker Desktop&lt;/td&gt;
+          &lt;td&gt;4.24.2&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://docs.docker.com/desktop/release-notes/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Docker Engine&lt;/td&gt;
+          &lt;td&gt;24.0.6&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://docs.docker.com/engine/release-notes/24.0/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;visual-studio-development-frameworks--tools&#34;&gt;Visual Studio Development Frameworks &amp;amp; Tools&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Common Azure Tools&lt;/td&gt;
+          &lt;td&gt;1.10&lt;/td&gt;
+          &lt;td&gt;Visual Studio Installation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;NuGet Package Manager&lt;/td&gt;
+          &lt;td&gt;6.7.0&lt;/td&gt;
+          &lt;td&gt;Visual Studio Installation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Microsoft .NET Framework&lt;/td&gt;
+          &lt;td&gt;4.8.09032&lt;/td&gt;
+          &lt;td&gt;Visual Studio Installation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;.NET Multi-Platform App UI Development (MAUI)&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+          &lt;td&gt;Visual Studio Installation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Razor (ASP.NET Core)&lt;/td&gt;
+          &lt;td&gt;17.7.3.2333001&lt;/td&gt;
+          &lt;td&gt;Visual Studio Installation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SQL Server Data Tools&lt;/td&gt;
+          &lt;td&gt;17.7.10.1&lt;/td&gt;
+          &lt;td&gt;Visual Studio Installation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Visual Studio IntelliCode&lt;/td&gt;
+          &lt;td&gt;2.2&lt;/td&gt;
+          &lt;td&gt;Optional checkbox under MAUI install&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Xamarin&lt;/td&gt;
+          &lt;td&gt;17.0.0.223&lt;/td&gt;
+          &lt;td&gt;Optional checkbox under MAUI install&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;web-development-frameworks&#34;&gt;Web Development Frameworks&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Vue.js&lt;/td&gt;
+          &lt;td&gt;5.08&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://cli.vuejs.org/&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;office-365&#34;&gt;Office 365&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Name&lt;/th&gt;
+          &lt;th&gt;Version&lt;/th&gt;
+          &lt;th&gt;Download Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Microsoft Office 365&lt;/td&gt;
+          &lt;td&gt;-&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-microsoft-365-or-office-2021-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
   </channel>
 </rss>
