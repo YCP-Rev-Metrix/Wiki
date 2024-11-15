@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fall 2024 on Hugo Relearn Theme</title>
+    <link>//localhost:1313/project-assignments/fall2024/index.html</link>
+    <description>Recent content in Fall 2024 on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/project-assignments/fall2024/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Detailed</title>
+      <link>//localhost:1313/project-assignments/fall2024/detailed-propsal/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall2024/detailed-propsal/index.html</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Andrew Watkins&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;BackendArc.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;local-database&#34;&gt;Local Database&lt;/h3&gt;
+&lt;p&gt;The local database will be used to store and retrieve information from the current or most recent practice/match session that the user completed. The mobile app sends the session’s data to the local database and overwrites previous data entries when a new practice/match session is completed and the previous data has been uploaded to the user database in the cloud. This is done initially on the phone app to ensure that data is not lost.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

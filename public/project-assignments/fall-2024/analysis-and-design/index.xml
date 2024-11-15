@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis and Design on Hugo Relearn Theme</title>
+    <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/index.html</link>
+    <description>Recent content in Analysis and Design on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/project-assignments/fall-2024/analysis-and-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backend</title>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/backend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/backend/index.html</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Christian Lua-Lua, Ryan Curry&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/backend/3.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;server&#34;&gt;Server&lt;/h3&gt;
+&lt;p&gt;The image above shows our UML diagram for the RevMetrix server. The main job of the server is to give RevMetrix users the ability to access the database for storage of their RevMetrix data. The web server is created by the WebApplicationBuilder class, which binds API endpoints to controllers, binds the middleware used for authorization, and sets other options that dictate server build attributes. The ServerState class defines a set of modules that are essential for proper operation of the server. This functionality is provided by the SecurityHandler, the DatabaseUserStore, DatabaseTokenStore, and the RevMetrixDB. The SecurityHandler generates JWT tokens and refresh tokens which are used to authorize users. It also Handles hashing and salting user passwords for storing in the database as well as authorization of user JWTs, which is essential for a secure web server. The DatabaseUserStore provides an interface for storing important user data in the database such as username, salt, password, and user roles. This class also provides an interface for authenticating a user through the Sequence equal method which checks to see if the hashed password the user entered is equal to the user’s hashed password in the database. The DatabaseTokenStore provides functionality for storing, retrieving and deleting user tokens. The RevMetrixDB is the DAO (Data access object) which actually interacts with the database, retrieving, storing, and deleting objects within the database as instructed by the server. All of the above-mentioned classes that interact with the database use the RevMetrixDB class in order to do so. The revmetrix-db is the regular database used for retrieving/storing user data. While the revmetrix-db-test database is going to be a test database used for testing endpoints and DAO methods, as we will need an external database with dummy data for those tests so we do not mess with any user data. All of these aspects of the database allow for proper security and user interaction with the server.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ball Spinner Controller</title>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Robert Fields&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The Ball Spinner Controller can be split into 3 separate (but crucial) classes that all come together to transmit and receive data from the Ball Spinner Application: the motor class, the sensor class, and the SmartDot interface. The motor and sensor classes consist of a connection function that takes the name of the port as a parameter and a disconnect function. The auxiliary sensor class (AuxSensor) also incorporates a read function that takes in the range of values to read from and the sample rate for the sensors. This will take the data polled from the sensors and store it in the class-byte array. The motor function (along with the connect/disconnect methods) incorporates a function to change the power of a specific motor depending on the specific motor instruction and a function to change the speed of the motor from the incoming motor instructions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ball Spinner Protocal</title>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Logan Tyran, Ryan Curry, Robert Fields&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;ball-spinner-protocol&#34;&gt;Ball Spinner Protocol&lt;/h3&gt;
+&lt;p&gt;The structure of the protocol can be split into three separate operations: connecting to the Ball Spinner Controller, connecting to the SmartDot module, and sending the real-time data to and from the Ball Spinner Controller. Each message will contain a header byte that will hold the hex code for the type of message followed by a byte that incorporates the message size. There is no specific size for each message, so the message size byte will be used to locate the end of the message on both sides of the system. For error detection, a 2-byte cyclic redundancy check (CRC-16) will be appended to each message. If an error is found on either side of the system, a rejection message will be sent out which will contain the supposed header byte for the other side to resend that last message.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BallSpinner</title>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Chris Robinson, David Kyeremeh, Sam Diskin&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;ballspinner&#34;&gt;BallSpinner&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/ballspinner/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;enclosure&#34;&gt;Enclosure&lt;/h4&gt;
+&lt;p&gt;Given the ball&amp;rsquo;s mass and size, an enclosure will be built to secure it while allowing free rotation using ball bearings. The enclosure for the bowling ball must be sturdy to ensure that the system remains stable and does not fail or break during operation, especially considering the forces exerted by the motors and the ball&amp;rsquo;s weight. It will be designed to withstand repeated use and any mechanical stresses generated during the ball&amp;rsquo;s rotation. We will ensure the enclosure will accommodate bowling balls of different sizes. The enclosure will also be see-through, allowing the user to monitor the process.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DataBase Schema</title>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/database-schema/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/database-schema/index.html</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Christian Lua-Lua, Ryan Curry&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;database-schema&#34;&gt;Database Schema&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/database-schema/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The database schema above consists of multiple interconnected tables designed for efficient data storage. At a glance, this schema enables the us to track and store user data, simulated shot information, and acquire real-time metrics from auxiliary and SmartDot sensors.
+At the core of our database schema is the User table, this table allows us to store personal information like usernames, passwords, and contact details. Additionally, each user has an associated token that manages authentication by storing a token value and its expiration date. Furthermore, the schema allows the user to have one list for each type, whether from Balls, BallSpinners, SmartDots, or SimulatedShots. These list tables use foreign keys to reference the respective items, which store the details of each entry. Lastly, each list can hold zero or more items.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Frontend </title>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/frontend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/frontend/index.html</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Andrew Watkins,Logan Tyran, Patrick Devine&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;application-uml&#34;&gt;Application UML&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/frontend/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The UML for the front end is very large. Grouped into the highest level abstraction, there is a visualizers group, a views group, and a BallSpinner group. The BallSpinner group is the group that handles the ball spinner connection and distributes data to the visualizers and database. To make the application more open-ended, the ball spinner is interfaced and allows us to provide an alternative implementation for the simulation. The simulation uses the same inputs as the BallSpinner and as a result, serves as a potential point of reference for comparing data. Likewise, we are able to use the IBallSpinner interface to create mock playbacks.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
