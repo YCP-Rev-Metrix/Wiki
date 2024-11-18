@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Initial Project Ideas on Hugo Relearn Theme</title>
-    <link>//localhost:1313/initial-project-ideas/index.html</link>
+    <link>/initial-project-ideas/index.html</link>
     <description>Recent content in Initial Project Ideas on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="//localhost:1313/initial-project-ideas/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/initial-project-ideas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backend - Database Architecture</title>
-      <link>//localhost:1313/initial-project-ideas/initial-database-architecture/index.html</link>
+      <link>/initial-project-ideas/initial-database-architecture/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/initial-project-ideas/initial-database-architecture/index.html</guid>
+      <guid>/initial-project-ideas/initial-database-architecture/index.html</guid>
       <description>&lt;h2 id=&#34;architecture&#34;&gt;Architecture&lt;/h2&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/Architecture.png?width=35vw&amp;amp;lightbox=false&#34; alt=&#34;Initial Database Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 35vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/initial-database-architecture/Architecture.png?width=35vw&amp;amp;lightbox=false&#34; alt=&#34;Initial Database Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 35vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -28,7 +28,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/LocalDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;Local Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/initial-database-architecture/LocalDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;Local Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -41,7 +41,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/UserDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;User Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/initial-database-architecture/UserDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;User Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -54,7 +54,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/RawDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;Raw Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/initial-database-architecture/RawDB.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;Raw Database&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -66,9 +66,9 @@
     </item>
     <item>
       <title>Phone App - Proof of Concept</title>
-      <link>//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.html</link>
+      <link>/initial-project-ideas/phone-app---proof-of-concept/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.html</guid>
+      <guid>/initial-project-ideas/phone-app---proof-of-concept/index.html</guid>
       <description>&lt;h3 id=&#34;net-maui-documentation&#34;&gt;.NET MAUI documentation:&lt;/h3&gt;
 &lt;p&gt;-&lt;a href=&#34;https://learn.microsoft.com/en-us/dotnet/maui/platform-integration/communication/networking?tabs=android&#34; target=&#34;_blank&#34;&gt;Bluetooth Connection&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;-&lt;a href=&#34;https://dotnet.microsoft.com/en-us/learn/maui&#34; target=&#34;_blank&#34;&gt;NET MAUI General Documentation&lt;/a&gt;&lt;/p&gt;
@@ -81,7 +81,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/FrontendProofOfConcept.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;PhoneAppPOC&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/phone-app---proof-of-concept/FrontendProofOfConcept.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;PhoneAppPOC&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -90,15 +90,15 @@
     </item>
     <item>
       <title>Simulation - First Thoughts</title>
-      <link>//localhost:1313/initial-project-ideas/simulation---first-thoughts/index.html</link>
+      <link>/initial-project-ideas/simulation---first-thoughts/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/initial-project-ideas/simulation---first-thoughts/index.html</guid>
+      <guid>/initial-project-ideas/simulation---first-thoughts/index.html</guid>
       <description>&lt;h3 id=&#34;beginning-ideas-of-simulation-design&#34;&gt;Beginning Ideas of Simulation Design:&lt;/h3&gt;
 &lt;h5 id=&#34;initial-lane-setup&#34;&gt;Initial Lane Setup&lt;/h5&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/FullLane.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Lane Setup&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/simulation---first-thoughts/FullLane.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Lane Setup&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -108,7 +108,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/Lane1.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Full Lane&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/simulation---first-thoughts/Lane1.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Full Lane&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -118,7 +118,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/LaneDiff.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Lane Translation&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/simulation---first-thoughts/LaneDiff.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Lane Translation&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -128,7 +128,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/Pins.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Scaled Pins Setup&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/simulation---first-thoughts/Pins.PNG?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Scaled Pins Setup&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;

@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cap&#39;n Hugo Relearrrn Theme</title>
-    <link>//localhost:1313/pir/tags/index.html</link>
+    <link>/pir/tags/index.html</link>
     <description>Recent content in Tags on Cap&#39;n Hugo Relearrrn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pir</language><atom:link href="//localhost:1313/pir/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>pir</language><atom:link href="/pir/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

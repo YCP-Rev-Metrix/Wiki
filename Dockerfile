@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Set an environment variable for HUGO_VERSION
-ARG HUGO_VERSION=0.115.4
+ARG HUGO_VERSION=0.138.0
 
 # Install wget, sudo, git, and any other necessary tools
 RUN apt-get update && apt-get install -y wget sudo git
@@ -21,8 +21,11 @@ COPY . .
 # Set the working directory to the location of the Hugo config file
 WORKDIR /Wiki
 
-# Explicitly copy the Hugo configuration file to the root of the working directory
+# Copy only necessary files first
 COPY hugo.toml .
+
+# Copy the theme folder separately to force cache invalidation if it changes
+COPY themes/hugo-theme-relearn/ themes/hugo-theme-relearn/
 
 # Build the Hugo app
 RUN hugo --config ./hugo.toml

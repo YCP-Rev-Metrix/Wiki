@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fall 2023 on Hugo Relearn Theme</title>
-    <link>//localhost:1313/project-assignments/fall-2023/index.html</link>
+    <link>/project-assignments/fall-2023/index.html</link>
     <description>Recent content in Fall 2023 on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="//localhost:1313/project-assignments/fall-2023/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/project-assignments/fall-2023/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analysis and Design</title>
-      <link>//localhost:1313/project-assignments/fall-2023/analysis-and-design/index.html</link>
+      <link>/project-assignments/fall-2023/analysis-and-design/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project-assignments/fall-2023/analysis-and-design/index.html</guid>
+      <guid>/project-assignments/fall-2023/analysis-and-design/index.html</guid>
       <description>&lt;h3 id=&#34;official-project-requirements-document-and-slideshow&#34;&gt;Official Project Requirements Document and Slideshow&lt;/h3&gt;
 &lt;p&gt;The official project requirements document can be found in the project&amp;rsquo;s Google Drive &lt;a href=&#34;https://docs.google.com/document/d/1d93Du8xjZwaotxky2-SY5C3OfRpB_OMfDKdIDRSJ6s8/edit?usp=drive_link&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, and the requirements presentation slideshow can be found &lt;a href=&#34;https://docs.google.com/presentation/d/1sIQdPnMfVBHHOp9cpR-mziPSs9-DlOY9h0DqWy6kn7k/edit?usp=drive_link&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2023/analysis-and-design/OverallArc.png?width=60vw&amp;amp;lightbox=false&#34; alt=&#34;System Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 60vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2023/analysis-and-design/OverallArc.png?width=60vw&amp;amp;lightbox=false&#34; alt=&#34;System Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 60vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -27,16 +27,16 @@
     </item>
     <item>
       <title>Project Requirements</title>
-      <link>//localhost:1313/project-assignments/fall-2023/project-requirements/index.html</link>
+      <link>/project-assignments/fall-2023/project-requirements/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project-assignments/fall-2023/project-requirements/index.html</guid>
+      <guid>/project-assignments/fall-2023/project-requirements/index.html</guid>
       <description>&lt;h3 id=&#34;official-project-requirements-document-and-slideshow&#34;&gt;Official Project Requirements Document and Slideshow&lt;/h3&gt;
 &lt;p&gt;The official project requirements document can be found in the project&amp;rsquo;s Google Drive &lt;a href=&#34;https://docs.google.com/document/d/1EZ8Km40_kkoS-cVtnCJkH23AhC-8FPmfpDf5knASH1k/edit?usp=drive_link&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;, and the requirements presentation slideshow can be found &lt;a href=&#34;https://docs.google.com/presentation/d/1LYcm5t7ulaw-TcHUD_Lb3ui-KiWEwgmRPJM2SycaR3k/edit?usp=drive_link&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;h5 id=&#34;system-architecture&#34;&gt;System Architecture&lt;/h5&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2023/project-requirements/OverallSystemArchitecture.png?width=60vw&amp;amp;lightbox=false&#34; alt=&#34;RevMetrix Diagram&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 60vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2023/project-requirements/OverallSystemArchitecture.png?width=60vw&amp;amp;lightbox=false&#34; alt=&#34;RevMetrix Diagram&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 60vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -46,9 +46,9 @@
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2023/project-requirements/backend/index.html&#34;&gt;Backend Requirements&lt;/a&gt;&lt;p&gt;Project requirements specific to the backend development&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2023/project-requirements/frontend/index.html&#34;&gt;Frontend Requirements&lt;/a&gt;&lt;p&gt;Project requirements specific to the frontend development&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2023/project-requirements/simulation/index.html&#34;&gt;Simulation Requirements&lt;/a&gt;&lt;p&gt;Project requirements specific to the simulation development&lt;/p&gt;</description>
+&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2023/project-requirements/backend/index.html&#34;&gt;Backend Requirements&lt;/a&gt;&lt;p&gt;Project requirements specific to the backend development&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2023/project-requirements/frontend/index.html&#34;&gt;Frontend Requirements&lt;/a&gt;&lt;p&gt;Project requirements specific to the frontend development&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2023/project-requirements/simulation/index.html&#34;&gt;Simulation Requirements&lt;/a&gt;&lt;p&gt;Project requirements specific to the simulation development&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

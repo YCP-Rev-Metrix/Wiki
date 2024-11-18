@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fall 2024 on Hugo Relearn Theme</title>
-    <link>//localhost:1313/project-assignments/fall-2024/index.html</link>
+    <link>/project-assignments/fall-2024/index.html</link>
     <description>Recent content in Fall 2024 on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="//localhost:1313/project-assignments/fall-2024/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/project-assignments/fall-2024/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analysis and Design</title>
-      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/index.html</link>
+      <link>/project-assignments/fall-2024/analysis-and-design/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/index.html</guid>
+      <guid>/project-assignments/fall-2024/analysis-and-design/index.html</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;Below you can find the list of project assignments completed throughout the fall 2024 semester and all of their details.&lt;/p&gt;
 &lt;h4 id=&#34;list-of-assignments&#34;&gt;List of Assignments&lt;/h4&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/backend/index.html&#34;&gt;Backend&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html&#34;&gt;Ball Spinner Controller&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html&#34;&gt;Ball Spinner Protocal&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html&#34;&gt;BallSpinner&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;</description>
+&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2024/analysis-and-design/backend/index.html&#34;&gt;Backend&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html&#34;&gt;Ball Spinner Controller&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html&#34;&gt;Ball Spinner Protocal&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html&#34;&gt;BallSpinner&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;</description>
     </item>
     <item>
       <title>Proposal</title>
-      <link>//localhost:1313/project-assignments/fall-2024/proposal/index.html</link>
+      <link>/project-assignments/fall-2024/proposal/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project-assignments/fall-2024/proposal/index.html</guid>
+      <guid>/project-assignments/fall-2024/proposal/index.html</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;Below you can find the list of project assignments completed throughout the fall 2024 semester and all of their details.&lt;/p&gt;
 &lt;h4 id=&#34;list-of-assignments&#34;&gt;List of Assignments&lt;/h4&gt;
@@ -37,9 +37,9 @@
     </item>
     <item>
       <title>Requirements</title>
-      <link>//localhost:1313/project-assignments/fall-2024/requirements/index.html</link>
+      <link>/project-assignments/fall-2024/requirements/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/project-assignments/fall-2024/requirements/index.html</guid>
+      <guid>/project-assignments/fall-2024/requirements/index.html</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;Below you can find the list of project assignments completed throughout the fall 2024 semester and all of their details.&lt;/p&gt;
 &lt;h4 id=&#34;list-of-assignments&#34;&gt;List of Assignments&lt;/h4&gt;

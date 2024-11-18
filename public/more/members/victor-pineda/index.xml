@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Victor Pineda on Hugo Relearn Theme</title>
-    <link>//localhost:1313/more/members/victor-pineda/index.html</link>
+    <link>/more/members/victor-pineda/index.html</link>
     <description>Recent content in Victor Pineda on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="//localhost:1313/more/members/victor-pineda/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/more/members/victor-pineda/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

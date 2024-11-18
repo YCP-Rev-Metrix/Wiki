@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started on Hugo Relearn Theme</title>
-    <link>//localhost:1313/how-to-contribute/getting-started/index.html</link>
+    <link>/how-to-contribute/getting-started/index.html</link>
     <description>Recent content in Getting Started on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="//localhost:1313/how-to-contribute/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/how-to-contribute/getting-started/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backend</title>
-      <link>//localhost:1313/how-to-contribute/getting-started/backend/index.html</link>
+      <link>/how-to-contribute/getting-started/backend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/how-to-contribute/getting-started/backend/index.html</guid>
+      <guid>/how-to-contribute/getting-started/backend/index.html</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;This information is short and straightforward.  Any info needed about setting up the backend team&amp;rsquo;s development environment can be found on the &lt;a href=&#34;../../github-workflows/backend-workflow/index.html&#34;&gt;GitHub Workflow - Backend&lt;/a&gt; page.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ciclopes</title>
-      <link>//localhost:1313/how-to-contribute/getting-started/ciclopes/index.html</link>
+      <link>/how-to-contribute/getting-started/ciclopes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/how-to-contribute/getting-started/ciclopes/index.html</guid>
+      <guid>/how-to-contribute/getting-started/ciclopes/index.html</guid>
       <description>&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
 &lt;p&gt;Ciclopes will be used to detect objects from videos/a camera to the mobile app.&lt;/p&gt;
 &lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
@@ -30,9 +30,9 @@
     </item>
     <item>
       <title>Mobile Application</title>
-      <link>//localhost:1313/how-to-contribute/getting-started/mobile-app/index.html</link>
+      <link>/how-to-contribute/getting-started/mobile-app/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/how-to-contribute/getting-started/mobile-app/index.html</guid>
+      <guid>/how-to-contribute/getting-started/mobile-app/index.html</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;Below you&amp;rsquo;ll find instructions on how to setup your development environment for the mobile application.  All tools and technologies needed can be found with their version numbers on the &lt;a href=&#34;../../../technologies-used/index.html&#34;&gt;Technologies Used&lt;/a&gt; page, along with the same download links provided there being seen throughout this guide. There are a handful of tools needed and steps to be followed, so buckle up:&lt;/p&gt;
 &lt;h3 id=&#34;installing-the-jetbrains-rider-ide&#34;&gt;Installing The JetBrains Rider IDE&lt;/h3&gt;
@@ -40,17 +40,17 @@
     </item>
     <item>
       <title>SmartDot Simulator</title>
-      <link>//localhost:1313/how-to-contribute/getting-started/smartdot-simulator/index.html</link>
+      <link>/how-to-contribute/getting-started/smartdot-simulator/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/how-to-contribute/getting-started/smartdot-simulator/index.html</guid>
+      <guid>/how-to-contribute/getting-started/smartdot-simulator/index.html</guid>
       <description>&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
 &lt;p&gt;The SmartDot Simulator will be used for sending test data from Visualizer to mobile app. The Visualizer will output csv files containing acceleration and light data. The SmartDot Simulator will imitate the SmartDot module in functionality with one difference. Instead of sampling real acceleration and light data, it will read the appropriate data from the csv file it got from the visualizer. The SmartDot Simulator will also create a binary file containing the data and will send it over bluetooth to the mobile app.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Visualizer</title>
-      <link>//localhost:1313/how-to-contribute/getting-started/visualizer/index.html</link>
+      <link>/how-to-contribute/getting-started/visualizer/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/how-to-contribute/getting-started/visualizer/index.html</guid>
+      <guid>/how-to-contribute/getting-started/visualizer/index.html</guid>
       <description>&lt;h3 id=&#34;description&#34;&gt;Description&lt;/h3&gt;
 &lt;p&gt;The Visualizer will be used for generating test data for the system. It will will simulate the ball path as it travels down the lane and store the acceleration and light data that the SmartDOt would sample. It then writes that data into a CSV file and sends it to the SmartDot Simulator. The Visualizer also has a virtual camera that will record a video of the throw. The developers will hand this video off to the front end team to use in their Ciclops testing.&lt;/p&gt;</description>
     </item>
