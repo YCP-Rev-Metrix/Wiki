@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How To Contribute on Hugo Relearn Theme</title>
-    <link>/how-to-contribute/index.html</link>
+    <link>//localhost:1313/how-to-contribute/index.html</link>
     <description>Recent content in How To Contribute on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/how-to-contribute/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/how-to-contribute/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Continuous Integration/Deployment</title>
-      <link>/how-to-contribute/ci-and-cd/index.html</link>
+      <link>//localhost:1313/how-to-contribute/ci-and-cd/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/ci-and-cd/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/ci-and-cd/index.html</guid>
       <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
@@ -20,9 +20,9 @@
     </item>
     <item>
       <title>Contributing Documentation</title>
-      <link>/how-to-contribute/contributing-documentation/index.html</link>
+      <link>//localhost:1313/how-to-contribute/contributing-documentation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/contributing-documentation/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/contributing-documentation/index.html</guid>
       <description>&lt;p&gt;Contributing documentation is pretty straightforward, follow this basic guide to learn how.&lt;/p&gt;
 &lt;h3 id=&#34;a-brief-history&#34;&gt;A brief history&lt;/h3&gt;
 &lt;p&gt;This page was built with the &lt;a href=&#34;https://gohugo.io/documentation/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; framework &amp;amp; static site generator using the &lt;a href=&#34;https://mcshelby.github.io/hugo-theme-relearn/&#34; target=&#34;_blank&#34;&gt;Relearn theme&lt;/a&gt; and hosted on &lt;a href=&#34;https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages&#34; target=&#34;_blank&#34;&gt;GitHub Pages&lt;/a&gt;.
@@ -31,30 +31,30 @@ This structure provides a beautiful site, solid uptime, and the ability to even 
     </item>
     <item>
       <title>DigitalOcean Management</title>
-      <link>/how-to-contribute/digitalocean-management/index.html</link>
+      <link>//localhost:1313/how-to-contribute/digitalocean-management/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/digitalocean-management/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/digitalocean-management/index.html</guid>
       <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/digitalocean-management/creating-a-droplet/index.html&#34;&gt;Creating a Droplet&lt;/a&gt;&lt;p&gt;How to create a DigitalOcean Droplet&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/digitalocean-management/managing-a-droplet/index.html&#34;&gt;Managing a Droplet&lt;/a&gt;&lt;p&gt;How to manage a DigitalOcean droplet&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/digitalocean-management/creating-a-droplet/index.html&#34;&gt;Creating a Droplet&lt;/a&gt;&lt;p&gt;How to create a DigitalOcean Droplet&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/digitalocean-management/managing-a-droplet/index.html&#34;&gt;Managing a Droplet&lt;/a&gt;&lt;p&gt;How to manage a DigitalOcean droplet&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
       <title>Dockerizing an Application</title>
-      <link>/how-to-contribute/dockerizing-an-application/index.html</link>
+      <link>//localhost:1313/how-to-contribute/dockerizing-an-application/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/dockerizing-an-application/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/dockerizing-an-application/index.html</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;Docker is a tool used to encapsulate an application and its development enviornment.  Rather than transferring the entire application when deploying it to a server, one can simply create a Dockerfile in their project&amp;rsquo;s directory and specify what to include in the encapsualted enviornment.  After testing the Dockerfile to see if it builds and runs successfully, once can then create a &amp;ldquo;docker-compose.yml&amp;rdquo; file, specifying the Docker compose format version (not the actual Docker version), project name, build configuration (including where to pull files from and the location of the Dockerfile previously created), Docker container name, ports to listen on, and Docker image name.  Once the docker-compose file builds successfully, the build configurations inside of it can be deleted out, and the docker-compose file can be run locally or transferred to a server machine that has docker installed.  After running the docker-compose file, the application should be running, and if it is a web application, the user should be able to visit it at the IP address (of the machine running the docker-compose file) and the port specified in the file.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting Started</title>
-      <link>/how-to-contribute/bluetooth/index.html</link>
+      <link>//localhost:1313/how-to-contribute/bluetooth/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/bluetooth/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/bluetooth/index.html</guid>
       <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
@@ -65,48 +65,48 @@ This structure provides a beautiful site, solid uptime, and the ability to even 
     </item>
     <item>
       <title>Getting Started</title>
-      <link>/how-to-contribute/getting-started/index.html</link>
+      <link>//localhost:1313/how-to-contribute/getting-started/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/getting-started/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/getting-started/index.html</guid>
       <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/getting-started/backend/index.html&#34;&gt;Backend&lt;/a&gt;&lt;p&gt;How to setup your development environment for the backend&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/getting-started/ciclopes/index.html&#34;&gt;Ciclopes&lt;/a&gt;&lt;p&gt;How to setup your environment to develop the Ciclopes&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/getting-started/mobile-app/index.html&#34;&gt;Mobile Application&lt;/a&gt;&lt;p&gt;How to setup your development environment for the mobile app&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/getting-started/smartdot-simulator/index.html&#34;&gt;SmartDot Simulator&lt;/a&gt;&lt;p&gt;How to setup your environment to develop the SmartDot Simulator&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/getting-started/visualizer/index.html&#34;&gt;Visualizer&lt;/a&gt;&lt;p&gt;How to setup your environment to develop the Visualizer&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/getting-started/backend/index.html&#34;&gt;Backend&lt;/a&gt;&lt;p&gt;How to setup your development environment for the backend&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/getting-started/ciclopes/index.html&#34;&gt;Ciclopes&lt;/a&gt;&lt;p&gt;How to setup your environment to develop the Ciclopes&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/getting-started/mobile-app/index.html&#34;&gt;Mobile Application&lt;/a&gt;&lt;p&gt;How to setup your development environment for the mobile app&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/getting-started/smartdot-simulator/index.html&#34;&gt;SmartDot Simulator&lt;/a&gt;&lt;p&gt;How to setup your environment to develop the SmartDot Simulator&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/getting-started/visualizer/index.html&#34;&gt;Visualizer&lt;/a&gt;&lt;p&gt;How to setup your environment to develop the Visualizer&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
       <title>GitHub Workflows</title>
-      <link>/how-to-contribute/github-workflows/index.html</link>
+      <link>//localhost:1313/how-to-contribute/github-workflows/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/github-workflows/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/github-workflows/index.html</guid>
       <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/github-workflows/backend-workflow/index.html&#34;&gt;GitHub Workflow - Backend&lt;/a&gt;&lt;p&gt;How to create a branch of the cloud-infrastructure repository and make edits&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/github-workflows/frontend-workflow/index.html&#34;&gt;GitHub Workflow - Frontend&lt;/a&gt;&lt;p&gt;How to create a branch of the frontend repository and make edits&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/github-workflows/simulation-workflow/index.html&#34;&gt;GitHub Workflow - Simulation&lt;/a&gt;&lt;p&gt;How to create a branch of the simulation repository Test branch and make edits&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/github-workflows/backend-workflow/index.html&#34;&gt;GitHub Workflow - Backend&lt;/a&gt;&lt;p&gt;How to create a branch of the cloud-infrastructure repository and make edits&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/github-workflows/frontend-workflow/index.html&#34;&gt;GitHub Workflow - Frontend&lt;/a&gt;&lt;p&gt;How to create a branch of the frontend repository and make edits&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/index.html&#34;&gt;GitHub Workflow - Simulation&lt;/a&gt;&lt;p&gt;How to create a branch of the simulation repository Test branch and make edits&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
       <title>Linking Domains</title>
-      <link>/how-to-contribute/linking-domains/index.html</link>
+      <link>//localhost:1313/how-to-contribute/linking-domains/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/linking-domains/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/linking-domains/index.html</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;To link a domain to an application running on the DigitalOcean Droplet, it is best practice to do so using &lt;a href=&#34;https://nginxproxymanager.com/&#34; target=&#34;_blank&#34;&gt;Nginx Proxy Manager&lt;/a&gt;.  If the proxy manager is not already setup on the Droplet, visit the &lt;a href=&#34;&#34;&gt;getting started&lt;/a&gt; page and follow the instructions there to set it up.&lt;/p&gt;
 &lt;p&gt;Linking a domain or subdomain to a specific IP address and Port number will require access to the DNS record settings of the domain through whatever provider it was purchased from.  Also, access to the Droplet that is running the application that requires the domain is necessary, along with the ability to edit firewall settings for the given Droplet.  Make sure all of this is available prior to linking the domain.&lt;/p&gt;</description>
     </item>
     <item>
       <title>RevMetrix WebAPI</title>
-      <link>/how-to-contribute/webapi/index.html</link>
+      <link>//localhost:1313/how-to-contribute/webapi/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/webapi/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/webapi/index.html</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 &lt;ul&gt;
@@ -133,9 +133,9 @@ This structure provides a beautiful site, solid uptime, and the ability to even 
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/webapi/endpoints/index.html&#34;&gt;Adding &amp;amp; Managing Endpoints&lt;/a&gt;&lt;p&gt;How to Add or Manage an Endpoint&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/webapi/security/index.html&#34;&gt;Security&lt;/a&gt;&lt;p&gt;Security information regarding the WebAPI&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/webapi/client/index.html&#34;&gt;Web API Client&lt;/a&gt;&lt;p&gt;Information regarding the Client side of the Web API&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/webapi/endpoints/index.html&#34;&gt;Adding &amp;amp; Managing Endpoints&lt;/a&gt;&lt;p&gt;How to Add or Manage an Endpoint&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/webapi/security/index.html&#34;&gt;Security&lt;/a&gt;&lt;p&gt;Security information regarding the WebAPI&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/webapi/client/index.html&#34;&gt;Web API Client&lt;/a&gt;&lt;p&gt;Information regarding the Client side of the Web API&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;preface&#34;&gt;Preface&lt;/h4&gt;
 &lt;p&gt;The WebAPI can be complicated from the outside, but after a bit of work, it&amp;rsquo;s actually not too confusing. There are serveral portions that will be interesting to us, all of which located in Server project.&lt;/p&gt;</description>

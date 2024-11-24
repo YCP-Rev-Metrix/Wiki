@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phone App - Proof of Concept on Hugo Relearn Theme</title>
-    <link>/initial-project-ideas/phone-app---proof-of-concept/index.html</link>
+    <link>//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.html</link>
     <description>Recent content in Phone App - Proof of Concept on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/initial-project-ideas/phone-app---proof-of-concept/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

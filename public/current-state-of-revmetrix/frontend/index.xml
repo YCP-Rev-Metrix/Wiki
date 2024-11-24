@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Frontend - Current State on Hugo Relearn Theme</title>
-    <link>/current-state-of-revmetrix/frontend/index.html</link>
+    <link>//localhost:1313/current-state-of-revmetrix/frontend/index.html</link>
     <description>Recent content in Frontend - Current State on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/current-state-of-revmetrix/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/current-state-of-revmetrix/frontend/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

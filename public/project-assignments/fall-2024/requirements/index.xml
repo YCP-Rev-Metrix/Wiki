@@ -2,9 +2,119 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Requirements on Hugo Relearn Theme</title>
-    <link>/project-assignments/fall-2024/requirements/index.html</link>
+    <link>//localhost:1313/project-assignments/fall-2024/requirements/index.html</link>
     <description>Recent content in Requirements on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/project-assignments/fall-2024/requirements/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/project-assignments/fall-2024/requirements/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>50% Working System </title>
+      <link>//localhost:1313/project-assignments/fall-2024/requirements/50-working-system/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/requirements/50-working-system/index.html</guid>
+      <description>&lt;h3 id=&#34;frontend-team&#34;&gt;Frontend Team&lt;/h3&gt;
+&lt;p&gt;For this milestone, we will have skeletons of all pages. While most of the pages that are not needed by other teams will not function, they will at least be visible to the user. This lets the team establish better visual presentations based on feedback from the client. The team will implement a functional display graph that is capable of visualizing data in real-time.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/requirements/50-working-system/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Example of how the output window will look&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Abstract</title>
+      <link>//localhost:1313/project-assignments/fall-2024/requirements/abstract/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/requirements/abstract/index.html</guid>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/requirements/abstract/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;RevMetrix is a bowling analytics tool stemming from the idea to combine the visual bowling capture system designed by Dr. Babcock (the Ciclopes application), and a 3 Degree of Freedom (DOF) designed by Professor Hake (the SmartDot Module). The system will be designed to be able to combine data received from both sources and offer the end-user a cohesive representation of their bowling experience providing the ball’s direction of travel and speed during a game.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Final Working System </title>
+      <link>//localhost:1313/project-assignments/fall-2024/requirements/final-working-system/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/requirements/final-working-system/index.html</guid>
+      <description>&lt;h3 id=&#34;frontend-team&#34;&gt;Frontend Team&lt;/h3&gt;
+&lt;p&gt;For this milestone, we will have all pages that were previously designed functional. We will also finalize input cleansing for values with the appropriate errors for when they are invalid.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/requirements/final-working-system/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;backend-team&#34;&gt;Backend Team&lt;/h3&gt;
+&lt;p&gt;For this final milestone, the interfacing with the backend will be complete. Therefore, all API endpoints will be successfully implemented and will be able to test each endpoint successfully through Insomnia or Postman. We will also integrate these endpoints with the Frontend as much as we can. Automated tests will be implemented for each endpoint to show that all requests are handled correctly. The next task will consist of implementing scripts with instructions to be able to control the motors on all three axes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>General Project Requirements</title>
+      <link>//localhost:1313/project-assignments/fall-2024/requirements/general-project-requirments/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/requirements/general-project-requirments/index.html</guid>
+      <description>&lt;p&gt;Ball Spinner mechanism will control the ball in 3 orthogonal directions&lt;/p&gt;
+&lt;p&gt;Ball Spinner will interface with 9DoF module (either SmartDot or MbientLabs) to read output from Gyroscope, Magnetometer, Accelerometer, and Light sensor.&lt;/p&gt;
+&lt;p&gt;Application can read and send data to the Ball Spinner to control motors and the movement of ball&lt;/p&gt;
+&lt;p&gt;Data created from the Ball Sinner and SmartDot sensors will be stored in a secure database&lt;/p&gt;
+&lt;p&gt;Data from previous sessions will be accessible to the user based on account credentials&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>General Project Requirements</title>
+      <link>//localhost:1313/project-assignments/fall-2024/requirements/use-cases/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/requirements/use-cases/index.html</guid>
+      <description>&lt;h3 id=&#34;user-makes-an-account-for-the-application&#34;&gt;User makes an account for the application&lt;/h3&gt;
+&lt;p&gt;Precondition&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;User has opened the Application
+User has opened the login popup
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;MSS - Main Success Scenario:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;User populates the username, password, and re-enter password fields
+User selects the final register button
+Application checks if all required fields are filled and meets other requirements
+Login popup will display a message that the user has successfully registered
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Extensions:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  3a. Username already exists in the application 
+
+    Application displays error message that states “Username already exists”
+    User can modify username (return to MSS #1)
+ 3b. Password is not strong enough
+
+    Application displays error message stating “Password must contain 1 capital, 1 lowercase, and 1 special character&amp;quot;
+    User can modify password (return to MSS #1)”
+ 3c. Username is not long enough
+ 
+    Application displays error message stating “Username must be 8 characters long”
+    User can modify password (return to MSS #1)”
+ 3d. Password is not long enough
+
+    Application displays error message stating “Password must be 8 characters long”
+    User can modify password (return to MSS #1)”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;user-logs-in-to-application&#34;&gt;User logs in to application&lt;/h3&gt;
+&lt;p&gt;Precondition:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Minimum Working System</title>
+      <link>//localhost:1313/project-assignments/fall-2024/requirements/minimum-working-system/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/requirements/minimum-working-system/index.html</guid>
+      <description>&lt;h3 id=&#34;frontend-team&#34;&gt;Frontend Team&lt;/h3&gt;
+&lt;p&gt;For the minimal system, the front end will contain a functional login page that is able to connect to a database and will contain a draft up of the output page. The output page will be able to visualize a datapoint in preparation for future milestones. There are plenty of unknowns in regards to MAUI, so research on how to create the screens and specific details will be discovered during the milestone.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

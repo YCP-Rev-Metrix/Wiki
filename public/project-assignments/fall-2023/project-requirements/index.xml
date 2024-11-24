@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project Requirements on Hugo Relearn Theme</title>
-    <link>/project-assignments/fall-2023/project-requirements/index.html</link>
+    <link>//localhost:1313/project-assignments/fall-2023/project-requirements/index.html</link>
     <description>Recent content in Project Requirements on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/project-assignments/fall-2023/project-requirements/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/project-assignments/fall-2023/project-requirements/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backend Requirements</title>
-      <link>/project-assignments/fall-2023/project-requirements/backend/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2023/project-requirements/backend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2023/project-requirements/backend/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2023/project-requirements/backend/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -24,7 +24,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2023/project-requirements/backend/BackendArc.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2023/project-requirements/backend/BackendArc.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -35,9 +35,9 @@
     </item>
     <item>
       <title>Frontend Requirements</title>
-      <link>/project-assignments/fall-2023/project-requirements/frontend/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2023/project-requirements/frontend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2023/project-requirements/frontend/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2023/project-requirements/frontend/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -51,7 +51,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2023/project-requirements/frontend/FrontendUI.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Frontend UI&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2023/project-requirements/frontend/FrontendUI.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Frontend UI&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -62,9 +62,9 @@
     </item>
     <item>
       <title>Simulation Requirements</title>
-      <link>/project-assignments/fall-2023/project-requirements/simulation/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2023/project-requirements/simulation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2023/project-requirements/simulation/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2023/project-requirements/simulation/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -78,7 +78,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2023/project-requirements/simulation/SDArch.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Smartdot Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2023/project-requirements/simulation/SDArch.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Smartdot Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;

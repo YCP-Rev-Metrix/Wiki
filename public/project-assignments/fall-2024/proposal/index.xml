@@ -2,9 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Proposal on Hugo Relearn Theme</title>
-    <link>/project-assignments/fall-2024/proposal/index.html</link>
+    <link>//localhost:1313/project-assignments/fall-2024/proposal/index.html</link>
     <description>Recent content in Proposal on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/project-assignments/fall-2024/proposal/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/project-assignments/fall-2024/proposal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Architecture</title>
+      <link>//localhost:1313/project-assignments/fall-2024/proposal/architecture/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/proposal/architecture/index.html</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/proposal/architecture/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;ball-spinner&#34;&gt;Ball Spinner&lt;/h3&gt;
+&lt;p&gt;The Ball Spinner will provide 4 DoF (degrees of freedom) to drive the bowling ball in 3 orthogonal rotations, and one linear translation. Only one motor (the primary motor) will be required to produce a substantial driving force to replicate movement down the lane. The other motors (the secondary/tertiary motors) require only minimal force as the ball has the ability to shift vertically depending on the angle the ball is thrown and the angular velocity given to the ball before the release of the bowler. Once prompted by the Front-End Application, the Ball Spinner will increase/decrease motor speeds and send this data back to the application, along with output from different auxiliary sensors to fully encapsulate the motion of the bowling ball.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Current System</title>
+      <link>//localhost:1313/project-assignments/fall-2024/proposal/current-system/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/proposal/current-system/index.html</guid>
+      <description>&lt;h3 id=&#34;front-end-application&#34;&gt;Front End Application&lt;/h3&gt;
+&lt;p&gt;The Mobile Application was built using a .NET MAUI framework that provides cross-platform functionality all in C#. The current version of the application takes in data from the Ciclopes program, the SmartDot API, and Unity Engine, which then stores the data in a local database. The application will receive further updates to allow the user to feed in bowling variables and operate the Ball Spinner. The Ciclopes and Unity Visualizer will have little to no updates, as they are not currently the focus of the RevMetrix project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Design Approach</title>
+      <link>//localhost:1313/project-assignments/fall-2024/proposal/design-approach/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/proposal/design-approach/index.html</guid>
+      <description>&lt;h3 id=&#34;minimal-working-system&#34;&gt;Minimal Working System&lt;/h3&gt;
+&lt;h5 id=&#34;sensors&#34;&gt;Sensors&lt;/h5&gt;
+&lt;p&gt;Light sensors and reflective tape can allow us to constantly measure how quickly the ball rotates about a single axis. This approach cannot work well if there is rotation about the other axis as there is a chance that the reflective tape will not be in front of the light sensor after each revolution.
+Motor feedback from small motors mounted in each orthogonal direction. The friction the ball imparts will generate some electricity that we can interpret to measure how quickly the ball rotates in each direction.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Future Implementations</title>
+      <link>//localhost:1313/project-assignments/fall-2024/proposal/future-implementations/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project-assignments/fall-2024/proposal/future-implementations/index.html</guid>
+      <description>&lt;h3 id=&#34;challenges&#34;&gt;Challenges&lt;/h3&gt;
+&lt;h5 id=&#34;frontend&#34;&gt;Frontend&lt;/h5&gt;
+&lt;p&gt;In our project, the frontend challenges primarily revolve around generating physical instructions for the hardware. This challenge becomes increasingly complex as we incorporate multiple axes and different core types into the prototype. Additionally, establishing a reliable interface with the SmartDot hardware via Bluetooth Low Energy (BLE) poses its own difficulties, especially when collecting live data from the accelerometer, gyroscope, and ambient light sensor during simulated runs.&lt;/p&gt;
+&lt;h5 id=&#34;backend&#34;&gt;Backend&lt;/h5&gt;
+&lt;p&gt;Some backend challenges might include setting up a local database in a Docker container, which can involve compatibility issues. Additionally, updating the database schema and configuring API endpoints for data retrieval and updates can be complex. This can further on develop into a greater challenge when handling version control to ensure a smooth API interaction with the database.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

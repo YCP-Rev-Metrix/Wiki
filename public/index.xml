@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RevMetrix on Hugo Relearn Theme</title>
-    <link>/index.html</link>
+    <link>//localhost:1313/index.html</link>
     <description>Recent content in RevMetrix on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Current State of RevMetrix</title>
-      <link>/current-state-of-revmetrix/index.html</link>
+      <link>//localhost:1313/current-state-of-revmetrix/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/current-state-of-revmetrix/index.html</guid>
+      <guid>//localhost:1313/current-state-of-revmetrix/index.html</guid>
       <description>&lt;h5 id=&#34;revmetrix-system-architecture&#34;&gt;RevMetrix System Architecture&lt;/h5&gt;
-&lt;p&gt;&lt;img src=&#34;/current-state-of-revmetrix/OverallSystemArc.png?width=200vw&amp;amp;lightbox=false&amp;amp;text-align=left&amp;amp;classes=shadow&#34; alt=&#34;RevMetrix Diagram&#34; class=&#34;figure-image noborder nolightbox shadow&#34; style=&#34;height: auto; width: 200vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//localhost:1313/current-state-of-revmetrix/OverallSystemArc.png?width=200vw&amp;amp;lightbox=false&amp;amp;text-align=left&amp;amp;classes=shadow&#34; alt=&#34;RevMetrix Diagram&#34; class=&#34;figure-image noborder nolightbox shadow&#34; style=&#34;height: auto; width: 200vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
 &lt;h5 id=&#34;current-status-by-development-team&#34;&gt;Current Status by Development Team&lt;/h5&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/current-state-of-revmetrix/backend/index.html&#34;&gt;Backend - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of the backend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/current-state-of-revmetrix/frontend/index.html&#34;&gt;Frontend - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of the frontend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/current-state-of-revmetrix/simulation/index.html&#34;&gt;Simulation - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of simulation development, along with what is planned for the future&lt;/p&gt;</description>
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/backend/index.html&#34;&gt;Backend - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of the backend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/frontend/index.html&#34;&gt;Frontend - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of the frontend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/simulation/index.html&#34;&gt;Simulation - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of simulation development, along with what is planned for the future&lt;/p&gt;</description>
     </item>
     <item>
       <title>How To Contribute</title>
-      <link>/how-to-contribute/index.html</link>
+      <link>//localhost:1313/how-to-contribute/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/how-to-contribute/index.html</guid>
+      <guid>//localhost:1313/how-to-contribute/index.html</guid>
       <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/ci-and-cd/index.html&#34;&gt;Continuous Integration/Deployment&lt;/a&gt;&lt;p&gt;Information about the project&amp;#39;s CI/CD workflows&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/contributing-documentation/index.html&#34;&gt;Contributing Documentation&lt;/a&gt;&lt;p&gt;How to add, edit, and remove documentation on the Wiki&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/digitalocean-management/index.html&#34;&gt;DigitalOcean Management&lt;/a&gt;&lt;p&gt;Information regarding how to manage DigitalOcean Droplets&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/dockerizing-an-application/index.html&#34;&gt;Dockerizing an Application&lt;/a&gt;&lt;p&gt;Information on how to dockerize a project and deploy onto a separate machine or server&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/bluetooth/index.html&#34;&gt;Getting Started&lt;/a&gt;&lt;p&gt;Information regarding setting up your development enviroment&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/getting-started/index.html&#34;&gt;Getting Started&lt;/a&gt;&lt;p&gt;Information regarding setting up your development enviroment&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/how-to-contribute/github-workflows/index.html&#34;&gt;GitHub Workflows&lt;/a&gt;&lt;p&gt;All GitHub workflows for the project&lt;/p&gt;</description>
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/ci-and-cd/index.html&#34;&gt;Continuous Integration/Deployment&lt;/a&gt;&lt;p&gt;Information about the project&amp;#39;s CI/CD workflows&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/contributing-documentation/index.html&#34;&gt;Contributing Documentation&lt;/a&gt;&lt;p&gt;How to add, edit, and remove documentation on the Wiki&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/digitalocean-management/index.html&#34;&gt;DigitalOcean Management&lt;/a&gt;&lt;p&gt;Information regarding how to manage DigitalOcean Droplets&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/dockerizing-an-application/index.html&#34;&gt;Dockerizing an Application&lt;/a&gt;&lt;p&gt;Information on how to dockerize a project and deploy onto a separate machine or server&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/bluetooth/index.html&#34;&gt;Getting Started&lt;/a&gt;&lt;p&gt;Information regarding setting up your development enviroment&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/getting-started/index.html&#34;&gt;Getting Started&lt;/a&gt;&lt;p&gt;Information regarding setting up your development enviroment&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/how-to-contribute/github-workflows/index.html&#34;&gt;GitHub Workflows&lt;/a&gt;&lt;p&gt;All GitHub workflows for the project&lt;/p&gt;</description>
     </item>
     <item>
       <title>Initial Project Ideas</title>
-      <link>/initial-project-ideas/index.html</link>
+      <link>//localhost:1313/initial-project-ideas/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/initial-project-ideas/index.html</guid>
+      <guid>//localhost:1313/initial-project-ideas/index.html</guid>
       <description>&lt;h3 id=&#34;original-system-architecture&#34;&gt;Original System Architecture&lt;/h3&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/initial-project-ideas/ProjectArchitecture.png?width=50vw&amp;amp;lightbox=false&#34; alt=&#34;RevMetrix Diagram&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 50vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/initial-project-ideas/ProjectArchitecture.png?width=50vw&amp;amp;lightbox=false&#34; alt=&#34;RevMetrix Diagram&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 50vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -56,58 +56,58 @@
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/initial-project-ideas/initial-database-architecture/index.html&#34;&gt;Backend - Database Architecture&lt;/a&gt;&lt;p&gt;UML diagrams representing the initial database architecture and schemas&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/initial-project-ideas/phone-app---proof-of-concept/index.html&#34;&gt;Phone App - Proof of Concept&lt;/a&gt;&lt;p&gt;Drawing board ideas for the layout and interaction methods of the phone application&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/initial-project-ideas/simulation---first-thoughts/index.html&#34;&gt;Simulation - First Thoughts&lt;/a&gt;&lt;p&gt;The base ideas around using Unity for the development of a bowling simulation&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/initial-project-ideas/initial-database-architecture/index.html&#34;&gt;Backend - Database Architecture&lt;/a&gt;&lt;p&gt;UML diagrams representing the initial database architecture and schemas&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/initial-project-ideas/phone-app---proof-of-concept/index.html&#34;&gt;Phone App - Proof of Concept&lt;/a&gt;&lt;p&gt;Drawing board ideas for the layout and interaction methods of the phone application&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/initial-project-ideas/simulation---first-thoughts/index.html&#34;&gt;Simulation - First Thoughts&lt;/a&gt;&lt;p&gt;The base ideas around using Unity for the development of a bowling simulation&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
       <title>Project Assignments</title>
-      <link>/project-assignments/index.html</link>
+      <link>//localhost:1313/project-assignments/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/index.html</guid>
+      <guid>//localhost:1313/project-assignments/index.html</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;Below you can find the list of semesters that RevMetrix was under development and their respective assignments and details.&lt;/p&gt;
 &lt;h4 id=&#34;development-semesters&#34;&gt;Development Semesters&lt;/h4&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2023/index.html&#34;&gt;Fall 2023&lt;/a&gt;&lt;p&gt;A list of all assignments completed throughout the fall 2023 semester&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/project-assignments/fall-2024/index.html&#34;&gt;Fall 2024&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/project-assignments/spring-2024/index.html&#34;&gt;Spring 2024&lt;/a&gt;&lt;p&gt;A list of all assignments completed throughout the spring 2024 semester&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2023/index.html&#34;&gt;Fall 2023&lt;/a&gt;&lt;p&gt;A list of all assignments completed throughout the fall 2023 semester&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/fall-2024/index.html&#34;&gt;Fall 2024&lt;/a&gt;&lt;p&gt;Design and Analysis Information and Links to the Document and Slideshow&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-assignments/spring-2024/index.html&#34;&gt;Spring 2024&lt;/a&gt;&lt;p&gt;A list of all assignments completed throughout the spring 2024 semester&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
       <title>Project Milestones</title>
-      <link>/project-milestones/index.html</link>
+      <link>//localhost:1313/project-milestones/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-milestones/index.html</guid>
+      <guid>//localhost:1313/project-milestones/index.html</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Below you can find the assignment descriptions for each of the project&amp;rsquo;s semester milestones.  There are three in total per semester, and once the assignment date has passed, the appropriate slideshow can be seen under each milestone&amp;rsquo;s title.&lt;/p&gt;
 &lt;h3 id=&#34;milestones&#34;&gt;Milestones&lt;/h3&gt;
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/project-milestones/fall-2023/index.html&#34;&gt;Fall 2023&lt;/a&gt;&lt;p&gt;The progress made prior to each project milestone during the fall 2023 semester&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/project-milestones/spring-2024/index.html&#34;&gt;Spring 2024&lt;/a&gt;&lt;p&gt;The progress made prior to each project milestone during the spring 2024 semester&lt;/p&gt;</description>
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/fall-2023/index.html&#34;&gt;Fall 2023&lt;/a&gt;&lt;p&gt;The progress made prior to each project milestone during the fall 2023 semester&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/project-milestones/spring-2024/index.html&#34;&gt;Spring 2024&lt;/a&gt;&lt;p&gt;The progress made prior to each project milestone during the spring 2024 semester&lt;/p&gt;</description>
     </item>
     <item>
       <title>SmartDot</title>
-      <link>/smartdot/index.html</link>
+      <link>//localhost:1313/smartdot/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/smartdot/index.html</guid>
+      <guid>//localhost:1313/smartdot/index.html</guid>
       <description>&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;/smartdot/ismartdot/index.html&#34;&gt;ISmartDot Interface&lt;/a&gt;&lt;p&gt;Information about the ISmartDot interface&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/smartdot/smartdothardware/index.html&#34;&gt;SmartDot Hardware&lt;/a&gt;&lt;p&gt;Information about the SmartDot hardware&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/smartdot/smartdot-simulator/index.html&#34;&gt;SmartDot Simulator&lt;/a&gt;&lt;p&gt;Information about the SmartDot Simulator&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/ismartdot/index.html&#34;&gt;ISmartDot Interface&lt;/a&gt;&lt;p&gt;Information about the ISmartDot interface&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/smartdothardware/index.html&#34;&gt;SmartDot Hardware&lt;/a&gt;&lt;p&gt;Information about the SmartDot hardware&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/smartdot-simulator/index.html&#34;&gt;SmartDot Simulator&lt;/a&gt;&lt;p&gt;Information about the SmartDot Simulator&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
       <title>Technologies Used</title>
-      <link>/technologies-used/index.html</link>
+      <link>//localhost:1313/technologies-used/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/technologies-used/index.html</guid>
+      <guid>//localhost:1313/technologies-used/index.html</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;p&gt;Below you&amp;rsquo;ll find a list of all the technologies necessary for making contributions to the RevMetrix project.&lt;/p&gt;
 &lt;h2 id=&#34;technologies&#34;&gt;Technologies&lt;/h2&gt;

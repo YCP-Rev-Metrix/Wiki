@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analysis and Design on Hugo Relearn Theme</title>
-    <link>/project-assignments/fall-2024/analysis-and-design/index.html</link>
+    <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/index.html</link>
     <description>Recent content in Analysis and Design on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/project-assignments/fall-2024/analysis-and-design/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="//localhost:1313/project-assignments/fall-2024/analysis-and-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backend</title>
-      <link>/project-assignments/fall-2024/analysis-and-design/backend/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/backend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2024/analysis-and-design/backend/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/backend/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -23,7 +23,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2024/analysis-and-design/backend/3.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/backend/3.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -34,9 +34,9 @@
     </item>
     <item>
       <title>Ball Spinner Controller</title>
-      <link>/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -49,7 +49,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -59,9 +59,9 @@
     </item>
     <item>
       <title>Ball Spinner Protocal</title>
-      <link>/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -76,9 +76,9 @@
     </item>
     <item>
       <title>BallSpinner</title>
-      <link>/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -92,7 +92,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2024/analysis-and-design/ballspinner/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/ballspinner/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -103,9 +103,9 @@
     </item>
     <item>
       <title>DataBase Schema</title>
-      <link>/project-assignments/fall-2024/analysis-and-design/database-schema/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/database-schema/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2024/analysis-and-design/database-schema/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/database-schema/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -119,7 +119,7 @@
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2024/analysis-and-design/database-schema/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/database-schema/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -130,9 +130,9 @@ At the core of our database schema is the User table, this table allows us to st
     </item>
     <item>
       <title>Frontend </title>
-      <link>/project-assignments/fall-2024/analysis-and-design/frontend/index.html</link>
+      <link>//localhost:1313/project-assignments/fall-2024/analysis-and-design/frontend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/project-assignments/fall-2024/analysis-and-design/frontend/index.html</guid>
+      <guid>//localhost:1313/project-assignments/fall-2024/analysis-and-design/frontend/index.html</guid>
       <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -146,7 +146,7 @@ At the core of our database schema is the User table, this table allows us to st
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;/project-assignments/fall-2024/analysis-and-design/frontend/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/project-assignments/fall-2024/analysis-and-design/frontend/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
