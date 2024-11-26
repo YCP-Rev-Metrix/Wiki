@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/requirements/50-working-system/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/requirements/abstract/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/how-to-contribute/webapi/endpoints/index.html</loc>
   </url>
   <url>
@@ -8,6 +14,9 @@
   </url>
   <url>
     <loc>//localhost:1313/project-assignments/fall-2024/analysis-and-design/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/proposal/architecture/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/how-to-contribute/getting-started/backend/index.html</loc>
@@ -58,6 +67,9 @@
     <loc>//localhost:1313/current-state-of-revmetrix/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/proposal/current-system/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/current-state-of-revmetrix/backend/database-obsevation-data/index.html</loc>
   </url>
   <url>
@@ -65,6 +77,9 @@
   </url>
   <url>
     <loc>//localhost:1313/more/members/david-babcock/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/proposal/design-approach/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-assignments/spring-2024/detailed-proposal-and-design/index.html</loc>
@@ -91,6 +106,12 @@
     <loc>//localhost:1313/project-assignments/fall-2024/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/project-milestones/fall-2024/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/requirements/final-working-system/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/project-assignments/fall-2024/analysis-and-design/frontend/index.html</loc>
   </url>
   <url>
@@ -101,6 +122,15 @@
   </url>
   <url>
     <loc>//localhost:1313/project-assignments/fall-2023/analysis-and-design/frontend/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/proposal/future-implementations/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/requirements/general-project-requirments/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/requirements/use-cases/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/how-to-contribute/bluetooth/index.html</loc>
@@ -163,10 +193,19 @@
     <loc>//localhost:1313/project-milestones/spring-2024/milestone-3/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/project-assignments/fall-2024/requirements/minimum-working-system/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/how-to-contribute/getting-started/mobile-app/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-milestones/fall-2023/ms1---minimal-working-system/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-milestones/fall-2024/ms1---minimal-working-system/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/project-milestones/fall-2024/ms2---50-working-system/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-milestones/fall-2023/ms2---50-working-system/index.html</loc>
