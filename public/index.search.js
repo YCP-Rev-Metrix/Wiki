@@ -490,7 +490,7 @@ var relearn_search_index = [
     "uri": "/project-milestones/fall-2024/ms2---50-working-system/index.html"
   },
   {
-    "content": "Milestone 1 ",
+    "content": " ",
     "description": "Progress made on the final working system and the associated slideshow",
     "tags": null,
     "title": "MS3 - Final System",
