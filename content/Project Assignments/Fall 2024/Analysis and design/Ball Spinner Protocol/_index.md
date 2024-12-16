@@ -1,10 +1,10 @@
 +++
-title = "Ball Spinner Protocal"
+title = "Ball Spinner Protocol"
 weight = 100
 description = 'Design and Analysis Information and Links to the Document and Slideshow'
 +++
 
-|Logan Tyran, Ryan Curry, Robert Fields |
+| Robert Fields |
 |:-:|
 
 ### Ball Spinner Protocol
