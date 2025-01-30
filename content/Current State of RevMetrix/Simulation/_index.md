@@ -1,5 +1,5 @@
 +++
-title = "Simulation - Current State"
+title = "2024 Spring Simulation"
 weight = 100
 description = 'All details about the current state of simulation development, along with what is planned for the future'
 +++

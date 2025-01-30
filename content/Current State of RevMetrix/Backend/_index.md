@@ -1,5 +1,5 @@
 +++
-title = "Backend - Current State"
+title = "2024 Spring Backend"
 weight = 100
 description = 'All details about the current state of the backend development, along with what is planned for the future'
 +++

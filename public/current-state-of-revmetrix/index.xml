@@ -7,7 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="//localhost:1313/current-state-of-revmetrix/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Backend - Current State</title>
+      <title>2024 Fall Backend</title>
+      <link>//localhost:1313/current-state-of-revmetrix/backend-fall2024/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/current-state-of-revmetrix/backend-fall2024/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Fall Ballspinner</title>
+      <link>//localhost:1313/current-state-of-revmetrix/ballspinner/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/current-state-of-revmetrix/ballspinner/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Fall Frontend</title>
+      <link>//localhost:1313/current-state-of-revmetrix/frontend-fall2024/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/current-state-of-revmetrix/frontend-fall2024/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Fall Simulation</title>
+      <link>//localhost:1313/current-state-of-revmetrix/simulation-fall2024/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/current-state-of-revmetrix/simulation-fall2024/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Spring Backend</title>
       <link>//localhost:1313/current-state-of-revmetrix/backend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/current-state-of-revmetrix/backend/index.html</guid>
@@ -26,7 +54,7 @@
 &lt;p&gt;The Web API is now capable of making client-server interactions and is being hosted on a Linux Ubuntu 20.04 cloud server through DigitalOcean.  To deploy the API application, a plethora of different approaches to the task were conducted, but in the end it was easiest and most efficient to create a Docker image for the application, create a docker-compose file for the application&amp;rsquo;s Dockerfile, and transfer this file to the DigitalOcean droplet in which the only installations needed on the server were Docker and SQLServer.  Though the domain for the API will be changed further into the project, a test page for the API can be visited, but the link is currently being kept private for security reasons.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Frontend - Current State</title>
+      <title>2024 Spring Frontend</title>
       <link>//localhost:1313/current-state-of-revmetrix/frontend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/current-state-of-revmetrix/frontend/index.html</guid>
@@ -72,7 +100,7 @@
 &lt;/table&gt;</description>
     </item>
     <item>
-      <title>Simulation - Current State</title>
+      <title>2024 Spring Simulation</title>
       <link>//localhost:1313/current-state-of-revmetrix/simulation/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/current-state-of-revmetrix/simulation/index.html</guid>

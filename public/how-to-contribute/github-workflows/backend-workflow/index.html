@@ -8,20 +8,20 @@
     <meta name="description" content="How to create a branch of the cloud-infrastructure repository and make edits">
     <title>GitHub Workflow - Backend :: Hugo Relearn Theme</title>
     <link href="/how-to-contribute/github-workflows/backend-workflow/index.xml" rel="alternate" type="application/rss+xml" title="GitHub Workflow - Backend :: Hugo Relearn Theme">
-    <link href="/images/favicon.png?1732639445" rel="icon" type="image/png">
+    <link href="/images/favicon.png?1733935357" rel="icon" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1732639445" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1732639445" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1732639445" rel="stylesheet">
-    <link href="/css/auto-complete.css?1732639445" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1732639445" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1732639445" rel="stylesheet">
-    <link href="/css/fonts.css?1732639445" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1732639445" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1732639445" rel="stylesheet">
-    <link href="/css/theme-neon.css?1732639445" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1732639445" rel="stylesheet">
-    <link href="/css/print.css?1732639445" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1732639445" rel="stylesheet">
-    <script src="/js/url.js?1732639445"></script>
-    <script src="/js/variant.js?1732639445"></script>
+    <link href="/css/fontawesome-all.min.css?1733935357" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733935357" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1733935357" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733935357" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733935357" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1733935357" rel="stylesheet">
+    <link href="/css/fonts.css?1733935357" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1733935357" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1733935357" rel="stylesheet">
+    <link href="/css/theme-neon.css?1733935357" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1733935357" rel="stylesheet">
+    <link href="/css/print.css?1733935357" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1733935357" rel="stylesheet">
+    <script src="/js/url.js?1733935357"></script>
+    <script src="/js/variant.js?1733935357"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -79,25 +79,25 @@
 
 <h3 id="development-enviornment">Development Enviornment</h3>
 <p>The preferred development enviornment for the Cloud-Infrastructure .NET solution is <a href="https://visualstudio.microsoft.com/vs/" target="_blank">Microsoft Visual Studio 2022 Community Edition</a>.  When installing Visual Studio, make sure to install all of the options checked below:</p>
-<p><a href="#image-26517d89bd887031509ae46e0804e7e0" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-26517d89bd887031509ae46e0804e7e0"><img src="/how-to-contribute/github-workflows/backend-workflow/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-dcb7a14b76e329748f96405c5b395014" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-dcb7a14b76e329748f96405c5b395014"><img src="/how-to-contribute/github-workflows/backend-workflow/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>After installing Visual Studio, you will also need to install <a href="https://go.microsoft.com/fwlink/p/?linkid=2215158&amp;clcid=0x409&amp;culture=en-us&amp;country=us" target="_blank">SQL Server Developer Edition (Free)</a>.  All of the default installation settings can be followed for this.  Finally, you&rsquo;ll need to install <a href="https://aka.ms/ssmsfullsetup" target="_blank">SQL Server Management Studio</a>.  The default installation options for SSMS can be followed here also.</p>
 <h3 id="cloning-the-repository">Cloning The Repository</h3>
 <p>To clone the Cloud-Infrastructure repository, head over to the <a href="https://github.com/YCP-Rev-Metrix/Cloud-Infrastructure" target="_blank">GitHub Repository</a>, click the green &ldquo;Code&rdquo; dropdown on the repo page, then copy the https link given from the dropdown, as seen below:</p>
-<p><a href="#image-e5bd293446bcccb025d52235c24098eb" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-e5bd293446bcccb025d52235c24098eb"><img src="/how-to-contribute/github-workflows/backend-workflow/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-d26ac8562d4f3c14bad6f6bfd5365894" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-d26ac8562d4f3c14bad6f6bfd5365894"><img src="/how-to-contribute/github-workflows/backend-workflow/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>After copying the repo link, open Visual Studio and click &quot;&quot; on the start page as seen here:</p>
-<p><a href="#image-14f2cd91d3cac34e67aad3f03aee9970" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-14f2cd91d3cac34e67aad3f03aee9970"><img src="/how-to-contribute/github-workflows/backend-workflow/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-415f65b4cdbb860ece865e18f567852e" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-415f65b4cdbb860ece865e18f567852e"><img src="/how-to-contribute/github-workflows/backend-workflow/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>From here you will be prompted to enter the link of the repository to clone and the path at which to create the directory of the repo on your machine.  Go ahead and paste the repository link and choose where to save it, then hit the &ldquo;clone&rdquo; button in the bottom right as seen below:</p>
-<p><a href="#image-c6dc214c456002e29d6a25b93023f7de" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-c6dc214c456002e29d6a25b93023f7de"><img src="/how-to-contribute/github-workflows/backend-workflow/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-bca0e533331b445eb1a01b14fd40d23c" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-bca0e533331b445eb1a01b14fd40d23c"><img src="/how-to-contribute/github-workflows/backend-workflow/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>Now that the repo has been cloned, Go ahead and click on the configuration manager next to the run button. Next, ensure that the &ldquo;Server: https&rdquo; configuration is selected and then hit run.</p>
-<p><a href="#image-38316d921a3d0d0fab8d93900601fdc1" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-38316d921a3d0d0fab8d93900601fdc1"><img src="/how-to-contribute/github-workflows/backend-workflow/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-6eadee26118135a8c70f5789ee1e6dee" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-6eadee26118135a8c70f5789ee1e6dee"><img src="/how-to-contribute/github-workflows/backend-workflow/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>Lastly, the Swagger website will open up locally and will contain of all the API endpoints. Taaa daaa</p>
-<p><a href="#image-b8be1685f97d8744ba1cb52c020f101c" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-5.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-b8be1685f97d8744ba1cb52c020f101c"><img src="/how-to-contribute/github-workflows/backend-workflow/image-5.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-27bd800cb29d946f9c59ee2b5edae551" class="lightbox-link"><img src="/how-to-contribute/github-workflows/backend-workflow/image-5.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-27bd800cb29d946f9c59ee2b5edae551"><img src="/how-to-contribute/github-workflows/backend-workflow/image-5.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>Everything from here on is basic source control practice.  If you are unfamiliar with these practices, check out the <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet</a> for an introduction to them!</p>
 
             <footer class="footline">
@@ -125,12 +125,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1732639446" defer></script>
-        <script src="/js/lunr/lunr.min.js?1732639446" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1732639446" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1732639446" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1732639446" defer></script>
-        <script src="/js/search.js?1732639446" defer></script>
+        <script src="/js/auto-complete.js?1733935357" defer></script>
+        <script src="/js/lunr/lunr.min.js?1733935357" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1733935357" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1733935357" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1733935357" defer></script>
+        <script src="/js/search.js?1733935357" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <hr class="padding">
@@ -293,8 +293,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1732639446" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1732639446" defer></script>
-    <script src="/js/theme.js?1732639446" defer></script>
+    <script src="/js/clipboard.min.js?1733935357" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1733935357" defer></script>
+    <script src="/js/theme.js?1733935357" defer></script>
   </body>
 </html>

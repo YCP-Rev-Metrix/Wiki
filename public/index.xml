@@ -17,9 +17,9 @@
 
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/backend/index.html&#34;&gt;Backend - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of the backend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/frontend/index.html&#34;&gt;Frontend - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of the frontend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/simulation/index.html&#34;&gt;Simulation - Current State&lt;/a&gt;&lt;p&gt;All details about the current state of simulation development, along with what is planned for the future&lt;/p&gt;</description>
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/backend-fall2024/index.html&#34;&gt;2024 Fall Backend&lt;/a&gt;&lt;p&gt;All details about the current state of the backend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/ballspinner/index.html&#34;&gt;2024 Fall Ballspinner&lt;/a&gt;&lt;p&gt;All details about the current state of the backend development, along with what is planned for the future&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/current-state-of-revmetrix/frontend-fall2024/index.html&#34;&gt;2024 Fall Frontend&lt;/a&gt;&lt;p&gt;All details about the current state of the backend development, along with what is planned for the future&lt;/p&gt;</description>
     </item>
     <item>
       <title>How To Contribute</title>
