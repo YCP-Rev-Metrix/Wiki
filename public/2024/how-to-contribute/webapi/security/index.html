@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Security information regarding the WebAPI">
+    <title>Security :: Hugo Relearn Theme</title>
+    <link href="/2024/how-to-contribute/webapi/security/index.xml" rel="alternate" type="application/rss+xml" title="Security :: Hugo Relearn Theme">
+    <link href="/images/favicon.png?1744041506" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1744041506" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1744041506" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1744041506" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744041506" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1744041506" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1744041506" rel="stylesheet">
+    <link href="/css/fonts.css?1744041506" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1744041506" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1744041506" rel="stylesheet">
+    <link href="/css/theme-neon.css?1744041506" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1744041506" rel="stylesheet">
+    <link href="/css/print.css?1744041506" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1744041506" rel="stylesheet">
+    <script src="/js/url.js?1744041506"></script>
+    <script src="/js/variant.js?1744041506"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='localhost:1313/';
+      window.variants && variants.init( [ 'neon', 'auto', 'zen-light', 'zen-dark', 'blue', 'green', 'learn', 'red', 'relearn', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/2024/how-to-contribute/webapi/security/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/2024/how-to-contribute/webapi/client/index.html" title="Web API Client (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/2024/how-to-contribute/webapi/endpoints/index.html" title="Adding &amp; Managing Endpoints (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/2024/How%20to%20contribute/WebAPI/Security/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2024/index.html"><span itemprop="name">2024 Capstone</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2024/how-to-contribute/index.html"><span itemprop="name">How To Contribute</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2024/how-to-contribute/webapi/index.html"><span itemprop="name">RevMetrix WebAPI</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Security</span><meta itemprop="position" content="5"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="security">Security</h1>
+
+<h3 id="table-of-contents">Table of Contents</h3>
+<ul>
+<li><a href="#https">Https</a></li>
+<li><a href="#authentication-and-authorization">Authentication and Authorization</a>
+<ul>
+<li><a href="#jwt">JWT</a></li>
+<li><a href="#refresh-tokens">Refresh Tokens</a></li>
+<li><a href="#roles">Roles</a></li>
+</ul>
+</li>
+<li><a href="#middleware">Middleware</a></li>
+<li><a href="#secure-randomization">Secure Randomization</a></li>
+<li><a href="#security-methods">Security Methods</a>
+<ul>
+<li><a href="#hashing">Hashing</a></li>
+<li><a href="#salting">Salting</a></li>
+<li><a href="#signing">Signing</a></li>
+<li><a href="#encryption">Encryption</a></li>
+</ul>
+</li>
+</ul>
+<p>Security is a crucial part of the Web API and security is managed in multiple ways. Please ensure that the security of the application remains during development.</p>
+<hr>
+<h2 id="https">Https</h2>
+<p>Our server forces the use of HTTPS for security purposes, to ensure data sent between the API and Client is encrypted. Specifically, we use TLS, the modern version of SSL.</p>
+<p><a href="https://www.digicert.com/what-is-ssl-tls-and-https" target="_blank">Learn more here</a></p>
+<h2 id="authentication-and-authorization">Authentication and Authorization</h2>
+<p>Authentication and Authorization are the two primary ways of limiting a resource to specific users.</p>
+<p>Authentication is the process of validating a user&rsquo;s identity through credentials such as username and password.</p>
+<p>Authorization is the process of limiting specific resources through roles or permissions. ie. only admins may change a user&rsquo;s name.</p>
+<h4 id="jwt">JWT</h4>
+<p>JWT is an acronym standing for Json Web Token and it is used to provide both Authentication and Authorization to users. This token is granted to the user upon login, set-up by the following in Program.cs:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span>_ = builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+</span></span><span style="display:flex;"><span>.AddJwtBearer(options =&gt;
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    options.TokenValidationParameters = <span style="color:#66d9ef">new</span> TokenValidationParameters
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        ValidateIssuer = <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        ValidateAudience = <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        ValidateIssuerSigningKey = <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        ValidateLifetime = <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>        ValidIssuer = Config.AuthIssuer,
+</span></span><span style="display:flex;"><span>        ValidAudience = Config.AuthAudience,
+</span></span><span style="display:flex;"><span>        IssuerSigningKey = ServerState.SecurityHandler.AuthorizationSigningTokenKey,
+</span></span><span style="display:flex;"><span>        ClockSkew = TimeSpan.FromMinutes(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div><p>The above specifies that JWTs on our server use the following:</p>
+<ul>
+<li>Issuer validation</li>
+<li>Audience validation</li>
+<li>Expiration validation (JWTs expire after a specified time)</li>
+<li>Issuer (us)</li>
+<li>Audience (us)</li>
+<li>Signing key (from server state)</li>
+<li>Clock skew (in case the clocks are a few minutes off)</li>
+</ul>
+<p>The big thing here is the expiration and signing.
+When a JWT is created by the server, it is assigned an expiration time, normally just a few hours in the future, at which point the JWT will no longer be validated.
+This new JWT is then signed by the server so that the server can detetect if a someone has tampered with the token as all data is in plaintext.</p>
+<p>The server will also add to the JWT, the user&rsquo;s roles, username, and a random id.</p>
+<p><a href="https://jwt.io/#debugger-io?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUZXN0IFVzZXIiLCJqdGkiOiIzNTJiYmRjMS0wNjQ1LTRhMGYtYjJjYi00NGM1ZDkzZmFkN2YiLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjM4LyIsImF1ZCI6IlJldk1ldHJpeCIsInJvbGUiOiJ1c2VyIiwibmJmIjoxNjk4ODgyNDIwLCJleHAiOjE2OTg4ODYwMjAsImlhdCI6MTY5ODg4MjQyMH0.hvDqpWZdczHYzHqv6yk0IT4gQ9bIV-8bow-MsnHjVbM" target="_blank">View a real server JWT here</a></p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span><span style="color:#e6db74">&#34;header&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;alg&#34;</span>: <span style="color:#e6db74">&#34;HS256&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;typ&#34;</span>: <span style="color:#e6db74">&#34;JWT&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;payload&#34;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;sub&#34;</span>: <span style="color:#e6db74">&#34;Test User&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;jti&#34;</span>: <span style="color:#e6db74">&#34;352bbdc1-0645-4a0f-b2cb-44c5d93fad7f&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;iss&#34;</span>: <span style="color:#e6db74">&#34;https://localhost:7238/&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;aud&#34;</span>: <span style="color:#e6db74">&#34;RevMetrix&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;nbf&#34;</span>: <span style="color:#ae81ff">1698882420</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;exp&#34;</span>: <span style="color:#ae81ff">1698886020</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;iat&#34;</span>: <span style="color:#ae81ff">1698882420</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p><a href="https://jwt.io/introduction" target="_blank">Learn more here</a></p>
+<h4 id="refresh-tokens">Refresh Tokens</h4>
+<p>Refresh tokens are used by the client to request a new JWT from the server when their current one expires.
+The server, when authorizing the user, will provide back a JWT and Refresh token. In the future, this Refresh token can be use to re-authorize the user.
+These tokens are just random bytes though could have taken the form of a JWT too: <code>II7IWJueHQjdaxN28MfG7yGuR5KonICYVuexvFIYjiY=</code></p>
+<p>Currently, these are stored in the DB with an expiration data and assosiated user.</p>
+<p><a href="https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/" target="_blank">Learn more here</a></p>
+<h4 id="roles">Roles</h4>
+<p>Roles are used to manage user&rsquo;s abilities and controls and should be handled as security items. Endpoints or controllers that require specific roles will have the following attribute <code>[Authorize(Roles = &quot;Admin, Manager&quot;)]</code>.
+This specific example allows only users with either the role of &lsquo;User&rsquo; or &lsquo;Manager&rsquo; to access this item. Items without the Roles specification will allow a user with any role to access it.</p>
+<p>These roles are stored in the User DB in the user table as an array</p>
+<h2 id="middleware">Middleware</h2>
+<p>Middleware is a method by which the server may interrupt a client&rsquo;s communication to an API endpoint and manipulate data or block the request.
+This has been used to ensure that a user&rsquo;s JWT has not been blacklisted prior to access of a protected endpoint.
+Relevant code is shown below:</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">VerifyJWTBlacklistMiddleware</span> : IMiddleware
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">async</span> Task InvokeAsync(HttpContext context, RequestDelegate next)
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        Endpoint? endpoint = context.GetEndpoint();
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (endpoint != <span style="color:#66d9ef">null</span>)
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (endpoint.Metadata.GetMetadata&lt;AuthorizeAttribute&gt;() != <span style="color:#66d9ef">null</span>)
+</span></span><span style="display:flex;"><span>            {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">string?</span> token = context.Request.Headers[<span style="color:#e6db74">&#34;Authorization&#34;</span>].FirstOrDefault()?.Split(<span style="color:#e6db74">&#34; &#34;</span>).Last();
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> (!<span style="color:#66d9ef">string</span>.IsNullOrEmpty(token))
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> (!ServerState.TokenStore.IsAuthorizationBlacklisted(token))
+</span></span><span style="display:flex;"><span>                    {
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">await</span> next.Invoke(context);
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                context.Response.StatusCode = <span style="color:#ae81ff">401</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> next.Invoke(context);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div><p>The middleware must also be registered with the application in Program.cs</p>
+<div class="wrap-code highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C#" data-lang="C#"><span style="display:flex;"><span><span style="color:#75715e">// Verify token not blacklisted</span>
+</span></span><span style="display:flex;"><span>_ = app.UseMiddleware&lt;VerifyJWTBlacklistMiddleware&gt;();</span></span></code></pre></div><h2 id="secure-randomization">Secure Randomization</h2>
+<p>Not all random functions are created equal. Take Python for example, if you wanted to generate secure randomness, you should not use the Random library as it is not built for cryptology and is susceptible to timing attacks and seed cracking.
+This applies to C# too, so we use the System.Security.Cryptography module, which provides the RandomNumberGenerator class which is secure.</p>
+<p>A SecurityHandler class has been created to abstract security items in a way that makes sense to more developers, allowing them to avoid worrying about security as much.
+This class has secure methods to generate random byte arrays, tokens, and other simple methods.</p>
+<p>An instance of this class may be used from the static ServerState.</p>
+<h2 id="security-methods">Security Methods</h2>
+<p>Passwords remain one of the primary methods to ensure a specific user&rsquo;s security and users may not always change their password for all the services they use. This means that it is the job of our applicaiton, to ensure that these passwords are stored and used safely.
+There are many things that go into modern security measures. Here, we will cover the four main topics used in our application.</p>
+<h4 id="hashing">Hashing</h4>
+<p>Hashing is the method by which a password is turned from plaintext to a format that cannot be reversed. This ensures that if the DB is leaked to the public or if someone has access to it, the passwords themselves remain secure. The WebAPI currently uses SHA256 (for simplicity - this should be changed to something meant for passwords) to generate password hashes however this may easily be change. Hashing will always generate the same output given the same input</p>
+<p>We can convert our  password from a string into hex so it may be hashed: <code>abc123</code> -&gt; <code>0x616263313233</code></p>
+<p>We can then run SHA256 on this: SHA256(<code>0x616263313233</code>) -&gt; <code>0x6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090</code></p>
+<p>These hashed values can then be stored in the DB. When a user needs to be authenticated through the WebAPI, they provide their password, it is hashed, then compared with the hashed real password in the DB</p>
+<p>We can convert an incorrect password from a string into hex so it may be hashed: <code>incorrectPassword</code> -&gt; <code>0x696E636F727265637450617373776F7264</code></p>
+<p>Using the incorrect password: SHA256(<code>696E636F727265637450617373776F7264</code>) -&gt; <code>0x11e56efd5eae13673eccfed917ac1d69f02a8d0b8a4c384c5cc18c1bd2b7dc29</code> != <code>0x6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090</code></p>
+<p>Using the correct password: SHA256(<code>0x616263313233</code>) -&gt; <code>0x6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090</code></p>
+<p><a href="https://www.rapidtables.com/convert/number/ascii-to-hex.html" target="_blank">Online ASCII to hex converter</a></p>
+<p><a href="https://codebeautify.org/sha256-hash-generator" target="_blank">Online SHA256 generator</a></p>
+<p><a href="https://www.codecademy.com/resources/blog/what-is-hashing/#:~:text=Hashing%20is%20the%20process%20of%20converting%20data%20%E2%80%94,using%20a%20special%20algorithm%20called%20a%20hash%20function." target="_blank">External hash explanation</a></p>
+<h4 id="salting">Salting</h4>
+<p>Salting is the method of adding randomness to hashed passwords, so that the same password, when hashed on multiple sites or by different users will not generate the same hash.
+This means that if a user re-uses passwords, a DB leak will not give this information away as the password hash will appear different.
+This also means that if two users have the same password, a DB leak will not give this information away as the password hash will appear different.</p>
+<p>A salt is just a random hex value such as: <code>0x9a66190e4f</code></p>
+<p>We can turn the password from a string into hex: <code>abc123</code> -&gt; <code>0x616263313233</code></p>
+<p>Let&rsquo;s append the salt to the end of the password hex: <code>0x616263313233</code> + <code>0x9a66190e4f</code> -&gt; <code>0x616263313233|9a66190e4f</code></p>
+<p>Let&rsquo;s hash this now: SHA256(<code>0x616263313233|9a66190e4f</code>) -&gt; <code>0x6509f3df9e7fa53ef15ae4dbc76717097982c59f0e7571bfcd5c864377432cab</code></p>
+<p>When we store this salted and hashed password, we can store the salt that we used too in plaintext in the DB, then in the future,
+when we need to authorize with a provided password, we can salt that with the same salt that was used for the real password in the DB.</p>
+<p><a href="https://www.omnicybersecurity.com/what-does-salting-the-hash-mean-is-it-effective/" target="_blank">External salt explanation</a></p>
+<p><a href="https://www.random.org/bytes/" target="_blank">Random salt / hex generator</a></p>
+<h4 id="signing">Signing</h4>
+<p>Signing is the process of generating a unique value that represents a plaintext value combined with the server&rsquo;s random cryptographic key.</p>
+<p><a href="https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_are_digital_signatures" target="_blank">Learn more here</a></p>
+<h4 id="encryption">Encryption</h4>
+<p>Encryption is the process of securing text in a way that only the specified parties can read it.</p>
+<p><a href="https://www.simplilearn.com/tutorials/cryptography-tutorial/digital-signature-algorithm#what_is_asymmetric_encryption" target="_blank">Learn more here</a></p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/index.html">
+  <img src="https://raw.githubusercontent.com/YCP-Rev-Metrix/Wiki/main/static/images/logo.png" alt="RevMetrix Logo" width="100">
+</a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1744041507" defer></script>
+        <script src="/js/lunr/lunr.min.js?1744041507" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1744041507" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1744041507" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1744041507" defer></script>
+        <script src="/js/search.js?1744041507" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/2024/index.html" class="parent "><input type="checkbox" id="section-7f6bb9695cb6771769d77e194d866246" aria-controls="subsections-7f6bb9695cb6771769d77e194d866246" checked><label for="section-7f6bb9695cb6771769d77e194d866246"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2024 Capstone</span></label><a class="padding" href="/2024/index.html">2024 Capstone</a><ul id="subsections-7f6bb9695cb6771769d77e194d866246" class="morespace collapsible-menu">
+          <li data-nav-id="/2024/current-state-of-revmetrix/index.html" class="alwaysopen"><input type="checkbox" id="section-ef23ed2eefb4dd16dc6e8df30a64dc25" aria-controls="subsections-ef23ed2eefb4dd16dc6e8df30a64dc25" checked><label for="section-ef23ed2eefb4dd16dc6e8df30a64dc25"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/2024/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-ef23ed2eefb4dd16dc6e8df30a64dc25" class="morespace collapsible-menu">
+          <li data-nav-id="/2024/current-state-of-revmetrix/backend-fall2024/index.html" class=""><a class="padding" href="/2024/current-state-of-revmetrix/backend-fall2024/index.html">2024 Fall Backend</a></li>
+          <li data-nav-id="/2024/current-state-of-revmetrix/ballspinner/index.html" class=""><a class="padding" href="/2024/current-state-of-revmetrix/ballspinner/index.html">2024 Fall Ballspinner</a></li>
+          <li data-nav-id="/2024/current-state-of-revmetrix/frontend-fall2024/index.html" class=""><a class="padding" href="/2024/current-state-of-revmetrix/frontend-fall2024/index.html">2024 Fall Frontend</a></li>
+          <li data-nav-id="/2024/current-state-of-revmetrix/simulation-fall2024/index.html" class=""><a class="padding" href="/2024/current-state-of-revmetrix/simulation-fall2024/index.html">2024 Fall Simulation</a></li>
+          <li data-nav-id="/2024/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-355647b0f24d7033f84c806f2db34b5e" aria-controls="subsections-355647b0f24d7033f84c806f2db34b5e" checked><label for="section-355647b0f24d7033f84c806f2db34b5e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2024 Spring Backend</span></label><a class="padding" href="/2024/current-state-of-revmetrix/backend/index.html">2024 Spring Backend</a><ul id="subsections-355647b0f24d7033f84c806f2db34b5e" class="morespace collapsible-menu">
+          <li data-nav-id="/2024/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/2024/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/2024/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/2024/current-state-of-revmetrix/frontend/index.html">2024 Spring Frontend</a></li>
+          <li data-nav-id="/2024/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/2024/current-state-of-revmetrix/simulation/index.html">2024 Spring Simulation</a></li></ul></li>
+          <li data-nav-id="/2024/how-to-contribute/index.html" class="parent alwaysopen"><input type="checkbox" id="section-846b189ff5bbb65e2baf86f27a65a25b" aria-controls="subsections-846b189ff5bbb65e2baf86f27a65a25b" checked><label for="section-846b189ff5bbb65e2baf86f27a65a25b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/2024/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-846b189ff5bbb65e2baf86f27a65a25b" class="morespace collapsible-menu">
+          <li data-nav-id="/2024/how-to-contribute/ci-and-cd/index.html" class=""><a class="padding" href="/2024/how-to-contribute/ci-and-cd/index.html">Continuous Integration/Deployment</a></li>
+          <li data-nav-id="/2024/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/2024/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/2024/how-to-contribute/digitalocean-management/index.html" class="alwaysopen"><input type="checkbox" id="section-514512c7e62fd1169fc0e1850e30293e" aria-controls="subsections-514512c7e62fd1169fc0e1850e30293e" checked><label for="section-514512c7e62fd1169fc0e1850e30293e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/2024/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-514512c7e62fd1169fc0e1850e30293e" class="morespace collapsible-menu">
+          <li data-nav-id="/2024/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/2024/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/2024/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class=""><a class="padding" href="/2024/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/2024/how-to-contribute/dockerizing-an-application/index.html" class=""><a class="padding" href="/2024/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/2024/how-to-contribute/bluetooth/index.html" class=""><a class="padding" href="/2024/how-to-contribute/bluetooth/index.html">Getting Started</a></li>
+          <li data-nav-id="/2024/how-to-contribute/getting-started/index.html" class="alwaysopen"><input type="checkbox" id="section-8931e1f4318e8c8eb2f5042bab04e89c" aria-controls="subsections-8931e1f4318e8c8eb2f5042bab04e89c" checked><label for="section-8931e1f4318e8c8eb2f5042bab04e89c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Getting Started</span></label><a class="padding" href="/2024/how-to-contribute/getting-started/index.html">Getting Started</a><ul id="subsections-8931e1f4318e8c8eb2f5042bab04e89c" class="morespace collapsible-menu">
+          <li data-nav-id="/2024/how-to-contribute/getting-started/backend/index.html" class=""><a class="padding" href="/2024/how-to-contribute/getting-started/backend/index.html">Backend</a></li>
+          <li data-nav-id="/2024/how-to-contribute/getting-started/ciclopes/index.html" class=""><a class="padding" href="/2024/how-to-contribute/getting-started/ciclopes/index.html">Ciclopes</a></li>
+          <li data-nav-id="/2024/how-to-contribute/getting-started/mobile-app/index.html" class=""><a class="padding" href="/2024/how-to-contribute/getting-started/mobile-app/index.html">Mobile Application</a></li>
+          <li data-nav-id="/2024/how-to-contribute/getting-started/smartdot-simulator/index.html" class=""><a class="padding" href="/2024/how-to-contribute/getting-started/smartdot-simulator/index.html">SmartDot Simulator</a></li>
+          <li data-nav-id="/2024/how-to-contribute/getting-started/visualizer/index.html" class=""><a class="padding" href="/2024/how-to-contribute/getting-started/visualizer/index.html">Visualizer</a></li></ul></li>
+          <li data-nav-id="/2024/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-b39d3011dacb06244ac94bfc402d5e2d" aria-controls="subsections-b39d3011dacb06244ac94bfc402d5e2d" checked><label for="section-b39d3011dacb06244ac94bfc402d5e2d"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/2024/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-b39d3011dacb06244ac94bfc402d5e2d" class="morespace collapsible-menu">
+          <li data-nav-id="/2024/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/2024/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/2024/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/2024/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/2024/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/2024/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/2024/how-to-contribute/linking-domains/index.html" class=""><a class="padding" href="/2024/how-to-contribute/linking-domains/index.html">Linking Domains</a></li>
+          <li data-nav-id="/2024/how-to-contribute/webapi/index.html" class="parent alwaysopen"><input type="checkbox" id="section-e65c585685fb6b684ad58aac220d5053" aria-controls="subsections-e65c585685fb6b684ad58aac220d5053" checked><label for="section-e65c585685fb6b684ad58aac220d5053"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/2024/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-e65c585685fb6b684ad58aac220d5053" class="morespace collapsible-menu">
+          <li data-nav-id="/2024/how-to-contribute/webapi/endpoints/index.html" class=""><a class="padding" href="/2024/how-to-contribute/webapi/endpoints/index.html">Adding &amp; Managing Endpoints</a></li>
+          <li data-nav-id="/2024/how-to-contribute/webapi/security/index.html" class="active"><a class="padding" href="/2024/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/2024/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/2024/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li></ul></li>
+          <li data-nav-id="/initial-project-ideas/index.html" class=""><input type="checkbox" id="section-a62f315cf72072b34735977e2802715a" aria-controls="subsections-a62f315cf72072b34735977e2802715a"><label for="section-a62f315cf72072b34735977e2802715a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Initial Project Ideas</span></label><a class="padding" href="/initial-project-ideas/index.html">Initial Project Ideas</a><ul id="subsections-a62f315cf72072b34735977e2802715a" class="morespace collapsible-menu">
+          <li data-nav-id="/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/initial-project-ideas/phone-app---proof-of-concept/index.html" class=""><a class="padding" href="/initial-project-ideas/phone-app---proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/initial-project-ideas/simulation---first-thoughts/index.html" class=""><a class="padding" href="/initial-project-ideas/simulation---first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/project-assignments/index.html" class=""><input type="checkbox" id="section-f4989c98b5fd852012ded971c16e6659" aria-controls="subsections-f4989c98b5fd852012ded971c16e6659"><label for="section-f4989c98b5fd852012ded971c16e6659"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/project-assignments/index.html">Project Assignments</a><ul id="subsections-f4989c98b5fd852012ded971c16e6659" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2023/index.html" class="alwaysopen"><input type="checkbox" id="section-f2339630b5f6f8e9a2ac84bf7702e023" aria-controls="subsections-f2339630b5f6f8e9a2ac84bf7702e023" checked><label for="section-f2339630b5f6f8e9a2ac84bf7702e023"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2023</span></label><a class="padding" href="/project-assignments/fall-2023/index.html">Fall 2023</a><ul id="subsections-f2339630b5f6f8e9a2ac84bf7702e023" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2023/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-dc87a4758f8ba79c4ab6f17dd0ca805b" aria-controls="subsections-dc87a4758f8ba79c4ab6f17dd0ca805b" checked><label for="section-dc87a4758f8ba79c4ab6f17dd0ca805b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/project-assignments/fall-2023/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-dc87a4758f8ba79c4ab6f17dd0ca805b" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2023/analysis-and-design/backend/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/analysis-and-design/backend/index.html">Backend Team</a></li>
+          <li data-nav-id="/project-assignments/fall-2023/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/analysis-and-design/frontend/index.html">Frontend Team</a></li>
+          <li data-nav-id="/project-assignments/fall-2023/analysis-and-design/simulation/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/analysis-and-design/simulation/index.html">Simulation Team</a></li></ul></li>
+          <li data-nav-id="/project-assignments/fall-2023/project-requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-6fe78ea657f44bab87bd82b09967bbd7" aria-controls="subsections-6fe78ea657f44bab87bd82b09967bbd7" checked><label for="section-6fe78ea657f44bab87bd82b09967bbd7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Requirements</span></label><a class="padding" href="/project-assignments/fall-2023/project-requirements/index.html">Project Requirements</a><ul id="subsections-6fe78ea657f44bab87bd82b09967bbd7" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2023/project-requirements/backend/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/project-requirements/backend/index.html">Backend Requirements</a></li>
+          <li data-nav-id="/project-assignments/fall-2023/project-requirements/frontend/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/project-requirements/frontend/index.html">Frontend Requirements</a></li>
+          <li data-nav-id="/project-assignments/fall-2023/project-requirements/simulation/index.html" class=""><a class="padding" href="/project-assignments/fall-2023/project-requirements/simulation/index.html">Simulation Requirements</a></li></ul></li></ul></li>
+          <li data-nav-id="/project-assignments/fall-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-6c5f780379d2101625aed2c8beb944ac" aria-controls="subsections-6c5f780379d2101625aed2c8beb944ac" checked><label for="section-6c5f780379d2101625aed2c8beb944ac"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2024</span></label><a class="padding" href="/project-assignments/fall-2024/index.html">Fall 2024</a><ul id="subsections-6c5f780379d2101625aed2c8beb944ac" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2024/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-c8d2ffe3e29c6545f844494e20c3443c" aria-controls="subsections-c8d2ffe3e29c6545f844494e20c3443c" checked><label for="section-c8d2ffe3e29c6545f844494e20c3443c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/project-assignments/fall-2024/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-c8d2ffe3e29c6545f844494e20c3443c" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2024/analysis-and-design/backend/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/analysis-and-design/backend/index.html">Backend</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html">Ball Spinner Controller</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html">Ball Spinner Protocal</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html">BallSpinner</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/analysis-and-design/database-schema/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/analysis-and-design/database-schema/index.html">DataBase Schema</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/analysis-and-design/frontend/index.html">Frontend </a></li></ul></li>
+          <li data-nav-id="/project-assignments/fall-2024/proposal/index.html" class="alwaysopen"><input type="checkbox" id="section-12f1a107ff0f5c186ce112ac94a3e76f" aria-controls="subsections-12f1a107ff0f5c186ce112ac94a3e76f" checked><label for="section-12f1a107ff0f5c186ce112ac94a3e76f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Proposal</span></label><a class="padding" href="/project-assignments/fall-2024/proposal/index.html">Proposal</a><ul id="subsections-12f1a107ff0f5c186ce112ac94a3e76f" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2024/proposal/architecture/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/proposal/architecture/index.html">Architecture</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/proposal/current-system/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/proposal/current-system/index.html">Current System</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/proposal/design-approach/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/proposal/design-approach/index.html">Design Approach</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/proposal/future-implementations/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/proposal/future-implementations/index.html">Future Implementations</a></li></ul></li>
+          <li data-nav-id="/project-assignments/fall-2024/requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-bd2d8d0953adee01efe9aab05786442d" aria-controls="subsections-bd2d8d0953adee01efe9aab05786442d" checked><label for="section-bd2d8d0953adee01efe9aab05786442d"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Requirements</span></label><a class="padding" href="/project-assignments/fall-2024/requirements/index.html">Requirements</a><ul id="subsections-bd2d8d0953adee01efe9aab05786442d" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/fall-2024/requirements/50-working-system/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/requirements/50-working-system/index.html">50% Working System </a></li>
+          <li data-nav-id="/project-assignments/fall-2024/requirements/abstract/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/requirements/abstract/index.html">Abstract</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/requirements/final-working-system/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/requirements/final-working-system/index.html">Final Working System </a></li>
+          <li data-nav-id="/project-assignments/fall-2024/requirements/general-project-requirments/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/requirements/general-project-requirments/index.html">General Project Requirements</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/requirements/use-cases/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/requirements/use-cases/index.html">General Project Requirements</a></li>
+          <li data-nav-id="/project-assignments/fall-2024/requirements/minimum-working-system/index.html" class=""><a class="padding" href="/project-assignments/fall-2024/requirements/minimum-working-system/index.html">Minimum Working System</a></li></ul></li></ul></li>
+          <li data-nav-id="/project-assignments/spring-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-4373092b28937da97d544724ad3f31d8" aria-controls="subsections-4373092b28937da97d544724ad3f31d8" checked><label for="section-4373092b28937da97d544724ad3f31d8"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2024</span></label><a class="padding" href="/project-assignments/spring-2024/index.html">Spring 2024</a><ul id="subsections-4373092b28937da97d544724ad3f31d8" class="morespace collapsible-menu">
+          <li data-nav-id="/project-assignments/spring-2024/detailed-proposal-and-design/index.html" class=""><a class="padding" href="/project-assignments/spring-2024/detailed-proposal-and-design/index.html">Detailed Proposal and Design</a></li></ul></li></ul></li>
+          <li data-nav-id="/project-milestones/index.html" class=""><input type="checkbox" id="section-d202106d9e4d9c1f8568275a0975e756" aria-controls="subsections-d202106d9e4d9c1f8568275a0975e756"><label for="section-d202106d9e4d9c1f8568275a0975e756"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/project-milestones/index.html">Project Milestones</a><ul id="subsections-d202106d9e4d9c1f8568275a0975e756" class="morespace collapsible-menu">
+          <li data-nav-id="/project-milestones/fall-2023/index.html" class="alwaysopen"><input type="checkbox" id="section-a1c2fd14029c11d5ec35d8983220ed2c" aria-controls="subsections-a1c2fd14029c11d5ec35d8983220ed2c" checked><label for="section-a1c2fd14029c11d5ec35d8983220ed2c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2023</span></label><a class="padding" href="/project-milestones/fall-2023/index.html">Fall 2023</a><ul id="subsections-a1c2fd14029c11d5ec35d8983220ed2c" class="morespace collapsible-menu">
+          <li data-nav-id="/project-milestones/fall-2023/ms1---minimal-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2023/ms1---minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/project-milestones/fall-2023/ms2---50-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2023/ms2---50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/project-milestones/fall-2023/ms3---final-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2023/ms3---final-working-system/index.html">MS3 - Final Working System</a></li></ul></li>
+          <li data-nav-id="/project-milestones/fall-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-0e25882566f4abf70423ab34946fb116" aria-controls="subsections-0e25882566f4abf70423ab34946fb116" checked><label for="section-0e25882566f4abf70423ab34946fb116"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2024</span></label><a class="padding" href="/project-milestones/fall-2024/index.html">Fall 2024</a><ul id="subsections-0e25882566f4abf70423ab34946fb116" class="morespace collapsible-menu">
+          <li data-nav-id="/project-milestones/fall-2024/ms1---minimal-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2024/ms1---minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/project-milestones/fall-2024/ms2---50-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2024/ms2---50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/project-milestones/fall-2024/ms3---final-working-system/index.html" class=""><a class="padding" href="/project-milestones/fall-2024/ms3---final-working-system/index.html">MS3 - Final System</a></li></ul></li>
+          <li data-nav-id="/project-milestones/spring-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-4c98aa424c394ef3b774394ad8523e7c" aria-controls="subsections-4c98aa424c394ef3b774394ad8523e7c" checked><label for="section-4c98aa424c394ef3b774394ad8523e7c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2024</span></label><a class="padding" href="/project-milestones/spring-2024/index.html">Spring 2024</a><ul id="subsections-4c98aa424c394ef3b774394ad8523e7c" class="morespace collapsible-menu">
+          <li data-nav-id="/project-milestones/spring-2024/milestone-1/index.html" class=""><a class="padding" href="/project-milestones/spring-2024/milestone-1/index.html">Milestone 1</a></li>
+          <li data-nav-id="/project-milestones/spring-2024/milestone-2/index.html" class=""><a class="padding" href="/project-milestones/spring-2024/milestone-2/index.html">Milestone 2</a></li>
+          <li data-nav-id="/project-milestones/spring-2024/milestone-3/index.html" class=""><a class="padding" href="/project-milestones/spring-2024/milestone-3/index.html">Milestone 3</a></li></ul></li></ul></li>
+          <li data-nav-id="/smartdot/index.html" class=""><input type="checkbox" id="section-6ebd386426025f58498d5569169cda24" aria-controls="subsections-6ebd386426025f58498d5569169cda24"><label for="section-6ebd386426025f58498d5569169cda24"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/smartdot/index.html">SmartDot</a><ul id="subsections-6ebd386426025f58498d5569169cda24" class="morespace collapsible-menu">
+          <li data-nav-id="/smartdot/ismartdot/index.html" class=""><a class="padding" href="/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          <li data-nav-id="/technologies-used/index.html" class=""><a class="padding" href="/technologies-used/index.html">Technologies Used</a></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> CS400 RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://ycpcs.github.io/cs402-spring2024/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> CS402 RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="en" id="en" value="/2024/how-to-contribute/webapi/security/index.html" selected>English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="neon" value="neon" selected>Neon</option>
+                      <option id="auto" value="auto">Auto</option>
+                      <option id="zen-light" value="zen-light">Zen Light</option>
+                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="blue" value="blue">Blue</option>
+                      <option id="green" value="green">Green</option>
+                      <option id="learn" value="learn">Learn</option>
+                      <option id="red" value="red">Red</option>
+                      <option id="relearn" value="relearn">Relearn</option>
+                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>2023 @ RevMetrix</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1744041507" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1744041507" defer></script>
+    <script src="/js/theme.js?1744041507" defer></script>
+  </body>
+</html>

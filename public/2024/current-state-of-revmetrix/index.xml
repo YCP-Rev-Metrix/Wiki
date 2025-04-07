@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Current State of RevMetrix on Hugo Relearn Theme</title>
+    <link>//localhost:1313/2024/current-state-of-revmetrix/index.html</link>
+    <description>Recent content in Current State of RevMetrix on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/2024/current-state-of-revmetrix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Fall Backend</title>
+      <link>//localhost:1313/2024/current-state-of-revmetrix/backend-fall2024/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024/current-state-of-revmetrix/backend-fall2024/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Fall Ballspinner</title>
+      <link>//localhost:1313/2024/current-state-of-revmetrix/ballspinner/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024/current-state-of-revmetrix/ballspinner/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Fall Frontend</title>
+      <link>//localhost:1313/2024/current-state-of-revmetrix/frontend-fall2024/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024/current-state-of-revmetrix/frontend-fall2024/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Fall Simulation</title>
+      <link>//localhost:1313/2024/current-state-of-revmetrix/simulation-fall2024/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024/current-state-of-revmetrix/simulation-fall2024/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>2024 Spring Backend</title>
+      <link>//localhost:1313/2024/current-state-of-revmetrix/backend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024/current-state-of-revmetrix/backend/index.html</guid>
+      <description>&lt;h3 id=&#34;progress-of-backend-development&#34;&gt;Progress of Backend Development&lt;/h3&gt;
+&lt;h4 id=&#34;backend-architecture&#34;&gt;Backend Architecture&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/backend/BackendArc.jpg?width=40vw&amp;amp;lightbox=false&amp;amp;text-align=left&#34; alt=&#34;Backend Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;web-api---client-and-server&#34;&gt;Web API - Client and Server&lt;/h3&gt;
+&lt;p&gt;The Web API is now capable of making client-server interactions and is being hosted on a Linux Ubuntu 20.04 cloud server through DigitalOcean.  To deploy the API application, a plethora of different approaches to the task were conducted, but in the end it was easiest and most efficient to create a Docker image for the application, create a docker-compose file for the application&amp;rsquo;s Dockerfile, and transfer this file to the DigitalOcean droplet in which the only installations needed on the server were Docker and SQLServer.  Though the domain for the API will be changed further into the project, a test page for the API can be visited, but the link is currently being kept private for security reasons.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2024 Spring Frontend</title>
+      <link>//localhost:1313/2024/current-state-of-revmetrix/frontend/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024/current-state-of-revmetrix/frontend/index.html</guid>
+      <description>&lt;h3 id=&#34;progress-of-frontend-development&#34;&gt;Progress of Frontend Development&lt;/h3&gt;
+&lt;h4 id=&#34;frontend-architecture&#34;&gt;Frontend Architecture&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/frontend/FrontendArc.jpg?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Frontend Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;frontend-user-interface-wireframes&#34;&gt;Frontend User Interface Wireframes&lt;/h4&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/frontend/FrontendUIDesign.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Wireframe set 1&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/frontend/FrontendUI.jpg?width=50vw&amp;amp;lightbox=false&#34; alt=&#34;Wireframe set 2&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 50vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;local-testing-database-schema&#34;&gt;Local Testing Database Schema&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/frontend/LocalDB.jpg?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;Local DB&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    <item>
+      <title>2024 Spring Simulation</title>
+      <link>//localhost:1313/2024/current-state-of-revmetrix/simulation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024/current-state-of-revmetrix/simulation/index.html</guid>
+      <description>&lt;h3 id=&#34;progress-of-simulation-development&#34;&gt;Progress of Simulation Development&lt;/h3&gt;
+&lt;h5 id=&#34;simulation-architecture&#34;&gt;Simulation Architecture&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/simulation/SimArc.jpg?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Architecture&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;demo&#34;&gt;Demo&lt;/h5&gt;
+&lt;video class=&#34;video-shortcode&#34; preload=&#34;auto&#34; height=&#34;400&#34; width=&#34;100%&#34; margin=&#34;auto&#34; controls&gt;
+    &lt;source src=&#34;Physics_Demo.mp4&#34; type=&#34;video/mp4&#34; &gt;
+    There should have been a video here but your browser does not seem
+    to support it.
+&lt;/video&gt;
+
+&lt;h5 id=&#34;simulation-dataflow&#34;&gt;Simulation Dataflow&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/simulation/SimDF.png?width=30vw&amp;amp;lightbox=false&#34; alt=&#34;Dataflow&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 30vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;smartdot-simulator-illustration&#34;&gt;SmartDot Simulator Illustration&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/simulation/SDSim.jpg?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;SD Sim&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;textured-lane-and-gutters-setup&#34;&gt;Textured Lane and Gutters Setup&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/simulation/Lane_and_Gutters.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Textured Lane with Gutters&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;lane-reset-visual&#34;&gt;Lane Reset Visual&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/simulation/LaneReset.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Lane Reset&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;pinsetter-development-preview&#34;&gt;Pinsetter Development Preview&lt;/h5&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024/current-state-of-revmetrix/simulation/PinsetterStart.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Pinsetter&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/smartdot-simulator//index.html&#34;&gt;SmartDot Simulator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

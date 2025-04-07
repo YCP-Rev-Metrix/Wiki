@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/2024/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/backend-fall2024/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/ballspinner/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/frontend-fall2024/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/simulation-fall2024/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/backend/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/frontend/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/simulation/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/project-assignments/fall-2024/requirements/50-working-system/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-assignments/fall-2024/requirements/abstract/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/webapi/endpoints/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/webapi/endpoints/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-assignments/fall-2023/analysis-and-design/index.html</loc>
@@ -19,13 +43,10 @@
     <loc>//localhost:1313/project-assignments/fall-2024/proposal/architecture/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/getting-started/backend/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/getting-started/backend/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-assignments/fall-2024/analysis-and-design/backend/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/current-state-of-revmetrix/backend/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/initial-project-ideas/initial-database-architecture/index.html</loc>
@@ -52,25 +73,25 @@
     <loc>//localhost:1313/more/members/bryce-neptune/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/getting-started/ciclopes/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/getting-started/ciclopes/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/ci-and-cd/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/ci-and-cd/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/contributing-documentation/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/contributing-documentation/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/current-state-of-revmetrix/index.html</loc>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-assignments/fall-2024/proposal/current-system/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/current-state-of-revmetrix/backend/database-obsevation-data/index.html</loc>
+    <loc>//localhost:1313/2024/current-state-of-revmetrix/backend/database-obsevation-data/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-assignments/fall-2024/analysis-and-design/database-schema/index.html</loc>
@@ -85,10 +106,10 @@
     <loc>//localhost:1313/project-assignments/spring-2024/detailed-proposal-and-design/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/digitalocean-management/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/digitalocean-management/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/dockerizing-an-application/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/dockerizing-an-application/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/more/members/donald-hake-ii/index.html</loc>
@@ -115,9 +136,6 @@
     <loc>//localhost:1313/project-assignments/fall-2024/analysis-and-design/frontend/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/current-state-of-revmetrix/frontend/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/project-assignments/fall-2023/project-requirements/frontend/index.html</loc>
   </url>
   <url>
@@ -133,25 +151,25 @@
     <loc>//localhost:1313/project-assignments/fall-2024/requirements/use-cases/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/bluetooth/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/bluetooth/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/getting-started/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/getting-started/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/github-workflows/backend-workflow/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/github-workflows/backend-workflow/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/github-workflows/frontend-workflow/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/github-workflows/frontend-workflow/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/github-workflows/simulation-workflow/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/github-workflows/simulation-workflow/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/github-workflows/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/github-workflows/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/more/members/ian-viveiros/index.html</loc>
@@ -169,7 +187,7 @@
     <loc>//localhost:1313/more/members/jordan-carvell/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/linking-domains/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/linking-domains/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/more/members/liz-mains/index.html</loc>
@@ -178,7 +196,7 @@
     <loc>//localhost:1313/more/members/luke-dodson/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/more/members/michael-hensel/index.html</loc>
@@ -196,7 +214,7 @@
     <loc>//localhost:1313/project-assignments/fall-2024/requirements/minimum-working-system/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/getting-started/mobile-app/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/getting-started/mobile-app/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/project-milestones/fall-2023/ms1---minimal-working-system/index.html</loc>
@@ -235,16 +253,13 @@
     <loc>//localhost:1313/project-assignments/fall-2024/requirements/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/webapi/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/webapi/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/more/members/robert-wood/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/webapi/security/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/current-state-of-revmetrix/simulation/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/webapi/security/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/initial-project-ideas/simulation---first-thoughts/index.html</loc>
@@ -262,7 +277,7 @@
     <loc>//localhost:1313/smartdot/smartdothardware/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/getting-started/smartdot-simulator/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/getting-started/smartdot-simulator/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/smartdot/smartdot-simulator/index.html</loc>
@@ -286,10 +301,10 @@
     <loc>//localhost:1313/more/members/victor-pineda/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/getting-started/visualizer/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/getting-started/visualizer/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/how-to-contribute/webapi/client/index.html</loc>
+    <loc>//localhost:1313/2024/how-to-contribute/webapi/client/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/categories/index.html</loc>
