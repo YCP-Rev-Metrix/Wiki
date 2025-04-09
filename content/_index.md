@@ -7,12 +7,9 @@ disableToc=true
 ![Logo](https://raw.githubusercontent.com/YCP-Rev-Metrix/Wiki/main/static/images/logo.png?lightbox=false&height=200px)
 
 ## Quick Links
- - [Current state of RevMetrix](/current-state-of-revmetrix/index.html)
- - [How to contribute](/how-to-contribute/index.html)
- - [Initial Project Ideas](/initial-project-ideas/index.html)
- - [Project Assignments](/project-assignments/index.html)
- - [Project Milestones](/project-milestones/index.html)
+ - [2024 Capstone](/2024-Capstone/index.html)
+ - [2025 Capstone](/2025-Capstone/index.html)
+ - [What is RevMetrix](/What-is-RevMetrix/index.html)
  - [SmartDot](/smartdot/index.html)
- - [Technologies Used](/technologies-used/index.html)
 
 

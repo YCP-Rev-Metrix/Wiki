@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RevMetrix WebAPI on Hugo Relearn Theme</title>
+    <link>//localhost:1313/2024-capstone/how-to-contribute/webapi/index.html</link>
+    <description>Recent content in RevMetrix WebAPI on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/2024-capstone/how-to-contribute/webapi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding &amp; Managing Endpoints</title>
+      <link>//localhost:1313/2024-capstone/how-to-contribute/webapi/endpoints/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024-capstone/how-to-contribute/webapi/endpoints/index.html</guid>
+      <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#what-is-an-endpoint&#34;&gt;What is an Endpoint?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#what-is-a-controller&#34;&gt;What is a controller?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#what-is-a-poco&#34;&gt;What is a POCO?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#what-are-url-parameters&#34;&gt;What are Url Parameters?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#common-rest-request-methods&#34;&gt;Common Rest Request Methods&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#get&#34;&gt;GET&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#post&#34;&gt;POST&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#put&#34;&gt;PUT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#patch&#34;&gt;PATCH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#delete&#34;&gt;DELETE&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#adding-an-endpoint&#34;&gt;Adding an Endpoint&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#basic-example&#34;&gt;Basic Example&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#controller-and-method-attributes&#34;&gt;Controller and Method Attributes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#naming&#34;&gt;Naming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#returns&#34;&gt;Returns&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#authentication-and-authorization&#34;&gt;Authentication and Authorization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#returning&#34;&gt;Returning&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#returning-data&#34;&gt;Returning Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#returning-other-statuses&#34;&gt;Returning Other Statuses&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#input-parameters&#34;&gt;Input Parameters&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#url-parameters&#34;&gt;Url Parameters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#body-parameters&#34;&gt;Body Parameters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#extra-notes&#34;&gt;Extra Notes&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#adding-a-non-request-method-to-a-controller&#34;&gt;Adding a Non-request Method to a Controller&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-is-an-endpoint&#34;&gt;What is an Endpoint?&lt;/h2&gt;
+&lt;p&gt;An endpoint is a GET / POST &amp;hellip; Rest API request method that may or may not take in parameters (body or url).
+This endpoint is what actually allows others to connect to the Web API and use it&amp;rsquo;s functionality.
+A full API Endpoint may look like: &lt;a href=&#34;https://revmetrixapi.robertwood.dev/api/Test/TestTime&#34; target=&#34;_blank&#34;&gt;https://revmetrixapi.robertwood.dev/api/Test/TestTime&lt;/a&gt;.
+This specific endpoint is a GET that takes no parameters and returns the current server time in a POCO.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>//localhost:1313/2024-capstone/how-to-contribute/webapi/security/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024-capstone/how-to-contribute/webapi/security/index.html</guid>
+      <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#https&#34;&gt;Https&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#authentication-and-authorization&#34;&gt;Authentication and Authorization&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#jwt&#34;&gt;JWT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#refresh-tokens&#34;&gt;Refresh Tokens&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#roles&#34;&gt;Roles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#middleware&#34;&gt;Middleware&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#secure-randomization&#34;&gt;Secure Randomization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#security-methods&#34;&gt;Security Methods&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#hashing&#34;&gt;Hashing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#salting&#34;&gt;Salting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#signing&#34;&gt;Signing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#encryption&#34;&gt;Encryption&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Security is a crucial part of the Web API and security is managed in multiple ways. Please ensure that the security of the application remains during development.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;https&#34;&gt;Https&lt;/h2&gt;
+&lt;p&gt;Our server forces the use of HTTPS for security purposes, to ensure data sent between the API and Client is encrypted. Specifically, we use TLS, the modern version of SSL.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Web API Client</title>
+      <link>//localhost:1313/2024-capstone/how-to-contribute/webapi/client/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024-capstone/how-to-contribute/webapi/client/index.html</guid>
+      <description>&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
+&lt;p&gt;Stuff about NuGet package (github actions)&lt;/p&gt;
+&lt;p&gt;Include autogenerated swagger (github actions)&lt;/p&gt;
+&lt;p&gt;Should hugo be re-run after cloud infrastructure actions?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#nuget-package&#34;&gt;NuGet Package&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#swagger-documentation&#34;&gt;Swagger Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;nuget-package&#34;&gt;NuGet Package&lt;/h2&gt;
+&lt;p&gt;Things have changed, instead of pulling the project from GitHub, you can now use it from GitHub Packages as a standard NuGet package.&lt;/p&gt;
+&lt;p&gt;In order to do this, please add the RevMetrix GitHub as a NuGet source (may be called feeds in Rider).
+When adding this source, the name should be &lt;strong&gt;RevMetrix&lt;/strong&gt; and the actual source will be &lt;a href=&#34;https://nuget.pkg.github.com/YCP-Rev-Metrix/index.json&#34; target=&#34;_blank&#34;&gt;https://nuget.pkg.github.com/YCP-Rev-Metrix/index.json&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

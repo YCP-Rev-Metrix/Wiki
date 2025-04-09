@@ -6,7 +6,48 @@ title = "Credits"
   - [Professor Donald Hake II](../members/donald-hake-ii/index.html)
   - [Dr. David Babcock](../members/david-babcock/index.html)
 
-## Student Contributors
+
+## 2025 Student Contributors 
+Simulation Development team
+  - [Andrew Watkins (Fall 2024 and Spring 2025)](../members/Andrew-Watkins/index.html)
+  - [Carson Mack (Spring 2025)](../members/Carson-Mack/index.html)
+
+Frontend Development Team 
+- [Patrick Devine (Fall 2024 and Spring 2025)](../members/Patrick-Devine/index.html)
+
+Backend Development Team 
+- [Ryan Curry (Fall 2024 and Spring 2025)](../members/Ryan-Curry/index.html)
+- [Josh Byers (Spring 2025)](../members/Josh-Byers/index.html)
+- [Brandon Woodward (Spring 2025)](../members/Brandon-Woodward/index.html)
+
+Wiki 
+- [Andrew Watkins (Fall 2024 and Spring 2025)](../members/Andrew-Watkins/index.html)
+- [Carson Mack (Spring 2025)](../members/Carson-Mack/index.html)
+- [Josh Byers (Spring 2025)](../members/Josh-Byers/index.html)
+- [Zach (Spring 2025)](../members/Zach/index.html)
+
+
+Ball Spinner Contoller Team 
+- [Robert Fields (Fall 2024 and Spring 2025)](../members/Robert-Fields/index.html)
+- [Zach Cox (Spring 2025)](../members/Zach-Cox/index.html)
+- [Brandon Woodward (Spring 2025)](../members/Brandon-Woodward/index.html)
+
+Ball Spinner Team
+- [Sam (Fall 2024 and Spring 2025)](../members/Sam/index.html)
+- [Chris  (Fall 2024 and Spring 2025)](../members/Chris/index.html)
+- [David (Fall 2024 and Spring 2025)](../members/David/index.html)
+
+
+Cellular
+- [Carson Mack (Spring 2025)](../members/Carson-Mack/index.html)
+- [Josh Byers (Spring 2025)](../members/Josh-Byers/index.html)
+- [Zach (Spring 2025)](../members/Zach/index.html)
+- [Thomas Bywaters (Spring 2025)](../members/Thomas-Bywaters/index.html)
+
+
+
+
+## 2024 Student Contributors
 Simulation / Graphics Team
   - [Luke Dodson (Fa23, Sp24)](../members/luke-dodson/index.html)
   - [Bryce Neptune (Fa23, Sp24)](../members/bryce-neptune/index.html)

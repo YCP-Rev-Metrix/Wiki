@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Project Analysis and Design specific to the frontend team">
+    <title>Frontend Team :: Hugo Relearn Theme</title>
+    <link href="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/index.xml" rel="alternate" type="application/rss+xml" title="Frontend Team :: Hugo Relearn Theme">
+    <link href="/images/favicon.png?1744217921" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1744217921" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1744217921" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1744217921" rel="stylesheet">
+    <link href="/css/auto-complete.css?1744217921" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1744217921" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1744217921" rel="stylesheet">
+    <link href="/css/fonts.css?1744217921" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1744217921" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1744217921" rel="stylesheet">
+    <link href="/css/theme-neon.css?1744217921" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1744217921" rel="stylesheet">
+    <link href="/css/print.css?1744217921" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1744217921" rel="stylesheet">
+    <script src="/js/url.js?1744217921"></script>
+    <script src="/js/variant.js?1744217921"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='localhost:1313/';
+      window.variants && variants.init( [ 'neon', 'auto', 'zen-light', 'zen-dark', 'blue', 'green', 'learn', 'red', 'relearn', 'relearn-bright', 'relearn-light', 'relearn-dark' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/2024-capstone/project-assignments/fall-2023/analysis-and-design/simulation/index.html" title="Simulation Team (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/2024-capstone/project-assignments/fall-2023/analysis-and-design/backend/index.html" title="Backend Team (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/2024%20Capstone/Project%20Assignments/Fall%202023/Analysis%20and%20Design/Frontend/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2024-capstone/index.html"><span itemprop="name">2024 Capstone</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2024-capstone/project-assignments/index.html"><span itemprop="name">Project Assignments</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2024-capstone/project-assignments/fall-2023/index.html"><span itemprop="name">Fall 2023</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2024-capstone/project-assignments/fall-2023/analysis-and-design/index.html"><span itemprop="name">Analysis and Design</span></a><meta itemprop="position" content="5">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Frontend Team</span><meta itemprop="position" content="6"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="frontend-team">Frontend Team</h1>
+
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Theo Bloomquist, Thomas Bywaters, Michael Hensel, John Kettula, Liz Mains</th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/FrontendArc.png?width=40vw&amp;lightbox=false" alt="Frontend Arc" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>The frontend will be handling the user interface in the form of a Mobile Application. Data is pulled into the application from the SmartDot API within the bowling ball as well as the Ciclops Program which videos the throw itself. The data from both the SmartDot and Ciclops are processed and pushed into the Local Database. The Local Database will then send the data out to the server. The Unity Visualizer is embedded into the application and is fed data from a specific throw by the Mobile Application.</p>
+<p>The mobile application gives the user the ability to interact with and utilize the features of RevMetrix. Upon opening, the user is presented with a login screen where they can either sign in to an existing account or create a new one. If the user creates an account, an instance of the User class is created and their chosen username and password is set and stored in the database. If the User already has an account, the entered username and password is verified with those stored in the database, the User class is populated with their data, and they are granted access to the home page. From the homepage, the user has several options. They can view saved bowling balls or add new ones, record a throw using the SmartDot in a saved ball, record a throw video using the Ciclops camera, or view previous throws as video or SmartDot data.</p>
+<h3 id="smartdot-api">SmartDot API</h3>
+<p>The SmartDot API will facilitate communication between the mobile app and the SmartDot inside the user’s bowling ball. Using Bluetooth LE, the user will connect to a SmartDot and, after signaling the SmartDot to start, may begin recording their throw. Users will have to first scan for and select a SmartDot using bluetooth. Upon first connection, a new ball will be created for them as an instance of the Ball class. Saved bowling balls will remember their SmartDot’s bluetooth ID to allow for instant connection. While the ball is in motion during the throw, the SmartDot will transmit data back to the mobile app that will store it in an instance of the Throw class to be referenced later. Recording of data stops when the ball reaches the end of the lane or when the user signals so from the app.</p>
+<h3 id="file-reader">File Reader</h3>
+<p>The File Reader will allow the user to import video files into the desktop application, so that it can then be analyzed by Ciclops, which will extract bowling statistics from the video. A potential application of the file reader could also be writing local files to the local device. The File Reader could also be manipulated to generate files based on the data received from the SmartDot API. The File Reader is implemented within the application and is able to transmit data across the application using local variables &amp; the local database.</p>
+<h3 id="ciclops">Ciclops</h3>
+<p>An implementation of Ciclops will be another feature in the app that will analyze a bowler’s throw and extract data from it. It will use image recognition algorithms to differentiate between the bowling ball and the bowling lane. It will use each individual frame and compare it to the next frame to get varying statistics about the ball. These statistics include: speed, velocity, and curve. This information will be incredibly useful for extrapolation to calculate the metrics that will be eventually served to the user. Ciclops will be implemented directly in the application and will store information directly onto the applications local database.</p>
+<h3 id="mobile-application-user-interface">Mobile Application User Interface</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/MAUI.png?width=40vw&amp;lightbox=false" alt="Mobile App UI" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/MAUI2.png?width=40vw&amp;lightbox=false" alt="Mobile App UI2" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>All Frontend UI will be implemented using XAML backed with C#, allowing for users to view outputted, processed data that is displayed onto the screen using dynamically allocated XAML text Label classes, as well as allowing for users to input textual information &amp; click buttons. Button Classes come standard with XAML applications, their specific function is to handle “Clicked” input from the user, when “Clicked” is triggered by the user clicking a button a function defined in the XAML.CS class is executed. This level of abstraction allows for buttons to have dynamic functionality, meaning that whatever functionality is provided by one button to the user could be entirely different from the functionality provided by another button to the user. Textual input displayed on the XAML page can be handled in one of two ways, “TextChanged” &amp; “Completed”. “TextChanged” is triggered when any text within the input field is changed and, runs similarly to “Clicked” as it, it runs a function that is defined with the XAML.CS class. “Completed” functions similarly to “TextChanged,” triggering a specified event when the Enter key (Tab on Windows) is clicked. Dynamic output that is viewed by the user is handled by variables defined within the XAML.CS classes; these variables are passed from the XAML.CS class to the XAML output field (usually a text Label class) through the use of Binding Paths. Binding Paths are used by XAML classes to reference data, such as variables, that are defined and allocated by XAML.CS classes, Binding Paths access the current value of this data and are then displayed to the user by the Label class. Navigation between pages is handled by both the PushAsync and GoToAsync function that takes the String name of a pre-existing XAML &amp; XAML.CS class that defines the structure of a page that will be pushed onto the stack to be displayed to the user.</p>
+<h3 id="class-methods">Class Methods</h3>
+<h5 id="smartdot-api-1">SmartDot API</h5>
+<ul>
+<li>ScanAsync()</li>
+<li>ConnectToDeviceAsync()</li>
+<li>ConnectToKnownDeviceAsync(Guid)</li>
+<li>ReadAsync()</li>
+<li>ReadServicesAsync()</li>
+<li>ReadCharacteristicsAsync()</li>
+<li>ReadDescriptorsAsync()</li>
+<li>DisconnectAsync()</li>
+</ul>
+<h5 id="file-reader-1">File Reader</h5>
+<ul>
+<li>MakeFile(string fileName)</li>
+<li>WriteFile(string fileName, string text)</li>
+<li>Create(string fileName)</li>
+</ul>
+<h5 id="ciclops-1">Ciclops</h5>
+<ul>
+<li>TakePhoto()</li>
+<li>OnTakeVidBtnClicked(object sender, EventArgs e)</li>
+</ul>
+<h5 id="mobile-application-user-interface-1">Mobile Application User Interface</h5>
+<ul>
+<li>Clicked(object sender, EventArgs e)</li>
+<li>TextChanged(object sender, TextChangedEventArgs e)</li>
+<li>Completed(object sender, EventArgs e)</li>
+<li>PushAsync(String page)</li>
+<li>GoToAsync(String page)</li>
+</ul>
+<h5 id="user">User</h5>
+<ul>
+<li>Login(string, string)</li>
+<li>CreateAcct(string, string)</li>
+<li>AddBall(IDevice)</li>
+<li>NewGame()</li>
+<li>DeleteBall(Ball)</li>
+<li>DeleteGame(Game)</li>
+</ul>
+<h5 id="game">Game</h5>
+<ul>
+<li>AddThrow()</li>
+<li>DeleteThrow(Throw)</li>
+</ul>
+<h5 id="uml-diagram">UML Diagram</h5>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/MAUML.jpg?width=40vw&amp;lightbox=false" alt="Mobile App UML" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<h3 id="mvc-architecture">MVC Architecture</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/MVC.jpg?width=60vw&amp;lightbox=false" alt="MVC Diagram" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 60vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>Due to the design architecture of .NET MAUI, both the XAML &amp; XAML.CS classes can be considered the “controller” classes as they both handle data flow to each other. However the specific definitions of the UI are clearly handled by the XAML class and the model for which outputted data is structured is handled by the XAML.CS class. While this may be difficult to grasp at first, there are sections of code within both the XAML and XAML.CS classes that handle &amp; execute control logic amongst themselves, making these sections both the respective ‘Controller’ of this diagram.</p>
+<h3 id="local-testing-database-schema">Local Testing Database Schema</h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/LDBS.jpg?width=40vw&amp;lightbox=false" alt="DBSchema" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<p>The primary purpose of the local database that is hosted by the frontend application is to temporarily store user information so that it can be transmitted via Web API to the backends Cloud infrastructure for long-term storage. The backend team will be handling the creation of this local database, while we will create a dummy database purely for testing purposes. This is to allow for the frontend team to retrieve data to ensure the functionality of application features. As seen above, the schema of this database is almost identical to the schema of the backend team’s local database as they will be storing similar information. The main difference being the User Table which will be used for testing users while the server databases are being built. This dummy database is also to ensure seamless integration between the frontend and backend team when they eventually come together to combine their systems.</p>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/index.html">
+  <img src="https://raw.githubusercontent.com/YCP-Rev-Metrix/Wiki/main/static/images/logo.png" alt="RevMetrix Logo" width="100">
+</a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1744217922" defer></script>
+        <script src="/js/lunr/lunr.min.js?1744217922" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1744217922" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1744217922" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1744217922" defer></script>
+        <script src="/js/search.js?1744217922" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/index.html" class="parent "><input type="checkbox" id="section-c3070f642099fcf44a5486c92919ac1b" aria-controls="subsections-c3070f642099fcf44a5486c92919ac1b" checked><label for="section-c3070f642099fcf44a5486c92919ac1b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2024 Capstone</span></label><a class="padding" href="/2024-capstone/index.html">2024 Capstone</a><ul id="subsections-c3070f642099fcf44a5486c92919ac1b" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/index.html" class="alwaysopen"><input type="checkbox" id="section-fe6384ce793f1a91f0823f9ffd2d2cea" aria-controls="subsections-fe6384ce793f1a91f0823f9ffd2d2cea" checked><label for="section-fe6384ce793f1a91f0823f9ffd2d2cea"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2024 RevMetrix</span></label><a class="padding" href="/2024-capstone/current-state-of-revmetrix/index.html"> 2024 RevMetrix</a><ul id="subsections-fe6384ce793f1a91f0823f9ffd2d2cea" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/backend-fall2024/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/backend-fall2024/index.html">2024 Fall Backend</a></li>
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/ballspinner/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/ballspinner/index.html">2024 Fall Ballspinner</a></li>
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/frontend-fall2024/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/frontend-fall2024/index.html">2024 Fall Frontend</a></li>
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/simulation-fall2024/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/simulation-fall2024/index.html">2024 Fall Simulation</a></li>
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-d2801c027a36554919535823917d600b" aria-controls="subsections-d2801c027a36554919535823917d600b" checked><label for="section-d2801c027a36554919535823917d600b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2024 Spring Backend</span></label><a class="padding" href="/2024-capstone/current-state-of-revmetrix/backend/index.html">2024 Spring Backend</a><ul id="subsections-d2801c027a36554919535823917d600b" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/frontend/index.html">2024 Spring Frontend</a></li>
+          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/simulation/index.html">2024 Spring Simulation</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/index.html" class="alwaysopen"><input type="checkbox" id="section-6467e90030ac37ae005ffddea36e179c" aria-controls="subsections-6467e90030ac37ae005ffddea36e179c" checked><label for="section-6467e90030ac37ae005ffddea36e179c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/2024-capstone/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-6467e90030ac37ae005ffddea36e179c" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/how-to-contribute/ci-and-cd/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/ci-and-cd/index.html">Continuous Integration/Deployment</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/digitalocean-management/index.html" class="alwaysopen"><input type="checkbox" id="section-d6419f8d6d5549b86433617dbf36a0ab" aria-controls="subsections-d6419f8d6d5549b86433617dbf36a0ab" checked><label for="section-d6419f8d6d5549b86433617dbf36a0ab"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/2024-capstone/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-d6419f8d6d5549b86433617dbf36a0ab" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/dockerizing-an-application/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/bluetooth/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/bluetooth/index.html">Getting Started</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/getting-started/index.html" class="alwaysopen"><input type="checkbox" id="section-d930a38fc12b87492a8b38222e612edd" aria-controls="subsections-d930a38fc12b87492a8b38222e612edd" checked><label for="section-d930a38fc12b87492a8b38222e612edd"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Getting Started</span></label><a class="padding" href="/2024-capstone/how-to-contribute/getting-started/index.html">Getting Started</a><ul id="subsections-d930a38fc12b87492a8b38222e612edd" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/how-to-contribute/getting-started/backend/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/getting-started/backend/index.html">Backend</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/getting-started/ciclopes/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/getting-started/ciclopes/index.html">Ciclopes</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/getting-started/mobile-app/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/getting-started/mobile-app/index.html">Mobile Application</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/getting-started/smartdot-simulator/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/getting-started/smartdot-simulator/index.html">SmartDot Simulator</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/getting-started/visualizer/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/getting-started/visualizer/index.html">Visualizer</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-026812ecfb9f5185e3a500cc0b4855ed" aria-controls="subsections-026812ecfb9f5185e3a500cc0b4855ed" checked><label for="section-026812ecfb9f5185e3a500cc0b4855ed"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/2024-capstone/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-026812ecfb9f5185e3a500cc0b4855ed" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/linking-domains/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/linking-domains/index.html">Linking Domains</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/webapi/index.html" class="alwaysopen"><input type="checkbox" id="section-7362f59ce3d319306f0e9b0a7c1f061f" aria-controls="subsections-7362f59ce3d319306f0e9b0a7c1f061f" checked><label for="section-7362f59ce3d319306f0e9b0a7c1f061f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/2024-capstone/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-7362f59ce3d319306f0e9b0a7c1f061f" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/how-to-contribute/webapi/endpoints/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/webapi/endpoints/index.html">Adding &amp; Managing Endpoints</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/webapi/security/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/2024-capstone/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/2024-capstone/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li>
+          <li data-nav-id="/2024-capstone/initial-project-ideas/index.html" class="alwaysopen"><input type="checkbox" id="section-5ae9bb8a028eced732de4b7d312273dd" aria-controls="subsections-5ae9bb8a028eced732de4b7d312273dd" checked><label for="section-5ae9bb8a028eced732de4b7d312273dd"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Initial Project Ideas</span></label><a class="padding" href="/2024-capstone/initial-project-ideas/index.html">Initial Project Ideas</a><ul id="subsections-5ae9bb8a028eced732de4b7d312273dd" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/2024-capstone/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/2024-capstone/initial-project-ideas/phone-app---proof-of-concept/index.html" class=""><a class="padding" href="/2024-capstone/initial-project-ideas/phone-app---proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/2024-capstone/initial-project-ideas/simulation---first-thoughts/index.html" class=""><a class="padding" href="/2024-capstone/initial-project-ideas/simulation---first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-assignments/index.html" class="parent alwaysopen"><input type="checkbox" id="section-4673ea8b4825e398128a8e39c489627c" aria-controls="subsections-4673ea8b4825e398128a8e39c489627c" checked><label for="section-4673ea8b4825e398128a8e39c489627c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/2024-capstone/project-assignments/index.html">Project Assignments</a><ul id="subsections-4673ea8b4825e398128a8e39c489627c" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/index.html" class="parent alwaysopen"><input type="checkbox" id="section-791cd997d44bb3891efdf343ea30368b" aria-controls="subsections-791cd997d44bb3891efdf343ea30368b" checked><label for="section-791cd997d44bb3891efdf343ea30368b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2023</span></label><a class="padding" href="/2024-capstone/project-assignments/fall-2023/index.html">Fall 2023</a><ul id="subsections-791cd997d44bb3891efdf343ea30368b" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/analysis-and-design/index.html" class="parent alwaysopen"><input type="checkbox" id="section-03b779b84889ccce9ed5a66eb3d9e737" aria-controls="subsections-03b779b84889ccce9ed5a66eb3d9e737" checked><label for="section-03b779b84889ccce9ed5a66eb3d9e737"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/2024-capstone/project-assignments/fall-2023/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-03b779b84889ccce9ed5a66eb3d9e737" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/analysis-and-design/backend/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2023/analysis-and-design/backend/index.html">Backend Team</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/index.html" class="active"><a class="padding" href="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/index.html">Frontend Team</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/analysis-and-design/simulation/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2023/analysis-and-design/simulation/index.html">Simulation Team</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/project-requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-5bc8ffcfbac5fd0ca9c5b7491c68e915" aria-controls="subsections-5bc8ffcfbac5fd0ca9c5b7491c68e915" checked><label for="section-5bc8ffcfbac5fd0ca9c5b7491c68e915"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Requirements</span></label><a class="padding" href="/2024-capstone/project-assignments/fall-2023/project-requirements/index.html">Project Requirements</a><ul id="subsections-5bc8ffcfbac5fd0ca9c5b7491c68e915" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/project-requirements/backend/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2023/project-requirements/backend/index.html">Backend Requirements</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/project-requirements/frontend/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2023/project-requirements/frontend/index.html">Frontend Requirements</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2023/project-requirements/simulation/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2023/project-requirements/simulation/index.html">Simulation Requirements</a></li></ul></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-5b098cf72b4d5000e7dc9c71ed85d898" aria-controls="subsections-5b098cf72b4d5000e7dc9c71ed85d898" checked><label for="section-5b098cf72b4d5000e7dc9c71ed85d898"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2024</span></label><a class="padding" href="/2024-capstone/project-assignments/fall-2024/index.html">Fall 2024</a><ul id="subsections-5b098cf72b4d5000e7dc9c71ed85d898" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-b6324c273b82dab9bd01a421b2688c77" aria-controls="subsections-b6324c273b82dab9bd01a421b2688c77" checked><label for="section-b6324c273b82dab9bd01a421b2688c77"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/2024-capstone/project-assignments/fall-2024/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-b6324c273b82dab9bd01a421b2688c77" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/analysis-and-design/backend/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/analysis-and-design/backend/index.html">Backend</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html">Ball Spinner Controller</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html">Ball Spinner Protocal</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html">BallSpinner</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/analysis-and-design/database-schema/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/analysis-and-design/database-schema/index.html">DataBase Schema</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/analysis-and-design/frontend/index.html">Frontend </a></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/proposal/index.html" class="alwaysopen"><input type="checkbox" id="section-8c6ec9bf1fe33250ec5954ee1a6a0099" aria-controls="subsections-8c6ec9bf1fe33250ec5954ee1a6a0099" checked><label for="section-8c6ec9bf1fe33250ec5954ee1a6a0099"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Proposal</span></label><a class="padding" href="/2024-capstone/project-assignments/fall-2024/proposal/index.html">Proposal</a><ul id="subsections-8c6ec9bf1fe33250ec5954ee1a6a0099" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/proposal/architecture/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/proposal/architecture/index.html">Architecture</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/proposal/current-system/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/proposal/current-system/index.html">Current System</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/proposal/design-approach/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/proposal/design-approach/index.html">Design Approach</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/proposal/future-implementations/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/proposal/future-implementations/index.html">Future Implementations</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-17eee6870c9ba2bbee81bc26a9b0b6b0" aria-controls="subsections-17eee6870c9ba2bbee81bc26a9b0b6b0" checked><label for="section-17eee6870c9ba2bbee81bc26a9b0b6b0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Requirements</span></label><a class="padding" href="/2024-capstone/project-assignments/fall-2024/requirements/index.html">Requirements</a><ul id="subsections-17eee6870c9ba2bbee81bc26a9b0b6b0" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/requirements/50-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/requirements/50-working-system/index.html">50% Working System </a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/requirements/abstract/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/requirements/abstract/index.html">Abstract</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/requirements/final-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/requirements/final-working-system/index.html">Final Working System </a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/requirements/general-project-requirments/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/requirements/general-project-requirments/index.html">General Project Requirements</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/requirements/use-cases/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/requirements/use-cases/index.html">General Project Requirements</a></li>
+          <li data-nav-id="/2024-capstone/project-assignments/fall-2024/requirements/minimum-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/fall-2024/requirements/minimum-working-system/index.html">Minimum Working System</a></li></ul></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-assignments/spring-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-6b7aff81fcabee9ab7751c64fea6013f" aria-controls="subsections-6b7aff81fcabee9ab7751c64fea6013f" checked><label for="section-6b7aff81fcabee9ab7751c64fea6013f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2024</span></label><a class="padding" href="/2024-capstone/project-assignments/spring-2024/index.html">Spring 2024</a><ul id="subsections-6b7aff81fcabee9ab7751c64fea6013f" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-assignments/spring-2024/detailed-proposal-and-design/index.html" class=""><a class="padding" href="/2024-capstone/project-assignments/spring-2024/detailed-proposal-and-design/index.html">Detailed Proposal and Design</a></li></ul></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-milestones/index.html" class="alwaysopen"><input type="checkbox" id="section-401116e46aee4752cba000b834e6d0cb" aria-controls="subsections-401116e46aee4752cba000b834e6d0cb" checked><label for="section-401116e46aee4752cba000b834e6d0cb"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/2024-capstone/project-milestones/index.html">Project Milestones</a><ul id="subsections-401116e46aee4752cba000b834e6d0cb" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-milestones/fall-2023/index.html" class="alwaysopen"><input type="checkbox" id="section-6250b293979ec6320a1ddbbb07a83e0c" aria-controls="subsections-6250b293979ec6320a1ddbbb07a83e0c" checked><label for="section-6250b293979ec6320a1ddbbb07a83e0c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2023</span></label><a class="padding" href="/2024-capstone/project-milestones/fall-2023/index.html">Fall 2023</a><ul id="subsections-6250b293979ec6320a1ddbbb07a83e0c" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-milestones/fall-2023/ms1---minimal-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/fall-2023/ms1---minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/2024-capstone/project-milestones/fall-2023/ms2---50-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/fall-2023/ms2---50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/2024-capstone/project-milestones/fall-2023/ms3---final-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/fall-2023/ms3---final-working-system/index.html">MS3 - Final Working System</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-milestones/fall-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-dd8919d92c6e66eeb368751e2fe109b9" aria-controls="subsections-dd8919d92c6e66eeb368751e2fe109b9" checked><label for="section-dd8919d92c6e66eeb368751e2fe109b9"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2024</span></label><a class="padding" href="/2024-capstone/project-milestones/fall-2024/index.html">Fall 2024</a><ul id="subsections-dd8919d92c6e66eeb368751e2fe109b9" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-milestones/fall-2024/ms1---minimal-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/fall-2024/ms1---minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/2024-capstone/project-milestones/fall-2024/ms2---50-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/fall-2024/ms2---50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/2024-capstone/project-milestones/fall-2024/ms3---final-working-system/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/fall-2024/ms3---final-working-system/index.html">MS3 - Final System</a></li></ul></li>
+          <li data-nav-id="/2024-capstone/project-milestones/spring-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-f9af363474e6fb4797acbd172680eaa3" aria-controls="subsections-f9af363474e6fb4797acbd172680eaa3" checked><label for="section-f9af363474e6fb4797acbd172680eaa3"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2024</span></label><a class="padding" href="/2024-capstone/project-milestones/spring-2024/index.html">Spring 2024</a><ul id="subsections-f9af363474e6fb4797acbd172680eaa3" class="morespace collapsible-menu">
+          <li data-nav-id="/2024-capstone/project-milestones/spring-2024/milestone-1/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/spring-2024/milestone-1/index.html">Milestone 1</a></li>
+          <li data-nav-id="/2024-capstone/project-milestones/spring-2024/milestone-2/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/spring-2024/milestone-2/index.html">Milestone 2</a></li>
+          <li data-nav-id="/2024-capstone/project-milestones/spring-2024/milestone-3/index.html" class=""><a class="padding" href="/2024-capstone/project-milestones/spring-2024/milestone-3/index.html">Milestone 3</a></li></ul></li></ul></li>
+          <li data-nav-id="/2024-capstone/technologies-used/index.html" class=""><a class="padding" href="/2024-capstone/technologies-used/index.html">Technologies Used</a></li></ul></li>
+          <li data-nav-id="/2025-capstone/index.html" class=""><input type="checkbox" id="section-094e292a0854668372adbafbc6cf0427" aria-controls="subsections-094e292a0854668372adbafbc6cf0427"><label for="section-094e292a0854668372adbafbc6cf0427"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2025 Capstone</span></label><a class="padding" href="/2025-capstone/index.html">2025 Capstone</a><ul id="subsections-094e292a0854668372adbafbc6cf0427" class="morespace collapsible-menu">
+          <li data-nav-id="/2025-capstone/project-assignments/index.html" class=""><a class="padding" href="/2025-capstone/project-assignments/index.html">2025 Project Assignments</a></li>
+          <li data-nav-id="/2025-capstone/project-milestones/index.html" class=""><a class="padding" href="/2025-capstone/project-milestones/index.html">2025 Project Milestones</a></li>
+          <li data-nav-id="/2025-capstone/cureent-state-of-revmetrix/index.html" class=""><a class="padding" href="/2025-capstone/cureent-state-of-revmetrix/index.html">2025 RevMetrix</a></li>
+          <li data-nav-id="/2025-capstone/technologies-used/index.html" class=""><a class="padding" href="/2025-capstone/technologies-used/index.html">2025 Technologies Used</a></li></ul></li>
+          <li data-nav-id="/what-is-revmetrix/index.html" class=""><a class="padding" href="/what-is-revmetrix/index.html">Current State of RevMetrix</a></li>
+          <li data-nav-id="/smartdot/index.html" class=""><input type="checkbox" id="section-6ebd386426025f58498d5569169cda24" aria-controls="subsections-6ebd386426025f58498d5569169cda24"><label for="section-6ebd386426025f58498d5569169cda24"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/smartdot/index.html">SmartDot</a><ul id="subsections-6ebd386426025f58498d5569169cda24" class="morespace collapsible-menu">
+          <li data-nav-id="/smartdot/ismartdot/index.html" class=""><a class="padding" href="/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> CS400 RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://ycpcs.github.io/cs402-spring2024/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> CS402 RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showVariantSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch showVariantSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="en" id="en" value="/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/index.html" selected>English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch showVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="neon" value="neon" selected>Neon</option>
+                      <option id="auto" value="auto">Auto</option>
+                      <option id="zen-light" value="zen-light">Zen Light</option>
+                      <option id="zen-dark" value="zen-dark">Zen Dark</option>
+                      <option id="blue" value="blue">Blue</option>
+                      <option id="green" value="green">Green</option>
+                      <option id="learn" value="learn">Learn</option>
+                      <option id="red" value="red">Red</option>
+                      <option id="relearn" value="relearn">Relearn</option>
+                      <option id="relearn-bright" value="relearn-bright">Relearn Bright</option>
+                      <option id="relearn-light" value="relearn-light">Relearn Light</option>
+                      <option id="relearn-dark" value="relearn-dark">Relearn Dark</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>2023 @ RevMetrix</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1744217922" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1744217922" defer></script>
+    <script src="/js/theme.js?1744217922" defer></script>
+  </body>
+</html>

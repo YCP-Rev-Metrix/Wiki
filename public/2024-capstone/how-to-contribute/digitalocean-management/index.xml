@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DigitalOcean Management on Hugo Relearn Theme</title>
+    <link>//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/index.html</link>
+    <description>Recent content in DigitalOcean Management on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Droplet</title>
+      <link>//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</guid>
+      <description>&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;Before continuing with any of the following steps, make sure to create an account on &lt;a href=&#34;https://DigitalOcean.com&#34; target=&#34;_blank&#34;&gt;DigitalOcean&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;creating-a-new-project&#34;&gt;Creating a New Project&lt;/h3&gt;
+&lt;p&gt;After creating an account, login and head over to the dashboard.  From here, in the top left of the page, click the &amp;ldquo;New Project&amp;rdquo; button as seen below:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/new.png?lightbox=false&amp;amp;text-align=left&#34; alt=&#34;New Project&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Fill out the necessary fields, and in the &amp;ldquo;move resources into &amp;hellip;&amp;rdquo; window, click &amp;ldquo;skip this step&amp;rdquo; at the bottom to move on since the droplet is being made from scratch.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Managing a Droplet</title>
+      <link>//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/managing-a-droplet/index.html</guid>
+      <description>&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;Before continuing with any of the following steps, make sure that you have created an account on &lt;a href=&#34;https://DigitalOcean.com&#34; target=&#34;_blank&#34;&gt;DigitalOcean&lt;/a&gt; and have already created a Droplet.  If you have not yet created a Droplet, see the &amp;ldquo;&lt;a href=&#34;../creating-a-droplet/&#34;&gt;Creating a Droplet&lt;/a&gt;&amp;rdquo; page to find out how to do so.&lt;/p&gt;
+&lt;h2 id=&#34;navigating-to-the-droplet&#34;&gt;Navigating to the Droplet&lt;/h2&gt;
+&lt;p&gt;To begin learning how to manage a DigitalOcean Droplet, select the &amp;ldquo;Projects&amp;rdquo; dropdown in the top left of the main dashboard page and click on the project in which the Droplet you want to manage is located:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
