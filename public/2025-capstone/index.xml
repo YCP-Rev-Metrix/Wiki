@@ -11,14 +11,24 @@
       <link>//localhost:1313/2025-capstone/project-assignments/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2025-capstone/project-assignments/index.html</guid>
-      <description></description>
+      <description>&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-assignments/project-proposal/index.html&#34;&gt;Project Proposal&lt;/a&gt;&lt;p&gt;2025 &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>2025 RevMetrix</title>
       <link>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/index.html</guid>
-      <description></description>
+      <description>&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/backend/index.html&#34;&gt;Backend&lt;/a&gt;&lt;p&gt;Backend 2025 spring &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/frontend/index.html&#34;&gt;Ball Spinner Application&lt;/a&gt;&lt;p&gt;Frontend 2025 spring&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/bsc/index.html&#34;&gt;Ball Spinner Controller&lt;/a&gt;&lt;p&gt;Ball Spinner Controller 2025 spring&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/ballspinner/index.html&#34;&gt;Ballspinner Physical Design&lt;/a&gt;&lt;p&gt;Ballspinner 2025 spring&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/cellular/index.html&#34;&gt;Mobile Application&lt;/a&gt;&lt;p&gt;Cellular&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>2025 Technologies Used</title>
@@ -32,7 +42,12 @@
       <link>//localhost:1313/2025-capstone/project-milestones/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2025-capstone/project-milestones/index.html</guid>
-      <description></description>
+      <description>&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/milestone-1/index.html&#34;&gt;Milestone 1&lt;/a&gt;&lt;p&gt;Milestone 1&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/milestone-2/index.html&#34;&gt;Milestone 2&lt;/a&gt;&lt;p&gt;Milestone 2&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/milestone-3/index.html&#34;&gt;Milestone 3&lt;/a&gt;&lt;p&gt;Milestone 3&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

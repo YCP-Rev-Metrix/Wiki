@@ -70,14 +70,14 @@ var relearn_search_index = [
     "uri": "/2025-capstone/index.html"
   },
   {
-    "content": "",
+    "content": "\rProject Proposal2025 ",
     "description": "2025 Capstone",
     "tags": null,
     "title": "2025 Project Assignments",
     "uri": "/2025-capstone/project-assignments/index.html"
   },
   {
-    "content": "",
+    "content": "\rBackendBackend 2025 spring Ball Spinner ApplicationFrontend 2025 spring\nBall Spinner ControllerBall Spinner Controller 2025 spring\nBallspinner Physical DesignBallspinner 2025 spring\nMobile ApplicationCellular\n",
     "description": "2025 Capstone",
     "tags": null,
     "title": "2025 RevMetrix",
@@ -721,7 +721,7 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-milestones/index.html"
   },
   {
-    "content": "",
+    "content": "\rMilestone 1Milestone 1\nMilestone 2Milestone 2\nMilestone 3Milestone 3\n",
     "description": "2025 spring Project Milestones ",
     "tags": null,
     "title": "Project Milestones",
