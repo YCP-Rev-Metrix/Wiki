@@ -35,7 +35,12 @@
       <link>//localhost:1313/2025-capstone/technologies-used/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2025-capstone/technologies-used/index.html</guid>
-      <description></description>
+      <description>&lt;h3 id=&#34;technologies-used&#34;&gt;Technologies Used&lt;/h3&gt;
+&lt;p&gt;The following is a list of all technologies used by the RevMetrix project, with descriptions of each technology and how it applies to the project.&lt;/p&gt;
+&lt;h3 id=&#34;raspberry-pi&#34;&gt;Raspberry PI&lt;/h3&gt;
+&lt;p&gt;The Raspberry Pi  is a computer used by the Ball Spinner Controller. The current implementation uses a Raspberry PI 4 as shown in Figure 1.3.1, but the Raspberry PI 3 is also compatible.&lt;/p&gt;
+&lt;h3 id=&#34;metamotions&#34;&gt;MetaMotionS&lt;/h3&gt;
+&lt;p&gt;The MetaMotionS is an inertial measurement unit that contains the same sensors as the proposed future SmartDot module. The MetaMotion module contains a gyroscope, accelerometer, magnetometer, barometer, temperature, and ambient light sensor, and it is currently being used to emulate the SmartDot module, which has not yet been constructed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Project Milestones</title>
