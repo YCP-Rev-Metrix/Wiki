@@ -6,5 +6,12 @@
     <description>Recent content in 2025 Project Assignments on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="//localhost:1313/2025-capstone/project-assignments/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project Proposal</title>
+      <link>//localhost:1313/2025-capstone/project-assignments/project-proposal/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/project-assignments/project-proposal/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

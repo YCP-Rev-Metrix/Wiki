@@ -35,17 +35,17 @@
 &lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
 &lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-assignments/index.html&#34;&gt;2025 Project Assignments&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/index.html&#34;&gt;2025 Project Milestones&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/index.html&#34;&gt;2025 RevMetrix&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/technologies-used/index.html&#34;&gt;2025 Technologies Used&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;2025 spring Project Milestones &lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
-      <title>Current State of RevMetrix</title>
-      <link>//localhost:1313/what-is-revmetrix/index.html</link>
+      <title>Ciclopes</title>
+      <link>//localhost:1313/ciclopes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/what-is-revmetrix/index.html</guid>
-      <description></description>
+      <guid>//localhost:1313/ciclopes/index.html</guid>
+      <description>&lt;p&gt;Ciclopes is a software developed by Dr. Babcock. It is designed to detect and trace the path of the bowling ball that has traveled down a lane from an external view. The input is a video file that requires calibration based on the camera position but can generally be placed in any position that has visibility of the full lane. This software lets users easily view their bowling shots&amp;rsquo; external metrics. It is one of the two legacy innovations of the RevMetrix project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SmartDot</title>
@@ -58,6 +58,15 @@
 &lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/smartdothardware/index.html&#34;&gt;SmartDot Hardware&lt;/a&gt;&lt;p&gt;Information about the SmartDot hardware&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;//localhost:1313/smartdot/smartdot-simulator/index.html&#34;&gt;SmartDot Simulator&lt;/a&gt;&lt;p&gt;Information about the SmartDot Simulator&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>What is RevMetrix</title>
+      <link>//localhost:1313/what-is-revmetrix/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/what-is-revmetrix/index.html</guid>
+      <description>&lt;h4 id=&#34;abstract&#34;&gt;Abstract&lt;/h4&gt;
+&lt;p&gt;The RevMetrix project is a project that seeks to capture a bowling ball&amp;rsquo;s motion as it travels down a lane.  The project is based on two components developed initially by Professor Hake and Dr. Babcock. The first is the SmartDot module, developed by Professor Hake. The SmartDot module is a piece of hardware that sits inside the finger insert of the bowling ball. The next component is the Ciclopes software. Ciclopes is a motion detection software that can track and display the path traveled by a bowling ball with an uploaded video of a bowling ball shot. The RevMetrix team is building a device called a Ball Spinner.
+A Ball Spinner is a bowling analysis tool that recreates the movement and rotation of a bowling ball during a game. The bowling ball sits in an enclosure where it is pressed against three motors, allowing it to spin in three orthogonal axes. Users can simulate shots through an application interface by entering input parameters for the shot, where these parameters are sent to the Ball Spinner, and the motors move the bowling ball as if it were actually on a bowling lane. Complex physics equations will account for the input parameters and the other external conditions to calculate instructions for the motors to move the ball as realistically as possible. A SmartDot module that resides in the ball allows users to visualize what it would be doing if it moved on a lane and store shots for later replaying/analyzing previous shots. In this paper, we will provide more context behind the RevMetrix project and any important concepts needed to understand our work, go over both the design and the implementation of each of the aspects of our project, and discuss any future work that still needs to be completed for the project.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

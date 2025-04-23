@@ -63,7 +63,7 @@ var relearn_search_index = [
     "uri": "/2024-capstone/current-state-of-revmetrix/simulation/index.html"
   },
   {
-    "content": "2025 Capstone 2025 Project Assignments2025 Capstone\n2025 Project Milestones2025 Capstone\n2025 RevMetrix2025 Capstone\n2025 Technologies Used2025 Capstone\n",
+    "content": "2025 Capstone 2025 Project Assignments2025 Capstone\n2025 RevMetrix2025 Capstone\n2025 Technologies Used2025 Capstone\nProject Milestones2025 spring Project Milestones ",
     "description": "2025 Capstone",
     "tags": null,
     "title": "2025 Capstone",
@@ -75,13 +75,6 @@ var relearn_search_index = [
     "tags": null,
     "title": "2025 Project Assignments",
     "uri": "/2025-capstone/project-assignments/index.html"
-  },
-  {
-    "content": "",
-    "description": "2025 Capstone",
-    "tags": null,
-    "title": "2025 Project Milestones",
-    "uri": "/2025-capstone/project-milestones/index.html"
   },
   {
     "content": "",
@@ -161,6 +154,13 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-assignments/fall-2024/analysis-and-design/backend/index.html"
   },
   {
+    "content": "Database Overview: The Revmetrix project seeks to provide comprehensive tools for bowlers and researchers who can use the provided metrics to improve their game or study the physics of bowling. These tools provided to the end user take the form of the Ball Spinner Application and the Mobile Application, both of which require a database schema to serve the goals of the project. The Ball Spinner application schema is tailored for researchers aiming to refine the algorithms that generate bowling metrics, with a focus on simulated shot data collected through the BSA. In contrast, the Mobile Application schema emphasizes usability and game tracking, offering data more relevant to a bowler’s personal performance.\nOverall Architecture The overall architecture of the RevMetrix database schema stores bowler data (from the Mobile App) along with research data (from the Ball Spinner App). A comprehensive view of the integrated schema is pictured in Figure 1. The mobile schema is towards the left and the Ball Spinner App schema towards the right, with shared parent tables in the center to minimize redundancy across both schemas.\nThis integrated schema will be cloud-hosted and used by both the Ball Spinner and Mobile applications to back up their respective data.\nCurrent BSA Schema Figure 2 displays the schema used for the BSA. This implementation currently resides on the cloud hosted on a Digital Ocean server. This provides RevMetrix researchers centralized access to a wealth of simulated shot data, enabling further refinement of the signal processing algorithms that provide bowling metrics.\nRelevant data includes simulated shots with initial parameters, the ball used, and associated SmartDot sensor data collected from the shot.\nMobile Schema Figure 3 represents the overall architecture of the mobile application and its cloud integration. Data is stored locally on the user’s device using SQLite and synchronized with an existing cloud database. Because two applications, the App and BSA, share access to the same database, the schema includes inherited tables containing shared information. Each application can then extend these base tables with additional, application-specific data as needed.\n",
+    "description": "Backend 2025 spring ",
+    "tags": null,
+    "title": "Backend",
+    "uri": "/2025-capstone/cureent-state-of-revmetrix/backend/index.html"
+  },
+  {
     "content": "Architecture Initial Database Architecture Local Database (Localhost) Local Database Schema User Database (Cloud Server) User Database Schema Raw Database (Cloud Server) Raw Database Schema ",
     "description": "UML diagrams representing the initial database architecture and schemas",
     "tags": null,
@@ -182,11 +182,25 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-assignments/fall-2023/analysis-and-design/backend/index.html"
   },
   {
+    "content": "Ball Spinner Application Overview The purpose of the Ball Spinner Application (BSA) is to provide an interface for controlling and receiving data from the Ball Spinner as well as the SmartDot. Ball Spinner data, along with user related data used to facilitate Simulated Shots with the Ball Spinner, is also saved to the cloud database. Users are provided with a streamlined view (Figure 1) that displays all relevant data received during a shot. This includes a graphical representation of incoming SmartDot data, as well as a simulation that visually displays the movement of the ball as it spins in the Ball Spinner.\nShots Once connected to the Ball Spinner, the user can begin a Simulated Shot, a session controlled by the BSA. The user first sets initial values, including start, end, and inflection points on a Bézier curve (Figure 2), which defines the interpolated motor instructions (shown in red). They must also specify the ball used and add any comments. From here, the shot can commence.\nWhen a shot begins, motor instructions are sent to the Ball Spinner Controller, which then returns sensor data from the SmartDot and motor encoder readings. This data is used to animate the simulation and update the corresponding graphs.\nCommunication The Ball Spinner Application uses a TCP connection to facilitate communication with the Ball Spinner Controller.\nThe BSA primarily sends the following key commands: Motor instructions SmartDot configuration Start/Stop commands for shot initiation\nUser Data sers can save shots and balls to the database, both of which are managed on the pages pictured on the right. Saved shots can be reused for new simulations and managed through replay or deletion.\n",
+    "description": "Frontend 2025 spring",
+    "tags": null,
+    "title": "Ball Spinner Application",
+    "uri": "/2025-capstone/cureent-state-of-revmetrix/frontend/index.html"
+  },
+  {
     "content": " Robert Fields The Ball Spinner Controller can be split into 3 separate (but crucial) classes that all come together to transmit and receive data from the Ball Spinner Application: the motor class, the sensor class, and the SmartDot interface. The motor and sensor classes consist of a connection function that takes the name of the port as a parameter and a disconnect function. The auxiliary sensor class (AuxSensor) also incorporates a read function that takes in the range of values to read from and the sample rate for the sensors. This will take the data polled from the sensors and store it in the class-byte array. The motor function (along with the connect/disconnect methods) incorporates a function to change the power of a specific motor depending on the specific motor instruction and a function to change the speed of the motor from the incoming motor instructions.\nThe smartDot interface will hold all of the functions that the future SmartDot module will incorporate. This includes the start functions of the 9DoF sensors and the light sensor that takes sample rate and the range as parameters coupled with stop functions for each. When prompted by the BallSpinnerController class, the 9DoF modules will pass the values taken at the specified sample frequency in the byte array. For filtering in the Bluetooth scanner, each class that implements the iSmartDot interface will store its UUID as a Static String. Besides a terminal-base SmartDot simulator, the only class so far that will implement the interface is a MetaMotionS module that has functions to turn on and off the on-sensor LED light.\nThe BallSpinnerController will have access to both the AuxSensor class, Motor class, and the iSmartDot module as well as several variables that will handle communications back and forth from the Application. On startup, the three threads will be started up to handle communications for each of the main classes discussed previously mentioned. The BallSpinnerController class will listen to the USB port for all messages from the application, and from there, the readCommsChannel function will parse the header and the number of bytes in the message to parse out the cyclic redundancy check appended to the end of every message to confirm that the message there were no errors in transmission. If so, a call to the sendReject function will be made to ask to the application to resend the message. This function will also handle the quick acknowledgments or errors that need to be sent from the controller. If the CRC passes, the readCommsChannel will pass the message to either the sensorBuffer, the motorBuffer, or the smartDot buffer. depending on which buffer the message was sent to, the respective thread will parse out the message and handle the message depending on the request. Once the protocol reaches the point that the BallSpinnerController needs to send the messages back to the Ball Spinner Application, the byte data for the message will be saved in the sensorTxQueue to await send on the comms channel.\n",
     "description": "Design and Analysis Information and Links to the Document and Slideshow",
     "tags": null,
     "title": "Ball Spinner Controller",
     "uri": "/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html"
+  },
+  {
+    "content": "Overview Ball Spinner Controller (BSC) acts as intermediary between Ball Spinner Application (BSA) and Ball Spinner Data from Sensors is sent to the BSA and graphed against simulated data of the expected sensor data Human Machine Interface (HMI) is 7” touch screen interaction assistant, standalone driver, and debugger for the BSC. The HMI can be run in local mode and control all hardware within the BSC The HMI can also graph and display the sensor data\nBSC Communication The BSC at its core is a communication hub, with 5 separate types of devices that are interacted with, all fed through the Raspberry Pi 4 The Ball Spinner Application – connected over WIFI using TCP for wireless control over Ball Spinner Data Current Sensor IC’s – connected to an ADC transmitting using I2C to read current through each motor Motor Encoders – connected to 5 digital inputs on Raspberry Pi to read data, enable movement, and change direction MetaMotionS Module – connected over Bluetooth BLE as the 9 Degrees of Freedom module inside of the bowling ball, sending accelerometer, gyroscope, magnetometer, and light sensor data All Data communication is displayed through the HMI to allow for user interactions\nBSC Implementation The BSC stores the power supply for the system along with the PCB for the system\nThe PCB contains terminal blocks to connect all wires from the motors and encoders to the Raspberry Pi GPIO pins to allow for 2 Degrees of Freedom of the Ball Spinner.\nAll components are packaged inside of a 3D-printed housing with connections to external components feeding out of the back of the Controller\nThe user interacts with the Pi using the 7” touch screen display to start the software in either wireless mode or local testing mode.\n",
+    "description": "Ball Spinner Controller 2025 spring",
+    "tags": null,
+    "title": "Ball Spinner Controller",
+    "uri": "/2025-capstone/cureent-state-of-revmetrix/bsc/index.html"
   },
   {
     "content": " Logan Tyran, Ryan Curry, Robert Fields Ball Spinner Protocol The structure of the protocol can be split into three separate operations: connecting to the Ball Spinner Controller, connecting to the SmartDot module, and sending the real-time data to and from the Ball Spinner Controller. Each message will contain a header byte that will hold the hex code for the type of message followed by a byte that incorporates the message size. There is no specific size for each message, so the message size byte will be used to locate the end of the message on both sides of the system. For error detection, a 2-byte cyclic redundancy check (CRC-16) will be appended to each message. If an error is found on either side of the system, a rejection message will be sent out which will contain the supposed header byte for the other side to resend that last message.\nTo initialize the connection between the Application and the Ball Spinner Controller, the Application will first send the initialization message which consists of the MAC address of the Application. This data acts more as “dummy data” and is not particularly important for the connection besides filling up the message size to a total of 10 bytes. The Ball Spinner Controller, which is continuously reading the port, will send an acknowledgment message back to the Application, in which the Application will consider the connection established. The acknowledgment and error messages will both contain 1 byte (along with the aforementioned overhead data) which will contain a hex code for the specific type of acknowledgment or error.\nTo confirm connection to the SmartDot module, the application will send the initiate BLE signal which contains 2 Bytes to hold the integer value for the rate that the Ball Spinner Controller should be scanning for Bluetooth devices. From there, the Ball Spinner will continuously send the Bluetooth device message, which contains the name of the Bluetooth device and the MAC address. The name will be in ASCII characters with the max value being 248 bytes (including the null terminator). The Ball Spinner Controller will be sent at the specified scan rate that will also send repeated scanned values to avoid the need to send a rejection message in case an error is detected. When the user selects the appropriate module to connect to, the Application will send the MAC address of the smartDot module, which once received from the Ball Spinner Controller will stop sending the Bluetooth device message to the Application (which will act as a confirmation that the BSC received the message) and attempt to connect to the MAC Address. On connection, the Ball Spinner Controller will either send the SmartDot Confirmation message or an Error Message. The Ball Spinner Controller message will consist of the SmartDot MAC Address, and a byte for each sensor that will hold another hex code representing the max sample rates for the Accelerometer, Gyroscope, Magnetometer, and light sensor. Once the Application receives the confirmation message, the application will recognized to the user then a connection will be established. If the Application receives the error message, the Application will need to resend the BLE scan signal and restart the operation from the beginning.\nThe final and most elaborate operation of the Ball Spinner Protocol starts from the Application sending the initiate sensor message consisting of a bit-mapping for both the sample frequency and range for each sensor in the Ball Spinner. There will be two bits representing the 4 possible ranges for the scan data (2, 4, 8, 16) and an additional 3 bits for the 7 possible sample frequencies to scan at (25, 50, 100, 200, 400, 800, 1600). This will be sent for the Accelerometer, Magnetometer, Gyroscope, Light Sensor, and the 3 auxiliary sensors for a total of 35 bits stored among 5 bytes (leaving 5 zero bits). When the initiate sensor message is received from the Ball Spinner Controller, it will send an acknowledgment and wait for the application to send the Motor Instructions message. This will consist of a byte for the speed for each motor (3 Bytes total). After receiving the first motor instruction, the Ball Spinner Controller will continuously send the sensor data from the various sensors. Each Sensor data message will contain a byte that will store the type of sensor (using 3 bits to represent the 7 sensors) and the sensor’s sample rate (using 3 bits to represent the possible sample rates previously established in the initiate sensor message). Along with that, it will contain a byte for the count of the sample for that sensor, a float that stores the elapsed time (4 bytes), and finally a float for the x,y, and z axis values (4 bytes each) for a total of 37 Bytes for the sensor data. Every so often the Application will send an acknowledgment that no frames have been lost which will be determined by the sample count number from each sensor. Every time a sensor receives an out-of-order frame, the Application will send a rejection message with the number required to resend. Finally, when the roll is finished, the Application will send the Stop message which will just be an Error message with the error code correlating to the stop function.\n",
@@ -201,6 +215,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "BallSpinner",
     "uri": "/2024-capstone/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html"
+  },
+  {
+    "content": "Physical System The role of the Ball Spinner Team was to create a testing apparatus capable of spinning a bowling ball along multiple axes of rotation in a controlled manner. This controlled spinning is designed to mimic the forces experienced during a shot down the lane, which is used to benchmark and calibrate the SmartDot sensor readings within the Ball’s insert.\nProposed System 1st Axis Relies on a vice grip system with lock nuts to induce a clamping force to prevent slippage. Driven by gear and chain 2nd Axis Rotates the previous sub-system utilizing a direct drive motor paired with a lazy susan to pivot up to 90 degrees in either lateral direction 3rd Axis Directly driven to tilt the previous sub-systems up to 45 degrees in either direction.\nBowling Ball Insert The insert will allow the SmartDot chip to remain in the bowling ball securely as it spins. It must hold the chip at the right depth of the bowling ball while having clear view for the light sensor on the chip.\nTarget numbers The goal for the primary axis of rotation is 750 RPM while the secondary axis needs 10 RPM and the third axis only need 2.5 RPM. For a 16 lbs bowling the vice would need a clamping force of only 35 lbs.\n",
+    "description": "Ballspinner 2025 spring",
+    "tags": null,
+    "title": "Ballspinner Physical Design",
+    "uri": "/2025-capstone/cureent-state-of-revmetrix/ballspinner/index.html"
   },
   {
     "content": "Project Contributions WebAPI development NuGet package creation and management Backend development Contact Information Institution Email: bfleming2@ycp.edu External Links GitHub ",
@@ -227,6 +248,20 @@ var relearn_search_index = [
     "content": "Project Contributions Contact Information Institution Email: External Links ",
     "description": "External links to member and information about their contributions",
     "tags": null,
+    "title": "Byers Joshua",
+    "uri": "/more/members/josh-byers/index.html"
+  },
+  {
+    "content": "Project Contributions Contact Information Institution Email: External Links ",
+    "description": "External links to member and information about their contributions",
+    "tags": null,
+    "title": "Carson ",
+    "uri": "/more/members/carson-mack/index.html"
+  },
+  {
+    "content": "Project Contributions Contact Information Institution Email: External Links ",
+    "description": "External links to member and information about their contributions",
+    "tags": null,
     "title": "Chris Robinson",
     "uri": "/more/members/chris-robinson/index.html"
   },
@@ -236,6 +271,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Ciclopes",
     "uri": "/2024-capstone/how-to-contribute/getting-started/ciclopes/index.html"
+  },
+  {
+    "content": "Ciclopes is a software developed by Dr. Babcock. It is designed to detect and trace the path of the bowling ball that has traveled down a lane from an external view. The input is a video file that requires calibration based on the camera position but can generally be placed in any position that has visibility of the full lane. This software lets users easily view their bowling shots’ external metrics. It is one of the two legacy innovations of the RevMetrix project.\n",
+    "description": "2025 Capstone",
+    "tags": null,
+    "title": "Ciclopes",
+    "uri": "/ciclopes/index.html"
   },
   {
     "content": "Table of Contents Continuous Integration/Deployment Basics ",
@@ -257,13 +299,6 @@ var relearn_search_index = [
     "tags": null,
     "title": "Creating a Droplet",
     "uri": "/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html"
-  },
-  {
-    "content": "",
-    "description": "2025 Capstone",
-    "tags": null,
-    "title": "Current State of RevMetrix",
-    "uri": "/what-is-revmetrix/index.html"
   },
   {
     "content": "Front End Application The Mobile Application was built using a .NET MAUI framework that provides cross-platform functionality all in C#. The current version of the application takes in data from the Ciclopes program, the SmartDot API, and Unity Engine, which then stores the data in a local database. The application will receive further updates to allow the user to feed in bowling variables and operate the Ball Spinner. The Ciclopes and Unity Visualizer will have little to no updates, as they are not currently the focus of the RevMetrix project.\nThe Backend The backend currently consists of multiple important functionalities, including the Web API Server, the Web API Client, the Cloud Controller, and the RevMetrix Database. The Web API incorporates both server and client-side interfacing, making it possible for the front-end application to communicate with the databases within the server. The Cloud Controller determines traffic flow in and out of the cloud server. Finally, the Database is used to store all the data gathered from both the SmartDot and the front-end application. In future phases of the project, the Algorithm Unit will be developed and incorporated as part of the Backend which will contain Dr. Babcock and Professor Hake’s algorithms and endpoints.\nRevMetrix Documentation Website The RevMetrix Website is the main location where all the documentation surrounding the project is stored. The website is currently hosted by DigitalOcean and contains the current state of the project, installation tutorials, resources, and ways to contribute to the project. The User Interface includes a search engine on the left-hand side with all of the information neatly categorized into seven sections/subsections. The website will continue to receive updated documentation on what the current system looks like as well as changes to configuring the development environment. The website will also receive structural changes to categorization to make sifting through information easier for users.\nUnity Bowling Simulation The Unity Engine was used as a minimal working simulation software. Users of the mobile application could change the location and the curvature of the bowling ball before it was thrown. The simulation displays the ball’s speed and rotation and allows users to see the ball’s trajectory as it moves down the lane. Finally, Unity simulates the ball-hitting pins and how the pins react (i.e. their trajectory on impact and any other pins that might be affected). The Unity Engine will be used as a starting basis for the simulation side of the project, with improvement upon what currently exists to mimic what the Ball Spinner is mechanically producing.\nSmartDot Simulator The SmartDot Simulator is a .NET MAUI application made to convert data sent from either the Unity Engine or from pre-recorded SmartDot data and send the information as byte arrays similar to what the SmartDot module would send to the application.\nSmartDot Communications The SmartDot Communication process involved running a GATT server on a Raspberry Pi which handled the BLE communication. Data from the SmartDot module was then sent through Byte Arrays to the Pi, and from there to the application. The software used for SmartDot communication will be used in\n",
@@ -490,6 +525,13 @@ var relearn_search_index = [
     "uri": "/smartdot/ismartdot/index.html"
   },
   {
+    "content": "Project Contributions Contact Information Institution Email: External Links ",
+    "description": "External links to member and information about their contributions",
+    "tags": null,
+    "title": "James Devine",
+    "uri": "/more/members/james-devine/index.html"
+  },
+  {
     "content": "Project Contributions Contact Information Institution Email: jkettula@ycp.edu Phone Number: (240) 285-7449 External Links GitHub ",
     "description": "External links to member and information about their contributions",
     "tags": null,
@@ -502,6 +544,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Jordan Carvell",
     "uri": "/more/members/jordan-carvell/index.html"
+  },
+  {
+    "content": "Project Contributions Contact Information Institution Email: External Links ",
+    "description": "External links to member and information about their contributions",
+    "tags": null,
+    "title": "Kyle Franhauser",
+    "uri": "/more/members/kyle-franhauser/index.html"
   },
   {
     "content": "Overview To link a domain to an application running on the DigitalOcean Droplet, it is best practice to do so using Nginx Proxy Manager. If the proxy manager is not already setup on the Droplet, visit the getting started page and follow the instructions there to set it up.\nLinking a domain or subdomain to a specific IP address and Port number will require access to the DNS record settings of the domain through whatever provider it was purchased from. Also, access to the Droplet that is running the application that requires the domain is necessary, along with the ability to edit firewall settings for the given Droplet. Make sure all of this is available prior to linking the domain.\n*Note: Nginx Proxy Manager is already set up on the Cloud-infrastructure Droplet, so there is no need to set it up when linking domains to anything API related.\nLinking a Domain or Subdomain To link a a domain or a subdomain to the IP address of an application, you first want to create an A record in the DNS settings of your domain on its provider’s website. If you have linked a domain to DigitalOcean already from a different provider, this can be done from within DigitalOcean, under Domains -\u003e yourDomain -\u003e Create new record.\nTo create an A record for the domain, simply enter the hostname (such as example.com or site.example.com if linking a subdomain), enter the IP of the Droplet that the domain will direct traffic to (such as 192.168.xxx.xxx), and the Time-To-Live value (defaults to 3600 seconds). Then, hit Create Record and the A record will have been created. This is all that needs to be done for the DNS settings of the domain, so any windows regarding that can now be closed.\nOpening The Port For Nginx Proxy Manager To access Nginx Proxy Manager on the Droplet’s IP address after setup, a custom firewall setting must be configured. To do this, head over to the Droplet’s dashboard, go to the networking tab on the left under the Droplet’s IPv4 Address, scroll down to the “Firewalls” section, and click on either “Configure Firewall” or the name of an existing firewall. This will bring you to the Inbound and Outbound Rules page. From here, under Inbound Rules, click on the “New rule” dropdown button (under the existing rules). Select “Custom”, and then for the port range enter “81” and hit save. Now, when you go to “http://‘Droplet’sIPAddr’:81”, you will see the login page for the instance of Nginx Proxy Manager that is running on the Droplet. Login, and if you do not have an account already created, the login info will be “admin@example.com” with the password “changeme”. Be sure to change the username and password after logging in.\nCreating a Proxy Host To direct traffic through the domain/subdomain name to the application being hosted on the Droplet, it is necessary to create a new Proxy host in Nginx Proxy Manager for the domain/subdomain. To do so, after logging into the instance of Nginx Proxy Manager running on the Droplet, click the “Proxy Hosts” button on the left of the dashboard. From here you will be taken to the Proxy Hosts page. Go ahead and hit the “Add Proxy Host” button as seen below:\nThis will bring up the page below. Be sure to enter the domain/subdomain that you created an A record for earlier into the “Domain Names” field and hit the Tab key. Then, specify the IP address of the Droplet to direct the traffic of the link to, and finally specify the port that the application will be running on inside of the Droplet. Make sure to check each option and hit save:\nGenerating an SSL Certificate For The Domain After creating a Proxy Host for the domain, a listing similar to the following will appear in the list of Proxy Hosts:\nFrom here, click the three dots on the right of the listing and select “Edit”. Click on the “SSL” tab in the popup window, and select “Request a new SSL Certificate” and enter your email to generate the certificate by hitting the save button as seen below:\nOnce this is done, it will take a moment to generate the certificate, but soon the application will be accessible through the domain name over http and https. To force the domain to use https and avoid any http requests, go back to the SSL tab as done above and toggle the “Force SSL” slider, then hit save.\nConclusion Now, the domain should be securely accessible and linked to the Droplet’s IP address and the port that the application is running on on the Droplet. Make sure to delete the custom firewall configuration for the Droplet, and everything should be good to go!\n",
@@ -546,6 +595,13 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-milestones/spring-2024/milestone-1/index.html"
   },
   {
+    "content": "\r",
+    "description": "Milestone 1",
+    "tags": null,
+    "title": "Milestone 1",
+    "uri": "/2025-capstone/project-milestones/milestone-1/index.html"
+  },
+  {
     "content": "Milestone 2 Main Task The Presentation / Demonstration Milestone 2 - Presentation / Demonstration Links ",
     "description": "Progress made on milestone 2 and the associated slideshow",
     "tags": null,
@@ -553,11 +609,25 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-milestones/spring-2024/milestone-2/index.html"
   },
   {
+    "content": "",
+    "description": "Milestone 2",
+    "tags": null,
+    "title": "Milestone 2",
+    "uri": "/2025-capstone/project-milestones/milestone-2/index.html"
+  },
+  {
     "content": "Milestone 3 Main Task The Presentation / Demonstration Milestone 3 - Presentation / Demonstration Links ",
     "description": "Progress made on milestone 3 and the associated slideshow",
     "tags": null,
     "title": "Milestone 3",
     "uri": "/2024-capstone/project-milestones/spring-2024/milestone-3/index.html"
+  },
+  {
+    "content": "",
+    "description": "Milestone 3",
+    "tags": null,
+    "title": "Milestone 3",
+    "uri": "/2025-capstone/project-milestones/milestone-3/index.html"
   },
   {
     "content": "Frontend Team For the minimal system, the front end will contain a functional login page that is able to connect to a database and will contain a draft up of the output page. The output page will be able to visualize a datapoint in preparation for future milestones. There are plenty of unknowns in regards to MAUI, so research on how to create the screens and specific details will be discovered during the milestone.\nBackend Team For the minimal working system milestone, the backend team will achieve an operational database that stores login information and additional information. This simple task will serve as a proof of concept for accurate interfacing with the application and the server. Authorization headers and encryption are already present within the system, so this is not a concern for our implementation. We will also integrate the Frontend’s login page with our login endpoint. This will provide a basis for any future communications that will need to be facilitated between the Frontend and the backend.\nCommunications Team On the interface side, a working emulator of the Mbient labs MetaMotionS module will be finished for further testing purposes for the group. The emulator will allow users to send CSV data for the emulator to store whether it comes from the Unity SmartDot Simulator or previous output data from a 9DoF module. The device will then replicate the Bluetooth messages that the Mbient lab modules would send out when recording data in real-time mode. The emulator will then broadcast the data from the CSV file as if it were recording in real-time so the front-end has a reliable data source to confirm that the message passing between the computer and the Ball Spinner controller works as intended.\nWhen looking at the minimal working system for the physical SmartDot modules (which will be referred to interchangeably with the in-house Mbient Labs modules), part of the minimum working system for the project will be to retrieve the live data from one of the 3-axis sensors in the modules to print out in the terminal of the Ball Spinner Controller. This would act as proof of concept for interacting with an actual device and help with development with the SmartDot client API that will distinguish between the emulator, the SmartDot module, and the Mbient lab modules so the rest of the system will not have to.\nThe last aspect of the minimal working system for the communications team will be controlling the LED on the MetaMotionS module. This will be done by writing a script through the Ball Spinner (aka the Raspberry PI) which will interact with the SmartDot API to send data to and from the connected devices. The team feels that turning on and off the LED on the module consistently will be the easiest way to demonstrate proper communication without complicated message passing.\nMechanical Team For the minimal working system, the team will be able to spin the bowling ball in one orthogonal direction using either a human-powered design or a small controlled motor. The human-powered design focuses on showing the similar strengths it will experience; the motor design will be used to calibrate the SmartDot sensor’s factors. The SmartDot module will be mounted inside the ball’s finger hole, and we will read the ball’s rpm externally. The simple external reading methods may only correctly read in one orthogonal direction. We will create an enclosure to keep the ball secure while spinning.\nThe first foundational problem would be designing and building the enclosure to be stable. The centripetal force of the bowling ball will cause the enclosure to rattle, making it more likely to fail or fracture. These early designs will also struggle with consistency; human power tests will not be consistent, and the motor design will need a sizeable normal force from it and the ball to move properly. External measurements could also have issues with consistency caused by the ball rattling the enclosure and finding its preferred spin axis. All of these issues increase the level of difficulty in calibrating the system to our needs.\nSimulation Team The minimum working system for the simulation will be a text-based output on information (i.e. variables) involving how the ball is expected to go down the lane. This output data will either be displayed in a text box or console window. While the simulation will incorporate visual output later, a text-based simulation is an efficient way to relay a proof of concept for the calculations behind the visualization. The simulation will work based on the inputs given by the user and will output data in real-time similar to how the Ball Spinner would send real-time data of the projected throw to the Application. One potential issue with the simulation will be determining the accuracy since the Visual Simulation will be used as a baseline comparison for the Ball Spinner movement. This will be continuously worked on in future milestones by communicating with the other teams and client.\n",
@@ -572,6 +642,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Mobile Application",
     "uri": "/2024-capstone/how-to-contribute/getting-started/mobile-app/index.html"
+  },
+  {
+    "content": "Mobile Application Overview The purpose of the mobile application is to provide users with an intuitive way to record and view their bowling performance data. The application allows users to store and manage a variety of data, including Events, Sessions, Games, Frames, Shots, Bowling Establishments, Bowling Balls, and Account information.\nShot Page The shot page is the base of the mobile application. It contains a frame view at the top to show the pins knocked down on each shot, as well as the game’s score. Below that, there are buttons and input fields used to track a full game of bowling.\nThe input fields on the left of the screen allow users to select a player, as well as a strike ball and spare ball used for each frame. The buttons on the right are shortcuts for users to select if they get a Foul, Gutter, Spare, or Strike. The slider below the pin buttons lets the user select which board the ball hit at the end of the lane. The Next button is used to submit each shot and progress through a game.\nThe session page allows users to create new sessions and view old ones.\nDatabase All data is stored locally on the device using SQLite, ensuring quick access and offline functionality The application includes functionality to save and load individual frames and shots, enabling detailed tracking of each game. The application is linked to the existing cloud database through a test SQL table, laying the groundwork for future features such as data backup and cross-device synchronization.\n",
+    "description": "Cellular",
+    "tags": null,
+    "title": "Mobile Application",
+    "uri": "/2025-capstone/cureent-state-of-revmetrix/cellular/index.html"
   },
   {
     "content": "Milestone 1 Main Task The task is to demonstrate a minimal working version of your system. For a “minimal” working system: Your minimal working system should implement the most important classes in the core object model, and test them comprehensively using unit tests What are the most important requirements of your system? You should be able to demonstrate to us that they are at least partially implemented, with appropriate navigation between the components of the system. Extremely important: whatever functionality you demonstrate should be implemented in your core object model classes. We do not want to see a hacked-together “prototype” that looks good but internally is spaghetti code. Also, do NOT demonstrate your system components in isolation - those components should be interacting with each other, at least on a basic level. Because this milestone involves implementing several of your most important use cases or user stories, you will need to make sure that your use cases/user stories are documented. Make sure that your project’s issue tracker has an issue for each use case, and each use case issue has a reasonably detailed textual description of the use case. You can write your use cases as full-blown use cases (see Chapter 9 of UML Distilled). The important concern is that you document the important functionality of the system from the perspective of the user. You will not receive full credit for implementing use cases unless they are documented. The Presentation / Demonstration Each project team should plan to present for about 45 to 60 minutes. Larger teams (with multiple sub-teams) will likely go longer than that. There will likely also be an extensive question and answer period. All presentations need to be limited to less than two hours (including the question and answer period).\nYou should use some presentation software such as PowerPoint or Google Slides. Your slides should contain brief bulleted points and graphics (tables, diagrams, screen captures, wire frames) that provide overall context for your bullet points. Slides should not be a “wall of text”, and please avoid reading your slides or from a prepared script.\nYour presentation should include the following elements:\nProvide a brief description of the project. Provide a high-level overview of your system architecture. Explain what tools/technologies you are using, and what role they play in your project development. Explain what parts of your design are implemented, and which parts remain to be implemented by referencing your updated UML diagram(s) and Database Schema. Demonstrate the system in action. Walk through your UI (and/or internal workflow) and explain the Use Case functionality it demonstrates. Discuss your automated test strategy, and run your unit tests to demonstrate your testing framework, and describe what is happening. Briefly talk about how you plan to evolve the system to implement the remaining functionality. Please do a dry run before class. Because of the limited amount of time we have in class, we can’t wait for your team to troubleshoot issues that arise during the presentation. Milestone 1 - Presentation / Demonstration Links The Google Slides presentation for milestone 1 can be found here.\nThe Team ",
@@ -644,6 +721,20 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-milestones/index.html"
   },
   {
+    "content": "",
+    "description": "2025 spring Project Milestones ",
+    "tags": null,
+    "title": "Project Milestones",
+    "uri": "/2025-capstone/project-milestones/index.html"
+  },
+  {
+    "content": "",
+    "description": "2025 ",
+    "tags": null,
+    "title": "Project Proposal",
+    "uri": "/2025-capstone/project-assignments/project-proposal/index.html"
+  },
+  {
     "content": "Official Project Requirements Document and Slideshow The official project requirements document can be found in the project’s Google Drive here, and the requirements presentation slideshow can be found here\nSystem Architecture Initial Requirements by Type of Develeopment Backend RequirementsProject requirements specific to the backend development\nFrontend RequirementsProject requirements specific to the frontend development\nSimulation RequirementsProject requirements specific to the simulation development\n",
     "description": "Details of the project requirements and the associated slideshow",
     "tags": null,
@@ -684,6 +775,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Robert Wood",
     "uri": "/more/members/robert-wood/index.html"
+  },
+  {
+    "content": "Project Contributions Contact Information Institution Email: External Links ",
+    "description": "External links to member and information about their contributions",
+    "tags": null,
+    "title": "Ryan Curry",
+    "uri": "/more/members/ryan-curry/index.html"
   },
   {
     "content": "Project Contributions Contact Information Institution Email: External Links ",
@@ -805,6 +903,20 @@ var relearn_search_index = [
     "uri": "/2024-capstone/how-to-contribute/webapi/client/index.html"
   },
   {
+    "content": "Abstract The RevMetrix project is a project that seeks to capture a bowling ball’s motion as it travels down a lane. The project is based on two components developed initially by Professor Hake and Dr. Babcock. The first is the SmartDot module, developed by Professor Hake. The SmartDot module is a piece of hardware that sits inside the finger insert of the bowling ball. The next component is the Ciclopes software. Ciclopes is a motion detection software that can track and display the path traveled by a bowling ball with an uploaded video of a bowling ball shot. The RevMetrix team is building a device called a Ball Spinner. A Ball Spinner is a bowling analysis tool that recreates the movement and rotation of a bowling ball during a game. The bowling ball sits in an enclosure where it is pressed against three motors, allowing it to spin in three orthogonal axes. Users can simulate shots through an application interface by entering input parameters for the shot, where these parameters are sent to the Ball Spinner, and the motors move the bowling ball as if it were actually on a bowling lane. Complex physics equations will account for the input parameters and the other external conditions to calculate instructions for the motors to move the ball as realistically as possible. A SmartDot module that resides in the ball allows users to visualize what it would be doing if it moved on a lane and store shots for later replaying/analyzing previous shots. In this paper, we will provide more context behind the RevMetrix project and any important concepts needed to understand our work, go over both the design and the implementation of each of the aspects of our project, and discuss any future work that still needs to be completed for the project.\nIntroduction The RevMetrix project seeks to provide its users with a set of hardware and software to capture a bowling ball’s internal and external metrics. The approach to achieving this goal was to design a device capable of driving a bowling ball in three orthogonal axes. Accompanying this device will be a controller module capable of controlling the motors on the device and communicating with an application. This application provides users with an interface for creating simulated shots, where the users can enter parameters representing shot dynamics. The controller module will then be sent motor instructions from the application, based on kinematic models, using the parameters combined with other environment factors. The controller will then drive the physical device, where simultaneously, the application will display a simulation representing what is happening on the physical device using sensor data returned from a piece of hardware residing within the finger insert of the bowling ball. Thus, a significant focus will be on ensuring the quality and reliability of this module through thorough testing and validation. Each of the components that allow our system to fulfill these requirements are described below: Ball Spinner Controller: The communication module responsible for facilitating communication between the Ball Spinner Application and the Ball Spinner device. Instructions from the application can be sent to the Ball Spinner from the Ball Spinner Controller, as well as SmartDot feedback data that can be sent back to the application. Ball Spinner Application: Software that can be used to simulate a bowling shot via the Ball Spinner device. Data is collected representing the dynamics of the simulated shot from the SmartDot module residing on the bowling ball. The Ball Spinner Application will facilitate communication with the Ball Spinner device and the SmartDot module through a TCP connection with the Ball Spinner Controller. Ball Spinner: The enclosed physical device that will simulate the bowling balls movement based on user input from the application. The Ball Spinner will contain motors that drive the ball, as specified by the motor instructions sent by the Ball Spinner Controller. SmartDot Module: Device that contains an embedded accelerometer, gyroscope, magnetometer, and ambient light sensor. This device will be placed within the bowling ball, and will send data collected from the sensors back to the Ball Spinner Controller, to then be sent to the application.\nThe Problem The problem our system addresses is the lack of calibration and testing environments for the SmartDot. The future SmartDot module device and the creation of the testing environment for the future SmartDot module are integral requirements for this project as well. The system will also provide functionality to allow a user to analyze and review previous shot data, enabling them to leverage our platform to evaluate the effects of various factors on a bowling shot. Since the Ball Spinner device uses physical motors to drive the ball, we must ensure that the instructions we send to the motors move the ball to the specified speed. Since the SmartDot module is still under development, once the Ball Spinner is calibrated, this will also foster a testing environment for Professor Hake to test the module’s functionality.\n",
+    "description": "2025 Capstone",
+    "tags": null,
+    "title": "What is RevMetrix",
+    "uri": "/what-is-revmetrix/index.html"
+  },
+  {
+    "content": "Project Contributions Contact Information Institution Email: External Links ",
+    "description": "External links to member and information about their contributions",
+    "tags": null,
+    "title": "Zach Cox",
+    "uri": "/more/members/zach-cox/index.html"
+  },
+  {
     "content": "",
     "description": "",
     "tags": null,
@@ -819,7 +931,7 @@ var relearn_search_index = [
     "uri": "/more/credits/index.html"
   },
   {
-    "content": "Welcome to RevMetrix Quick Links 2024 Capstone 2025 Capstone What is RevMetrix SmartDot ",
+    "content": "Welcome to RevMetrix Quick Links 2024 Capstone 2025 Capstone Ciclopes SmartDot What is RevMetrix ",
     "description": "",
     "tags": null,
     "title": "RevMetrix",

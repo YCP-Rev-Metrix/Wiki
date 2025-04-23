@@ -1,5 +1,5 @@
 +++
-title = "2025 Project Milestones"
+title = "Project Milestones"
 weight = 100
-description = '2025 Capstone'
+description = '2025 spring Project Milestones '
 +++
