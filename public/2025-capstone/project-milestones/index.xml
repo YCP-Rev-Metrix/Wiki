@@ -13,5 +13,19 @@
       <guid>//localhost:1313/2025-capstone/project-milestones/milestone-1/index.html</guid>
       <description>&lt;embed class=&#34;pdf&#34; src=&#34;MS1 Presentation.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
     </item>
+    <item>
+      <title>Milestone 2</title>
+      <link>//localhost:1313/2025-capstone/project-milestones/milestone-2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/project-milestones/milestone-2/index.html</guid>
+      <description>&lt;embed class=&#34;pdf&#34; src=&#34;MS2 Presentation.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Milestone 3</title>
+      <link>//localhost:1313/2025-capstone/project-milestones/milestone-3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/project-milestones/milestone-3/index.html</guid>
+      <description>&lt;embed class=&#34;pdf&#34; src=&#34;MS3 Presentation.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+    </item>
   </channel>
 </rss>

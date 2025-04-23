@@ -728,7 +728,7 @@ var relearn_search_index = [
     "uri": "/2025-capstone/project-milestones/index.html"
   },
   {
-    "content": "",
+    "content": "\r",
     "description": "2025 ",
     "tags": null,
     "title": "Project Proposal",
