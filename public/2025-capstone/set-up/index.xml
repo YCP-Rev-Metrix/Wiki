@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set up  on Hugo Relearn Theme</title>
+    <link>//localhost:1313/2025-capstone/set-up/index.html</link>
+    <description>Recent content in Set up  on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/2025-capstone/set-up/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.Net Upgrade</title>
+      <link>//localhost:1313/2025-capstone/set-up/upgrade-.net/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/set-up/upgrade-.net/index.html</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Download the .NET SDK
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dotnet.microsoft.com/en-us/download&#34; target=&#34;_blank&#34;&gt;https://dotnet.microsoft.com/en-us/download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Run installer&lt;/li&gt;
+&lt;li&gt;Open command prompt and run “dotnet” to confirm installation&lt;/li&gt;
+&lt;li&gt;Confirm Visual Studio is updated to the appropriate version (can be found on the SDK download page)&lt;/li&gt;
+&lt;li&gt;Check Version: Help → About Microsoft Visual Studio&lt;/li&gt;
+&lt;li&gt;Update: Help → Check for Updates → Update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/upgrade-.net/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Install .NET Upgrade Assistant
+&lt;ul&gt;
+&lt;li&gt;Visual Studio → Extensions → Manage Extensions…&lt;/li&gt;
+&lt;li&gt;Search for .NET Upgrade Assistant&lt;/li&gt;
+&lt;li&gt;Click Install&lt;/li&gt;
+&lt;li&gt;Close Visual Studio&lt;/li&gt;
+&lt;li&gt;Click Modify on the pop-up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/upgrade-.net/2.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Open Visual Studio again&lt;/li&gt;
+&lt;li&gt;Right Click on the project file (for our solution, its BackEnd.csproj, FrontEnd.csproj, and Test.csproj)&lt;/li&gt;
+&lt;li&gt;Click Upgrade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/upgrade-.net/3.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Select upgrade option&lt;/li&gt;
+&lt;li&gt;Repeat steps 5-7 for each .csproj file&lt;/li&gt;
+&lt;li&gt;Upgrade the .NET Maui version installed
+&lt;ul&gt;
+&lt;li&gt;Visual Studio → Tools → NuGet Package Manager → Manage NuGet Packages for Solution…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/upgrade-.net/4.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Update Microsoft.Maui.Controls &amp;amp; Microsoft.Maui.Controls.Compatibility&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Ball Spinner Application</title>
+      <link>//localhost:1313/2025-capstone/set-up/ballspinner-application/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/set-up/ballspinner-application/index.html</guid>
+      <description>&lt;h3 id=&#34;downloading-the-ball-spinner-application&#34;&gt;Downloading the Ball Spinner Application&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual Studio community 2022 link:&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://visualstudio.microsoft.com/vs/community/&#34; target=&#34;_blank&#34;&gt;https://visualstudio.microsoft.com/vs/community/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Screenshot for what to select in visual studio installer:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;When visual studio opens click “Clone Repository”:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/2.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Enter this url into the “Repository location” field&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/YCP-Rev-Metrix/BallSpinner-Application&#34; target=&#34;_blank&#34;&gt;https://github.com/YCP-Rev-Metrix/BallSpinner-Application&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/3.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;When the project opens, go to Tools - Nuget Package Manager - Package Manager Settings:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/4.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/5.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;For the name field, enter RevMetrix, and for the source, enter&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nuget.pkg.github.com/YCP-Rev-Metrix/index.json&#34; target=&#34;_blank&#34;&gt;https://nuget.pkg.github.com/YCP-Rev-Metrix/index.json&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;n the same menu, go under Package source mapping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/6.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;When opening visual studio, you will be prompted to enter your github credentials. This is necessary in order to access some of the custom nuget packages.&lt;/li&gt;
+&lt;li&gt;Enter the command dotnet workload restore to install required nuget dependencies for the project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/7.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;When asked if Visual Studio can make changes to your device, select yes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;troubleshooting-issues&#34;&gt;Troubleshooting Issues:&lt;/h3&gt;
+&lt;h6 id=&#34;ryan-issues&#34;&gt;Ryan Issues&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;If this window pops up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/8.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/9.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Then toggle the button under Developer Mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/10.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/11.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Run these commands within the project directory:&lt;/li&gt;
+&lt;li&gt;dotnet clean&lt;/li&gt;
+&lt;li&gt;dotnet restore Frontend&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/ballspinner-application/12.jpg?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;joshs-setup-issues&#34;&gt;Josh’s Setup issues:&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Today I got Visual Studio 2022 installed on my laptop. I copied both the Backend and Frontend repositories to my system. I was able to follow the wiki for setting up the backend. I learned that the frontend page has an old repository and informed everyone else. We got the correct repository link from Patrick.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>//localhost:1313/2025-capstone/set-up/cloud/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/set-up/cloud/index.html</guid>
+      <description>&lt;h3 id=&#34;publishing-nuget-packages&#34;&gt;Publishing Nuget Packages&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nuget is a package repository provided by Microsoft for .NET projects. It integrates very nicely with Github such that users can publish Nuget packages to a specific Github repo-sitory. This also enables permission-specific downloads related to NuGet packages, so no one outside of the Github organization can download or make changes to the Nuget package. For the RevMetrix project, we have our own Nuget package called RevMetrix.Ballspinner.Common.API. This package contains all classes defined within the Common module within the BallSpinner-Cloud repository:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/cloud/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The Common module contains all of the POCO (standing for Plain Old Class Object) classes that are used for client-side/server-side ORM (object relational mapping). That is why we publish it as a Nuget package, so that the client-side ORM can match that of the server. This allows for consistency in terms of the database objects being sent to and from the server and also further simplifies API migrations that can easily be updated client-side through the Nuget package.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mobile App</title>
+      <link>//localhost:1313/2025-capstone/set-up/mobile-app/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/set-up/mobile-app/index.html</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The setup process is the same as the ball spinner application for .net maui&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We use two additional NuGet packages&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/mobile-app/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/mobile-app/2.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Our github repo link:&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/YCP-Rev-Metrix/Cellular.git&#34; target=&#34;_blank&#34;&gt;https://github.com/YCP-Rev-Metrix/Cellular.git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
