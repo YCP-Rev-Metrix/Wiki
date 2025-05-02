@@ -84,7 +84,7 @@ var relearn_search_index = [
     "uri": "/2025-capstone/project-assignments/index.html"
   },
   {
-    "content": "\rBackendBackend 2025 spring Ball Spinner ApplicationFrontend 2025 spring\nBall Spinner ControllerBall Spinner Controller 2025 spring\nBallspinner Physical DesignBallspinner 2025 spring\nMobile ApplicationCellular\n",
+    "content": "\rBackendBackend 2025 spring Ball Spinner ApplicationFrontend 2025 spring\nBall Spinner ControllerBall Spinner Controller 2025 spring\nBallspinner Physical DesignBallspinner 2025 spring\nCloudInstrucations\nMobile ApplicationCellular\n",
     "description": "2025 Capstone",
     "tags": null,
     "title": "2025 RevMetrix",
@@ -298,7 +298,7 @@ var relearn_search_index = [
     "description": "Instrucations",
     "tags": null,
     "title": "Cloud",
-    "uri": "/2025-capstone/set-up/cloud/index.html"
+    "uri": "/2025-capstone/cureent-state-of-revmetrix/cloud/index.html"
   },
   {
     "content": "Table of Contents Continuous Integration/Deployment Basics ",
@@ -826,7 +826,7 @@ var relearn_search_index = [
     "uri": "/2024-capstone/how-to-contribute/webapi/security/index.html"
   },
   {
-    "content": "\r.Net UpgradeInstrucations\nBall Spinner ApplicationInstrucations\nCloudInstrucations\nMobile AppInstrucations\n",
+    "content": "\r.Net UpgradeInstrucations\nBall Spinner ApplicationInstrucations\nMobile AppInstrucations\n",
     "description": "for help ",
     "tags": null,
     "title": "Set up ",

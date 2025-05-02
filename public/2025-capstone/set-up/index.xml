@@ -248,28 +248,6 @@
 &lt;p&gt;Today I got Visual Studio 2022 installed on my laptop. I copied both the Backend and Frontend repositories to my system. I was able to follow the wiki for setting up the backend. I learned that the frontend page has an old repository and informed everyone else. We got the correct repository link from Patrick.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Cloud</title>
-      <link>//localhost:1313/2025-capstone/set-up/cloud/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2025-capstone/set-up/cloud/index.html</guid>
-      <description>&lt;h3 id=&#34;publishing-nuget-packages&#34;&gt;Publishing Nuget Packages&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Nuget is a package repository provided by Microsoft for .NET projects. It integrates very nicely with Github such that users can publish Nuget packages to a specific Github repo-sitory. This also enables permission-specific downloads related to NuGet packages, so no one outside of the Github organization can download or make changes to the Nuget package. For the RevMetrix project, we have our own Nuget package called RevMetrix.Ballspinner.Common.API. This package contains all classes defined within the Common module within the BallSpinner-Cloud repository:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/cloud/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The Common module contains all of the POCO (standing for Plain Old Class Object) classes that are used for client-side/server-side ORM (object relational mapping). That is why we publish it as a Nuget package, so that the client-side ORM can match that of the server. This allows for consistency in terms of the database objects being sent to and from the server and also further simplifies API migrations that can easily be updated client-side through the Nuget package.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Mobile App</title>
       <link>//localhost:1313/2025-capstone/set-up/mobile-app/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
