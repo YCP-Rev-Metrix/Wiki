@@ -658,7 +658,7 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-assignments/fall-2024/requirements/minimum-working-system/index.html"
   },
   {
-    "content": " The setup process is the same as the ball spinner application for .net maui\nWe use two additional NuGet packages\nOur github repo link: https://github.com/YCP-Rev-Metrix/Cellular.git ",
+    "content": " To setup the mobile application for development, follow these steps: Download and install Visual Studio 2022 Community Edition and Open the Visual Studio Installer. Select Modify and check the following (If all three options aren’t available, you need to select UPDATE) ASP.NET and web development .Net desktop development .NET Maui-platform App UI development Backend Arch](Workloads.jpg?width=20vw\u0026lightbox=false) | Select Modify (Either install while downloading, or download 1st then install) Launch Visual Studio 2022 Clone the repository for the Mobile App: https://github.com/YCP-Rev-Metrix/Cellular.git Open the solution file in Visual Studio Navigate to Tools \u003e Nuget Package Manager \u003e Manage Nuget Packages for Solution The following Nuget Packages need to be installed (if not already): You are now ready to develop the mobile application! ",
     "description": "Instrucations",
     "tags": null,
     "title": "Mobile App",
