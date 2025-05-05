@@ -5,23 +5,23 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.138.0">
     <meta name="generator" content="Relearn 5.20.0+tip">
-    <meta name="description" content="Instrucations">
+    <meta name="description" content="How to create a branch of the cloud-infrastructure repository and make edits">
     <title>Cloud :: Hugo Relearn Theme</title>
     <link href="/2025-capstone/set-up/cloud/index.xml" rel="alternate" type="application/rss+xml" title="Cloud :: Hugo Relearn Theme">
-    <link href="/images/favicon.png?1746206703" rel="icon" type="image/png">
+    <link href="/images/favicon.png?1746463914" rel="icon" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1746206703" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746206703" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1746206703" rel="stylesheet">
-    <link href="/css/auto-complete.css?1746206703" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746206703" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1746206703" rel="stylesheet">
-    <link href="/css/fonts.css?1746206703" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746206703" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1746206703" rel="stylesheet">
-    <link href="/css/theme-neon.css?1746206703" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1746206703" rel="stylesheet">
-    <link href="/css/print.css?1746206703" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1746206703" rel="stylesheet">
-    <script src="/js/url.js?1746206703"></script>
-    <script src="/js/variant.js?1746206703"></script>
+    <link href="/css/fontawesome-all.min.css?1746463914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746463914" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1746463914" rel="stylesheet">
+    <link href="/css/auto-complete.css?1746463914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746463914" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1746463914" rel="stylesheet">
+    <link href="/css/fonts.css?1746463914" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746463914" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1746463914" rel="stylesheet">
+    <link href="/css/theme-neon.css?1746463914" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1746463914" rel="stylesheet">
+    <link href="/css/print.css?1746463914" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1746463914" rel="stylesheet">
+    <script src="/js/url.js?1746463914"></script>
+    <script src="/js/variant.js?1746463914"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -53,7 +53,7 @@
             <a class="nav nav-prev topbar-link" href="/2025-capstone/set-up/ballspinner-application/index.html" title="Ball Spinner Application (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
           </div>
           <div id="top-github-link">
-            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/2025%20Capstone/Set%20Up/Cloud/_index.md" target="_blank">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/2025%20Capstone/Set%20Up/cloud/_index.md" target="_blank">
               <i class="fas fa-pen fa-fw"></i>
             </a>
           </div>
@@ -77,77 +77,28 @@
             </header>
 <h1 id="cloud">Cloud</h1>
 
-<h3 id="publishing-nuget-packages">Publishing Nuget Packages</h3>
-<ul>
-<li>Nuget is a package repository provided by Microsoft for .NET projects. It integrates very nicely with Github such that users can publish Nuget packages to a specific Github repo-sitory. This also enables permission-specific downloads related to NuGet packages, so no one outside of the Github organization can download or make changes to the Nuget package. For the RevMetrix project, we have our own Nuget package called RevMetrix.Ballspinner.Common.API. This package contains all classes defined within the Common module within the BallSpinner-Cloud repository:</li>
-</ul>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: center"><img src="/2025-capstone/set-up/cloud/1.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
-      </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-<ul>
-<li>
-<p>The Common module contains all of the POCO (standing for Plain Old Class Object) classes that are used for client-side/server-side ORM (object relational mapping). That is why we publish it as a Nuget package, so that the client-side ORM can match that of the server. This allows for consistency in terms of the database objects being sent to and from the server and also further simplifies API migrations that can easily be updated client-side through the Nuget package.</p>
-</li>
-<li>
-<p>In order to contribute to the RevMetrix.BallSpinner.Common.API Nuget package, you will need to first package the module (after you have made your necessary changes) and then you will need to use the dotnet nuget push command to push it to the RevMetrix repository. Before you can publish Nuget packages, you will need to create a nuget.config within the Common modules directory. A nuget.config file contains your credentials as well as the repository location that will be needed to properly push the package. Here is a template that you can use for the nuget.config file:</p>
-</li>
-</ul>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: center"><img src="/2025-capstone/set-up/cloud/2.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
-      </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-<ul>
-<li>
-<p>This configuration file defines the repository location with the <packageSources>tag and contains your github credentials within the <add key> tag. Copy this file and place it into the Common directory and replace the “ClearTextPasswordKey” with a valid github token. As long as you are within the YCP-Rev-Metrix organization, you will be able to push to this repository. Refer to this documentation for creating Github tokens if you are unsure how to do so <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" target="_blank">https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens</a>. Make sure to at least provide read and write permissions to the token. IMPORTANT!!! MAKE SURE YOU INCLUDE THIS NUGET.CONFIG FILE INTO YOUR GIT IGNORE LIST BECAUSE IT CONTAINS YOUR TOKEN. From here, you are ready to contribute to the RevMetrix.BallSpinner.Common.API Nuget package.</p>
-</li>
-<li>
-<p>Here is how you package a module in Visual Studio:</p>
-</li>
-</ul>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: center"><img src="/2025-capstone/set-up/cloud/3.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
-      </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: center"><img src="/2025-capstone/set-up/cloud/4.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
-      </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-<ul>
-<li>This is the .csproj file for the module. It defines the module as a Nuget package with the version 1.1.8, as denoted by the <Version> tag. When you are ready to pack the module, increment the version number and then right click on the module package and select pack:</li>
-</ul>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: center"><img src="/2025-capstone/set-up/cloud/5.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
-      </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-<ul>
-<li>From a powershell window change the directory to go into the Common folder and run the command dotnet nuget push “bin/Debug/RevMetrix.BallSpinner.Common.API.1.1.9.nupkg” –source “github”. This will push the Nuget package to the RevMetrix repository using the nuget.config file created earlier for the source location and credentials. This package can then be installed on the application with the Nuget package manager.</li>
-</ul>
+<h3 id="development-enviornment">Development Enviornment</h3>
+<p>The preferred development enviornment for the Cloud-Infrastructure .NET solution is <a href="https://visualstudio.microsoft.com/vs/" target="_blank">Microsoft Visual Studio 2022 Community Edition</a>.  When installing Visual Studio, make sure to install all of the options checked below:</p>
+<p><a href="#image-074d30a7e11ee945c425453dba9b30a4" class="lightbox-link"><img src="/2025-capstone/set-up/cloud/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-074d30a7e11ee945c425453dba9b30a4"><img src="/2025-capstone/set-up/cloud/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>After installing Visual Studio, you will also need to install <a href="https://go.microsoft.com/fwlink/p/?linkid=2215158&amp;clcid=0x409&amp;culture=en-us&amp;country=us" target="_blank">SQL Server Developer Edition (Free)</a>.  All of the default installation settings can be followed for this.  Finally, you&rsquo;ll need to install <a href="https://aka.ms/ssmsfullsetup" target="_blank">SQL Server Management Studio</a>.  The default installation options for SSMS can be followed here also.</p>
+<h3 id="cloning-the-repository">Cloning The Repository</h3>
+<p>To clone the Cloud-Infrastructure repository, head over to the <a href="https://github.com/YCP-Rev-Metrix/BallSpinner-Cloud.git" target="_blank">GitHub Repository</a>, click the green &ldquo;Code&rdquo; dropdown on the repo page, then copy the https link given from the dropdown, as seen below:</p>
+<p><a href="#image-19c9172573a637763d5be834fb8dec70" class="lightbox-link"><img src="/2025-capstone/set-up/cloud/1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-19c9172573a637763d5be834fb8dec70"><img src="/2025-capstone/set-up/cloud/1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>After copying the repo link, open Visual Studio and click &quot;&quot; on the start page as seen here:</p>
+<p><a href="#image-f572cfb1b82126a0e3f06c37d46682ac" class="lightbox-link"><img src="/2025-capstone/set-up/cloud/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-f572cfb1b82126a0e3f06c37d46682ac"><img src="/2025-capstone/set-up/cloud/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>From here you will be prompted to enter the link of the repository to clone and the path at which to create the directory of the repo on your machine.  Go ahead and paste the repository link and choose where to save it, then hit the &ldquo;clone&rdquo; button in the bottom right as seen below:</p>
+<p><a href="#image-ffd2f86e201f8543ece9eb55b819ff1a" class="lightbox-link"><img src="/2025-capstone/set-up/cloud/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-ffd2f86e201f8543ece9eb55b819ff1a"><img src="/2025-capstone/set-up/cloud/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>Now that the repo has been cloned, Go ahead and click on the configuration manager next to the run button. Next, ensure that the &ldquo;Server: https&rdquo; configuration is selected and then hit run.</p>
+<p><a href="#image-4f1f6e69d1e72f10555f8fe478f9dd3e" class="lightbox-link"><img src="/2025-capstone/set-up/cloud/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-4f1f6e69d1e72f10555f8fe478f9dd3e"><img src="/2025-capstone/set-up/cloud/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>Lastly, the Swagger website will open up locally and will contain of all the API endpoints. Taaa daaa</p>
+<p><a href="#image-96f43b93687e29714c99e3cfa889954f" class="lightbox-link"><img src="/2025-capstone/set-up/cloud/2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-96f43b93687e29714c99e3cfa889954f"><img src="/2025-capstone/set-up/cloud/2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p>Everything from here on is basic source control practice.  If you are unfamiliar with these practices, check out the <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet</a> for an introduction to them!</p>
 
             <footer class="footline">
 
@@ -174,12 +125,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1746206703" defer></script>
-        <script src="/js/lunr/lunr.min.js?1746206703" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1746206703" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1746206703" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1746206703" defer></script>
-        <script src="/js/search.js?1746206703" defer></script>
+        <script src="/js/auto-complete.js?1746463914" defer></script>
+        <script src="/js/lunr/lunr.min.js?1746463914" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1746463914" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1746463914" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1746463914" defer></script>
+        <script src="/js/search.js?1746463914" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <hr class="padding">
@@ -278,6 +229,7 @@
           <li data-nav-id="/2025-capstone/cureent-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/2025-capstone/cureent-state-of-revmetrix/frontend/index.html">Ball Spinner Application</a></li>
           <li data-nav-id="/2025-capstone/cureent-state-of-revmetrix/bsc/index.html" class=""><a class="padding" href="/2025-capstone/cureent-state-of-revmetrix/bsc/index.html">Ball Spinner Controller</a></li>
           <li data-nav-id="/2025-capstone/cureent-state-of-revmetrix/ballspinner/index.html" class=""><a class="padding" href="/2025-capstone/cureent-state-of-revmetrix/ballspinner/index.html">Ballspinner Physical Design</a></li>
+          <li data-nav-id="/2025-capstone/cureent-state-of-revmetrix/cloud/index.html" class=""><a class="padding" href="/2025-capstone/cureent-state-of-revmetrix/cloud/index.html">Cloud</a></li>
           <li data-nav-id="/2025-capstone/cureent-state-of-revmetrix/cellular/index.html" class=""><a class="padding" href="/2025-capstone/cureent-state-of-revmetrix/cellular/index.html">Mobile Application</a></li></ul></li>
           <li data-nav-id="/2025-capstone/technologies-used/index.html" class=""><a class="padding" href="/2025-capstone/technologies-used/index.html">2025 Technologies Used</a></li>
           <li data-nav-id="/2025-capstone/project-milestones/index.html" class="alwaysopen"><input type="checkbox" id="section-b95dce454cfcdde7265584574f717158" aria-controls="subsections-b95dce454cfcdde7265584574f717158" checked><label for="section-b95dce454cfcdde7265584574f717158"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/2025-capstone/project-milestones/index.html">Project Milestones</a><ul id="subsections-b95dce454cfcdde7265584574f717158" class="morespace collapsible-menu">
@@ -368,8 +320,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1746206703" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1746206703" defer></script>
-    <script src="/js/theme.js?1746206703" defer></script>
+    <script src="/js/clipboard.min.js?1746463914" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1746463914" defer></script>
+    <script src="/js/theme.js?1746463914" defer></script>
   </body>
 </html>

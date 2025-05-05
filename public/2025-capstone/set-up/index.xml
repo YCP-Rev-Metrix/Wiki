@@ -248,6 +248,17 @@
 &lt;p&gt;Today I got Visual Studio 2022 installed on my laptop. I copied both the Backend and Frontend repositories to my system. I was able to follow the wiki for setting up the backend. I learned that the frontend page has an old repository and informed everyone else. We got the correct repository link from Patrick.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Cloud</title>
+      <link>//localhost:1313/2025-capstone/set-up/cloud/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/set-up/cloud/index.html</guid>
+      <description>&lt;h3 id=&#34;development-enviornment&#34;&gt;Development Enviornment&lt;/h3&gt;
+&lt;p&gt;The preferred development enviornment for the Cloud-Infrastructure .NET solution is &lt;a href=&#34;https://visualstudio.microsoft.com/vs/&#34; target=&#34;_blank&#34;&gt;Microsoft Visual Studio 2022 Community Edition&lt;/a&gt;.  When installing Visual Studio, make sure to install all of the options checked below:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#image-074d30a7e11ee945c425453dba9b30a4&#34; class=&#34;lightbox-link&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/cloud/image.png&#34; alt=&#34;Alt text&#34; class=&#34;figure-image noborder lightbox noshadow&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox-back&#34; id=&#34;image-074d30a7e11ee945c425453dba9b30a4&#34;&gt;&lt;img src=&#34;//localhost:1313/2025-capstone/set-up/cloud/image.png&#34; alt=&#34;Alt text&#34; class=&#34;lightbox-image noborder lightbox noshadow&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After installing Visual Studio, you will also need to install &lt;a href=&#34;https://go.microsoft.com/fwlink/p/?linkid=2215158&amp;amp;clcid=0x409&amp;amp;culture=en-us&amp;amp;country=us&#34; target=&#34;_blank&#34;&gt;SQL Server Developer Edition (Free)&lt;/a&gt;.  All of the default installation settings can be followed for this.  Finally, you&amp;rsquo;ll need to install &lt;a href=&#34;https://aka.ms/ssmsfullsetup&#34; target=&#34;_blank&#34;&gt;SQL Server Management Studio&lt;/a&gt;.  The default installation options for SSMS can be followed here also.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Mobile App</title>
       <link>//localhost:1313/2025-capstone/set-up/mobile-app/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
