@@ -301,6 +301,13 @@ var relearn_search_index = [
     "uri": "/2025-capstone/cureent-state-of-revmetrix/cloud/index.html"
   },
   {
+    "content": "Development Enviornment The preferred development enviornment for the Cloud-Infrastructure .NET solution is Microsoft Visual Studio 2022 Community Edition. When installing Visual Studio, make sure to install all of the options checked below:\nAfter installing Visual Studio, you will also need to install SQL Server Developer Edition (Free). All of the default installation settings can be followed for this. Finally, you’ll need to install SQL Server Management Studio. The default installation options for SSMS can be followed here also.\nCloning The Repository To clone the Cloud-Infrastructure repository, head over to the GitHub Repository, click the green “Code” dropdown on the repo page, then copy the https link given from the dropdown, as seen below:\nAfter copying the repo link, open Visual Studio and click \"\" on the start page as seen here:\nFrom here you will be prompted to enter the link of the repository to clone and the path at which to create the directory of the repo on your machine. Go ahead and paste the repository link and choose where to save it, then hit the “clone” button in the bottom right as seen below:\nNow that the repo has been cloned, Go ahead and click on the configuration manager next to the run button. Next, ensure that the “Server: https” configuration is selected and then hit run.\nLastly, the Swagger website will open up locally and will contain of all the API endpoints. Taaa daaa\nEverything from here on is basic source control practice. If you are unfamiliar with these practices, check out the Git Cheat Sheet for an introduction to them!\n",
+    "description": "How to create a branch of the cloud-infrastructure repository and make edits",
+    "tags": null,
+    "title": "Cloud",
+    "uri": "/2025-capstone/set-up/cloud/index.html"
+  },
+  {
     "content": "Table of Contents Continuous Integration/Deployment Basics ",
     "description": "Information about the project's CI/CD workflows",
     "tags": null,
@@ -658,7 +665,7 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-assignments/fall-2024/requirements/minimum-working-system/index.html"
   },
   {
-    "content": " To setup the mobile application for development, follow these steps: Download and install Visual Studio 2022 Community Edition and Open the Visual Studio Installer. Select Modify and check the following (If all three options aren’t available, you need to select UPDATE) ASP.NET and web development .Net desktop development .NET Maui-platform App UI development Backend Arch](Workloads.jpg?width=20vw\u0026lightbox=false) | Select Modify (Either install while downloading, or download 1st then install) Launch Visual Studio 2022 Clone the repository for the Mobile App: https://github.com/YCP-Rev-Metrix/Cellular.git Open the solution file in Visual Studio Navigate to Tools \u003e Nuget Package Manager \u003e Manage Nuget Packages for Solution The following Nuget Packages need to be installed (if not already): You are now ready to develop the mobile application! ",
+    "content": " To setup the mobile application for development, follow these steps:\nDownload and install Visual Studio 2022 Community Edition and Open the Visual Studio Installer. Select Modify and check the following (If all three options aren’t available, you need to select UPDATE) ASP.NET and web development .Net desktop development .NET Maui-platform App UI development Select Modify (Either install while downloading, or download 1st then install) Launch Visual Studio 2022 Clone the repository for the Mobile App: https://github.com/YCP-Rev-Metrix/Cellular.git Open the solution file in Visual Studio Navigate to Tools \u003e Nuget Package Manager \u003e Manage Nuget Packages for Solution The following Nuget Packages need to be installed (if not already): | You are now ready to develop the mobile application! To deploy the app to an android phone, follow these steps:\nOpen the settings app on the phone Click “About Phone” (bottom of the settings) Click “Software Information”\" Click “Build number 7 times Enter your pin to confirm if prompted Back out to the main settings page Scroll down to the bottom of settings to see Developer Option now enabled at the bottom Click “Developer Options” Scroll down and enable “USB Debugging” The phone should now be ready for app deployment. Connect the phone to the computer using a USB cable If a prompt appears on the phone, select “Always allow from this computer” and click OK In Visual Studio, click the drop down with the green triangle that defaults to “Windows Machine” Under “Android Local Devices”, select your phone Click the green triangle to run and it will deploy the app to the phone ",
     "description": "Instrucations",
     "tags": null,
     "title": "Mobile App",
@@ -826,7 +833,7 @@ var relearn_search_index = [
     "uri": "/2024-capstone/how-to-contribute/webapi/security/index.html"
   },
   {
-    "content": "\r.Net UpgradeInstrucations\nBall Spinner ApplicationInstrucations\nMobile AppInstrucations\n",
+    "content": "\r.Net UpgradeInstrucations\nBall Spinner ApplicationInstrucations\nCloudHow to create a branch of the cloud-infrastructure repository and make edits\nMobile AppInstrucations\n",
     "description": "for help ",
     "tags": null,
     "title": "Set up ",
