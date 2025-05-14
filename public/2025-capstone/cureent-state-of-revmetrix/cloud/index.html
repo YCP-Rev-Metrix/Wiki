@@ -8,20 +8,20 @@
     <meta name="description" content="Instrucations">
     <title>Cloud :: Hugo Relearn Theme</title>
     <link href="/2025-capstone/cureent-state-of-revmetrix/cloud/index.xml" rel="alternate" type="application/rss+xml" title="Cloud :: Hugo Relearn Theme">
-    <link href="/images/favicon.png?1746464549" rel="icon" type="image/png">
+    <link href="/images/favicon.png?1747169651" rel="icon" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1746464549" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746464549" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1746464549" rel="stylesheet">
-    <link href="/css/auto-complete.css?1746464549" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746464549" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1746464549" rel="stylesheet">
-    <link href="/css/fonts.css?1746464549" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746464549" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1746464549" rel="stylesheet">
-    <link href="/css/theme-neon.css?1746464549" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1746464549" rel="stylesheet">
-    <link href="/css/print.css?1746464549" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1746464549" rel="stylesheet">
-    <script src="/js/url.js?1746464549"></script>
-    <script src="/js/variant.js?1746464549"></script>
+    <link href="/css/fontawesome-all.min.css?1747169651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1747169651" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1747169651" rel="stylesheet">
+    <link href="/css/auto-complete.css?1747169651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1747169651" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1747169651" rel="stylesheet">
+    <link href="/css/fonts.css?1747169651" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1747169651" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1747169651" rel="stylesheet">
+    <link href="/css/theme-neon.css?1747169651" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1747169651" rel="stylesheet">
+    <link href="/css/print.css?1747169651" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1747169651" rel="stylesheet">
+    <script src="/js/url.js?1747169651"></script>
+    <script src="/js/variant.js?1747169651"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -148,6 +148,238 @@
 <ul>
 <li>From a powershell window change the directory to go into the Common folder and run the command dotnet nuget push “bin/Debug/RevMetrix.BallSpinner.Common.API.1.1.9.nupkg” –source “github”. This will push the Nuget package to the RevMetrix repository using the nuget.config file created earlier for the source location and credentials. This package can then be installed on the application with the Nuget package manager.</li>
 </ul>
+<h3 id="local-development-environment">Local Development Environment</h3>
+<h4 id="overview">Overview</h4>
+<ul>
+<li>The RevMetrix cloud team has created a local development environment that is consistent with the production environment, allowing developers to test new additions to the API and SQL server in an isolated environment. Using Docker, you will be able to run a local SQL server, and test additions to the SQL server using Liquibase. So please make sure to install Docker Desktop as it is necessary for local API development: <a href="https://www.docker.com/products/docker-desktop/" target="_blank">https://www.docker.com/products/docker-desktop/</a>.  An overview of the RevMetrix server infrastructure is pictured below:</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2025-capstone/cureent-state-of-revmetrix/cloud/6.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<ul>
+<li>On the production server, each of these containers run in a separate Docker container, however with the local development environment only the Liquibase and SQL Server containers run in Docker. The API server is run from Visual Studio and connects to the SQL Server through the host machine&rsquo;s local network, which can be mapped to the SQL Server container’s network through a Docker bridge network. Please review the Server Infrastructure (NOTE FOR ANDREW LINK TO THE SERVER INFRASTRUCTURE PAGE) for information pertaining to the operation and purpose of each of these containers.</li>
+</ul>
+<h4 id="steps-to-run-local-development-environment">Steps to Run Local Development Environment</h4>
+<ul>
+<li>
+<p>The following steps must be performed to run the local development environment (Note: The instructions assume you are running the local development environment in Windows. The local development environment has not been tested on any other OS, so to run the current local environment please use Windows):</p>
+<ul>
+<li>Open Docker Desktop
+<ul>
+<li>On Windows, Docker Desktop needs to be open in order to run Docker containers. This is due to the fact that in order for Windows to run containers, it must do so on a Virtual Machine.</li>
+</ul>
+</li>
+<li>Open a command prompt, and change directory into the location where the BallSpinner-Cloud repository is located. Run the following command to startup the Docker containers: docker-compose up.</li>
+<li>From here, you need to give the containers a little bit of time to start up, just around one minute or so. This is all related to the container’s operation and configuration, which is detailed in the Local Development Environment Configuration section of this page.</li>
+<li>Once the containers have been completely initialized, run the API server from Visual Studio by clicking the Run button at the top of the IDE ensuring the Server module is selected with the https configuration as pictured below.</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2025-capstone/cureent-state-of-revmetrix/cloud/7.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<ul>
+<li>If everything is successful, the swagger UI should appear:</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center"><img src="/2025-capstone/cureent-state-of-revmetrix/cloud/8.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"></th>
+      </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</li>
+</ul>
+<h4 id="integrating-the-local-development-environment-with-the-bsa">Integrating the Local Development Environment with the BSA</h4>
+<ul>
+<li>If you wish to test endpoints via the BSA, you can do so using the local address of the API server after it has begun running. Notice in the image displaying the Swagger UI the https://localhost:7238/swagger/index.html. This is the URL for the UI, but you can use part of this URL to access the local API server, that being https://localhost:7238/swagger/api. Although this is not a perfect system (future developers should find a way of being able to utilize this connection string, say when a certain configuration is run instead of the manual process detailed below), to run the BSA application and have it use the local API server for testing, open the BSA repository and navigate to the CommonDatabaseUtilities.cs file. In the constructor, replace the BaseAPIURL with https://localhost:7238/swagger/api instead of the RevMetrix domain within the else if (this.dbType == DatabaseTypes.REALDATABASE) statement. This will force any client-side API endpoints to use the local API server, which can be incredibly useful for debugging, as you can place breakpoints within the API endpoint files and debug the endpoints.</li>
+</ul>
+<h4 id="local-development-environment-configuration">Local Development Environment Configuration</h4>
+<ul>
+<li>The local development environment configuration is defined within the docker-compose.yml file located in the BallSpinner-Cloud repository. It is pictured below:</li>
+</ul>
+<p>| <img src="/2025-capstone/cureent-state-of-revmetrix/cloud/9.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"> |
+|:&ndash;:|</p>
+<p>| <img src="/2025-capstone/cureent-state-of-revmetrix/cloud/10.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"> |
+|:&ndash;:|</p>
+<ul>
+<li>
+<p>To learn more about docker compose and how to configure containers through it review the documentation here: <a href="https://docs.docker.com/compose/" target="_blank">https://docs.docker.com/compose/</a>. However, to describe what is going on through this configuration, two services (or containers) are defined here: the sql-server container and the liquibase container.</p>
+<ul>
+<li>
+<p>sql-server container:</p>
+<ul>
+<li>This container runs Microsoft&rsquo;s SQL Server 2019 and is used to host the database.</li>
+<li>It uses the mcr.microsoft.com/mssql/server:2019-latest image, which is the official Microsoft SQL Server image on Docker.</li>
+<li>The container is configured with two environment variables: SA_PASSWORD to set the system administrator password and ACCEPT_EULA to accept the End User License Agreement.</li>
+<li>A volume (sql-data) is used to persist data at /var/opt/mssql, and the ./sql-scripts directory is mounted into the container to provide the init.sql script, which initializes the database. The persisted volume ensures any data contained in the SQL Server will persist even when the container is shut down. Meaning that when the docker-compose command is run again, any data saved while the SQL Server was previously run will remain.</li>
+<li>The container listens on port 1433, mapping it from the container&rsquo;s internal port to the host machine&rsquo;s port, so it can be accessed externally by the API server.</li>
+<li>The command ensures that the init.sql script is only executed if the revmetrix-bs database does not already exist. The script is executed using the sqlcmd utility, which is included in the container. The sleep 30 part of the command is necessary to ensure the sql-server container has had enough time to spin up the SQL Server before running SQL commands.</li>
+</ul>
+</li>
+<li>
+<p>liquibase container:</p>
+<ul>
+<li>The liquibase container uses the official liquibase/liquibase image and depends on the sql-server container.</li>
+<li>It mounts the ./Liquibase/changelog directory into the container to access the Liquibase changelog file (changelog.xml), and the ./Liquibase/scripts/SQLScript directory which contains all of the liquibase formatted sql changesets. For the current configuration of liquibase, all of the changesets are contained within liquibase formatted sql instead of xml. For more information related to this, please view the Server Infrastructure (NOTE FOR ANDREW PLEASE LINK TO THE SERVER INFRASTRUCTURE SECTION) section.</li>
+<li>The command specifies that Liquibase will run after a 60-second delay, giving enough time for the SQL Server to be fully initialized. It will then execute the update command on the revmetrix-bs database, applying any changes from the changelog.xml file to the database.</li>
+<li>This service ensures that any database schema updates or changes defined in Liquibase are automatically applied after the SQL Server container is ready.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Both containers are connected to a custom bridge network (web-network), allowing them to communicate with each other using their container names as hostnames (sql_server for the SQL Server container). The use of Docker volumes ensures that data and configurations persist across container restarts.</p>
+</li>
+<li>
+<p>In summary, this configuration sets up an environment where the SQL Server container is initialized with a script that creates the database (if not already created), and the Liquibase container updates the database schema according to predefined change logs.</p>
+</li>
+<li>
+<p>Through the ./Liquibase/changelog: and ./Liquibase/scripts/SQLScript: volumes contained within the BallSpinner-Cloud repository, you can add additional changesets which will be executed when the docker-compose command is run. This is useful as it allows developers to test database migrations before pushing to production, as the setup for liquibase and the sql-server mimic that of the production server. Furthermore, since the configuration runs liquibase on startup and the changsets contained locally match that of the server, it also ensures that the local SQL Server is up to date with the schema contained on the cloud whenever it is run. To see how changesets should be created, review the Server Infrastructure
+http://localhost:1313/2024-capstone/current-state-of-revmetrix/backend/#web-api&mdash;client-and-server section.</p>
+</li>
+<li>
+<p>Additionally, if you wish to directly access the local SQL server through your host machine, you can use SQL Server Management Studio 20.</p>
+</li>
+</ul>
+<p>| <img src="/2025-capstone/cureent-state-of-revmetrix/cloud/11.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"> |
+|:&ndash;:|</p>
+<ul>
+<li>
+<p>After opening SSMS and running the sql-server container ample amount of time to start up, you can log into the local SQL server using the configuration shown above.</p>
+</li>
+<li>
+<p>Server name: localhost, 1433</p>
+</li>
+<li>
+<p>Login: SA</p>
+</li>
+<li>
+<p>Password: Strong!PassMAN!!!</p>
+</li>
+</ul>
+<h3 id="server-infrastructure">Server Infrastructure</h3>
+<h4 id="overview-1">Overview</h4>
+<ul>
+<li>The API server for the RevMetrix project is hosted on a DigitalOcean droplet, which is a VM that Digital Ocean provides its users for running computational workloads in the cloud. The main technology that the RevMetrix team uses to run its various services is Docker, which is a containerization platform. There are several other services that are run from the droplet, but this section is going to focus on the services related to the API server. Below is an overview of the current server infrastructure relevant to the APi server:</li>
+</ul>
+<p>| <img src="/2025-capstone/cureent-state-of-revmetrix/cloud/12.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"> |
+|:&ndash;:|</p>
+<ul>
+<li>
+<p>Each block represents a separate Docker container and each arrow represents a connection (unidirectional means the container A interacts with container B but not vice versa and bidirectional means both containers send information back and forth) between two containers that communicate through a Docker network. These containers communicate over a Docker network, which acts as a virtual communication channel. By default, this is often implemented as a bridge network on the host, which allows containers to resolve and connect to each other by name and route traffic internally without exposing ports externally. Regarding the containers, there is the API container which runs the API server, the SQL Server container which runs the SQL Server, and a liquibase container that is responsible for running database migrations on the SQL Server (more on that below).</p>
+</li>
+<li>
+<p>Firstly, in order to access the digital ocean droplet, you must be added to the RevMetrix organization in Digital Ocean, so be sure to ask to be added. Once you are within the organization, you are able to launch the droplet console, allowing you to work directly on the server. To see how to do this, please view the Managing a Droplet http://localhost:1313/2024-capstone/current-state-of-revmetrix/backend/#web-api&mdash;client-and-server section of the Wiki.</p>
+</li>
+</ul>
+<h4 id="important-files-and-directories-for-the-api">Important Files and Directories for the API</h4>
+<ul>
+<li>From the root directory, you will notice several folders containing services that are run from the VM. For this section, we will only be discussing what is contained within the ballSpinnerAPI folder. Within this folder, you will see the following items:</li>
+</ul>
+<p>| <img src="/2025-capstone/cureent-state-of-revmetrix/cloud/13.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"> |
+|:&ndash;:|</p>
+<ul>
+<li>There is a docker-compose.yml file that contains the configuration for the SQL Server and the API server, there is a folder containing anything relating to liquibase, a redeploy script (which is utilized by the CI/CD), and a sql-scripts folder which is mounted to the sql-server container through a volume. For security purposes, I am not going to display the docker-compose file, but it contains the definition for the API server and the SQL server, and allows the two to communicate through a Docker network. The Docker network allows the two containers to communicate privately without needing to be exposed to the public internet, as for the SQL Server having a port exposed publicly is a security vulnerability. The redeploy.sh script is run by the CI/CD pipeline whenever additions are made to the API containers docker image. The purpose of the script is to stop the API and SQL server containers, update the API container image, and rerun the docker-compose command so that the API server can contain the new code that was pushed to the main branch. The sql-scripts folder contains a database redeploy script that is mounted to the sql-server container through a docker volume. This database redeploy script can be run by executing the sql-server container (look into the docker exec -it command to see how to do this) and running the script using the sqlcmd utility. The sqlcmd utility can be used to run SQL commands on the SQL server hosted on the container. See the following documentation to learn how to use it</li>
+<li><a href="https://learn.microsoft.com/en-us/sql/tools/sqlcmd/sqlcmd-utility?view=sql-server-ver16&amp;tabs=go%2Cwindows%2Cwindows-support&amp;pivots=cs1-bash" target="_blank">https://learn.microsoft.com/en-us/sql/tools/sqlcmd/sqlcmd-utility?view=sql-server-ver16&tabs=go%2Cwindows%2Cwindows-support&pivots=cs1-bash</a>.</li>
+<li>The point of the database redeploy script is to delete the database and recreate it as an empty database. Since the RevMetrix project’s database is at a very early stage in development and the data contained within the database is not currently needed, deleting and recreating the database is an acceptable action to take if corruption ever occurs. This may not be true whenever you may read this in the future, so make sure you confirm this with the project managers before running it. Ideally, after running the script one should run liquibase to recreate the current database schema on the empty database.</li>
+</ul>
+<h4 id="liquibase">Liquibase</h4>
+<ul>
+<li>That brings us to how exactly liquibase is used on the cloud. Liquibase is a software that runs and manages database migrations. Think of it like git for databases. It allows developers to version control their database, with each version containing new changes for a schema. The liquibase folder contains the following elements:</li>
+</ul>
+<p>| <img src="/2025-capstone/cureent-state-of-revmetrix/cloud/14.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"> |
+|:&ndash;:|</p>
+<ul>
+<li>
+<p>The docker-compose.yml file contains the configuration for liquibase. When docker-compose is run in this directory, it spins up the liquibase container where liquibase can connect to the sql_server container though a Docker bridge network defined as web-network. This internal network allows the liquibase container to communicate directly with the sql-server container without exposing the SQL server to the public internet.</p>
+</li>
+<li>
+<p>Once the liquibase container is up, the liquibase container connects to the SQL Server then runs Liquibase against it using a connection string that targets the sql_server service name within the Docker network. Liquibase reads from a changelog.xml file located in the Liquibase/changelog folder. This changelog file defines the changesets that should be executed on the database. In this setup, there is currently only one changeset defined in the changelog file, and it references a .sql script located in the Liquibase/scripts/SQLScript folder.</p>
+</li>
+<li>
+<p>Rather than embedding each change directly into the XML file, this configuration uses SQL-formatted changesets, meaning the actual database changes are written in raw SQL inside the referenced script file. Each changeset in the SQL file is separated by a –changeset RevMetrix:ChangeSet#, where “ChangeSet#” represents the unique id associated with the changeset and RevMetrix represents the user executing the change. Liquibase processes this file and executes each changeset in sequence. These changes are tracked in a special DATABASECHANGELOG table inside the SQL Server database to ensure that each changeset is only run once. Meaning that when this container is spun up multiple times, it will only execute new changesets.</p>
+</li>
+<li>
+<p>When working with SQL-formatted changesets, it is important to never modify previously applied SQL changesets. Liquibase calculates a checksum for each changeset, and any changes to an already-applied script will result in a checksum mismatch and an error. To apply new changes, you should create a new SQL file (e.g., changeset-002.sql) and then add a new <changeset> entry in the changelog.xml that points to this new file. This ensures a clear, auditable history of all database changes over time.</p>
+</li>
+</ul>
+<h4 id="how-to-run-liquibase-in-the-cloud">How to Run Liquibase in the Cloud</h4>
+<ul>
+<li>The modular approach described above makes Liquibase a powerful tool for managing schema migrations in a CI/CD pipeline or multi-developer environment, especially when used alongside containerized setups like Docker Compose. Although this was not exactly the approach taken at the time of writing this documentation (all changesets were applied to the same SQL file), this is the recommended approach to ensure proper versioning management and to mitigate errors when running database migrations.</li>
+<li>Currently, database migrations need to be handled manually by adding new changesets and spinning up the liquibase container through navigating to the ballSpinnerAPI/liquibase directory and running the command docker-compose up which will run the update command and only apply the new changesets to the database. This is not a part of the CI/CD pipeline, although it should be added in order to simplify database migrations through automation.</li>
+</ul>
+<h4 id="cicd">CI/CD</h4>
+<ul>
+<li>CI/CD (Continuous Integration and Continuous Deployment) is a modern development practice that automates the process of building, testing, and deploying code. Continuous Integration ensures that code changes from multiple developers are regularly merged into a shared repository and automatically tested to catch issues early. Continuous Deployment extends this by automatically pushing the tested code into production or staging environments, ensuring faster and more reliable releases with minimal manual intervention. The tool that we use for CI/CD pipeline is GitHub actions, which can be configured to run whenever code is pushed to a repository. In our case, we have it configured such that our pipeline runs whenever code is pushed to the main branch. Pictured below is the yml file that defines our pipeline:</li>
+</ul>
+<p>| <img src="/2025-capstone/cureent-state-of-revmetrix/cloud/15.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"> |
+|:&ndash;:|</p>
+<p>| <img src="/2025-capstone/cureent-state-of-revmetrix/cloud/16.png?width=40vw&amp;lightbox=false" alt="Backend Arch" class="figure-image noborder nolightbox noshadow" style="height: auto; width: 40vw;" loading="lazy"> |
+|:&ndash;:|</p>
+<ul>
+<li>
+<p>This GitHub Actions workflow enables Continuous Integration and Continuous Deployment (CI/CD) for the BallSpinner API. It automates the process of testing, building, and deploying the application whenever code is pushed to the master branch, ensuring consistent and reliable delivery.</p>
+</li>
+<li>
+<ol>
+<li>Tests Job – Verifying Code Quality</li>
+</ol>
+</li>
+<li>
+<p>When a push is made to the master branch, the workflow starts by running tests:</p>
+<ul>
+<li>It checks out the repository and sets up Docker.</li>
+<li>It launches necessary containers (such as SQL Server) using docker-compose and waits for them to fully start. This uses the same docker configuration that is detailed in the Local Development Environment section, ensuring the sql-server contains the most up-to-date schema with the code that was pushed to the master branch.</li>
+<li>The .NET 7 SDK is installed and the project is restored, built, and tested using the dotnet CLI. This ensures all relevant dependencies are installed so that the tests can run in the correct environment.</li>
+<li>The test configuration is controlled by a custom .runsettings file. This file contains environment variables used for testing, mainly connection strings to the local SQL server.</li>
+</ul>
+</li>
+<li>
+<ol start="2">
+<li>Build Job – Creating the Docker Image
+After tests pass, the build job begins:</li>
+</ol>
+<ul>
+<li>It checks out the code again.</li>
+<li>It logs in to Docker Hub using GitHub Secrets (DOCKER_USER and DOCKER_PASS) to securely authenticate without exposing credentials.</li>
+<li>The Docker image is built using the provided Dockerfile and tagged as latest under the user&rsquo;s repository.</li>
+<li>The image is then pushed to Docker Hub, making it available for deployment.</li>
+</ul>
+</li>
+<li>
+<ol start="3">
+<li>Deploy Job – Deploying to the Cloud
+Once the Docker image is pushed:</li>
+</ol>
+<ul>
+<li>The deploy job uses SSH credentials stored as GitHub Secrets (SERVER_HOST, SERVER_USER, and SSH_DROPLET_PRIVKEY) to connect securely to a DigitalOcean droplet.</li>
+<li>It navigates to the appropriate directory and runs a custom redeploy.sh script to update the running API container.</li>
+<li>This script pulls the latest image from Docker Hub (which was just pushed from the build job) and restarts the container, completing the deployment.</li>
+</ul>
+</li>
+</ul>
+<h4 id="why-github-secrets-matter">Why GitHub Secrets Matter</h4>
+<ul>
+<li>GitHub Secrets are used throughout this workflow to securely handle sensitive information such as Docker Hub credentials and SSH access keys. This ensures credentials are never hardcoded or exposed in the repository, aligning with security best practices. You’ll notice several times throughout the workflow file there are ${{SECRETS.VARIABLE_NAME}} variables. You can add new secrets as well to a repository for any other sensitive information you want to include in a workflow. Please see this documentation for more information on how to add secrets to a Github repository: <a href="https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions" target="_blank">https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions</a>.</li>
+</ul>
+<h4 id="information-on-creating-endpoints">Information on Creating Endpoints</h4>
+<ul>
+<li>For information on how to create endpoints on the API server please view this page RevMetrix WebAPI
+http://localhost:1313/2024-capstone/current-state-of-revmetrix/backend/#web-api&mdash;client-and-server</li>
+</ul>
 
             <footer class="footline">
 
@@ -174,12 +406,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1746464549" defer></script>
-        <script src="/js/lunr/lunr.min.js?1746464549" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1746464549" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1746464549" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1746464549" defer></script>
-        <script src="/js/search.js?1746464549" defer></script>
+        <script src="/js/auto-complete.js?1747169651" defer></script>
+        <script src="/js/lunr/lunr.min.js?1747169651" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1747169651" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1747169651" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1747169651" defer></script>
+        <script src="/js/search.js?1747169651" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <hr class="padding">
@@ -189,10 +421,7 @@
           <ul class="enlarge morespace collapsible-menu">
           <li data-nav-id="/2024-capstone/index.html" class=""><input type="checkbox" id="section-c3070f642099fcf44a5486c92919ac1b" aria-controls="subsections-c3070f642099fcf44a5486c92919ac1b"><label for="section-c3070f642099fcf44a5486c92919ac1b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2024 Capstone</span></label><a class="padding" href="/2024-capstone/index.html">2024 Capstone</a><ul id="subsections-c3070f642099fcf44a5486c92919ac1b" class="morespace collapsible-menu">
           <li data-nav-id="/2024-capstone/current-state-of-revmetrix/index.html" class="alwaysopen"><input type="checkbox" id="section-fe6384ce793f1a91f0823f9ffd2d2cea" aria-controls="subsections-fe6384ce793f1a91f0823f9ffd2d2cea" checked><label for="section-fe6384ce793f1a91f0823f9ffd2d2cea"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2024 RevMetrix</span></label><a class="padding" href="/2024-capstone/current-state-of-revmetrix/index.html"> 2024 RevMetrix</a><ul id="subsections-fe6384ce793f1a91f0823f9ffd2d2cea" class="morespace collapsible-menu">
-          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/backend-fall2024/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/backend-fall2024/index.html">2024 Fall Backend</a></li>
           <li data-nav-id="/2024-capstone/current-state-of-revmetrix/ballspinner/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/ballspinner/index.html">2024 Fall Ballspinner</a></li>
-          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/frontend-fall2024/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/frontend-fall2024/index.html">2024 Fall Frontend</a></li>
-          <li data-nav-id="/2024-capstone/current-state-of-revmetrix/simulation-fall2024/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/simulation-fall2024/index.html">2024 Fall Simulation</a></li>
           <li data-nav-id="/2024-capstone/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-d2801c027a36554919535823917d600b" aria-controls="subsections-d2801c027a36554919535823917d600b" checked><label for="section-d2801c027a36554919535823917d600b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2024 Spring Backend</span></label><a class="padding" href="/2024-capstone/current-state-of-revmetrix/backend/index.html">2024 Spring Backend</a><ul id="subsections-d2801c027a36554919535823917d600b" class="morespace collapsible-menu">
           <li data-nav-id="/2024-capstone/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
           <li data-nav-id="/2024-capstone/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/2024-capstone/current-state-of-revmetrix/frontend/index.html">2024 Spring Frontend</a></li>
@@ -289,6 +518,7 @@
           <li data-nav-id="/2025-capstone/set-up/upgrade-.net/index.html" class=""><a class="padding" href="/2025-capstone/set-up/upgrade-.net/index.html">.Net Upgrade</a></li>
           <li data-nav-id="/2025-capstone/set-up/ballspinner-application/index.html" class=""><a class="padding" href="/2025-capstone/set-up/ballspinner-application/index.html">Ball Spinner Application</a></li>
           <li data-nav-id="/2025-capstone/set-up/cloud/index.html" class=""><a class="padding" href="/2025-capstone/set-up/cloud/index.html">Cloud</a></li>
+          <li data-nav-id="/2025-capstone/set-up/contributing-documentation/index.html" class=""><a class="padding" href="/2025-capstone/set-up/contributing-documentation/index.html">Contributing Documentation</a></li>
           <li data-nav-id="/2025-capstone/set-up/mobile-app/index.html" class=""><a class="padding" href="/2025-capstone/set-up/mobile-app/index.html">Mobile App</a></li></ul></li></ul></li>
           <li data-nav-id="/ciclopes/index.html" class=""><a class="padding" href="/ciclopes/index.html">Ciclopes</a></li>
           <li data-nav-id="/smartdot/index.html" class=""><input type="checkbox" id="section-6ebd386426025f58498d5569169cda24" aria-controls="subsections-6ebd386426025f58498d5569169cda24"><label for="section-6ebd386426025f58498d5569169cda24"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/smartdot/index.html">SmartDot</a><ul id="subsections-6ebd386426025f58498d5569169cda24" class="morespace collapsible-menu">
@@ -369,8 +599,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1746464549" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1746464549" defer></script>
-    <script src="/js/theme.js?1746464549" defer></script>
+    <script src="/js/clipboard.min.js?1747169651" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1747169651" defer></script>
+    <script src="/js/theme.js?1747169651" defer></script>
   </body>
 </html>

@@ -8,20 +8,20 @@
     <meta name="description" content="How to link domains to an application using DNS records and Nginx Proxy Manager">
     <title>Linking Domains :: Hugo Relearn Theme</title>
     <link href="/2024-capstone/how-to-contribute/linking-domains/index.xml" rel="alternate" type="application/rss+xml" title="Linking Domains :: Hugo Relearn Theme">
-    <link href="/images/favicon.png?1746464549" rel="icon" type="image/png">
+    <link href="/images/favicon.png?1747016927" rel="icon" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1746464549" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1746464549" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1746464549" rel="stylesheet">
-    <link href="/css/auto-complete.css?1746464549" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1746464549" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1746464549" rel="stylesheet">
-    <link href="/css/fonts.css?1746464549" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1746464549" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1746464549" rel="stylesheet">
-    <link href="/css/theme-neon.css?1746464549" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1746464549" rel="stylesheet">
-    <link href="/css/print.css?1746464549" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1746464549" rel="stylesheet">
-    <script src="/js/url.js?1746464549"></script>
-    <script src="/js/variant.js?1746464549"></script>
+    <link href="/css/fontawesome-all.min.css?1747016927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1747016927" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1747016927" rel="stylesheet">
+    <link href="/css/auto-complete.css?1747016927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1747016927" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1747016927" rel="stylesheet">
+    <link href="/css/fonts.css?1747016927" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1747016927" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1747016927" rel="stylesheet">
+    <link href="/css/theme-neon.css?1747016927" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1747016927" rel="stylesheet">
+    <link href="/css/print.css?1747016927" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1747016927" rel="stylesheet">
+    <script src="/js/url.js?1747016927"></script>
+    <script src="/js/variant.js?1747016927"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -83,25 +83,25 @@
 <p>*Note: Nginx Proxy Manager is already set up on the Cloud-infrastructure Droplet, so there is no need to set it up when linking domains to anything API related.</p>
 <h3 id="linking-a-domain-or-subdomain">Linking a Domain or Subdomain</h3>
 <p>To link a a domain or a subdomain to the IP address of an application, you first want to create an A record in the DNS settings of your domain on its provider&rsquo;s website.  If you have linked a domain to DigitalOcean already from a different provider, this can be done from within DigitalOcean, under Domains -&gt; yourDomain -&gt; Create new record.</p>
-<p><a href="#image-9020ca671911b45c6a0e0c3ac6933cb8" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-9020ca671911b45c6a0e0c3ac6933cb8"><img src="/2024-capstone/how-to-contribute/linking-domains/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-c5dea05bdbc428919414367e72d37b05" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-c5dea05bdbc428919414367e72d37b05"><img src="/2024-capstone/how-to-contribute/linking-domains/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>To create an A record for the domain, simply enter the hostname (such as example.com or site.example.com if linking a subdomain), enter the IP of the Droplet that the domain will direct traffic to (such as 192.168.xxx.xxx), and the Time-To-Live value (defaults to 3600 seconds).  Then, hit Create Record and the A record will have been created.  This is all that needs to be done for the DNS settings of the domain, so any windows regarding that can now be closed.</p>
 <h3 id="opening-the-port-for-nginx-proxy-manager">Opening The Port For Nginx Proxy Manager</h3>
 <p>To access Nginx Proxy Manager on the Droplet&rsquo;s IP address after setup, a custom firewall setting must be configured.  To do this, head over to the Droplet&rsquo;s dashboard, go to the networking tab on the left under the Droplet&rsquo;s IPv4 Address, scroll down to the &ldquo;Firewalls&rdquo; section, and click on either &ldquo;Configure Firewall&rdquo; or the name of an existing firewall.  This will bring you to the Inbound and Outbound Rules page.  From here, under Inbound Rules, click on the &ldquo;New rule&rdquo; dropdown button (under the existing rules).  Select &ldquo;Custom&rdquo;, and then for the port range enter &ldquo;81&rdquo; and hit save.  Now, when you go to &ldquo;http://&lsquo;Droplet&rsquo;sIPAddr&rsquo;:81&rdquo;, you will see the login page for the instance of Nginx Proxy Manager that is running on the Droplet.  Login, and if you do not have an account already created, the login info will be &ldquo;<a href="mailto:admin@example.com">admin@example.com</a>&rdquo; with the password &ldquo;changeme&rdquo;.  Be sure to change the username and password after logging in.</p>
 <h3 id="creating-a-proxy-host">Creating a Proxy Host</h3>
 <p>To direct traffic through the domain/subdomain name to the application being hosted on the Droplet, it is necessary to create a new Proxy host in Nginx Proxy Manager for the domain/subdomain.  To do so, after logging into the instance of Nginx Proxy Manager running on the Droplet, click the &ldquo;Proxy Hosts&rdquo; button on the left of the dashboard.  From here you will be taken to the Proxy Hosts page.  Go ahead and hit the &ldquo;Add Proxy Host&rdquo; button as seen below:</p>
-<p><a href="#image-05f616f7f4d2b202b2495b8d2c532f72" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-05f616f7f4d2b202b2495b8d2c532f72"><img src="/2024-capstone/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-9e252b04fd799d78066004a646a5b94c" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-9e252b04fd799d78066004a646a5b94c"><img src="/2024-capstone/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>This will bring up the page below.  Be sure to enter the domain/subdomain that you created an A record for earlier into the &ldquo;Domain Names&rdquo; field and hit the Tab key.  Then, specify the IP address of the Droplet to direct the traffic of the link to, and finally specify the port that the application will be running on inside of the Droplet.  Make sure to check each option and hit save:</p>
-<p><a href="#image-29c65f853400640f7038d943b0bd0b93" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-29c65f853400640f7038d943b0bd0b93"><img src="/2024-capstone/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-bb62103f0cc28600fb8f6f5c948c0c15" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-bb62103f0cc28600fb8f6f5c948c0c15"><img src="/2024-capstone/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <h3 id="generating-an-ssl-certificate-for-the-domain">Generating an SSL Certificate For The Domain</h3>
 <p>After creating a Proxy Host for the domain, a listing similar to the following will appear in the list of Proxy Hosts:</p>
-<p><a href="#image-f98ce45c58ca8e650da38293a0d58453" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-f98ce45c58ca8e650da38293a0d58453"><img src="/2024-capstone/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-6b49e6c0e396fe86fcef66f5f42e7754" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-6b49e6c0e396fe86fcef66f5f42e7754"><img src="/2024-capstone/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>From here, click the three dots on the right of the listing and select &ldquo;Edit&rdquo;.  Click on the &ldquo;SSL&rdquo; tab in the popup window, and select &ldquo;Request a new SSL Certificate&rdquo; and enter your email to generate the certificate by hitting the save button as seen below:</p>
-<p><a href="#image-c60b882e1e559654eaefa9aa2d2fce92" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-c60b882e1e559654eaefa9aa2d2fce92"><img src="/2024-capstone/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-5bb12a677fcb8bf081dc1807f39190f8" class="lightbox-link"><img src="/2024-capstone/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-5bb12a677fcb8bf081dc1807f39190f8"><img src="/2024-capstone/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>Once this is done, it will take a moment to generate the certificate, but soon the application will be accessible through the domain name over http and https.  To force the domain to use https and avoid any http requests, go back to the SSL tab as done above and toggle the &ldquo;Force SSL&rdquo; slider, then hit save.</p>
 <h3 id="conclusion">Conclusion</h3>
 <p>Now, the domain should be securely accessible and linked to the Droplet&rsquo;s IP address and the port that the application is running on on the Droplet.  Make sure to delete the custom firewall configuration for the Droplet, and everything should be good to go!</p>
@@ -131,12 +131,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1746464549" defer></script>
-        <script src="/js/lunr/lunr.min.js?1746464549" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1746464549" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1746464549" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1746464549" defer></script>
-        <script src="/js/search.js?1746464549" defer></script>
+        <script src="/js/auto-complete.js?1747016927" defer></script>
+        <script src="/js/lunr/lunr.min.js?1747016927" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1747016927" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1747016927" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1747016927" defer></script>
+        <script src="/js/search.js?1747016927" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <hr class="padding">
@@ -246,6 +246,7 @@
           <li data-nav-id="/2025-capstone/set-up/upgrade-.net/index.html" class=""><a class="padding" href="/2025-capstone/set-up/upgrade-.net/index.html">.Net Upgrade</a></li>
           <li data-nav-id="/2025-capstone/set-up/ballspinner-application/index.html" class=""><a class="padding" href="/2025-capstone/set-up/ballspinner-application/index.html">Ball Spinner Application</a></li>
           <li data-nav-id="/2025-capstone/set-up/cloud/index.html" class=""><a class="padding" href="/2025-capstone/set-up/cloud/index.html">Cloud</a></li>
+          <li data-nav-id="/2025-capstone/set-up/contributing-documentation/index.html" class=""><a class="padding" href="/2025-capstone/set-up/contributing-documentation/index.html">Contributing Documentation</a></li>
           <li data-nav-id="/2025-capstone/set-up/mobile-app/index.html" class=""><a class="padding" href="/2025-capstone/set-up/mobile-app/index.html">Mobile App</a></li></ul></li></ul></li>
           <li data-nav-id="/ciclopes/index.html" class=""><a class="padding" href="/ciclopes/index.html">Ciclopes</a></li>
           <li data-nav-id="/smartdot/index.html" class=""><input type="checkbox" id="section-6ebd386426025f58498d5569169cda24" aria-controls="subsections-6ebd386426025f58498d5569169cda24"><label for="section-6ebd386426025f58498d5569169cda24"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/smartdot/index.html">SmartDot</a><ul id="subsections-6ebd386426025f58498d5569169cda24" class="morespace collapsible-menu">
@@ -326,8 +327,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1746464549" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1746464549" defer></script>
-    <script src="/js/theme.js?1746464549" defer></script>
+    <script src="/js/clipboard.min.js?1747016927" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1747016927" defer></script>
+    <script src="/js/theme.js?1747016927" defer></script>
   </body>
 </html>
