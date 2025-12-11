@@ -1,5 +1,5 @@
 +++
-title = "Set up "
+title = "Smart Watch"
 weight = 100
 description = 'for help '
 +++
