@@ -1,7 +1,7 @@
 +++
 title = "Project Milestones"
 weight = 100
-description = '2025 spring Project Milestones '
+description = '2025 Project Milestones'
 +++
 
 {{% children containerstyle="ul" style="li" sort="title" description="true" %}}

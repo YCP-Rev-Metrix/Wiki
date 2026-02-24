@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fall 2025 on Hugo Relearn Theme</title>
+    <link>//localhost:1313/2025-capstone/project-milestones/fall-2025/index.html</link>
+    <description>Recent content in Fall 2025 on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/2025-capstone/project-milestones/fall-2025/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Milestone 1</title>
+      <link>//localhost:1313/2025-capstone/project-milestones/fall-2025/milestone-1/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/project-milestones/fall-2025/milestone-1/index.html</guid>
+      <description>&lt;embed class=&#34;pdf&#34; src=&#34;Milestone1_Fa25.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Milestone 2</title>
+      <link>//localhost:1313/2025-capstone/project-milestones/fall-2025/milestone-2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/project-milestones/fall-2025/milestone-2/index.html</guid>
+      <description>&lt;embed class=&#34;pdf&#34; src=&#34;Milestone2_Fa25.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Final Presentation</title>
+      <link>//localhost:1313/2025-capstone/project-milestones/fall-2025/final/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/project-milestones/fall-2025/final/index.html</guid>
+      <description>&lt;embed class=&#34;pdf&#34; src=&#34;Final_Fa25.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -7,16 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="//localhost:1313/2025-capstone/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2025 Project Assignments</title>
-      <link>//localhost:1313/2025-capstone/project-assignments/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2025-capstone/project-assignments/index.html</guid>
-      <description>&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
-	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-assignments/project-proposal/index.html&#34;&gt;Project Proposal&lt;/a&gt;&lt;p&gt;2025 &lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
       <title>2025 RevMetrix</title>
       <link>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,15 +34,29 @@
 &lt;p&gt;The MetaMotionS is an inertial measurement unit that contains the same sensors as the proposed future SmartDot module. The MetaMotion module contains a gyroscope, accelerometer, magnetometer, barometer, temperature, and ambient light sensor, and it is currently being used to emulate the SmartDot module, which has not yet been constructed.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Project Assignments 2025</title>
+      <link>//localhost:1313/2025-capstone/project-assignments/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/project-assignments/index.html</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;Below you can find the list of semesters that RevMetrix was under development and their respective assignments and details.&lt;/p&gt;
+&lt;h4 id=&#34;development-semesters&#34;&gt;Development Semesters&lt;/h4&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-assignments/project-proposal/fall-2025/index.html&#34;&gt;Project Proposal&lt;/a&gt;&lt;p&gt;Fall 2025&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-assignments/project-proposal/spring-2025/index.html&#34;&gt;Project Proposal&lt;/a&gt;&lt;p&gt;Spring 2025&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>Project Milestones</title>
       <link>//localhost:1313/2025-capstone/project-milestones/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2025-capstone/project-milestones/index.html</guid>
       <description>&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/milestone-1/index.html&#34;&gt;Milestone 1&lt;/a&gt;&lt;p&gt;Milestone 1&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/milestone-2/index.html&#34;&gt;Milestone 2&lt;/a&gt;&lt;p&gt;Milestone 2&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/milestone-3/index.html&#34;&gt;Milestone 3&lt;/a&gt;&lt;p&gt;Milestone 3&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/fall-2025/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;Fall 2025&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/spring-2025/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;Spring 2025&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>
