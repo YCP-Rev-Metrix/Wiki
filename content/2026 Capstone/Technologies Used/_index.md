@@ -1,7 +1,7 @@
 +++
-title = "2025 Technologies Used"
+title = "2026 Technologies Used"
 weight = 100
-description = '2025 Capstone'
+description = '2026 Capstone'
 +++
 
 
