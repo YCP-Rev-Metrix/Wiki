@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Set up  on Hugo Relearn Theme</title>
+    <link>//localhost:1313/2026-capstone/set-up/index.html</link>
+    <description>Recent content in Set up  on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/2026-capstone/set-up/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.Net Upgrade</title>
+      <link>//localhost:1313/2026-capstone/set-up/upgrade-.net/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/set-up/upgrade-.net/index.html</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Download the .NET SDK
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dotnet.microsoft.com/en-us/download&#34; target=&#34;_blank&#34;&gt;https://dotnet.microsoft.com/en-us/download&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Run installer&lt;/li&gt;
+&lt;li&gt;Open command prompt and run “dotnet” to confirm installation&lt;/li&gt;
+&lt;li&gt;Confirm Visual Studio is updated to the appropriate version (can be found on the SDK download page)&lt;/li&gt;
+&lt;li&gt;Check Version: Help → About Microsoft Visual Studio&lt;/li&gt;
+&lt;li&gt;Update: Help → Check for Updates → Update&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/set-up/upgrade-.net/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Install .NET Upgrade Assistant
+&lt;ul&gt;
+&lt;li&gt;Visual Studio → Extensions → Manage Extensions…&lt;/li&gt;
+&lt;li&gt;Search for .NET Upgrade Assistant&lt;/li&gt;
+&lt;li&gt;Click Install&lt;/li&gt;
+&lt;li&gt;Close Visual Studio&lt;/li&gt;
+&lt;li&gt;Click Modify on the pop-up&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/set-up/upgrade-.net/2.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Open Visual Studio again&lt;/li&gt;
+&lt;li&gt;Right Click on the project file (for our solution, its BackEnd.csproj, FrontEnd.csproj, and Test.csproj)&lt;/li&gt;
+&lt;li&gt;Click Upgrade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/set-up/upgrade-.net/3.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Select upgrade option&lt;/li&gt;
+&lt;li&gt;Repeat steps 5-7 for each .csproj file&lt;/li&gt;
+&lt;li&gt;Upgrade the .NET Maui version installed
+&lt;ul&gt;
+&lt;li&gt;Visual Studio → Tools → NuGet Package Manager → Manage NuGet Packages for Solution…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/set-up/upgrade-.net/4.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;Update Microsoft.Maui.Controls &amp;amp; Microsoft.Maui.Controls.Compatibility&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Mobile App</title>
+      <link>//localhost:1313/2026-capstone/set-up/mobile-app/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/set-up/mobile-app/index.html</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To setup the mobile application for development, follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download and install Visual Studio 2022 Community Edition and Open the Visual Studio Installer.&lt;/li&gt;
+&lt;li&gt;Select Modify and check the following (If all three options aren&amp;rsquo;t available, you need to select UPDATE)
+&lt;ul&gt;
+&lt;li&gt;ASP.NET and web development&lt;/li&gt;
+&lt;li&gt;.Net desktop development&lt;/li&gt;
+&lt;li&gt;.NET Maui-platform App UI development
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/set-up/mobile-app/Workloads.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Workloads&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Select Modify (Either install while downloading, or download 1st then install)&lt;/li&gt;
+&lt;li&gt;Launch Visual Studio 2022&lt;/li&gt;
+&lt;li&gt;Clone the repository for the Mobile App: &lt;a href=&#34;https://github.com/YCP-Rev-Metrix/Cellular.git&#34; target=&#34;_blank&#34;&gt;https://github.com/YCP-Rev-Metrix/Cellular.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Open the solution file in Visual Studio&lt;/li&gt;
+&lt;li&gt;Navigate to Tools &amp;gt; Nuget Package Manager &amp;gt; Manage Nuget Packages for Solution
+&lt;ul&gt;
+&lt;li&gt;The following Nuget Packages need to be installed (if not already):
+| &lt;img src=&#34;//localhost:1313/2026-capstone/set-up/mobile-app/NuGet.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;NuGet Packages&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;You are now ready to develop the mobile application!&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To deploy the app to an android phone, follow these steps:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
