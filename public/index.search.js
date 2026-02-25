@@ -1,5 +1,12 @@
 var relearn_search_index = [
   {
+    "content": "Main page The main page is the first screen users see for the Mobile Application. It contains buttons to navigate to every other page in the application. Before the user is logged in, they can only see three buttons. The “Login” button sends users to the login page where they can enter their credentials. The “Registration” button sends users to the registration page where they can fill in fields to create a new account. Finally, the “Guest” button bypasses the login page and signs the user into a guest account where they can currently access every page of the application. Once the user is logged in, the page updates to show additional buttons for navigation.\n",
+    "description": "Mobile Application",
+    "tags": null,
+    "title": "Main Page",
+    "uri": "/2026-capstone/current-state-of-revmetrix/cellular/main-page/index.html"
+  },
+  {
     "content": "\r",
     "description": "Milestone 1",
     "tags": null,
@@ -42,6 +49,13 @@ var relearn_search_index = [
     "uri": "/2025-capstone/project-milestones/fall-2025/index.html"
   },
   {
+    "content": "Login Page The login page allows users to input their username and password to sign in to the Mobile Application. New users can click the blue text below the login button to navigate to the registration page to create a new account.\n",
+    "description": "Mobile Application",
+    "tags": null,
+    "title": "Login Page",
+    "uri": "/2026-capstone/current-state-of-revmetrix/cellular/login/index.html"
+  },
+  {
     "content": "",
     "description": "Milestone 2",
     "tags": null,
@@ -68,6 +82,27 @@ var relearn_search_index = [
     "tags": null,
     "title": "Final Presentation",
     "uri": "/2025-capstone/project-milestones/spring-2025/final/index.html"
+  },
+  {
+    "content": "Registration Page The registration page allows users to fill in a number of fields to create a new account. These fields are username, password, password confirmation, first name, last name, email, email confirmation, and phone number. Once all of these fields have been filled in, the user can click register to create the account and send them back to the home page to login.\n",
+    "description": "Mobile Application",
+    "tags": null,
+    "title": "Registration Page",
+    "uri": "/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html"
+  },
+  {
+    "content": "Ball Arsenal Page The Ball Arsenal page, provides users with a comprehensive overview of their available bowling balls. This interface displays key attributes for each ball, including the name, weight, core type (optional), and color. To register a new ball, users can select the “+” icon located in the upper-right corner of the page, which navigates to the input form.\nWithin the ball registration form, users are prompted to enter the ball�s identifying information: name, weight(optional), core type, and color. Color can be chosen from a dropdown menu, which also allows for custom hex color input. Upon selecting the �Register Ball� button, the system stores the entry and updates the Ball Arsenal display to include the newly registered ball.\n",
+    "description": "Mobile Application",
+    "tags": null,
+    "title": "Ball Arsenal Page",
+    "uri": "/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html"
+  },
+  {
+    "content": "Shot Page The shot page is the core of the mobile application. This page allows users to input and save shot data, which is the main use case of the mobile application. The page features a session date at the top of the page. Below that is a scrollable collection of frames. Each frame contains a frame number, boxes for the shot 1 and 2 pin count, a visual representation of the pinstates, and the game score. On the left side of the screen below the frame collection there is text displaying the game number, frame number, and shot number. The input fields allow the user to select which player made the shot, as well as which ball was used for each shot. The shot one ball is the �Strike Ball� and the shot 2 ball is �Spare Ball�. The center of the screen features 10 buttons representing the 10 pins as oriented the same way they would be seen in a bowling alley. These buttons are used to select which pins were left standing on each shot. To the right of the pin buttons are 4 shortcut buttons for foul, gutter, spare, and strike. Below the pin buttons is a slider used to select which board the ball was on when it reached the end of the lane. A number is shown below the slider so that the user can confirm they have selected the right board. Finally, at the bottom of the interface there are 2 buttons. The �Comment� button displays a popup that allows users to input a comment for their current shot. If editing a shot, the comment can be edited and resaved. The �Next� button is used to submit the player’s shot information and progress through the game.\nThe shot page does have some functionality restrictions based on bowling rules. Shot 1 Restrictions\nSpare button becomes unresponsive Shot 2 Restrictions Strike button becomes unresponsive Pin buttons that were down on shot 1 become unresponsive on shot 2 ",
+    "description": "Mobile Application",
+    "tags": null,
+    "title": "Shot Page",
+    "uri": "/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html"
   },
   {
     "content": "RevMetrix System Architecture Current Status by Development Team 2024 Fall BallspinnerAll details about the current state of the backend development, along with what is planned for the future\n2024 Spring BackendAll details about the current state of the backend development, along with what is planned for the future\n2024 Spring FrontendAll details about the current state of the frontend development, along with what is planned for the future\n2024 Spring SimulationAll details about the current state of simulation development, along with what is planned for the future\n",
@@ -798,7 +833,7 @@ var relearn_search_index = [
     "uri": "/2025-capstone/cureent-state-of-revmetrix/cellular/index.html"
   },
   {
-    "content": "Mobile Application Overview The purpose of the mobile application is to provide users with an intuitive way to record and view their bowling performance data. The application allows users to store and manage a variety of data, including Events, Sessions, Games, Frames, Shots, Bowling Establishments, Bowling Balls, and Account information.\nShot Page The shot page is the base of the mobile application. It contains a frame view at the top to show the pins knocked down on each shot, as well as the game’s score. Below that, there are buttons and input fields used to track a full game of bowling.\nThe input fields on the left of the screen allow users to select a player, as well as a strike ball and spare ball used for each frame. The buttons on the right are shortcuts for users to select if they get a Foul, Gutter, Spare, or Strike. The slider below the pin buttons lets the user select which board the ball hit at the end of the lane. The Next button is used to submit each shot and progress through a game.\nThe session page allows users to create new sessions and view old ones.\nDatabase All data is stored locally on the device using SQLite, ensuring quick access and offline functionality The application includes functionality to save and load individual frames and shots, enabling detailed tracking of each game. The application is linked to the existing cloud database through a test SQL table, laying the groundwork for future features such as data backup and cross-device synchronization.\n",
+    "content": "App Pages Main PageMobile Application\nLogin PageMobile Application\nRegistration PageMobile Application\nBall Arsenal PageMobile Application\nShot PageMobile Application\n",
     "description": "Cellular",
     "tags": null,
     "title": "Mobile Application",

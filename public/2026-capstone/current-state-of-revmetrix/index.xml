@@ -126,29 +126,16 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
       <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/index.html</guid>
-      <description>&lt;h3 id=&#34;mobile-application-overview&#34;&gt;Mobile Application Overview&lt;/h3&gt;
-&lt;p&gt;The purpose of the mobile application is to provide users with an intuitive way to record and view their bowling performance data.
-The application allows users to store and manage a variety of data, including Events, Sessions, Games, Frames, Shots, Bowling Establishments, Bowling Balls, and Account information.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/mobile_mainpage_default.jpg?width=20vw&amp;amp;lightbox=false&#34; alt=&#34;Main Page Default&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 20vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/mobile_mainpage_loggedin.jpg?width=20vw&amp;amp;lightbox=false&#34; alt=&#34;Main Page Logged In&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 20vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;shot-page&#34;&gt;Shot Page&lt;/h3&gt;
-&lt;p&gt;The shot page is the base of the mobile application. It contains a frame view at the top to show the pins knocked down on each shot, as well as the game’s score. Below that, there are buttons and input fields used to track a full game of bowling.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;app-pages&#34;&gt;App Pages&lt;/h2&gt;
+
+&lt;ul class=&#34;children children-li children-sort-weight&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/main-page/index.html&#34;&gt;Main Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/login/index.html&#34;&gt;Login Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html&#34;&gt;Registration Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html&#34;&gt;Ball Arsenal Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html&#34;&gt;Shot Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
