@@ -22,9 +22,12 @@
     <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/index.html</loc>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/login/index.html</loc>
   </url>
   <url>
+=======
+>>>>>>> jbyers5
     <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/milestone-2/index.html</loc>
   </url>
   <url>
@@ -37,6 +40,7 @@
     <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/final/index.html</loc>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html</loc>
   </url>
   <url>
@@ -46,6 +50,8 @@
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html</loc>
   </url>
   <url>
+=======
+>>>>>>> jbyers5
     <loc>//localhost:1313/2024-capstone/current-state-of-revmetrix/index.html</loc>
   </url>
   <url>

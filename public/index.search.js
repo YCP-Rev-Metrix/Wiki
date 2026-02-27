@@ -49,6 +49,7 @@ var relearn_search_index = [
     "uri": "/2025-capstone/project-milestones/fall-2025/index.html"
   },
   {
+<<<<<<< HEAD
     "content": "Login Page The login page allows users to input their username and password to sign in to the Mobile Application. New users can click the blue text below the login button to navigate to the registration page to create a new account.\n",
     "description": "Mobile Application",
     "tags": null,
@@ -56,6 +57,8 @@ var relearn_search_index = [
     "uri": "/2026-capstone/current-state-of-revmetrix/cellular/login/index.html"
   },
   {
+=======
+>>>>>>> jbyers5
     "content": "",
     "description": "Milestone 2",
     "tags": null,
@@ -84,6 +87,7 @@ var relearn_search_index = [
     "uri": "/2025-capstone/project-milestones/spring-2025/final/index.html"
   },
   {
+<<<<<<< HEAD
     "content": "Registration Page The registration page allows users to fill in a number of fields to create a new account. These fields are username, password, password confirmation, first name, last name, email, email confirmation, and phone number. Once all of these fields have been filled in, the user can click register to create the account and send them back to the home page to login.\n",
     "description": "Mobile Application",
     "tags": null,
@@ -106,6 +110,9 @@ var relearn_search_index = [
   },
   {
     "content": "RevMetrix System Architecture Current Status by Development Team 2024 Fall BallspinnerAll details about the current state of the backend development, along with what is planned for the future\n2024 Spring BackendAll details about the current state of the backend development, along with what is planned for the future\n2024 Spring FrontendAll details about the current state of the frontend development, along with what is planned for the future\n2024 Spring SimulationAll details about the current state of simulation development, along with what is planned for the future\n",
+=======
+    "content": "RevMetrix System Architecture Current Status by Development Team 2024 Fall BackendAll details about the current state of the backend development, along with what is planned for the future\n2024 Fall BallspinnerAll details about the current state of the backend development, along with what is planned for the future\n2024 Fall FrontendAll details about the current state of the backend development, along with what is planned for the future\n2024 Fall SimulationAll details about the current state of the backend development, along with what is planned for the future\n2024 Spring BackendAll details about the current state of the backend development, along with what is planned for the future\n2024 Spring FrontendAll details about the current state of the frontend development, along with what is planned for the future\n2024 Spring SimulationAll details about the current state of simulation development, along with what is planned for the future\n",
+>>>>>>> jbyers5
     "description": "The current state of each aspect of the project and what is to come",
     "tags": null,
     "title": " 2024 RevMetrix",
@@ -161,7 +168,11 @@ var relearn_search_index = [
     "uri": "/2024-capstone/current-state-of-revmetrix/simulation/index.html"
   },
   {
+<<<<<<< HEAD
     "content": "2025 Capstone 2025 RevMetrix2025 Capstone\n2025 Technologies Used2025 Capstone\nProject Milestones2025 Project Milestones\nProject ProposalsA list of all assignments completed throughout 2025\nSet Upfor help ",
+=======
+    "content": "2025 Capstone 2025 RevMetrix2025 Capstone\n2025 Technologies Used2025 Capstone\nProject Milestones2025 Project Milestones\nProject ProposalsA list of all assignments completed throughout 2025\nSet up for help ",
+>>>>>>> jbyers5
     "description": "2025 Capstone",
     "tags": null,
     "title": "2025 Capstone",
@@ -182,7 +193,18 @@ var relearn_search_index = [
     "uri": "/2025-capstone/technologies-used/index.html"
   },
   {
+<<<<<<< HEAD
     "content": "2026 Capstone 2026 Project Assignments2026 Capstone\n2026 Technologies Used2026 Capstone\nCurrent State of RevMetrix2026 Capstone\nProject Milestones2026 spring Project Milestones Set up for help ",
+=======
+    "content": "Technologies Used The following is a list of all technologies used by the RevMetrix project, with descriptions of each technology and how it applies to the project.\nRaspberry PI The Raspberry Pi is a computer used by the Ball Spinner Controller. The current implementation uses a Raspberry PI 4 as shown in Figure 1.3.1, but the Raspberry PI 3 is also compatible.\nMetaMotionS The MetaMotionS is an inertial measurement unit that contains the same sensors as the proposed future SmartDot module. The MetaMotion module contains a gyroscope, accelerometer, magnetometer, barometer, temperature, and ambient light sensor, and it is currently being used to emulate the SmartDot module, which has not yet been constructed.\nCSVHelper CSVHelper is a C# .NET library that simplifies reading and writing CSV files, especially when working with POCOs. It maps CSV rows to POCOs or lists, provided the structure aligns and can write lists of POCOs with a simple WriteRecords() command. While not limited to POCOs, CSVHelper is integral to the RevMetrix project, where it efficiently handles parsing and writing local rev files stored as CSVs.\nDocker Docker is an open-source platform designed to simplify application creation, deployment, and management. It uses containerization to package applications and their dependencies into lightweight, portable units called containers. These containers ensure consistency across different environments, making developing, testing, and deploying applications easier. Docker is widely used to streamline DevOps workflows and enable scalability in cloud-based environments.\nDigital Ocean Digital Ocean is a cloud service provider that allows developers to easily create and manage virtual servers, called droplets, to host websites, applications, and databases. These droplets can run various operating systems and applications, making it easy to deploy custom environments. Digital Ocean also offers features like load balancing, automatic scaling, and managed databases, which enable users to scale their infrastructure as needed while maintaining high availability. Digital Ocean is commonly used to host web servers, APIs, and other production services.\nNginx Proxy Manager Nginx Proxy Manager is a web-based interface for managing Nginx reverse proxy setups. It simplifies tasks like configuring proxy hosts, setting up SSL certificates (with Let’s Encrypt), and managing multiple web applications on a single server without using the command line.\n.NET .NET is a C# software development framework that supports cross-platform compilation. .NET will be used as the primary platform for application and cloud development due to its cross-platform nature.\n.NET MAUI .NET MAUI is a multi-platform application framework that uses C# and XAML. As mentioned, it is compatible with Mac OS, Windows, iPhone, and Android. This technology will be used to create an application for Windows and Mac OS.\nThree.JS Three.JS is a javascript framework that adds the ability to draw 3D environments inside a web page. Like Chart.JS, Three.JS is open source and can be deployed to any platform. Using Three.JS enables rapid development as the language it is based on is high-level and reduces the steps needed to get a simple environment running.\nxUnit xUnit is a .NET testing framework with native integration with Github, allowing automated testing after any push. This testing framework also supports creating base classes to reduce code duplication, such as creating an instance of the application every time a test runs.\nASP.NET ASP.NET is a Microsoft framework for building web applications and APIs. It allows developers to create dynamic, scalable, and secure websites and services using .NET languages like C#. ASP.NET supports server-side and client-side development and includes routing, authentication, and data access features, making it a popular choice for enterprise-level web applications.\nPython Python is a high-level programming language designed for rapid development. In this project it will be used as the primary language for applications on the Raspberry Pi. Python is highly extensible and supports many libraries that enable the implementation of the Ball Spinner device.\nTINACloud TINACloud is an online application that allows users to digitally create and simulate circuits. TINACloud will be used to develop potential circuit designs and simulate the power regulation to confirm the integrity of crucial components such as the Raspberry PIs, as we are currently limited in supply.\nSolidWorks SolidWorks is computer-aided design software used to design all kinds of products and run analyses on them. The primary use for SolidWorks is to run Finite Element Analysis (FEA) or simulation on the designed products. These simulations allow us to test the viability of certain components under loading conditions and detect weak points.\nOnshape Onshape is cloud-native computer-aided design software for all kinds of products. It allows teams to collaborate on a shared design. The primary use of Onshape is to design parts and create designed parts assemblies. These assemblies can then be exported into SolidWorks for FEA simulations.\nGitHub GitHub is a cloud-based hosting website that uses Git, a version control software that enables developers to track changes and resolve conflicts. GitHub was used as the code repository for the various software components of the project, along with tracking changes to all software developed for the RevMetrix project.\nDraw.io Draw.io is a free online diagramming tool. Within RevMetrix, It was used primarily for creating UML diagrams.\n",
+    "description": "2025 Capstone",
+    "tags": null,
+    "title": "2025 Technologies Used",
+    "uri": "/2026-capstone/technologies-used/index.html"
+  },
+  {
+    "content": "2026 Capstone 2025 Technologies Used2025 Capstone\n2026 Project Assignments2026 Capstone\nCurrent State of RevMetrix2026 Capstone\nProject Milestones2026 spring Project Milestones Set up for help ",
+>>>>>>> jbyers5
     "description": "2026 Capstone",
     "tags": null,
     "title": "2026 Capstone",
