@@ -1,24 +1,73 @@
 var relearn_search_index = [
   {
     "content": "\r",
-    "description": "Fall 2025",
+    "description": "Milestone 1",
     "tags": null,
     "title": "Milestone 1",
     "uri": "/2025-capstone/project-milestones/fall-2025/milestone-1/index.html"
   },
   {
-    "content": "",
+    "content": "\r",
+    "description": "Milestone 1",
+    "tags": null,
+    "title": "Milestone 1",
+    "uri": "/2025-capstone/project-milestones/spring-2025/milestone-1/index.html"
+  },
+  {
+    "content": "\r",
+    "description": "Project Proposal",
+    "tags": null,
+    "title": "Spring 2025",
+    "uri": "/2025-capstone/project-assignments/project-proposal/spring-2025/index.html"
+  },
+  {
+    "content": "\rFinal PresentationFinal Presentation\nMilestone 1Milestone 1\nMilestone 2Milestone 2\n",
+    "description": "Spring 2025",
+    "tags": null,
+    "title": "Spring 2025",
+    "uri": "/2025-capstone/project-milestones/spring-2025/index.html"
+  },
+  {
+    "content": "\r",
+    "description": "Project Proposal",
+    "tags": null,
+    "title": "Fall 2025",
+    "uri": "/2025-capstone/project-assignments/project-proposal/fall-2025/index.html"
+  },
+  {
+    "content": "\rFinal PresentationFinal Presentation\nMilestone 1Milestone 1\nMilestone 2Milestone 2\n",
     "description": "Fall 2025",
+    "tags": null,
+    "title": "Fall 2025",
+    "uri": "/2025-capstone/project-milestones/fall-2025/index.html"
+  },
+  {
+    "content": "",
+    "description": "Milestone 2",
     "tags": null,
     "title": "Milestone 2",
     "uri": "/2025-capstone/project-milestones/fall-2025/milestone-2/index.html"
   },
   {
     "content": "",
-    "description": "Fall 2025",
+    "description": "Milestone 2",
+    "tags": null,
+    "title": "Milestone 2",
+    "uri": "/2025-capstone/project-milestones/spring-2025/milestone-2/index.html"
+  },
+  {
+    "content": "",
+    "description": "Final Presentation",
     "tags": null,
     "title": "Final Presentation",
     "uri": "/2025-capstone/project-milestones/fall-2025/final/index.html"
+  },
+  {
+    "content": "",
+    "description": "Final Presentation",
+    "tags": null,
+    "title": "Final Presentation",
+    "uri": "/2025-capstone/project-milestones/spring-2025/final/index.html"
   },
   {
     "content": "RevMetrix System Architecture Current Status by Development Team 2024 Fall BackendAll details about the current state of the backend development, along with what is planned for the future\n2024 Fall BallspinnerAll details about the current state of the backend development, along with what is planned for the future\n2024 Fall FrontendAll details about the current state of the backend development, along with what is planned for the future\n2024 Fall SimulationAll details about the current state of the backend development, along with what is planned for the future\n2024 Spring BackendAll details about the current state of the backend development, along with what is planned for the future\n2024 Spring FrontendAll details about the current state of the frontend development, along with what is planned for the future\n2024 Spring SimulationAll details about the current state of simulation development, along with what is planned for the future\n",
@@ -98,7 +147,7 @@ var relearn_search_index = [
     "uri": "/2024-capstone/current-state-of-revmetrix/simulation/index.html"
   },
   {
-    "content": "2025 Capstone 2025 RevMetrix2025 Capstone\n2025 Technologies Used2025 Capstone\nProject Assignments 2025A list of all assignments completed throughout 2025\nProject Milestones2025 Project Milestones\nSet up for help ",
+    "content": "2025 Capstone 2025 RevMetrix2025 Capstone\n2025 Technologies Used2025 Capstone\nProject Milestones2025 Project Milestones\nProject ProposalsA list of all assignments completed throughout 2025\nSet up for help ",
     "description": "2025 Capstone",
     "tags": null,
     "title": "2025 Capstone",
@@ -110,13 +159,6 @@ var relearn_search_index = [
     "tags": null,
     "title": "2025 RevMetrix",
     "uri": "/2025-capstone/cureent-state-of-revmetrix/index.html"
-  },
-  {
-    "content": "\rBackendBackend 2025 spring Ball Spinner ApplicationFrontend 2025 spring\nBall Spinner ControllerBall Spinner Controller 2025 spring\nBallspinner Physical DesignBallspinner 2025 spring\nCloudInstrucations\nMobile ApplicationCellular\n",
-    "description": "2025 Capstone",
-    "tags": null,
-    "title": "2025 RevMetrix",
-    "uri": "/2026-capstone/current-state-of-revmetrix/index.html"
   },
   {
     "content": "Technologies Used The following is a list of all technologies used by the RevMetrix project, with descriptions of each technology and how it applies to the project.\nRaspberry PI The Raspberry Pi is a computer used by the Ball Spinner Controller. The current implementation uses a Raspberry PI 4 as shown in Figure 1.3.1, but the Raspberry PI 3 is also compatible.\nMetaMotionS The MetaMotionS is an inertial measurement unit that contains the same sensors as the proposed future SmartDot module. The MetaMotion module contains a gyroscope, accelerometer, magnetometer, barometer, temperature, and ambient light sensor, and it is currently being used to emulate the SmartDot module, which has not yet been constructed.\nCSVHelper CSVHelper is a C# .NET library that simplifies reading and writing CSV files, especially when working with POCOs. It maps CSV rows to POCOs or lists, provided the structure aligns and can write lists of POCOs with a simple WriteRecords() command. While not limited to POCOs, CSVHelper is integral to the RevMetrix project, where it efficiently handles parsing and writing local rev files stored as CSVs.\nDocker Docker is an open-source platform designed to simplify application creation, deployment, and management. It uses containerization to package applications and their dependencies into lightweight, portable units called containers. These containers ensure consistency across different environments, making developing, testing, and deploying applications easier. Docker is widely used to streamline DevOps workflows and enable scalability in cloud-based environments.\nDigital Ocean Digital Ocean is a cloud service provider that allows developers to easily create and manage virtual servers, called droplets, to host websites, applications, and databases. These droplets can run various operating systems and applications, making it easy to deploy custom environments. Digital Ocean also offers features like load balancing, automatic scaling, and managed databases, which enable users to scale their infrastructure as needed while maintaining high availability. Digital Ocean is commonly used to host web servers, APIs, and other production services.\nNginx Proxy Manager Nginx Proxy Manager is a web-based interface for managing Nginx reverse proxy setups. It simplifies tasks like configuring proxy hosts, setting up SSL certificates (with Let’s Encrypt), and managing multiple web applications on a single server without using the command line.\n.NET .NET is a C# software development framework that supports cross-platform compilation. .NET will be used as the primary platform for application and cloud development due to its cross-platform nature.\n.NET MAUI .NET MAUI is a multi-platform application framework that uses C# and XAML. As mentioned, it is compatible with Mac OS, Windows, iPhone, and Android. This technology will be used to create an application for Windows and Mac OS.\nThree.JS Three.JS is a javascript framework that adds the ability to draw 3D environments inside a web page. Like Chart.JS, Three.JS is open source and can be deployed to any platform. Using Three.JS enables rapid development as the language it is based on is high-level and reduces the steps needed to get a simple environment running.\nxUnit xUnit is a .NET testing framework with native integration with Github, allowing automated testing after any push. This testing framework also supports creating base classes to reduce code duplication, such as creating an instance of the application every time a test runs.\nASP.NET ASP.NET is a Microsoft framework for building web applications and APIs. It allows developers to create dynamic, scalable, and secure websites and services using .NET languages like C#. ASP.NET supports server-side and client-side development and includes routing, authentication, and data access features, making it a popular choice for enterprise-level web applications.\nPython Python is a high-level programming language designed for rapid development. In this project it will be used as the primary language for applications on the Raspberry Pi. Python is highly extensible and supports many libraries that enable the implementation of the Ball Spinner device.\nTINACloud TINACloud is an online application that allows users to digitally create and simulate circuits. TINACloud will be used to develop potential circuit designs and simulate the power regulation to confirm the integrity of crucial components such as the Raspberry PIs, as we are currently limited in supply.\nSolidWorks SolidWorks is computer-aided design software used to design all kinds of products and run analyses on them. The primary use for SolidWorks is to run Finite Element Analysis (FEA) or simulation on the designed products. These simulations allow us to test the viability of certain components under loading conditions and detect weak points.\nOnshape Onshape is cloud-native computer-aided design software for all kinds of products. It allows teams to collaborate on a shared design. The primary use of Onshape is to design parts and create designed parts assemblies. These assemblies can then be exported into SolidWorks for FEA simulations.\nGitHub GitHub is a cloud-based hosting website that uses Git, a version control software that enables developers to track changes and resolve conflicts. GitHub was used as the code repository for the various software components of the project, along with tracking changes to all software developed for the RevMetrix project.\nDraw.io Draw.io is a free online diagramming tool. Within RevMetrix, It was used primarily for creating UML diagrams.\n",
@@ -133,7 +175,7 @@ var relearn_search_index = [
     "uri": "/2026-capstone/technologies-used/index.html"
   },
   {
-    "content": "2026 Capstone 2025 RevMetrix2025 Capstone\n2025 Technologies Used2025 Capstone\n2026 Project Assignments2026 Capstone\nProject Milestones2026 spring Project Milestones Set up for help ",
+    "content": "2026 Capstone 2025 Technologies Used2025 Capstone\n2026 Project Assignments2026 Capstone\nCurrent State of RevMetrix2026 Capstone\nProject Milestones2026 spring Project Milestones Set up for help ",
     "description": "2026 Capstone",
     "tags": null,
     "title": "2026 Capstone",
@@ -262,15 +304,8 @@ var relearn_search_index = [
     "content": "Ball Spinner Application Overview The purpose of the Ball Spinner Application (BSA) is to provide an interface for controlling and receiving data from the Ball Spinner as well as the SmartDot. Ball Spinner data, along with user related data used to facilitate Simulated Shots with the Ball Spinner, is also saved to the cloud database. Users are provided with a streamlined view (Figure 1) that displays all relevant data received during a shot. This includes a graphical representation of incoming SmartDot data, as well as a simulation that visually displays the movement of the ball as it spins in the Ball Spinner.\nShots Once connected to the Ball Spinner, the user can begin a Simulated Shot, a session controlled by the BSA. The user first sets initial values, including start, end, and inflection points on a Bézier curve (Figure 2), which defines the interpolated motor instructions (shown in red). They must also specify the ball used and add any comments. From here, the shot can commence.\nWhen a shot begins, motor instructions are sent to the Ball Spinner Controller, which then returns sensor data from the SmartDot and motor encoder readings. This data is used to animate the simulation and update the corresponding graphs.\nCommunication The Ball Spinner Application uses a TCP connection to facilitate communication with the Ball Spinner Controller.\nThe BSA primarily sends the following key commands: Motor instructions SmartDot configuration Start/Stop commands for shot initiation\nUser Data sers can save shots and balls to the database, both of which are managed on the pages pictured on the right. Saved shots can be reused for new simulations and managed through replay or deletion.\n",
     "description": "Frontend 2025 spring",
     "tags": null,
-    "title": "Ball Spinner Application",
+    "title": "Ball Spinner Application (Deprecated)",
     "uri": "/2026-capstone/current-state-of-revmetrix/frontend/index.html"
-  },
-  {
-    "content": "Downloading the Ball Spinner Application Visual Studio community 2022 link: https://visualstudio.microsoft.com/vs/community/ Screenshot for what to select in visual studio installer: When visual studio opens click “Clone Repository”: Enter this url into the “Repository location” field https://github.com/YCP-Rev-Metrix/BallSpinner-Application When the project opens, go to Tools - Nuget Package Manager - Package Manager Settings: For the name field, enter RevMetrix, and for the source, enter https://nuget.pkg.github.com/YCP-Rev-Metrix/index.json n the same menu, go under Package source mapping When opening visual studio, you will be prompted to enter your github credentials. This is necessary in order to access some of the custom nuget packages. Enter the command dotnet workload restore to install required nuget dependencies for the project When asked if Visual Studio can make changes to your device, select yes. Troubleshooting Issues: Ryan Issues If this window pops up Then toggle the button under Developer Mode Run these commands within the project directory: dotnet clean dotnet restore Frontend Josh’s Setup issues: Today I got Visual Studio 2022 installed on my laptop. I copied both the Backend and Frontend repositories to my system. I was able to follow the wiki for setting up the backend. I learned that the frontend page has an old repository and informed everyone else. We got the correct repository link from Patrick.\nNext we had an issue where any time any of the Juniors would run the frontend application, we would get an “Unauthorized” error. To fix this we had to get added to the RevMetrix GitHub.\nAfter this the error message changed to a “Failed to retrieve information about ‘RevMetrix.BallSpinner.Common.Api’ from remote source ‘https://nuget.pkg.github.com/YCP-Rev-Metrix/download/revmetrix.ballspinner.common.api/index.json'. Response status code does not indicate success: 403 (Forbidden)”. To solve this issue I had to start by following the steps from the image below to remove old github credentials from my laptop.\nNext I had to generate a new personal access token in github and add the NuGet package to visual studio. For the token, I selected all the scopes and copied it to store somewhere safe. Next I went back into visual studio and navigated to tools-\u003eNuGet Package Manager-\u003ePackage Manager Settings-\u003ePackage Sources. I clicked the plus icon as seen in the image below. In the source field at the bottom I input “https://nuget.pkg.github.com/YCP-Rev-Metrix/index.json”. After this I rebooted visual studio and was prompted with credentials. For the username I entered my github username, and for the password I pasted in the token I created. Next I tried to run the Ball Spinner application again and everything booted up fine! ",
-    "description": "Instrucations",
-    "tags": null,
-    "title": "Ball Spinner Application",
-    "uri": "/2026-capstone/set-up/ballspinner-application/index.html"
   },
   {
     "content": " Robert Fields The Ball Spinner Controller can be split into 3 separate (but crucial) classes that all come together to transmit and receive data from the Ball Spinner Application: the motor class, the sensor class, and the SmartDot interface. The motor and sensor classes consist of a connection function that takes the name of the port as a parameter and a disconnect function. The auxiliary sensor class (AuxSensor) also incorporates a read function that takes in the range of values to read from and the sample rate for the sensors. This will take the data polled from the sensors and store it in the class-byte array. The motor function (along with the connect/disconnect methods) incorporates a function to change the power of a specific motor depending on the specific motor instruction and a function to change the speed of the motor from the incoming motor instructions.\nThe smartDot interface will hold all of the functions that the future SmartDot module will incorporate. This includes the start functions of the 9DoF sensors and the light sensor that takes sample rate and the range as parameters coupled with stop functions for each. When prompted by the BallSpinnerController class, the 9DoF modules will pass the values taken at the specified sample frequency in the byte array. For filtering in the Bluetooth scanner, each class that implements the iSmartDot interface will store its UUID as a Static String. Besides a terminal-base SmartDot simulator, the only class so far that will implement the interface is a MetaMotionS module that has functions to turn on and off the on-sensor LED light.\nThe BallSpinnerController will have access to both the AuxSensor class, Motor class, and the iSmartDot module as well as several variables that will handle communications back and forth from the Application. On startup, the three threads will be started up to handle communications for each of the main classes discussed previously mentioned. The BallSpinnerController class will listen to the USB port for all messages from the application, and from there, the readCommsChannel function will parse the header and the number of bytes in the message to parse out the cyclic redundancy check appended to the end of every message to confirm that the message there were no errors in transmission. If so, a call to the sendReject function will be made to ask to the application to resend the message. This function will also handle the quick acknowledgments or errors that need to be sent from the controller. If the CRC passes, the readCommsChannel will pass the message to either the sensorBuffer, the motorBuffer, or the smartDot buffer. depending on which buffer the message was sent to, the respective thread will parse out the message and handle the message depending on the request. Once the protocol reaches the point that the BallSpinnerController needs to send the messages back to the Ball Spinner Application, the byte data for the message will be saved in the sensorTxQueue to await send on the comms channel.\n",
@@ -411,6 +446,13 @@ var relearn_search_index = [
     "tags": null,
     "title": "Creating a Droplet",
     "uri": "/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html"
+  },
+  {
+    "content": "\rBackendBackend 2025 spring Ball Spinner Application (Deprecated)Frontend 2025 spring\nBall Spinner ControllerBall Spinner Controller 2025 spring\nBallspinner Physical DesignBallspinner 2025 spring\nCloudInstrucations\nMobile ApplicationCellular\n",
+    "description": "2026 Capstone",
+    "tags": null,
+    "title": "Current State of RevMetrix",
+    "uri": "/2026-capstone/current-state-of-revmetrix/index.html"
   },
   {
     "content": "Front End Application The Mobile Application was built using a .NET MAUI framework that provides cross-platform functionality all in C#. The current version of the application takes in data from the Ciclopes program, the SmartDot API, and Unity Engine, which then stores the data in a local database. The application will receive further updates to allow the user to feed in bowling variables and operate the Ball Spinner. The Ciclopes and Unity Visualizer will have little to no updates, as they are not currently the focus of the RevMetrix project.\nThe Backend The backend currently consists of multiple important functionalities, including the Web API Server, the Web API Client, the Cloud Controller, and the RevMetrix Database. The Web API incorporates both server and client-side interfacing, making it possible for the front-end application to communicate with the databases within the server. The Cloud Controller determines traffic flow in and out of the cloud server. Finally, the Database is used to store all the data gathered from both the SmartDot and the front-end application. In future phases of the project, the Algorithm Unit will be developed and incorporated as part of the Backend which will contain Dr. Babcock and Professor Hake’s algorithms and endpoints.\nRevMetrix Documentation Website The RevMetrix Website is the main location where all the documentation surrounding the project is stored. The website is currently hosted by DigitalOcean and contains the current state of the project, installation tutorials, resources, and ways to contribute to the project. The User Interface includes a search engine on the left-hand side with all of the information neatly categorized into seven sections/subsections. The website will continue to receive updated documentation on what the current system looks like as well as changes to configuring the development environment. The website will also receive structural changes to categorization to make sifting through information easier for users.\nUnity Bowling Simulation The Unity Engine was used as a minimal working simulation software. Users of the mobile application could change the location and the curvature of the bowling ball before it was thrown. The simulation displays the ball’s speed and rotation and allows users to see the ball’s trajectory as it moves down the lane. Finally, Unity simulates the ball-hitting pins and how the pins react (i.e. their trajectory on impact and any other pins that might be affected). The Unity Engine will be used as a starting basis for the simulation side of the project, with improvement upon what currently exists to mimic what the Ball Spinner is mechanically producing.\nSmartDot Simulator The SmartDot Simulator is a .NET MAUI application made to convert data sent from either the Unity Engine or from pre-recorded SmartDot data and send the information as byte arrays similar to what the SmartDot module would send to the application.\nSmartDot Communications The SmartDot Communication process involved running a GATT server on a Raspberry Pi which handled the BLE communication. Data from the SmartDot module was then sent through Byte Arrays to the Pi, and from there to the application. The software used for SmartDot communication will be used in\n",
@@ -711,13 +753,6 @@ var relearn_search_index = [
     "description": "Milestone 1",
     "tags": null,
     "title": "Milestone 1",
-    "uri": "/2025-capstone/project-milestones/spring-2025/milestone-1/index.html"
-  },
-  {
-    "content": "\r",
-    "description": "Milestone 1",
-    "tags": null,
-    "title": "Milestone 1",
     "uri": "/2026-capstone/project-milestones/milestone-1/index.html"
   },
   {
@@ -728,39 +763,11 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-milestones/spring-2024/milestone-2/index.html"
   },
   {
-    "content": "",
-    "description": "Milestone 2",
-    "tags": null,
-    "title": "Milestone 2",
-    "uri": "/2025-capstone/project-milestones/spring-2025/milestone-2/index.html"
-  },
-  {
-    "content": "",
-    "description": "Milestone 2",
-    "tags": null,
-    "title": "Milestone 2",
-    "uri": "/2026-capstone/project-milestones/milestone-2/index.html"
-  },
-  {
     "content": "Milestone 3 Main Task The Presentation / Demonstration Milestone 3 - Presentation / Demonstration Links ",
     "description": "Progress made on milestone 3 and the associated slideshow",
     "tags": null,
     "title": "Milestone 3",
     "uri": "/2024-capstone/project-milestones/spring-2024/milestone-3/index.html"
-  },
-  {
-    "content": "",
-    "description": "Milestone 3",
-    "tags": null,
-    "title": "Milestone 3",
-    "uri": "/2025-capstone/project-milestones/spring-2025/milestone-3/index.html"
-  },
-  {
-    "content": "",
-    "description": "Milestone 3",
-    "tags": null,
-    "title": "Milestone 3",
-    "uri": "/2026-capstone/project-milestones/milestone-3/index.html"
   },
   {
     "content": "Frontend Team For the minimal system, the front end will contain a functional login page that is able to connect to a database and will contain a draft up of the output page. The output page will be able to visualize a datapoint in preparation for future milestones. There are plenty of unknowns in regards to MAUI, so research on how to create the screens and specific details will be discovered during the milestone.\nBackend Team For the minimal working system milestone, the backend team will achieve an operational database that stores login information and additional information. This simple task will serve as a proof of concept for accurate interfacing with the application and the server. Authorization headers and encryption are already present within the system, so this is not a concern for our implementation. We will also integrate the Frontend’s login page with our login endpoint. This will provide a basis for any future communications that will need to be facilitated between the Frontend and the backend.\nCommunications Team On the interface side, a working emulator of the Mbient labs MetaMotionS module will be finished for further testing purposes for the group. The emulator will allow users to send CSV data for the emulator to store whether it comes from the Unity SmartDot Simulator or previous output data from a 9DoF module. The device will then replicate the Bluetooth messages that the Mbient lab modules would send out when recording data in real-time mode. The emulator will then broadcast the data from the CSV file as if it were recording in real-time so the front-end has a reliable data source to confirm that the message passing between the computer and the Ball Spinner controller works as intended.\nWhen looking at the minimal working system for the physical SmartDot modules (which will be referred to interchangeably with the in-house Mbient Labs modules), part of the minimum working system for the project will be to retrieve the live data from one of the 3-axis sensors in the modules to print out in the terminal of the Ball Spinner Controller. This would act as proof of concept for interacting with an actual device and help with development with the SmartDot client API that will distinguish between the emulator, the SmartDot module, and the Mbient lab modules so the rest of the system will not have to.\nThe last aspect of the minimal working system for the communications team will be controlling the LED on the MetaMotionS module. This will be done by writing a script through the Ball Spinner (aka the Raspberry PI) which will interact with the SmartDot API to send data to and from the connected devices. The team feels that turning on and off the LED on the module consistently will be the easiest way to demonstrate proper communication without complicated message passing.\nMechanical Team For the minimal working system, the team will be able to spin the bowling ball in one orthogonal direction using either a human-powered design or a small controlled motor. The human-powered design focuses on showing the similar strengths it will experience; the motor design will be used to calibrate the SmartDot sensor’s factors. The SmartDot module will be mounted inside the ball’s finger hole, and we will read the ball’s rpm externally. The simple external reading methods may only correctly read in one orthogonal direction. We will create an enclosure to keep the ball secure while spinning.\nThe first foundational problem would be designing and building the enclosure to be stable. The centripetal force of the bowling ball will cause the enclosure to rattle, making it more likely to fail or fracture. These early designs will also struggle with consistency; human power tests will not be consistent, and the motor design will need a sizeable normal force from it and the ball to move properly. External measurements could also have issues with consistency caused by the ball rattling the enclosure and finding its preferred spin axis. All of these issues increase the level of difficulty in calibrating the system to our needs.\nSimulation Team The minimum working system for the simulation will be a text-based output on information (i.e. variables) involving how the ball is expected to go down the lane. This output data will either be displayed in a text box or console window. While the simulation will incorporate visual output later, a text-based simulation is an efficient way to relay a proof of concept for the calculations behind the visualization. The simulation will work based on the inputs given by the user and will output data in real-time similar to how the Ball Spinner would send real-time data of the projected throw to the Application. One potential issue with the simulation will be determining the accuracy since the Visual Simulation will be used as a baseline comparison for the Ball Spinner movement. This will be continuously worked on in future milestones by communicating with the other teams and client.\n",
@@ -868,13 +875,6 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-assignments/index.html"
   },
   {
-    "content": "Overview Below you can find the list of semesters that RevMetrix was under development and their respective assignments and details.\nDevelopment Semesters Project ProposalFall 2025\nProject ProposalSpring 2025\n",
-    "description": "A list of all assignments completed throughout 2025",
-    "tags": null,
-    "title": "Project Assignments 2025",
-    "uri": "/2025-capstone/project-assignments/index.html"
-  },
-  {
     "content": "Overview Below you can find the assignment descriptions for each of the project’s semester milestones. There are three in total per semester, and once the assignment date has passed, the appropriate slideshow can be seen under each milestone’s title.\nMilestones Fall 2023The progress made prior to each project milestone during the fall 2023 semester\nFall 2024The progress made prior to each project milestone during the fall 2023 semester\nSpring 2024The progress made prior to each project milestone during the spring 2024 semester\n",
     "description": "The progress made prior to each project milestone",
     "tags": null,
@@ -882,28 +882,14 @@ var relearn_search_index = [
     "uri": "/2024-capstone/project-milestones/index.html"
   },
   {
-    "content": "\rProject MilestonesFall 2025\nProject MilestonesSpring 2025\n",
+    "content": "\rFall 2025Fall 2025\nSpring 2025Spring 2025\n",
     "description": "2025 Project Milestones",
     "tags": null,
     "title": "Project Milestones",
     "uri": "/2025-capstone/project-milestones/index.html"
   },
   {
-    "content": "\rFinal PresentationFall 2025\nMilestone 1Fall 2025\nMilestone 2Fall 2025\n",
-    "description": "Fall 2025",
-    "tags": null,
-    "title": "Project Milestones",
-    "uri": "/2025-capstone/project-milestones/fall-2025/index.html"
-  },
-  {
-    "content": "\rMilestone 1Milestone 1\nMilestone 2Milestone 2\nMilestone 3Milestone 3\n",
-    "description": "Spring 2025",
-    "tags": null,
-    "title": "Project Milestones",
-    "uri": "/2025-capstone/project-milestones/spring-2025/index.html"
-  },
-  {
-    "content": "\rMilestone 1Milestone 1\nMilestone 2Milestone 2\nMilestone 3Milestone 3\n",
+    "content": "\rMilestone 1Milestone 1\n",
     "description": "2026 spring Project Milestones ",
     "tags": null,
     "title": "Project Milestones",
@@ -911,24 +897,17 @@ var relearn_search_index = [
   },
   {
     "content": "\r",
-    "description": "Fall 2025",
-    "tags": null,
-    "title": "Project Proposal",
-    "uri": "/2025-capstone/project-assignments/project-proposal/fall-2025/index.html"
-  },
-  {
-    "content": "\r",
-    "description": "Spring 2025",
-    "tags": null,
-    "title": "Project Proposal",
-    "uri": "/2025-capstone/project-assignments/project-proposal/spring-2025/index.html"
-  },
-  {
-    "content": "\r",
     "description": "2026 ",
     "tags": null,
     "title": "Project Proposal",
     "uri": "/2026-capstone/project-assignments/project-proposal/index.html"
+  },
+  {
+    "content": "Overview Below you can find the list of semesters that RevMetrix was under development and their respective assignments and details.\nDevelopment Semesters Fall 2025Project Proposal\nSpring 2025Project Proposal\n",
+    "description": "A list of all assignments completed throughout 2025",
+    "tags": null,
+    "title": "Project Proposals",
+    "uri": "/2025-capstone/project-assignments/index.html"
   },
   {
     "content": "Official Project Requirements Document and Slideshow The official project requirements document can be found in the project’s Google Drive here, and the requirements presentation slideshow can be found here\nSystem Architecture Initial Requirements by Type of Develeopment Backend RequirementsProject requirements specific to the backend development\nFrontend RequirementsProject requirements specific to the frontend development\nSimulation RequirementsProject requirements specific to the simulation development\n",
@@ -1001,7 +980,7 @@ var relearn_search_index = [
     "uri": "/2025-capstone/set-up/index.html"
   },
   {
-    "content": "\r.Net UpgradeInstrucations\nBall Spinner ApplicationInstrucations\nMobile AppInstrucations\n",
+    "content": "\r.Net UpgradeInstrucations\nMobile AppInstrucations\n",
     "description": "for help ",
     "tags": null,
     "title": "Set up ",

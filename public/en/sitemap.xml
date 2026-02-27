@@ -4,10 +4,31 @@
     <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/milestone-1/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/milestone-1/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/project-assignments/project-proposal/spring-2025/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/project-assignments/project-proposal/fall-2025/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/milestone-2/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/milestone-2/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/final/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/final/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2024-capstone/current-state-of-revmetrix/index.html</loc>
@@ -47,9 +68,6 @@
   </url>
   <url>
     <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2025-capstone/technologies-used/index.html</loc>
@@ -115,9 +133,6 @@
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/frontend/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/2026-capstone/set-up/ballspinner-application/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html</loc>
   </url>
   <url>
@@ -176,6 +191,9 @@
   </url>
   <url>
     <loc>//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2024-capstone/project-assignments/fall-2024/proposal/current-system/index.html</loc>
@@ -304,28 +322,13 @@
     <loc>//localhost:1313/2024-capstone/project-milestones/spring-2024/milestone-1/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/milestone-1/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/2026-capstone/project-milestones/milestone-1/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2024-capstone/project-milestones/spring-2024/milestone-2/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/milestone-2/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/2026-capstone/project-milestones/milestone-2/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/2024-capstone/project-milestones/spring-2024/milestone-3/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/milestone-3/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/2026-capstone/project-milestones/milestone-3/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2024-capstone/project-assignments/fall-2024/requirements/minimum-working-system/index.html</loc>
@@ -373,31 +376,19 @@
     <loc>//localhost:1313/2024-capstone/project-assignments/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/2025-capstone/project-assignments/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/2024-capstone/project-milestones/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2025-capstone/project-milestones/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/2026-capstone/project-milestones/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/2025-capstone/project-assignments/project-proposal/fall-2025/index.html</loc>
-  </url>
-  <url>
-    <loc>//localhost:1313/2025-capstone/project-assignments/project-proposal/spring-2025/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/2026-capstone/project-assignments/project-proposal/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/project-assignments/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2024-capstone/project-assignments/fall-2023/project-requirements/index.html</loc>
