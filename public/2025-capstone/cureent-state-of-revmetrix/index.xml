@@ -150,5 +150,23 @@ The application allows users to store and manage a variety of data, including Ev
 &lt;h3 id=&#34;shot-page&#34;&gt;Shot Page&lt;/h3&gt;
 &lt;p&gt;The shot page is the base of the mobile application. It contains a frame view at the top to show the pins knocked down on each shot, as well as the game’s score. Below that, there are buttons and input fields used to track a full game of bowling.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Smartwatch Application</title>
+      <link>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/index.html</guid>
+      <description>&lt;h2 id=&#34;smartwatch-application&#34;&gt;Smartwatch Application&lt;/h2&gt;
+&lt;p&gt;The Smartwatch application has been created as a companion to the mobile application.
+It is meant to be used with Ciclopes in the mobile application.
+Since users will be using their phone to record the lane, the smartwatch application will allow them to input their shots simultaneously.&lt;/p&gt;
+
+&lt;ul class=&#34;children children-li children-sort-weight&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/ble-manager/index.html&#34;&gt;BLE Manager&lt;/a&gt;&lt;p&gt;BLE Manager&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/local-cache/index.html&#34;&gt;Local Cache&lt;/a&gt;&lt;p&gt;Local Cache&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/session-controller/index.html&#34;&gt;Session Controller&lt;/a&gt;&lt;p&gt;Session Controller&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/models/index.html&#34;&gt;Watch Models&lt;/a&gt;&lt;p&gt;Watch Models&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/dev-settings-page/index.html&#34;&gt;Dev Settings&lt;/a&gt;&lt;p&gt;Dev Settings Page&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

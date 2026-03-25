@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smartwatch Application on Hugo Relearn Theme</title>
+    <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/index.html</link>
+    <description>Recent content in Smartwatch Application on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BLE Manager</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/ble-manager/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/ble-manager/index.html</guid>
+      <description>&lt;h2 id=&#34;ble-manager&#34;&gt;BLE Manager&lt;/h2&gt;
+&lt;p&gt;The BLE Manager is a hybrid system combining the Flutter side for higher level logic with Android components responsible for advertising, GATT server behavior, and background execution.
+The BLE Manager starts communication, prepares packet data, and triggers native calls through a MethodChannel.
+On the Kotlin side, the application uses a dedicated foreground service, BleForegroundService.
+This ensures that Bluetooth communication remains active even when the UI is put in the background or the watch display turns off.
+This is crucial for a watch application because the watch display will be turned off at many points during use, so the service runs with an ongoing system notification to maintain a persistent BLE environment.
+The actual GATT functionality is implemented inside BleGattManager, which initializes a full GATT server when triggered by the BLE Manager.
+This includes creating the custom service with two characteristics, a write and notify for receiving commands and sending packets.
+The GATT manager listens for a change in connection state and onCharacteristicWriteRequest events and routes them back to Flutter through the MethodChannel, which is what allows the Dart side logic to respond to the phone commands and acknowledgements.
+The MainActivity sets up the communication bridge between Flutter and the Android bluetooth stack by defining a MethodChannel named “ble_service_channel”.
+This allows the BLE Manager to invoke system level BLE behavior without needing direct access to Android APIs.
+When a session is ready to be transmitted, the BLE Manager serializes the session JSON, chunks it into packets, and calls sendNotification through the MethodChannel for each packet.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Local Cache</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/local-cache/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/local-cache/index.html</guid>
+      <description>&lt;h2 id=&#34;local-cache&#34;&gt;Local Cache&lt;/h2&gt;
+&lt;p&gt;The Local Cache is a persistence layer responsible for storing session, frame and shot data on the watch until it can be sent to the mobile application.
+It is smaller than a traditional database, but still maintains the structure of a session.
+It ensures that all data entered by the user remains intact across app restarts or temporary loss of Bluetooth connection.
+The Local Cache serializes each updated session in JSON and writes it to local storage after the user records a shot or edits data.
+Because the watch serves as a data collection client, the cached JSON will act as a temporary buffer rather than a long term store.
+For incomplete transfers or disconnections during the BLE communication, it also includes an UnsentData queue.
+When the BLE Manager prepares a packet for transmission, they are duplicated into the queue and marked as “pending”.
+Only after the mobile app acknowledges reception of the packet does the Local Cache remove its entry.
+During startup, the application loads the cached sessions so the watch can resume where the user left off.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Session Controller</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/session-controller/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/session-controller/index.html</guid>
+      <description>&lt;h2 id=&#34;session-controller&#34;&gt;Session Controller&lt;/h2&gt;
+&lt;p&gt;The Session Controller is the main controller of the watch application, which contains most of the helper functions needed to link UI elements to the data objects.
+The first helper function is activeFrameIndex that finds the first non-completed frame of the game, or in other words the active frame.
+The createNewSessionFromPacket function will take a parsed game list from Bluetooth and add it to the current session.
+The createNewSession function creates the base session object to construct a fully populated session object.
+The recordShot function is triggered by the submit button on the shot view which takes all of the data that was entered and constructs a shot object with that data.
+This function also assigns the new shot object to the current frame.
+The editShot function finds the shot that was edited and changes the data that exists in that object.
+Early implementation of the session controller also contains static test data for all levels of data.
+This is done on startup and initialized before anything else is completed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Watch Models</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/models/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/models/index.html</guid>
+      <description>&lt;h2 id=&#34;ble-packet-model&#34;&gt;BLE Packet Model&lt;/h2&gt;
+&lt;p&gt;The BLE Packet is responsible for converting full session data into BLE compatible byte streams.
+Its main purpose is to take a serialized GameSession object, apply the encoding rules required by the GATT server, and produce a packet format that the phone can reassemble.
+The BLEPacket class stores the packet ID, raw session JSON and the final encoded data used in transmission.
+During a session upload the BLE Manager constructs a BLEPacket by calling BLEPacket.buildFromSession(), which generates the JSON string that represents the entire session and then prepares the structure that will be transmitted over the notify characteristic.
+The encode() method produces the final byte sequence that respects the BLE limitations and includes any metadata needed for ordering or validation before the packet is handed off.
+The BLEPacket.decode() rebuilds a packet from a received byte, which is what enables parsing on either device.
+Once the packet is created, the BLE Manager calls sendNotification and the encoded bytes are passed to the notify characteristic in the GATT server.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Dev Settings</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html</guid>
+      <description>&lt;h2 id=&#34;dev-settings-page&#34;&gt;Dev Settings Page&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/devPage.png?width=20vw&amp;amp;lightbox=false&#34; alt=&#34;Dev Settings Page&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 20vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The developer settings page, as shown in Figure 3.2.9.1 is the bluetooth testing page.
+It is not a part of the user shot workflow but instead is a tool for users to start and stop advertising BLE, view connection state and trigger test BLE transmissions with the connected phone.
+This page is very tightly integrated with the BLE Manager, when the user taps the toggle to begin advertising, the dev settings page calls bleManager.startAdvertising(), which performs three operations: requests runtime permissions, starts the Android foreground BLE service, and initializes the GATT server if it has not yet been created.
+The page also listens to reactive fields exposed by the BLE Manager like isAdvertsing, isConnected, and lastReceivedCommand, allowing the UI to update dynamically as different events occur.
+They are triggered by callback events sent from Android through the MethodChannel, including advertising success/failure and connection state changes. For testing data transfer, the page includes a control that sends a prebuilt JSON object to the phone.
+This invokes bleManager.sendJsonToPhone(), which serializes the object and calls sendNotification.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shot Page</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/shot-page/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/shot-page/index.html</guid>
+      <description>&lt;h2 id=&#34;shot-page&#34;&gt;Shot Page&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/shot-page/shotPage.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Watch Shot Page&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The Shot Page is the primary user interface for collecting both pre shot and post shot information for each throw.
+It is a stateful widget that manages the interactive controls to construct a complete shot model.
+The whole page is driven by the Phase enum which switches the UI between pre shot and post shot modes based on the user&amp;rsquo;s progression through their shot.
+During initialization, the page loads the incoming state such as the initial pins, lane, board, ball and speed values so that data can persist across multiple shots within the same frame unless changed.
+This includes copying the initial pin layout into a list currentPinState. In the pre shot phase, the UI shows a non-interactive pin layout followed by the stance slider and three dropdowns for board, lane, and ball selection.
+The stance slider is wrapped inside a tick-mark CustomPaint overlay, allowing the user to select from 1-40.
+The record button and next phase button are on the bottom of the screen, allowing the user to move to the next phase after the shot is thrown.
+In the post shot phase the pin grid becomes interactive, users can tap pins to toggle their state, and buttons for strikes, spares, fouls and gutter balls.
+The strike/spare button switches between “X” and “/” depending on whether the shot is the first or second attempt within the frame.
+Foul and gutter actions are handled through a pop up menu, and the ball speed selector is a horizontal scroll picker to fit the watch.
+The button row at the bottom of the post phase provides navigation back to the previous page if the user were in need of editing details from the pre phase, and a submit button that triggers _submitShot().&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Frame Page</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/frame-page/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/frame-page/index.html</guid>
+      <description>&lt;h2 id=&#34;frame-page&#34;&gt;Frame Page&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/frame-page/framePage.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Watch Frame Page&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The frame page, as shown in Figure 3.2.11.1 acts as the frame overview view, the frame selection screen, and the shot navigation screen.
+The user can navigate between frames by a tap-and-hold pop-out carousel where the user can swipe between frames as seen in Figure 3.2.11.2.
+The user can navigate between shots if more than one exists by swiping horizontally.
+Shot 2 does not exist if Shot 1 has not been completed. Similarly, the user cannot see or access a frame beyond the current active frame.
+Each frame object maintains an ordered list of shot records, and when the user begins a shot from the frame page, it constructs a new shot page instance with the correct frameShotIndex, the current standing pin state and any previously selected values like lane, ball, or board.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Game Page</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/game-page/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/game-page/index.html</guid>
+      <description>&lt;h2 id=&#34;game-page&#34;&gt;Game page&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/game-page/gamePage.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Watch Game Page&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The game page, as shown in Figure 3.2.12.1, acts as the game overview view, the game selection screen, as well as the main navigation screen.
+The game page enables the user to navigate between games by a tap-and-hold pop-out carousel where the user can swipe between games as seen in Figure 3.2.12.2.
+The cog wheel button navigates the user to the developer settings page.
+The user can navigate to the frame pages by swiping up from this screen.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

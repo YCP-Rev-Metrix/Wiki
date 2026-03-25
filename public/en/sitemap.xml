@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/ble-manager/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/ble-manager/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/main-page/index.html</loc>
   </url>
   <url>
@@ -22,12 +28,9 @@
     <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/index.html</loc>
   </url>
   <url>
-<<<<<<< HEAD
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/login/index.html</loc>
   </url>
   <url>
-=======
->>>>>>> jbyers5
     <loc>//localhost:1313/2025-capstone/project-milestones/fall-2025/milestone-2/index.html</loc>
   </url>
   <url>
@@ -40,18 +43,57 @@
     <loc>//localhost:1313/2025-capstone/project-milestones/spring-2025/final/index.html</loc>
   </url>
   <url>
-<<<<<<< HEAD
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/local-cache/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/local-cache/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/session-controller/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/session-controller/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html</loc>
   </url>
   <url>
-=======
->>>>>>> jbyers5
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/account-page/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/models/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/models/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/dev-settings-page/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/stats/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/shot-page/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/shot-page/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/frame-page/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/frame-page/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/2024-capstone/current-state-of-revmetrix/index.html</loc>
   </url>
   <url>
@@ -274,6 +316,12 @@
     <loc>//localhost:1313/2024-capstone/project-assignments/fall-2024/proposal/future-implementations/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/game-page/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/game-page/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/2024-capstone/project-assignments/fall-2024/requirements/general-project-requirments/index.html</loc>
   </url>
   <url>
@@ -461,6 +509,12 @@
   </url>
   <url>
     <loc>//localhost:1313/smartdot/smartdot-simulator/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/watch/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2024-capstone/project-assignments/spring-2024/index.html</loc>

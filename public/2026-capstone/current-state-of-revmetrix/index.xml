@@ -130,12 +130,32 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
 
 &lt;ul class=&#34;children children-li children-sort-weight&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/main-page/index.html&#34;&gt;Main Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/login/index.html&#34;&gt;Login Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html&#34;&gt;Registration Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html&#34;&gt;Ball Arsenal Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html&#34;&gt;Shot Page&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/main-page/index.html&#34;&gt;Main Page&lt;/a&gt;&lt;p&gt;Default home page&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/login/index.html&#34;&gt;Login&lt;/a&gt;&lt;p&gt;Login to the app&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html&#34;&gt;Registration&lt;/a&gt;&lt;p&gt;Create an account&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html&#34;&gt;Ball Arsenal&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html&#34;&gt;Shot Page&lt;/a&gt;&lt;p&gt;Shot input&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/account-page/index.html&#34;&gt;Account&lt;/a&gt;&lt;p&gt;User information&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/stats/index.html&#34;&gt;Stats&lt;/a&gt;&lt;p&gt;Bowling statistics&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Smartwatch Application</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/index.html</guid>
+      <description>&lt;h2 id=&#34;smartwatch-application&#34;&gt;Smartwatch Application&lt;/h2&gt;
+&lt;p&gt;The Smartwatch application has been created as a companion to the mobile application.
+It is meant to be used with Ciclopes in the mobile application.
+Since users will be using their phone to record the lane, the smartwatch application will allow them to input their shots simultaneously.&lt;/p&gt;
+
+&lt;ul class=&#34;children children-li children-sort-weight&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/ble-manager/index.html&#34;&gt;BLE Manager&lt;/a&gt;&lt;p&gt;BLE Manager&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/local-cache/index.html&#34;&gt;Local Cache&lt;/a&gt;&lt;p&gt;Local Cache&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/session-controller/index.html&#34;&gt;Session Controller&lt;/a&gt;&lt;p&gt;Session Controller&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/models/index.html&#34;&gt;Watch Models&lt;/a&gt;&lt;p&gt;Watch Models&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html&#34;&gt;Dev Settings&lt;/a&gt;&lt;p&gt;Dev Settings Page&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
