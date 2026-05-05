@@ -1,0 +1,123 @@
+@supports not (-ms-high-contrast:none) {
+
+:root {
+    --PRIMARY-color: rgba( 230, 130, 0, 1 );       /* orange */
+    --SECONDARY-color: rgba( 30, 140, 255, 1 );     /* bright blue */
+    --ACCENT-color: rgba( 255, 180, 0, 1 );         /* gold highlight */
+
+    --MAIN-TEXT-color: rgba( 220, 220, 230, 1 );
+    --MAIN-LINK-HOVER-color: rgba( 255, 160, 30, 1 );
+    --MAIN-BG-color: rgba( 10, 15, 40, 1 );         /* dark navy */
+
+    --MAIN-TITLES-TEXT-color: rgba( 230, 130, 0, 1 );   /* orange headings */
+    --MAIN-TITLES-H3-color: rgba( 80, 170, 255, 1 );    /* blue h3 */
+    --MAIN-TITLES-H4-color: rgba( 255, 180, 0, 1 );     /* gold h4 */
+
+    --CODE-BLOCK-color: rgba( 220, 220, 230, 1 );
+    --CODE-BLOCK-BG-color: rgba( 5, 10, 30, 1 );
+    --CODE-INLINE-color: rgba( 255, 160, 30, 1 );
+    --CODE-INLINE-BG-color: rgba( 20, 30, 70, 1 );
+    --CODE-INLINE-BORDER-color: rgba( 50, 70, 120, 1 );
+
+    --BROWSER-theme: dark;
+    --MERMAID-theme: dark;
+    --OPENAPI-theme: dark;
+    --OPENAPI-CODE-theme: tomorrow-night;
+
+    --MENU-HEADER-BG-color: rgba( 0, 0, 0, 0 );
+
+    --MENU-HOME-LINK-color: rgba( 255, 255, 255, 1 );
+    --MENU-HOME-LINK-HOVER-color: rgba( 255, 180, 0, 1 );
+
+    --MENU-SEARCH-color: rgba( 240, 240, 255, 1 );
+    --MENU-SEARCH-BG-color: rgba( 5, 10, 35, .7 );
+    --MENU-SEARCH-BORDER-color: rgba( 30, 140, 255, .6 );
+
+    --MENU-SECTIONS-BG-color: linear-gradient( 165deg, rgba( 5, 10, 40, 1 ) 0%, rgba( 10, 30, 80, 1 ) 60%, rgba( 20, 50, 100, 1 ) 100% );
+    --MENU-SECTIONS-ACTIVE-BG-color: rgba( 230, 130, 0, .15 );
+    --MENU-SECTIONS-LINK-color: rgba( 200, 210, 240, 1 );
+    --MENU-SECTIONS-LINK-HOVER-color: rgba( 255, 180, 0, 1 );
+    --MENU-SECTION-ACTIVE-CATEGORY-color: rgba( 255, 160, 30, 1 );
+    --MENU-SECTION-SEPARATOR-color: rgba( 30, 140, 255, .4 );
+
+    --MENU-VISITED-color: rgba( 30, 140, 255, 1 );
+
+    --BOX-CAPTION-color: rgba( 240, 240, 240, 1 );
+    --BOX-BG-color: rgba( 15, 20, 55, 1 );
+    --BOX-TEXT-color: initial;
+
+    --BOX-BLUE-color: rgba( 30, 140, 255, 1 );
+    --BOX-BLUE-TEXT-color: var( --BOX-BLUE-color );
+    --BOX-GREEN-color: rgba( 42, 178, 24, 1 );
+    --BOX-GREEN-TEXT-color: var( --BOX-GREEN-color );
+    --BOX-GREY-color: rgba( 160, 160, 160, 1 );
+    --BOX-GREY-TEXT-color: var( --BOX-GREY-color );
+    --BOX-ORANGE-color: rgba( 230, 130, 0, 1 );
+    --BOX-ORANGE-TEXT-color: var( --BOX-ORANGE-color );
+    --BOX-RED-color: rgba( 224, 62, 62, 1 );
+    --BOX-RED-TEXT-color: var( --BOX-RED-color );
+}
+
+body h1 {
+    color: rgba( 255, 255, 255, 1 );
+    text-shadow:
+        0 0  2px rgba( 255, 255, 255, .8 ),
+        0 0  6px rgba( 230, 130, 0, .8 ),
+        0 0 12px rgba( 230, 130, 0, .5 );
+}
+
+body h2 {
+    color: rgba( 255, 200, 80, 1 );
+    text-shadow:
+        0 0  2px rgba( 255, 200, 80, .5 ),
+        0 0  8px rgba( 230, 130, 0, .4 );
+}
+
+body h3, body .article-subheading {
+    color: rgba( 100, 180, 255, 1 );
+    text-shadow:
+        0 0  2px rgba( 100, 180, 255, .5 ),
+        0 0  8px rgba( 30, 140, 255, .4 );
+}
+
+body h4 {
+    color: rgba( 255, 200, 80, 1 );
+}
+
+body #sidebar .searchbox button:hover,
+body #sidebar select:hover,
+body #sidebar .collapsible-menu li:not(.active) > label:hover,
+body #sidebar .menu-control:hover,
+body #sidebar a:hover {
+    color: rgba( 255, 180, 0, 1 );
+    text-shadow:
+        0 0  2px rgba( 255, 180, 0, .8 ),
+        0 0  6px rgba( 255, 180, 0, .5 );
+}
+
+body #sidebar li.active > label,
+body #sidebar li.active > a {
+    color: rgba( 255, 180, 0, 1 );
+    text-shadow:
+        0 0  2px rgba( 255, 180, 0, .8 ),
+        0 0  6px rgba( 255, 180, 0, .4 );
+}
+
+body #homelinks a:hover {
+    color: rgba( 255, 180, 0, 1 );
+    text-shadow:
+        0 0  2px rgba( 255, 180, 0, .8 ),
+        0 0  6px rgba( 255, 180, 0, .5 );
+}
+
+#content-wrapper {
+    --ps-thumb-color: rgba( 30, 140, 255, .6 );
+    --ps-thumb-hover-color: rgba( 230, 130, 0, .8 );
+}
+
+@media print {
+    #body h1, #body h2, #body h3, #body .article-subheading,
+    #body h4, #body h5, #body h6 { text-shadow: none; }
+}
+
+}

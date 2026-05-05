@@ -16,7 +16,7 @@ disableLandingPageButton = true
 collapsibleMenu = true
 editURL = "https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/"
 # Change default color scheme with a variant one.
-themeVariant = [ "neon", "auto", "zen-light", "zen-dark", "blue", "green", "learn", "red", "relearn", "relearn-bright", "relearn-light", "relearn-dark" ]
+themeVariant = "revmetrix"
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-paperclip'></i> CS400 RevMetrix Home Page"
