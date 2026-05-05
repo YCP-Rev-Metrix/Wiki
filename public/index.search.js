@@ -1302,7 +1302,7 @@ var relearn_search_index = [
     "uri": "/more/credits/index.html"
   },
   {
-    "content": "Welcome to RevMetrix 2024 Capstone2024 Capstone\n2025 Capstone2025 Capstone\n2026 Capstone2026 Capstone\nCiclopes2025 Capstone\nSmartDot\rISmartDot InterfaceInformation about the ISmartDot interface\nSmartDot HardwareInformation about the SmartDot hardware\nSmartDot SimulatorInformation about the SmartDot Simulator\nWhat is RevMetrix2025 Capstone\n",
+    "content": "\n2024 Capstone2024 Capstone\n2025 Capstone2025 Capstone\n2026 Capstone2026 Capstone\nCiclopes2025 Capstone\nSmartDot\rISmartDot InterfaceInformation about the ISmartDot interface\nSmartDot HardwareInformation about the SmartDot hardware\nSmartDot SimulatorInformation about the SmartDot Simulator\nWhat is RevMetrix2025 Capstone\n",
     "description": "",
     "tags": null,
     "title": "RevMetrix",
