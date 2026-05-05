@@ -140,5 +140,75 @@
 &lt;li&gt;
 &lt;p&gt;To deploy the app to an android phone, follow these steps:&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Smart Watch App</title>
+      <link>//localhost:1313/2026-capstone/set-up/smart-watch-app/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/set-up/smart-watch-app/index.html</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To setup the Smart Watch application for development, follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Download and install Visual Studio Code&lt;/li&gt;
+&lt;li&gt;Install the Flutter SDK version 3.9.2 or higher
+&lt;ul&gt;
+&lt;li&gt;Download from &lt;a href=&#34;https://flutter.dev/docs/get-started/install&#34; target=&#34;_blank&#34;&gt;https://flutter.dev/docs/get-started/install&lt;/a&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/set-up/smart-watch-app/Flutter.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Flutter&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Install Dart (this step can be skipped because it comes bundled with the installation of Flutter)&lt;/li&gt;
+&lt;li&gt;Instal Android Studio and set up Android SDK (Used for watch emulation)
+&lt;ul&gt;
+&lt;li&gt;Download from &lt;a href=&#34;https://developer.android.com/about/versions/14/setup-sdk&#34; target=&#34;_blank&#34;&gt;https://developer.android.com/about/versions/14/setup-sdk&lt;/a&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/set-up/smart-watch-app/Android.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Android&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Clone the repository for the Watch App:
+&lt;a href=&#34;https://github.com/YCP-Rev-Metrix/Android-Smart-Watch.git&#34; target=&#34;_blank&#34;&gt;https://github.com/YCP-Rev-Metrix/Android-Smart-Watch.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Navigate to the project directory:
+&lt;ul&gt;
+&lt;li&gt;cd flutter_prototype&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Install project dependencies in terminal:
+&lt;ul&gt;
+&lt;li&gt;flutter pub get&lt;/li&gt;
+&lt;li&gt;flutter pub run flutter_launcher_icons&lt;/li&gt;
+&lt;li&gt;flutter pub run flutter_native_splash:create
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;You are now ready to develop the Smart Watch Application&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To deploy the app to an Android Smart Watch, follow these steps:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
