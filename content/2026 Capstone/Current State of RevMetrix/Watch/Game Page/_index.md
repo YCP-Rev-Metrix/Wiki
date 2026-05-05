@@ -7,10 +7,7 @@ description = 'Game page'
 
 ## Game page
 
-| ![Watch Game Page](gamePage.png?width=40vw&lightbox=false) | 
+| ![Watch Game Page](GamePage.png?width=40vw&lightbox=false) | 
 |:--:|
 
-The game page, as shown in Figure 3.2.12.1, acts as the game overview view, the game selection screen, as well as the main navigation screen. 
-The game page enables the user to navigate between games by a tap-and-hold pop-out carousel where the user can swipe between games as seen in Figure 3.2.12.2. 
-The cog wheel button navigates the user to the developer settings page. 
-The user can navigate to the frame pages by swiping up from this screen.
+The game page, as shown in Figure 3.2.12.1, is implemented as a GameShell stateful widget, encapsulating the logic for game selection, navigation, and dynamic game management within a session. It subscribes to the SessionController for reactive updates, ensuring the active game index is always valid relative to the current session state. The page supports gesture-based navigation, with vertical swipes mapped to transitions between the Game and Frame pages, and long-press to enter a carousel game selection overlay. The BowlingGame widget displays the current game’s metadata and provides controls for incrementing or decrementing the number of games in the session, as well as accessing settings. The user can swipe up on this page to access the frame page. 

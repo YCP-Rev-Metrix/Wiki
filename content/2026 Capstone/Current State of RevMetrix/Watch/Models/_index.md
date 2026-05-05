@@ -5,56 +5,31 @@ description = 'Watch Models'
 +++
 
 
-## BLE Packet Model
-The BLE Packet is responsible for converting full session data into BLE compatible byte streams. 
-Its main purpose is to take a serialized GameSession object, apply the encoding rules required by the GATT server, and produce a packet format that the phone can reassemble. 
-The BLEPacket class stores the packet ID, raw session JSON and the final encoded data used in transmission. 
-During a session upload the BLE Manager constructs a BLEPacket by calling BLEPacket.buildFromSession(), which generates the JSON string that represents the entire session and then prepares the structure that will be transmitted over the notify characteristic. 
-The encode() method produces the final byte sequence that respects the BLE limitations and includes any metadata needed for ordering or validation before the packet is handed off. 
-The BLEPacket.decode() rebuilds a packet from a received byte, which is what enables parsing on either device. 
-Once the packet is created, the BLE Manager calls sendNotification and the encoded bytes are passed to the notify characteristic in the GATT server. 
 
 ## Session Model
 
 | ![Watch Session](sessionModel.png?width=40vw&lightbox=false) | 
 |:--:|
 
-The Session Model is responsible for constructing the main session object that organizes the entire active session. 
-Its definition can be seen in Figure 3.2.5.1. 
-The sessionId field will be received on the initial Bluetooth handshake and will be important for when this data is being processed on the phone to be inserted into the cloud database. 
-The startTime and endTime fields were defined on the phone�s session objects and for  continuity the watch app records this data. 
-The isComplete field is a flag to let the system know that there are no more games left to complete. 
-For now this does not do anything, but will trigger an event to add games or change a session. 
-The numOfGames field defines how many games are in that session and is responsible for dynamically allocating the number of games the user can select from. 
-The list of balls will contain the balls that the user has registered to be selected from at the shot level. 
-The list of game objects contains every game's data. One of these objects represents the second highest object level under the session object. 
+The Session Model encapsulates all data for an active session, including the session ID, start and end times, completion status, number of games, available balls, and a list of Game objects as seen in the definition in Figure 3.5.2.1. It provides methods for serialization (toJson, fromJson), enabling sessions to be saved locally. The model exposes helpers to find the active game, mark the session as complete, and update session metadata. It supports dynamic session structures, allowing for variable numbers of games and balls. The Session Model is designed for extensibility, supporting future features like session statistics, user profiles, and cloud synchronization. It also integrates with the local cache to provide offline persistence and recovery.
 
 ## Game Model
 
 | ![Watch Game](gameModel.png?width=40vw&lightbox=false) | 
 |:--:|
 
-The Game Model is responsible for constructing the game object which is the second highest level which is owned by the session class and contains frame objects. 
-Its definition can be seen in Figure 3.2.6.1. 
-The gameNumber field is for organizational purposes when converting data in and out of JSON format. 
-The score field is for the calculation of the games score and will be updated per shot. 
-The startingLane defines what lane the user will start on. 
-The list of lanes contains all possible lanes the user can be playing on. 
-Most of the time this will be two lanes and the user will alternate between. 
-The list of frames will contain up to 12 frame objects. 
-The game model also contains helper functions such as newGame which generates an empty game object and toJSON/fromJSON which converts the objects to JSON and from JSON files.
+The Game Model is responsible for constructing the game object which is the second highest level which is owned by the session class and contains frame objects. Its definition can be seen in Figure 3.2.6.1. The gameNumber field is for organizational purposes when converting data in and out of binary format from the Account Packet. The score field is for the calculation of the games score and will be updated per shot. The startingLane defines what lane the user will start on. The list of lanes contains all possible lanes the user can be playing on. Most of the time this will be two lanes and the user will alternate between. The list of frames will contain up to 12 frame objects. The game model also contains helper functions such as newGame which generates an empty game object. The Game Model integrates seamlessly with the Session Model and Frame Model, providing a consistent data structure for the entire session.
 
 ## Frame Model
 
 | ![Watch Frame](frameModel.png?width=40vw&lightbox=false) | 
 |:--:|
 
-The Frame Model is responsible for constructing a frame object which is the second lowest level which is owned by the game class and contains shot objects. 
-Its definition can be seen in Figure 3.2.7.1. The frameNumber field is for organizational purposes when converting data in and out of JSON format. 
-The lane field is the identifier that determines what lane that frame will be completed on. 
-The list of shots will contain up to 2 shots completed for frames 1-9 and up to 1 shot from frames 10-12. 
-The actual 10th frame can have up to three shots, so each shot gets its own frame to avoid complex edge cases. 
-The frame model also contains a helper function that checks to see if the frame is complete called isComplete. 
-This checks how many shots exist within the frame as well as checks for strikes to properly label the frame as complete. 
-Another helper function is totalPinsDown which simply returns how many pins were knocked down within that frame. 
-There are also functions to convert a frame object to a JSON and a JSON to an object.
+The Frame Model is responsible for constructing a frame object which is the second lowest level which is owned by the game class and contains shot objects. Its definition can be seen in Figure 3.2.7.1. The frameNumber field is for organizational purposes when converting data in and out of binary format from the Account Packet. The lane field is the identifier that determines what lane that frame will be completed on. It enforces bowling rules by supporting up to two shots for frames 1–9, while the 10th frame can dynamically allow an 11th and even a 12th frame depending on the outcomes of each shot, specifically, if a strike or spare is achieved, bonus frames are appended to accommodate the extra shots awarded by standard bowling rules. The models isComplete property determines frame completion by evaluating the number of shots and the pinfall logic, handling all edge cases for strikes, spares, and bonus attempts. The totalPinsDown getter aggregates pinfall across all shots in the frame. For persistence and BLE communication, the Frame Model implements toJson() and fromJson() methods, ensuring the frame’s state can be serialized and reconstructed. Integrated with the Game Model, which manages the sequence of frames, the Frame Model ensures that all frame-specific logic has accurate session management.
+
+## Shot Model
+
+| ![Watch Shot](shotModel.png?width=40vw&lightbox=false) | 
+|:--:|
+
+The Shot Model is implemented as a class that encapsulates all the data and logic for a single bowling shot. Each Shot instance records the shot number, ball ID, number of pins knocked down, a bitmask encoding the pin state and foul status, impact (board), stance, target, break point, speed, frame number, lane, and a read-only flag. The model provides a constructor that allows for flexible initialization, including default values and support for both impact and board terminology. It features a static foulBit constant for bitmask operations and a mapping from impact descriptions to board numbers. The model includes computed properties such as pinsStanding, isFoul, and pinsState, which decode the bitmask to provide high-level information about the shot outcome. Utility methods like buildPins and buildLeaveType construct the bitmask from a boolean pin array and foul flag. The Shot Model supports serialization and deserialization via toJson and fromJson, ensuring compatibility with local storage. For BLE, it implements encodeToBinary, which packs all shot data into a 23-byte binary format for transmission, and decodeFromBinary, which reconstructs a Shot and its context from a received packet. The encodeToBinary method in the Shot model serializes a shot into a 23-byte array for BLE transmission. It packs the shot’s fields such as session ID, game/frame/shot/ball numbers, pins bitmask, stance, target, break point, impact, speed, and lane into specific byte offsets using bitwise operations. The decodeFromBinary method reverses this process, it parses a 23-byte array, extracting each field by reading and unpacking the corresponding bytes. It reconstructs the shot’s properties including session context by applying bitwise masks, shifts, and scaling, returning a Shot object and its associated metadata. The packet makeup can be seen above in Figure 3.2.8.1. 

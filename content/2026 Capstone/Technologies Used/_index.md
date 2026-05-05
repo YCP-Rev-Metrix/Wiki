@@ -36,7 +36,7 @@ Nginx Proxy Manager is a web-based interface for managing Nginx reverse proxy se
 xUnit  is a .NET testing framework with native integration with Github, allowing automated testing after any push. This testing framework also supports creating base classes to reduce code duplication, such as creating an instance of the application every time a test runs.
 
 ### AutoCAD
-AutoCAD is a powerful computer-aided design tool used to create detailed circuit schematics and custom electrical components. In this project, AutoCAD enables the development of accurate wiring diagrams, symbol libraries, and custom parts that support the system’s unique design requirements. Its ability to generate precise, organized circuit layouts makes it a valuable resource, ensuring clarity in documentation and reducing errors during implementation.
+AutoCAD is a powerful computer-aided design tool used to create detailed circuit schematics and custom electrical components. In this project, AutoCAD enables the development of accurate wiring diagrams, symbol libraries, and custom parts that support the systemï¿½s unique design requirements. Its ability to generate precise, organized circuit layouts makes it a valuable resource, ensuring clarity in documentation and reducing errors during implementation.
 
 ### ASP.NET
 ASP.NET is a Microsoft framework for building web applications and APIs. It allows developers to create dynamic, scalable, and secure websites and services using .NET languages like C#. ASP.NET supports server-side and client-side development and includes routing, authentication, and data access features, making it a popular choice for enterprise-level web applications.
@@ -94,3 +94,6 @@ The Android/iOS Launcher is a Visual Studio Code extension that acts as an inter
 
 ### Swagger UI Documentation
 Swagger UI Documentation is a system that allows for the generation of API usage documentation on runtime of a backend application. This documentation is useful for developers and users to have access to all of the information regarding how requests need to be sent and what sort of information will be returned to the client in a response.
+
+### ADB Logcat
+Logcat is a command line tool that dumps a log of system messages into the terminal, including ones that you have written from an application with the Log class. This log was used to see certain messages being sent over BLE from the watch to the phone, and was used to track the validity of the messages being sent. 
