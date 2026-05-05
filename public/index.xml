@@ -7,55 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2024 Capstone</title>
-      <link>//localhost:1313/2024-capstone/index.html</link>
+      <title>What is RevMetrix</title>
+      <link>//localhost:1313/what-is-revmetrix/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2024-capstone/index.html</guid>
-      <description>&lt;h3 id=&#34;2024-capstone&#34;&gt;2024 Capstone&lt;/h3&gt;
-
-&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
-	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2024-capstone/current-state-of-revmetrix/index.html&#34;&gt; 2024 RevMetrix&lt;/a&gt;&lt;p&gt;The current state of each aspect of the project and what is to come&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2024-capstone/how-to-contribute/index.html&#34;&gt;How To Contribute&lt;/a&gt;&lt;p&gt;&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
-
-&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
-	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2024-capstone/how-to-contribute/ci-and-cd/index.html&#34;&gt;Continuous Integration/Deployment&lt;/a&gt;&lt;p&gt;Information about the project&amp;#39;s CI/CD workflows&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2024-capstone/how-to-contribute/contributing-documentation/index.html&#34;&gt;Contributing Documentation&lt;/a&gt;&lt;p&gt;How to add, edit, and remove documentation on the Wiki&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2024-capstone/how-to-contribute/digitalocean-management/index.html&#34;&gt;DigitalOcean Management&lt;/a&gt;&lt;p&gt;Information regarding how to manage DigitalOcean Droplets&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2024-capstone/how-to-contribute/dockerizing-an-application/index.html&#34;&gt;Dockerizing an Application&lt;/a&gt;&lt;p&gt;Information on how to dockerize a project and deploy onto a separate machine or server&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2025 Capstone</title>
-      <link>//localhost:1313/2025-capstone/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2025-capstone/index.html</guid>
-      <description>&lt;h3 id=&#34;2025-capstone&#34;&gt;2025 Capstone&lt;/h3&gt;
-
-&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
-	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/cureent-state-of-revmetrix/index.html&#34;&gt;2025 RevMetrix&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/technologies-used/index.html&#34;&gt;2025 Technologies Used&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-milestones/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;2025 Project Milestones&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/project-assignments/index.html&#34;&gt;Project Proposals&lt;/a&gt;&lt;p&gt;A list of all assignments completed throughout 2025&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2025-capstone/set-up/index.html&#34;&gt;Set Up&lt;/a&gt;&lt;p&gt;for help &lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>2026 Capstone</title>
-      <link>//localhost:1313/2026-capstone/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2026-capstone/index.html</guid>
-      <description>&lt;h3 id=&#34;2026-capstone&#34;&gt;2026 Capstone&lt;/h3&gt;
-
-&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
-	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/project-assignments/index.html&#34;&gt;2026 Project Assignments&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/technologies-used/index.html&#34;&gt;2026 Technologies Used&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/index.html&#34;&gt;Current State of RevMetrix&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/project-milestones/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;2026 spring Project Milestones &lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/set-up/index.html&#34;&gt;Set up &lt;/a&gt;&lt;p&gt;for help &lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>//localhost:1313/what-is-revmetrix/index.html</guid>
+      <description>&lt;h4 id=&#34;abstract&#34;&gt;Abstract&lt;/h4&gt;
+&lt;p&gt;The RevMetrix project is a project that seeks to capture a bowling ball&amp;rsquo;s motion as it travels down a lane.  The project is based on two components developed initially by Professor Hake and Dr. Babcock. The first is the SmartDot module, developed by Professor Hake. The SmartDot module is a piece of hardware that sits inside the finger insert of the bowling ball. The next component is the Ciclopes software. Ciclopes is a motion detection software that can track and display the path traveled by a bowling ball with an uploaded video of a bowling ball shot. The RevMetrix team is building a device called a Ball Spinner.
+A Ball Spinner is a bowling analysis tool that recreates the movement and rotation of a bowling ball during a game. The bowling ball sits in an enclosure where it is pressed against three motors, allowing it to spin in three orthogonal axes. Users can simulate shots through an application interface by entering input parameters for the shot, where these parameters are sent to the Ball Spinner, and the motors move the bowling ball as if it were actually on a bowling lane. Complex physics equations will account for the input parameters and the other external conditions to calculate instructions for the motors to move the ball as realistically as possible. A SmartDot module that resides in the ball allows users to visualize what it would be doing if it moved on a lane and store shots for later replaying/analyzing previous shots. In this paper, we will provide more context behind the RevMetrix project and any important concepts needed to understand our work, go over both the design and the implementation of each of the aspects of our project, and discuss any future work that still needs to be completed for the project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ciclopes</title>
@@ -77,13 +35,33 @@
 &lt;/ul&gt;</description>
     </item>
     <item>
-      <title>What is RevMetrix</title>
-      <link>//localhost:1313/what-is-revmetrix/index.html</link>
+      <title>2026 Capstone</title>
+      <link>//localhost:1313/2026-capstone/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/what-is-revmetrix/index.html</guid>
-      <description>&lt;h4 id=&#34;abstract&#34;&gt;Abstract&lt;/h4&gt;
-&lt;p&gt;The RevMetrix project is a project that seeks to capture a bowling ball&amp;rsquo;s motion as it travels down a lane.  The project is based on two components developed initially by Professor Hake and Dr. Babcock. The first is the SmartDot module, developed by Professor Hake. The SmartDot module is a piece of hardware that sits inside the finger insert of the bowling ball. The next component is the Ciclopes software. Ciclopes is a motion detection software that can track and display the path traveled by a bowling ball with an uploaded video of a bowling ball shot. The RevMetrix team is building a device called a Ball Spinner.
-A Ball Spinner is a bowling analysis tool that recreates the movement and rotation of a bowling ball during a game. The bowling ball sits in an enclosure where it is pressed against three motors, allowing it to spin in three orthogonal axes. Users can simulate shots through an application interface by entering input parameters for the shot, where these parameters are sent to the Ball Spinner, and the motors move the bowling ball as if it were actually on a bowling lane. Complex physics equations will account for the input parameters and the other external conditions to calculate instructions for the motors to move the ball as realistically as possible. A SmartDot module that resides in the ball allows users to visualize what it would be doing if it moved on a lane and store shots for later replaying/analyzing previous shots. In this paper, we will provide more context behind the RevMetrix project and any important concepts needed to understand our work, go over both the design and the implementation of each of the aspects of our project, and discuss any future work that still needs to be completed for the project.&lt;/p&gt;</description>
+      <guid>//localhost:1313/2026-capstone/index.html</guid>
+      <description>&lt;h3 id=&#34;2026-capstone&#34;&gt;2026 Capstone&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/project-assignments/index.html&#34;&gt;2026 Project Assignments&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/technologies-used/index.html&#34;&gt;2026 Technologies Used&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/index.html&#34;&gt;Current State of RevMetrix&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/project-milestones/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;2026 spring Project Milestones &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/set-up/index.html&#34;&gt;Set up &lt;/a&gt;&lt;p&gt;for help &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Previous Years</title>
+      <link>//localhost:1313/previous-years/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/previous-years/index.html</guid>
+      <description>&lt;h3 id=&#34;previous-years&#34;&gt;Previous Years&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2024-capstone/index.html&#34;&gt;2024 Capstone&lt;/a&gt;&lt;p&gt;2024 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2025-capstone/index.html&#34;&gt;2025 Capstone&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

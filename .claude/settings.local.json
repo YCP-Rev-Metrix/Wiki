@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh run *)",
+      "PowerShell(Move-Item \"content\\\\2024 Capstone\" \"content\\\\Previous Years\\\\2024 Capstone\")",
+      "PowerShell(Move-Item \"content\\\\2025 Capstone\" \"content\\\\Previous Years\\\\2025 Capstone\")"
+    ]
+  }
+}

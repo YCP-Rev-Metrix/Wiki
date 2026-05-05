@@ -1,7 +1,7 @@
 +++
 title = "Ciclopes"
-weight = 100
-description = '2025 Capstone'
+weight = 2
+description = 'Learn about the Ciclopes Software'
 +++
 
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Previous Years on Hugo Relearn Theme</title>
+    <link>//localhost:1313/previous-years/index.html</link>
+    <description>Recent content in Previous Years on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="//localhost:1313/previous-years/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 Capstone</title>
+      <link>//localhost:1313/previous-years/2024-capstone/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/previous-years/2024-capstone/index.html</guid>
+      <description>&lt;h3 id=&#34;2024-capstone&#34;&gt;2024 Capstone&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2024-capstone/current-state-of-revmetrix/index.html&#34;&gt; 2024 RevMetrix&lt;/a&gt;&lt;p&gt;The current state of each aspect of the project and what is to come&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2024-capstone/how-to-contribute/index.html&#34;&gt;How To Contribute&lt;/a&gt;&lt;p&gt;&lt;h3 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2024-capstone/how-to-contribute/ci-and-cd/index.html&#34;&gt;Continuous Integration/Deployment&lt;/a&gt;&lt;p&gt;Information about the project&amp;#39;s CI/CD workflows&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2024-capstone/how-to-contribute/contributing-documentation/index.html&#34;&gt;Contributing Documentation&lt;/a&gt;&lt;p&gt;How to add, edit, and remove documentation on the Wiki&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2024-capstone/how-to-contribute/digitalocean-management/index.html&#34;&gt;DigitalOcean Management&lt;/a&gt;&lt;p&gt;Information regarding how to manage DigitalOcean Droplets&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2024-capstone/how-to-contribute/dockerizing-an-application/index.html&#34;&gt;Dockerizing an Application&lt;/a&gt;&lt;p&gt;Information on how to dockerize a project and deploy onto a separate machine or server&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>2025 Capstone</title>
+      <link>//localhost:1313/previous-years/2025-capstone/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/previous-years/2025-capstone/index.html</guid>
+      <description>&lt;h3 id=&#34;2025-capstone&#34;&gt;2025 Capstone&lt;/h3&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2025-capstone/cureent-state-of-revmetrix/index.html&#34;&gt;2025 RevMetrix&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2025-capstone/technologies-used/index.html&#34;&gt;2025 Technologies Used&lt;/a&gt;&lt;p&gt;2025 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2025-capstone/project-milestones/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;2025 Project Milestones&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2025-capstone/project-assignments/index.html&#34;&gt;Project Proposals&lt;/a&gt;&lt;p&gt;A list of all assignments completed throughout 2025&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/previous-years/2025-capstone/set-up/index.html&#34;&gt;Set Up&lt;/a&gt;&lt;p&gt;for help &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

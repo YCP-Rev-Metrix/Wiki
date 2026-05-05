@@ -1,7 +1,7 @@
 +++
 title = "What is RevMetrix"
-weight = 100
-description = '2025 Capstone'
+weight = 1
+description = 'RevMetrix project introduction'
 +++
 
 #### Abstract
