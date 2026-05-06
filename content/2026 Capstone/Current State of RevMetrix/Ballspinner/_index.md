@@ -6,94 +6,74 @@ description = 'Ballspinner 2025 spring'
 
 ### Physical System
 
-| ![Backend Arch](1.png?width=40vw&lightbox=false) | 
+| ![Backend Arch](image1_2026.png?width=20vw&lightbox=false) | 
 |:--:|
 
-- Exploded View of the Physical Model:
-    - 2x 2"x4"x36" wood blocks used to support the ball and house the bearings
-    - 2x plywood pieces to mount motor and serve as base
-    - 1x steel axle rod 0.8" OD ± 0.01" 
-        - Extra material serves as minor counterweight
-        - Axle rod to be threaded for vice handle and lock nut clamping mechanism (future Implementation)
-    - 1x 34Y307D-LW8 NEMA 34 stepper motor w/ a E5-500-394-I-D D-G-B motor encoder mounted onto the rear
-        - Mounted using aluminum faceplates that screw into the wood block faces
-        - Resting on top vibration dampening, foam, material
-        - Utilizes a padded shim to offset motor tilt
-    - 3-D printed cups are sized to house the foam ball and hold it in place using screws 
- - The physical model is constructed using two pieces of wood measuring 3.5"x1.5"x36" and two plywood pieces to serve as base and motor mount. The vice axle (left) side is made using a steel rod machined down to 0.8" OD ± 0.01" so as to fit within the single bearing mounted within the vice axle side. The extra length of the axle rod serves as a minor counterweight and will be threaded to mount a vice handle lock nut system, future implementation, this axle feeds through the bearing and into the cup which it is then locked into. The motor on top is a 34Y307D-LW8 NEMA 34 stepper motor with a E5-500-394-I-D-D-G-B encoder mounted onto the rear. The motor rests on a piece of dampening material (foam) and is mounted to the system by using an aluminum face-plate which is screwed onto the system and face of the motor. The motor is geared using a 1.25:1 ratio and connected to the motor axle via chain, which is held taught by chain tensioners mounted below the face plate. The motor axle is constructed using a dowel rod that was sanded and modified to fit the bearings that are both mounted within the motor side of the system. 
+The Ball Spinner Mechanical system is used to simulate real bowling data by rotating a ball analog in all three degrees of freedom. 
+Each degree of freedom will be controlled by the Ball Spinner Controller. 
+The first degree of freedom is about the x-axis, which rotates the SmartDot Holder. 
+The second degree of freedom system will control the rotation about the y axis, and will hold the first system on a rotating platform. 
+The third degree of freedom is the z-axis rotation of the previous systems. 
+This design places all three axes of rotation so that they intersect at the center of the simulated bowling ball to ensure that collected data is consistent with real-world motion. 
+The system should be able to perform the instructions provided by the Ball Spinner Controller, and the data collected should be analogous to data that would be collected from a SmartDot inside an actual bowling ball as it is thrown down a lane.
 
-| ![Backend Arch](1.jpg?width=40vw&lightbox=false) | 
+
+### SmartDot Holder
+| ![Backend Arch](image4_2026.png?width=20vw&lightbox=false) | 
 |:--:|
 
-- Side View of the Physical Model Showing the Chain Assembly: The exposed chain measures around 40" in length when unlinked and connects a 6" OD 3 teeth/inch spur gear to a ~4.8" OD 3 teeth/inch spur gear. This results in a 1.25:1 gearing ratio that is driven via the stepper motor. Chain tensioners are implemented to keep the chain action smooth and consistent, especially since this axis will experience the highest level of rotation and is not currently guarded outside of the enclosure.
+The SmartDot holder is mounted on the first degree of freedom motor and houses the SmartDot sensors. 
+The design was made to be 8.5 inches long to accurately model the diameter of an actual bowling ball. 
+At both ends of the SmartDot holder, a SmartDot will be housed via friction fit. 
+The SmartDots are inserted perpendicularly to the direction of rotation, minimizing the ability of rotational effects to dislodge them. 
+Opposite the SmartDot slots are holes to allow the SmartDot module to be pushed out to allow for easy exchange. 
+This SmartDot holder was designed with weight as a critical factor to reduce the required torque from all motors. 
+The design features press fit finger inserts holes above the SmartDot slots and a hole located 90 degrees from the shaft hole to allow for set screw placement.
 
-| ![Backend Arch](5.png?width=40vw&lightbox=false) | 
-|:--:|
-- Motor Mounting Plate: 
-    - 3 ½" by 7 ½" aluminum plate 
-    - Four small through holes with a 0.217 inch diameter (through holes for screwing into face of motor)
-    - Each through hole is spaced 2.740 inches apart 
-    - The radius of the large through hole is 1.438 inches (fits snugly around the notch of the motor)
-
-- The primary purpose of the motor mounting plate is to securely hold the motor steady in place preventing any lateral movement during operation. The motor mounting plate is screwed into the face of the motor and into the 2x 2"x4"x36" wood blocks. The Motor Mounting Plate is made out of an 6061 T6 aluminum plate with a thickness of  ⅛". 
-
-- Manufacturing Process for Motor Mounting Plate:
-The machine used to manufacture the Motor Mounting Plate was the water jet cutter (Insert name of model). In order to manufacture a piece on the water jet cutter you must follow the steps below. (After part has been created) 
-    - Export to DXF file
-        - Select file
-        - Select Export to DXF/DWF
-        - Save file (make sure you are in the correct units)
-    - Upload DXF file to a USB drive
-    - Insert USB drive into Dell laptop for the water jet cutter 
-    - Select ProtoMax Layout 
-        - Import your DXF file 
-    - Select ProtoMax Make 
-        - Import your Layout file from Promax Layout
-    - Select autopath
-
-| ![Backend Arch](2.jpg?width=40vw&lightbox=false) | 
+### 3 Degree of Freedom System
+| ![Backend Arch](image2_2026.png?width=40vw&lightbox=false) | 
 |:--:|
 
-- Pitch and Yaw Rotation Model: This miniaturized model was intended to demonstrate the methods by which the model will need to rotate as well as for our team to visualize how to motorize them. For the top (Yaw) plate, the team was looking to motorize the system through a direct drive pancake motor seated underneath the bottom plate, which is connected to the top plate through a "lazy susan", and through the central hole of the "lazy susan" to drive the top plate. The side (Pitch) legs house an axle that allows for rotation freely and angled cuts set to 45°. This side would be motorized through rotation of the axle or some equivalent method.
+The ball spinner design is based around aluminum as the primary material because of its accessibility and ease of manufacturing. 
+Where necessary, some parts are 3D printed, such as motor and limit switch mounts and the SmartDot Holder, to avoid excess time spent machining complex parts. 
+Parts for the model were primarily selected from the McMaster-Carr catalogue. 
+The third degree motor is mounted to the U-bracket via a shaft collar with face mounts. 
+This ensures a much more stable connection between the motor and the center assembly. 
+The final design also features a redesigned L-bracket, which was fabricated out of an aluminum block. 
+The L-bracket features gussets that were included in the profile of the wire EDM profile cut. 
+The U-bracket also contains gussets which are bolted onto the plate. 
+Reinforcements on both of these pieces help to reduce vibration. 
+The model also incorporates a counterweight system. 
+These extensions mount directly onto the insides of the U-bracket and have holes located at the top of the plate to mount bolts with brass weights. 
+This was done to improve the balance of the third degree and shift the center of mass of the U-bracket closer to the 3rd degree motor shaft. 
 
-| ![Backend Arch](3.jpg?width=40vw&lightbox=false) | 
+### Ball Spinner Controller Enclosure
+| ![Backend Arch](image3_2026.png?width=30vw&lightbox=false) | 
 |:--:|
 
-- Model Representation of Vice Axle Mounting Mechanism: A model that depicts the method by which the steel axle rod was intended to be threaded to allow for clamping and withdrawal of the cup from the ball to facilitate no-slip rotation as well as removal/replacement of the ball if necessary or desired.
+To prevent injury, a clear acrylic cover was mounted to obstruct access to the system during operation. 
+The box is elevated using 3D printed supports at each corner to allow room for wires and electrical hardware. 
+The acrylic case also contains holes to allow for T-handle spring plungers which keep the acrylic in place during a collision with moving components.
+With the integration of the Ball Spinner Controller into the Ball Spinner Mechanical System, there was a need to house all of the electrical hardware which would be located close to the 3DOF mechanical system. 
+The platform enclosure is a 14”x14” box with removable top and side panels and interior space for the Ball Spinner Controller Team’s equipment, such as the power supply, motor drivers, and raspberry pi. 
+The enclosure is made with aluminum T-slotted channels, bolts, and sliding nuts to allow for easy mounting and repositioning of parts. 
+This design allows the third degree supports of the physical system to be mounted directly to the frame. 
+The enclosure is also equipped with acrylic side panels to allow visibility for all of the electrical components within. 
+The side acrylic panels are pin mounted while the front and back are mounted through bolts and sliding nuts. 
+The back of the enclosure features a 3D printed back plate to allow for connecting various ports to the system. 
+Located at the bottom of the enclosure is a polycarbonate sheet which holds all of the electrical components. 
+The enclosure rests on top of eight total rubber feet to help prevent movement of the enclosure while the ball spinner is in motion. 
+Finally, a plate was mounted to the underside of the front lower channel to provide a support plate for the system's emergency stop button.
 
+### Printing and Bending
+For 3D printing polycarbonate, the best results were achieved with print head temperature at 260 C, print bed temperature at 110 C, fan speed at 0%, and speed at 1100 mm/min within an enclosed printer. 
+For the Prusa mk3, crash detection must be turned off at a high bed temperature. Additionally, research into setting enclosure temperature to a specific value should be conducted.
 
+To bend aluminum sheet without cracking, the aluminum should be annealed. 
+One method to do this is marking the part with Sharpie marker and heating with a propane torch until the Sharpie mark disappears, and then leaving to air cool. 
+The part should then be bent at a given radius to prevent a sharp internal bend. The physical team used 3D printed parts that fit onto the sheet metal bender in the shop.
 
-### Proposed System
-
-
-1st Axis
-Relies on a vice grip system with lock nuts to induce a clamping force to prevent slippage.
-Driven by gear and chain
-2nd Axis
-Rotates the previous sub-system utilizing a direct drive motor paired with a lazy susan to pivot up to 90 degrees in either lateral direction 
-3rd Axis
-Directly driven to tilt the previous sub-systems up to 45 degrees in either direction.
-
-| ![Backend Arch](2.png?width=40vw&lightbox=false) | 
-|:--:|
-
-
-### Bowling Ball Insert
-
-The insert will allow the SmartDot chip to remain in the bowling ball securely as it spins. It must hold the chip at the right depth of the bowling ball while having clear view for the light sensor on the chip.
-
-| ![Backend Arch](3.png?width=40vw&lightbox=false) | 
-|:--:|
-
-| ![Backend Arch](4.png?width=40vw&lightbox=false) | 
-|:--:|
-
-### Target numbers
-
-
-The goal for the primary axis of rotation is 750 RPM while the secondary axis needs 10 RPM and the third axis only need 2.5 RPM. For a 16 lbs bowling the vice would need a clamping force of only 35 lbs. 
-
-
-
-
-
+### Specs
+ The first degree motor will need to accelerate to 600 rpm in 150 milliseconds.  
+ The second degree motor rotates up to 45 degrees in each direction within one second. 
+ The third degree motor rotates up to 22.5 degrees in both directions in less than a second. 

@@ -41,13 +41,13 @@ A Ball Spinner is a bowling analysis tool that recreates the movement and rotati
       <guid>//localhost:1313/2026-capstone/index.html</guid>
       <description>&lt;h3 id=&#34;2026-capstone&#34;&gt;2026 Capstone&lt;/h3&gt;
 
-&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+&lt;ul class=&#34;children children-li children-sort-weight&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/project-assignments/index.html&#34;&gt;2026 Project Assignments&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/technologies-used/index.html&#34;&gt;2026 Technologies Used&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/index.html&#34;&gt;Current State of RevMetrix&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/project-milestones/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;2026 spring Project Milestones &lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/set-up/index.html&#34;&gt;Set up &lt;/a&gt;&lt;p&gt;for help &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/project-assignments/index.html&#34;&gt;Project Assignments&lt;/a&gt;&lt;p&gt;2026 Capstone Assignments&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/project-milestones/index.html&#34;&gt;Project Milestones&lt;/a&gt;&lt;p&gt;2026 Milestone Presentations&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/technologies-used/index.html&#34;&gt;2026 Technologies Used&lt;/a&gt;&lt;p&gt;2026 Capstone&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/set-up/index.html&#34;&gt;Development Guides&lt;/a&gt;&lt;p&gt;Setup Help&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     <item>

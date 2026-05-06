@@ -45,59 +45,19 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/ballspinner/1.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/ballspinner/image1_2026.png?width=20vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 20vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;Exploded View of the Physical Model:
-&lt;ul&gt;
-&lt;li&gt;2x 2&amp;quot;x4&amp;quot;x36&amp;quot; wood blocks used to support the ball and house the bearings&lt;/li&gt;
-&lt;li&gt;2x plywood pieces to mount motor and serve as base&lt;/li&gt;
-&lt;li&gt;1x steel axle rod 0.8&amp;quot; OD ± 0.01&amp;quot;
-&lt;ul&gt;
-&lt;li&gt;Extra material serves as minor counterweight&lt;/li&gt;
-&lt;li&gt;Axle rod to be threaded for vice handle and lock nut clamping mechanism (future Implementation)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;1x 34Y307D-LW8 NEMA 34 stepper motor w/ a E5-500-394-I-D D-G-B motor encoder mounted onto the rear
-&lt;ul&gt;
-&lt;li&gt;Mounted using aluminum faceplates that screw into the wood block faces&lt;/li&gt;
-&lt;li&gt;Resting on top vibration dampening, foam, material&lt;/li&gt;
-&lt;li&gt;Utilizes a padded shim to offset motor tilt&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;3-D printed cups are sized to house the foam ball and hold it in place using screws&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;The physical model is constructed using two pieces of wood measuring 3.5&amp;quot;x1.5&amp;quot;x36&amp;quot; and two plywood pieces to serve as base and motor mount. The vice axle (left) side is made using a steel rod machined down to 0.8&amp;quot; OD ± 0.01&amp;quot; so as to fit within the single bearing mounted within the vice axle side. The extra length of the axle rod serves as a minor counterweight and will be threaded to mount a vice handle lock nut system, future implementation, this axle feeds through the bearing and into the cup which it is then locked into. The motor on top is a 34Y307D-LW8 NEMA 34 stepper motor with a E5-500-394-I-D-D-G-B encoder mounted onto the rear. The motor rests on a piece of dampening material (foam) and is mounted to the system by using an aluminum face-plate which is screwed onto the system and face of the motor. The motor is geared using a 1.25:1 ratio and connected to the motor axle via chain, which is held taught by chain tensioners mounted below the face plate. The motor axle is constructed using a dowel rod that was sanded and modified to fit the bearings that are both mounted within the motor side of the system.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/ballspinner/1.jpg?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;Side View of the Physical Model Showing the Chain Assembly: The exposed chain measures around 40&amp;quot; in length when unlinked and connects a 6&amp;quot; OD 3 teeth/inch spur gear to a ~4.8&amp;quot; OD 3 teeth/inch spur gear. This results in a 1.25:1 gearing ratio that is driven via the stepper motor. Chain tensioners are implemented to keep the chain action smooth and consistent, especially since this axis will experience the highest level of rotation and is not currently guarded outside of the enclosure.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/ballspinner/5.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;Backend Arch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Motor Mounting Plate:&lt;/p&gt;</description>
+&lt;p&gt;The Ball Spinner Mechanical system is used to simulate real bowling data by rotating a ball analog in all three degrees of freedom.
+Each degree of freedom will be controlled by the Ball Spinner Controller.
+The first degree of freedom is about the x-axis, which rotates the SmartDot Holder.
+The second degree of freedom system will control the rotation about the y axis, and will hold the first system on a rotating platform.
+The third degree of freedom is the z-axis rotation of the previous systems.
+This design places all three axes of rotation so that they intersect at the center of the simulated bowling ball to ensure that collected data is consistent with real-world motion.
+The system should be able to perform the instructions provided by the Ball Spinner Controller, and the data collected should be analogous to data that would be collected from a SmartDot inside an actual bowling ball as it is thrown down a lane.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cloud</title>
