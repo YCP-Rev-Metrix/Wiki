@@ -7,17 +7,7 @@ description = 'Shot input'
 
 ## Shot Page
 
-| ![Watch Shot Page](shotPage.png?width=40vw&lightbox=false) | 
+| ![Watch Shot Page](shotWorkflow.png?width=40vw&lightbox=false) | 
 |:--:|
 
-The Shot Page is the primary user interface for collecting both pre shot and post shot information for each throw. 
-It is a stateful widget that manages the interactive controls to construct a complete shot model. 
-The whole page is driven by the Phase enum which switches the UI between pre shot and post shot modes based on the user's progression through their shot. 
-During initialization, the page loads the incoming state such as the initial pins, lane, board, ball and speed values so that data can persist across multiple shots within the same frame unless changed. 
-This includes copying the initial pin layout into a list currentPinState. In the pre shot phase, the UI shows a non-interactive pin layout followed by the stance slider and three dropdowns for board, lane, and ball selection. 
-The stance slider is wrapped inside a tick-mark CustomPaint overlay, allowing the user to select from 1-40. 
-The record button and next phase button are on the bottom of the screen, allowing the user to move to the next phase after the shot is thrown. 
-In the post shot phase the pin grid becomes interactive, users can tap pins to toggle their state, and buttons for strikes, spares, fouls and gutter balls. 
-The strike/spare button switches between “X” and “/” depending on whether the shot is the first or second attempt within the frame. 
-Foul and gutter actions are handled through a pop up menu, and the ball speed selector is a horizontal scroll picker to fit the watch. 
-The button row at the bottom of the post phase provides navigation back to the previous page if the user were in need of editing details from the pre phase, and a submit button that triggers _submitShot(). 
+The Shot Input Page implements a structured, seven-stage workflow for capturing all relevant data for a bowling shot, using an interface managed by a PageController. Each stage corresponds to a distinct aspect of shot entry, as defined by the titles list: (1) Recent Results, (2) Select Ball, (3) Record, (4) Shot, (5) Impact, (6) Boards, and (7) Speed. The workflow, shown in Figure 3.2.8.2,  is realized as a sequence of interactive pages, each with its own state and validation logic. The Recent Results stage displays a summary of the last three shots, leveraging helper methods to extract and format impact and stance labels from recent shot data. The Select Ball stage allows the user to choose from available balls, with logic to ensure the selected ball is valid and falls back to a default if necessary. The Record stage manages the actual shot recording process. The Shot stage provides a visual interface for selecting which pins remain standing, using a custom pin display widget, outcome toggling (strike, spare, foul), and foul handling, with pin toggling logic that respects the context of the shot (first or second shot in the frame).. The Impact and Boards stages use custom wheel pickers and dialogs to allow precise selection of impact board and stance, with dynamic label computation and recent value recall. The Speed stage employs a scrollable picker for ball speed, with snapping and real-time updates. Throughout the workflow, state is tightly managed and synchronized, with each stage initializing from the provided context and updating the shot model as the user progresses. This stage-based design ensures user-friendly shot data entry, supporting both manual and post-shot workflows and integrating seamlessly with the broader session and BLE transmission logic.

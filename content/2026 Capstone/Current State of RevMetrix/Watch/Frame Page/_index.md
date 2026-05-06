@@ -6,11 +6,7 @@ description = 'Frame Page'
 
 
 ## Frame Page
-| ![Watch Frame Page](framePage.png?width=40vw&lightbox=false) | 
+| ![Watch Frame Page](FramePage.png?width=40vw&lightbox=false) | 
 |:--:|
 
-The frame page, as shown in Figure 3.2.11.1 acts as the frame overview view, the frame selection screen, and the shot navigation screen. 
-The user can navigate between frames by a tap-and-hold pop-out carousel where the user can swipe between frames as seen in Figure 3.2.11.2. 
-The user can navigate between shots if more than one exists by swiping horizontally. 
-Shot 2 does not exist if Shot 1 has not been completed. Similarly, the user cannot see or access a frame beyond the current active frame. 
-Each frame object maintains an ordered list of shot records, and when the user begins a shot from the frame page, it constructs a new shot page instance with the correct frameShotIndex, the current standing pin state and any previously selected values like lane, ball, or board. 
+The Frame Page is architected around the FrameShell stateful widget, which orchestrates frame navigation, selection, and shot entry within a game context. It leverages the SessionController for global state synchronization, using a ListenableBuilder to trigger UI rebuilds on session changes. The page maintains local state for the currently viewed frame, selection mode, and manual navigation flags, enabling both real-time and retrospective frame inspection. Gesture detection is implemented for vertical swipes (to transition to the Game Page) and long-press (to activate frame selection mode) as seen in Figure 3.2.11.2, with haptic feedback for enhanced UX. The core UI is a stack containing the BowlingFrame widget, which itself manages a PageController for horizontal paging through shots within the frame. The shot slot logic is dynamically computed based on frame index and game state, with special handling for the 10th and 11th frames to accommodate strike/spare rules. The overlay for frame selection is conditionally rendered, and the page ensures that navigation, shot input, and state transitions are robustly synchronized with the session model, including clamping indices and handling edge cases for out-of-bounds navigation. The Info Bubbles at the bottom as seen in Figure 3.2.11.1 are used as indicators for the bowlers of their stats for the shot that they just threw. These can be accessed by swiping left to the previous shot. 
