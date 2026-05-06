@@ -21,11 +21,11 @@ After your screen has refreshed, you should see a screen similar to the followin
 Give the issue a name and a description, and make sure to click Assign Yourself under the Assignees tab. 
 ![image5](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/5cd079d3-456f-4a4f-b7d9-fe74afaaca67)
 
-After this is done, assign the issue a Label that is corresponding to whatever you are trying to implement (whether it’s patching a bug or adding new functionality) and click Submit New Issue.
+After this is done, assign the issue a Label that is corresponding to whatever you are trying to implement (whether it's patching a bug or adding new functionality) and click Submit New Issue.
 ![image7](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/3fc83472-1372-4b30-9e89-ae8a41c0ce99)
 
 
-This issue will eventually be connected with a branch but this can’t happen until that branch is created so onto our next topic:
+This issue will eventually be connected with a branch but this can't happen until that branch is created so onto our next topic:
 
 ---
 ### Creating a Branch
@@ -53,7 +53,7 @@ Within the Issues tab click on the issue you previously created and click the ge
 ![image3](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/746df549-3e4b-4c84-9a7e-e6569254114c)
 
 
-This will allow you to close this issue once this branch has been PR’d into the master, as the branch should also then be deleted to create a new branch to tackle the next issue.
+This will allow you to close this issue once this branch has been PR'd into the master, as the branch should also then be deleted to create a new branch to tackle the next issue.
 -Basically a branch is a temporary work space rather than a permanent one
 -Create an issue->make a branch for it->Code a bunch->PR->delete->repeat
 
@@ -63,7 +63,7 @@ This will allow you to close this issue once this branch has been PR’d into th
 Select the Commit section found in the top left section of the Rider tab, shown below:
 ![image4](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/b83306bd-f597-459a-9cc6-f26e5d4317f4)
 
-Select the files you would like to Commit (Found in Unversioned Files) and check their boxes. DO NOT commit .gitignore. Once they’ve been selected press Commit and Push… (If you selected Commit you must follow the instructions specified in {Section B} before trying to make a PR if you selected Commit and Push… feel free to ignore them)
+Select the files you would like to Commit (Found in Unversioned Files) and check their boxes. DO NOT commit .gitignore. Once they've been selected press Commit and Push… (If you selected Commit you must follow the instructions specified in {Section B} before trying to make a PR if you selected Commit and Push… feel free to ignore them)
 
 After the changes have been Pushed to the remote branch, go to the Github repository website and you should see something like this:
 ![image1](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/8d9f54e6-4323-4d36-bef5-739dd437d683)
@@ -78,7 +78,7 @@ Click on the Git button found in the bottom left section of the tab, shown below
 ![image6](https://github.com/YCP-Rev-Metrix/Wiki/assets/98890475/14d4bc7d-b03e-4794-8bc9-d9ba4af3a02d)
 
 
-Once that has been opened, right-click on the Local branch that you’ve been working on (in this example it’s 18-Screentoscreen underneath the Local section) and select Push… 
+Once that has been opened, right-click on the Local branch that you've been working on (in this example it's 18-Screentoscreen underneath the Local section) and select Push… 
 
 Once your Local branch has been pushed to the Remote, the Remote branch will have all the changes that you have coded on your device and a Pull Request can be made.
 

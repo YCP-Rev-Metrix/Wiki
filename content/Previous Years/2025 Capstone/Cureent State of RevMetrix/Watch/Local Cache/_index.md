@@ -13,7 +13,7 @@ It ensures that all data entered by the user remains intact across app restarts 
 The Local Cache serializes each updated session in JSON and writes it to local storage after the user records a shot or edits data. 
 Because the watch serves as a data collection client, the cached JSON will act as a temporary buffer rather than a long term store. 
 For incomplete transfers or disconnections during the BLE communication, it also includes an UnsentData queue. 
-When the BLE Manager prepares a packet for transmission, they are duplicated into the queue and marked as “pending”. 
+When the BLE Manager prepares a packet for transmission, they are duplicated into the queue and marked as "pending". 
 Only after the mobile app acknowledges reception of the packet does the Local Cache remove its entry. 
 During startup, the application loads the cached sessions so the watch can resume where the user left off. 
 

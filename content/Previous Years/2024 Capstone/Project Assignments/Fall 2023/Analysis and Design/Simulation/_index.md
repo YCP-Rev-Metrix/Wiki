@@ -118,7 +118,7 @@ The Unity Visualizer is a Unity simulation that contains a lane, a ball, gutters
 The Unity Camera is a virtual camera that will exist within the Unity Visualizer. This camera will be set up to record throws within the Visualizer and export the recording as a video file. The video can then be read by the file reader on the mobile device and analyzed by the Ciclops application. Having a simulated video will also allow the Frontend Team to test finding a ball path prior to using actual video footage of real throws.
 
 ### Unity Simulated Data
-The Unity Simulated Data will be data that is gathered from the Unity Visualizer. When the simulation is run, data about the ball’s position, velocity, acceleration, angular velocity, and light level will be recorded and sent to the SmartDot Simulator for testing. 
+The Unity Simulated Data will be data that is gathered from the Unity Visualizer. When the simulation is run, data about the ball's position, velocity, acceleration, angular velocity, and light level will be recorded and sent to the SmartDot Simulator for testing. 
 
 ### Class Methods
 ##### Unity Camera

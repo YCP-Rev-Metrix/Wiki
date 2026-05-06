@@ -30,7 +30,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;local-database&#34;&gt;Local Database&lt;/h3&gt;
-&lt;p&gt;The local database will be used to store and retrieve information from the current or most recent practice/match session that the user completed. The mobile app sends the session’s data to the local database and overwrites previous data entries when a new practice/match session is completed and the previous data has been uploaded to the user database in the cloud. This is done initially on the phone app to ensure that data is not lost.&lt;/p&gt;</description>
+&lt;p&gt;The local database will be used to store and retrieve information from the current or most recent practice/match session that the user completed. The mobile app sends the session's data to the local database and overwrites previous data entries when a new practice/match session is completed and the previous data has been uploaded to the user database in the cloud. This is done initially on the phone app to ensure that data is not lost.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

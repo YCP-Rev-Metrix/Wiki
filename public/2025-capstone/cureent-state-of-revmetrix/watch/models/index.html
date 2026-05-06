@@ -99,7 +99,7 @@ Once the packet is created, the BLE Manager calls sendNotification and the encod
 <p>The Session Model is responsible for constructing the main session object that organizes the entire active session.
 Its definition can be seen in Figure 3.2.5.1.
 The sessionId field will be received on the initial Bluetooth handshake and will be important for when this data is being processed on the phone to be inserted into the cloud database.
-The startTime and endTime fields were defined on the phone’s session objects and for  continuity the watch app records this data.
+The startTime and endTime fields were defined on the phone's session objects and for  continuity the watch app records this data.
 The isComplete field is a flag to let the system know that there are no more games left to complete.
 For now this does not do anything, but will trigger an event to add games or change a session.
 The numOfGames field defines how many games are in that session and is responsible for dynamically allocating the number of games the user can select from.

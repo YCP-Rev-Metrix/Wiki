@@ -18,7 +18,7 @@ The application allows users to store and manage a variety of data, including Ev
 
 ### Shot Page
 
-The shot page is the base of the mobile application. It contains a frame view at the top to show the pins knocked down on each shot, as well as the game’s score. Below that, there are buttons and input fields used to track a full game of bowling.
+The shot page is the base of the mobile application. It contains a frame view at the top to show the pins knocked down on each shot, as well as the game's score. Below that, there are buttons and input fields used to track a full game of bowling.
 
 The input fields on the left of the screen allow users to select a player, as well as a strike ball and spare ball used for each frame.
 The buttons on the right are shortcuts for users to select if they get a Foul, Gutter, Spare, or Strike.

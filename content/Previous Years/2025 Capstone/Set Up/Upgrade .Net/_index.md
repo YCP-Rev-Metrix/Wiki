@@ -7,7 +7,7 @@ description = 'Instrucations'
 - Download the .NET SDK
   - https://dotnet.microsoft.com/en-us/download
   - Run installer
-  - Open command prompt and run “dotnet” to confirm installation
+  - Open command prompt and run "dotnet" to confirm installation
   - Confirm Visual Studio is updated to the appropriate version (can be found on the SDK download page)
   - Check Version: Help → About Microsoft Visual Studio
   - Update: Help → Check for Updates → Update

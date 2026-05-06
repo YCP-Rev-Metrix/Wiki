@@ -29,12 +29,12 @@ The Rip-Cord design involves tightening a cord around the ball and quickly pulli
 | ![Backend Arch](4.png?width=40vw&lightbox=false) | 
 |:--:|
 
-The Dice idea for the Ball Spinner prototype is to design a cube surrounding the bowling ball. The ball will be confined by three motors that will use the friction from the ball to spin it in the three orthogonal directions. This design would allow for decent control of the ball’s primary spin axis since the induced spin occurs from friction. The primary motor will require more power than the other two since it will require more speed.
+The Dice idea for the Ball Spinner prototype is to design a cube surrounding the bowling ball. The ball will be confined by three motors that will use the friction from the ball to spin it in the three orthogonal directions. This design would allow for decent control of the ball's primary spin axis since the induced spin occurs from friction. The primary motor will require more power than the other two since it will require more speed.
 
 ##### Tri-Axis Spinner
 | ![Backend Arch](5.png?width=40vw&lightbox=false) | 
 |:--:|
-The Tri-axis idea for the Ball Spinner prototype is to use three motor-driven Omni-wheels to simultaneously spin a ball in all three orthogonal directions. The rollers on the Omni-wheels give freedom of movement outside their primary direction, allowing simultaneous rotations. The ball’s primary spin axis has less control due to how tight the Tri-Axis Spinner’s hold on the ball is. The spinner can either have each motor have the same strength or keep one wheel on the primary axis and have it much stronger than the rest. Some potential issues are the device requiring more power or friction to give the ball enough acceleration.
+The Tri-axis idea for the Ball Spinner prototype is to use three motor-driven Omni-wheels to simultaneously spin a ball in all three orthogonal directions. The rollers on the Omni-wheels give freedom of movement outside their primary direction, allowing simultaneous rotations. The ball's primary spin axis has less control due to how tight the Tri-Axis Spinner's hold on the ball is. The spinner can either have each motor have the same strength or keep one wheel on the primary axis and have it much stronger than the rest. Some potential issues are the device requiring more power or friction to give the ball enough acceleration.
 
 ##### Complex Gimbal 
 | ![Backend Arch](6.png?width=40vw&lightbox=false) | 

@@ -16,7 +16,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://dotnet.microsoft.com/en-us/download&#34; target=&#34;_blank&#34;&gt;https://dotnet.microsoft.com/en-us/download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Run installer&lt;/li&gt;
-&lt;li&gt;Open command prompt and run “dotnet” to confirm installation&lt;/li&gt;
+&lt;li&gt;Open command prompt and run &amp;ldquo;dotnet&amp;rdquo; to confirm installation&lt;/li&gt;
 &lt;li&gt;Confirm Visual Studio is updated to the appropriate version (can be found on the SDK download page)&lt;/li&gt;
 &lt;li&gt;Check Version: Help → About Microsoft Visual Studio&lt;/li&gt;
 &lt;li&gt;Update: Help → Check for Updates → Update&lt;/li&gt;

@@ -17,6 +17,7 @@ Finally the "Sign Out" button signs the user out of the app and sends them back 
 | ![Account Page](Account.jpg?width=20vw&lightbox=false) | 
 |:--:|
 
+## Edit Account Page
 The edit account page can only be accessed through the account page. 
 This page displays the user's account information in editable entry fields. 
 The user can change the information in each field and then click "Save Changes" at the bottom of the screen. 

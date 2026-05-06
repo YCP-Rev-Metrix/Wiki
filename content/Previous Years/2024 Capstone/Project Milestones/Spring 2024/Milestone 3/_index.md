@@ -10,7 +10,7 @@ description = 'Progress made on milestone 3 and the associated slideshow'
 
 #### The Presentation / Demonstration
 <!-- 1. Each project team should plan to present for about 50-60 minutes. Larger teams (with multiple sub-teams) will likely go longer than that. There will likely also be an extensive question and answer period.
-2. You should use presentation software such as PowerPoint or Google Slides. Your slides should contain brief bulleted points and graphics (tables, diagrams, screen captures, wire frames) that provide overall context for your bullet points. Slides should not be a “wall of text”, and please avoid reading your slides or from a prepared script.
+2. You should use presentation software such as PowerPoint or Google Slides. Your slides should contain brief bulleted points and graphics (tables, diagrams, screen captures, wire frames) that provide overall context for your bullet points. Slides should not be a "wall of text", and please avoid reading your slides or from a prepared script.
 3. Your presentation should include the following elements:
     - Provide a brief description of the project.
     - Provide a high-level overview of your system architecture.

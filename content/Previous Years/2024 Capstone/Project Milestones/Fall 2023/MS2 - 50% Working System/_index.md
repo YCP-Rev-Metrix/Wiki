@@ -15,7 +15,7 @@ description = 'Progress made on the 50% working system and the associated slides
 
 #### The Presentation / Demonstration
 1. Each project team should plan to present for about 45 to 60 minutes. Larger teams (with multiple sub-teams) will likely go longer than that. There will likely also be an extensive question and answer period. All presentations need to be limited to less than two hours (including the question and answer period).
-2. You should use some presentation software such as PowerPoint or Google Slides. Your slides should contain brief bulleted points and graphics (tables, diagrams, screen captures, wire frames) that provide overall context for your bullet points. Slides should not be a “wall of text”, and please avoid reading your slides or from a prepared script.
+2. You should use some presentation software such as PowerPoint or Google Slides. Your slides should contain brief bulleted points and graphics (tables, diagrams, screen captures, wire frames) that provide overall context for your bullet points. Slides should not be a "wall of text", and please avoid reading your slides or from a prepared script.
 3. Your presentation should include the following elements:
    - Provide a brief description of the project.
    - Provide an updated high-level overview of your system architecture.
@@ -25,7 +25,7 @@ description = 'Progress made on the 50% working system and the associated slides
    - Discuss your automated test strategy, and run your unit tests to demonstrate your testing framework, and describe what is happening.
    - Briefly talk about how you plan to evolve the system to implement the remaining functionality.
    - Plan your demonstration carefully. You need to convince us that your system is 50% complete. Make sure your demonstration convinces us!
-   - Please do a dry run before class. Because of the limited amount of time we have in class, we can’t wait for your team to troubleshoot issues that arise during the presentation.
+   - Please do a dry run before class. Because of the limited amount of time we have in class, we can't wait for your team to troubleshoot issues that arise during the presentation.
 
 ### Milestone 2 - Presentation / Demonstration
 #### Links

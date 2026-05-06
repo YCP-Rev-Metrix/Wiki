@@ -14,12 +14,12 @@ description = 'Instrucations'
 | ![Backend Arch](1.png?width=40vw&lightbox=false) | 
 |:--:|
 
-- When visual studio opens click “Clone Repository”:
+- When visual studio opens click "Clone Repository":
 
 | ![Backend Arch](2.png?width=40vw&lightbox=false) | 
 |:--:|
 
-- Enter this url into the “Repository location” field
+- Enter this url into the "Repository location" field
 - https://github.com/YCP-Rev-Metrix/BallSpinner-Application
 
 | ![Backend Arch](3.png?width=40vw&lightbox=false) | 
@@ -81,12 +81,12 @@ description = 'Instrucations'
 
 
 
-##### Josh’s Setup issues:
+##### Josh's Setup issues:
 - Today I got Visual Studio 2022 installed on my laptop. I copied both the Backend and Frontend repositories to my system. I was able to follow the wiki for setting up the backend. I learned that the frontend page has an old repository and informed everyone else. We got the correct repository link from Patrick. 
 
-- Next we had an issue where any time any of the Juniors would run the frontend application, we would get an “Unauthorized” error. To fix this we had to get added to the RevMetrix GitHub. 
+- Next we had an issue where any time any of the Juniors would run the frontend application, we would get an "Unauthorized" error. To fix this we had to get added to the RevMetrix GitHub. 
 
-- After this the error message changed to a “Failed to retrieve information about 'RevMetrix.BallSpinner.Common.Api' from remote source 'https://nuget.pkg.github.com/YCP-Rev-Metrix/download/revmetrix.ballspinner.common.api/index.json'. Response status code does not indicate success: 403 (Forbidden)”. To solve this issue I had to start by following the steps from the image below to remove old github credentials from my laptop. 
+- After this the error message changed to a "Failed to retrieve information about 'RevMetrix.BallSpinner.Common.Api' from remote source 'https://nuget.pkg.github.com/YCP-Rev-Metrix/download/revmetrix.ballspinner.common.api/index.json'. Response status code does not indicate success: 403 (Forbidden)". To solve this issue I had to start by following the steps from the image below to remove old github credentials from my laptop. 
 
 | ![Backend Arch](12.png?width=40vw&lightbox=false) | 
 |:--:|
@@ -97,7 +97,7 @@ description = 'Instrucations'
 | ![Backend Arch](13.png?width=40vw&lightbox=false) | 
 |:--:|
 
-- In the source field at the bottom I input “https://nuget.pkg.github.com/YCP-Rev-Metrix/index.json”. After this I rebooted visual studio and was prompted with credentials. For the username I entered my github username, and for the password I pasted in the token I created. Next I tried to run the Ball Spinner application again and everything booted up fine! 
+- In the source field at the bottom I input "https://nuget.pkg.github.com/YCP-Rev-Metrix/index.json". After this I rebooted visual studio and was prompted with credentials. For the username I entered my github username, and for the password I pasted in the token I created. Next I tried to run the Ball Spinner application again and everything booted up fine! 
 
 | ![Backend Arch](15.jpg?width=40vw&lightbox=false) | 
 |:--:|

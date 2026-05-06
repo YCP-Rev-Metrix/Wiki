@@ -7,7 +7,11 @@ description = 'Login to the app'
 
 ## Login Page
 The login page allows users to input their username and password to sign in to the Mobile Application. 
-New users can click the blue text below the login button to navigate to the registration page to create a new account.
+The password field contains a checkbox to mask and unmask the password. 
+New users can click the blue text below the login button to navigate to the registration page to create a new account. 
+When the User is creating or logging in, it will ask the Cloud to create a Authentication Token. 
+This is used to authenticate the user when making cloud requests.
+
 
 | ![Login Page](LoginPage.jpg?width=20vw&lightbox=false) | 
 |:--:|

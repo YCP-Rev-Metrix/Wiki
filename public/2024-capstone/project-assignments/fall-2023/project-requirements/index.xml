@@ -31,7 +31,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;minimal-working-system&#34;&gt;Minimal Working System&lt;/h3&gt;
-&lt;p&gt;The Backend Team’s role in the project will consist of three main objectives: Creation and maintenance of the Cloud Databases (User and Raw Binary databases) and the local phone database, creation and implementation of the Web API (allowing for client-server interactions), and the development and integration of ISmartDot interface. For the minimal working system, the most important goal to complete will be the decision of which database engine(s) will be used to read and write data between the different technologies used. Once the decision is made, we will need to create the database tables and enable read/write functionality to and from each database’s respective locations. Finally, to complete the minimal working system, we will need to complete the development of the Web API to effectively request and receive data to and from the mobile application and each database.&lt;/p&gt;</description>
+&lt;p&gt;The Backend Team's role in the project will consist of three main objectives: Creation and maintenance of the Cloud Databases (User and Raw Binary databases) and the local phone database, creation and implementation of the Web API (allowing for client-server interactions), and the development and integration of ISmartDot interface. For the minimal working system, the most important goal to complete will be the decision of which database engine(s) will be used to read and write data between the different technologies used. Once the decision is made, we will need to create the database tables and enable read/write functionality to and from each database's respective locations. Finally, to complete the minimal working system, we will need to complete the development of the Web API to effectively request and receive data to and from the mobile application and each database.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Frontend Requirements</title>
@@ -58,7 +58,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;minimal-working-system&#34;&gt;Minimal Working System&lt;/h3&gt;
-&lt;p&gt;Frontend Team’s role is to create a mobile app that is able to facilitate communication between what is developed by both the Graphics and Backend teams. The minimal working system will consist of an interface that allows for user input and displays user-specific data in response. This will also include the framework for communicating with the Graphics and Backend teams, to be fully implemented later on, this also includes Bluetooth functionality. There will also be camera and camera roll access to later be used to analyze a bowler&amp;rsquo;s throw.&lt;/p&gt;</description>
+&lt;p&gt;Frontend Team's role is to create a mobile app that is able to facilitate communication between what is developed by both the Graphics and Backend teams. The minimal working system will consist of an interface that allows for user input and displays user-specific data in response. This will also include the framework for communicating with the Graphics and Backend teams, to be fully implemented later on, this also includes Bluetooth functionality. There will also be camera and camera roll access to later be used to analyze a bowler&amp;rsquo;s throw.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simulation Requirements</title>

@@ -22,7 +22,7 @@ To distribute data, there is a DataParser. The DataParser interprets data from t
 | ![Backend Arch](3.png?width=40vw&lightbox=false) | 
 |:--:|
 
-Every visualizer is based on a DataViewModel, which implements basic listening functionality to the BallSpinner group’s DataParser. To prevent unnecessary data from going to each visualizer, visualizers have an enum of accepted metrics telling the DataParser what specific data it wants. For example, the LogViewModel will want to receive all forms of data. Additionally, the GraphViewModel may only want to show the X, Y, and Z acceleration.
+Every visualizer is based on a DataViewModel, which implements basic listening functionality to the BallSpinner group's DataParser. To prevent unnecessary data from going to each visualizer, visualizers have an enum of accepted metrics telling the DataParser what specific data it wants. For example, the LogViewModel will want to receive all forms of data. Additionally, the GraphViewModel may only want to show the X, Y, and Z acceleration.
 
 Lastly, there is the Views group. The application is created using MAUI, and thus a Model-View-ViewModel architecture is in order. Every view or page contains a View, ViewModel, and Model. 
 

@@ -16,7 +16,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://dotnet.microsoft.com/en-us/download&#34; target=&#34;_blank&#34;&gt;https://dotnet.microsoft.com/en-us/download&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Run installer&lt;/li&gt;
-&lt;li&gt;Open command prompt and run “dotnet” to confirm installation&lt;/li&gt;
+&lt;li&gt;Open command prompt and run &amp;ldquo;dotnet&amp;rdquo; to confirm installation&lt;/li&gt;
 &lt;li&gt;Confirm Visual Studio is updated to the appropriate version (can be found on the SDK download page)&lt;/li&gt;
 &lt;li&gt;Check Version: Help → About Microsoft Visual Studio&lt;/li&gt;
 &lt;li&gt;Update: Help → Check for Updates → Update&lt;/li&gt;
@@ -109,7 +109,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;ul&gt;
-&lt;li&gt;When visual studio opens click “Clone Repository”:&lt;/li&gt;
+&lt;li&gt;When visual studio opens click &amp;ldquo;Clone Repository&amp;rdquo;:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -121,7 +121,7 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;ul&gt;
-&lt;li&gt;Enter this url into the “Repository location” field&lt;/li&gt;
+&lt;li&gt;Enter this url into the &amp;ldquo;Repository location&amp;rdquo; field&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/YCP-Rev-Metrix/BallSpinner-Application&#34; target=&#34;_blank&#34;&gt;https://github.com/YCP-Rev-Metrix/BallSpinner-Application&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
@@ -242,7 +242,7 @@
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h5 id=&#34;joshs-setup-issues&#34;&gt;Josh’s Setup issues:&lt;/h5&gt;
+&lt;h5 id=&#34;joshs-setup-issues&#34;&gt;Josh&amp;rsquo;s Setup issues:&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Today I got Visual Studio 2022 installed on my laptop. I copied both the Backend and Frontend repositories to my system. I was able to follow the wiki for setting up the backend. I learned that the frontend page has an old repository and informed everyone else. We got the correct repository link from Patrick.&lt;/p&gt;</description>
@@ -254,8 +254,8 @@
       <guid>//localhost:1313/previous-years/2025-capstone/set-up/cloud/index.html</guid>
       <description>&lt;h3 id=&#34;development-enviornment&#34;&gt;Development Enviornment&lt;/h3&gt;
 &lt;p&gt;The preferred development enviornment for the Cloud-Infrastructure .NET solution is &lt;a href=&#34;https://visualstudio.microsoft.com/vs/&#34; target=&#34;_blank&#34;&gt;Microsoft Visual Studio 2022 Community Edition&lt;/a&gt;.  When installing Visual Studio, make sure to install all of the options checked below:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;#image-c3f13426a8a45a8301acac37565c1f67&#34; class=&#34;lightbox-link&#34;&gt;&lt;img src=&#34;//localhost:1313/previous-years/2025-capstone/set-up/cloud/image.png&#34; alt=&#34;Alt text&#34; class=&#34;figure-image noborder lightbox noshadow&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;
-&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox-back&#34; id=&#34;image-c3f13426a8a45a8301acac37565c1f67&#34;&gt;&lt;img src=&#34;//localhost:1313/previous-years/2025-capstone/set-up/cloud/image.png&#34; alt=&#34;Alt text&#34; class=&#34;lightbox-image noborder lightbox noshadow&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#image-ba582ecafb2df61772ae3ca9dc22df76&#34; class=&#34;lightbox-link&#34;&gt;&lt;img src=&#34;//localhost:1313/previous-years/2025-capstone/set-up/cloud/image.png&#34; alt=&#34;Alt text&#34; class=&#34;figure-image noborder lightbox noshadow&#34; style=&#34;height: auto; width: auto;&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;
+&lt;a href=&#34;javascript:history.back();&#34; class=&#34;lightbox-back&#34; id=&#34;image-ba582ecafb2df61772ae3ca9dc22df76&#34;&gt;&lt;img src=&#34;//localhost:1313/previous-years/2025-capstone/set-up/cloud/image.png&#34; alt=&#34;Alt text&#34; class=&#34;lightbox-image noborder lightbox noshadow&#34; loading=&#34;lazy&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;After installing Visual Studio, you will also need to install &lt;a href=&#34;https://go.microsoft.com/fwlink/p/?linkid=2215158&amp;amp;clcid=0x409&amp;amp;culture=en-us&amp;amp;country=us&#34; target=&#34;_blank&#34;&gt;SQL Server Developer Edition (Free)&lt;/a&gt;.  All of the default installation settings can be followed for this.  Finally, you&amp;rsquo;ll need to install &lt;a href=&#34;https://aka.ms/ssmsfullsetup&#34; target=&#34;_blank&#34;&gt;SQL Server Management Studio&lt;/a&gt;.  The default installation options for SSMS can be followed here also.&lt;/p&gt;</description>
     </item>
     <item>

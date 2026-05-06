@@ -11,14 +11,14 @@
       <link>https://YCP-Rev-Metrix.github.io/Wiki/project-requirements/backend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-requirements/backend/index.html</guid>
-      <description>Jordan Carvell, Braden Fleming, Victor Pineda, Robert Wood Backend Architecture Minimal Working System The Backend Team’s role in the project will consist of three main objectives: Creation and maintenance of the Cloud Databases (User and Raw Binary databases) and the local phone database, creation and implementation of the Web API (allowing for client-server interactions), and the development and integration of ISmartDot interface. For the minimal working system, the most important goal to complete will be the decision of which database engine(s) will be used to read and write data between the different technologies used.</description>
+      <description>Jordan Carvell, Braden Fleming, Victor Pineda, Robert Wood Backend Architecture Minimal Working System The Backend Team's role in the project will consist of three main objectives: Creation and maintenance of the Cloud Databases (User and Raw Binary databases) and the local phone database, creation and implementation of the Web API (allowing for client-server interactions), and the development and integration of ISmartDot interface. For the minimal working system, the most important goal to complete will be the decision of which database engine(s) will be used to read and write data between the different technologies used.</description>
     </item>
     <item>
       <title>Frontend Requirements</title>
       <link>https://YCP-Rev-Metrix.github.io/Wiki/project-requirements/frontend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://YCP-Rev-Metrix.github.io/Wiki/project-requirements/frontend/index.html</guid>
-      <description>Theo Bloomquist, Thomas Bywaters, Michael Hensel, John Kettula, Liz Mains Frontend Wireframes Minimal Working System Frontend Team’s role is to create a mobile app that is able to facilitate communication between what is developed by both the Graphics and Backend teams. The minimal working system will consist of an interface that allows for user input and displays user-specific data in response. This will also include the framework for communicating with the Graphics and Backend teams, to be fully implemented later on, this also includes Bluetooth functionality.</description>
+      <description>Theo Bloomquist, Thomas Bywaters, Michael Hensel, John Kettula, Liz Mains Frontend Wireframes Minimal Working System Frontend Team's role is to create a mobile app that is able to facilitate communication between what is developed by both the Graphics and Backend teams. The minimal working system will consist of an interface that allows for user input and displays user-specific data in response. This will also include the framework for communicating with the Graphics and Backend teams, to be fully implemented later on, this also includes Bluetooth functionality.</description>
     </item>
     <item>
       <title>Simulation Requirements</title>

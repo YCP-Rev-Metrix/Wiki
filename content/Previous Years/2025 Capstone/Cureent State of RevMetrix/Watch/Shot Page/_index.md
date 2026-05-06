@@ -18,6 +18,6 @@ This includes copying the initial pin layout into a list currentPinState. In the
 The stance slider is wrapped inside a tick-mark CustomPaint overlay, allowing the user to select from 1-40. 
 The record button and next phase button are on the bottom of the screen, allowing the user to move to the next phase after the shot is thrown. 
 In the post shot phase the pin grid becomes interactive, users can tap pins to toggle their state, and buttons for strikes, spares, fouls and gutter balls. 
-The strike/spare button switches between “X” and “/” depending on whether the shot is the first or second attempt within the frame. 
+The strike/spare button switches between "X" and "/" depending on whether the shot is the first or second attempt within the frame. 
 Foul and gutter actions are handled through a pop up menu, and the ball speed selector is a horizontal scroll picker to fit the watch. 
 The button row at the bottom of the post phase provides navigation back to the previous page if the user were in need of editing details from the pre phase, and a submit button that triggers _submitShot(). 

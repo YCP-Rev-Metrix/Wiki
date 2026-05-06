@@ -11,7 +11,7 @@ description = 'Project Analysis and Design specific to the backend team'
 |:--:|
 
 ### Local Database
-The local database will be used to store and retrieve information from the current or most recent practice/match session that the user completed. The mobile app sends the session’s data to the local database and overwrites previous data entries when a new practice/match session is completed and the previous data has been uploaded to the user database in the cloud. This is done initially on the phone app to ensure that data is not lost. 
+The local database will be used to store and retrieve information from the current or most recent practice/match session that the user completed. The mobile app sends the session's data to the local database and overwrites previous data entries when a new practice/match session is completed and the previous data has been uploaded to the user database in the cloud. This is done initially on the phone app to ensure that data is not lost. 
 
 ### Web API - Server
 The Web API server is the endpoint of the web API that the frontend team can interact with via the client code. This will house controllers and logic to talk to the database, authenticate & authorize users, and preform algorithmic analysis when necessary.
@@ -29,7 +29,7 @@ The algorithm unit will contain many algorithms developed by Professor Hake duri
 The User database will be storing all of the information from the SmartDot module and Ciclops. It will store all of the User/Game details and then a connection will be established via a Web Api to the phone application that will read and write information to or from the cloud-based database. 
 
 ### Research Database
-The research database is going to hold the raw data that is collected from the Smart Dot Module. This entire database will have a similar layout to the User Database, but instead of being used for displaying purposes it will be utilized for Professor Hake’s analysis. This Database will be used for algorithm development.
+The research database is going to hold the raw data that is collected from the Smart Dot Module. This entire database will have a similar layout to the User Database, but instead of being used for displaying purposes it will be utilized for Professor Hake's analysis. This Database will be used for algorithm development.
 
 ### UML Diagrams
 ##### Web API - Server

@@ -36,7 +36,7 @@ content
 ````
 
 {{% notice note %}}
-`_index.md` is required in each folder, it’s your “folder home page”
+`_index.md` is required in each folder, it's your "folder home page"
 {{% /notice %}}
 
 ## Create your project

@@ -20,7 +20,7 @@ description = 'Instrucations'
 |:--:|
 
 
-- This configuration file defines the repository location with the <packageSources>tag and contains your github credentials within the <add key> tag. Copy this file and place it into the Common directory and replace the “ClearTextPasswordKey” with a valid github token. As long as you are within the YCP-Rev-Metrix organization, you will be able to push to this repository. Refer to this documentation for creating Github tokens if you are unsure how to do so https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens. Make sure to at least provide read and write permissions to the token. IMPORTANT!!! MAKE SURE YOU INCLUDE THIS NUGET.CONFIG FILE INTO YOUR GIT IGNORE LIST BECAUSE IT CONTAINS YOUR TOKEN. From here, you are ready to contribute to the RevMetrix.BallSpinner.Common.API Nuget package.
+- This configuration file defines the repository location with the <packageSources>tag and contains your github credentials within the <add key> tag. Copy this file and place it into the Common directory and replace the "ClearTextPasswordKey" with a valid github token. As long as you are within the YCP-Rev-Metrix organization, you will be able to push to this repository. Refer to this documentation for creating Github tokens if you are unsure how to do so https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens. Make sure to at least provide read and write permissions to the token. IMPORTANT!!! MAKE SURE YOU INCLUDE THIS NUGET.CONFIG FILE INTO YOUR GIT IGNORE LIST BECAUSE IT CONTAINS YOUR TOKEN. From here, you are ready to contribute to the RevMetrix.BallSpinner.Common.API Nuget package.
 
 - Here is how you package a module in Visual Studio:
 
@@ -35,4 +35,4 @@ description = 'Instrucations'
 | ![Backend Arch](5.png?width=40vw&lightbox=false) | 
 |:--:|
 
-- From a powershell window change the directory to go into the Common folder and run the command dotnet nuget push “bin/Debug/RevMetrix.BallSpinner.Common.API.1.1.9.nupkg” –source “github”. This will push the Nuget package to the RevMetrix repository using the nuget.config file created earlier for the source location and credentials. This package can then be installed on the application with the Nuget package manager.
+- From a powershell window change the directory to go into the Common folder and run the command dotnet nuget push "bin/Debug/RevMetrix.BallSpinner.Common.API.1.1.9.nupkg" –source "github". This will push the Nuget package to the RevMetrix repository using the nuget.config file created earlier for the source location and credentials. This package can then be installed on the application with the Nuget package manager.

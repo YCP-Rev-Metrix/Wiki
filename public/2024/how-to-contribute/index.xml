@@ -61,7 +61,7 @@ This structure provides a beautiful site, solid uptime, and the ability to even 
 	
 &lt;/ul&gt;
 &lt;h1 id=&#34;ble&#34;&gt;BLE&lt;/h1&gt;
-&lt;p&gt;To communicate with the SmartDot and simulator, the RevMetrix app utilizes Bluetooth Low Energy (BLE). This is essentially bluetooth for low-power objects like smartphones, smartwatches, or sensors. Communication between BLE devices works on a client-server structure known as GATT (Generic ATTribute profile). The app and similar devices are GATT clients which can send and request data from connectable devices known as GATT servers. The GATT server can receive messages from the client and holds data for the client to read. This data is nested in characteristics inside of services which are a part of the GATT server’s profile. By knowing the UUIDs of the device, service, and characteristic, communication can be established.&lt;/p&gt;</description>
+&lt;p&gt;To communicate with the SmartDot and simulator, the RevMetrix app utilizes Bluetooth Low Energy (BLE). This is essentially bluetooth for low-power objects like smartphones, smartwatches, or sensors. Communication between BLE devices works on a client-server structure known as GATT (Generic ATTribute profile). The app and similar devices are GATT clients which can send and request data from connectable devices known as GATT servers. The GATT server can receive messages from the client and holds data for the client to read. This data is nested in characteristics inside of services which are a part of the GATT server's profile. By knowing the UUIDs of the device, service, and characteristic, communication can be established.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Getting Started</title>

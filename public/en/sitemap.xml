@@ -64,10 +64,22 @@
     <loc>//localhost:1313/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/local-cache/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/ciclopes/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/establishment-page/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/event-page/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/session-controller/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/session-controller/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/session-list/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html</loc>

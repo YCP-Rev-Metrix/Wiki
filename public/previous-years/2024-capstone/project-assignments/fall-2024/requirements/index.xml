@@ -39,7 +39,7 @@
   &lt;tbody&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;RevMetrix is a bowling analytics tool stemming from the idea to combine the visual bowling capture system designed by Dr. Babcock (the Ciclopes application), and a 3 Degree of Freedom (DOF) designed by Professor Hake (the SmartDot Module). The system will be designed to be able to combine data received from both sources and offer the end-user a cohesive representation of their bowling experience providing the ball’s direction of travel and speed during a game.&lt;/p&gt;</description>
+&lt;p&gt;RevMetrix is a bowling analytics tool stemming from the idea to combine the visual bowling capture system designed by Dr. Babcock (the Ciclopes application), and a 3 Degree of Freedom (DOF) designed by Professor Hake (the SmartDot Module). The system will be designed to be able to combine data received from both sources and offer the end-user a cohesive representation of their bowling experience providing the ball&amp;rsquo;s direction of travel and speed during a game.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Final Working System </title>
@@ -90,20 +90,20 @@ Login popup will display a message that the user has successfully registered
 &lt;p&gt;Extensions:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  3a. Username already exists in the application 
 
-    Application displays error message that states “Username already exists”
+    Application displays error message that states &amp;quot;Username already exists&amp;quot;
     User can modify username (return to MSS #1)
  3b. Password is not strong enough
 
-    Application displays error message stating “Password must contain 1 capital, 1 lowercase, and 1 special character&amp;quot;
-    User can modify password (return to MSS #1)”
+    Application displays error message stating &amp;quot;Password must contain 1 capital, 1 lowercase, and 1 special character&amp;quot;
+    User can modify password (return to MSS #1)&amp;quot;
  3c. Username is not long enough
  
-    Application displays error message stating “Username must be 8 characters long”
-    User can modify password (return to MSS #1)”
+    Application displays error message stating &amp;quot;Username must be 8 characters long&amp;quot;
+    User can modify password (return to MSS #1)&amp;quot;
  3d. Password is not long enough
 
-    Application displays error message stating “Password must be 8 characters long”
-    User can modify password (return to MSS #1)”
+    Application displays error message stating &amp;quot;Password must be 8 characters long&amp;quot;
+    User can modify password (return to MSS #1)&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;user-logs-in-to-application&#34;&gt;User logs in to application&lt;/h3&gt;
 &lt;p&gt;Precondition:&lt;/p&gt;</description>

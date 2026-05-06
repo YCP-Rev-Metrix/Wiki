@@ -15,14 +15,14 @@
 &lt;h4 id=&#34;main-task&#34;&gt;Main Task&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;The task is to demonstrate a minimal working version of your system.&lt;/li&gt;
-&lt;li&gt;For a “minimal” working system:
+&lt;li&gt;For a &amp;ldquo;minimal&amp;rdquo; working system:
 &lt;ul&gt;
 &lt;li&gt;Your minimal working system should implement the most important classes in the core object model, and test them comprehensively using unit tests&lt;/li&gt;
 &lt;li&gt;What are the most important requirements of your system? You should be able to demonstrate to us that they are at least partially implemented, with appropriate navigation between the components of the system.&lt;/li&gt;
-&lt;li&gt;Extremely important: whatever functionality you demonstrate should be implemented in your core object model classes. We do not want to see a hacked-together “prototype” that looks good but internally is spaghetti code. Also, do NOT demonstrate your system components in isolation - those components should be interacting with each other, at least on a basic level.&lt;/li&gt;
+&lt;li&gt;Extremely important: whatever functionality you demonstrate should be implemented in your core object model classes. We do not want to see a hacked-together &amp;ldquo;prototype&amp;rdquo; that looks good but internally is spaghetti code. Also, do NOT demonstrate your system components in isolation - those components should be interacting with each other, at least on a basic level.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Because this milestone involves implementing several of your most important use cases or user stories, you will need to make sure that your use cases/user stories are documented. Make sure that your project’s issue tracker has an issue for each use case, and each use case issue has a reasonably detailed textual description of the use case. You can write your use cases as full-blown use cases (see Chapter 9 of UML Distilled). The important concern is that you document the important functionality of the system from the perspective of the user. You will not receive full credit for implementing use cases unless they are documented.&lt;/li&gt;
+&lt;li&gt;Because this milestone involves implementing several of your most important use cases or user stories, you will need to make sure that your use cases/user stories are documented. Make sure that your project&amp;rsquo;s issue tracker has an issue for each use case, and each use case issue has a reasonably detailed textual description of the use case. You can write your use cases as full-blown use cases (see Chapter 9 of UML Distilled). The important concern is that you document the important functionality of the system from the perspective of the user. You will not receive full credit for implementing use cases unless they are documented.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h4 id=&#34;the-presentation--demonstration&#34;&gt;The Presentation / Demonstration&lt;/h4&gt;
 &lt;ol&gt;
@@ -50,7 +50,7 @@
 &lt;h4 id=&#34;the-presentation--demonstration&#34;&gt;The Presentation / Demonstration&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;Each project team should plan to present for about 45 to 60 minutes. Larger teams (with multiple sub-teams) will likely go longer than that. There will likely also be an extensive question and answer period. All presentations need to be limited to less than two hours (including the question and answer period).&lt;/li&gt;
-&lt;li&gt;You should use some presentation software such as PowerPoint or Google Slides. Your slides should contain brief bulleted points and graphics (tables, diagrams, screen captures, wire frames) that provide overall context for your bullet points. Slides should not be a “wall of text”, and please avoid reading your slides or from a prepared script.&lt;/li&gt;
+&lt;li&gt;You should use some presentation software such as PowerPoint or Google Slides. Your slides should contain brief bulleted points and graphics (tables, diagrams, screen captures, wire frames) that provide overall context for your bullet points. Slides should not be a &amp;ldquo;wall of text&amp;rdquo;, and please avoid reading your slides or from a prepared script.&lt;/li&gt;
 &lt;li&gt;Your presentation should include the following elements:
 &lt;ul&gt;
 &lt;li&gt;Provide a brief description of the project.&lt;/li&gt;
@@ -61,7 +61,7 @@
 &lt;li&gt;Discuss your automated test strategy, and run your unit tests to demonstrate your testing framework, and describe what is happening.&lt;/li&gt;
 &lt;li&gt;Briefly talk about how you plan to evolve the system to implement the remaining functionality.&lt;/li&gt;
 &lt;li&gt;Plan your demonstration carefully. You need to convince us that your system is 50% complete. Make sure your demonstration convinces us!&lt;/li&gt;
-&lt;li&gt;Please do a dry run before class. Because of the limited amount of time we have in class, we can’t wait for your team to troubleshoot issues that arise during the presentation.&lt;/li&gt;
+&lt;li&gt;Please do a dry run before class. Because of the limited amount of time we have in class, we can&amp;rsquo;t wait for your team to troubleshoot issues that arise during the presentation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -85,14 +85,14 @@
 &lt;h4 id=&#34;presentation-guidelines&#34;&gt;Presentation Guidelines&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;Each project team will give a presentation of about 60 to 75 minutes. Larger teams (with multiple sub-teams) will likely run longer. There may also be an extensive question and answer period. All presentations need to be limited to less than two hours (including the question and answer period).&lt;/li&gt;
-&lt;li&gt;You should use some presentation software such as PowerPoint or Google Slides for your presentation. Your slides should contain brief bulleted points and graphics that provide overall context for your bullet points. Slides should not be a “wall of text”, and please avoid reading your slides or a prepared script.
+&lt;li&gt;You should use some presentation software such as PowerPoint or Google Slides for your presentation. Your slides should contain brief bulleted points and graphics that provide overall context for your bullet points. Slides should not be a &amp;ldquo;wall of text&amp;rdquo;, and please avoid reading your slides or a prepared script.
 &lt;ul&gt;
 &lt;li&gt;NOTE: You will have already submitted your draft technical report before your final milestone presentation. You can leverage the draft report contents for the figures, diagrams, pictures, screen captures, etc that will appear in your presentation.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Please rehearse your presentation! We can’t allow any presentation to go over its allotted time. You may wish to have a few notecards for reference. However, you should not read directly from your notecards or from your slides. This makes for a very boring and painful presentation.&lt;/li&gt;
-&lt;li&gt;Keep in mind that the audience for your presentation consists of students and faculty in CS and Engineering, as well as your clients, alumni and technical advisors. Don’t assume that the audience knows anything about your specific project. However, you may assume that the audience is reasonably knowledgeable about computers, software, etc.&lt;/li&gt;
-&lt;li&gt;Don’t get too bogged down in details. As with any form of technical communication, you want to emphasize the most important and interesting information. Provide supporting details if they are necessary, but otherwise try to keep the presentation at a fairly high level.&lt;/li&gt;
+&lt;li&gt;Please rehearse your presentation! We can&amp;rsquo;t allow any presentation to go over its allotted time. You may wish to have a few notecards for reference. However, you should not read directly from your notecards or from your slides. This makes for a very boring and painful presentation.&lt;/li&gt;
+&lt;li&gt;Keep in mind that the audience for your presentation consists of students and faculty in CS and Engineering, as well as your clients, alumni and technical advisors. Don&amp;rsquo;t assume that the audience knows anything about your specific project. However, you may assume that the audience is reasonably knowledgeable about computers, software, etc.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t get too bogged down in details. As with any form of technical communication, you want to emphasize the most important and interesting information. Provide supporting details if they are necessary, but otherwise try to keep the presentation at a fairly high level.&lt;/li&gt;
 &lt;li&gt;Here is a suggested structure for your presentation:
 &lt;ul&gt;
 &lt;li&gt;Background: What problem were you trying to solve? Discuss the state of the project at the begining of the Fall, and the new/modified system requirements that you addressed. Show a diagram of your overall system architecture, how the pieces fit together and interact, and how data flows between them.&lt;/li&gt;

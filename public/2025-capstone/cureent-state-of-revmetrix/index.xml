@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2025-capstone/cureent-state-of-revmetrix/backend/index.html</guid>
       <description>&lt;h3 id=&#34;database&#34;&gt;Database&lt;/h3&gt;
-&lt;p&gt;Overview: The Revmetrix project seeks to provide comprehensive tools for bowlers and researchers who can use the provided metrics to improve their game or study the physics of bowling. These tools provided to the end user take the form of the Ball Spinner Application and the Mobile Application, both of which require a database schema to serve the goals of the project. The Ball Spinner application schema is tailored for researchers aiming to refine the algorithms that generate bowling metrics, with a focus on simulated shot data collected through the BSA. In contrast, the Mobile Application schema emphasizes usability and game tracking, offering data more relevant to a bowler’s personal performance.&lt;/p&gt;</description>
+&lt;p&gt;Overview: The Revmetrix project seeks to provide comprehensive tools for bowlers and researchers who can use the provided metrics to improve their game or study the physics of bowling. These tools provided to the end user take the form of the Ball Spinner Application and the Mobile Application, both of which require a database schema to serve the goals of the project. The Ball Spinner application schema is tailored for researchers aiming to refine the algorithms that generate bowling metrics, with a focus on simulated shot data collected through the BSA. In contrast, the Mobile Application schema emphasizes usability and game tracking, offering data more relevant to a bowler's personal performance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ball Spinner Application</title>
@@ -32,7 +32,7 @@ Users are provided with a streamlined view (Figure 1) that displays all relevant
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;Ball Spinner Controller (BSC) acts as intermediary between Ball Spinner Application (BSA) and Ball Spinner
 Data from Sensors is sent to the BSA and graphed against simulated data of the expected sensor data
-Human Machine Interface (HMI) is 7” touch screen interaction assistant, standalone driver, and debugger for the BSC.
+Human Machine Interface (HMI) is 7" touch screen interaction assistant, standalone driver, and debugger for the BSC.
 The HMI can be run in local mode and control all hardware within the BSC
 The HMI can also graph and display the sensor data&lt;/p&gt;</description>
     </item>
@@ -54,9 +54,9 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
 &lt;ul&gt;
 &lt;li&gt;Exploded View of the Physical Model:
 &lt;ul&gt;
-&lt;li&gt;2x 2”x4”x36” wood blocks used to support the ball and house the bearings&lt;/li&gt;
+&lt;li&gt;2x 2"x4"x36" wood blocks used to support the ball and house the bearings&lt;/li&gt;
 &lt;li&gt;2x plywood pieces to mount motor and serve as base&lt;/li&gt;
-&lt;li&gt;1x steel axle rod 0.8” OD ± 0.01”
+&lt;li&gt;1x steel axle rod 0.8" OD ± 0.01"
 &lt;ul&gt;
 &lt;li&gt;Extra material serves as minor counterweight&lt;/li&gt;
 &lt;li&gt;Axle rod to be threaded for vice handle and lock nut clamping mechanism (future Implementation)&lt;/li&gt;
@@ -72,7 +72,7 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
 &lt;li&gt;3-D printed cups are sized to house the foam ball and hold it in place using screws&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;The physical model is constructed using two pieces of wood measuring 3.5”x1.5”x36” and two plywood pieces to serve as base and motor mount. The vice axle (left) side is made using a steel rod machined down to 0.8” OD ± 0.01” so as to fit within the single bearing mounted within the vice axle side. The extra length of the axle rod serves as a minor counterweight and will be threaded to mount a vice handle lock nut system, future implementation, this axle feeds through the bearing and into the cup which it is then locked into. The motor on top is a 34Y307D-LW8 NEMA 34 stepper motor with a E5-500-394-I-D-D-G-B encoder mounted onto the rear. The motor rests on a piece of dampening material (foam) and is mounted to the system by using an aluminum face-plate which is screwed onto the system and face of the motor. The motor is geared using a 1.25:1 ratio and connected to the motor axle via chain, which is held taught by chain tensioners mounted below the face plate. The motor axle is constructed using a dowel rod that was sanded and modified to fit the bearings that are both mounted within the motor side of the system.&lt;/li&gt;
+&lt;li&gt;The physical model is constructed using two pieces of wood measuring 3.5"x1.5"x36" and two plywood pieces to serve as base and motor mount. The vice axle (left) side is made using a steel rod machined down to 0.8" OD ± 0.01" so as to fit within the single bearing mounted within the vice axle side. The extra length of the axle rod serves as a minor counterweight and will be threaded to mount a vice handle lock nut system, future implementation, this axle feeds through the bearing and into the cup which it is then locked into. The motor on top is a 34Y307D-LW8 NEMA 34 stepper motor with a E5-500-394-I-D-D-G-B encoder mounted onto the rear. The motor rests on a piece of dampening material (foam) and is mounted to the system by using an aluminum face-plate which is screwed onto the system and face of the motor. The motor is geared using a 1.25:1 ratio and connected to the motor axle via chain, which is held taught by chain tensioners mounted below the face plate. The motor axle is constructed using a dowel rod that was sanded and modified to fit the bearings that are both mounted within the motor side of the system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -84,7 +84,7 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;ul&gt;
-&lt;li&gt;Side View of the Physical Model Showing the Chain Assembly: The exposed chain measures around 40” in length when unlinked and connects a 6” OD 3 teeth/inch spur gear to a ~4.8” OD 3 teeth/inch spur gear. This results in a 1.25:1 gearing ratio that is driven via the stepper motor. Chain tensioners are implemented to keep the chain action smooth and consistent, especially since this axis will experience the highest level of rotation and is not currently guarded outside of the enclosure.&lt;/li&gt;
+&lt;li&gt;Side View of the Physical Model Showing the Chain Assembly: The exposed chain measures around 40" in length when unlinked and connects a 6" OD 3 teeth/inch spur gear to a ~4.8" OD 3 teeth/inch spur gear. This results in a 1.25:1 gearing ratio that is driven via the stepper motor. Chain tensioners are implemented to keep the chain action smooth and consistent, especially since this axis will experience the highest level of rotation and is not currently guarded outside of the enclosure.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -148,7 +148,7 @@ The application allows users to store and manage a variety of data, including Ev
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;shot-page&#34;&gt;Shot Page&lt;/h3&gt;
-&lt;p&gt;The shot page is the base of the mobile application. It contains a frame view at the top to show the pins knocked down on each shot, as well as the game’s score. Below that, there are buttons and input fields used to track a full game of bowling.&lt;/p&gt;</description>
+&lt;p&gt;The shot page is the base of the mobile application. It contains a frame view at the top to show the pins knocked down on each shot, as well as the game's score. Below that, there are buttons and input fields used to track a full game of bowling.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Smartwatch Application</title>

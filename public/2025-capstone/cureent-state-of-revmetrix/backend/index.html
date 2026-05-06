@@ -78,7 +78,7 @@
 <h1 id="backend">Backend</h1>
 
 <h3 id="database">Database</h3>
-<p>Overview: The Revmetrix project seeks to provide comprehensive tools for bowlers and researchers who can use the provided metrics to improve their game or study the physics of bowling. These tools provided to the end user take the form of the Ball Spinner Application and the Mobile Application, both of which require a database schema to serve the goals of the project. The Ball Spinner application schema is tailored for researchers aiming to refine the algorithms that generate bowling metrics, with a focus on simulated shot data collected through the BSA. In contrast, the Mobile Application schema emphasizes usability and game tracking, offering data more relevant to a bowler’s personal performance.</p>
+<p>Overview: The Revmetrix project seeks to provide comprehensive tools for bowlers and researchers who can use the provided metrics to improve their game or study the physics of bowling. These tools provided to the end user take the form of the Ball Spinner Application and the Mobile Application, both of which require a database schema to serve the goals of the project. The Ball Spinner application schema is tailored for researchers aiming to refine the algorithms that generate bowling metrics, with a focus on simulated shot data collected through the BSA. In contrast, the Mobile Application schema emphasizes usability and game tracking, offering data more relevant to a bowler's personal performance.</p>
 <h3 id="overall-architecture">Overall Architecture</h3>
 <p>The overall architecture of the RevMetrix database schema stores bowler data (from the Mobile App) along with research data (from the Ball Spinner App). A comprehensive view of the integrated schema is pictured in Figure 1. The mobile schema is towards the left and the Ball Spinner App schema towards the right, with shared parent tables in the center to minimize redundancy across both schemas.</p>
 <p>This integrated schema will be cloud-hosted and used by both the Ball Spinner and Mobile applications to back up their respective data.</p>
@@ -104,7 +104,7 @@
   </tbody>
 </table>
 <h3 id="mobile-schema">Mobile Schema</h3>
-<p>Figure 3 represents the overall architecture of the mobile application and its cloud integration. Data is stored locally on the user’s device using SQLite and synchronized with an existing cloud database. Because two applications, the App and BSA, share access to the same database, the schema includes inherited tables containing shared information. Each application can then extend these base tables with additional, application-specific data as needed.</p>
+<p>Figure 3 represents the overall architecture of the mobile application and its cloud integration. Data is stored locally on the user's device using SQLite and synchronized with an existing cloud database. Because two applications, the App and BSA, share access to the same database, the schema includes inherited tables containing shared information. Each application can then extend these base tables with additional, application-specific data as needed.</p>
 <table>
   <thead>
       <tr>

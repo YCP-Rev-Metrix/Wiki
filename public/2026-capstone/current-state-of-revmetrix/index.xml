@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/backend/index.html</guid>
       <description>&lt;h3 id=&#34;database&#34;&gt;Database&lt;/h3&gt;
-&lt;p&gt;Overview: The Revmetrix project seeks to provide comprehensive tools for bowlers and researchers who can use the provided metrics to improve their game or study the physics of bowling. These tools provided to the end user take the form of the Ball Spinner Application and the Mobile Application, both of which require a database schema to serve the goals of the project. The Ball Spinner application schema is tailored for researchers aiming to refine the algorithms that generate bowling metrics, with a focus on simulated shot data collected through the BSA. In contrast, the Mobile Application schema emphasizes usability and game tracking, offering data more relevant to a bowler’s personal performance.&lt;/p&gt;</description>
+&lt;p&gt;Overview: The Revmetrix project seeks to provide comprehensive tools for bowlers and researchers who can use the provided metrics to improve their game or study the physics of bowling. These tools provided to the end user take the form of the Ball Spinner Application and the Mobile Application, both of which require a database schema to serve the goals of the project. The Ball Spinner application schema is tailored for researchers aiming to refine the algorithms that generate bowling metrics, with a focus on simulated shot data collected through the BSA. In contrast, the Mobile Application schema emphasizes usability and game tracking, offering data more relevant to a bowler&amp;rsquo;s personal performance.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ball Spinner Application (Deprecated)</title>
@@ -32,7 +32,7 @@ Users are provided with a streamlined view (Figure 1) that displays all relevant
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;Ball Spinner Controller (BSC) acts as intermediary between Ball Spinner Application (BSA) and Ball Spinner
 Data from Sensors is sent to the BSA and graphed against simulated data of the expected sensor data
-Human Machine Interface (HMI) is 7” touch screen interaction assistant, standalone driver, and debugger for the BSC.
+Human Machine Interface (HMI) is 7&amp;quot; touch screen interaction assistant, standalone driver, and debugger for the BSC.
 The HMI can be run in local mode and control all hardware within the BSC
 The HMI can also graph and display the sensor data&lt;/p&gt;</description>
     </item>
@@ -54,9 +54,9 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
 &lt;ul&gt;
 &lt;li&gt;Exploded View of the Physical Model:
 &lt;ul&gt;
-&lt;li&gt;2x 2”x4”x36” wood blocks used to support the ball and house the bearings&lt;/li&gt;
+&lt;li&gt;2x 2&amp;quot;x4&amp;quot;x36&amp;quot; wood blocks used to support the ball and house the bearings&lt;/li&gt;
 &lt;li&gt;2x plywood pieces to mount motor and serve as base&lt;/li&gt;
-&lt;li&gt;1x steel axle rod 0.8” OD ± 0.01”
+&lt;li&gt;1x steel axle rod 0.8&amp;quot; OD ± 0.01&amp;quot;
 &lt;ul&gt;
 &lt;li&gt;Extra material serves as minor counterweight&lt;/li&gt;
 &lt;li&gt;Axle rod to be threaded for vice handle and lock nut clamping mechanism (future Implementation)&lt;/li&gt;
@@ -72,7 +72,7 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
 &lt;li&gt;3-D printed cups are sized to house the foam ball and hold it in place using screws&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;The physical model is constructed using two pieces of wood measuring 3.5”x1.5”x36” and two plywood pieces to serve as base and motor mount. The vice axle (left) side is made using a steel rod machined down to 0.8” OD ± 0.01” so as to fit within the single bearing mounted within the vice axle side. The extra length of the axle rod serves as a minor counterweight and will be threaded to mount a vice handle lock nut system, future implementation, this axle feeds through the bearing and into the cup which it is then locked into. The motor on top is a 34Y307D-LW8 NEMA 34 stepper motor with a E5-500-394-I-D-D-G-B encoder mounted onto the rear. The motor rests on a piece of dampening material (foam) and is mounted to the system by using an aluminum face-plate which is screwed onto the system and face of the motor. The motor is geared using a 1.25:1 ratio and connected to the motor axle via chain, which is held taught by chain tensioners mounted below the face plate. The motor axle is constructed using a dowel rod that was sanded and modified to fit the bearings that are both mounted within the motor side of the system.&lt;/li&gt;
+&lt;li&gt;The physical model is constructed using two pieces of wood measuring 3.5&amp;quot;x1.5&amp;quot;x36&amp;quot; and two plywood pieces to serve as base and motor mount. The vice axle (left) side is made using a steel rod machined down to 0.8&amp;quot; OD ± 0.01&amp;quot; so as to fit within the single bearing mounted within the vice axle side. The extra length of the axle rod serves as a minor counterweight and will be threaded to mount a vice handle lock nut system, future implementation, this axle feeds through the bearing and into the cup which it is then locked into. The motor on top is a 34Y307D-LW8 NEMA 34 stepper motor with a E5-500-394-I-D-D-G-B encoder mounted onto the rear. The motor rests on a piece of dampening material (foam) and is mounted to the system by using an aluminum face-plate which is screwed onto the system and face of the motor. The motor is geared using a 1.25:1 ratio and connected to the motor axle via chain, which is held taught by chain tensioners mounted below the face plate. The motor axle is constructed using a dowel rod that was sanded and modified to fit the bearings that are both mounted within the motor side of the system.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -84,7 +84,7 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;ul&gt;
-&lt;li&gt;Side View of the Physical Model Showing the Chain Assembly: The exposed chain measures around 40” in length when unlinked and connects a 6” OD 3 teeth/inch spur gear to a ~4.8” OD 3 teeth/inch spur gear. This results in a 1.25:1 gearing ratio that is driven via the stepper motor. Chain tensioners are implemented to keep the chain action smooth and consistent, especially since this axis will experience the highest level of rotation and is not currently guarded outside of the enclosure.&lt;/li&gt;
+&lt;li&gt;Side View of the Physical Model Showing the Chain Assembly: The exposed chain measures around 40&amp;quot; in length when unlinked and connects a 6&amp;quot; OD 3 teeth/inch spur gear to a ~4.8&amp;quot; OD 3 teeth/inch spur gear. This results in a 1.25:1 gearing ratio that is driven via the stepper motor. Chain tensioners are implemented to keep the chain action smooth and consistent, especially since this axis will experience the highest level of rotation and is not currently guarded outside of the enclosure.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -126,18 +126,14 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
       <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/index.html</guid>
-      <description>&lt;h2 id=&#34;app-pages&#34;&gt;App Pages&lt;/h2&gt;
-
-&lt;ul class=&#34;children children-li children-sort-weight&#34;&gt;
-	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/main-page/index.html&#34;&gt;Main Page&lt;/a&gt;&lt;p&gt;Default home page&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/login/index.html&#34;&gt;Login&lt;/a&gt;&lt;p&gt;Login to the app&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html&#34;&gt;Registration&lt;/a&gt;&lt;p&gt;Create an account&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html&#34;&gt;Ball Arsenal&lt;/a&gt;&lt;p&gt;Mobile Application&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html&#34;&gt;Shot Page&lt;/a&gt;&lt;p&gt;Shot input&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/account-page/index.html&#34;&gt;Account&lt;/a&gt;&lt;p&gt;User information&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/stats/index.html&#34;&gt;Stats&lt;/a&gt;&lt;p&gt;Bowling statistics&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;what-is-the-mobile-application&#34;&gt;What is the mobile application?&lt;/h2&gt;
+&lt;p&gt;The Mobile Application is a cross-platform system designed to collect, organize, and analyze a wide range of bowling metrics.
+Users can create and manage events they are competing in, add the establishments where they bowl, and create sessions that link directly to both an event and an establishment.
+From each session, users can add games, which contain all associated shot and frame data.
+Selecting a specific game opens an interactive pin layout interface where the user records pins left for each shot. Once submitted, the application displays the full sequence of shots and frames for immediate review.
+The application also includes a Bluetooth interface for optionally connecting to the SmartDot module, enabling real-time collection of accelerometer, gyroscope, magnetometer, and light sensor data. Additionally, the app supports integration with a Smart Watch companion app, allowing users to pair their watch for extended functionality.
+A cloud synchronization feature enables users to store and access their data across devices.
+The statistics page provides tools to search across all events, sessions, games, frames, and shots, giving users detailed performance insights to support skill development and improvement.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Smartwatch Application</title>

@@ -20,7 +20,7 @@ This is crucial for a watch application because the watch display will be turned
 The actual GATT functionality is implemented inside BleGattManager, which initializes a full GATT server when triggered by the BLE Manager.
 This includes creating the custom service with two characteristics, a write and notify for receiving commands and sending packets.
 The GATT manager listens for a change in connection state and onCharacteristicWriteRequest events and routes them back to Flutter through the MethodChannel, which is what allows the Dart side logic to respond to the phone commands and acknowledgements.
-The MainActivity sets up the communication bridge between Flutter and the Android bluetooth stack by defining a MethodChannel named “ble_service_channel”.
+The MainActivity sets up the communication bridge between Flutter and the Android bluetooth stack by defining a MethodChannel named "ble_service_channel".
 This allows the BLE Manager to invoke system level BLE behavior without needing direct access to Android APIs.
 When a session is ready to be transmitted, the BLE Manager serializes the session JSON, chunks it into packets, and calls sendNotification through the MethodChannel for each packet.&lt;/p&gt;</description>
     </item>
@@ -36,7 +36,7 @@ It ensures that all data entered by the user remains intact across app restarts 
 The Local Cache serializes each updated session in JSON and writes it to local storage after the user records a shot or edits data.
 Because the watch serves as a data collection client, the cached JSON will act as a temporary buffer rather than a long term store.
 For incomplete transfers or disconnections during the BLE communication, it also includes an UnsentData queue.
-When the BLE Manager prepares a packet for transmission, they are duplicated into the queue and marked as “pending”.
+When the BLE Manager prepares a packet for transmission, they are duplicated into the queue and marked as "pending".
 Only after the mobile app acknowledges reception of the packet does the Local Cache remove its entry.
 During startup, the application loads the cached sessions so the watch can resume where the user left off.&lt;/p&gt;</description>
     </item>
@@ -115,7 +115,7 @@ This includes copying the initial pin layout into a list currentPinState. In the
 The stance slider is wrapped inside a tick-mark CustomPaint overlay, allowing the user to select from 1-40.
 The record button and next phase button are on the bottom of the screen, allowing the user to move to the next phase after the shot is thrown.
 In the post shot phase the pin grid becomes interactive, users can tap pins to toggle their state, and buttons for strikes, spares, fouls and gutter balls.
-The strike/spare button switches between “X” and “/” depending on whether the shot is the first or second attempt within the frame.
+The strike/spare button switches between "X" and "/" depending on whether the shot is the first or second attempt within the frame.
 Foul and gutter actions are handled through a pop up menu, and the ball speed selector is a horizontal scroll picker to fit the watch.
 The button row at the bottom of the post phase provides navigation back to the previous page if the user were in need of editing details from the pre phase, and a submit button that triggers _submitShot().&lt;/p&gt;</description>
     </item>
