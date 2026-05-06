@@ -10,6 +10,9 @@
     <loc>//localhost:1313/smartdot/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/account-packet/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/ble-manager/index.html</loc>
   </url>
   <url>
@@ -58,9 +61,6 @@
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/local-cache/index.html</loc>
-  </url>
-  <url>
     <loc>//localhost:1313/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/local-cache/index.html</loc>
   </url>
   <url>
@@ -82,10 +82,10 @@
     <loc>//localhost:1313/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/models/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html</loc>
+    <loc>//localhost:1313/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/dev-settings-page/index.html</loc>
   </url>
   <url>
-    <loc>//localhost:1313/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/dev-settings-page/index.html</loc>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/cellular/stats/index.html</loc>
@@ -352,6 +352,9 @@
     <loc>//localhost:1313/previous-years/2024-capstone/how-to-contribute/github-workflows/index.html</loc>
   </url>
   <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/home-page/index.html</loc>
+  </url>
+  <url>
     <loc>//localhost:1313/previous-years/2024-capstone/how-to-contribute/index.html</loc>
   </url>
   <url>
@@ -488,6 +491,9 @@
   </url>
   <url>
     <loc>//localhost:1313/previous-years/2024-capstone/how-to-contribute/webapi/security/index.html</loc>
+  </url>
+  <url>
+    <loc>//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/sessions-page/index.html</loc>
   </url>
   <url>
     <loc>//localhost:1313/previous-years/2025-capstone/set-up/index.html</loc>

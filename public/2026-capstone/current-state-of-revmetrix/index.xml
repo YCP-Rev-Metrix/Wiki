@@ -148,14 +148,30 @@ The HMI can also graph and display the sensor data&lt;/p&gt;</description>
 &lt;p&gt;The Smartwatch application has been created as a companion to the mobile application.
 It is meant to be used with Ciclopes in the mobile application.
 Since users will be using their phone to record the lane, the smartwatch application will allow them to input their shots simultaneously.&lt;/p&gt;
+&lt;h2 id=&#34;smartwatch-high-level-overview&#34;&gt;Smartwatch High Level Overview&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/HighLevelOverview.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;HighLevelOverview&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;smartwatch-uml&#34;&gt;Smartwatch UML&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;&lt;img src=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/UMLWatch.png?width=40vw&amp;amp;lightbox=false&#34; alt=&#34;UMLWatch&#34; class=&#34;figure-image noborder nolightbox noshadow&#34; style=&#34;height: auto; width: 40vw;&#34; loading=&#34;lazy&#34;&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;ul class=&#34;children children-li children-sort-weight&#34;&gt;
 	
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/ble-manager/index.html&#34;&gt;BLE Manager&lt;/a&gt;&lt;p&gt;BLE Manager&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/local-cache/index.html&#34;&gt;Local Cache&lt;/a&gt;&lt;p&gt;Local Cache&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/session-controller/index.html&#34;&gt;Session Controller&lt;/a&gt;&lt;p&gt;Session Controller&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/models/index.html&#34;&gt;Watch Models&lt;/a&gt;&lt;p&gt;Watch Models&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html&#34;&gt;Dev Settings&lt;/a&gt;&lt;p&gt;Dev Settings Page&lt;/p&gt;</description>
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/watch/account-packet/index.html&#34;&gt;Account Packet&lt;/a&gt;&lt;p&gt;Account Packet&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
