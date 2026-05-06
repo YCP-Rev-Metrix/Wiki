@@ -11,21 +11,27 @@
       <link>//localhost:1313/previous-years/2025-capstone/project-milestones/spring-2025/milestone-1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/previous-years/2025-capstone/project-milestones/spring-2025/milestone-1/index.html</guid>
-      <description>&lt;embed class=&#34;pdf&#34; src=&#34;MS1 Presentation.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+      <description>&lt;object data=&#34;MS1 Presentation.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;MS1 Presentation.pdf&#34; target=&#34;_blank&#34;&gt;Open Milestone 1 PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
     </item>
     <item>
       <title>Milestone 2</title>
       <link>//localhost:1313/previous-years/2025-capstone/project-milestones/spring-2025/milestone-2/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/previous-years/2025-capstone/project-milestones/spring-2025/milestone-2/index.html</guid>
-      <description>&lt;embed class=&#34;pdf&#34; src=&#34;MS2 Presentation.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+      <description>&lt;object data=&#34;MS2 Presentation.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;MS2 Presentation.pdf&#34; target=&#34;_blank&#34;&gt;Open Milestone 2 PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
     </item>
     <item>
       <title>Final Presentation</title>
       <link>//localhost:1313/previous-years/2025-capstone/project-milestones/spring-2025/final/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/previous-years/2025-capstone/project-milestones/spring-2025/final/index.html</guid>
-      <description>&lt;embed class=&#34;pdf&#34; src=&#34;MS3 Presentation.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+      <description>&lt;object data=&#34;MS3 Presentation.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;MS3 Presentation.pdf&#34; target=&#34;_blank&#34;&gt;Open Final Presentation PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
     </item>
   </channel>
 </rss>

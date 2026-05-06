@@ -11,7 +11,36 @@
       <link>//localhost:1313/2026-capstone/project-milestones/milestone-1/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/2026-capstone/project-milestones/milestone-1/index.html</guid>
-      <description>&lt;embed class=&#34;pdf&#34; src=&#34;Milestone1_Sp26.pdf&#34; alt=&#34;Coming Soon&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+      <description>&lt;object data=&#34;Milestone1_Sp26.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;Milestone1_Sp26.pdf&#34; target=&#34;_blank&#34;&gt;Open Milestone 1 PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
+    </item>
+    <item>
+      <title>Milestone 2</title>
+      <link>//localhost:1313/2026-capstone/project-milestones/milestone-2/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/project-milestones/milestone-2/index.html</guid>
+      <description>&lt;object data=&#34;Milestone2_Sp26.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;Milestone2_Sp26.pdf&#34; target=&#34;_blank&#34;&gt;Open Milestone 2 PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
+    </item>
+    <item>
+      <title>Milestone 3</title>
+      <link>//localhost:1313/2026-capstone/project-milestones/milestone-3/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/project-milestones/milestone-3/index.html</guid>
+      <description>&lt;object data=&#34;Milestone3_Sp26.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;Milestone3_Sp26.pdf&#34; target=&#34;_blank&#34;&gt;Open Milestone 3 PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
+    </item>
+    <item>
+      <title>Final Presentation</title>
+      <link>//localhost:1313/2026-capstone/project-milestones/final-presentation/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/project-milestones/final-presentation/index.html</guid>
+      <description>&lt;object data=&#34;Final_Presentation_Sp26.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;Final_Presentation_Sp26.pdf&#34; target=&#34;_blank&#34;&gt;Open Final Presentation PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
     </item>
   </channel>
 </rss>

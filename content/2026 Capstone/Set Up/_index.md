@@ -1,7 +1,7 @@
 +++
-title = "Set up "
+title = "Development Guides"
 weight = 100
-description = 'for help '
+description = 'Setup Help'
 +++
 
 

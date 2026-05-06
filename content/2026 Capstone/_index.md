@@ -6,4 +6,4 @@ description = '2026 Capstone'
 
 
 ### 2026 Capstone
-{{% children containerstyle="ul" style="li" sort="title" description="true" %}}
+{{% children containerstyle="ul" style="li" sort="weight" description="true" %}}

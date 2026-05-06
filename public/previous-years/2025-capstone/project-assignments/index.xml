@@ -11,14 +11,18 @@
       <link>//localhost:1313/previous-years/2025-capstone/project-assignments/project-proposal/spring-2025/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/previous-years/2025-capstone/project-assignments/project-proposal/spring-2025/index.html</guid>
-      <description>&lt;embed class=&#34;pdf&#34; src=&#34;Project Proposal SP25.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+      <description>&lt;object data=&#34;Project Proposal SP25.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;Project Proposal SP25.pdf&#34; target=&#34;_blank&#34;&gt;Open Project Proposal PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
     </item>
     <item>
       <title>Fall 2025</title>
       <link>//localhost:1313/previous-years/2025-capstone/project-assignments/project-proposal/fall-2025/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/previous-years/2025-capstone/project-assignments/project-proposal/fall-2025/index.html</guid>
-      <description>&lt;embed class=&#34;pdf&#34; src=&#34;ProjectProposalFa25.pdf&#34; alt=&#34;error&#34; width=&#34;800&#34; height=&#34;600&#34;&gt;</description>
+      <description>&lt;object data=&#34;ProjectProposalFa25.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;ProjectProposalFa25.pdf&#34; target=&#34;_blank&#34;&gt;Open Project Proposal PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
     </item>
   </channel>
 </rss>

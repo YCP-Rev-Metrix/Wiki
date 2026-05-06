@@ -1,6 +1,6 @@
 +++
 title = "Current State of RevMetrix"
-weight = 100
+weight = 10
 description = '2026 Capstone'
 +++
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2026 Project Assignments on Hugo Relearn Theme</title>
+    <title>Project Assignments on Hugo Relearn Theme</title>
     <link>//localhost:1313/2026-capstone/project-assignments/index.html</link>
-    <description>Recent content in 2026 Project Assignments on Hugo Relearn Theme</description>
+    <description>Recent content in Project Assignments on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="//localhost:1313/2026-capstone/project-assignments/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -13,6 +13,15 @@
       <guid>//localhost:1313/2026-capstone/project-assignments/project-proposal/index.html</guid>
       <description>&lt;object data=&#34;ProjectProposalSpring26.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
     &lt;p&gt;Mobile View: &lt;a href=&#34;ProjectProposalSpring26.pdf&#34; target=&#34;_blank&#34;&gt;Open Project Proposal PDF&lt;/a&gt;&lt;/p&gt;
+&lt;/object&gt;</description>
+    </item>
+    <item>
+      <title>Technical Report Spring 2026</title>
+      <link>//localhost:1313/2026-capstone/project-assignments/technical-report/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/project-assignments/technical-report/index.html</guid>
+      <description>&lt;object data=&#34;Tech_Report_Sp26.pdf#toolbar=0&#34; type=&#34;application/pdf&#34; width=&#34;100%&#34; height=&#34;600px&#34;&gt;
+    &lt;p&gt;Mobile View: &lt;a href=&#34;Tech_Report_Sp26.pdf&#34; target=&#34;_blank&#34;&gt;Open Technical Report PDF&lt;/a&gt;&lt;/p&gt;
 &lt;/object&gt;</description>
     </item>
   </channel>
