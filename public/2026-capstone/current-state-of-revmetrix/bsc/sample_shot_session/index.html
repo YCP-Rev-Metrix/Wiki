@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.138.0">
+    <meta name="generator" content="Relearn 5.20.0+tip">
+    <meta name="description" content="Example shot session flow from setup through analysis.">
+    <title>Sample Shot Session :: Hugo Relearn Theme</title>
+    <link href="/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.xml" rel="alternate" type="application/rss+xml" title="Sample Shot Session :: Hugo Relearn Theme">
+    <link href="/images/favicon.png?1778096373" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1778096373" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1778096373" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1778096373" rel="stylesheet">
+    <link href="/css/auto-complete.css?1778096373" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1778096373" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1778096373" rel="stylesheet">
+    <link href="/css/fonts.css?1778096373" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1778096373" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1778096373" rel="stylesheet">
+    <link href="/css/theme-revmetrix.css?1778096373" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1778096373" rel="stylesheet">
+    <link href="/css/print.css?1778096373" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1778096373" rel="stylesheet">
+    <script src="/js/url.js?1778096373"></script>
+    <script src="/js/variant.js?1778096373"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='localhost:1313/';
+      window.variants && variants.init( [ 'revmetrix' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/2026-capstone/current-state-of-revmetrix/bsc/cloud_test/index.html" title="Cloud Test (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/2026-capstone/current-state-of-revmetrix/bsc/data_view/index.html" title="Data View (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="top-github-link">
+            <a class="github-link topbar-link" title='Edit (CTRL+ALT+w)' href="https://github.com/YCP-Rev-Metrix/Wiki/edit/main/content/2026%20Capstone/Current%20State%20of%20RevMetrix/BSC/sample_shot_session/_index.md" target="_blank">
+              <i class="fas fa-pen fa-fw"></i>
+            </a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">RevMetrix</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2026-capstone/index.html"><span itemprop="name">2026 Capstone</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2026-capstone/current-state-of-revmetrix/index.html"><span itemprop="name">Current State of RevMetrix</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/2026-capstone/current-state-of-revmetrix/bsc/index.html"><span itemprop="name">Ball Spinner Controller Help</span></a><meta itemprop="position" content="4">&nbsp;>&nbsp;</li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Sample Shot Session</span><meta itemprop="position" content="5"></li>
+            </ol>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="sample-shot-session">Sample Shot Session</h1>
+
+<h3 id="sample-shot-session">Sample shot session</h3>
+<p>This sample run demonstrates a complete shot workflow from Home through Data View verification.</p>
+<h3 id="example-workflow">Example workflow</h3>
+<p>This guide assumes first-time use and starts from <a href="../home/">Home</a>.</p>
+<ol>
+<li>Open <a href="../shot_mode/">Shot Mode</a>.</li>
+<li>In the <a href="../smartdot_connect_widget/">SmartDot Connect Widget</a>, press <strong>Scan for SmartDot</strong>.</li>
+<li>After scan completes, select a SmartDot that matches a device in the arm.
+<ul>
+<li><code>SI:MU:LA:TE:DD:OT</code> is the simulated SmartDot.</li>
+<li>On desktop builds, simulated SmartDot is the available option.</li>
+</ul>
+</li>
+<li>Configure Spin:
+<ul>
+<li>Start value: <code>300</code></li>
+<li>End value: <code>450</code></li>
+</ul>
+</li>
+<li>Configure Angle:
+<ul>
+<li>Start value: <code>30</code></li>
+<li>End value: <code>10</code></li>
+</ul>
+</li>
+<li>Configure Tilt:
+<ul>
+<li>Start value: <code>15</code></li>
+<li>End value: <code>10</code></li>
+</ul>
+</li>
+<li>Add Spin curve points to match this example:</li>
+</ol>
+<img src="Image1.png" alt="Sample Spin Curve" width="520" />
+<ol start="8">
+<li>Set shot duration slider to <code>2.6</code> seconds.</li>
+<li>Press <strong>Enter Shot</strong>.</li>
+<li>After the shot completes, press <strong>Analyze</strong>.</li>
+<li>Run analysis actions and review output in <a href="../analysis_mode/">Analysis Mode</a>.</li>
+<li>Open wavelet analysis and follow <a href="../wavelet_dialog/">Wavelet Dialog</a> guidance.</li>
+<li>Press <strong>Save</strong>, enter a session name, and submit.</li>
+<li>Return to <a href="../home/">Home</a> and open <a href="../data_view/">Data View</a>.</li>
+<li>Set end date/time to today and one hour ahead, then press <strong>Search</strong>.</li>
+<li>Confirm the new shot appears in Data View.</li>
+</ol>
+<h3 id="expected-result">Expected result</h3>
+<ul>
+<li>A complete shot session appears in <a href="../data_view/">Data View</a>.</li>
+<li>Replay and Analyze actions work for the saved session.</li>
+<li>Instruction points remain available for Edit operations.</li>
+</ul>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<ul>
+<li>
+<p><strong>No SmartDot appears after scan</strong></p>
+<ul>
+<li>Re-run scan in <a href="../smartdot_connect_widget/">SmartDot Connect Widget</a>.</li>
+<li>Confirm SmartDot is powered and within range.</li>
+<li>On desktop builds, use <code>SI:MU:LA:TE:DD:OT</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Shot does not start after pressing Enter Shot</strong></p>
+<ul>
+<li>Confirm SmartDot is connected first.</li>
+<li>Confirm shot inputs and duration are set.</li>
+<li>Return to <a href="../shot_mode/">Shot Mode</a> and retry.</li>
+</ul>
+</li>
+<li>
+<p><strong>Session does not appear in Data View</strong></p>
+<ul>
+<li>Confirm save/submit completed successfully.</li>
+<li>Expand date/time range and press <strong>Search</strong> again in <a href="../data_view/">Data View</a>.</li>
+<li>Verify the session-type filter includes shot sessions.</li>
+</ul>
+</li>
+</ul>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-topbar" class="default-animation"></div>
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<a id="logo" href="/index.html">
+  <img src="https://raw.githubusercontent.com/YCP-Rev-Metrix/Wiki/main/static/images/logo.png" alt="RevMetrix Logo" width="200">
+</a>
+
+        </div>
+        <form action="/search.html" method="get"><div class="searchbox default-animation">
+          <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+        </div></form>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1778096373" defer></script>
+        <script src="/js/lunr/lunr.min.js?1778096373" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1778096373" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1778096373" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1778096373" defer></script>
+        <script src="/js/search.js?1778096373" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <hr class="padding">
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <div id="topics">
+          <ul class="enlarge morespace collapsible-menu">
+          <li data-nav-id="/what-is-revmetrix/index.html" class=""><a class="padding" href="/what-is-revmetrix/index.html">What is RevMetrix</a></li>
+          <li data-nav-id="/ciclopes/index.html" class=""><a class="padding" href="/ciclopes/index.html">Ciclopes</a></li>
+          <li data-nav-id="/smartdot/index.html" class=""><input type="checkbox" id="section-9758bd5c4d8772a937ff4625b0746f8b" aria-controls="subsections-9758bd5c4d8772a937ff4625b0746f8b"><label for="section-9758bd5c4d8772a937ff4625b0746f8b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu SmartDot</span></label><a class="padding" href="/smartdot/index.html">SmartDot</a><ul id="subsections-9758bd5c4d8772a937ff4625b0746f8b" class="morespace collapsible-menu">
+          <li data-nav-id="/smartdot/ismartdot/index.html" class=""><a class="padding" href="/smartdot/ismartdot/index.html">ISmartDot Interface</a></li>
+          <li data-nav-id="/smartdot/smartdothardware/index.html" class=""><a class="padding" href="/smartdot/smartdothardware/index.html">SmartDot Hardware</a></li>
+          <li data-nav-id="/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
+          <li data-nav-id="/2026-capstone/index.html" class="parent "><input type="checkbox" id="section-22c2a020bdd1ef003dc2b882155c643b" aria-controls="subsections-22c2a020bdd1ef003dc2b882155c643b" checked><label for="section-22c2a020bdd1ef003dc2b882155c643b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2026 Capstone</span></label><a class="padding" href="/2026-capstone/index.html">2026 Capstone</a><ul id="subsections-22c2a020bdd1ef003dc2b882155c643b" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/index.html" class="parent alwaysopen"><input type="checkbox" id="section-4fa4593f48a49883c8323558ee905107" aria-controls="subsections-4fa4593f48a49883c8323558ee905107" checked><label for="section-4fa4593f48a49883c8323558ee905107"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/2026-capstone/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-4fa4593f48a49883c8323558ee905107" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/index.html" class="parent alwaysopen"><input type="checkbox" id="section-cd4ec20f56ee804ad65c38de58ff5285" aria-controls="subsections-cd4ec20f56ee804ad65c38de58ff5285" checked><label for="section-cd4ec20f56ee804ad65c38de58ff5285"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ball Spinner Controller Help</span></label><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/index.html">Ball Spinner Controller Help</a><ul id="subsections-cd4ec20f56ee804ad65c38de58ff5285" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/before_you_start/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/before_you_start/index.html">Before You Start</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/home/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/home/index.html">Home</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/diagnostic_mode/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/diagnostic_mode/index.html">Diagnostic Mode</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/shot_mode/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/shot_mode/index.html">Shot Mode</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/shot_view/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/shot_view/index.html">Shot View</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/analysis_mode/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/analysis_mode/index.html">Analysis Mode</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/data_view/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/data_view/index.html">Data View</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.html" class="active"><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.html">Sample Shot Session</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/cloud_test/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/cloud_test/index.html">Cloud Test</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/wavelet_dialog/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/wavelet_dialog/index.html">Wavelet Dialog</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/smartdot_connect_widget/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/smartdot_connect_widget/index.html">SmartDot Connect Widget</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/motor_graph_widget/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/motor_graph_widget/index.html">Motor and SmartDot Graph Widget</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/smartdot_general/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/smartdot_general/index.html">General SmartDot Help</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/input_graph_widget/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/input_graph_widget/index.html">Input Graph Widget</a></li></ul></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/backend/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/backend/index.html">Backend</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/frontend/index.html">Ball Spinner Application (Deprecated)</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/ballspinner/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/ballspinner/index.html">Ballspinner Physical Design</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cloud/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cloud/index.html">Cloud</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/index.html" class="alwaysopen"><input type="checkbox" id="section-7f4c8d2e1eb1e5364e0313443073f4c2" aria-controls="subsections-7f4c8d2e1eb1e5364e0313443073f4c2" checked><label for="section-7f4c8d2e1eb1e5364e0313443073f4c2"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Mobile Application</span></label><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/index.html">Mobile Application</a><ul id="subsections-7f4c8d2e1eb1e5364e0313443073f4c2" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/main-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/main-page/index.html">Main Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/login/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/login/index.html">Login</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/registration/index.html">Registration</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/ciclopes/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/ciclopes/index.html">Ciclopes Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/ball-arsenal/index.html">Ball Arsenal</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/establishment-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/establishment-page/index.html">Establishment Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/event-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/event-page/index.html">Event Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/session-list/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/session-list/index.html">Session Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/shot-page/index.html">Shot Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/stats/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/stats/index.html">Stats</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/account-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/account-page/index.html">Account</a></li></ul></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/index.html" class="alwaysopen"><input type="checkbox" id="section-94bc699568baed4aadf10d7ccf0e278c" aria-controls="subsections-94bc699568baed4aadf10d7ccf0e278c" checked><label for="section-94bc699568baed4aadf10d7ccf0e278c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Smartwatch Application</span></label><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/index.html">Smartwatch Application</a><ul id="subsections-94bc699568baed4aadf10d7ccf0e278c" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/account-packet/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/account-packet/index.html">Account Packet</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/ble-manager/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/ble-manager/index.html">BLE Manager</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/session-controller/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/session-controller/index.html">Session Controller</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/models/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/models/index.html">Watch Models</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/dev-settings-page/index.html">Settings</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/shot-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/shot-page/index.html">Shot Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/frame-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/frame-page/index.html">Frame Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/game-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/game-page/index.html">Game Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/home-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/home-page/index.html">Home Page</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/watch/sessions-page/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/watch/sessions-page/index.html">Sessions Page</a></li></ul></li></ul></li>
+          <li data-nav-id="/2026-capstone/project-assignments/index.html" class="alwaysopen"><input type="checkbox" id="section-7b97191cd5a66bd3219b66072c5e27bf" aria-controls="subsections-7b97191cd5a66bd3219b66072c5e27bf" checked><label for="section-7b97191cd5a66bd3219b66072c5e27bf"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/2026-capstone/project-assignments/index.html">Project Assignments</a><ul id="subsections-7b97191cd5a66bd3219b66072c5e27bf" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/project-assignments/project-proposal/index.html" class=""><a class="padding" href="/2026-capstone/project-assignments/project-proposal/index.html">Project Proposal</a></li>
+          <li data-nav-id="/2026-capstone/project-assignments/technical-report/index.html" class=""><a class="padding" href="/2026-capstone/project-assignments/technical-report/index.html">Technical Report Spring 2026</a></li></ul></li>
+          <li data-nav-id="/2026-capstone/project-milestones/index.html" class="alwaysopen"><input type="checkbox" id="section-5f94d67afc245cca039747215e2f29bd" aria-controls="subsections-5f94d67afc245cca039747215e2f29bd" checked><label for="section-5f94d67afc245cca039747215e2f29bd"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/2026-capstone/project-milestones/index.html">Project Milestones</a><ul id="subsections-5f94d67afc245cca039747215e2f29bd" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/project-milestones/milestone-1/index.html" class=""><a class="padding" href="/2026-capstone/project-milestones/milestone-1/index.html">Milestone 1</a></li>
+          <li data-nav-id="/2026-capstone/project-milestones/milestone-2/index.html" class=""><a class="padding" href="/2026-capstone/project-milestones/milestone-2/index.html">Milestone 2</a></li>
+          <li data-nav-id="/2026-capstone/project-milestones/milestone-3/index.html" class=""><a class="padding" href="/2026-capstone/project-milestones/milestone-3/index.html">Milestone 3</a></li>
+          <li data-nav-id="/2026-capstone/project-milestones/final-presentation/index.html" class=""><a class="padding" href="/2026-capstone/project-milestones/final-presentation/index.html">Final Presentation</a></li></ul></li>
+          <li data-nav-id="/2026-capstone/technologies-used/index.html" class=""><a class="padding" href="/2026-capstone/technologies-used/index.html">2026 Technologies Used</a></li>
+          <li data-nav-id="/2026-capstone/set-up/index.html" class="alwaysopen"><input type="checkbox" id="section-eb470f739b61997b3c96b14d01ebdbab" aria-controls="subsections-eb470f739b61997b3c96b14d01ebdbab" checked><label for="section-eb470f739b61997b3c96b14d01ebdbab"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Development Guides</span></label><a class="padding" href="/2026-capstone/set-up/index.html">Development Guides</a><ul id="subsections-eb470f739b61997b3c96b14d01ebdbab" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/set-up/upgrade-.net/index.html" class=""><a class="padding" href="/2026-capstone/set-up/upgrade-.net/index.html">.Net Upgrade</a></li>
+          <li data-nav-id="/2026-capstone/set-up/mobile-app/index.html" class=""><a class="padding" href="/2026-capstone/set-up/mobile-app/index.html">Mobile App</a></li>
+          <li data-nav-id="/2026-capstone/set-up/smart-watch-app/index.html" class=""><a class="padding" href="/2026-capstone/set-up/smart-watch-app/index.html">Smart Watch App</a></li></ul></li></ul></li>
+          <li data-nav-id="/previous-years/index.html" class=""><input type="checkbox" id="section-4df1a544089d34321b2986c081be1ca0" aria-controls="subsections-4df1a544089d34321b2986c081be1ca0"><label for="section-4df1a544089d34321b2986c081be1ca0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Previous Years</span></label><a class="padding" href="/previous-years/index.html">Previous Years</a><ul id="subsections-4df1a544089d34321b2986c081be1ca0" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/index.html" class="alwaysopen"><input type="checkbox" id="section-6998eea5849fd5e9a7eeb0c4da571535" aria-controls="subsections-6998eea5849fd5e9a7eeb0c4da571535" checked><label for="section-6998eea5849fd5e9a7eeb0c4da571535"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2024 Capstone</span></label><a class="padding" href="/previous-years/2024-capstone/index.html">2024 Capstone</a><ul id="subsections-6998eea5849fd5e9a7eeb0c4da571535" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/current-state-of-revmetrix/index.html" class="alwaysopen"><input type="checkbox" id="section-ebdb6759a4a4fff2b4553595f8b1784d" aria-controls="subsections-ebdb6759a4a4fff2b4553595f8b1784d" checked><label for="section-ebdb6759a4a4fff2b4553595f8b1784d"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu  2024 RevMetrix</span></label><a class="padding" href="/previous-years/2024-capstone/current-state-of-revmetrix/index.html"> 2024 RevMetrix</a><ul id="subsections-ebdb6759a4a4fff2b4553595f8b1784d" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/current-state-of-revmetrix/ballspinner/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/current-state-of-revmetrix/ballspinner/index.html">2024 Fall Ballspinner</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/current-state-of-revmetrix/backend/index.html" class="alwaysopen"><input type="checkbox" id="section-b18034e7efd6eeca40dde6c6cefc3539" aria-controls="subsections-b18034e7efd6eeca40dde6c6cefc3539" checked><label for="section-b18034e7efd6eeca40dde6c6cefc3539"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2024 Spring Backend</span></label><a class="padding" href="/previous-years/2024-capstone/current-state-of-revmetrix/backend/index.html">2024 Spring Backend</a><ul id="subsections-b18034e7efd6eeca40dde6c6cefc3539" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/current-state-of-revmetrix/backend/database-obsevation-data/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/current-state-of-revmetrix/backend/database-obsevation-data/index.html">Database Observation Data</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/current-state-of-revmetrix/frontend/index.html">2024 Spring Frontend</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/current-state-of-revmetrix/simulation/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/current-state-of-revmetrix/simulation/index.html">2024 Spring Simulation</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/index.html" class="alwaysopen"><input type="checkbox" id="section-5e116b7e0980fef3dc850ac952dfd7f0" aria-controls="subsections-5e116b7e0980fef3dc850ac952dfd7f0" checked><label for="section-5e116b7e0980fef3dc850ac952dfd7f0"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu How To Contribute</span></label><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/index.html">How To Contribute</a><ul id="subsections-5e116b7e0980fef3dc850ac952dfd7f0" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/ci-and-cd/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/ci-and-cd/index.html">Continuous Integration/Deployment</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/contributing-documentation/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/digitalocean-management/index.html" class="alwaysopen"><input type="checkbox" id="section-4b83e772e3f83f11b90e1147709dfad4" aria-controls="subsections-4b83e772e3f83f11b90e1147709dfad4" checked><label for="section-4b83e772e3f83f11b90e1147709dfad4"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu DigitalOcean Management</span></label><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/digitalocean-management/index.html">DigitalOcean Management</a><ul id="subsections-4b83e772e3f83f11b90e1147709dfad4" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/digitalocean-management/creating-a-droplet/index.html">Creating a Droplet</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/digitalocean-management/managing-a-droplet/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/digitalocean-management/managing-a-droplet/index.html">Managing a Droplet</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/dockerizing-an-application/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/dockerizing-an-application/index.html">Dockerizing an Application</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/bluetooth/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/bluetooth/index.html">Getting Started</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/getting-started/index.html" class="alwaysopen"><input type="checkbox" id="section-453f251e145b1cff1a1743553eb589b6" aria-controls="subsections-453f251e145b1cff1a1743553eb589b6" checked><label for="section-453f251e145b1cff1a1743553eb589b6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Getting Started</span></label><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/getting-started/index.html">Getting Started</a><ul id="subsections-453f251e145b1cff1a1743553eb589b6" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/getting-started/backend/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/getting-started/backend/index.html">Backend</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/getting-started/ciclopes/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/getting-started/ciclopes/index.html">Ciclopes</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/getting-started/mobile-app/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/getting-started/mobile-app/index.html">Mobile Application</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/getting-started/smartdot-simulator/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/getting-started/smartdot-simulator/index.html">SmartDot Simulator</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/getting-started/visualizer/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/getting-started/visualizer/index.html">Visualizer</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/github-workflows/index.html" class="alwaysopen"><input type="checkbox" id="section-b3ca6c9f00686f77e5d114b3f621d632" aria-controls="subsections-b3ca6c9f00686f77e5d114b3f621d632" checked><label for="section-b3ca6c9f00686f77e5d114b3f621d632"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu GitHub Workflows</span></label><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/github-workflows/index.html">GitHub Workflows</a><ul id="subsections-b3ca6c9f00686f77e5d114b3f621d632" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/github-workflows/backend-workflow/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/github-workflows/backend-workflow/index.html">GitHub Workflow - Backend</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/github-workflows/frontend-workflow/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/github-workflows/frontend-workflow/index.html">GitHub Workflow - Frontend</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/github-workflows/simulation-workflow/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/github-workflows/simulation-workflow/index.html">GitHub Workflow - Simulation</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/linking-domains/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/linking-domains/index.html">Linking Domains</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/webapi/index.html" class="alwaysopen"><input type="checkbox" id="section-cf5960e4ca19705088e5c0d47486c05e" aria-controls="subsections-cf5960e4ca19705088e5c0d47486c05e" checked><label for="section-cf5960e4ca19705088e5c0d47486c05e"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu RevMetrix WebAPI</span></label><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/webapi/index.html">RevMetrix WebAPI</a><ul id="subsections-cf5960e4ca19705088e5c0d47486c05e" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/webapi/endpoints/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/webapi/endpoints/index.html">Adding &amp; Managing Endpoints</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/webapi/security/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/webapi/security/index.html">Security</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/how-to-contribute/webapi/client/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/how-to-contribute/webapi/client/index.html">Web API Client</a></li></ul></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/initial-project-ideas/index.html" class="alwaysopen"><input type="checkbox" id="section-ca5dc9cd805a7a0f7f09d74dfb1af1a6" aria-controls="subsections-ca5dc9cd805a7a0f7f09d74dfb1af1a6" checked><label for="section-ca5dc9cd805a7a0f7f09d74dfb1af1a6"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Initial Project Ideas</span></label><a class="padding" href="/previous-years/2024-capstone/initial-project-ideas/index.html">Initial Project Ideas</a><ul id="subsections-ca5dc9cd805a7a0f7f09d74dfb1af1a6" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/initial-project-ideas/initial-database-architecture/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/initial-project-ideas/initial-database-architecture/index.html">Backend - Database Architecture</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/initial-project-ideas/phone-app---proof-of-concept/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/initial-project-ideas/phone-app---proof-of-concept/index.html">Phone App - Proof of Concept</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/initial-project-ideas/simulation---first-thoughts/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/initial-project-ideas/simulation---first-thoughts/index.html">Simulation - First Thoughts</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/index.html" class="alwaysopen"><input type="checkbox" id="section-adddf8cf421107a39a7b3411dc988032" aria-controls="subsections-adddf8cf421107a39a7b3411dc988032" checked><label for="section-adddf8cf421107a39a7b3411dc988032"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Assignments</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/index.html">Project Assignments</a><ul id="subsections-adddf8cf421107a39a7b3411dc988032" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/index.html" class="alwaysopen"><input type="checkbox" id="section-89f90bbffb0782c3f2a9484e200d4143" aria-controls="subsections-89f90bbffb0782c3f2a9484e200d4143" checked><label for="section-89f90bbffb0782c3f2a9484e200d4143"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2023</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/index.html">Fall 2023</a><ul id="subsections-89f90bbffb0782c3f2a9484e200d4143" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-46d2a6b973b00863067e68a694c1c23c" aria-controls="subsections-46d2a6b973b00863067e68a694c1c23c" checked><label for="section-46d2a6b973b00863067e68a694c1c23c"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-46d2a6b973b00863067e68a694c1c23c" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/analysis-and-design/backend/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/analysis-and-design/backend/index.html">Backend Team</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/analysis-and-design/frontend/index.html">Frontend Team</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/analysis-and-design/simulation/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/analysis-and-design/simulation/index.html">Simulation Team</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/project-requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-2327030fe8d9a34c45a41920301708aa" aria-controls="subsections-2327030fe8d9a34c45a41920301708aa" checked><label for="section-2327030fe8d9a34c45a41920301708aa"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Requirements</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/project-requirements/index.html">Project Requirements</a><ul id="subsections-2327030fe8d9a34c45a41920301708aa" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/project-requirements/backend/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/project-requirements/backend/index.html">Backend Requirements</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/project-requirements/frontend/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/project-requirements/frontend/index.html">Frontend Requirements</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2023/project-requirements/simulation/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2023/project-requirements/simulation/index.html">Simulation Requirements</a></li></ul></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-abaa95a0dfa9c0b7505a720c6e085549" aria-controls="subsections-abaa95a0dfa9c0b7505a720c6e085549" checked><label for="section-abaa95a0dfa9c0b7505a720c6e085549"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2024</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/index.html">Fall 2024</a><ul id="subsections-abaa95a0dfa9c0b7505a720c6e085549" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/index.html" class="alwaysopen"><input type="checkbox" id="section-dc15c3fc320e9a1689355614e9033313" aria-controls="subsections-dc15c3fc320e9a1689355614e9033313" checked><label for="section-dc15c3fc320e9a1689355614e9033313"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Analysis and Design</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/index.html">Analysis and Design</a><ul id="subsections-dc15c3fc320e9a1689355614e9033313" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/backend/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/backend/index.html">Backend</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-contoller/index.html">Ball Spinner Controller</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/ball-spinner-protocol/index.html">Ball Spinner Protocal</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/ballspinner/index.html">BallSpinner</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/database-schema/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/database-schema/index.html">DataBase Schema</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/frontend/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/analysis-and-design/frontend/index.html">Frontend </a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/index.html" class="alwaysopen"><input type="checkbox" id="section-5f850a825c90e2b3634e04f3de388131" aria-controls="subsections-5f850a825c90e2b3634e04f3de388131" checked><label for="section-5f850a825c90e2b3634e04f3de388131"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Proposal</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/index.html">Proposal</a><ul id="subsections-5f850a825c90e2b3634e04f3de388131" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/architecture/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/architecture/index.html">Architecture</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/current-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/current-system/index.html">Current System</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/design-approach/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/design-approach/index.html">Design Approach</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/future-implementations/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/proposal/future-implementations/index.html">Future Implementations</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/index.html" class="alwaysopen"><input type="checkbox" id="section-d045c7bae349a7e75f502808721a42d7" aria-controls="subsections-d045c7bae349a7e75f502808721a42d7" checked><label for="section-d045c7bae349a7e75f502808721a42d7"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Requirements</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/index.html">Requirements</a><ul id="subsections-d045c7bae349a7e75f502808721a42d7" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/50-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/50-working-system/index.html">50% Working System </a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/abstract/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/abstract/index.html">Abstract</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/final-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/final-working-system/index.html">Final Working System </a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/general-project-requirments/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/general-project-requirments/index.html">General Project Requirements</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/use-cases/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/use-cases/index.html">General Project Requirements</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/minimum-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/fall-2024/requirements/minimum-working-system/index.html">Minimum Working System</a></li></ul></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/spring-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-b950d6e2b1a9a8a86ed12821c6334129" aria-controls="subsections-b950d6e2b1a9a8a86ed12821c6334129" checked><label for="section-b950d6e2b1a9a8a86ed12821c6334129"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2024</span></label><a class="padding" href="/previous-years/2024-capstone/project-assignments/spring-2024/index.html">Spring 2024</a><ul id="subsections-b950d6e2b1a9a8a86ed12821c6334129" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-assignments/spring-2024/detailed-proposal-and-design/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-assignments/spring-2024/detailed-proposal-and-design/index.html">Detailed Proposal and Design</a></li></ul></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/index.html" class="alwaysopen"><input type="checkbox" id="section-bc5e687a895b8b42409c433a2208025f" aria-controls="subsections-bc5e687a895b8b42409c433a2208025f" checked><label for="section-bc5e687a895b8b42409c433a2208025f"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/previous-years/2024-capstone/project-milestones/index.html">Project Milestones</a><ul id="subsections-bc5e687a895b8b42409c433a2208025f" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/fall-2023/index.html" class="alwaysopen"><input type="checkbox" id="section-e723da2709b13abf66ffced9875083fa" aria-controls="subsections-e723da2709b13abf66ffced9875083fa" checked><label for="section-e723da2709b13abf66ffced9875083fa"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2023</span></label><a class="padding" href="/previous-years/2024-capstone/project-milestones/fall-2023/index.html">Fall 2023</a><ul id="subsections-e723da2709b13abf66ffced9875083fa" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/fall-2023/ms1---minimal-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/fall-2023/ms1---minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/fall-2023/ms2---50-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/fall-2023/ms2---50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/fall-2023/ms3---final-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/fall-2023/ms3---final-working-system/index.html">MS3 - Final Working System</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/fall-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-28ff03a19720b1e5bc802ff74df0317d" aria-controls="subsections-28ff03a19720b1e5bc802ff74df0317d" checked><label for="section-28ff03a19720b1e5bc802ff74df0317d"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2024</span></label><a class="padding" href="/previous-years/2024-capstone/project-milestones/fall-2024/index.html">Fall 2024</a><ul id="subsections-28ff03a19720b1e5bc802ff74df0317d" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/fall-2024/ms1---minimal-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/fall-2024/ms1---minimal-working-system/index.html">MS1 - Minimal Working System</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/fall-2024/ms2---50-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/fall-2024/ms2---50-working-system/index.html">MS2 - 50% Working System</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/fall-2024/ms3---final-working-system/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/fall-2024/ms3---final-working-system/index.html">MS3 - Final System</a></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/spring-2024/index.html" class="alwaysopen"><input type="checkbox" id="section-7c2d3d321eede1f6cfbdf3b416741ac4" aria-controls="subsections-7c2d3d321eede1f6cfbdf3b416741ac4" checked><label for="section-7c2d3d321eede1f6cfbdf3b416741ac4"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2024</span></label><a class="padding" href="/previous-years/2024-capstone/project-milestones/spring-2024/index.html">Spring 2024</a><ul id="subsections-7c2d3d321eede1f6cfbdf3b416741ac4" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/spring-2024/milestone-1/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/spring-2024/milestone-1/index.html">Milestone 1</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/spring-2024/milestone-2/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/spring-2024/milestone-2/index.html">Milestone 2</a></li>
+          <li data-nav-id="/previous-years/2024-capstone/project-milestones/spring-2024/milestone-3/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/project-milestones/spring-2024/milestone-3/index.html">Milestone 3</a></li></ul></li></ul></li>
+          <li data-nav-id="/previous-years/2024-capstone/technologies-used/index.html" class=""><a class="padding" href="/previous-years/2024-capstone/technologies-used/index.html">Technologies Used</a></li></ul></li>
+          <li data-nav-id="/previous-years/2025-capstone/index.html" class="alwaysopen"><input type="checkbox" id="section-d0c41cc04d2af89ccc1403de92866795" aria-controls="subsections-d0c41cc04d2af89ccc1403de92866795" checked><label for="section-d0c41cc04d2af89ccc1403de92866795"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2025 Capstone</span></label><a class="padding" href="/previous-years/2025-capstone/index.html">2025 Capstone</a><ul id="subsections-d0c41cc04d2af89ccc1403de92866795" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/index.html" class="alwaysopen"><input type="checkbox" id="section-2f250ce6a3b518205b7d49c9cf7d6194" aria-controls="subsections-2f250ce6a3b518205b7d49c9cf7d6194" checked><label for="section-2f250ce6a3b518205b7d49c9cf7d6194"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2025 RevMetrix</span></label><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/index.html">2025 RevMetrix</a><ul id="subsections-2f250ce6a3b518205b7d49c9cf7d6194" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/backend/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/backend/index.html">Backend</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/frontend/index.html">Ball Spinner Application</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/bsc/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/bsc/index.html">Ball Spinner Controller</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/ballspinner/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/ballspinner/index.html">Ballspinner Physical Design</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/cloud/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/cloud/index.html">Cloud</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/cellular/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/cellular/index.html">Mobile Application</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/index.html" class="alwaysopen"><input type="checkbox" id="section-da07834e5a0b098cfe6ec41b690158fa" aria-controls="subsections-da07834e5a0b098cfe6ec41b690158fa" checked><label for="section-da07834e5a0b098cfe6ec41b690158fa"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Smartwatch Application</span></label><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/index.html">Smartwatch Application</a><ul id="subsections-da07834e5a0b098cfe6ec41b690158fa" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/ble-manager/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/ble-manager/index.html">BLE Manager</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/local-cache/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/local-cache/index.html">Local Cache</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/session-controller/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/session-controller/index.html">Session Controller</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/models/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/models/index.html">Watch Models</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/dev-settings-page/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/dev-settings-page/index.html">Dev Settings</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/shot-page/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/shot-page/index.html">Shot Page</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/frame-page/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/frame-page/index.html">Frame Page</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/game-page/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/cureent-state-of-revmetrix/watch/game-page/index.html">Game Page</a></li></ul></li></ul></li>
+          <li data-nav-id="/previous-years/2025-capstone/technologies-used/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/technologies-used/index.html">2025 Technologies Used</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/index.html" class="alwaysopen"><input type="checkbox" id="section-d6d0e632127f8350fa23b74f1fa17cd2" aria-controls="subsections-d6d0e632127f8350fa23b74f1fa17cd2" checked><label for="section-d6d0e632127f8350fa23b74f1fa17cd2"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Milestones</span></label><a class="padding" href="/previous-years/2025-capstone/project-milestones/index.html">Project Milestones</a><ul id="subsections-d6d0e632127f8350fa23b74f1fa17cd2" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/spring-2025/index.html" class="alwaysopen"><input type="checkbox" id="section-005bb1cf61f1c4c6b654d160b9f41b9b" aria-controls="subsections-005bb1cf61f1c4c6b654d160b9f41b9b" checked><label for="section-005bb1cf61f1c4c6b654d160b9f41b9b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Spring 2025</span></label><a class="padding" href="/previous-years/2025-capstone/project-milestones/spring-2025/index.html">Spring 2025</a><ul id="subsections-005bb1cf61f1c4c6b654d160b9f41b9b" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/spring-2025/milestone-1/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/project-milestones/spring-2025/milestone-1/index.html">Milestone 1</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/spring-2025/milestone-2/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/project-milestones/spring-2025/milestone-2/index.html">Milestone 2</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/spring-2025/final/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/project-milestones/spring-2025/final/index.html">Final Presentation</a></li></ul></li>
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/fall-2025/index.html" class="alwaysopen"><input type="checkbox" id="section-8659cbf08a7bbfba8d3487984829ca2a" aria-controls="subsections-8659cbf08a7bbfba8d3487984829ca2a" checked><label for="section-8659cbf08a7bbfba8d3487984829ca2a"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Fall 2025</span></label><a class="padding" href="/previous-years/2025-capstone/project-milestones/fall-2025/index.html">Fall 2025</a><ul id="subsections-8659cbf08a7bbfba8d3487984829ca2a" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/fall-2025/milestone-1/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/project-milestones/fall-2025/milestone-1/index.html">Milestone 1</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/fall-2025/milestone-2/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/project-milestones/fall-2025/milestone-2/index.html">Milestone 2</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/project-milestones/fall-2025/final/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/project-milestones/fall-2025/final/index.html">Final Presentation</a></li></ul></li></ul></li>
+          <li data-nav-id="/previous-years/2025-capstone/project-assignments/index.html" class="alwaysopen"><input type="checkbox" id="section-f95dcab8f56bd414f8555e81f8040c31" aria-controls="subsections-f95dcab8f56bd414f8555e81f8040c31" checked><label for="section-f95dcab8f56bd414f8555e81f8040c31"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Project Proposals</span></label><a class="padding" href="/previous-years/2025-capstone/project-assignments/index.html">Project Proposals</a><ul id="subsections-f95dcab8f56bd414f8555e81f8040c31" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2025-capstone/project-assignments/project-proposal/spring-2025/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/project-assignments/project-proposal/spring-2025/index.html">Spring 2025</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/project-assignments/project-proposal/fall-2025/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/project-assignments/project-proposal/fall-2025/index.html">Fall 2025</a></li></ul></li>
+          <li data-nav-id="/previous-years/2025-capstone/set-up/index.html" class="alwaysopen"><input type="checkbox" id="section-fa400dc7f298dc4785b9141fbccf1bf5" aria-controls="subsections-fa400dc7f298dc4785b9141fbccf1bf5" checked><label for="section-fa400dc7f298dc4785b9141fbccf1bf5"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Set Up</span></label><a class="padding" href="/previous-years/2025-capstone/set-up/index.html">Set Up</a><ul id="subsections-fa400dc7f298dc4785b9141fbccf1bf5" class="morespace collapsible-menu">
+          <li data-nav-id="/previous-years/2025-capstone/set-up/upgrade-.net/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/set-up/upgrade-.net/index.html">.Net Upgrade</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/set-up/ballspinner-application/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/set-up/ballspinner-application/index.html">Ball Spinner Application</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/set-up/cloud/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/set-up/cloud/index.html">Cloud</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/set-up/contributing-documentation/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/set-up/contributing-documentation/index.html">Contributing Documentation</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/set-up/mobile-app/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/set-up/mobile-app/index.html">Mobile App</a></li>
+          <li data-nav-id="/previous-years/2025-capstone/set-up/smart-watch-app/index.html" class=""><a class="padding" href="/previous-years/2025-capstone/set-up/smart-watch-app/index.html">Smart Watch App</a></li></ul></li></ul></li></ul></li>
+          </ul>
+        </div>
+        <div id="shortcuts">
+          <div class="nav-title padding">More</div>
+          <ul class="space">
+            <li><a class="padding" href="https://ycpcs.github.io/cs400-fall2023/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> CS400 RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://ycpcs.github.io/cs402-spring2024/projects/RevMetrix-Project/index.html"><i class='fas fa-fw fa-paperclip'></i> CS402 RevMetrix Home Page</a></li>
+            <li><a class="padding" href="https://github.com/YCP-Rev-Metrix"><i class='fab fa-fw fa-github'></i> GitHub Organization</a></li>
+            <li><a class="padding" href="https://drive.google.com/drive/folders/1Z_TtR7IVxIza5YR7sO4sxDVqkagdBix5?usp=drive_link"><i class='fab fa-fw fa-google-drive'></i> Google Drive</a></li>
+            <li><a class="padding" href="/more/credits/index.html"><i class='fas fa-fw fa-bullhorn'></i> Credits</a></li>
+          </ul>
+        </div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showFooter"></div>
+        <div id="menu-footer">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showLangSwitch showFooter">
+          <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showLangSwitch">
+            <ul>
+              <li id="select-language-container" class="footerLangSwitch showLangSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-language fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-language">Language</label>
+                    <select id="select-language" onchange="location = baseUri + this.value;">
+                      <option lang="en" id="en" value="/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.html" selected>English</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+              <li id="select-variant-container" class="footerVariantSwitch">
+                <div class="padding menu-control">
+                  <i class="fas fa-paint-brush fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <label class="a11y-only" for="select-variant">Theme</label>
+                    <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                      <option id="revmetrix" value="revmetrix" selected>Revmetrix</option>
+                    </select>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <script>window.variants && variants.markSelectedVariant();</script>
+              </li>
+              <li class="footerVisitedLinks">
+                <div class="padding menu-control">
+                  <i class="fas fa-history fa-fw"></i>
+                  <span>&nbsp;</span>
+                  <div class="control-style">
+                    <button onclick="clearHistory();">Clear History</button>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="footer" class="footerFooter showFooter"><p>2026 @ RevMetrix</p>
+
+          </div>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1778096374" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1778096374" defer></script>
+    <script src="/js/theme.js?1778096374" defer></script>
+  </body>
+</html>

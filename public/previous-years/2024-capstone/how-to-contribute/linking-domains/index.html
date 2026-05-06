@@ -8,20 +8,20 @@
     <meta name="description" content="How to link domains to an application using DNS records and Nginx Proxy Manager">
     <title>Linking Domains :: Hugo Relearn Theme</title>
     <link href="/previous-years/2024-capstone/how-to-contribute/linking-domains/index.xml" rel="alternate" type="application/rss+xml" title="Linking Domains :: Hugo Relearn Theme">
-    <link href="/images/favicon.png?1778095284" rel="icon" type="image/png">
+    <link href="/images/favicon.png?1778096208" rel="icon" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1778095284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1778095284" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1778095284" rel="stylesheet">
-    <link href="/css/auto-complete.css?1778095284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1778095284" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1778095284" rel="stylesheet">
-    <link href="/css/fonts.css?1778095284" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1778095284" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1778095284" rel="stylesheet">
-    <link href="/css/theme-revmetrix.css?1778095284" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1778095284" rel="stylesheet">
-    <link href="/css/print.css?1778095284" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1778095284" rel="stylesheet">
-    <script src="/js/url.js?1778095284"></script>
-    <script src="/js/variant.js?1778095284"></script>
+    <link href="/css/fontawesome-all.min.css?1778096208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1778096208" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1778096208" rel="stylesheet">
+    <link href="/css/auto-complete.css?1778096208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1778096208" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1778096208" rel="stylesheet">
+    <link href="/css/fonts.css?1778096208" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1778096208" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1778096208" rel="stylesheet">
+    <link href="/css/theme-revmetrix.css?1778096208" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1778096208" rel="stylesheet">
+    <link href="/css/print.css?1778096208" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1778096208" rel="stylesheet">
+    <script src="/js/url.js?1778096208"></script>
+    <script src="/js/variant.js?1778096208"></script>
     <script>
       // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
       // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
@@ -84,25 +84,25 @@
 <p>*Note: Nginx Proxy Manager is already set up on the Cloud-infrastructure Droplet, so there is no need to set it up when linking domains to anything API related.</p>
 <h3 id="linking-a-domain-or-subdomain">Linking a Domain or Subdomain</h3>
 <p>To link a a domain or a subdomain to the IP address of an application, you first want to create an A record in the DNS settings of your domain on its provider&rsquo;s website.  If you have linked a domain to DigitalOcean already from a different provider, this can be done from within DigitalOcean, under Domains -&gt; yourDomain -&gt; Create new record.</p>
-<p><a href="#image-a65e0cbdb6647d951d7ecb4a244cbd3f" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-a65e0cbdb6647d951d7ecb4a244cbd3f"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-c87b164f417a3a2f08a23ac7cb9d685f" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-c87b164f417a3a2f08a23ac7cb9d685f"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>To create an A record for the domain, simply enter the hostname (such as example.com or site.example.com if linking a subdomain), enter the IP of the Droplet that the domain will direct traffic to (such as 192.168.xxx.xxx), and the Time-To-Live value (defaults to 3600 seconds).  Then, hit Create Record and the A record will have been created.  This is all that needs to be done for the DNS settings of the domain, so any windows regarding that can now be closed.</p>
 <h3 id="opening-the-port-for-nginx-proxy-manager">Opening The Port For Nginx Proxy Manager</h3>
 <p>To access Nginx Proxy Manager on the Droplet&rsquo;s IP address after setup, a custom firewall setting must be configured.  To do this, head over to the Droplet&rsquo;s dashboard, go to the networking tab on the left under the Droplet&rsquo;s IPv4 Address, scroll down to the &ldquo;Firewalls&rdquo; section, and click on either &ldquo;Configure Firewall&rdquo; or the name of an existing firewall.  This will bring you to the Inbound and Outbound Rules page.  From here, under Inbound Rules, click on the &ldquo;New rule&rdquo; dropdown button (under the existing rules).  Select &ldquo;Custom&rdquo;, and then for the port range enter &ldquo;81&rdquo; and hit save.  Now, when you go to &ldquo;http://&lsquo;Droplet&rsquo;sIPAddr&rsquo;:81&rdquo;, you will see the login page for the instance of Nginx Proxy Manager that is running on the Droplet.  Login, and if you do not have an account already created, the login info will be &ldquo;<a href="mailto:admin@example.com">admin@example.com</a>&rdquo; with the password &ldquo;changeme&rdquo;.  Be sure to change the username and password after logging in.</p>
 <h3 id="creating-a-proxy-host">Creating a Proxy Host</h3>
 <p>To direct traffic through the domain/subdomain name to the application being hosted on the Droplet, it is necessary to create a new Proxy host in Nginx Proxy Manager for the domain/subdomain.  To do so, after logging into the instance of Nginx Proxy Manager running on the Droplet, click the &ldquo;Proxy Hosts&rdquo; button on the left of the dashboard.  From here you will be taken to the Proxy Hosts page.  Go ahead and hit the &ldquo;Add Proxy Host&rdquo; button as seen below:</p>
-<p><a href="#image-8580a97b1377f9f7c9717600103e751d" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-8580a97b1377f9f7c9717600103e751d"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-88d3335e3f2aabe1533ebe10789f97a8" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-88d3335e3f2aabe1533ebe10789f97a8"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-1.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>This will bring up the page below.  Be sure to enter the domain/subdomain that you created an A record for earlier into the &ldquo;Domain Names&rdquo; field and hit the Tab key.  Then, specify the IP address of the Droplet to direct the traffic of the link to, and finally specify the port that the application will be running on inside of the Droplet.  Make sure to check each option and hit save:</p>
-<p><a href="#image-d6d15215860ad8179bfc381b7c09fa5d" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-d6d15215860ad8179bfc381b7c09fa5d"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-4a818f3205cc623aefc3d013fd578c8e" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-4a818f3205cc623aefc3d013fd578c8e"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-2.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <h3 id="generating-an-ssl-certificate-for-the-domain">Generating an SSL Certificate For The Domain</h3>
 <p>After creating a Proxy Host for the domain, a listing similar to the following will appear in the list of Proxy Hosts:</p>
-<p><a href="#image-32a56e1791fe9e44f3bb3776479bd098" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-32a56e1791fe9e44f3bb3776479bd098"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-a1391cddd3b4ee72da2d0ad517a5dbb3" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-a1391cddd3b4ee72da2d0ad517a5dbb3"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-3.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>From here, click the three dots on the right of the listing and select &ldquo;Edit&rdquo;.  Click on the &ldquo;SSL&rdquo; tab in the popup window, and select &ldquo;Request a new SSL Certificate&rdquo; and enter your email to generate the certificate by hitting the save button as seen below:</p>
-<p><a href="#image-4c4a78bbecc57274fbf142d2f3bce008" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="image-4c4a78bbecc57274fbf142d2f3bce008"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
+<p><a href="#image-3e1f6dfc39cd12c051fbbe6c980e1805" class="lightbox-link"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="figure-image noborder lightbox noshadow" style="height: auto; width: auto;" loading="lazy"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="image-3e1f6dfc39cd12c051fbbe6c980e1805"><img src="/previous-years/2024-capstone/how-to-contribute/linking-domains/image-4.png" alt="Alt text" class="lightbox-image noborder lightbox noshadow" loading="lazy"></a></p>
 <p>Once this is done, it will take a moment to generate the certificate, but soon the application will be accessible through the domain name over http and https.  To force the domain to use https and avoid any http requests, go back to the SSL tab as done above and toggle the &ldquo;Force SSL&rdquo; slider, then hit save.</p>
 <h3 id="conclusion">Conclusion</h3>
 <p>Now, the domain should be securely accessible and linked to the Droplet&rsquo;s IP address and the port that the application is running on on the Droplet.  Make sure to delete the custom firewall configuration for the Droplet, and everything should be good to go!</p>
@@ -132,12 +132,12 @@
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1778095285" defer></script>
-        <script src="/js/lunr/lunr.min.js?1778095285" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1778095285" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1778095285" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1778095285" defer></script>
-        <script src="/js/search.js?1778095285" defer></script>
+        <script src="/js/auto-complete.js?1778096208" defer></script>
+        <script src="/js/lunr/lunr.min.js?1778096208" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1778096208" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1778096208" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1778096208" defer></script>
+        <script src="/js/search.js?1778096208" defer></script>
       </div>
       <div id="homelinks" class="default-animation">
         <hr class="padding">
@@ -153,9 +153,23 @@
           <li data-nav-id="/smartdot/smartdot-simulator/index.html" class=""><a class="padding" href="/smartdot/smartdot-simulator/index.html">SmartDot Simulator</a></li></ul></li>
           <li data-nav-id="/2026-capstone/index.html" class=""><input type="checkbox" id="section-22c2a020bdd1ef003dc2b882155c643b" aria-controls="subsections-22c2a020bdd1ef003dc2b882155c643b"><label for="section-22c2a020bdd1ef003dc2b882155c643b"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu 2026 Capstone</span></label><a class="padding" href="/2026-capstone/index.html">2026 Capstone</a><ul id="subsections-22c2a020bdd1ef003dc2b882155c643b" class="morespace collapsible-menu">
           <li data-nav-id="/2026-capstone/current-state-of-revmetrix/index.html" class="alwaysopen"><input type="checkbox" id="section-4fa4593f48a49883c8323558ee905107" aria-controls="subsections-4fa4593f48a49883c8323558ee905107" checked><label for="section-4fa4593f48a49883c8323558ee905107"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Current State of RevMetrix</span></label><a class="padding" href="/2026-capstone/current-state-of-revmetrix/index.html">Current State of RevMetrix</a><ul id="subsections-4fa4593f48a49883c8323558ee905107" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/index.html" class="alwaysopen"><input type="checkbox" id="section-cd4ec20f56ee804ad65c38de58ff5285" aria-controls="subsections-cd4ec20f56ee804ad65c38de58ff5285" checked><label for="section-cd4ec20f56ee804ad65c38de58ff5285"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Ball Spinner Controller Help</span></label><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/index.html">Ball Spinner Controller Help</a><ul id="subsections-cd4ec20f56ee804ad65c38de58ff5285" class="morespace collapsible-menu">
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/before_you_start/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/before_you_start/index.html">Before You Start</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/home/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/home/index.html">Home</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/diagnostic_mode/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/diagnostic_mode/index.html">Diagnostic Mode</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/shot_mode/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/shot_mode/index.html">Shot Mode</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/shot_view/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/shot_view/index.html">Shot View</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/analysis_mode/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/analysis_mode/index.html">Analysis Mode</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/data_view/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/data_view/index.html">Data View</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.html">Sample Shot Session</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/cloud_test/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/cloud_test/index.html">Cloud Test</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/wavelet_dialog/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/wavelet_dialog/index.html">Wavelet Dialog</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/smartdot_connect_widget/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/smartdot_connect_widget/index.html">SmartDot Connect Widget</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/motor_graph_widget/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/motor_graph_widget/index.html">Motor and SmartDot Graph Widget</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/smartdot_general/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/smartdot_general/index.html">General SmartDot Help</a></li>
+          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/input_graph_widget/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/input_graph_widget/index.html">Input Graph Widget</a></li></ul></li>
           <li data-nav-id="/2026-capstone/current-state-of-revmetrix/backend/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/backend/index.html">Backend</a></li>
           <li data-nav-id="/2026-capstone/current-state-of-revmetrix/frontend/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/frontend/index.html">Ball Spinner Application (Deprecated)</a></li>
-          <li data-nav-id="/2026-capstone/current-state-of-revmetrix/bsc/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/bsc/index.html">Ball Spinner Controller</a></li>
           <li data-nav-id="/2026-capstone/current-state-of-revmetrix/ballspinner/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/ballspinner/index.html">Ballspinner Physical Design</a></li>
           <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cloud/index.html" class=""><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cloud/index.html">Cloud</a></li>
           <li data-nav-id="/2026-capstone/current-state-of-revmetrix/cellular/index.html" class="alwaysopen"><input type="checkbox" id="section-7f4c8d2e1eb1e5364e0313443073f4c2" aria-controls="subsections-7f4c8d2e1eb1e5364e0313443073f4c2" checked><label for="section-7f4c8d2e1eb1e5364e0313443073f4c2"><i class="fas fa-chevron-down"></i><i class="fas fa-chevron-right"></i><span class="a11y-only">Submenu Mobile Application</span></label><a class="padding" href="/2026-capstone/current-state-of-revmetrix/cellular/index.html">Mobile Application</a><ul id="subsections-7f4c8d2e1eb1e5364e0313443073f4c2" class="morespace collapsible-menu">
@@ -374,8 +388,8 @@
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1778095285" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1778095285" defer></script>
-    <script src="/js/theme.js?1778095285" defer></script>
+    <script src="/js/clipboard.min.js?1778096208" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1778096208" defer></script>
+    <script src="/js/theme.js?1778096208" defer></script>
   </body>
 </html>

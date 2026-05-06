@@ -1,10 +1,502 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ball Spinner Controller on Hugo Relearn Theme</title>
+    <title>Ball Spinner Controller Help on Hugo Relearn Theme</title>
     <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/index.html</link>
-    <description>Recent content in Ball Spinner Controller on Hugo Relearn Theme</description>
+    <description>Recent content in Ball Spinner Controller Help on Hugo Relearn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Before You Start</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/before_you_start/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/before_you_start/index.html</guid>
+      <description>&lt;h3 id=&#34;before-you-start&#34;&gt;Before you start&lt;/h3&gt;
+&lt;p&gt;Run this checklist before using Shot Mode, Diagnostic Mode, or Data View workflows.&lt;/p&gt;
+&lt;h3 id=&#34;pre-run-checklist&#34;&gt;Pre-run checklist&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Confirm &lt;strong&gt;E-Stop&lt;/strong&gt; is reachable&lt;/li&gt;
+&lt;li&gt;Verify the arm is in the proper orientation.&lt;/li&gt;
+&lt;li&gt;Confirm the cover is in place.&lt;/li&gt;
+&lt;li&gt;Confirm both SmartDots are inserted into the arm.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Home</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/home/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/home/index.html</guid>
+      <description>&lt;h3 id=&#34;welcome&#34;&gt;Welcome&lt;/h3&gt;
+&lt;p&gt;Welcome to the &lt;strong&gt;RevMetrix Ball Spinner Controller&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This app is the primary interface for running shots, controlling motors for diagnostics, and reviewing saved session data.&lt;/p&gt;
+&lt;h3 id=&#34;app-overview&#34;&gt;App Overview&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The top menu bar is used for &lt;strong&gt;navigation&lt;/strong&gt; and &lt;strong&gt;simulation management&lt;/strong&gt;.
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;Navigation&lt;/strong&gt; menu is used to return to Home or open &lt;a href=&#34;../cloud_test/&#34;&gt;Cloud Test&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;Simulation&lt;/strong&gt; menu allows switching between real and simulated motors.
+&lt;ul&gt;
+&lt;li&gt;On desktop builds, only simulated motors are available.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../shot_mode/&#34;&gt;Shot Mode&lt;/a&gt;&lt;/strong&gt; is used to build and run shot profiles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../diagnostic_mode/&#34;&gt;Diagnostic Mode&lt;/a&gt;&lt;/strong&gt; is used for manual motor control and diagnostics.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../data_view/&#34;&gt;Data View&lt;/a&gt;&lt;/strong&gt; is used to load and analyze previously saved sessions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;quick-links&#34;&gt;Quick links&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../before_you_start/&#34;&gt;Before You Start&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../sample_shot_session/&#34;&gt;Sample Shot Session&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../shot_mode/&#34;&gt;Shot Mode&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../diagnostic_mode/&#34;&gt;Diagnostic Mode&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../data_view/&#34;&gt;Data View&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;warnings&#34;&gt;Warnings&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Press &lt;strong&gt;E-Stop&lt;/strong&gt; immediately
+if motors are behaving unexpectedly or unsafely.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Diagnostic Mode</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/diagnostic_mode/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/diagnostic_mode/index.html</guid>
+      <description>&lt;h3 id=&#34;whats-on-this-page&#34;&gt;What&amp;rsquo;s on this page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Connect Motors / Disconnect Motors&lt;/strong&gt; enables motor control hardware.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Start Diagnostic / Stop Diagnostic&lt;/strong&gt; toggles recorded diagnostic sessions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Home Motors&lt;/strong&gt; returns tilt/angle to zero reference.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Override&lt;/strong&gt; opens override mode with extended slider and graph ranges.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spin, Tilt, Angle sliders&lt;/strong&gt; plus increment/decrement buttons command motors.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spin/Tilt/Angle graphs&lt;/strong&gt; show commanded values and encoder traces.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Temperature / Current graph buttons&lt;/strong&gt; open sensor graph dialogs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save&lt;/strong&gt; submits recorded session data; &lt;strong&gt;Analyze&lt;/strong&gt; opens &lt;a href=&#34;../analysis_mode/&#34;&gt;Analysis Mode&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SmartDot Connect panel&lt;/strong&gt; scans/connects SmartDot and streams sensor data (see &lt;a href=&#34;../smartdot_connect_widget/&#34;&gt;SmartDot Connect Widget&lt;/a&gt; and &lt;a href=&#34;../smartdot_general/&#34;&gt;General SmartDot Help&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-this-page&#34;&gt;How to use this page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On the left side are three graphs, one per motor axis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shot Mode</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/shot_mode/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/shot_mode/index.html</guid>
+      <description>&lt;h3 id=&#34;whats-on-this-page&#34;&gt;What&amp;rsquo;s on this page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;This page allows recreation of a real bowling shot profile.&lt;/li&gt;
+&lt;li&gt;The three input graphs define the shot:
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;Spin&lt;/strong&gt; input graph defaults to up to &lt;code&gt;10&lt;/code&gt; inflection points (see &lt;a href=&#34;../input_graph_widget/&#34;&gt;Input Graph Widget&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;Tilt&lt;/strong&gt; and &lt;strong&gt;Angle&lt;/strong&gt; input graphs default to up to &lt;code&gt;3&lt;/code&gt; inflection points each (see &lt;a href=&#34;../input_graph_widget/&#34;&gt;Input Graph Widget&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;You can adjust these values using the boxes at the bottom, including start and end values.&lt;/li&gt;
+&lt;li&gt;The bottom slider adjusts shot length from &lt;code&gt;1&lt;/code&gt; to &lt;code&gt;5&lt;/code&gt; seconds in &lt;code&gt;0.02 s&lt;/code&gt; intervals.
+&lt;ul&gt;
+&lt;li&gt;Changing this slider also changes the graph time length.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;You can use the &lt;a href=&#34;../smartdot_connect_widget/&#34;&gt;SmartDot Connect Widget&lt;/a&gt; on the left side to connect to a SmartDot before a run.&lt;/li&gt;
+&lt;li&gt;The motors will home before the shot starts and then run in &lt;a href=&#34;../shot_view/&#34;&gt;Shot View&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;warnings&#34;&gt;Warnings&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Do NOT&lt;/strong&gt; start a shot without confirming the arm is clear
+and the cover is on.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shot View</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/shot_view/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/shot_view/index.html</guid>
+      <description>&lt;h3 id=&#34;what-this-page-is&#34;&gt;What this page is&lt;/h3&gt;
+&lt;p&gt;This page shows the shot while it is running.&lt;/p&gt;
+&lt;h3 id=&#34;whats-on-this-page&#34;&gt;What&amp;rsquo;s on this page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The left graph is the &lt;a href=&#34;../motor_graph_widget/&#34;&gt;Motor and SmartDot Graph Widget&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The right graph is the same &lt;a href=&#34;../motor_graph_widget/&#34;&gt;Motor and SmartDot Graph Widget&lt;/a&gt;, configured for SmartDot signals.&lt;/li&gt;
+&lt;li&gt;The Motor Graph displays instruction values at the time they finish sending, along with encoder values at that same time.&lt;/li&gt;
+&lt;li&gt;Encoder lines exist for angle and tilt, but no encoder is connected so they read as &lt;code&gt;0&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;When a shot is complete, you can save the shot or analyze it in &lt;a href=&#34;../analysis_mode/&#34;&gt;Analysis Mode&lt;/a&gt;. You will still have the opportunity to save the shot in Analysis Mode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;warnings&#34;&gt;Warnings&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If navigation does not re-enable
+after the shot ends, press &lt;strong&gt;E-Stop&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Analysis Mode</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/analysis_mode/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/analysis_mode/index.html</guid>
+      <description>&lt;h3 id=&#34;whats-on-this-page&#34;&gt;What&amp;rsquo;s on this page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Motor graph&lt;/strong&gt; and &lt;strong&gt;SmartDot graph&lt;/strong&gt; display loaded session signals (see &lt;a href=&#34;../motor_graph_widget/&#34;&gt;Motor and SmartDot Graph Widget&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Analysis action buttons open detail dialogs:
+&lt;ul&gt;
+&lt;li&gt;Motor/SmartDot FFT&lt;/li&gt;
+&lt;li&gt;Motor/SmartDot 1st derivative&lt;/li&gt;
+&lt;li&gt;Motor/SmartDot 2nd derivative&lt;/li&gt;
+&lt;li&gt;Motor/SmartDot bandpass&lt;/li&gt;
+&lt;li&gt;Motor/SmartDot wavelet via &lt;a href=&#34;../wavelet_dialog/&#34;&gt;Wavelet Dialog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Save&lt;/strong&gt; submits current session data to cloud storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-this-page&#34;&gt;How to use this page&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open from &lt;a href=&#34;../data_view/&#34;&gt;Data View&lt;/a&gt;, &lt;a href=&#34;../diagnostic_mode/&#34;&gt;Diagnostic Mode&lt;/a&gt;, or &lt;a href=&#34;../shot_view/&#34;&gt;Shot View&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Choose the analysis operation matching your question.&lt;/li&gt;
+&lt;li&gt;In dialog windows, toggle relevant series and inspect highlighted values.&lt;/li&gt;
+&lt;li&gt;Repeat analyses as needed on the same loaded session.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;warnings&#34;&gt;Warnings&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Do not close the app during save submission.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Data View</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/data_view/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/data_view/index.html</guid>
+      <description>&lt;h3 id=&#34;whats-on-this-page&#34;&gt;What&amp;rsquo;s on this page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Filter text box&lt;/strong&gt; searches table content.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session type combo&lt;/strong&gt; filters All / Diagnostic / Shot.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Date/time range controls&lt;/strong&gt; define query window.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search&lt;/strong&gt; loads sessions in range; &lt;strong&gt;View All&lt;/strong&gt; loads all available sessions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session table&lt;/strong&gt; lists ID, timestamp, name, and shot/diagnostic type.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Analyze&lt;/strong&gt; opens &lt;a href=&#34;../analysis_mode/&#34;&gt;Analysis Mode&lt;/a&gt; for selected session.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Replay&lt;/strong&gt; opens &lt;a href=&#34;../shot_view/&#34;&gt;Shot View&lt;/a&gt; for selected session.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit&lt;/strong&gt; opens &lt;a href=&#34;../shot_mode/&#34;&gt;Shot Mode&lt;/a&gt; populated from selected shot session.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-this-page&#34;&gt;How to use this page&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Set filters and date/time bounds.&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Search&lt;/strong&gt; or &lt;strong&gt;View All&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select exactly one row in the table.&lt;/li&gt;
+&lt;li&gt;Choose &lt;strong&gt;Analyze&lt;/strong&gt;, &lt;strong&gt;Replay&lt;/strong&gt;, or &lt;strong&gt;Edit&lt;/strong&gt; depending on the task.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;how-do-the-filters-work&#34;&gt;How do the filters work&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The only filters that query the database are the &lt;strong&gt;start&lt;/strong&gt; and &lt;strong&gt;end&lt;/strong&gt; date/time controls.&lt;/li&gt;
+&lt;li&gt;The other filters operate on data that is already loaded in the table.&lt;/li&gt;
+&lt;li&gt;If you change the date range, you must press &lt;strong&gt;Search&lt;/strong&gt; again to fetch updated results.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;Filter&lt;/strong&gt; text box searches across all displayed table fields.&lt;/li&gt;
+&lt;li&gt;Instruction points used for editing are loaded in the row data but are hidden from display.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;sample-sessions&#34;&gt;Sample sessions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../sample_shot_session/&#34;&gt;Sample Shot Session&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Sample Shot Session</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/sample_shot_session/index.html</guid>
+      <description>&lt;h3 id=&#34;sample-shot-session&#34;&gt;Sample shot session&lt;/h3&gt;
+&lt;p&gt;This sample run demonstrates a complete shot workflow from Home through Data View verification.&lt;/p&gt;
+&lt;h3 id=&#34;example-workflow&#34;&gt;Example workflow&lt;/h3&gt;
+&lt;p&gt;This guide assumes first-time use and starts from &lt;a href=&#34;../home/&#34;&gt;Home&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Open &lt;a href=&#34;../shot_mode/&#34;&gt;Shot Mode&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;In the &lt;a href=&#34;../smartdot_connect_widget/&#34;&gt;SmartDot Connect Widget&lt;/a&gt;, press &lt;strong&gt;Scan for SmartDot&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;After scan completes, select a SmartDot that matches a device in the arm.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SI:MU:LA:TE:DD:OT&lt;/code&gt; is the simulated SmartDot.&lt;/li&gt;
+&lt;li&gt;On desktop builds, simulated SmartDot is the available option.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configure Spin:
+&lt;ul&gt;
+&lt;li&gt;Start value: &lt;code&gt;300&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;End value: &lt;code&gt;450&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configure Angle:
+&lt;ul&gt;
+&lt;li&gt;Start value: &lt;code&gt;30&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;End value: &lt;code&gt;10&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Configure Tilt:
+&lt;ul&gt;
+&lt;li&gt;Start value: &lt;code&gt;15&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;End value: &lt;code&gt;10&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Add Spin curve points to match this example:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img src=&#34;Image1.png&#34; alt=&#34;Sample Spin Curve&#34; width=&#34;520&#34; /&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Set shot duration slider to &lt;code&gt;2.6&lt;/code&gt; seconds.&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Enter Shot&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;After the shot completes, press &lt;strong&gt;Analyze&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Run analysis actions and review output in &lt;a href=&#34;../analysis_mode/&#34;&gt;Analysis Mode&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open wavelet analysis and follow &lt;a href=&#34;../wavelet_dialog/&#34;&gt;Wavelet Dialog&lt;/a&gt; guidance.&lt;/li&gt;
+&lt;li&gt;Press &lt;strong&gt;Save&lt;/strong&gt;, enter a session name, and submit.&lt;/li&gt;
+&lt;li&gt;Return to &lt;a href=&#34;../home/&#34;&gt;Home&lt;/a&gt; and open &lt;a href=&#34;../data_view/&#34;&gt;Data View&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Set end date/time to today and one hour ahead, then press &lt;strong&gt;Search&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Confirm the new shot appears in Data View.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;expected-result&#34;&gt;Expected result&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;A complete shot session appears in &lt;a href=&#34;../data_view/&#34;&gt;Data View&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Replay and Analyze actions work for the saved session.&lt;/li&gt;
+&lt;li&gt;Instruction points remain available for Edit operations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;No SmartDot appears after scan&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cloud Test</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/cloud_test/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/cloud_test/index.html</guid>
+      <description>&lt;h3 id=&#34;whats-on-this-page&#34;&gt;What&amp;rsquo;s on this page&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cloud Test tab&lt;/strong&gt; includes API test actions for posting/getting session-related data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Session ID controls&lt;/strong&gt; support targeted load calls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Response/log widgets&lt;/strong&gt; show command output and status.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Motor Diagnostics tab&lt;/strong&gt; includes:
+&lt;ul&gt;
+&lt;li&gt;Run Spin Diagnostic&lt;/li&gt;
+&lt;li&gt;Tune Duty Scale&lt;/li&gt;
+&lt;li&gt;Run Stepper Diagnostic&lt;/li&gt;
+&lt;li&gt;Trigger/Clear Motor Fault&lt;/li&gt;
+&lt;li&gt;Edit Motor Tuning&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;how-to-use-this-page&#34;&gt;How to use this page&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Use this page for validation and troubleshooting, not routine operation.&lt;/li&gt;
+&lt;li&gt;Pick a single API operation and confirm response output before the next one.&lt;/li&gt;
+&lt;li&gt;For motor diagnostics, set duration parameters first, then run one diagnostic at a time.&lt;/li&gt;
+&lt;li&gt;Return to &lt;a href=&#34;../home/&#34;&gt;Home&lt;/a&gt; when done.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;warnings&#34;&gt;Warnings&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Do NOT&lt;/strong&gt; use Cloud Test
+as an operator workflow page for normal sessions.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wavelet Dialog</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/wavelet_dialog/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/wavelet_dialog/index.html</guid>
+      <description>&lt;h3 id=&#34;what-this-help-covers&#34;&gt;What this help covers&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wavelet Helper Dialog&lt;/strong&gt; (&lt;code&gt;WavletHelperWidget&lt;/code&gt;): where you choose wavelet family/type/order and isolation mode.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wavelet Dialog&lt;/strong&gt;: where results are plotted in tabs and compared against the original signal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wavelet-helper-dialog&#34;&gt;Wavelet Helper Dialog&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add one or more wavelet rows.&lt;/li&gt;
+&lt;li&gt;For each row, set:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Family&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Order&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Optional isolation (&lt;code&gt;Isolate High-Frequency&lt;/code&gt; or &lt;code&gt;Isolate Low-Frequency&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;OK&lt;/strong&gt; to send the selected list into the Wavelet Dialog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;wavelet-dialog&#34;&gt;Wavelet Dialog&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tabbed graph area&lt;/strong&gt; shows one tab per selected wavelet result, plus an &lt;strong&gt;Original&lt;/strong&gt; tab.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Series checkboxes&lt;/strong&gt; control line visibility only (data remains intact).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Width / Reset controls&lt;/strong&gt; change x-range view.&lt;/li&gt;
+&lt;li&gt;Clicking the graph places a cursor and shows exact values in the highlight label.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-workflow-bior68--haar-bandpass-style-analysis&#34;&gt;Example workflow (bior6.8 + haar bandpass-style analysis)&lt;/h3&gt;
+&lt;p&gt;Use this example from &lt;a href=&#34;../analysis_mode/&#34;&gt;Analysis Mode&lt;/a&gt; to run a practical two-wavelet workflow:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SmartDot Connect Widget</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/smartdot_connect_widget/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/smartdot_connect_widget/index.html</guid>
+      <description>&lt;h3 id=&#34;how-to-use-the-smartdot-connect-widget&#34;&gt;How to use the SmartDot Connect Widget&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Press &lt;strong&gt;Scan for SmartDot&lt;/strong&gt; and wait for scan completion.&lt;/li&gt;
+&lt;li&gt;In the devices list, select the SmartDot you want to connect.&lt;/li&gt;
+&lt;li&gt;Confirm status changes to connected before starting a run.&lt;/li&gt;
+&lt;li&gt;If needed, use the disconnect list to disconnect an active device.&lt;/li&gt;
+&lt;li&gt;If you are on desktop, use &lt;code&gt;SI:MU:LA:TE:DD:OT&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Use the collapse button to minimize the widget when not actively connecting.&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Motor and SmartDot Graph Widget</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/motor_graph_widget/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/motor_graph_widget/index.html</guid>
+      <description>&lt;h3 id=&#34;what-this-widget-is&#34;&gt;What this widget is&lt;/h3&gt;
+&lt;p&gt;This document defines the behavior shared by the &lt;strong&gt;Motor Graph&lt;/strong&gt; and &lt;strong&gt;SmartDot Graph&lt;/strong&gt; widgets.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;Motor Graph&lt;/strong&gt; displays commanded values and encoder values over time.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;SmartDot Graph&lt;/strong&gt; displays accelerometer, gyroscope, magnetometer, and light values over time.&lt;/li&gt;
+&lt;li&gt;The graph controls affect rendering only. They do not change stored data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;display-modes&#34;&gt;Display modes&lt;/h3&gt;
+&lt;p&gt;You can select three display modes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scroll&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Shows a sliding time window.&lt;/li&gt;
+&lt;li&gt;The default window is &lt;code&gt;0.1&lt;/code&gt; seconds.&lt;/li&gt;
+&lt;li&gt;You can set this value with the range-width control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;View All&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Shows the full duration of the current run.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Range&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Shows data between explicit minimum and maximum times.&lt;/li&gt;
+&lt;li&gt;The default range is &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;2&lt;/code&gt; seconds.&lt;/li&gt;
+&lt;li&gt;You can set min/max using the controls in the lower-right area.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vertical-cursor-and-readout&#34;&gt;Vertical cursor and readout&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Clicking the graph places a vertical cursor at the clicked time.&lt;/li&gt;
+&lt;li&gt;The widget highlights the nearest sample on each visible line.&lt;/li&gt;
+&lt;li&gt;The bottom label shows exact values at the highlighted time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;line-visibility&#34;&gt;Line visibility&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The checkboxes on the right side enable and disable individual lines.&lt;/li&gt;
+&lt;li&gt;Checkbox state changes visibility only.&lt;/li&gt;
+&lt;li&gt;Data collection and persistence continue for all series.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;color-keys&#34;&gt;Color keys&lt;/h3&gt;
+&lt;p&gt;Motor Graph color key:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>General SmartDot Help</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/smartdot_general/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/smartdot_general/index.html</guid>
+      <description>&lt;h3 id=&#34;what-smartdot-is-in-this-app&#34;&gt;What SmartDot is in this app&lt;/h3&gt;
+&lt;p&gt;SmartDot is the ball-mounted sensor source used by the app for motion and environment telemetry.
+The app treats SmartDot as a multi-sensor device with timestamped streams:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Accelerometer: &lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, &lt;code&gt;z&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Gyroscope: &lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, &lt;code&gt;z&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Magnetometer: &lt;code&gt;x&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt;, &lt;code&gt;z&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Light: scalar value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These streams are collected, graphed, and persisted with session data.&lt;/p&gt;
+&lt;h3 id=&#34;where-smartdot-is-used&#34;&gt;Where SmartDot is used&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../shot_mode/&#34;&gt;Shot Mode&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;SmartDot connection is required before launching a shot workflow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../diagnostic_mode/&#34;&gt;Diagnostic Mode&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;SmartDot data is collected during diagnostic recordings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../shot_view/&#34;&gt;Shot View&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;SmartDot traces are displayed live during shot execution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../analysis_mode/&#34;&gt;Analysis Mode&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;SmartDot traces are analyzed using FFT, derivatives, bandpass, and wavelets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../data_view/&#34;&gt;Data View&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Saved sessions containing SmartDot data are loaded and replayed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;connection-workflow&#34;&gt;Connection workflow&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Connect SmartDot before starting shot/diagnostic capture.&lt;/li&gt;
+&lt;li&gt;Use &lt;a href=&#34;../smartdot_connect_widget/&#34;&gt;SmartDot Connect Widget&lt;/a&gt; to scan and select a device.&lt;/li&gt;
+&lt;li&gt;Confirm status reports connected.&lt;/li&gt;
+&lt;li&gt;Start the run only after connection is stable.&lt;/li&gt;
+&lt;li&gt;Disconnect cleanly when done or before changing devices.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;simulated-vs-physical-smartdot&#34;&gt;Simulated vs physical SmartDot&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;On desktop builds, the simulated device is:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SI:MU:LA:TE:DD:OT&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;On hardware-capable builds, scan results include discoverable physical devices.&lt;/li&gt;
+&lt;li&gt;The app supports both paths through the same workflow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;metamotion-details&#34;&gt;MetaMotion details&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The physical SmartDot path uses a &lt;strong&gt;MetaMotion&lt;/strong&gt; device implementation in this app.&lt;/li&gt;
+&lt;li&gt;MetaMotion is connected over Bluetooth and exposes accelerometer, gyroscope, magnetometer, and light streams.&lt;/li&gt;
+&lt;li&gt;The app connects through a worker thread so the UI remains responsive during connection attempts.&lt;/li&gt;
+&lt;li&gt;Connection status updates are surfaced in the SmartDot Connect widget.&lt;/li&gt;
+&lt;li&gt;Disconnect events are propagated back into the UI so active pages can stop collection safely.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;metamotion-in-practice&#34;&gt;MetaMotion in practice&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;When MetaMotion is connected, Shot and Diagnostic workflows collect live sensor streams.&lt;/li&gt;
+&lt;li&gt;During stop/save transitions, collected MetaMotion samples are packaged into the current session.&lt;/li&gt;
+&lt;li&gt;If MetaMotion disconnects mid-run, the app requires reconnection before reliable SmartDot data continues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-lifecycle&#34;&gt;Data lifecycle&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;SmartDot data is buffered during active collection.&lt;/li&gt;
+&lt;li&gt;During session stop/save transitions, buffered samples are packaged into the session data model.&lt;/li&gt;
+&lt;li&gt;Packaged data is available in analysis and cloud submission workflows.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;data-quality-and-repeatability&#34;&gt;Data quality and repeatability&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Keep SmartDot placement and orientation consistent between sessions.&lt;/li&gt;
+&lt;li&gt;Keep run setup consistent when comparing sessions.&lt;/li&gt;
+&lt;li&gt;Verify active data flow in graph pages during runs.&lt;/li&gt;
+&lt;li&gt;Use the same analysis settings when comparing outcomes between runs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SmartDot not found during scan&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Input Graph Widget</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/input_graph_widget/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/input_graph_widget/index.html</guid>
+      <description>&lt;h3 id=&#34;what-this-widget-is&#34;&gt;What this widget is&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The Input Graph lets you place and edit control points over time.&lt;/li&gt;
+&lt;li&gt;The inflection points are connected by a cubic spline to the start and end values of the motor graph.&lt;/li&gt;
+&lt;li&gt;The curve is hard-capped at the maximum allowed values for the motor.&lt;/li&gt;
+&lt;li&gt;Use the boxes at the bottom to adjust the start and end values.&lt;/li&gt;
+&lt;li&gt;Controls for adjusting graph bounds are hidden from the user.&lt;/li&gt;
+&lt;li&gt;When a shot is entered, this widget interpolates the curve into discrete values.&lt;/li&gt;
+&lt;li&gt;Inflection points are stored as floats from &lt;code&gt;0&lt;/code&gt; to &lt;code&gt;1&lt;/code&gt;, and are saved to and loaded from the database.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;where-it-is-used&#34;&gt;Where it is used&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../shot_mode/&#34;&gt;Shot Mode&lt;/a&gt; for spin (RPM), tilt, and angle instruction authoring.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
   </channel>
 </rss>

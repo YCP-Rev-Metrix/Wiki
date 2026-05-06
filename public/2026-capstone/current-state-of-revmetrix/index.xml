@@ -7,6 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="//localhost:1313/2026-capstone/current-state-of-revmetrix/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Ball Spinner Controller Help</title>
+      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/index.html</guid>
+      <description>&lt;h3 id=&#34;welcome&#34;&gt;Welcome&lt;/h3&gt;
+&lt;p&gt;This section explains how to use each main page in the Ball Spinner Controller app.
+Use the topics below for page-specific instructions and safety warnings.&lt;/p&gt;
+
+&lt;ul class=&#34;children children-li children-sort-title&#34;&gt;
+	
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/analysis_mode/index.html&#34;&gt;Analysis Mode&lt;/a&gt;&lt;p&gt;Run FFT, derivatives, bandpass, and wavelet analysis on session data.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/before_you_start/index.html&#34;&gt;Before You Start&lt;/a&gt;&lt;p&gt;Pre-run safety and setup checklist before using any mode.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/cloud_test/index.html&#34;&gt;Cloud Test&lt;/a&gt;&lt;p&gt;Developer test page for cloud API endpoints and motor diagnostics.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/data_view/index.html&#34;&gt;Data View&lt;/a&gt;&lt;p&gt;Search, filter, load, replay, edit, and analyze saved sessions.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Backend</title>
       <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/backend/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23,18 +39,6 @@
 &lt;p&gt;The purpose of the Ball Spinner Application (BSA) is to provide an interface for controlling and receiving data from the Ball Spinner as well as the SmartDot.
 Ball Spinner data, along with user related data used to facilitate Simulated Shots with the Ball Spinner, is also saved to the cloud database.
 Users are provided with a streamlined view (Figure 1) that displays all relevant data received during a shot. This includes a graphical representation of incoming SmartDot data, as well as a simulation that visually displays the movement of the ball as it spins in the Ball Spinner.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Ball Spinner Controller</title>
-      <link>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/2026-capstone/current-state-of-revmetrix/bsc/index.html</guid>
-      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
-&lt;p&gt;Ball Spinner Controller (BSC) acts as intermediary between Ball Spinner Application (BSA) and Ball Spinner
-Data from Sensors is sent to the BSA and graphed against simulated data of the expected sensor data
-Human Machine Interface (HMI) is 7&amp;quot; touch screen interaction assistant, standalone driver, and debugger for the BSC.
-The HMI can be run in local mode and control all hardware within the BSC
-The HMI can also graph and display the sensor data&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ballspinner Physical Design</title>
