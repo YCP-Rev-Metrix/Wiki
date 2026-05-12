@@ -27,3 +27,6 @@ The Deployment UML Diagram further shows two external device interfaces: a MetaM
 ## App Pages
 
 {{% children containerstyle="ul" style="li" sort="weight" description="true" %}}
+
+## Importing Prof. Hake's Data
+[Click here to view the Data Import guide](./data-import).
